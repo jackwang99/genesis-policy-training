@@ -1,0 +1,40 @@
+Namespace GarageAuto
+
+Include Base
+
+Rule "GarageAuto-190419-hZLwi" On GarageLocation.primaryActivity {
+    When primaryActivity != null
+    Assert primaryActivity != 'OTHER'
+    Error "GarageAuto-190419-hZLwi": "The value must be implicitly confirmed"
+    Overridable
+}
+
+Rule "GarageAuto-190419-ThPG5" On GarageLocation.primaryActivityDescription {
+    When primaryActivity != 'OTHER'
+    Set Hidden
+}
+
+Rule "GarageAuto-190419-WzqdH" On GarageLocation.secondaryActivityDescription {
+    When secondaryActivity != 'OTHER'
+    Set Hidden
+}
+
+Rule "GarageLocation-190516-dHL4Q" On GarageLocation.primaryActivity {
+    When primaryActivity != null
+    Assert primaryActivity != 'PARKING_FACILITIES'
+    Error "GarageLocation-190516-dHL4Q": "The Automobile parking facilities activity entered. Transaction will be referred to UW."
+    Overridable
+}
+
+Rule "GarageLocation-190516-GVFsr" On GarageLocation.primaryActivity {
+    When primaryActivity != null
+    Assert primaryActivity != 'AUTO_STORAGE'
+    Error "GarageLocation-190516-GVFsr": "The Vehicle storage activity entered. Transaction will be referred to UW."
+    Overridable
+}
+
+Rule "GarageLocation-190605-F1913" On GarageLocation.forms {
+    Assert Count(forms) < 1
+    Error "GarageLocation-190605-F1913": "The Replacement Cost Endorsement form added. Transaction will be referred to UW."
+    Overridable
+}

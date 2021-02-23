@@ -1,0 +1,112 @@
+[
+    {
+        "quotePolicyAction": "BOR Transfer",
+        "code": "Agent retired",
+        "defaultValue": "Agent retired"
+    },
+    {
+        "quotePolicyAction": "BOR Transfer",
+        "code": "New agent hired",
+        "defaultValue": "New agent hired"
+    },
+    {
+        "quotePolicyAction": "BOR Transfer",
+        "code": "Agent out of business",
+        "defaultValue": "Agent out of business"
+    },
+    {
+        "quotePolicyAction": "Endorsement",
+        "code": "TBD Endorsement Reason 1",
+        "defaultValue": "TBD Endorsement Reason 1"
+    },
+    {
+        "quotePolicyAction": "Endorsement",
+        "code": "TBD Endorsement Reason 2",
+        "defaultValue": "TBD Endorsement Reason 2"
+    },
+    {
+        "quotePolicyAction": "Endorsement",
+        "code": "TBD Endorsement Reason 3",
+        "defaultValue": "TBD Endorsement Reason 3"
+    },
+    {
+        "quotePolicyAction": "Endorsement",
+        "code": "TBD Endorsement Reason 4",
+        "defaultValue": "TBD Endorsement Reason 4"
+    },
+    {
+        "quotePolicyAction": "Endorsement",
+        "code": "TBD Endorsement Reason 5",
+        "defaultValue": "TBD Endorsement Reason 5"
+    },
+    {
+        "quotePolicyAction": "Endorsement",
+        "code": "Pended renewal is Not Current due to a change on the current term policy",
+        "defaultValue": "Pended renewal is Not Current due to a change on the current term policy"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Non Payment of Premium",
+        "defaultValue": "Non Payment of Premium"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Insured Request - Due To Poor Customer Service",
+        "defaultValue": "Insured Request - Due To Poor Customer Service"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Insured Request - Due To Poor Claim Service",
+        "defaultValue": "Insured Request - Due To Poor Claim Service"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Insured Request - Due To High Premium",
+        "defaultValue": "Insured Request - Due To High Premium"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Insured Request - Not Specified",
+        "defaultValue": "Insured Request - Not Specified"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Replaced With New Carrier",
+        "defaultValue": "Replaced With New Carrier"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Rewrite",
+        "defaultValue": "Rewrite"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Underwriting Criteria",
+        "defaultValue": "Underwriting Criteria"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Renewal flat cancelled due to prior term cancellationOther",
+        "defaultValue": "Renewal flat cancelled due to prior term cancellationOther"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Other",
+        "defaultValue": "Other"
+    },
+    {
+        "quotePolicyAction": "Cancel notice",
+        "code": "Non Payment of Premium",
+        "defaultValue": "Non Payment of Premium"
+    },
+    {
+        "quotePolicyAction": "Cancel notice",
+        "code": "Underwriting Criteria",
+        "defaultValue": "Underwriting Criteria"
+    },
+    {
+        "quotePolicyAction": "Cancel notice",
+        "code": "Other",
+        "defaultValue": "Other"
+    }
+]

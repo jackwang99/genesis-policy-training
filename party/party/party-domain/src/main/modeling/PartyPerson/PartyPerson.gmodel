@@ -1,0 +1,6 @@
+Model Person
+Root PersonEntity
+ModelType Party
+
+Stored using [ModelType, ModelName]
+Indexed using [ModelName]

@@ -1,0 +1,22 @@
+[
+  {
+    "code": "CONVERSION",
+    "defaultValue": "Conversion"
+  },
+  {
+    "code": "NEWCAR",
+    "defaultValue": "New Car"
+  },
+  {
+    "code": "REASON1",
+    "defaultValue": "Reason 1"
+  },
+  {
+    "code": "REASON2",
+    "defaultValue": "Reason 2"
+  },
+  {
+    "code": "REASON3",
+    "defaultValue": "Reason 3"
+  }
+]

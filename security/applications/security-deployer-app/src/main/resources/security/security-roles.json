@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Security System Administrator",
+    "description": "Role with access to whole Security Model creation",
+    "assignedAuthorities": [
+      "Security: Load User",
+      "Security: Load Security Domain",
+      "Security: Manage Domain",
+      "Security: Manage Access Profile",
+      "Security: Manage User",
+      "Security: Manage User Profile",
+      "Security: Manage Operational Assignment",
+      "Security: Manage Configured Access Profile"
+    ]
+  },
+  {
+    "name": "Security Domain Administrator",
+    "description": "Role with access to User, User Profile, Operational Assignment and Configured Access Profile creation",
+    "assignedAuthorities": [
+      "Security: Load User",
+      "Security: Manage User",
+      "Security: Manage User Profile",
+      "Security: Manage Operational Assignment",
+      "Security: Manage Configured Access Profile"
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "code": "Dr",
+    "defaultValue": "Dr."
+  },
+  {
+    "code": "Miss",
+    "defaultValue": "Mademoiselle."
+  },
+  {
+    "code": "Mr",
+    "defaultValue": "M."
+  },
+  {
+    "code": "Mrs",
+    "defaultValue": "Madame."
+  },
+  {
+    "code": "Ms",
+    "defaultValue": "Mme."
+  }
+]

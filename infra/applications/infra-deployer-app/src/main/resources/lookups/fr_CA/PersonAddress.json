@@ -1,0 +1,14 @@
+[
+  {
+    "code": "address/living",
+    "defaultValue": "Résidentiel"
+  },
+  {
+    "code": "address/mailing",
+    "defaultValue": "Envoi postal"
+  },
+  {
+    "code": "address/prior",
+    "defaultValue": "Avant"
+  }
+]

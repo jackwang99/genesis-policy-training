@@ -1,0 +1,20 @@
+[
+  {
+    "name": "QA Default",
+    "description": "Role with all privileges for QA testing, assigned to qa user",
+    "assignedAuthorities": [
+      "Product Server: Export product",
+      "Product Server: Convert product",
+      "Product Server: Pipeline execution"
+    ]
+  },
+  {
+    "name": "QA All",
+    "description": "Role with all privileges for QA testing, assigned to all users",
+    "assignedAuthorities": [
+      "Product Server: Export product",
+      "Product Server: Convert product",
+      "Product Server: Pipeline execution"
+    ]
+  }
+]

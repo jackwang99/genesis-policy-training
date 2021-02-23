@@ -1,0 +1,14 @@
+[
+  {
+    "code": "BKROL",
+    "defaultValue": "Livre"
+  },
+  {
+    "code": "CONV",
+    "defaultValue": "Conversion"
+  },
+  {
+    "code": "NEW",
+    "defaultValue": "Nouvelle entreprise"
+  }
+]

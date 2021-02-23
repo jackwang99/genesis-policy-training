@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+        <artifactId>policy-facade-app-pom</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../../parent-poms/policy-facade-app/pom.xml</relativePath>
+    </parent>
+
+    <artifactId>policy-auto-facade-app</artifactId>
+    <name>Policy Auto Facade</name>
+    <description>Policy Auto Facade Application Module</description>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalauto</groupId>
+            <artifactId>personal-auto-endpoints</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!-- UMeasure -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.umeasure</groupId>
+            <artifactId>policy-umeasure-facade</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.kraken</groupId>
+            <artifactId>rules.kraken-validation-bundle.override</artifactId>
+            <type>tile</type>
+        </dependency>
+    </dependencies>
+
+</project>

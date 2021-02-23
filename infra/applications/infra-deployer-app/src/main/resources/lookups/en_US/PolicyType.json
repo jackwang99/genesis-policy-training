@@ -1,0 +1,62 @@
+[
+  {
+    "code": "Auto",
+    "defaultValue": "Auto"
+  },
+  {
+    "code": "BENEFITS",
+    "defaultValue": "Benefits"
+  },
+  {
+    "code": "COMMERCIAL",
+    "defaultValue": "Commercial"
+  },
+  {
+    "code": "CONDO",
+    "defaultValue": "Condo"
+  },
+  {
+    "code": "CONTENTS",
+    "defaultValue": "Contents (only)"
+  },
+  {
+    "code": "DP3",
+    "defaultValue": "DP3 Dwelling Property Form"
+  },
+  {
+    "code": "HO",
+    "defaultValue": "Homeowner"
+  },
+  {
+    "code": "HO2",
+    "defaultValue": "HO2 Homeowner Broad Form"
+  },
+  {
+    "code": "HO3",
+    "defaultValue": "HO3 Homeowner Special Form"
+  },
+  {
+    "code": "HO4",
+    "defaultValue": "HO4 Homeowner Tenant Formm"
+  },
+  {
+    "code": "HO5",
+    "defaultValue": "HO5 Homeowner Comprehensive Form"
+  },
+  {
+    "code": "HO6",
+    "defaultValue": "HO6 Homeowner Condo Form"
+  },
+  {
+    "code": "HODP",
+    "defaultValue": "Homeowners Dwelling Property"
+  },
+  {
+    "code": "TENANT",
+    "defaultValue": "Tenant"
+  },
+  {
+    "code": "UMBRELLA",
+    "defaultValue": "Umbrella"
+  }
+]

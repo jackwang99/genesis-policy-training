@@ -1,0 +1,18 @@
+[
+  {
+    "code": "customerSatisfaction",
+    "defaultValue": "Customer Satisfaction"
+  },
+  {
+    "code": "businessRetention",
+    "defaultValue": "Business Retention"
+  },
+  {
+    "code": "policyConversion",
+    "defaultValue": "Policy Conversion"
+  },
+  {
+    "code": "companyError",
+    "defaultValue": "Company Error"
+  }
+]

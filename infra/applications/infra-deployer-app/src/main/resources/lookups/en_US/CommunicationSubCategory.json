@@ -1,0 +1,57 @@
+[
+{ 
+   "code": "BILL_EXPLANATION",
+   "communicationCategoryCd": "BILLING",
+   "defaultValue": "Billing Explanation"
+},
+{ 
+   "code": "CONFIRM_PAYMENT",
+   "communicationCategoryCd": "BILLING",
+   "defaultValue": "Confirm Payment"
+},
+{ 
+   "code": "CNG_PAY_METH",
+   "communicationCategoryCd": "BILLING",
+   "defaultValue": "Change/Update Payment Method"
+},
+{ 
+   "code": "PREMIUM_REFUND",
+   "communicationCategoryCd": "BILLING",
+   "defaultValue": "Premium Refund"
+},
+{ 
+   "code": "CLAIM_APPEAL",
+   "communicationCategoryCd": "CLAIMS",
+   "defaultValue": "Claim Appeal"
+},
+{ 
+   "code": "CLAIM_ADJUST",
+   "communicationCategoryCd": "CLAIMS",
+   "defaultValue": "Claim Adjustment"
+},
+{ 
+   "code": "CLAIM_PAYMNET_EXPL",
+   "communicationCategoryCd": "CLAIMS",
+   "defaultValue": "Claim Payment Explanation"
+},
+{ 
+   "code": "CLAIM_STATUS",
+   "communicationCategoryCd": "CLAIMS",
+   "defaultValue": "Claim Status"
+},
+{ 
+   "code": "BENEFIT_SUMMARY",
+   "communicationCategoryCd": "FORMS",
+   "defaultValue": "Benefit Summaries"
+},
+{ 
+   "code": "CLAIM_MATERIALS",
+   "communicationCategoryCd": "FORMS",
+   "defaultValue": "Claim Materials"
+},
+{ 
+   "code": "ID_CARDS",
+   "communicationCategoryCd": "FORMS",
+   "defaultValue": "ID Cards"
+}
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "code": "adjustment",
+    "defaultValue": "Adjustment"
+  },
+  {
+    "code": "fee",
+    "defaultValue": "Fee"
+  },
+  {
+    "code": "payment",
+    "defaultValue": "Payment"
+  },
+  {
+    "code": "premium",
+    "defaultValue": "Premium"
+  }
+]

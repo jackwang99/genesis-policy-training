@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>org-struct-applications-pom</artifactId>
+        <groupId>com.eisgroup.genesis.proto.org-struct.applications</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>org-struct-commands-app</artifactId>
+
+    <name>Organization Structure Commands Application</name>
+    <description>Organization Structure Commands Application Module</description>
+    <packaging>jar</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>dependency-list</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>list</goal>
+                        </goals>
+                        <configuration>
+                            <outputFile>target/classes/dependency.list</outputFile>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <classifier>fat</classifier>
+                    <attach>false</attach>
+                    <mainClass>com.eisgroup.genesis.boot.Bootstrap</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!-- Org-struct -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.orgstruct</groupId>
+            <artifactId>organization-lifecycle</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.orgstruct</groupId>
+            <artifactId>org-struct-brand-lifecycle</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!-- Application metadata -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.application.metadata</groupId>
+            <artifactId>app-metadata-bundle</artifactId>
+            <type>tile</type>
+        </dependency>
+
+        <!-- Core Registry Integration -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.registry.core.integration</groupId>
+            <artifactId>registry-bundle.integration</artifactId>
+            <classifier>commands</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto</groupId>
+            <artifactId>party-domain</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- Security -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.security</groupId>
+            <artifactId>security-bundle</artifactId>
+            <type>tile</type>
+        </dependency>
+
+        <!-- Lookups -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.lookups</groupId>
+            <artifactId>lookups-bundle</artifactId>
+            <classifier>commands</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <!-- BAM -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.bam</groupId>
+            <artifactId>bam-bundle</artifactId>
+            <classifier>commands</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <!-- time-shifter -->
+        <dependency>
+            <groupId>com.eisgroup.genesis</groupId>
+            <artifactId>timeshifter</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- Logging -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
+
+</project>

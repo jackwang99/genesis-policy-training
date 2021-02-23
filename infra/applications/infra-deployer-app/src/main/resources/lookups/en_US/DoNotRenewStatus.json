@@ -1,0 +1,14 @@
+[
+  {
+    "code": "DNR_COMPL",
+    "defaultValue": "DNR Completed"
+  },
+  {
+    "code": "DNR_INPRGS",
+    "defaultValue": "DNR In-Progress"
+  },
+  {
+    "code": "DNR_INVLD",
+    "defaultValue": "DNR Invalid"
+  }
+]

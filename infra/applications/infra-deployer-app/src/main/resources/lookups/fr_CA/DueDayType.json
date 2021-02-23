@@ -1,0 +1,10 @@
+[
+  {
+    "code": "monthly",
+    "defaultValue": "Jour (s) du mois"
+  },
+  {
+    "code": "weekly",
+    "defaultValue": "Jour de la semaine"
+  }
+]

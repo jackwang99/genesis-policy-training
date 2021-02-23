@@ -1,0 +1,22 @@
+[
+  {
+    "code": "CustServCamp",
+    "defaultValue": "Customer Service Campaign"
+  },
+  {
+    "code": "MarCamp",
+    "defaultValue": "Marketing Campaign"
+  },
+  {
+    "code": "Other",
+    "defaultValue": "Other"
+  },
+  {
+    "code": "SalCamp",
+    "defaultValue": "Sales Campaign"
+  },
+  {
+    "code": "SurvCamp",
+    "defaultValue": "Survey Campaign"
+  }
+]

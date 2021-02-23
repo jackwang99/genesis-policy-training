@@ -1,0 +1,30 @@
+[
+  {
+    "code": "COGNITIVE",
+    "defaultValue": "Cognitive"
+  },
+  {
+    "code": "HEARING_LOSS_AND_DEAFNESS",
+    "defaultValue": "Hearing Loss and Deafness"
+  },
+  {
+    "code": "INVISIBLE_DISABILITY",
+    "defaultValue": "Invisible Disability"
+  },
+  {
+    "code": "MOBILITY_IMPAIRMENTS",
+    "defaultValue": "Mobility Impairments"
+  },
+  {
+    "code": "PSYCHOLOGICAL_DISORDERS",
+    "defaultValue": "Psychological Disorders"
+  },
+  {
+    "code": "SPINAL_CORD_INJURY",
+    "defaultValue": "Spinal Cord Injury"
+  },
+  {
+    "code": "VISION_DISABILITY",
+    "defaultValue": "Vision Disability"
+  }
+]

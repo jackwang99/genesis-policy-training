@@ -1,0 +1,9 @@
+Model CustomerReports
+
+Import Model Campaign
+
+Report Campaign from Campaign {
+    Attr name is name
+    Attr state is state
+    Attr updatedOn is accessTrackInfo.updatedOn
+}

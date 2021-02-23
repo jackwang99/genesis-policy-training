@@ -1,0 +1,12 @@
+BaseType MVRReport extends MVRReportBase {
+    @Searchable
+    Attr firstName: String
+    @Searchable
+    Attr lastName: String
+    @Searchable
+    Attr dob: Date
+    @Searchable
+    Attr licenseNo: String
+    @Searchable
+    Attr licenseState: String
+}

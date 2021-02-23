@@ -1,0 +1,22 @@
+Entity GenesisSecurityDomain is SecurityDomain {
+    Ref roleProfiles : *GenesisRoleAccessProfile
+    Ref dimensionProfiles : *GenesisDimensionAccessProfile
+}
+
+Entity GenesisRoleAccessProfile is RoleAccessProfile {
+}
+
+Entity GenesisDimensionAccessProfile is DimensionAccessProfile {
+    Attr assignedScope : GenesisDimensionScope
+}
+
+Entity GenesisDimensionScope is DimensionScope {
+    Attr dimensions : *GenesisDimension
+}
+
+Entity GenesisDimension is Dimension  {
+    Attr dimensionValues : *GenesisDimensionValue
+}
+
+Entity GenesisDimensionValue is DimensionValue {
+}

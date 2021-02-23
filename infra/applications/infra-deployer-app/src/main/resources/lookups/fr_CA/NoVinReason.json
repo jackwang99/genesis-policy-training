@@ -1,0 +1,62 @@
+[
+  {
+    "code": "ANTQ",
+    "productCd": "PREC-UM",
+    "defaultValue": "Antique"
+  },
+  {
+    "code": "ANTQ",
+    "productCd": "PREC-AU",
+    "defaultValue": "Antique"
+  },
+  {
+    "code": "CLSC",
+    "productCd": "PREC-AU",
+    "defaultValue": "Classique"
+  },
+  {
+    "code": "CLSC",
+    "productCd": "PREC-UM",
+    "defaultValue": "Classique"
+  },
+  {
+    "code": "IMPTD",
+    "productCd": "PREC-AU",
+    "defaultValue": "Importé"
+  },
+  {
+    "code": "IMPTD",
+    "productCd": "PREC-UM",
+    "defaultValue": "Importé"
+  },
+  {
+    "code": "KITC",
+    "productCd": "PREC-AU",
+    "defaultValue": "Kit voiture"
+  },
+  {
+    "code": "KITC",
+    "productCd": "PREC-UM",
+    "defaultValue": "Kit voiture"
+  },
+  {
+    "code": "RVEHICLE",
+    "productCd": "PREC-UM",
+    "defaultValue": "Véhicule récréatif"
+  },
+  {
+    "code": "VNA",
+    "productCd": "PREC-AU",
+    "defaultValue": "NIV Non Applicable"
+  },
+  {
+    "code": "VNEW",
+    "productCd": "PREC-UM",
+    "defaultValue": "Tout nouveau"
+  },
+  {
+    "code": "VNEW",
+    "productCd": "PREC-AU",
+    "defaultValue": "Tout nouveau"
+  }
+]

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>ref-party-impl</artifactId>
+        <groupId>com.eisgroup.genesis.proto</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>party-lifecycle</artifactId>
+    <packaging>jar</packaging>
+
+    <name>Party Registry Reference Lifecycle</name>
+    <description>Party Registry Reference Lifecycle Module</description>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.eisgroup.genesis.tools</groupId>
+                <artifactId>fintrospector-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <configuration>
+                            <introspectors>
+                                <introspector>
+                                    <groupId>com.eisgroup.genesis.lifecycle</groupId>
+                                    <artifactId>lifecycle-fintrospector</artifactId>
+                                    <version>${lifecycle.framework.version}</version>
+                                </introspector>
+                            </introspectors>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!-- Core Party Registry Dependencies -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.registry.core.party</groupId>
+            <artifactId>party-ms-bundle</artifactId>
+            <classifier>commands</classifier>
+            <type>tile</type>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.registry.core.report</groupId>
+            <artifactId>report-registry-lifecycle</artifactId>
+        </dependency>
+
+        <!-- Ref Dependencies -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto</groupId>
+            <artifactId>party-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto</groupId>
+            <artifactId>party-impl</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

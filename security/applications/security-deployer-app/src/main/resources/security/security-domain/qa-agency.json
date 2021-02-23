@@ -1,0 +1,1019 @@
+{
+    "_key": {
+        "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+        "revisionNo": 1
+    },
+    "_type": "GenesisSecurityDomain",
+    "_modelName": "Security",
+    "_modelVersion": "1",
+    "domainCd": "qaAgency",
+    "name": "qaAgencySecurityDomain",
+    "parentRef": {
+        "_uri": "gentity://SecurityDomain/Security/b504b366-82ef-4716-8850-60705ef45620/1"
+    },
+    "roleProfiles": [
+        {
+            "_key": {
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "id": "9c03278a-5e53-4497-bb4c-84cd9b1c078a"
+            },
+            "_type": "GenesisRoleAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "default",
+            "assignedRoles": [
+                "QA Default"
+            ],
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "id": "fb2453d7-78d0-401b-931f-a2a8b4bd7684"
+            },
+            "_type": "GenesisRoleAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "alternative",
+            "assignedRoles": [
+                "QA Default"
+            ],
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "id": "013921bb-d38c-4d7d-910d-209b6321422f",
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+            },
+            "_type": "GenesisRoleAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "customer-profile",
+            "assignedRoles": [
+                "QA Default"
+            ],
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "id": "17a153d3-a01f-444a-9f75-264bab091879",
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+            },
+            "_type": "GenesisRoleAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "conversion-profile",
+            "assignedRoles": [
+                "QA Conversion",
+                "QA All"
+            ],
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "id": "2c9597cf-6352-4025-bcc1-df349ec232f2",
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+            },
+            "_type": "GenesisRoleAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "organization-profile",
+            "assignedRoles": [
+                "QA Default"
+            ],
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "id": "2bd45a02-6acd-444f-abec-e894c43fff42",
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+            },
+            "_type": "GenesisRoleAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "agency-profile",
+            "assignedRoles": [
+                "QA Default"
+            ],
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "id": "d39a18ae-f200-48d9-b35d-40c4484ef94c",
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+            },
+            "_type": "GenesisRoleAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "agency1-profile",
+            "assignedRoles": [
+                "QA Default"
+            ],
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "id": "de6d25e8-d3f0-483e-9eb9-ee6622c49ba8",
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+            },
+            "_type": "GenesisRoleAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "user3-profile",
+            "assignedRoles": [
+                "QA Default"
+            ],
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "id": "27f7bfd5-2f65-4e81-a096-d4b7b5fe7a29",
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+            },
+            "_type": "GenesisRoleAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "user4-profile",
+            "assignedRoles": [
+                "QA Default"
+            ],
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "id": "58e22ef5-b8e9-4490-8ef4-b3ef9ff10e46",
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+            },
+            "_type": "GenesisRoleAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "qa-profile",
+            "assignedRoles": [
+                "QA All"
+            ],
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "id": "583b1f0b-318d-4f2c-a4a4-5d4fae62c7a5",
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+            },
+            "_type": "GenesisRoleAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "underwriter-profile",
+            "assignedRoles": [
+                "QA Default"
+            ],
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "id": "1469a904-7773-4128-a06f-8130cf82ef6d",
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620"
+            },
+            "_type": "GenesisRoleAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "CAP1",
+            "assignedRoles": [
+                "Privileges testing"
+            ],
+            "effectiveDate": "2018-07-17",
+            "expirationDate": "2020-07-17"
+        }
+    ],
+    "dimensionProfiles": [
+        {
+            "_key": {
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "id": "83376224-e48a-4906-b98a-105fc168ccaf"
+            },
+            "_type": "GenesisDimensionAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "default",
+            "assignedScope": {
+                "_key": {
+                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                    "revisionNo": 1,
+                    "parentId": "83376224-e48a-4906-b98a-105fc168ccaf",
+                    "id": "2ef09a99-304b-4a12-ba6e-6fbb1033079e"
+                },
+                "_type": "GenesisDimensionScope",
+                "dimensions": [
+                    {
+                        "_key": {
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                            "revisionNo": 1,
+                            "parentId": "2ef09a99-304b-4a12-ba6e-6fbb1033079e",
+                            "id": "02de417d-64ed-47d2-9a05-9a9b4d0a8d9a"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "agency",
+                        "dimensionValues": [
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "02de417d-64ed-47d2-9a05-9a9b4d0a8d9a",
+                                    "id": "52ae2b67-cb6d-433b-818b-bb7cb2eb2686"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "agencyA"
+                            },
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "02de417d-64ed-47d2-9a05-9a9b4d0a8d9a",
+                                    "id": "150ee8b6-128d-4085-979e-6def0999982b"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "agencyB"
+                            }
+                        ]
+                    },
+                    {
+                        "_key": {
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                            "revisionNo": 1,
+                            "parentId": "2ef09a99-304b-4a12-ba6e-6fbb1033079e",
+                            "id": "61a41ea4-0a62-48c2-917d-71dd2198f263"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "brand",
+                        "dimensionValues": [
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "61a41ea4-0a62-48c2-917d-71dd2198f263",
+                                    "id": "c90ce4a0-b2ab-4600-96ee-4a1212ac0543"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "brandA"
+                            },
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "61a41ea4-0a62-48c2-917d-71dd2198f263",
+                                    "id": "d822cc0a-7b2d-4c5e-8ac6-66605b6a0511"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "brandB"
+                            }
+                        ]
+                    },
+                    {
+                        "_key": {
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                            "revisionNo": 1,
+                            "parentId": "2ef09a99-304b-4a12-ba6e-6fbb1033079e",
+                            "id": "c3f027bd-2ed3-44d2-adbb-4658bc7d2a0a"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "underwriter",
+                        "dimensionValues": [
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "c3f027bd-2ed3-44d2-adbb-4658bc7d2a0a",
+                                    "id": "283c642a-c264-41bf-b128-07282af6267e"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "UC1"
+                            },
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "c3f027bd-2ed3-44d2-adbb-4658bc7d2a0a",
+                                    "id": "17bf73b4-212a-4e6a-b232-9458816eea6e"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "UC2"
+                            }
+                        ]
+                    },
+                    {
+                        "_key": {
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                            "revisionNo": 1,
+                            "parentId": "2ef09a99-304b-4a12-ba6e-6fbb1033079e",
+                            "id": "8c040b9a-e451-45a3-9d3f-0e75ce98679b"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "product",
+                        "dimensionValues": [
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "8c040b9a-e451-45a3-9d3f-0e75ce98679b",
+                                    "id": "f6516ecc-cd4f-426f-8a7e-45a8613b52b5"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "productA"
+                            },
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "8c040b9a-e451-45a3-9d3f-0e75ce98679b",
+                                    "id": "aa5fe2b9-55ba-482b-bbd3-f16801d9a710"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "productB"
+                            }
+                        ]
+                    },
+                    {
+                        "_key": {
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                            "revisionNo": 1,
+                            "parentId": "2ef09a99-304b-4a12-ba6e-6fbb1033079e",
+                            "id": "5fa41277-e424-4418-bf3a-b099ee2992d1"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "organization",
+                        "unrestricted": true
+                    }
+                ]
+            },
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "id": "308ceea4-5d44-4979-b928-b2a261a891c4"
+            },
+            "_type": "GenesisDimensionAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "alternative",
+            "assignedScope": {
+                "_key": {
+                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                    "revisionNo": 1,
+                    "parentId": "308ceea4-5d44-4979-b928-b2a261a891c4",
+                    "id": "00a09496-224c-4a69-af0b-4215fcb0bf53"
+                },
+                "_type": "GenesisDimensionScope",
+                "dimensions": [
+                    {
+                        "_key": {
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                            "revisionNo": 1,
+                            "parentId": "00a09496-224c-4a69-af0b-4215fcb0bf53",
+                            "id": "02de417d-64ed-47d2-9a05-9a9b4d0a8d9a"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "agency",
+                        "dimensionValues": [
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "02de417d-64ed-47d2-9a05-9a9b4d0a8d9a",
+                                    "id": "1b95bf8a-388a-40bf-984b-f560069000c9"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "agencyC"
+                            },
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "02de417d-64ed-47d2-9a05-9a9b4d0a8d9a",
+                                    "id": "2607e4d0-58a7-419b-ae74-f30c45ec9766"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "agencyD"
+                            }
+                        ]
+                    },
+                    {
+                        "_key": {
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                            "revisionNo": 1,
+                            "parentId": "00a09496-224c-4a69-af0b-4215fcb0bf53",
+                            "id": "61a41ea4-0a62-48c2-917d-71dd2198f263"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "brand",
+                        "dimensionValues": [
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "61a41ea4-0a62-48c2-917d-71dd2198f263",
+                                    "id": "0b56be05-33dc-4983-9e05-25f0a57b3723"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "brandC"
+                            },
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "61a41ea4-0a62-48c2-917d-71dd2198f263",
+                                    "id": "a094a84b-9cee-41ed-9b6b-70640f10e799"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "brandD"
+                            }
+                        ]
+                    },
+                    {
+                        "_key": {
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                            "revisionNo": 1,
+                            "parentId": "00a09496-224c-4a69-af0b-4215fcb0bf53",
+                            "id": "c3f027bd-2ed3-44d2-adbb-4658bc7d2a0a"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "underwriter",
+                        "dimensionValues": [
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "c3f027bd-2ed3-44d2-adbb-4658bc7d2a0a",
+                                    "id": "9236fe83-0c64-41eb-b33e-0a4f0ea057e4"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "UC3"
+                            },
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "c3f027bd-2ed3-44d2-adbb-4658bc7d2a0a",
+                                    "id": "ff1d16db-81b3-482e-9e5b-5867742a7c90"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "UC4"
+                            }
+                        ]
+                    },
+                    {
+                        "_key": {
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                            "revisionNo": 1,
+                            "parentId": "00a09496-224c-4a69-af0b-4215fcb0bf53",
+                            "id": "8c040b9a-e451-45a3-9d3f-0e75ce98679b"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "product",
+                        "dimensionValues": [
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "8c040b9a-e451-45a3-9d3f-0e75ce98679b",
+                                    "id": "f1543926-565c-4a0b-be01-8e76be2bed16"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "productC"
+                            },
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "8c040b9a-e451-45a3-9d3f-0e75ce98679b",
+                                    "id": "a4b02857-57c0-4b31-aa27-75a4708bbc99"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "productD"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "id": "6d4ece7d-decf-4ebf-9093-76af369972ad",
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+            },
+            "_type": "GenesisDimensionAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "customer-profile",
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "id": "b18fbeb4-67e5-4473-bd41-9cb2c3a8d389",
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+            },
+            "_type": "GenesisDimensionAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "conversion-profile",
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "id": "02b35f9d-3072-4c6e-833f-db1717d0787d",
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+            },
+            "_type": "GenesisDimensionAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "organization-profile",
+            "assignedScope": {
+                "_key": {
+                    "id": "c9961321-c664-488c-9842-e1c68a636921",
+                    "parentId": "02b35f9d-3072-4c6e-833f-db1717d0787d",
+                    "revisionNo": 1,
+                    "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                },
+                "_type": "GenesisDimensionScope",
+                "dimensions": [
+                    {
+                        "_key": {
+                            "id": "b3993643-9876-4441-bb4a-edf80291f888",
+                            "parentId": "c9961321-c664-488c-9842-e1c68a636921",
+                            "revisionNo": 1,
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "organization",
+                        "dimensionValues": [
+                            {
+                                "_key": {
+                                    "id": "7c16150b-54fc-43e0-a94b-eb58394d73c0",
+                                    "parentId": "b3993643-9876-4441-bb4a-edf80291f888",
+                                    "revisionNo": 1,
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "OC1"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "id": "faa11640-0d60-44e9-9db7-6b799f4eb6c0",
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+            },
+            "_type": "GenesisDimensionAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "agency-profile",
+            "assignedScope": {
+                "_key": {
+                    "id": "ed9d113f-e9bf-4860-83e6-e684da2b6982",
+                    "parentId": "faa11640-0d60-44e9-9db7-6b799f4eb6c0",
+                    "revisionNo": 1,
+                    "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                },
+                "_type": "GenesisDimensionScope",
+                "dimensions": [
+                    {
+                        "_key": {
+                            "id": "03c83258-c20c-4ac6-b2ed-afbd1bf7837a",
+                            "parentId": "ed9d113f-e9bf-4860-83e6-e684da2b6982",
+                            "revisionNo": 1,
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "organization",
+                        "unrestricted": true
+                    },
+                    {
+                        "_key": {
+                            "id": "c3f027bd-2ed3-44d2-adbb-4658bc7d2a0a",
+                            "parentId": "ed9d113f-e9bf-4860-83e6-e684da2b6982",
+                            "revisionNo": 1,
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "underwriter",
+                        "dimensionValues": [
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "c3f027bd-2ed3-44d2-adbb-4658bc7d2a0a",
+                                    "id": "283c642a-c264-41bf-b128-07282af6267e"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "UC1"
+                            },
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "c3f027bd-2ed3-44d2-adbb-4658bc7d2a0a",
+                                    "id": "17bf73b4-212a-4e6a-b232-9458816eea6e"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "UC2"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "id": "61418927-0af5-4a0b-b32a-20b5a5751e6b",
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+            },
+            "_type": "GenesisDimensionAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "agency1-profile",
+            "assignedScope": {
+                "_key": {
+                    "id": "664163b1-9b34-499c-ad6f-11c4f31c9f65",
+                    "parentId": "61418927-0af5-4a0b-b32a-20b5a5751e6b",
+                    "revisionNo": 1,
+                    "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                },
+                "_type": "GenesisDimensionScope",
+                "dimensions": [
+                    {
+                        "_key": {
+                            "id": "cfe2e312-a74b-4ae4-b905-ed1d0754f3c5",
+                            "parentId": "664163b1-9b34-499c-ad6f-11c4f31c9f65",
+                            "revisionNo": 1,
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "organization",
+                        "unrestricted": true
+                    },
+                    {
+                        "_key": {
+                            "id": "c3f027bd-2ed3-44d2-adbb-4658bc7d2a0a",
+                            "parentId": "664163b1-9b34-499c-ad6f-11c4f31c9f65",
+                            "revisionNo": 1,
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "underwriter",
+                        "dimensionValues": [
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "c3f027bd-2ed3-44d2-adbb-4658bc7d2a0a",
+                                    "id": "9236fe83-0c64-41eb-b33e-0a4f0ea057e4"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "UC3"
+                            },
+                            {
+                                "_key": {
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                                    "revisionNo": 1,
+                                    "parentId": "c3f027bd-2ed3-44d2-adbb-4658bc7d2a0a",
+                                    "id": "ff1d16db-81b3-482e-9e5b-5867742a7c90"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "UC4"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "id": "91e07118-2fe8-4a03-a797-9bdce341a2b3",
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+            },
+            "_type": "GenesisDimensionAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "user3-profile",
+            "assignedScope": {
+                "_key": {
+                    "id": "f047ae95-7bf8-47e0-ae76-057033cd7c96",
+                    "parentId": "91e07118-2fe8-4a03-a797-9bdce341a2b3",
+                    "revisionNo": 1,
+                    "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                },
+                "_type": "GenesisDimensionScope",
+                "dimensions": [
+                    {
+                        "_key": {
+                            "id": "6a7e5608-a564-4f5c-992b-b9793bc65c63",
+                            "parentId": "f047ae95-7bf8-47e0-ae76-057033cd7c96",
+                            "revisionNo": 1,
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "organization",
+                        "dimensionValues": [
+                            {
+                                "_key": {
+                                    "id": "8948886d-66e5-45ea-8757-69ec0c290809",
+                                    "parentId": "6a7e5608-a564-4f5c-992b-b9793bc65c63",
+                                    "revisionNo": 1,
+                                    "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                                },
+                                "_type": "GenesisDimensionValue",
+                                "dimensionValue": "OC1"
+                            }
+                        ]
+                    },
+                    {
+                        "_key": {
+                            "id": "c3f027bd-2ed3-44d2-adbb-4658bc7d2a0a",
+                            "parentId": "f047ae95-7bf8-47e0-ae76-057033cd7c96",
+                            "revisionNo": 1,
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "underwriter",
+                        "unrestricted": true
+                    }
+                ]
+            },
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "id": "70fadd5b-8ef1-469e-b0a5-acdddc58a66b",
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+            },
+            "_type": "GenesisDimensionAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "user4-profile",
+            "assignedScope": {
+                "_key": {
+                    "id": "027b2f6c-a80e-4b5f-bdc4-54e18d8bffcc",
+                    "parentId": "70fadd5b-8ef1-469e-b0a5-acdddc58a66b",
+                    "revisionNo": 1,
+                    "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                },
+                "_type": "GenesisDimensionScope",
+                "dimensions": [
+                    {
+                        "_key": {
+                            "id": "c3f027bd-2ed3-44d2-adbb-4658bc7d2a0a",
+                            "parentId": "027b2f6c-a80e-4b5f-bdc4-54e18d8bffcc",
+                            "revisionNo": 1,
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "underwriter",
+                        "unrestricted": true
+                    }
+                ]
+            },
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "id": "3de81fd8-80ae-4702-a1ab-4fb967473b5b",
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+            },
+            "_type": "GenesisDimensionAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "qa-profile",
+            "assignedScope": {
+                "_key": {
+                    "id": "b99018c7-5a98-45d8-b620-eb8d05868ecf",
+                    "parentId": "3de81fd8-80ae-4702-a1ab-4fb967473b5b",
+                    "revisionNo": 1,
+                    "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                },
+                "_type": "GenesisDimensionScope",
+                "dimensions": [
+                    {
+                        "_key": {
+                            "id": "c6eb2456-f690-408d-8950-08679a026772",
+                            "parentId": "b99018c7-5a98-45d8-b620-eb8d05868ecf",
+                            "revisionNo": 1,
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "organization",
+                        "unrestricted": true
+                    },
+                    {
+                        "_key": {
+                            "id": "c3f027bd-2ed3-44d2-adbb-4658bc7d2a0a",
+                            "parentId": "b99018c7-5a98-45d8-b620-eb8d05868ecf",
+                            "revisionNo": 1,
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "underwriter",
+                        "unrestricted": true
+                    },
+                    {
+                        "_key": {
+                            "id": "02de417d-64ed-47d2-9a05-9a9b4d0a8d9a",
+                            "parentId": "b99018c7-5a98-45d8-b620-eb8d05868ecf",
+                            "revisionNo": 1,
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "agency",
+                        "unrestricted": true
+                    },
+                    {
+                        "_key": {
+                            "id": "f95d9790-0337-425b-b44b-d20ea68f955d",
+                            "parentId": "b99018c7-5a98-45d8-b620-eb8d05868ecf",
+                            "revisionNo": 1,
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "producer",
+                        "unrestricted": true
+                    }
+                ]
+            },
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+            "_key": {
+                "id": "85b4b1f4-1403-48bb-834c-3b5b8f579e71",
+                "parentId": "b504b366-82ef-4716-8850-60705ef45620",
+                "revisionNo": 1,
+                "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+            },
+            "_type": "GenesisDimensionAccessProfile",
+            "_modelName": "Security",
+            "_modelVersion": "1",
+            "name": "underwriter-profile",
+            "assignedScope": {
+                "_key": {
+                    "id": "8786ab76-5d8a-400f-8543-bf636bff44e4",
+                    "parentId": "85b4b1f4-1403-48bb-834c-3b5b8f579e71",
+                    "revisionNo": 1,
+                    "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                },
+                "_type": "GenesisDimensionScope",
+                "dimensions": [
+                    {
+                        "_key": {
+                            "id": "0c62fc0c-b945-46d4-91b1-e8c91eb5a213",
+                            "parentId": "8786ab76-5d8a-400f-8543-bf636bff44e4",
+                            "revisionNo": 1,
+                            "rootId": "b504b366-82ef-4716-8850-60705ef45620"
+                        },
+                        "_type": "GenesisDimension",
+                        "dimensionCd": "organization",
+                        "unrestricted": true
+                    }
+                ]
+            },
+            "effectiveDate": "2011-01-01",
+            "expirationDate": "2099-01-01"
+        },
+        {
+          "assignedScope": {
+            "dimensions": [
+              {
+                "dimensionCd": "organization",
+                "unrestricted": true,
+                "_type": "GenesisDimension",
+                "_key": {
+                  "id": "ad8ef2cf-f065-426b-a51a-fdcbdf2e8d79",
+                  "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                  "revisionNo": 1,
+                  "parentId": "07f69910-0c48-4a72-80f3-115212c4a060"
+                }
+              },
+              {
+                "dimensionCd": "underwriter",
+                "unrestricted": true,
+                "_type": "GenesisDimension",
+                "_key": {
+                  "id": "907bd1a5-7be0-4892-b68b-e51598d9ddc3",
+                  "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                  "revisionNo": 1,
+                  "parentId": "07f69910-0c48-4a72-80f3-115212c4a060"
+                }
+              },
+              {
+                "dimensionCd": "producer",
+                "unrestricted": true,
+                "_type": "GenesisDimension",
+                "_key": {
+                  "id": "bab2783f-570b-4440-9e8e-cbe7a0804e95",
+                  "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                  "revisionNo": 1,
+                  "parentId": "07f69910-0c48-4a72-80f3-115212c4a060"
+                }
+              },
+              {
+                "dimensionCd": "agency",
+                "unrestricted": true,
+                "_type": "GenesisDimension",
+                "_key": {
+                  "id": "fbc5a833-3d6f-4dd0-8497-5810a1b6e01b",
+                  "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+                  "revisionNo": 1,
+                  "parentId": "07f69910-0c48-4a72-80f3-115212c4a060"
+                }
+              }
+            ],
+            "_type": "GenesisDimensionScope",
+            "_key": {
+              "id": "07f69910-0c48-4a72-80f3-115212c4a060",
+              "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+              "revisionNo": 1,
+              "parentId": "36817148-b63c-414d-af77-e864879bb371"
+            }
+          },
+          "_type": "GenesisDimensionAccessProfile",
+          "_modelName": "Security",
+          "_modelVersion": "1",
+            "name": "CAP1",
+          "_key": {
+            "id": "36817148-b63c-414d-af77-e864879bb371",
+            "rootId": "b504b366-82ef-4716-8850-60705ef45620",
+            "revisionNo": 1,
+            "parentId": "b504b366-82ef-4716-8850-60705ef45620"
+        },
+            "effectiveDate": "2018-07-17",
+            "expirationDate": "2020-07-17"
+        }
+    ]
+}

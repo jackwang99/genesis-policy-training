@@ -1,0 +1,7 @@
+Model PersonalHome
+
+ProductCd PersonalHome
+BLOB Personal
+LOB [Home]
+
+effectiveDate Date(2018, 9, 8)

@@ -1,0 +1,38 @@
+[
+  {
+    "code": "C",
+    "defaultValue": "Contrat"
+  },
+  {
+    "code": "Contract Purchaser",
+    "defaultValue": "Acheteur contractuel"
+  },
+  {
+    "code": "E",
+    "defaultValue": "Employeur"
+  },
+  {
+    "code": "H",
+    "defaultValue": "Contrat de crédit"
+  },
+  {
+    "code": "Interest",
+    "defaultValue": "Intérêt"
+  },
+  {
+    "code": "Lender",
+    "defaultValue": "Prêteur"
+  },
+  {
+    "code": "Loss Payee",
+    "defaultValue": "Perte bénéficiaire"
+  },
+  {
+    "code": "N",
+    "defaultValue": "Aucun"
+  },
+  {
+    "code": "Titleholder",
+    "defaultValue": "Tenant du titre"
+  }
+]

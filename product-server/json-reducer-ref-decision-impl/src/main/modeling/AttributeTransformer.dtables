@@ -1,0 +1,9 @@
+Model AttributeTransformer
+
+@First
+Table "Attribute Name Transformation" {
+  InputColumn "Component" as String : component
+  InputColumn "Attribute" as String : attribute
+  InputColumn "Tag" as String : tag
+  OutputColumn "Alias" as String : alias
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Organization: Manage Organizational Person",
+    "description": "Allows to initiate OrganizationalPerson creation as well as update OrganizationalPerson data",
+    "scope": "OrganizationalPerson"
+  },
+  {
+    "name": "Organization: Search Organization by Role",
+    "description": "Allows to search Organization by role",
+    "scope": "Organization"
+  },
+  {
+    "name": "Organization: Search Person",
+    "description": "Allows to search for OrganizationalPerson",
+    "scope": "OrganizationalPerson"
+  },
+  {
+    "name": "Organization: Load Organization",
+    "description": "Allows to to load Organization",
+    "scope": "Organization"
+  },
+  {
+    "name": "Organization: Apply Role",
+    "description": "Allows to apply Organization role",
+    "scope": "Organization"
+  },
+  {
+    "name": "Organization: Manage Organization",
+    "description": "Allows write Organization",
+    "scope": "Organization"
+  },
+  {
+    "name": "Organization: Load Organization Roles",
+    "description": "Allows to load Organization roles",
+    "scope": "Organization"
+  },
+  {
+    "name": "Organization: Load Organization Person",
+    "description": "Allows to load Organization person",
+    "scope": "OrganizationalPerson"
+  }
+]

@@ -1,0 +1,7 @@
+Namespace PersonalHome
+
+Include Base
+
+EntryPoint "Home Quote Policy Validation" {
+
+}

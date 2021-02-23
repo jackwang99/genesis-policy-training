@@ -1,0 +1,43 @@
+{
+  "_key": {
+    "revisionNo": 1,
+    "rootId": "69ff1b6a-8d02-4b63-922a-27e02096f0f8"
+  },
+  "_modelName": "User",
+  "_modelVersion": "1",
+  "uuid": "user5",
+  "_type": "GenesisUser",
+  "authorityLevel": 0,
+  "userProfiles": [
+    {
+      "_key": {
+        "id": "eedba923-d957-4898-82bf-b9be6e5e2b57",
+        "parentId": "69ff1b6a-8d02-4b63-922a-27e02096f0f8",
+        "revisionNo": 1,
+        "rootId": "69ff1b6a-8d02-4b63-922a-27e02096f0f8"
+      },
+      "_type": "GenesisUserProfile",
+      "effectiveDate": "2018-07-17",
+      "defaultInd": true,
+      "operationalAssignments": [
+        {
+          "_key": {
+            "id": "952a88de-0b21-4bd8-95e1-c5c1dea57b4f",
+            "parentId": "05914a95-dda7-42a4-9770-15bad124b4df",
+            "revisionNo": 1,
+            "rootId": "81edf0c2-4545-4e9e-8b84-159beab383df"
+          },
+          "_type": "GenesisUserOperationalAssignment",
+          "roleAccessProfile": {
+            "_uri": "gpart://RoleAccessProfile/Security//b504b366-82ef-4716-8850-60705ef45620///1469a904-7773-4128-a06f-8130cf82ef6d"
+          },
+          "dimensionAccessProfile": {
+            "_uri": "gpart://DimensionAccessProfile/Security//b504b366-82ef-4716-8850-60705ef45620///36817148-b63c-414d-af77-e864879bb371"
+          },
+          "effectiveDate": "2018-07-17",
+          "expirationDate": "2020-07-17"
+        }
+      ]
+    }
+  ]
+}

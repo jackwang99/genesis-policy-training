@@ -1,0 +1,217 @@
+/* CEM */
+Lookup Designation {
+}
+
+Lookup PolicyType {
+}
+
+Lookup Rating {
+    defaultOrder: String
+}
+
+Lookup Disability {
+}
+
+Lookup Citizenship {
+}
+
+Lookup LeadImportSource {
+}
+
+Lookup LeadTargetSource {
+}
+
+Lookup NonIndividualType {
+}
+
+Lookup ReferenceCategory {
+}
+
+Lookup ConsentStatus {
+}
+
+Lookup CustomerGroupName {
+    crmGroupTypeCd: CustomerGroupType
+}
+
+Lookup CustomerGroupType {
+}
+
+Lookup CustomerBusinessType {
+}
+
+Lookup CustomerGroupMembershipLevel {
+}
+
+Lookup CustomerGroupMembershipStatus {
+}
+
+Lookup CustomerPreferredLanguageSpoken {
+}
+
+Lookup CustomerPreferredLanguageWritten {
+}
+
+Lookup PreferredTimeToContact {
+    defaultOrder: String
+}
+
+Lookup PreferredDayToContact {
+    defaultOrder: String
+}
+
+Lookup ContactPreference {
+}
+
+Lookup CustomerSource {
+    defaultOrder: String
+}
+
+Lookup Occupation {
+}
+
+Lookup OccupationStatus {
+}
+
+Lookup Segment {
+}
+
+Lookup OppCloseReason {
+}
+
+Lookup OpportunityStatus {
+}
+
+Lookup OpportunityChannel {
+}
+
+Lookup OpportunityLikelihood {
+}
+
+Lookup MajorAccountServiceLevel {
+}
+
+Lookup MajorAccountDesignation {
+}
+
+Lookup CommunicationSubCategory {
+    communicationCategoryCd: CommunicationCategory
+}
+
+Lookup CommunicationInternalCaller {
+}
+
+Lookup CommunicationLanguage {
+}
+
+Lookup CommunicationSource {
+}
+
+Lookup CommunicationChannel {
+}
+
+Lookup CommunicationCategory {
+}
+
+Lookup CommunicationDirection {
+}
+
+Lookup CommunicationEntityType {
+}
+
+Lookup CommunicationStatus {
+}
+
+Lookup RelationshipRole {
+    entityType: String
+    relationshipType: String
+}
+
+Lookup CampaignTermReasons {
+}
+
+Lookup CampaignCategory {
+}
+
+Lookup DivertTo {
+}
+
+Lookup Carrier {
+}
+
+Lookup CarrierName {
+}
+
+Lookup ServiceRole {
+}
+
+Lookup SocialNetType {
+}
+
+Lookup SpecialHandlingInd {
+}
+
+Lookup ChallengeQuestion {
+}
+
+Lookup JobTitle {
+}
+
+Lookup Tobacco {
+    defaultOrder: String
+}
+
+Lookup DivisionBillingMethod {
+}
+
+Lookup BusinessRelationshipType {
+}
+
+Lookup SICDivision {
+}
+Lookup SICIndustry {
+    parentLookupCode: String
+}
+Lookup SICCode {
+    parentLookupCode: SICIndustry
+}
+
+Lookup NAICSSector {
+}
+Lookup NAICSSubSector {
+    parentLookupCode: NAICSSector
+}
+Lookup NAICSIndustryGroup {
+    parentLookupCode: NAICSSubSector
+}
+Lookup NAICSCode {
+    parentLookupCode: NAICSIndustryGroup
+}
+
+Lookup CommunicationPreferences {
+}
+
+Lookup Interest {
+}
+
+Lookup PreferredCurrency {
+}
+
+Lookup EmploymentType {
+}
+
+Lookup JobCode {
+}
+
+Lookup MembershipStatus {
+}
+
+Lookup ParticipationEmploymentStatus {
+}
+
+Lookup PayrollFrequency {
+}
+
+Lookup StudentStatus {
+}
+

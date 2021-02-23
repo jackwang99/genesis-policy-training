@@ -1,0 +1,26 @@
+[
+  {
+    "code": 0,
+    "defaultValue": "Level 0"
+  },
+  {
+    "code": 1,
+    "defaultValue": "Level 1"
+  },
+  {
+    "code": 2,
+    "defaultValue": "Level 2"
+  },
+  {
+    "code": 3,
+    "defaultValue": "Level 3"
+  },
+  {
+    "code": 4,
+    "defaultValue": "Level 4"
+  },
+  {
+    "code": 5,
+    "defaultValue": "Level 5"
+  }
+]

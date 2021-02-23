@@ -1,0 +1,14 @@
+[
+  {
+    "code": "FCB",
+    "defaultValue": "Facebook"
+  },
+  {
+    "code": "LKD",
+    "defaultValue": "LinkedIn"
+  },
+  {
+    "code": "TWT",
+    "defaultValue": "Twitter"
+  }
+]

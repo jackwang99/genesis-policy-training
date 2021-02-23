@@ -1,0 +1,30 @@
+[
+{ 
+   "code": "AR",
+   "defaultValue": "Arabic"
+},
+{ 
+   "code": "CH",
+   "defaultValue": "Chinese"
+},
+{ 
+   "code": "ENG",
+   "defaultValue": "English"
+},
+{ 
+   "code": "FR",
+   "defaultValue": "French"
+},
+{ 
+   "code": "GR",
+   "defaultValue": "German"
+},
+{ 
+   "code": "RUS",
+   "defaultValue": "Russian"
+},
+{ 
+   "code": "SP",
+   "defaultValue": "Spanish"
+}
+]

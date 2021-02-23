@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <artifactId>majoraccount-endpoints</artifactId>
+    <packaging>jar</packaging>
+    
+    <parent>
+        <artifactId>majoraccount-pom</artifactId>
+        <groupId>com.eisgroup.genesis.proto.majoraccount</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.eisgroup.genesis.crm</groupId>
+            <artifactId>crm-ms-bundle</artifactId>
+            <classifier>facade</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.majoraccount</groupId>
+            <artifactId>majoraccount-domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.majoraccount</groupId>
+            <artifactId>majoraccount-lifecycle-model</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+    
+</project>

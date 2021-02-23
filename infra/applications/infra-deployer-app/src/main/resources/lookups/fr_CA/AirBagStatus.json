@@ -1,0 +1,14 @@
+[
+  {
+    "code": "Driver and Passengers",
+    "defaultValue": "Conducteur et passagers"
+  },
+  {
+    "code": "Driver Only",
+    "defaultValue": "Pilote seulement"
+  },
+  {
+    "code": "None",
+    "defaultValue": "Aucun"
+  }
+]

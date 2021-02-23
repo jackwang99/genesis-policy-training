@@ -1,0 +1,14 @@
+[
+  {
+    "code": "FLMS",
+    "defaultValue": "FLMS"
+  },
+  {
+    "code": "MBA",
+    "defaultValue": "MBA"
+  },
+  {
+    "code": "OTHER",
+    "defaultValue": "Other"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "code": "DNR_IH",
+    "defaultValue": "DNR - Increase in Hazard"
+  },
+  {
+    "code": "DNR_LE",
+    "defaultValue": "DNR - Loss Experience"
+  },
+  {
+    "code": "DNR_OTH",
+    "defaultValue": "DNR - Other"
+  },
+  {
+    "code": "DNR_UCATLE",
+    "defaultValue": "DNR - Unacceptable CAT Loss Exp"
+  },
+  {
+    "code": "DNR_MM",
+    "defaultValue": "Material Misrepresentation"
+  }
+]

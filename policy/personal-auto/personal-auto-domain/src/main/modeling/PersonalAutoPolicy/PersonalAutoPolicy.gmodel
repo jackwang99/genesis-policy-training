@@ -1,0 +1,14 @@
+Model PersonalAuto
+Root PersonalAutoPolicySummary
+
+ModelType Policy
+
+Stored using [ModelName, Variation]
+Indexed using ['policy']
+
+Variation quote
+Variation policy
+Variation archivedQuote
+Variation archivedPolicy
+Variation legacyPolicy
+Variation archivedLegacyPolicy

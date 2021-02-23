@@ -1,0 +1,19 @@
+<project>
+  <name>Personal Home rating algorithms</name>
+  <modules>
+    <module>
+      <name>datatypes</name>
+      <rules-root path="rules/datatypes.xlsx"/>
+    </module>
+    <module>
+      <name>HOME-CW-06012017-06012019</name>
+      <rules-root path="rules/HOME-CW-06012017-06012019.xlsx"/>
+    </module>
+  </modules>
+  <classpath>
+    <entry path="lib/*.jar"/>
+  </classpath>
+  <properties-file-name-pattern>.*-%state%-%effectiveDate:MMddyyyy%-%startRequestDate:MMddyyyy%</properties-file-name-pattern>
+  <properties-file-name-processor>org.openl.rules.project.resolving.CWPropertyFileNameProcessor</properties-file-name-processor>
+
+</project>

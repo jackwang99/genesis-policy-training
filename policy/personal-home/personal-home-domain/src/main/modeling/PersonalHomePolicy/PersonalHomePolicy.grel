@@ -1,0 +1,14 @@
+Model PersonalHome
+
+PolicyPersons {
+    {
+        subject: PolicySummary
+        predicate: "insured/primary"
+        object: PolicyParty[insuredInfo.primary=true] > Person
+    }
+    {
+        subject: PolicySummary
+        predicate: "insured/additional"
+        object: PolicyParty[insuredInfo.primary=false] > Person
+    }
+}

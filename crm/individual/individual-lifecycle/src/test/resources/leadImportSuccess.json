@@ -1,0 +1,179 @@
+{
+  "customers": [
+    {
+      "_key": {
+        "rootId": "641d29ff-d5ba-44ff-bb8b-0ea072c82ecf",
+        "revisionNo": 1
+      },
+      "taxExempt": "string",
+      "majorAccountId": "string",
+      "accessTrackInfo": {
+        "updatedBy": "string",
+        "createdBy": "string",
+        "updatedOn": "2017-12-13T10:21:20.684Z",
+        "createdOn": "2017-12-13T10:21:20.684Z",
+        "_type": "GenesisAccessTrackInfo"
+      },
+      "productsOwned": [
+        {
+          "policyExpirationDate": "2017-12-13",
+          "carrierNameDescription": "string",
+          "policyTypeCd": "string",
+          "policyNumber": "string",
+          "productOwnedId": "string",
+          "carrierNameCd": "string",
+          "_type": "GenesisCrmProductOwned"
+        }
+      ],
+      "customerGroupInfos": [
+        {
+          "membershipNumber": "string",
+          "membershipLevel": "string",
+          "comment": "string",
+          "membershipStatus": "string",
+          "membershipDate": "2017-12-13",
+          "_type": "GenesisCustomerGroupInfo"
+        }
+      ],
+      "taxExemptComment": "string",
+      "customerNumber": "CUST001",
+      "associateBusinessEntity": false,
+      "segments": [
+        "string"
+      ],
+      "details": {
+        "lastName": "string",
+        "designationDescription": "string",
+        "occupation": "Pilot",
+        "deceased": "string",
+        "gender": "string",
+        "occupationDescription": "string",
+        "rating": "string",
+        "suffix": "string",
+        "title": "string",
+        "communicationInfo": [
+          {
+            "email": "string",
+            "phoneNo": "string",
+            "_type": "PartyGenesisCommunicationInfo"
+          }
+        ],
+        "deathDate": "2017-12-13",
+        "nickname": "string",
+        "preferredWrittenLanguage": "string",
+        "citizenship": "Cambodia",
+        "preferredSpokenLanguage": "string",
+        "paperless": false,
+        "dateOfBirth": "2017-12-13",
+        "firstName": "Denis",
+
+        "deathNotificationReceived": "string",
+        "taxId": "string",
+        "tobaccoCd": "string",
+        "middleName": "string",
+        "otherName": "string",
+        "designation": "string",
+        "salutation": "string",
+        "maritalStatus": "string",
+        "registerOnline": false,
+        "customerInterests": [
+          "SPORTS",
+          "READING"
+        ],
+        "_type": "GenesisCrmIndividualDetails"
+      },
+      "state": "unqualified",
+      "_type": "IndividualCustomer",
+      "_modelName": "INDIVIDUALCUSTOMER",
+      "_modelVersion": "1"
+    },
+    {
+      "_key": {
+        "rootId": "221d29ff-d5ba-44ff-bb8b-0ea072c82ecf",
+        "revisionNo": 1
+      },
+      "taxExempt": "string",
+      "majorAccountId": "string",
+      "accessTrackInfo": {
+        "updatedBy": "string",
+        "createdBy": "string",
+        "updatedOn": "2017-12-13T10:21:20.684Z",
+        "createdOn": "2017-12-13T10:21:20.684Z",
+        "_type": "GenesisAccessTrackInfo"
+      },
+      "productsOwned": [
+        {
+          "policyExpirationDate": "2017-12-13",
+          "carrierNameDescription": "string",
+          "policyTypeCd": "string",
+          "policyNumber": "string",
+          "productOwnedId": "string",
+          "carrierNameCd": "string",
+          "_type": "GenesisCrmProductOwned"
+        }
+      ],
+      "customerGroupInfos": [
+        {
+          "membershipNumber": "string",
+          "membershipLevel": "string",
+          "comment": "string",
+          "membershipStatus": "string",
+          "membershipDate": "2017-12-13",
+          "_type": "GenesisCustomerGroupInfo"
+        }
+      ],
+      "taxExemptComment": "string",
+      "prevRevNo": 0,
+      "customerNumber": "CUST002",
+      "associateBusinessEntity": false,
+      "segments": [
+        "string"
+      ],
+      "details": {
+        "lastName": "string",
+        "designationDescription": "string",
+        "occupation": "Pilot",
+        "deceased": "string",
+        "gender": "string",
+        "occupationDescription": "string",
+        "rating": "string",
+        "suffix": "string",
+        "title": "string",
+        "communicationInfo": [
+          {
+            "email": "string",
+            "phoneNo": "string",
+            "_type": "PartyGenesisCommunicationInfo"
+          }
+        ],
+        "deathDate": "2017-12-13",
+        "nickname": "string",
+        "preferredWrittenLanguage": "string",
+        "citizenship": "Cambodia",
+        "preferredSpokenLanguage": "string",
+        "paperless": false,
+        "dateOfBirth": "2017-12-13",
+        "firstName": "Ivan",
+
+        "deathNotificationReceived": "string",
+        "taxId": "string",
+        "tobaccoCd": "string",
+        "middleName": "string",
+        "otherName": "string",
+        "designation": "string",
+        "salutation": "string",
+        "maritalStatus": "string",
+        "registerOnline": false,
+        "customerInterests": [
+          "SPORTS",
+          "READING"
+        ],
+        "_type": "GenesisCrmIndividualDetails"
+      },
+      "state": "unqualified",
+      "_type": "IndividualCustomer",
+      "_modelName": "INDIVIDUALCUSTOMER",
+      "_modelVersion": "1"
+    }
+  ]
+}

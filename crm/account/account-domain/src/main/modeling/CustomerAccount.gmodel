@@ -1,0 +1,7 @@
+Model CUSTOMERACCOUNT
+Root GenesisCustomerAccount
+
+ModelType CustomerAccount
+
+Stored using [ModelName]
+Indexed using ['customeraccount']

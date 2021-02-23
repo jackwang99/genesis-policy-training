@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<constraint-mappings
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://jboss.org/xml/ns/javax/validation/mapping validation-mapping-1.1.xsd"
+    xmlns="http://jboss.org/xml/ns/javax/validation/mapping" version="1.1">
+
+    <default-package>com.eisgroup.genesis.factory.modeling.types</default-package>
+
+    <bean class="AgencyContainer">
+        <getter name="relationships">
+            <valid />
+        </getter>
+    </bean>
+
+    <bean class="IndividualCustomerBase">
+        <getter name="businessEntities">
+            <valid />
+        </getter>
+        <getter name="details">
+            <valid />
+        </getter>
+    </bean>
+
+    <bean class="IndividualDetails">
+        <getter name="person">
+            <valid />
+        </getter>
+    </bean>
+
+    <bean class="com.eisgroup.genesis.factory.modeling.types.PersonBase">
+        <getter name="birthDate">
+            <constraint annotation="com.eisgroup.genesis.crm.validation.BirthdayRange">
+                <message>{crm.individual.bithdayRange}</message>
+                <element name="max">120</element>
+            </constraint>
+        </getter>
+    </bean>
+
+    <bean class="CrmCommunicationInfo">
+        <getter name="phones">
+            <valid/>
+        </getter>
+    </bean>
+    
+    <bean class="CrmPhone">
+        <getter name="schedulingContactInfo">
+            <valid />
+        </getter>
+    </bean>
+
+    <bean class="EntityAssociation">
+        <getter name="link">
+            <constraint annotation="com.eisgroup.genesis.crm.validation.RelationshipLinkType">
+                <message>{crm.relationshipType.link}</message>
+            </constraint>
+        </getter>
+    </bean>
+
+    <bean class="CustomerAssociation">
+        <getter name="link">
+            <constraint annotation="com.eisgroup.genesis.crm.validation.RelationshipLinkType">
+                <message>{crm.relationshipType.link}</message>
+            </constraint>
+        </getter>
+    </bean>
+    
+</constraint-mappings>

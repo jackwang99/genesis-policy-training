@@ -1,0 +1,1462 @@
+[
+  {
+    "code": "1111",
+    "defaultValue": "1111 - Oilseed and Grain Farming",
+    "parentLookupCode": "111"
+  },
+  {
+    "code": "1112",
+    "defaultValue": "1112 - Vegetable and Melon Farming",
+    "parentLookupCode": "111"
+  },
+  {
+    "code": "1113",
+    "defaultValue": "1113 - Fruit and Tree Nut Farming",
+    "parentLookupCode": "111"
+  },
+  {
+    "code": "1114",
+    "defaultValue": "1114 - Greenhouse, Nursery, and Floriculture Production",
+    "parentLookupCode": "111"
+  },
+  {
+    "code": "1119",
+    "defaultValue": "1119 - Other Crop Farming",
+    "parentLookupCode": "111"
+  },
+  {
+    "code": "1121",
+    "defaultValue": "1121 - Cattle Ranching and Farming",
+    "parentLookupCode": "112"
+  },
+  {
+    "code": "1122",
+    "defaultValue": "1122 - Hog and Pig Farming",
+    "parentLookupCode": "112"
+  },
+  {
+    "code": "1123",
+    "defaultValue": "1123 - Poultry and Egg Production",
+    "parentLookupCode": "112"
+  },
+  {
+    "code": "1124",
+    "defaultValue": "1124 - Sheep and Goat Farming",
+    "parentLookupCode": "112"
+  },
+  {
+    "code": "1125",
+    "defaultValue": "1125 - Aquaculture",
+    "parentLookupCode": "112"
+  },
+  {
+    "code": "1129",
+    "defaultValue": "1129 - Other Animal Production",
+    "parentLookupCode": "112"
+  },
+  {
+    "code": "1131",
+    "defaultValue": "1131 - Timber Tract Operations",
+    "parentLookupCode": "113"
+  },
+  {
+    "code": "1132",
+    "defaultValue": "1132 - Forest Nurseries and Gathering of Forest Products",
+    "parentLookupCode": "113"
+  },
+  {
+    "code": "1133",
+    "defaultValue": "1133 - Logging",
+    "parentLookupCode": "113"
+  },
+  {
+    "code": "1141",
+    "defaultValue": "1141 - Fishing",
+    "parentLookupCode": "114"
+  },
+  {
+    "code": "1142",
+    "defaultValue": "1142 - Hunting and Trapping",
+    "parentLookupCode": "114"
+  },
+  {
+    "code": "1151",
+    "defaultValue": "1151 - Support Activities for Crop Production",
+    "parentLookupCode": "115"
+  },
+  {
+    "code": "1152",
+    "defaultValue": "1152 - Support Activities for Animal Production",
+    "parentLookupCode": "115"
+  },
+  {
+    "code": "1153",
+    "defaultValue": "1153 - Support Activities for Forestry",
+    "parentLookupCode": "115"
+  },
+  {
+    "code": "2111",
+    "defaultValue": "2111 - Oil and Gas Extraction",
+    "parentLookupCode": "211"
+  },
+  {
+    "code": "2121",
+    "defaultValue": "2121 - Coal Mining",
+    "parentLookupCode": "212"
+  },
+  {
+    "code": "2122",
+    "defaultValue": "2122 - Metal Ore Mining",
+    "parentLookupCode": "212"
+  },
+  {
+    "code": "2123",
+    "defaultValue": "2123 - Nonmetallic Mineral Mining and Quarrying",
+    "parentLookupCode": "212"
+  },
+  {
+    "code": "2131",
+    "defaultValue": "2131 -Support Activities for Mining",
+    "parentLookupCode": "213"
+  },
+  {
+    "code": "2211",
+    "defaultValue": "2211 - Electric Power Generation, Transmission and Distribution",
+    "parentLookupCode": "221"
+  },
+  {
+    "code": "2212",
+    "defaultValue": "2212 - Natural Gas Distribution ",
+    "parentLookupCode": "221"
+  },
+  {
+    "code": "2213",
+    "defaultValue": "2213 - Water, Sewage and Other Systems ",
+    "parentLookupCode": "221"
+  },
+  {
+    "code": "2361",
+    "defaultValue": "2361 - Residential Building Construction",
+    "parentLookupCode": "236"
+  },
+  {
+    "code": "2362",
+    "defaultValue": "2362 - Nonresidential Building Construction",
+    "parentLookupCode": "236"
+  },
+  {
+    "code": "2371",
+    "defaultValue": "2371 - Utility System Construction",
+    "parentLookupCode": "237"
+  },
+  {
+    "code": "2372",
+    "defaultValue": "2372 - Land Subdivision",
+    "parentLookupCode": "237"
+  },
+  {
+    "code": "2373",
+    "defaultValue": "2373 - Highway, Street, and Bridge Construction",
+    "parentLookupCode": "237"
+  },
+  {
+    "code": "2379",
+    "defaultValue": "2379 - Other Heavy and Civil Engineering Construction",
+    "parentLookupCode": "237"
+  },
+  {
+    "code": "2381",
+    "defaultValue": "2381 - Foundation, Structure, and Building Exterior Contractors",
+    "parentLookupCode": "238"
+  },
+  {
+    "code": "2382",
+    "defaultValue": "2382 - Building Equipment Contractors",
+    "parentLookupCode": "238"
+  },
+  {
+    "code": "2389",
+    "defaultValue": "2389 - Other Specialty Trade Contractors",
+    "parentLookupCode": "238"
+  },
+  {
+    "code": "3111",
+    "defaultValue": "3111 - Animal Food Manufacturing",
+    "parentLookupCode": "311"
+  },
+  {
+    "code": "3112",
+    "defaultValue": "3112 - Grain and Oilseed Milling",
+    "parentLookupCode": "311"
+  },
+  {
+    "code": "3113",
+    "defaultValue": "3113 - Sugar and Confectionery Product Manufacturing",
+    "parentLookupCode": "311"
+  },
+  {
+    "code": "3114",
+    "defaultValue": "3114 - Fruit and Vegetable Preserving and Specialty Food Manufacturing",
+    "parentLookupCode": "311"
+  },
+  {
+    "code": "3115",
+    "defaultValue": "3115 - Dairy Product Manufacturing",
+    "parentLookupCode": "311"
+  },
+  {
+    "code": "3116",
+    "defaultValue": "3116 - Animal Slaughtering and Processing",
+    "parentLookupCode": "311"
+  },
+  {
+    "code": "3117",
+    "defaultValue": "3117 - Seafood Product Preparation and Packaging",
+    "parentLookupCode": "311"
+  },
+  {
+    "code": "3118",
+    "defaultValue": "3118 - Bakeries and Tortilla Manufacturing",
+    "parentLookupCode": "311"
+  },
+  {
+    "code": "3119",
+    "defaultValue": "3119 - Other Food Manufacturing",
+    "parentLookupCode": "311"
+  },
+  {
+    "code": "3121",
+    "defaultValue": "3121 - Beverage Manufacturing",
+    "parentLookupCode": "312"
+  },
+  {
+    "code": "3122",
+    "defaultValue": "3122 - Tobacco Manufacturing",
+    "parentLookupCode": "312"
+  },
+  {
+    "code": "3131",
+    "defaultValue": "3131 - Fiber, Yarn, and Thread Mills",
+    "parentLookupCode": "313"
+  },
+  {
+    "code": "3132",
+    "defaultValue": "3132 - Fabric Mills",
+    "parentLookupCode": "313"
+  },
+  {
+    "code": "3133",
+    "defaultValue": "3133 - Textile and Fabric Finishing and Fabric Coating Mills",
+    "parentLookupCode": "313"
+  },
+  {
+    "code": "3141",
+    "defaultValue": "3141 - Textile Furnishings Mills",
+    "parentLookupCode": "314"
+  },
+  {
+    "code": "3149",
+    "defaultValue": "3149 - Other Textile Product Mills",
+    "parentLookupCode": "314"
+  },
+  {
+    "code": "3151",
+    "defaultValue": "3151 - Apparel Knitting Mills",
+    "parentLookupCode": "315"
+  },
+  {
+    "code": "3152",
+    "defaultValue": "3152 - Cut and Sew Apparel Manufacturing",
+    "parentLookupCode": "315"
+  },
+  {
+    "code": "3159",
+    "defaultValue": "3159 - Apparel Accessories and Other Apparel Manufacturing",
+    "parentLookupCode": "315"
+  },
+  {
+    "code": "3161",
+    "defaultValue": "3161 - Leather and Hide Tanning and Finishing",
+    "parentLookupCode": "316"
+  },
+  {
+    "code": "3162",
+    "defaultValue": "3162 - Footwear Manufacturing",
+    "parentLookupCode": "316"
+  },
+  {
+    "code": "3169",
+    "defaultValue": "3169 - Other Leather and Allied Product Manufacturing",
+    "parentLookupCode": "316"
+  },
+  {
+    "code": "3211",
+    "defaultValue": "3211 - Sawmills and Wood Preservation",
+    "parentLookupCode": "321"
+  },
+  {
+    "code": "3212",
+    "defaultValue": "3212 - Veneer, Plywood, and Engineered Wood Product Manufacturing",
+    "parentLookupCode": "321"
+  },
+  {
+    "code": "3219",
+    "defaultValue": "3219 - Other Wood Product Manufacturing",
+    "parentLookupCode": "321"
+  },
+  {
+    "code": "3221",
+    "defaultValue": "3221  -Pulp, Paper, and Paperboard Mills",
+    "parentLookupCode": "322"
+  },
+  {
+    "code": "3222",
+    "defaultValue": "3222 - Converted Paper Product Manufacturing",
+    "parentLookupCode": "322"
+  },
+  {
+    "code": "3231",
+    "defaultValue": "3231 - Printing and Related Support Activities",
+    "parentLookupCode": "323"
+  },
+  {
+    "code": "3241",
+    "defaultValue": "3241 - Petroleum and Coal Products Manufacturing",
+    "parentLookupCode": "324"
+  },
+  {
+    "code": "3251",
+    "defaultValue": "3251 - Basic Chemical Manufacturing",
+    "parentLookupCode": "325"
+  },
+  {
+    "code": "3252",
+    "defaultValue": "3252 - Resin, Synthetic Rubber, and Artificial Synthetic Fibers and Filaments Manufacturing",
+    "parentLookupCode": "325"
+  },
+  {
+    "code": "3253",
+    "defaultValue": "3253 - Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",
+    "parentLookupCode": "325"
+  },
+  {
+    "code": "3254",
+    "defaultValue": "3254 - Pharmaceutical and Medicine Manufacturing",
+    "parentLookupCode": "325"
+  },
+  {
+    "code": "3255",
+    "defaultValue": "3255 - Paint, Coating, and Adhesive Manufacturing",
+    "parentLookupCode": "325"
+  },
+  {
+    "code": "3256",
+    "defaultValue": "3256 - Soap, Cleaning Compound, and Toilet Preparation Manufacturing",
+    "parentLookupCode": "325"
+  },
+  {
+    "code": "3259",
+    "defaultValue": "3259 - Other Chemical Product and Preparation Manufacturing",
+    "parentLookupCode": "325"
+  },
+  {
+    "code": "3261",
+    "defaultValue": "3261 - Plastics Product Manufacturing",
+    "parentLookupCode": "326"
+  },
+  {
+    "code": "3262",
+    "defaultValue": "3262 - Rubber Product Manufacturing",
+    "parentLookupCode": "326"
+  },
+  {
+    "code": "3271",
+    "defaultValue": "3271 - Clay Product and Refractory Manufacturing",
+    "parentLookupCode": "327"
+  },
+  {
+    "code": "3272",
+    "defaultValue": "3272 - Glass and Glass Product Manufacturing",
+    "parentLookupCode": "327"
+  },
+  {
+    "code": "3273",
+    "defaultValue": "3273 - Cement and Concrete Product Manufacturing",
+    "parentLookupCode": "327"
+  },
+  {
+    "code": "3274",
+    "defaultValue": "3274 - Lime and Gypsum Product Manufacturing",
+    "parentLookupCode": "327"
+  },
+  {
+    "code": "3279",
+    "defaultValue": "3279 - Other Nonmetallic Mineral Product Manufacturing",
+    "parentLookupCode": "327"
+  },
+  {
+    "code": "3311",
+    "defaultValue": "3311 - Iron and Steel Mills and Ferroalloy Manufacturing",
+    "parentLookupCode": "331"
+  },
+  {
+    "code": "3312",
+    "defaultValue": "3312 - Steel Product Manufacturing from Purchased Steel",
+    "parentLookupCode": "331"
+  },
+  {
+    "code": "3313",
+    "defaultValue": "3313 - Alumina and Aluminum Production and Processing",
+    "parentLookupCode": "331"
+  },
+  {
+    "code": "3314",
+    "defaultValue": "3314 - Nonferrous Metal (except Aluminum) Production and Processing",
+    "parentLookupCode": "331"
+  },
+  {
+    "code": "3315",
+    "defaultValue": "3315 - Foundries",
+    "parentLookupCode": "331"
+  },
+  {
+    "code": "3321",
+    "defaultValue": "3321 - Forging and Stamping",
+    "parentLookupCode": "332"
+  },
+  {
+    "code": "3322",
+    "defaultValue": "3322 - Cutlery and Handtool Manufacturing",
+    "parentLookupCode": "332"
+  },
+  {
+    "code": "3323",
+    "defaultValue": "3323 - Architectural and Structural Metals Manufacturing",
+    "parentLookupCode": "332"
+  },
+  {
+    "code": "3324",
+    "defaultValue": "3324 - Boiler, Tank, and Shipping Container Manufacturing",
+    "parentLookupCode": "332"
+  },
+  {
+    "code": "3325",
+    "defaultValue": "3325 - Hardware Manufacturing",
+    "parentLookupCode": "332"
+  },
+  {
+    "code": "3326",
+    "defaultValue": "3326 - Spring and Wire Product Manufacturing",
+    "parentLookupCode": "332"
+  },
+  {
+    "code": "3327",
+    "defaultValue": "3327 - Machine Shops; Turned Product; and Screw, Nut, and Bolt Manufacturing",
+    "parentLookupCode": "332"
+  },
+  {
+    "code": "3328",
+    "defaultValue": "3328 - Coating, Engraving, Heat Treating, and Allied Activities",
+    "parentLookupCode": "332"
+  },
+  {
+    "code": "3329",
+    "defaultValue": "3329 - Other Fabricated Metal Product Manufacturing",
+    "parentLookupCode": "332"
+  },
+  {
+    "code": "3331",
+    "defaultValue": "3331 - Agriculture, Construction, and Mining Machinery Manufacturing",
+    "parentLookupCode": "333"
+  },
+  {
+    "code": "3332",
+    "defaultValue": "3332 - Industrial Machinery Manufacturing",
+    "parentLookupCode": "333"
+  },
+  {
+    "code": "3333",
+    "defaultValue": "3333 - Commercial and Service Industry Machinery Manufacturing",
+    "parentLookupCode": "333"
+  },
+  {
+    "code": "3334",
+    "defaultValue": "3334 - Ventilation, Heating, Air-Conditioning, and Commercial Refrigeration Equipment Manufacturing",
+    "parentLookupCode": "333"
+  },
+  {
+    "code": "3335",
+    "defaultValue": "3335 - Metalworking Machinery Manufacturing",
+    "parentLookupCode": "333"
+  },
+  {
+    "code": "3336",
+    "defaultValue": "3336 - Engine, Turbine, and Power Transmission Equipment Manufacturing",
+    "parentLookupCode": "333"
+  },
+  {
+    "code": "3339",
+    "defaultValue": "3339 - Other General Purpose Machinery Manufacturing",
+    "parentLookupCode": "333"
+  },
+  {
+    "code": "3341",
+    "defaultValue": "3341 - Computer and Peripheral Equipment Manufacturing",
+    "parentLookupCode": "334"
+  },
+  {
+    "code": "3342",
+    "defaultValue": "3342 - Communications Equipment Manufacturing",
+    "parentLookupCode": "334"
+  },
+  {
+    "code": "3343",
+    "defaultValue": "3343 - Audio and Video Equipment Manufacturing",
+    "parentLookupCode": "334"
+  },
+  {
+    "code": "3344",
+    "defaultValue": "3344 - Semiconductor and Other Electronic Component Manufacturing",
+    "parentLookupCode": "334"
+  },
+  {
+    "code": "3345",
+    "defaultValue": "3345 - Navigational, Measuring, Electromedical, and Control Instruments Manufacturing",
+    "parentLookupCode": "334"
+  },
+  {
+    "code": "3346",
+    "defaultValue": "3346 - Manufacturing and Reproducing Magnetic and Optical Media",
+    "parentLookupCode": "334"
+  },
+  {
+    "code": "3351",
+    "defaultValue": "3351 - Electric Lighting Equipment Manufacturing",
+    "parentLookupCode": "335"
+  },
+  {
+    "code": "3352",
+    "defaultValue": "3352 - Household Appliance Manufacturing",
+    "parentLookupCode": "335"
+  },
+  {
+    "code": "3353",
+    "defaultValue": "3353 - Electrical Equipment Manufacturing",
+    "parentLookupCode": "335"
+  },
+  {
+    "code": "3359",
+    "defaultValue": "3359 - Other Electrical Equipment and Component Manufacturing",
+    "parentLookupCode": "335"
+  },
+  {
+    "code": "3361",
+    "defaultValue": "3361 - Motor Vehicle Manufacturing",
+    "parentLookupCode": "336"
+  },
+  {
+    "code": "3362",
+    "defaultValue": "3362 - Motor Vehicle Body and Trailer Manufacturing",
+    "parentLookupCode": "336"
+  },
+  {
+    "code": "3363",
+    "defaultValue": "3363 - Motor Vehicle Parts Manufacturing",
+    "parentLookupCode": "336"
+  },
+  {
+    "code": "3364",
+    "defaultValue": "3364 - Aerospace Product and Parts Manufacturing",
+    "parentLookupCode": "336"
+  },
+  {
+    "code": "3365",
+    "defaultValue": "3365 - Railroad Rolling Stock Manufacturing",
+    "parentLookupCode": "336"
+  },
+  {
+    "code": "3366",
+    "defaultValue": "3366 - Ship and Boat Building",
+    "parentLookupCode": "336"
+  },
+  {
+    "code": "3369",
+    "defaultValue": "3369 - Other Transportation Equipment Manufacturing",
+    "parentLookupCode": "336"
+  },
+  {
+    "code": "3371",
+    "defaultValue": "3371 - Household and Institutional Furniture and Kitchen Cabinet Manufacturing",
+    "parentLookupCode": "337"
+  },
+  {
+    "code": "3372",
+    "defaultValue": "3372 - Office Furniture (including Fixtures) Manufacturing",
+    "parentLookupCode": "337"
+  },
+  {
+    "code": "3379",
+    "defaultValue": "3379 - Other Furniture Related Product Manufacturing",
+    "parentLookupCode": "337"
+  },
+  {
+    "code": "3391",
+    "defaultValue": "3391 - Medical Equipment and Supplies Manufacturing",
+    "parentLookupCode": "339"
+  },
+  {
+    "code": "3399",
+    "defaultValue": "3399 - Other Miscellaneous Manufacturing",
+    "parentLookupCode": "339"
+  },
+  {
+    "code": "4231",
+    "defaultValue": "4231 - Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers ",
+    "parentLookupCode": "423"
+  },
+  {
+    "code": "4232",
+    "defaultValue": "4232 - Furniture and Home Furnishing Merchant Wholesalers ",
+    "parentLookupCode": "423"
+  },
+  {
+    "code": "4233",
+    "defaultValue": "4233 - Lumber and Other Construction Materials Merchant Wholesalers ",
+    "parentLookupCode": "423"
+  },
+  {
+    "code": "4234",
+    "defaultValue": "4234 - Professional and Commercial Equipment and Supplies Merchant Wholesalers ",
+    "parentLookupCode": "423"
+  },
+  {
+    "code": "4235",
+    "defaultValue": "4235 - Metal and Mineral (except Petroleum) Merchant Wholesalers ",
+    "parentLookupCode": "423"
+  },
+  {
+    "code": "4236",
+    "defaultValue": "4236 - Household Appliances and Electrical and Electronic Goods Merchant Wholesalers ",
+    "parentLookupCode": "423"
+  },
+  {
+    "code": "4237",
+    "defaultValue": "4237 - Hardware, and Plumbing and Heating Equipment and Supplies Merchant Wholesalers ",
+    "parentLookupCode": "423"
+  },
+  {
+    "code": "4238",
+    "defaultValue": "4238 - Machinery, Equipment, and Supplies Merchant Wholesalers ",
+    "parentLookupCode": "423"
+  },
+  {
+    "code": "4239",
+    "defaultValue": "4239 - Miscellaneous Durable Goods Merchant Wholesalers ",
+    "parentLookupCode": "423"
+  },
+  {
+    "code": "4241",
+    "defaultValue": "4241 - Paper and Paper Product Merchant Wholesalers ",
+    "parentLookupCode": "424"
+  },
+  {
+    "code": "4242",
+    "defaultValue": "4242 - Drugs and Druggists' Sundries Merchant Wholesalers ",
+    "parentLookupCode": "424"
+  },
+  {
+    "code": "4243",
+    "defaultValue": "4243 - Apparel, Piece Goods, and Notions Merchant Wholesalers ",
+    "parentLookupCode": "424"
+  },
+  {
+    "code": "4244",
+    "defaultValue": "4244 - Grocery and Related Product Merchant Wholesalers ",
+    "parentLookupCode": "424"
+  },
+  {
+    "code": "4245",
+    "defaultValue": "4245 - Farm Product Raw Material Merchant Wholesalers ",
+    "parentLookupCode": "424"
+  },
+  {
+    "code": "4246",
+    "defaultValue": "4246 - Chemical and Allied Products Merchant Wholesalers ",
+    "parentLookupCode": "424"
+  },
+  {
+    "code": "4247",
+    "defaultValue": "4247 - Petroleum and Petroleum Products Merchant Wholesalers ",
+    "parentLookupCode": "424"
+  },
+  {
+    "code": "4248",
+    "defaultValue": "4248 - Beer, Wine, and Distilled Alcoholic Beverage Merchant Wholesalers ",
+    "parentLookupCode": "424"
+  },
+  {
+    "code": "4249",
+    "defaultValue": "4249 - Miscellaneous Nondurable Goods Merchant Wholesalers ",
+    "parentLookupCode": "424"
+  },
+  {
+    "code": "4251",
+    "defaultValue": "4251 - Wholesale Electronic Markets and Agents and Brokers ",
+    "parentLookupCode": "425"
+  },
+  {
+    "code": "4411",
+    "defaultValue": "4411 - Automobile Dealers ",
+    "parentLookupCode": "441"
+  },
+  {
+    "code": "4412",
+    "defaultValue": "4412 - Other Motor Vehicle Dealers ",
+    "parentLookupCode": "441"
+  },
+  {
+    "code": "4413",
+    "defaultValue": "4413 - Automotive Parts, Accessories, and Tire Stores ",
+    "parentLookupCode": "441"
+  },
+  {
+    "code": "4421",
+    "defaultValue": "4421 - Furniture Stores ",
+    "parentLookupCode": "442"
+  },
+  {
+    "code": "4422",
+    "defaultValue": "4422 - Home Furnishings Stores ",
+    "parentLookupCode": "442"
+  },
+  {
+    "code": "4431",
+    "defaultValue": "4431 - Electronics and Appliance Stores ",
+    "parentLookupCode": "443"
+  },
+  {
+    "code": "4441",
+    "defaultValue": "4441 - Building Material and Supplies Dealers ",
+    "parentLookupCode": "444"
+  },
+  {
+    "code": "4442",
+    "defaultValue": "4442 - Lawn and Garden Equipment and Supplies Stores",
+    "parentLookupCode": "444"
+  },
+  {
+    "code": "4451",
+    "defaultValue": "4451 - Grocery Stores ",
+    "parentLookupCode": "445"
+  },
+  {
+    "code": "4452",
+    "defaultValue": "4452 - Specialty Food Stores ",
+    "parentLookupCode": "445"
+  },
+  {
+    "code": "4453",
+    "defaultValue": "4453 - Beer, Wine, and Liquor Stores ",
+    "parentLookupCode": "445"
+  },
+  {
+    "code": "4461",
+    "defaultValue": "4461 - Health and Personal Care Stores",
+    "parentLookupCode": "446"
+  },
+  {
+    "code": "4471",
+    "defaultValue": "4471 - Gasoline Stations ",
+    "parentLookupCode": "447"
+  },
+  {
+    "code": "4481",
+    "defaultValue": "4481 - Clothing Stores",
+    "parentLookupCode": "448"
+  },
+  {
+    "code": "4482",
+    "defaultValue": "4482 - Shoe Stores ",
+    "parentLookupCode": "448"
+  },
+  {
+    "code": "4483",
+    "defaultValue": "4483 - Jewelry, Luggage, and Leather Goods Stores ",
+    "parentLookupCode": "448"
+  },
+  {
+    "code": "4511",
+    "defaultValue": "4511 - Sporting Goods, Hobby, and Musical Instrument Stores ",
+    "parentLookupCode": "451"
+  },
+  {
+    "code": "4512",
+    "defaultValue": "4512 - Book Stores and News Dealers ",
+    "parentLookupCode": "451"
+  },
+  {
+    "code": "4521",
+    "defaultValue": "4521 - Department Stores",
+    "parentLookupCode": "452"
+  },
+  {
+    "code": "4529",
+    "defaultValue": "4529 - Other General Merchandise Stores ",
+    "parentLookupCode": "452"
+  },
+  {
+    "code": "4531",
+    "defaultValue": "4531 - Florists ",
+    "parentLookupCode": "453"
+  },
+  {
+    "code": "4532",
+    "defaultValue": "4532 - Office Supplies, Stationery, and Gift Stores ",
+    "parentLookupCode": "453"
+  },
+  {
+    "code": "4533",
+    "defaultValue": "4533 - Used Merchandise Stores ",
+    "parentLookupCode": "453"
+  },
+  {
+    "code": "4539",
+    "defaultValue": "4539 - Other Miscellaneous Store Retailers",
+    "parentLookupCode": "453"
+  },
+  {
+    "code": "4541",
+    "defaultValue": "4541 - Electronic Shopping and Mail-Order Houses ",
+    "parentLookupCode": "454"
+  },
+  {
+    "code": "4542",
+    "defaultValue": "4542 - Vending Machine Operators ",
+    "parentLookupCode": "454"
+  },
+  {
+    "code": "4543",
+    "defaultValue": "4543 - Direct Selling Establishments ",
+    "parentLookupCode": "454"
+  },
+  {
+    "code": "4811",
+    "defaultValue": "4811 - Scheduled Air Transportation",
+    "parentLookupCode": "481"
+  },
+  {
+    "code": "4812",
+    "defaultValue": "4812 - Nonscheduled Air Transportation",
+    "parentLookupCode": "481"
+  },
+  {
+    "code": "4821",
+    "defaultValue": "4821 - Rail Transportation",
+    "parentLookupCode": "482"
+  },
+  {
+    "code": "4831",
+    "defaultValue": "4831 - Deep Sea, Coastal, and Great Lakes Water Transportation",
+    "parentLookupCode": "483"
+  },
+  {
+    "code": "4832",
+    "defaultValue": "4832 - Inland Water Transportation",
+    "parentLookupCode": "483"
+  },
+  {
+    "code": "4841",
+    "defaultValue": "4841 - General Freight Trucking",
+    "parentLookupCode": "484"
+  },
+  {
+    "code": "4842",
+    "defaultValue": "4842 - Specialized Freight Trucking",
+    "parentLookupCode": "484"
+  },
+  {
+    "code": "4851",
+    "defaultValue": "4851 - Urban Transit Systems",
+    "parentLookupCode": "485"
+  },
+  {
+    "code": "4852",
+    "defaultValue": "4852 - Interurban and Rural Bus Transportation",
+    "parentLookupCode": "485"
+  },
+  {
+    "code": "4853",
+    "defaultValue": "4853 - Taxi and Limousine Service",
+    "parentLookupCode": "485"
+  },
+  {
+    "code": "4854",
+    "defaultValue": "4854 - School and Employee Bus Transportation",
+    "parentLookupCode": "485"
+  },
+  {
+    "code": "4855",
+    "defaultValue": "4855 - Charter Bus Industry",
+    "parentLookupCode": "485"
+  },
+  {
+    "code": "4859",
+    "defaultValue": "4859 - Other Transit and Ground Passenger Transportation",
+    "parentLookupCode": "485"
+  },
+  {
+    "code": "4861",
+    "defaultValue": "4861 - Pipeline Transportation of Crude Oil",
+    "parentLookupCode": "486"
+  },
+  {
+    "code": "4862",
+    "defaultValue": "4862 - Pipeline Transportation of Natural Gas",
+    "parentLookupCode": "486"
+  },
+  {
+    "code": "4869",
+    "defaultValue": "4869 - Other Pipeline Transportation",
+    "parentLookupCode": "486"
+  },
+  {
+    "code": "4871",
+    "defaultValue": "4871 - Scenic and Sightseeing Transportation, Land",
+    "parentLookupCode": "487"
+  },
+  {
+    "code": "4872",
+    "defaultValue": "4872 - Scenic and Sightseeing Transportation, Water",
+    "parentLookupCode": "487"
+  },
+  {
+    "code": "4879",
+    "defaultValue": "4879 - Scenic and Sightseeing Transportation, Other",
+    "parentLookupCode": "487"
+  },
+  {
+    "code": "4881",
+    "defaultValue": "4881 - Airport Operations",
+    "parentLookupCode": "488"
+  },
+  {
+    "code": "4882",
+    "defaultValue": "4882- Support Activities for Rail Transportation",
+    "parentLookupCode": "488"
+  },
+  {
+    "code": "4883",
+    "defaultValue": "4883 - Support Activities for Water Transportation",
+    "parentLookupCode": "488"
+  },
+  {
+    "code": "4884",
+    "defaultValue": "4884 - Support Activities for Road Transportation",
+    "parentLookupCode": "488"
+  },
+  {
+    "code": "4885",
+    "defaultValue": "4885 - Freight Transportation Arrangement",
+    "parentLookupCode": "488"
+  },
+  {
+    "code": "4889",
+    "defaultValue": "4889 - Other Support Activities for Transportation",
+    "parentLookupCode": "488"
+  },
+  {
+    "code": "4911",
+    "defaultValue": "4911 - Postal Service",
+    "parentLookupCode": "491"
+  },
+  {
+    "code": "4921",
+    "defaultValue": "4921 - Couriers and Express Delivery Services",
+    "parentLookupCode": "492"
+  },
+  {
+    "code": "4922",
+    "defaultValue": "4922 - Local Messengers and Local Delivery",
+    "parentLookupCode": "492"
+  },
+  {
+    "code": "4931",
+    "defaultValue": "4931 - Warehousing and Storage",
+    "parentLookupCode": "493"
+  },
+  {
+    "code": "5111",
+    "defaultValue": "5111 - Newspaper, Periodical, Book, and Directory Publishers",
+    "parentLookupCode": "511"
+  },
+  {
+    "code": "5112",
+    "defaultValue": "5112 - Software Publishers",
+    "parentLookupCode": "511"
+  },
+  {
+    "code": "5121",
+    "defaultValue": "5121 - Motion Picture and Video Industries",
+    "parentLookupCode": "512"
+  },
+  {
+    "code": "5122",
+    "defaultValue": "5122 - Sound Recording Industries",
+    "parentLookupCode": "512"
+  },
+  {
+    "code": "5151",
+    "defaultValue": "5151 - Radio and Television Broadcasting",
+    "parentLookupCode": "515"
+  },
+  {
+    "code": "5152",
+    "defaultValue": "5152 - Cable and Other Subscription Programming",
+    "parentLookupCode": "515"
+  },
+  {
+    "code": "5171",
+    "defaultValue": "5171 - Wired Telecommunications Carriers",
+    "parentLookupCode": "517"
+  },
+  {
+    "code": "5172",
+    "defaultValue": "5172 - Wireless Telecommunications Carriers (except Satellite)",
+    "parentLookupCode": "517"
+  },
+  {
+    "code": "5174",
+    "defaultValue": "5174 - Satellite Telecommunications",
+    "parentLookupCode": "517"
+  },
+  {
+    "code": "5179",
+    "defaultValue": "5179 - Other Telecommunications",
+    "parentLookupCode": "517"
+  },
+  {
+    "code": "5182",
+    "defaultValue": "5182 - Data Processing, Hosting, and Related Services",
+    "parentLookupCode": "518"
+  },
+  {
+    "code": "5191",
+    "defaultValue": "5191 - Other Information Services",
+    "parentLookupCode": "519"
+  },
+  {
+    "code": "5211",
+    "defaultValue": "5211 - Monetary Authorities-Central Bank",
+    "parentLookupCode": "521"
+  },
+  {
+    "code": "5221",
+    "defaultValue": "5221 - Depository Credit Intermediation ",
+    "parentLookupCode": "522"
+  },
+  {
+    "code": "5222",
+    "defaultValue": "5222 - Nondepository Credit Intermediation ",
+    "parentLookupCode": "522"
+  },
+  {
+    "code": "5223",
+    "defaultValue": "5223 - Activities Related to Credit Intermediation ",
+    "parentLookupCode": "522"
+  },
+  {
+    "code": "5231",
+    "defaultValue": "5231 - Securities and Commodity Contracts Intermediation and Brokerage",
+    "parentLookupCode": "523"
+  },
+  {
+    "code": "5232",
+    "defaultValue": "5232 - Securities and Commodity Exchanges",
+    "parentLookupCode": "523"
+  },
+  {
+    "code": "5239",
+    "defaultValue": "5239 - Other Financial Investment Activities",
+    "parentLookupCode": "523"
+  },
+  {
+    "code": "5241",
+    "defaultValue": "5241 - Insurance Carriers",
+    "parentLookupCode": "524"
+  },
+  {
+    "code": "5242",
+    "defaultValue": "5242 - Agencies, Brokerages, and Other Insurance Related Activities",
+    "parentLookupCode": "524"
+  },
+  {
+    "code": "5251",
+    "defaultValue": "5251 - Insurance and Employee Benefit Funds ",
+    "parentLookupCode": "525"
+  },
+  {
+    "code": "5259",
+    "defaultValue": "5259 - Other Investment Pools and Funds",
+    "parentLookupCode": "525"
+  },
+  {
+    "code": "5311",
+    "defaultValue": "5311 - Lessors of Real Estate",
+    "parentLookupCode": "531"
+  },
+  {
+    "code": "5312",
+    "defaultValue": "5312 - Offices of Real Estate Agents and Brokers",
+    "parentLookupCode": "531"
+  },
+  {
+    "code": "5313",
+    "defaultValue": "5313 - Activities Related to Real Estate",
+    "parentLookupCode": "531"
+  },
+  {
+    "code": "5321",
+    "defaultValue": "5321 - Automotive Equipment Rental and Leasing",
+    "parentLookupCode": "532"
+  },
+  {
+    "code": "5322",
+    "defaultValue": "5322 - Consumer Goods Rental",
+    "parentLookupCode": "532"
+  },
+  {
+    "code": "5323",
+    "defaultValue": "5323 - General Rental Centers",
+    "parentLookupCode": "532"
+  },
+  {
+    "code": "5324",
+    "defaultValue": "5324 - Commercial and Industrial Machinery and Equipment Rental and Leasing",
+    "parentLookupCode": "532"
+  },
+  {
+    "code": "5331",
+    "defaultValue": "5331 - Lessors of Nonfinancial Intangible Assets (except Copyrighted Works)",
+    "parentLookupCode": "532"
+  },
+  {
+    "code": "5411",
+    "defaultValue": "5411 - Legal Services",
+    "parentLookupCode": "541"
+  },
+  {
+    "code": "5412",
+    "defaultValue": "5412 - Accounting, Tax Preparation, Bookkeeping, and Payroll Services",
+    "parentLookupCode": "541"
+  },
+  {
+    "code": "5413",
+    "defaultValue": "5413 - Architectural, Engineering, and Related Services",
+    "parentLookupCode": "541"
+  },
+  {
+    "code": "5414",
+    "defaultValue": "5414 - Specialized Design Services",
+    "parentLookupCode": "541"
+  },
+  {
+    "code": "5415",
+    "defaultValue": "5415 - Computer Systems Design and Related Services",
+    "parentLookupCode": "541"
+  },
+  {
+    "code": "5416",
+    "defaultValue": "5416 - Management, Scientific, and Technical Consulting Services",
+    "parentLookupCode": "541"
+  },
+  {
+    "code": "5417",
+    "defaultValue": "5417 - Scientific Research and Development Services",
+    "parentLookupCode": "541"
+  },
+  {
+    "code": "5418",
+    "defaultValue": "5418 - Advertising, Public Relations, and Related Services",
+    "parentLookupCode": "541"
+  },
+  {
+    "code": "5419",
+    "defaultValue": "5419 - Other Professional, Scientific, and Technical Services",
+    "parentLookupCode": "541"
+  },
+  {
+    "code": "5511",
+    "defaultValue": "5511 - Management of Companies and Enterprises",
+    "parentLookupCode": "551"
+  },
+  {
+    "code": "5611",
+    "defaultValue": "5611 - Office Administrative Services",
+    "parentLookupCode": "561"
+  },
+  {
+    "code": "5613",
+    "defaultValue": "5613 - Employment Services",
+    "parentLookupCode": "561"
+  },
+  {
+    "code": "5614",
+    "defaultValue": "5614 - Business Support Services",
+    "parentLookupCode": "561"
+  },
+  {
+    "code": "5615",
+    "defaultValue": "5615 - Travel Arrangement and Reservation Services",
+    "parentLookupCode": "561"
+  },
+  {
+    "code": "5616",
+    "defaultValue": "5616 - Investigation and Security Services",
+    "parentLookupCode": "561"
+  },
+  {
+    "code": "5617",
+    "defaultValue": "5617 - Services to Buildings and Dwellings",
+    "parentLookupCode": "561"
+  },
+  {
+    "code": "5619",
+    "defaultValue": "5619 - Other Support Services",
+    "parentLookupCode": "561"
+  },
+  {
+    "code": "5621",
+    "defaultValue": "5621 - Waste Collection ",
+    "parentLookupCode": "562"
+  },
+  {
+    "code": "5622",
+    "defaultValue": "5622 - Waste Treatment and Disposal ",
+    "parentLookupCode": "562"
+  },
+  {
+    "code": "5629",
+    "defaultValue": "5629 - Remediation and Other Waste Management Services ",
+    "parentLookupCode": "562"
+  },
+  {
+    "code": "6111",
+    "defaultValue": "6111 - Elementary and Secondary Schools",
+    "parentLookupCode": "611"
+  },
+  {
+    "code": "6112",
+    "defaultValue": "6112 - Junior Colleges",
+    "parentLookupCode": "611"
+  },
+  {
+    "code": "6113",
+    "defaultValue": "6113 - Colleges, Universities, and Professional Schools",
+    "parentLookupCode": "611"
+  },
+  {
+    "code": "6114",
+    "defaultValue": "6114 - Business Schools and Computer and Management Training",
+    "parentLookupCode": "611"
+  },
+  {
+    "code": "6115",
+    "defaultValue": "6115 - Technical and Trade Schools ",
+    "parentLookupCode": "611"
+  },
+  {
+    "code": "6116",
+    "defaultValue": "6116 - Other Schools and Instruction",
+    "parentLookupCode": "611"
+  },
+  {
+    "code": "6117",
+    "defaultValue": "6117 - Educational Support Services",
+    "parentLookupCode": "611"
+  },
+  {
+    "code": "7111",
+    "defaultValue": "7111 - Performing Arts Companies",
+    "parentLookupCode": "711"
+  },
+  {
+    "code": "7112",
+    "defaultValue": "7112 - Spectator Sports",
+    "parentLookupCode": "711"
+  },
+  {
+    "code": "7113",
+    "defaultValue": "7113 - Promoters of Performing Arts, Sports, and Similar Events",
+    "parentLookupCode": "711"
+  },
+  {
+    "code": "7114",
+    "defaultValue": "7114 - Agents and Managers for Artists, Athletes, Entertainers, and Other Public Figures",
+    "parentLookupCode": "711"
+  },
+  {
+    "code": "7115",
+    "defaultValue": "7115 - Independent Artists, Writers, and Performers",
+    "parentLookupCode": "711"
+  },
+  {
+    "code": "7121",
+    "defaultValue": "7121 - Museums, Historical Sites, and Similar Institutions",
+    "parentLookupCode": "712"
+  },
+  {
+    "code": "7131",
+    "defaultValue": "7131 - Amusement Parks and Arcades",
+    "parentLookupCode": "713"
+  },
+  {
+    "code": "7132",
+    "defaultValue": "7132 - Gambling Industries",
+    "parentLookupCode": "713"
+  },
+  {
+    "code": "7139",
+    "defaultValue": "7139 - Other Amusement and Recreation Industries",
+    "parentLookupCode": "713"
+  },
+  {
+    "code": "7211",
+    "defaultValue": "7211 - Traveler Accommodation",
+    "parentLookupCode": "721"
+  },
+  {
+    "code": "7212",
+    "defaultValue": "7212 - RV (Recreational Vehicle) Parks and Recreational Camps",
+    "parentLookupCode": "721"
+  },
+  {
+    "code": "7213",
+    "defaultValue": "7213 - Rooming and Boarding Houses",
+    "parentLookupCode": "721"
+  },
+  {
+    "code": "7223",
+    "defaultValue": "7223 - Special Food Services",
+    "parentLookupCode": "722"
+  },
+  {
+    "code": "7224",
+    "defaultValue": "7224 - Drinking Places (Alcoholic Beverages)",
+    "parentLookupCode": "722"
+  },
+  {
+    "code": "7225",
+    "defaultValue": "7225 - Restaurants and Other Eating Places",
+    "parentLookupCode": "722"
+  },
+  {
+    "code": "8111",
+    "defaultValue": "8111 - Automotive Repair and Maintenance",
+    "parentLookupCode": "811"
+  },
+  {
+    "code": "8112",
+    "defaultValue": "8112 - Electronic and Precision Equipment Repair and Maintenance",
+    "parentLookupCode": "811"
+  },
+  {
+    "code": "8113",
+    "defaultValue": "8113 - Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance",
+    "parentLookupCode": "811"
+  },
+  {
+    "code": "8114",
+    "defaultValue": "8114 - Personal and Household Goods Repair and Maintenance",
+    "parentLookupCode": "811"
+  },
+  {
+    "code": "8121",
+    "defaultValue": "8121 - Personal Care Services ",
+    "parentLookupCode": "812"
+  },
+  {
+    "code": "8122",
+    "defaultValue": "8122 - Death Care Services ",
+    "parentLookupCode": "812"
+  },
+  {
+    "code": "8123",
+    "defaultValue": "8123 - Drycleaning and Laundry Services ",
+    "parentLookupCode": "812"
+  },
+  {
+    "code": "8129",
+    "defaultValue": "8129 - Other Personal Services ",
+    "parentLookupCode": "812"
+  },
+  {
+    "code": "8131",
+    "defaultValue": "8131 - Religious Organizations ",
+    "parentLookupCode": "813"
+  },
+  {
+    "code": "8132",
+    "defaultValue": "8132 - Grantmaking and Giving Services ",
+    "parentLookupCode": "813"
+  },
+  {
+    "code": "8133",
+    "defaultValue": "8133 - Social Advocacy Organizations ",
+    "parentLookupCode": "813"
+  },
+  {
+    "code": "8134",
+    "defaultValue": "8134 - Civic and Social Organizations ",
+    "parentLookupCode": "813"
+  },
+  {
+    "code": "8139",
+    "defaultValue": "8139 - Business, Professional, Labor, Political, and Similar Organizations ",
+    "parentLookupCode": "813"
+  },
+  {
+    "code": "8141",
+    "defaultValue": "8141 - Private Households",
+    "parentLookupCode": "814"
+  },
+  {
+    "code": "9211",
+    "defaultValue": "9211 - Executive, Legislative, and Other General Government Support ",
+    "parentLookupCode": "921"
+  },
+  {
+    "code": "9221",
+    "defaultValue": "9221 - Justice, Public Order, and Safety Activities ",
+    "parentLookupCode": "922"
+  },
+  {
+    "code": "9231",
+    "defaultValue": "9231 - Administration of Human Resource Programs ",
+    "parentLookupCode": "923"
+  },
+  {
+    "code": "9241",
+    "defaultValue": "9241 - Administration of Environmental Quality Programs ",
+    "parentLookupCode": "924"
+  },
+  {
+    "code": "9251",
+    "defaultValue": "9251 - Administration of Housing Programs, Urban Planning, and Community Development ",
+    "parentLookupCode": "925"
+  },
+  {
+    "code": "9261",
+    "defaultValue": "9261 - Administration of Economic Programs ",
+    "parentLookupCode": "926"
+  },
+  {
+    "code": "9271",
+    "defaultValue": "9271 - Space Research and Technology ",
+    "parentLookupCode": "927"
+  },
+  {
+    "code": "9281",
+    "defaultValue": "9281 - National Security and International Affairs ",
+    "parentLookupCode": "928"
+  }
+]

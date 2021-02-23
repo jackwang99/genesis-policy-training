@@ -1,0 +1,77 @@
+{
+	"_key": {
+		"rootId": "b62cbe26-e99c-4c4b-a333-65998d51afb7",
+		"revisionNo": 1
+	},
+	"_modelName": "PersonalAuto",
+	"_modelVersion": 1,
+	"_type": "PersonalAutoPolicySummary",
+	"createdFromPolicyRev": 0,
+	"inceptionDate": "2018-05-14",
+	"parties": [],
+	"policyNumber": "Q0000001429",
+	"sendTo": "both",
+	"state": "dataGather",
+	"currencyCd": "USD",
+	"blob": {
+		"_type": "AutoBLOB",
+		"_key": {
+			"rootId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+			"revisionNo": 1,
+			"parentId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+			"id": "20163864-dcad-4e50-9fd0-e1bfe0000000"
+		},
+		"lobs": [
+			{
+				"_type": "AutoLOB",
+				"_key": {
+					"rootId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+					"revisionNo": 1,
+					"parentId": "20163864-dcad-4e50-9fd0-e1bfe0000000",
+					"id": "20163864-dcad-4e50-9fd0-e1bfe0000001"
+				},
+				"riskItems": [
+					{
+						"_key": {
+							"rootId": "b62cbe26-e99c-4c4b-a333-65998d51afb7",
+							"revisionNo": 1,
+							"parentId": "b62cbe26-e99c-4c4b-a333-65998d51afb7",
+							"id": "e0f5a216-934a-42aa-a1a4-86587eed0a45"
+						},
+						"_modelName": "PersonalAuto",
+						"_modelVersion": "1",
+						"_type": "AutoVehicle",
+						"included": false
+					},
+					{
+						"_key": {
+							"rootId": "b62cbe26-e99c-4c4b-a333-65998d51afb7",
+							"revisionNo": 1,
+							"parentId": "b62cbe26-e99c-4c4b-a333-65998d51afb7",
+							"id": "e0f5a216-934a-42aa-a1a4-86587eed0a45"
+						},
+						"_modelName": "PersonalAuto",
+						"_modelVersion": 1,
+						"_type": "AutoVehicle",
+						"included": true,
+						"coverages": [
+							{
+								"limitAmount": {
+									"amount": 5000,
+									"currency": "USD"
+								},
+								"_type": "AutoCOLLCoverage",
+								"code": "COLL",
+								"_key": {
+									"id": "9a9f3739-7401-45c8-bfb5-43e31935b64a",
+									"rootId": "b62cbe26-e99c-4c4b-a333-65998d51afb7",
+									"revisionNo": 1,
+									"parentId": "b62cbe26-e99c-4c4b-a333-65998d51afb7"
+								}
+							}
+						]
+					}				]
+			}
+		]
+	}
+}

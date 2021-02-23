@@ -1,0 +1,412 @@
+[
+  {
+    "code": "01",
+    "defaultValue": "01 - Production agricole - Cultures",
+    "parentLookupCode": "A"
+  },
+  {
+    "code": "02",
+    "parentLookupCode": "A",
+    "defaultValue": "02 - Production agricole - Bétail et spécialités animales"
+  },
+  {
+    "code": "07",
+    "parentLookupCode": "A",
+    "defaultValue": "07 - Services agricoles"
+  },
+  {
+    "code": "08",
+    "parentLookupCode": "A",
+    "defaultValue": "08 - Sylviculture"
+  },
+  {
+    "code": "09",
+    "parentLookupCode": "A",
+    "defaultValue": "09 - Pêche, chasse et piégeage"
+  },
+  {
+    "code": "10",
+    "parentLookupCode": "B",
+    "defaultValue": "10 - Extraction de métaux"
+  },
+  {
+    "code": "12",
+    "parentLookupCode": "B",
+    "defaultValue": "12 - Extraction de charbon"
+  },
+  {
+    "code": "13",
+    "defaultValue": "13 - Extraction de pétrole et de gaz",
+    "parentLookupCode": "B"
+  },
+  {
+    "code": "14",
+    "parentLookupCode": "B",
+    "defaultValue": "14 - Extraction minière et extraction de minéraux non métalliques, sauf les combustibles"
+  },
+  {
+    "code": "15",
+    "parentLookupCode": "C",
+    "defaultValue": "15 - Building Cnstrctn - Entrepreneurs généraux & constructeurs de machines"
+  },
+  {
+    "code": "16",
+    "parentLookupCode": "C",
+    "defaultValue": "16 - Heavy Cnstrctn, sauf construction de bâtiments - Entrepreneurs en construction"
+  },
+  {
+    "code": "17",
+    "parentLookupCode": "C",
+    "defaultValue": "17 - Construction - Entrepreneurs spécialisés"
+  },
+  {
+    "code": "20",
+    "parentLookupCode": "D",
+    "defaultValue": "20 - Aliments et produits apparentés"
+  },
+  {
+    "code": "21",
+    "parentLookupCode": "D",
+    "defaultValue": "21 - Produits du tabac"
+  },
+  {
+    "code": "22",
+    "defaultValue": "22 - Produits de l'industrie textile",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "23",
+    "parentLookupCode": "D",
+    "defaultValue": "23 - Vêtements, produits finis à partir de tissus et d'articles similaires"
+  },
+  {
+    "code": "24",
+    "parentLookupCode": "D",
+    "defaultValue": "24 - Bois d'oeuvre et produits du bois, sauf les meubles"
+  },
+  {
+    "code": "25",
+    "parentLookupCode": "D",
+    "defaultValue": "25 - Meubles et accessoires"
+  },
+  {
+    "code": "26",
+    "defaultValue": "26 - Papier et produits connexes",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "27",
+    "defaultValue": "27 - Imprimerie, édition et industries connexes",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "28",
+    "parentLookupCode": "D",
+    "defaultValue": "28 - Produits chimiques et produits connexes"
+  },
+  {
+    "code": "29",
+    "parentLookupCode": "D",
+    "defaultValue": "29 - Raffinage de pétrole et industries connexes"
+  },
+  {
+    "code": "30",
+    "parentLookupCode": "D",
+    "defaultValue": "30 - Caoutchouc et divers produits en plastique"
+  },
+  {
+    "code": "31",
+    "parentLookupCode": "D",
+    "defaultValue": "31 - Cuir et produits en cuir"
+  },
+  {
+    "code": "32",
+    "defaultValue": "32 - Produits en pierre, en argile, en verre et en béton",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "33",
+    "defaultValue": "33 - Industries de première transformation des métaux",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "34",
+    "parentLookupCode": "D",
+    "defaultValue": "34 - Prdcts en métal fabriqués, sauf machines et matériel de transport"
+  },
+  {
+    "code": "35",
+    "parentLookupCode": "D",
+    "defaultValue": "35 - Machines industrielles et commerciales et matériel informatique"
+  },
+  {
+    "code": "36",
+    "parentLookupCode": "D",
+    "defaultValue": "36 - Équipements et composants électroniques, électriques, sauf les ordinateurs"
+  },
+  {
+    "code": "37",
+    "parentLookupCode": "D",
+    "defaultValue": "37 - Équipement de transport"
+  },
+  {
+    "code": "38",
+    "defaultValue": "38 - Mesr / Anlyz / Cntrl Instrmnts; Photo / Med / Opt Gds; Montres / horloges",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "39",
+    "defaultValue": "39 - Industries de fabrication diverses",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "40",
+    "defaultValue": "40 - Transport ferroviaire",
+    "parentLookupCode": "E"
+  },
+  {
+    "code": "41",
+    "defaultValue": "41 - Transport local, suburbain et interurbain Hgwy",
+    "parentLookupCode": "E"
+  },
+  {
+    "code": "42",
+    "defaultValue": "42 - Transport de marchandises par route",
+    "parentLookupCode": "E"
+  },
+  {
+    "code": "43",
+    "defaultValue": "43 - United States Postal Service",
+    "parentLookupCode": "E"
+  },
+  {
+    "code": "44",
+    "parentLookupCode": "E",
+    "defaultValue": "44 - Transport de l'eau"
+  },
+  {
+    "code": "45",
+    "parentLookupCode": "E",
+    "defaultValue": "45 - Transport aérien"
+  },
+  {
+    "code": "46",
+    "defaultValue": "46 - Pipelines, sauf le gaz naturel",
+    "parentLookupCode": "E"
+  },
+  {
+    "code": "47",
+    "defaultValue": "47 - Services de transport",
+    "parentLookupCode": "E"
+  },
+  {
+    "code": "48",
+    "parentLookupCode": "E",
+    "defaultValue": "48 - Communications"
+  },
+  {
+    "code": "49",
+    "defaultValue": "49 - Services électriques, gaziers et sanitaires",
+    "parentLookupCode": "E"
+  },
+  {
+    "code": "50",
+    "defaultValue": "50 - Commerce de gros - biens durables",
+    "parentLookupCode": "F"
+  },
+  {
+    "code": "51",
+    "defaultValue": "51 - Commerce de gros - biens non durables",
+    "parentLookupCode": "F"
+  },
+  {
+    "code": "52",
+    "parentLookupCode": "G",
+    "defaultValue": "52 - Marchands de matériaux de construction, quincailleries, fournitures de jardin et maisons mobiles"
+  },
+  {
+    "code": "53",
+    "parentLookupCode": "G",
+    "defaultValue": "53 - Magasins de marchandises diverses"
+  },
+  {
+    "code": "54",
+    "parentLookupCode": "G",
+    "defaultValue": "54 - Magasins d'alimentation"
+  },
+  {
+    "code": "55",
+    "parentLookupCode": "G",
+    "defaultValue": "55 - Concessionnaires automobiles et stations-service"
+  },
+  {
+    "code": "56",
+    "parentLookupCode": "G",
+    "defaultValue": "56 - Magasins de vêtements et d'accessoires"
+  },
+  {
+    "code": "57",
+    "defaultValue": "57 - Magasins de meubles, d'accessoires d'ameublement et de matériel d'ameublement",
+    "parentLookupCode": "G"
+  },
+  {
+    "code": "58",
+    "defaultValue": "58 - Manger et boire",
+    "parentLookupCode": "G"
+  },
+  {
+    "code": "59",
+    "defaultValue": "59 - Commerce de détail divers",
+    "parentLookupCode": "G"
+  },
+  {
+    "code": "60",
+    "parentLookupCode": "H",
+    "defaultValue": "60 - Institutions de dépôt"
+  },
+  {
+    "code": "61",
+    "parentLookupCode": "H",
+    "defaultValue": "61 - Institutions de crédit non déclarées"
+  },
+  {
+    "code": "62",
+    "parentLookupCode": "H",
+    "defaultValue": "62 - Courtiers en sécurité et biens, concessionnaires, bourses et services"
+  },
+  {
+    "code": "63",
+    "parentLookupCode": "H",
+    "defaultValue": "63 - Sociétés d'assurance"
+  },
+  {
+    "code": "64",
+    "parentLookupCode": "H",
+    "defaultValue": "64 - Agents, courtiers et agents d'assurance"
+  },
+  {
+    "code": "65",
+    "parentLookupCode": "H",
+    "defaultValue": "65 - Immobilier"
+  },
+  {
+    "code": "67",
+    "defaultValue": "67 - Holding et autres bureaux de placement",
+    "parentLookupCode": "H"
+  },
+  {
+    "code": "70",
+    "parentLookupCode": "I",
+    "defaultValue": "70 - Hôtels, maisons de chambres, camps et autres lieux d'hébergement"
+  },
+  {
+    "code": "72",
+    "parentLookupCode": "I",
+    "defaultValue": "72 - Services personnels"
+  },
+  {
+    "code": "73",
+    "defaultValue": "73 - Services aux entreprises",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "75",
+    "parentLookupCode": "I",
+    "defaultValue": "75 - Réparation automobile, services et stationnement"
+  },
+  {
+    "code": "76",
+    "defaultValue": "76 - Services de réparation divers",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "78",
+    "parentLookupCode": "I",
+    "defaultValue": "78 - Films"
+  },
+  {
+    "code": "79",
+    "defaultValue": "79 - Services de divertissement et de loisirs",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "80",
+    "defaultValue": "80 - Services de santé",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "81",
+    "defaultValue": "81 - Services juridiques",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "82",
+    "defaultValue": "82 - Services éducatifs",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "83",
+    "defaultValue": "83 - Services sociaux",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "84",
+    "defaultValue": "84 - Musées, galeries d'art et jardins botaniques et zoologiques",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "86",
+    "parentLookupCode": "I",
+    "defaultValue": "86 - Organisations de membres"
+  },
+  {
+    "code": "87",
+    "defaultValue": "87 - Ingénierie, comptabilité, recherche, gestion et services connexes",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "89",
+    "defaultValue": "89 - Services, non classés ailleurs",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "91",
+    "parentLookupCode": "J",
+    "defaultValue": "91 - Exécutif, législatif et gouvernement général, sauf les finances"
+  },
+  {
+    "code": "92",
+    "defaultValue": "92 - Justice, ordre public et sécurité",
+    "parentLookupCode": "J"
+  },
+  {
+    "code": "93",
+    "parentLookupCode": "J",
+    "defaultValue": "93 - Finances publiques, fiscalité et politique monétaire"
+  },
+  {
+    "code": "94",
+    "parentLookupCode": "J",
+    "defaultValue": "94 - Administration des programmes de ressources humaines"
+  },
+  {
+    "code": "95",
+    "parentLookupCode": "J",
+    "defaultValue": "95 - Administration des programmes de qualité de l'environnement et de logement"
+  },
+  {
+    "code": "96",
+    "parentLookupCode": "J",
+    "defaultValue": "96 - Administration des programmes économiques"
+  },
+  {
+    "code": "97",
+    "parentLookupCode": "J",
+    "defaultValue": "97 - Sécurité nationale et affaires internationales"
+  },
+  {
+    "code": "99", 
+    "defaultValue": "99 - Établissements non classifiables",
+    "parentLookupCode": "J"
+  }
+]

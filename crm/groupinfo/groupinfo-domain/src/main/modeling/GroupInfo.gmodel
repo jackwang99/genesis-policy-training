@@ -1,0 +1,7 @@
+Model GroupInfo
+Root GenesisGroupInfo
+
+ModelType GroupInfo
+
+Stored using [ModelName]
+Indexed using ['groupinfo']

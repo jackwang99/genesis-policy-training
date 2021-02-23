@@ -1,0 +1,14 @@
+[
+  {
+    "code": "agency",
+    "defaultValue": "Agence"
+  },
+  {
+    "code": "both",
+    "defaultValue": "Tous les deux"
+  },
+  {
+    "code": "insured",
+    "defaultValue": "Assuré"
+  }
+]

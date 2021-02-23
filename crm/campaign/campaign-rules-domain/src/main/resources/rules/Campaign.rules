@@ -1,0 +1,9 @@
+Namespace Campaign
+
+Include Base
+
+Rule "CampaignDivertToIsMandatoryWhenDivertCampaignNotificationIsTrue" On Campaign.divertTo {
+  When divertCampaignNotification = true
+  Assert divertTo != null
+  Error "CampaignDivertToIsMandatoryWhenDivertCampaignNotificationIsTrue": "divertTo is mandatory when divertCampaignNotification = True"
+}

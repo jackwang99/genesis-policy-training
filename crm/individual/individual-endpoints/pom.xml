@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <artifactId>individual-endpoints</artifactId>
+    <packaging>jar</packaging>
+    
+    <parent>
+        <artifactId>individual-pom</artifactId>
+        <groupId>com.eisgroup.genesis.proto.individual</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+        
+    <dependencies>
+        <dependency>
+            <groupId>com.eisgroup.genesis.crm</groupId>
+            <artifactId>crm-ms-bundle</artifactId>
+            <classifier>facade</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.individual</groupId>
+            <artifactId>individual-domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.individual</groupId>
+            <artifactId>individual-lifecycle-model</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.utils</groupId>
+            <artifactId>testing-utils</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.model</groupId>
+            <artifactId>model-repository-binary-impl</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.relationships</groupId>
+            <artifactId>relationship-repository-impl</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.data</groupId>
+            <artifactId>column-store-testing</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.domain</groupId>
+            <artifactId>versioning-repository-impl</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.domain</groupId>
+            <artifactId>versioning-impl</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.customeraccount</groupId>
+            <artifactId>account-domain</artifactId>
+            <version>${project.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.customeraccount</groupId>
+            <artifactId>account-lifecycle-model</artifactId>
+            <version>${project.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+    
+</project>

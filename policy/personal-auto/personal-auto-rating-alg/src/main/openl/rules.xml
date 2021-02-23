@@ -1,0 +1,30 @@
+<project>
+  <name>Personal Auto algorithms</name>
+  <modules>
+    <module>
+      <name>datatypes</name>
+      <rules-root path="rules/datatypes.xlsx"/>
+    </module>
+    <module>
+      <name>datatypes-tfs</name>
+      <rules-root path="rules/datatypes-tfs.xlsx"/>
+    </module>
+    <module>
+      <name>AUTO-CW-06012017-06012017</name>
+      <rules-root path="rules/AUTO-CW-06012017-06012017.xlsx"/>
+    </module>
+    <module>
+      <name>AUTO-TFS-CW-01082018-01082018</name>
+      <rules-root path="rules/AUTO-TFS-CW-01082018-01082018.xlsx"/>
+    </module>
+    <module>
+      <name>tests</name>
+      <rules-root path="rules/tests.xlsx"/>
+    </module>
+  </modules>
+  <classpath>
+    <entry path="lib/*.jar"/>
+  </classpath>
+  <properties-file-name-pattern>.*-%state%-%effectiveDate:MMddyyyy%-%startRequestDate:MMddyyyy%</properties-file-name-pattern>
+  <properties-file-name-processor>org.openl.rules.project.resolving.CWPropertyFileNameProcessor</properties-file-name-processor>
+</project>

@@ -1,0 +1,16 @@
+{
+    "policyExpirationDate": "2028-02-02",
+    "carrierNameDescription": "carrierDesc",
+    "policyTypeCd": "AU",
+    "link": "string",
+    "policyNumber": "P0000006",
+    "productOwnedId": "string",
+    "carrierNameCd": "carrier1",
+    "_type": "GenesisCrmProductOwned",
+    "_key": {
+        "id": "f39283e9-d0b2-4569-8673-ce280fdd271d",
+        "rootId": "910fba51-b01d-4c20-a457-99c70fb738ab",
+        "revisionNo": 1,
+        "parentId": "910fba51-b01d-4c20-a457-99c70fb738ab"
+    }
+}

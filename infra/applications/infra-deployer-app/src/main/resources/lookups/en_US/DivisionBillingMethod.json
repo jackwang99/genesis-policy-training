@@ -1,0 +1,26 @@
+[
+  {
+    "code": "FIXED_TERM",
+    "defaultValue": "Fixed Term"
+  },
+  {
+    "code": "PERIODIC",
+    "defaultValue": "Periodic"
+  },
+  {
+    "code": "MONTHLY",
+    "defaultValue": "Monthly"
+  },
+  {
+    "code": "QUARTERLY",
+    "defaultValue": "Quarterly"
+  },
+  {
+    "code": "ANNUAL",
+    "defaultValue": "Annual"
+  },
+  {
+    "code": "SEMI_ANNUAL",
+    "defaultValue": "Semi-Annual"
+  }
+]

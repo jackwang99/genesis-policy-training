@@ -1,0 +1,62 @@
+[
+  {
+    "code": "self",
+    "defaultValue": "Self"
+  },
+  {
+    "code": "CHILD_DAUGHTER",
+    "defaultValue": "Child - Daughter"
+  },
+  {
+    "code": "CHILD_SON",
+    "defaultValue": "Child - Son"
+  },
+  {
+    "code": "COLLEAGUE",
+    "defaultValue": "Colleague"
+  },
+  {
+    "code": "FRIEND",
+    "defaultValue": "Friend"
+  },
+  {
+    "code": "SIBLING_BROTHER",
+    "defaultValue": "Sibling - Brother"
+  },
+  {
+    "code": "SIBLING_SISTER",
+    "defaultValue": "Sibling - Sister"
+  },
+  {
+    "code": "DOMESTIC_PARTNER",
+    "defaultValue": "Spouse - Domestic Partner"
+  },
+  {
+    "code": "SPOUSE_HUSBAND",
+    "defaultValue": "Spouse - Husband"
+  },
+  {
+    "code": "SPOUSE_WIFE",
+    "defaultValue": "Spouse - Wife"
+  },
+  {
+    "code": "PARENT_FATHER",
+    "defaultValue": "Parent - Father"
+  },
+  {
+    "code": "PARENT_MOTHER",
+    "defaultValue": "Parent - Mother"
+  },
+  {
+    "code": "RELATIVE",
+    "defaultValue": "Relative"
+  },
+  {
+    "code": "TRUST",
+    "defaultValue": "Trust"
+  },
+  {
+    "code": "OTHER",
+    "defaultValue": "Other"
+  }
+]

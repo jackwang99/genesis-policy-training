@@ -1,0 +1,53 @@
+{
+    "_key": {
+        "rootId": "14ebcc54-0c78-42a3-9cb9-93c5388d6aaf",
+        "revisionNo": 1
+    },
+    "_modelName": "Opportunity",
+    "_modelVersion": "1",
+    "_type": "GenesisOpportunity",
+    "actualPremium": 1,
+    "associations": [
+        {
+            "entityNumber": "C0000001184",
+            "link": {
+                "_uri": "geroot://Customer/INDIVIDUALCUSTOMER//88a84d42-5b38-4e30-99a0-5ad1087c7ace"
+            },
+            "_type": "GenesisEntityAssociation"
+        },
+        {
+            "entityNumber": "C0000001185",
+            "link": {
+                "_uri": "geroot://Customer/INDIVIDUALCUSTOMER//14ebcc54-0c78-42a3-9cb9-93c5388d6aaf"
+            },
+            "_type": "GenesisEntityAssociation"
+        },
+        {
+            "entityNumber": "P0000009876",
+            "link": {
+                "_uri": "geroot://PolicySummary/GHP/quote/de1271ab-ab26-4175-b5f0-47b0a8fbcefc"
+            },
+            "_type": "GenesisEntityAssociation"
+        }                
+    ],
+    "channel": "2706071",
+    "closeReason": "string",
+    "closeReasonDescription": "string",
+    "createdOn": "2018-03-17T00:00:00Z",
+    "description": "string",
+    "effectiveDate": "2018-03-27",
+    "likelihood": "string",
+    "opportunityId": "OP0000001010",
+    "owner": "1",
+    "potential": 1,
+    "products": [
+        {
+            "lineOfBusiness": "string",
+            "productCd": "GHP",
+            "_type": "GenesisOpportunityProductInfo"
+        }
+    ],
+    "referral": 0,
+    "state": "draft",
+    "updatedOn": "2018-03-17T00:00:00Z"
+}

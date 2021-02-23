@@ -1,0 +1,7 @@
+Model OrganizationalPerson
+Root Employee
+
+ModelType OrganizationalPerson
+
+Stored using ['orgstruct']
+Indexed using ['organizationalperson']

@@ -1,0 +1,41 @@
+[
+  {
+    "code": "00001",
+    "defaultValue": "Test Value 1 - nouveau",
+    "effectiveDate": "2016-08-10",
+    "expirationDate": "2017-08-09"
+  },
+  {
+    "code": "00001",
+    "defaultValue": "Valeur d'essai 1",
+    "effectiveDate": "2015-08-09",
+    "expirationDate": "2016-08-09"
+  },
+  {
+    "code": "00001",
+    "defaultValue": "Test Value 1 - le plus récent",
+    "effectiveDate": "2017-08-10"
+  },
+  {
+    "code": "00002",
+    "defaultValue": "Valeur d'essai 2 - plus récent",
+    "effectiveDate": "2017-08-10"
+  },
+  {
+    "code": "00002",
+    "defaultValue": "Valeur d'essai 2",
+    "expirationDate": "2016-08-09",
+    "effectiveDate": "2015-08-10"
+  },
+  {
+    "code": "00002",
+    "expirationDate": "2017-08-09",
+    "effectiveDate": "2016-08-10",
+    "defaultValue": "Test Value 2 - nouveau"
+  },
+  {
+    "code": "00003",
+    "effectiveDate": "2015-08-10",
+    "defaultValue": "Valeur d'essai 3"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "code": "OVN",
+    "defaultValue": "Overridden"
+  },
+  {
+    "code": "PAPR",
+    "defaultValue": "Pending Approval"
+  }
+]

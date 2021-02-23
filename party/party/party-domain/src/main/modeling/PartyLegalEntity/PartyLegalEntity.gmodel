@@ -1,0 +1,6 @@
+Model LegalEntity
+Root LegalEntityType
+ModelType Party
+
+Stored using [ModelType, ModelName]
+Indexed using [ModelName]

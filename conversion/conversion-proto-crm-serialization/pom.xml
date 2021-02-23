@@ -1,0 +1,122 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.eisgroup.genesis.proto</groupId>
+        <artifactId>conversion-proto-pom</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>conversion-proto-crm-serialization</artifactId>
+    <name>Conversion Prototypes CRM Serialization</name>
+    <description>Conversion Prototypes CRM Serialization Module</description>
+    <packaging>jar</packaging>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>${project.build.directory}/generated-resources</directory>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>com.eisgroup.genesis.tools</groupId>
+                <artifactId>fgenerator-maven-plugin</artifactId>
+                <version>${fgenerator.maven.plugin.version}</version>
+                <dependencies>
+
+                </dependencies>
+                <executions>
+                    <execution>
+                        <id>generate-bindings</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <includes>
+                                <include>XmlBindingsGenerator</include>
+                            </includes>
+                            <inputDirectory>${project.build.directory}/classes</inputDirectory>
+                            <outputDirectory>${project.build.directory}/generated-resources/jaxb-gen</outputDirectory>
+                            <generators>
+                                <generator>
+                                    <groupId>com.eisgroup.genesis.conversion</groupId>
+                                    <artifactId>conversion-dsl-fgenerator</artifactId>
+                                    <version>${genesis.core.version}</version>
+                                </generator>
+                            </generators>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+
+        <!-- Conversion Bundle -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.conversion</groupId>
+            <artifactId>conversion-bundle</artifactId>
+            <classifier>serialization</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <!-- Bindings will be generated for following domains -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.customeraccount</groupId>
+            <artifactId>account-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.individual</groupId>
+            <artifactId>individual-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.organization</groupId>
+            <artifactId>organization-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.groupinfo</groupId>
+            <artifactId>groupinfo-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.opportunity</groupId>
+            <artifactId>opportunity-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.majoraccount</groupId>
+            <artifactId>majoraccount-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.individual</groupId>
+            <artifactId>individual-agency-container-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.organization</groupId>
+            <artifactId>organization-agency-container-domain</artifactId>
+        </dependency>
+
+        <!-- Test Dependencies -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.utils</groupId>
+            <artifactId>testing-utils</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>

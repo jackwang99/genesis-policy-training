@@ -1,0 +1,13 @@
+StateMachine PolicyUnderwritingMeasure {
+
+    //Measure states
+    EntryState uninitialized {
+        Using init command transit to initialized
+		Using createFromRule command transit to active
+    }
+	
+    State initialized {
+        Using write command transit to active
+    }
+
+}

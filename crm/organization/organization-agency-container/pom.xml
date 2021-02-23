@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>organization-pom</artifactId>
+        <groupId>com.eisgroup.genesis.proto.organization</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>organization-agency-container-pom</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>organization-agency-container-domain</module>    
+        <module>organization-agency-container-facade</module>    
+        <module>organization-agency-container-lifecycle</module>    
+        <module>organization-agency-container-lifecycle/model</module>
+        <module>organization-agency-container-rules-domain</module>
+    </modules>
+</project>

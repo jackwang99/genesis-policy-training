@@ -1,0 +1,371 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>genesis-app-suite</artifactId>
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>com.eisgroup.genesis.proto</groupId>
+        <artifactId>prototypes-pom</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <!-- this is an example of dev-app config, please configure to meet team needs, use "-Dapps=all -DnoBpm -DnoRating" to start applications -->
+    <!-- opttionally add -Dgenesis.logs.path={path} for per-application logging -->
+    <!-- for metrics configure javaagent via MAVEN_OPTS="-javaagent:/eis/jmx_prometheus.jar=7280:/eis/eis-genesis/docker/images/genesis-base/prometheus.yaml" -->
+    <!-- for timeshifter start application with -DenableTimeShift -->
+    <profiles>
+        <profile>
+            <id>embedded-app-start</id>
+            <activation>
+                <property>
+                    <name>apps</name>
+                    <value>all</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.eisgroup.genesis.tools</groupId>
+                        <artifactId>frunner-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>all-applications-start</id>
+                                <phase>process-test-classes</phase>
+                                <goals>
+                                    <goal>start</goal>
+                                </goals>
+                                <configuration>
+                                    <executionName>all-applications</executionName>
+                                    <parallelism>8</parallelism>
+                                    <suspendBuild>true</suspendBuild>
+                                    <applications>
+                                        <!-- Security -->
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.security.applications</groupId>
+                                            <artifactId>security-facade-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.security.applications</groupId>
+                                            <artifactId>security-commands-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.security.applications</groupId>
+                                            <artifactId>security-events-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.security.applications</groupId>
+                                            <artifactId>security-deployer-app</artifactId>
+                                            <version>${project.version}</version>
+                                            <priority>2</priority>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto</groupId>
+                                            <artifactId>genesis-sso</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <!-- Infra -->
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.infra.applications</groupId>
+                                            <artifactId>infra-facade-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.infra.applications</groupId>
+                                            <artifactId>infra-commands-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.infra.applications</groupId>
+                                            <artifactId>infra-events-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.infra.applications</groupId>
+                                            <artifactId>infra-deployer-app</artifactId>
+                                            <version>${project.version}</version>
+                                            <priority>1</priority>
+                                        </application>
+                                        <!-- CRM -->
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.crm.applications</groupId>
+                                            <artifactId>crm-facade-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.crm.applications</groupId>
+                                            <artifactId>crm-commands-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.crm.applications</groupId>
+                                            <artifactId>crm-events-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.crm.applications</groupId>
+                                            <artifactId>crm-deployer-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.crm.applications</groupId>
+                                            <artifactId>crm-batch-commands-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+
+                                        <!-- Policy generic -->
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+                                            <artifactId>policy-generic-facade-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+                                            <artifactId>policy-generic-commands-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+                                            <artifactId>policy-generic-deployer-app</artifactId>
+                                            <version>${project.version}</version>
+                                            <priority>3</priority>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+                                            <artifactId>policy-generic-events-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+
+                                        <!-- Policy auto -->
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+                                            <artifactId>policy-auto-facade-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+                                            <artifactId>policy-auto-commands-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+                                            <artifactId>policy-auto-deployer-app</artifactId>
+                                            <version>${project.version}</version>
+                                            <priority>4</priority>
+                                        </application>
+
+                                        <!-- Policy property -->
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+                                            <artifactId>policy-property-facade-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+                                            <artifactId>policy-property-commands-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+                                            <artifactId>policy-property-deployer-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+
+                                        <!-- Fleet auto -->
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+                                            <artifactId>policy-fleet-facade-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+                                            <artifactId>policy-fleet-commands-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+                                            <artifactId>policy-fleet-deployer-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+
+                                        <!-- Garage auto -->
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+                                            <artifactId>policy-garage-facade-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+                                            <artifactId>policy-garage-commands-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+                                            <artifactId>policy-garage-deployer-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <!-- Party -->
+                                         <application>
+                                            <groupId>com.eisgroup.genesis.proto.party.applications</groupId>
+                                            <artifactId>party-facade-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.party.applications</groupId>
+                                            <artifactId>party-commands-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.party.applications</groupId>
+                                            <artifactId>party-deployer-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.party.applications</groupId>
+                                            <artifactId>party-events-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <!-- OrgStruct -->
+                                         <application>
+                                            <groupId>com.eisgroup.genesis.proto.org-struct.applications</groupId>
+                                            <artifactId>org-struct-facade-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.org-struct.applications</groupId>
+                                            <artifactId>org-struct-commands-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.org-struct.applications</groupId>
+                                            <artifactId>org-struct-deployer-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.org-struct.applications</groupId>
+                                            <artifactId>org-struct-events-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.tfs.applications</groupId>
+                                            <artifactId>tfs-commands-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.tfs.applications</groupId>
+                                            <artifactId>tfs-events-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <!-- Product server -->
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.product.server.applications</groupId>
+                                            <artifactId>product-server-deployer-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.product.server.applications</groupId>
+                                            <artifactId>product-server-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                    </applications>
+                                </configuration>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <systemProperties>
+                                <systemProperty>
+                                    <name>genesis.authorization.server.url</name>
+                                    <value>http://localhost:8088</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <name>genesis.rating.url</name>
+                                    <value>mock</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <name>genesis.tfs.rating.url</name>
+                                    <value>mock</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <name>user.timezone</name>
+                                    <value>UTC</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <name>genesis.bootstrap.exit.allowed</name>
+                                    <value>false</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <name>spring.profiles.active</name>
+                                    <value>basic-login</value>
+                                </systemProperty>
+                            </systemProperties>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+    <dependencies>
+        <!-- Infra -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.infra.applications</groupId>
+            <artifactId>infra-app-suite</artifactId>
+            <version>${project.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <!-- CRM -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.crm.applications</groupId>
+            <artifactId>crm-app-suite</artifactId>
+            <version>${project.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <!-- Policy -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+            <artifactId>policy-app-suite</artifactId>
+            <version>${project.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <!-- Party -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.party.applications</groupId>
+            <artifactId>party-app-suite</artifactId>
+            <version>${project.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <!-- OrgStruct -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.org-struct.applications</groupId>
+            <artifactId>org-struct-app-suite</artifactId>
+            <version>${project.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <!-- Security -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.security.applications</groupId>
+            <artifactId>security-app-suite</artifactId>
+            <version>${project.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <!-- Tfs -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.tfs.applications</groupId>
+            <artifactId>tfs-app-suite</artifactId>
+            <version>${project.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <!-- Product Server -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.product.server.applications</groupId>
+            <artifactId>product-server-app-suite</artifactId>
+            <version>${project.version}</version>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+</project>

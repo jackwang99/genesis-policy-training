@@ -1,0 +1,42 @@
+[
+  {
+    "code": "A",
+    "defaultValue": "A - Agriculture, foresterie et pêche"
+  },
+  {
+    "code": "B",
+    "defaultValue": "B - Exploitation minière"
+  },
+  {
+    "code": "C",
+    "defaultValue": "C - Construction"
+  },
+  {
+    "code": "D",
+    "defaultValue": "D - Fabrication"
+  },
+  {
+    "code": "E",
+    "defaultValue": "E - Transports, communications, électricité, gaz et services sanitaires"
+  },
+  {
+    "code": "F",
+    "defaultValue": "F - Commerce de gros"
+  },
+  {
+    "code": "G",
+    "defaultValue": "G - Commerce de détail"
+  },
+  {
+    "code": "H",
+    "defaultValue": "H - Finance, assurances et immobilier"
+  },
+  {
+    "code": "I",
+    "defaultValue": "I - Services"
+  },
+  {
+    "code": "J",
+    "defaultValue": "J - Administration publique"
+  }
+]

@@ -1,0 +1,7 @@
+Namespace GroupInfo
+
+Include Base
+
+EntryPoint "GroupInfo Validation" {
+  "GroupInfoDatesComparison"
+}

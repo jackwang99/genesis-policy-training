@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.eisgroup.genesis.proto</groupId>
+    <artifactId>prototype-party-registry-bom</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>Party Registry Reference Bill Of Materials</name>
+    <description>Party Registry Reference Bill Of Materials Module</description>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto</groupId>
+                <artifactId>party-base-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto</groupId>
+                <artifactId>party-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto</groupId>
+                <artifactId>party-impl</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto</groupId>
+                <artifactId>party-lifecycle</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto</groupId>
+                <artifactId>party-lifecycle-model</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- Applications -->
+
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.party.applications</groupId>
+                <artifactId>eissuite-party-events-app</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.party.applications</groupId>
+                <artifactId>party-app-suite</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.party.applications</groupId>
+                <artifactId>party-commands-app</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.party.applications</groupId>
+                <artifactId>party-deployer-app</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.party.applications</groupId>
+                <artifactId>party-events-app</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.party.applications</groupId>
+                <artifactId>party-facade-app</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.party.applications</groupId>
+                <artifactId>party-facade-app-model</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

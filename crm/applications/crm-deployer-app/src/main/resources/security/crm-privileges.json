@@ -1,0 +1,37 @@
+[
+  {
+    "name": "CEM: Create/Update Customer",
+    "description": "Grants user access to Create and Update a Customer",
+    "scope": "CEM"
+  },
+  {
+    "name": "CEM: Load Customer",
+    "description": "Grants user access to the Load a Customer",
+    "scope": "CEM"
+  },
+  {
+    "name": "CEM: Create Scheduled Update",
+    "description": "Grants user access to the Create a ScheduledUpdate",
+    "scope": "CEM"
+  },
+  {
+    "name": "CEM: Load Scheduled Update",
+    "description": "Grants user access to the Load a ScheduledUpdate",
+    "scope": "CEM"
+  },
+  {
+    "name": "CEM: Delete Scheduled Update",
+    "description": "Grants user access to the Delete a ScheduledUpdate",
+    "scope": "CEM"
+  },
+  {
+    "name": "CEM: Create/Update Communication",
+    "description": "Grants user access to the Create and Update a Communication",
+    "scope": "CEM"
+  },
+  {
+    "name": "CEM: Create/Update Opportunity",
+    "description": "Grants user access to the Create and Update an Opportunity",
+    "scope": "CEM"
+  }
+]

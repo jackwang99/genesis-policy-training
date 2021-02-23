@@ -1,0 +1,50 @@
+[
+  {
+    "code": "100000",
+    "defaultValue": "100 000 $"
+  },
+  {
+    "code": "1000000",
+    "defaultValue": "1000 000 $"
+  },
+  {
+    "code": "200000",
+    "defaultValue": "200 000 $"
+  },
+  {
+    "code": "250000",
+    "defaultValue": "250 000 $"
+  },
+  {
+    "code": "300000",
+    "defaultValue": "300 000 $"
+  },
+  {
+    "code": "35000",
+    "defaultValue": "35 000 $"
+  },
+  {
+    "code": "50000",
+    "defaultValue": "50 000 $"
+  },
+  {
+    "code": "500000",
+    "defaultValue": "500 000 $"
+  },
+  {
+    "code": "60000",
+    "defaultValue": "60 000 $"
+  },
+  {
+    "code": "600000",
+    "defaultValue": "600 000 $"
+  },
+  {
+    "code": "75000",
+    "defaultValue": "75 000 $"
+  },
+  {
+    "code": "750000",
+    "defaultValue": "750 000 $"
+  }
+]

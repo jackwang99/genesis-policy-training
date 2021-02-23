@@ -1,0 +1,45 @@
+Entity Employee is OrganizationalPerson {
+    @Required
+    Attr personInfo: GenesisPerson
+    @Min(1)
+    Attr organizationAssignments: *OrganisationalAssignmentEntity
+}
+
+Entity OrganisationalAssignmentEntity is OrganizationalAssignment {
+
+}
+
+Entity PersonLegalIdentityEntity is PersonLegalIdentity {
+
+}
+
+Entity GenesisPerson is OrganizationalPersonInfo {
+    @Searchable
+    @Required
+    Attr firstName: String
+    @Searchable
+    @Required
+    Attr lastName: String
+    Attr communicationInfo: EmployeeCommunicationInfo
+    Attr legalIdentities: *PersonLegalIdentityEntity
+
+    // added because attributes in party model changed, remove attributes if not needed
+    Attr gender: String
+    Attr otherName: String
+    Attr titleCd: String
+    Attr salutation: String
+    Attr suffix: String
+}
+
+Entity EmailInfoEntity is EmailInfo {
+
+}
+
+Entity PhoneInfoEntity is PhoneInfo {
+
+}
+
+Entity EmployeeCommunicationInfo is CommunicationInfo {
+    Attr emails: *EmailInfoEntity
+    Attr phones: *PhoneInfoEntity
+}

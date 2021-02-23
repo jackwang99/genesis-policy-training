@@ -1,0 +1,61 @@
+{
+  "_modelName": "TestProduct",
+  "_modelVersion": "1",
+  "_key": {
+    "rootId": "27e12b0f-d314-4a4e-8795-c3cb2e516fac",
+    "revisionNo": 1
+  },
+  "createdFromPolicyRev": 0,
+  "policyDetail": {
+    "_type": "TestPolicyDetail",
+    "currentQuoteInd": true,
+    "cancelNotice": true,
+    "cancelNoticeDays": 1,
+    "cancelNoticeReason": "cancelNoticeReason",
+    "cancelNoticeDate": "1970-01-01T01:01:01.000Z",
+    "supportingData": "supporting data",
+    "printNotice": "1970-01-01",
+    "doNotRenew": true,
+    "doNotRenewReason": "dnrReason",
+    "doNotRenewStatus": "dnrStatus",
+    "manualRenew": true,
+    "manualRenewReason": "mrReason"
+  },
+  "termDetails": {
+    "_type": "TestTermDetails",
+    "termCd": "ANNUAL",
+    "termEffectiveDate": "1970-01-01",
+    "termExpirationDate": "1971-01-01",
+    "termNo": 1
+  },
+  "accessTrackInfo": {
+    "_type": "TestAccessTrackInfo",
+    "createdOn": "1970-01-01T03:00:01.447Z",
+    "createdBy": "QA",
+    "updatedOn": "1970-01-01T03:00:01.447Z",
+    "updatedBy": "QA"
+  },
+  "packagingDetail": {
+    "_type": "TestPackagingDetail"
+  },
+  "businessDimensions": {
+    "_type": "TestPolicyBusinessDimensions",
+    "agency": "agencyA",
+    "brand": "brandA",
+    "subProducer": "SubProdCd"
+  },
+  "_type": "TestPolicySummary",
+  "policyNumber": "P000004",
+  "state": "rated",
+  "riskStateCd": "NY",
+  "inceptionDate": "1970-01-01",
+  "transactionDetails": {
+    "_type": "TestTransactionDetails",
+    "txEffectiveDate": "1970-01-01T03:00:01.447Z",
+    "txType": "NEW_BUSINESS",
+    "txReasonCd": "someReason",
+    "txCreateDate": "1970-01-01T03:00:01.447Z",
+    "totalPremium": {"amount":100,"currency":"USD"},
+    "changePremium": {"amount":100,"currency":"USD"}
+  }
+}

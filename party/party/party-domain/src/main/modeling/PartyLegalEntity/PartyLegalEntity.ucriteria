@@ -1,0 +1,10 @@
+Model LegalEntity
+
+@RequiredWeight(10)
+UniquenessConfiguration {
+
+    @Weight(10)
+    @Strategy("Historic")
+    Field legalId
+
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "code": "AGENCY_OFFICE",
+    "defaultValue": "Agency Office"
+  },
+  {
+    "code": "APPOINTMENT",
+    "defaultValue": "Appointment"
+  },
+  {
+    "code": "BULLETIN",
+    "defaultValue": "Bulletin"
+  },
+  {
+    "code": "CALL",
+    "defaultValue": "Call"
+  },
+  {
+    "code": "CALL_CENTER",
+    "defaultValue": "Call Center "
+  },
+  {
+    "code": "CHAT",
+    "defaultValue": "Chat"
+  },
+  {
+    "code": "EMAIL",
+    "defaultValue": "Email"
+  },
+  {
+    "code": "MAIL",
+    "defaultValue": "Mail"
+  },
+  {
+    "code": "MOBILE",
+    "defaultValue": "Mobile"
+  },
+  {
+    "code": "MOBILE_ALERT",
+    "defaultValue": "Mobile Alert"
+  },
+  {
+    "code": "MOBILE_SELF_SERVICE",
+    "defaultValue": "Mobile Self Service"
+  },
+  {
+    "code": "SMS",
+    "defaultValue": "SMS"
+  },
+  {
+    "code": "WEB",
+    "defaultValue": "Web"
+  },
+  {
+    "code": "WEB_SELF_SERVICE",
+    "defaultValue": "Web Self Service"
+  }
+]

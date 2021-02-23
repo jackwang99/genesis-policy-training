@@ -1,0 +1,56 @@
+[
+  {
+    "code": "HeadOffice",
+    "defaultValue": "Siège social",
+    "entityType": "ORG"
+  },
+  {
+    "code": "MainOffice",
+    "defaultValue": "Bureau principal",
+    "entityType": "ORG"
+  },
+  {
+    "code": "ParentCompany",
+    "defaultValue": "Maison mère",
+    "entityType": "ORG"
+  },
+  {
+    "code": "SatelliteOffice",
+    "defaultValue": "Bureau satellite",
+    "entityType": "ORG"
+  },
+  {
+    "code": "billing",
+    "defaultValue": "Facturation",
+    "entityType": "ORG"
+  },
+  {
+    "code": "contact",
+    "defaultValue": "Contact",
+    "entityType": "ORG"
+  },
+  {
+    "code": "legal",
+    "defaultValue": "Légal",
+    "entityType": "ORG"
+  },
+  {
+    "code": "mailing",
+    "defaultValue": "Envoi postal"
+  },
+  {
+    "code": "other",
+    "defaultValue": "Autre",
+    "entityType": "INDV"
+  },
+  {
+    "code": "previous",
+    "defaultValue": "Précédent",
+    "entityType": "INDV"
+  },
+  {
+    "code": "residence",
+    "defaultValue": "Résidence",
+    "entityType": "INDV"
+  }
+]

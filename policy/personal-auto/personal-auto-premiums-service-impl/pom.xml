@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>personal-auto-pom</artifactId>
+    <groupId>com.eisgroup.genesis.personalauto</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>personal-auto-premiums-service-impl</artifactId>
+  <name>Personal Auto Policy Premiums Services</name>
+  <description>Personal Auto Policy Premiums Services Module</description>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.eisgroup.genesis.policy.core.premiums</groupId>
+      <artifactId>policy-core-premiums-services-api</artifactId>
+    </dependency>
+  </dependencies>
+
+</project>

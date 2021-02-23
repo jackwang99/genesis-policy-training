@@ -1,0 +1,114 @@
+[
+  {
+    "code": "00001",
+    "defaultValue": "EXIGEN INSURANCE COMPANY"
+  },
+  {
+    "code": "00005",
+    "defaultValue": "ACE INSURANCE"
+  },
+  {
+    "code": "00006",
+    "defaultValue": "AIGM"
+  },
+  {
+    "code": "00007",
+    "defaultValue": "ALLSTATE IDEMNITY"
+  },
+  {
+    "code": "00008",
+    "defaultValue": "ALL STATE INSURANCE"
+  },
+  {
+    "code": "00009",
+    "defaultValue": "ALLSTATE P&C"
+  },
+  {
+    "code": "00010",
+    "defaultValue": "AMICA"
+  },
+  {
+    "code": "00011",
+    "defaultValue": "ASSIGNED RISK"
+  },
+  {
+    "code": "00012",
+    "defaultValue": "CHUBB"
+  },
+  {
+    "code": "00013",
+    "defaultValue": "FARMERS"
+  },
+  {
+    "code": "00014",
+    "defaultValue": "FIREMANS FUND"
+  },
+  {
+    "code": "00015",
+    "defaultValue": "GEICO"
+  },
+  {
+    "code": "00016",
+    "defaultValue": "GEICO IDEMNITY COMPANY"
+  },
+  {
+    "code": "00017",
+    "defaultValue": "HARTFORD"
+  },
+  {
+    "code": "00018",
+    "defaultValue": "LIBERTY MUTUAL"
+  },
+  {
+    "code": "00019",
+    "defaultValue": "METROPOLITAN"
+  },
+  {
+    "code": "00020",
+    "defaultValue": "NATIONWIDE"
+  },
+  {
+    "code": "00021",
+    "defaultValue": "NO PRIOR INSURANCE"
+  },
+  {
+    "code": "00022",
+    "defaultValue": "NY CENTRAL MUTUAL"
+  },
+  {
+    "code": "00023",
+    "defaultValue": "OTHER PROGRESSIVE"
+  },
+  {
+    "code": "00024",
+    "defaultValue": "PROGRESSIVE NORTHWESTERN"
+  },
+  {
+    "code": "00025",
+    "defaultValue": "PRUDENTIAL"
+  },
+  {
+    "code": "00026",
+    "defaultValue": "STATE FARM FIRE AND CASUALTY"
+  },
+  {
+    "code": "00027",
+    "defaultValue": "STATE FARM MUTUAL"
+  },
+  {
+    "code": "00028",
+    "defaultValue": "TRAVELERS"
+  },
+  {
+    "code": "00029",
+    "defaultValue": "UNKNOWN"
+  },
+  {
+    "code": "00030",
+    "defaultValue": "USAA"
+  },
+  {
+    "code": "00031",
+    "defaultValue": "OTHER"
+  }
+]

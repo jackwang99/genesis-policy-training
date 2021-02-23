@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+        <artifactId>policy-deployer-app-pom</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../../parent-poms/policy-deployer-app/pom.xml</relativePath>
+    </parent>
+
+    <artifactId>policy-fleet-deployer-app</artifactId>
+    <name>Policy Fleet Deployer</name>
+    <description>Policy Fleet Deployer Application Module</description>
+    <packaging>jar</packaging>
+ 
+    <profiles>
+        <profile>
+            <id>package-rating</id>
+            <activation>
+                <property>
+                    <name>!noRating</name>
+                </property>
+            </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>com.eisgroup.genesis.policy.core.rating</groupId>
+                    <artifactId>policy-core-rating-deployer</artifactId>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.eisgroup.genesis.fleetauto</groupId>
+                    <artifactId>fleet-auto-rating-alg</artifactId>
+                    <version>${project.version}</version>
+                    <type>zip</type>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.eisgroup.genesis.policy.core</groupId>
+            <artifactId>policy-core-rules-impl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.fleetauto</groupId>
+            <artifactId>fleet-auto-domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.fleetauto</groupId>
+            <artifactId>fleet-auto-lifecycle-model</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.policy.core</groupId>
+            <artifactId>policy-core-umeasure-services-api</artifactId>            
+        </dependency>
+    </dependencies>
+</project>

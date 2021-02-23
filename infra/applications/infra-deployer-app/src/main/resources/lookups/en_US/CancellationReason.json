@@ -1,0 +1,42 @@
+[
+  {
+    "code": "1",
+    "defaultValue": "Non Payment of Premium"
+  },
+  {
+    "code": "2",
+    "defaultValue": "Insured Request - Due To Poor Customer Service"
+  },
+  {
+    "code": "3",
+    "defaultValue": "Insured Request - Due To Poor Claim Service"
+  },
+  {
+    "code": "4",
+    "defaultValue": "Insured Request - Due To High Premium"
+  },
+  {
+    "code": "5",
+    "defaultValue": "Insured Request - Not Specified"
+  },
+  {
+    "code": "6",
+    "defaultValue": "Replaced With New Carrier"
+  },
+  {
+    "code": "7",
+    "defaultValue": "Rewrite"
+  },
+  {
+    "code": "8",
+    "defaultValue": "Underwriting Criteria"
+  },
+  {
+    "code": "9",
+    "defaultValue": "Renewal flat cancelled due to prior term cancellation"
+  },
+  {
+    "code": "10",
+    "defaultValue": "Other"
+  }
+]

@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+        <artifactId>policy-commands-app-pom</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../../parent-poms/policy-commands-app/pom.xml</relativePath>
+    </parent>
+
+    <artifactId>policy-property-commands-app</artifactId>
+    <name>Policy Property Commands</name>
+    <description>Policy Property Commands Application Module</description>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalhome</groupId>
+            <artifactId>personal-home-lifecycle</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.kraken</groupId>
+            <artifactId>rules.kraken-validation-bundle.override</artifactId>
+            <type>tile</type>
+        </dependency>
+    </dependencies>
+
+</project>

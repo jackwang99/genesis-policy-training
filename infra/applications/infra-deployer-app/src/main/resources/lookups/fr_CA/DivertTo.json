@@ -1,0 +1,14 @@
+[
+  {
+    "code": "AGENCY",
+    "defaultValue": "Agence"
+  },
+  {
+    "code": "RELATIONSHIP",
+    "defaultValue": "Relation"
+  },
+  {
+    "code": "USER",
+    "defaultValue": "Propriétaire principal"
+  }
+]

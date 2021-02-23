@@ -1,0 +1,246 @@
+[
+  {
+    "code": "Accountant",
+    "defaultValue": "Accountant"
+  },
+  {
+    "code": "Agent",
+    "defaultValue": "Business Manager/Agent"
+  },
+  {
+    "code": "Broadcaster",
+    "defaultValue": "Broadcaster"
+  },
+  {
+    "code": "BusinessOwner",
+    "defaultValue": "Business Owner"
+  },
+  {
+    "code": "CALicensedPhy",
+    "defaultValue": "California Licensed Physician"
+  },
+  {
+    "code": "Columnist",
+    "defaultValue": "Columnist"
+  },
+  {
+    "code": "CurCompanyEmpl",
+    "defaultValue": "Current/Retired Company Employee"
+  },
+  {
+    "code": "Dentist",
+    "defaultValue": "Dentist"
+  },
+  {
+    "code": "Editor",
+    "defaultValue": "Editor"
+  },
+  {
+    "code": "Educator",
+    "defaultValue": "Educator"
+  },
+  {
+    "code": "Engineer",
+    "defaultValue": "Engineer/Scientist"
+  },
+  {
+    "code": "Entertainer",
+    "defaultValue": "Entertainer"
+  },
+  {
+    "code": "Farm Owner",
+    "defaultValue": "Farm Owner"
+  },
+  {
+    "code": "Farming",
+    "defaultValue": "Farming"
+  },
+  {
+    "code": "Fire Fighter",
+    "defaultValue": "Fire Fighter"
+  },
+  {
+    "code": "ForeignDiplomat",
+    "defaultValue": "Foreign Diplomat"
+  },
+  {
+    "code": "ForeignNational",
+    "defaultValue": "Foreign National"
+  },
+  {
+    "code": "GolfProf",
+    "defaultValue": "Golf Professional"
+  },
+  {
+    "code": "HealthCareProf",
+    "defaultValue": "Health Care Professional"
+  },
+  {
+    "code": "HomeMaint",
+    "defaultValue": "Home/Lawn Maintenance"
+  },
+  {
+    "code": "Homemaker",
+    "defaultValue": "Homemaker"
+  },
+  {
+    "code": "InHomeDayCare",
+    "defaultValue": "In Home Day Care"
+  },
+  {
+    "code": "Inside Sales",
+    "defaultValue": "Inside Sales"
+  },
+  {
+    "code": "Laborer",
+    "defaultValue": "Laborer"
+  },
+  {
+    "code": "LawEnforcement",
+    "defaultValue": "Police Officer/Law Enforcement"
+  },
+  {
+    "code": "Manufacturing",
+    "defaultValue": "Manufacturing"
+  },
+  {
+    "code": "Military",
+    "defaultValue": "Military"
+  },
+  {
+    "code": "NewsReporter",
+    "defaultValue": "News Reporter"
+  },
+  {
+    "code": "Other",
+    "defaultValue": "Other"
+  },
+  {
+    "code": "OtherGrDisc",
+    "defaultValue": "Other - Group Discount Eligible"
+  },
+  {
+    "code": "OutHomeDayCare",
+    "defaultValue": "Outside Home Day Care"
+  },
+  {
+    "code": "OutsideSales",
+    "defaultValue": "Outside Sales"
+  },
+  {
+    "code": "Paramedic",
+    "defaultValue": "Paramedic"
+  },
+  {
+    "code": "Paramedic/EMT",
+    "defaultValue": "Paramedic/EMT"
+  },
+  {
+    "code": "Pharmacist",
+    "defaultValue": "Pharmacist"
+  },
+  {
+    "code": "Pilot",
+    "defaultValue": "Pilot"
+  },
+  {
+    "code": "PoliceOfficer",
+    "defaultValue": "Police Officer"
+  },
+  {
+    "code": "PolOfficial",
+    "defaultValue": "Political Official/Lobbyist"
+  },
+  {
+    "code": "ProfAthlete",
+    "defaultValue": "Professional Athlete/Coach"
+  },
+  {
+    "code": "ProfDriver",
+    "defaultValue": "Professional Driver"
+  },
+  {
+    "code": "Professional",
+    "defaultValue": "Professional"
+  },
+  {
+    "code": "ProfJournalist",
+    "defaultValue": "Professional Journalist"
+  },
+  {
+    "code": "ProfLecturer",
+    "defaultValue": "Professional Lecturer"
+  },
+  {
+    "code": "ProfPilot",
+    "defaultValue": "Professional Pilot"
+  },
+  {
+    "code": "Publisher",
+    "defaultValue": "Publisher"
+  },
+  {
+    "code": "RadioTVPers",
+    "defaultValue": "Radio and TV Personality"
+  },
+  {
+    "code": "Real Estate",
+    "defaultValue": "Real Estate"
+  },
+  {
+    "code": "RestFoodservice",
+    "defaultValue": "Restaurant/Foodservice"
+  },
+  {
+    "code": "Retired",
+    "defaultValue": "Retired"
+  },
+  {
+    "code": "ScriptWriter",
+    "defaultValue": "Script/Screen Writer"
+  },
+  {
+    "code": "Self Employed",
+    "defaultValue": "Self Employed"
+  },
+  {
+    "code": "SelfEmplContr",
+    "defaultValue": "Self Employed Contractor"
+  },
+  {
+    "code": "SelfEmplMaint",
+    "defaultValue": "Self Employed Maintenance"
+  },
+  {
+    "code": "Student",
+    "defaultValue": "Student"
+  },
+  {
+    "code": "Teacher",
+    "defaultValue": "Teacher/Educator"
+  },
+  {
+    "code": "TeamManager",
+    "defaultValue": "Team Manager"
+  },
+  {
+    "code": "TeamOwner",
+    "defaultValue": "Team Owner"
+  },
+  {
+    "code": "Telecaster",
+    "defaultValue": "Telecaster"
+  },
+  {
+    "code": "Unemployed",
+    "defaultValue": "Unemployed"
+  },
+  {
+    "code": "Unknown",
+    "defaultValue": "Unknown"
+  },
+  {
+    "code": "Veterinarian",
+    "defaultValue": "Veterinarian"
+  }
+]

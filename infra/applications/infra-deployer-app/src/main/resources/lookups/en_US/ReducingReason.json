@@ -1,0 +1,18 @@
+[
+  {
+    "code": "1",
+    "defaultValue": "Reason 1"
+  },
+  {
+    "code": "2",
+    "defaultValue": "Reason 2"
+  },
+  {
+    "code": "3",
+    "defaultValue": "Reason 3"
+  },
+  {
+    "code": "OTH",
+    "defaultValue": "Other"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "code": "CF",
+    "defaultValue": "Fréquence des réclamations"
+  },
+  {
+    "code": "MR",
+    "defaultValue": "Risque moral"
+  },
+  {
+    "code": "PR",
+    "defaultValue": "Risque physique"
+  },
+  {
+    "code": "other",
+    "defaultValue": "Autre"
+  }
+]

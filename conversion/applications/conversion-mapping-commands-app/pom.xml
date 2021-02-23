@@ -1,0 +1,129 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.eisgroup.genesis.proto</groupId>
+        <artifactId>conversion-applications-pom</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>conversion-mapping-commands-app</artifactId>
+    <name>Conversion Mapping Commands Application</name>
+    <description>Conversion Mapping Commands Application Module</description>
+    <packaging>jar</packaging>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/buildNumber.properties</include>
+                    <include>**/banner.txt</include>
+                </includes>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>buildnumber-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>create</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <classifier>fat</classifier>
+                    <attach>false</attach>
+                    <mainClass>com.eisgroup.genesis.boot.Bootstrap</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+
+        <!-- Conversion Bundle -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.conversion</groupId>
+            <artifactId>conversion-bundle</artifactId>
+            <classifier>mapping-commands</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <!-- To retrieve CRM validations -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto</groupId>
+            <artifactId>conversion-proto-crm-validations</artifactId>
+        </dependency>
+
+        <!-- Genesis domain dependencies -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.customeraccount</groupId>
+            <artifactId>account-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.individual</groupId>
+            <artifactId>individual-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.organization</groupId>
+            <artifactId>organization-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.groupinfo</groupId>
+            <artifactId>groupinfo-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.opportunity</groupId>
+            <artifactId>opportunity-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.majoraccount</groupId>
+            <artifactId>majoraccount-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.individual</groupId>
+            <artifactId>individual-agency-container-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.organization</groupId>
+            <artifactId>organization-agency-container-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto</groupId>
+            <artifactId>party-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.communication</groupId>
+            <artifactId>communication-domain</artifactId>
+        </dependency>
+
+        <!-- Logging -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
+
+</project>

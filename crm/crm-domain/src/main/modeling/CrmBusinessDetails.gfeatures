@@ -1,0 +1,13 @@
+BusinessType LegalEntityBase {
+    @Required
+    @Length(100)
+    Attr legalName
+    
+    @Searchable
+    @Length(100)
+    Attr dbaName
+
+    @Required
+    @Searchable
+    Attr legalId
+}

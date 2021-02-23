@@ -1,0 +1,14 @@
+[
+  {
+    "code": "TERM",
+    "defaultValue": "Terme"
+  },
+  {
+    "code": "LIFE",
+    "defaultValue": "La vie"
+  },
+  {
+    "code": "SPECIFIC_DATE_PERIOD",
+    "defaultValue": "Période spécifique"
+  }
+]

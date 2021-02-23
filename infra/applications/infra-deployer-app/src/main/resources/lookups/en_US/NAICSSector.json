@@ -1,0 +1,94 @@
+[
+  {
+    "code": "11",
+    "defaultValue": "11 – Agriculture, Forestry, Fishing, and Hunting"
+  },
+  {
+    "code": "21",
+    "defaultValue": "21 - Mining, Quarrying, and Oil and Gas Extraction"
+  },
+  {
+    "code": "22",
+    "defaultValue": "22 - Utilities"
+  },
+  {
+    "code": "23",
+    "defaultValue": "23 - Construction"
+  },
+  {
+    "code": "31",
+    "defaultValue": "31 - 33 Manufacturing"
+  },
+  {
+    "code": "32",
+    "defaultValue": "31 - 33 Manufacturing"
+  },
+  {
+    "code": "33",
+    "defaultValue": "31 - 33 Manufacturing"
+  },
+  {
+    "code": "42",
+    "defaultValue": "42 - Wholesale Trade"
+  },
+  {
+    "code": "44",
+    "defaultValue": "44 - 45 Retail Trade"
+  },
+  {
+    "code": "45",
+    "defaultValue": "44 - 45 Retail Trade"
+  },
+  {
+    "code": "48",
+    "defaultValue": "48 - 49 Transportation and Warehousing"
+  },
+  {
+    "code": "49",
+    "defaultValue": "48 - 49 Transportation and Warehousing"
+  },
+  {
+    "code": "51",
+    "defaultValue": "51 - Information"
+  },
+  {
+    "code": "52",
+    "defaultValue": "52 - Finance and Insurance"
+  },
+  {
+    "code": "53",
+    "defaultValue": "53 - Real Estate and Rental and Leasing"
+  },
+  {
+    "code": "54",
+    "defaultValue": "54 - Professional, Scientific, and Technical Services"
+  },
+  {
+    "code": "55",
+    "defaultValue": "55 - Management of Companies and Enterprises"
+  },
+  {
+    "code": "56",
+    "defaultValue": "56 - Administrative and Support and Waste Management and Remediation Services"
+  },
+  {
+    "code": "61",
+    "defaultValue": "61 - Educational Services"
+  },
+  {
+    "code": "71",
+    "defaultValue": "71 - Arts, Entertainment, and Recreation"
+  },
+  {
+    "code": "72",
+    "defaultValue": "72 - Accommodation and Food Services"
+  },
+  {
+    "code": "81",
+    "defaultValue": "81 - Other Services (except Public Administration)"
+  },
+  {
+    "code": "92",
+    "defaultValue": "92 - Public Administration"
+  }
+]

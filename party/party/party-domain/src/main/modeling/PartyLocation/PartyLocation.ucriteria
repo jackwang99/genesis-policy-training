@@ -1,0 +1,18 @@
+Model Location
+
+@RequiredWeight(30)
+UniquenessConfiguration {
+
+    @Weight(10)
+    @Strategy("HistoricNormalized")
+    Field addressLine1
+
+    @Weight(10)
+    @Strategy("HistoricNormalized")
+    Field city
+
+    @Weight(10)
+    @Strategy("HistoricNormalized")
+    Field postalCode
+
+}

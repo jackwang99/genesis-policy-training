@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.eisgroup.genesis</groupId>
+        <artifactId>genesis-parent-pom</artifactId>
+        <version>10.11</version>
+        <relativePath>../parent-pom/pom.xml</relativePath>
+    </parent>
+
+    <groupId>com.eisgroup.genesis.proto</groupId>
+    <artifactId>org-struct-pom</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>Organization Structure Prototype Parent</name>
+    <description>Organization Structure Prototype Parent Module</description>
+
+    <properties>
+		<!-- org.structure core version -->
+		<org.structure.core.version>10.11</org.structure.core.version>
+        
+		<!-- policy core version -->
+		<policy.core.version>10.11</policy.core.version>
+        
+		<!-- party core version -->
+		<registry.core.version>10.11</registry.core.version>
+
+        <!-- ref impl version -->
+        <registry.ms.version>${project.version}</registry.ms.version>
+    </properties>
+    
+    <modules>
+        <module>org-struct-brand-domain</module>
+        <module>org-struct-brand-lifecycle</module>
+        <module>org-struct-brand-lifecycle/model</module>
+        <module>org-struct-brand-endpoints</module>
+        <module>org-struct-organization-domain</module>
+        <module>org-struct-organization-lifecycle</module>
+        <module>org-struct-organization-lifecycle/model</module>
+        <module>org-struct-organization-endpoints</module>
+        <module>org-struct-events</module>
+        <module>applications</module>
+        <!--module>org-struct-reports</module-->
+    </modules>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.eisgroup.genesis.tools</groupId>
+                    <artifactId>fgenerator-maven-plugin</artifactId>
+                    <version>${fgenerator.maven.plugin.version}</version>
+                    <configuration>
+                        <inputDirectory>${project.build.directory}/classes</inputDirectory>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Org Struct -->
+            <dependency>
+                <groupId>com.eisgroup.genesis</groupId>
+                <artifactId>org-struct-bom</artifactId>
+                <version>${org.structure.core.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Policy -->
+            <dependency>
+                <groupId>com.eisgroup.genesis.policy.core</groupId>
+                <artifactId>policy-core-lifecycle-api</artifactId>
+                <version>${policy.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.integration</groupId>
+                <artifactId>policy-integration-api</artifactId>
+                <version>${policy.core.version}</version>
+            </dependency>
+            
+            <!-- Party registry -->
+            <dependency>
+                <groupId>com.eisgroup.genesis.registry</groupId>
+                <artifactId>registry-bom</artifactId>
+                <version>${registry.core.version}</version>
+                <type>pom</type>
+                <scope>import</scope>           
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto</groupId>
+                <artifactId>party-domain</artifactId>
+                <version>${registry.ms.version}</version>
+            </dependency>
+
+            <!-- Testing -->
+            <dependency>
+                <groupId>com.eisgroup.genesis.test.product</groupId>
+                <artifactId>test-product-model</artifactId>
+                <version>${genesis.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.test.product</groupId>
+                <artifactId>test-domain</artifactId>
+                <classifier>no-party</classifier>
+                <version>${genesis.core.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

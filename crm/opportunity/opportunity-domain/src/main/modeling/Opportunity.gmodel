@@ -1,0 +1,7 @@
+Model Opportunity
+Root GenesisOpportunity
+
+ModelType Opportunity
+
+Stored using [ModelName]
+Indexed using ['opportunity']

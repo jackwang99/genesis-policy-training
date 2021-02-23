@@ -1,0 +1,62 @@
+[
+  {
+    "code": "Auto",
+    "defaultValue": "Auto"
+  },
+  {
+    "code": "BENEFITS",
+    "defaultValue": "Avantages"
+  },
+  {
+    "code": "COMMERCIAL",
+    "defaultValue": "Commercial"
+  },
+  {
+    "code": "CONDO",
+    "defaultValue": "Condo"
+  },
+  {
+    "code": "CONTENTS",
+    "defaultValue": "Contenu (seulement)"
+  },
+  {
+    "code": "DP3",
+    "defaultValue": "DP3 Formulaire de propriété d'habitation"
+  },
+  {
+    "code": "HO",
+    "defaultValue": "Propriétaire"
+  },
+  {
+    "code": "HO2",
+    "defaultValue": "Formulaire général propriétaire HO2"
+  },
+  {
+    "code": "HO3",
+    "defaultValue": "Formulaire spécial propriétaire HO3"
+  },
+  {
+    "code": "HO4",
+    "defaultValue": "Formulaire de locataire HO4"
+  },
+  {
+    "code": "HO5",
+    "defaultValue": "HO5 Formulaire détaillé du propriétaire"
+  },
+  {
+    "code": "HO6",
+    "defaultValue": "HO6 Propriétaire Condo Formulaire"
+  },
+  {
+    "code": "HODP",
+    "defaultValue": "Propriété résidentielle"
+  },
+  {
+    "code": "TENANT",
+    "defaultValue": "Locataire"
+  },
+  {
+    "code": "UMBRELLA",
+    "defaultValue": "Parapluie"
+  }
+]

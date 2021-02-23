@@ -1,0 +1,38 @@
+{
+    "_key": {
+        "rootId": "abcabc37-3113-47d7-adc1-30109a76b102",
+        "revisionNo": 1
+    },
+    "_type": "GenesisUser",
+    "_modelName": "User",
+    "_modelVersion": "1",
+    "uuid": "conversion-user",
+    "authorityLevel": 0,
+    "userProfiles": [{
+        "_key": {
+            "rootId": "abcabc37-3113-47d7-adc1-30109a76b102",
+            "revisionNo": 1,
+            "parentId": "abcabc37-3113-47d7-adc1-30109a76b102",
+            "id": "6e643e3d-31c1-436d-8b48-1493dae6c822"
+        },
+        "_type": "GenesisUserProfile",
+        "effectiveDate": "2019-04-22",
+        "defaultInd": true,
+        "operationalAssignments": [{
+            "_key": {
+                "rootId": "abcabc37-3113-47d7-adc1-30109a76b102",
+                "revisionNo": 1,
+                "parentId": "6e643e3d-31c1-436d-8b48-1493dae6c822",
+                "id": "22097573-326f-4531-b769-a34e0409d27d"
+            },
+            "_type": "GenesisUserOperationalAssignment",
+            "effectiveDate": "2019-04-22",
+            "roleAccessProfile": {
+                "_uri": "gpart://RoleAccessProfile/Security//b504b366-82ef-4716-8850-60705ef45620///17a153d3-a01f-444a-9f75-264bab091879"
+            },
+            "dimensionAccessProfile": {
+                "_uri": "gpart://DimensionAccessProfile/Security//b504b366-82ef-4716-8850-60705ef45620///b18fbeb4-67e5-4473-bd41-9cb2c3a8d389"
+            }
+        }]
+    }]
+}

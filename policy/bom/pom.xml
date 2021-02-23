@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.eisgroup.genesis.proto.policy</groupId>
+    <artifactId>prototype-policy-bom</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Policy Prototype Bill Of Materials</name>
+    <description>Policy Prototype Bill Of Materials Module</description>
+
+    <dependencies>
+        <!-- Personal Auto -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalauto</groupId>
+            <artifactId>personal-auto-domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalauto</groupId>
+            <artifactId>personal-auto-endpoints</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalauto</groupId>
+            <artifactId>personal-auto-lifecycle</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalauto</groupId>
+            <artifactId>personal-auto-lifecycle-model</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalauto</groupId>
+            <artifactId>personal-auto-premiums-service-impl</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalauto</groupId>
+            <artifactId>personal-auto-rating-alg</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!--dependency>
+            <groupId>com.eisgroup.genesis.personalauto</groupId>
+            <artifactId>personal-auto-reports</artifactId>
+            <version>${project.version}</version>
+        </dependency-->
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalauto</groupId>
+            <artifactId>personal-auto-rules-domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalauto</groupId>
+            <artifactId>personal-auto-urm-rating</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalauto</groupId>
+            <artifactId>personal-auto-stubs</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- Personal Home -->
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalhome</groupId>
+            <artifactId>personal-home-domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalhome</groupId>
+            <artifactId>personal-home-endpoints</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalhome</groupId>
+            <artifactId>personal-home-lifecycle</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalhome</groupId>
+            <artifactId>personal-home-lifecycle-model</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalhome</groupId>
+            <artifactId>personal-home-urm-rating</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!-- temporary disable PersonalHome rating -->
+<!--        <dependency>-->
+<!--            <groupId>com.eisgroup.genesis.personalhome</groupId>-->
+<!--            <artifactId>personal-home-rating-alg</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalhome</groupId>
+            <artifactId>personal-home-rules-domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- JPS -->
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.jps</groupId>
+            <artifactId>policy-jps-domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.jps</groupId>
+            <artifactId>policy-jps-lifecycle-model</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.jps</groupId>
+            <artifactId>policy-jps-lifecycle</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.jps</groupId>
+            <artifactId>policy-jps-facade</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.jps</groupId>
+            <artifactId>policy-jps-deployer</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- Underwriting -->
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.umeasure</groupId>
+            <artifactId>policy-umeasure-domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.umeasure</groupId>
+            <artifactId>policy-umeasure-lifecycle</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.umeasure</groupId>
+            <artifactId>policy-umeasure-facade</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.umeasure</groupId>
+            <artifactId>policy-umeasure-deployer</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- Applications -->
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+            <artifactId>policy-app-suite</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+            <artifactId>policy-auto-facade-app</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+            <artifactId>policy-auto-commands-app</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+            <artifactId>policy-auto-deployer-app</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+            <artifactId>policy-property-facade-app</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+            <artifactId>policy-property-commands-app</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+            <artifactId>policy-property-deployer-app</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+            <artifactId>policy-generic-facade-app</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+            <artifactId>policy-generic-commands-app</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+            <artifactId>policy-generic-deployer-app</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+            <artifactId>policy-generic-events-app</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

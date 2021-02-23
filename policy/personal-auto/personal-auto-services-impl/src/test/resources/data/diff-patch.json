@@ -1,0 +1,18 @@
+{
+  "diffs": [
+    {
+      "operationType": "changed",
+      "path": "vehicleBaseDetails//model",
+      "sourceValue": "X1",
+      "targetValue": "X5",
+      "readOnly": false
+    },
+    {
+      "operationType": "changed",
+      "path": "vehicleBaseDetails//modelYear",
+      "sourceValue": 2016,
+      "targetValue": 2013,
+      "readOnly": false
+    }
+  ]
+}

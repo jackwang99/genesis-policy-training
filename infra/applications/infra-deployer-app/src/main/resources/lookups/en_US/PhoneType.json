@@ -1,0 +1,37 @@
+[
+  {
+    "code": "BWORK",
+    "defaultValue": "Work",
+    "entityType": "ORG"
+  },
+  {
+    "code": "BMOB",
+    "defaultValue": "Mobile",
+    "entityType": "ORG"
+  },
+  {
+    "code": "BFAX",
+    "defaultValue": "Fax",
+    "entityType": "ORG"
+  },
+  {
+    "code": "HOME",
+    "defaultValue": "Home",
+    "entityType": "INDV"
+  },
+  {
+    "code": "WORK",
+    "defaultValue": "Work",
+    "entityType": "INDV"
+  },
+  {
+    "code": "MOB",
+    "defaultValue": "Mobile",
+    "entityType": "INDV"
+  },
+  {
+    "code": "FAX",
+    "defaultValue": "Fax",
+    "entityType": "INDV"
+  }
+]

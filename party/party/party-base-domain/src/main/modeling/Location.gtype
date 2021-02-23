@@ -1,0 +1,6 @@
+BaseType Location extends LocationBase {
+
+    @Description("lookup:AddressType")
+    Attr addressType: String
+
+}

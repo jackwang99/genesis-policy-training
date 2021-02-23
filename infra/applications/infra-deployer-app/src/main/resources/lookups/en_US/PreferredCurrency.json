@@ -1,0 +1,18 @@
+[
+  {
+    "code": "CHF",
+    "defaultValue": "CHF"
+  },
+  {
+    "code": "EUR",
+    "defaultValue": "EUR"
+  },
+  {
+    "code": "GBP",
+    "defaultValue": "GBP"
+  },
+  {
+    "code": "USD",
+    "defaultValue": "USD"
+  }
+]

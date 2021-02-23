@@ -1,0 +1,130 @@
+{
+  "_type": "AutoTestPolicySummary",
+  "_modelName": "AutoTestProduct",
+  "_modelVersion": "1",
+  "policyNumber": "Q0000001632",
+  "inceptionDate": "2016-11-23",
+  "createdFromPolicyRev": 0,
+  "prefillInfo": {
+    "_type": "TestPrefillInfo",
+    "firstName": "John",
+    "lastName": "Smith"
+  },
+  "termDetails": {
+    "_type": "TestTermDetails",
+    "termNo": 0,
+    "termEffectiveDate": "2016-11-23",
+    "termExpirationDate": "2017-11-23"
+  },
+  "transactionDetails": {
+    "_type": "TestTransactionDetails",
+    "txEffectiveDate": "2016-11-23T13:29:56.366Z",
+    "txType": "NEW_BUSINESS"
+  },
+  "accessTrackInfo": {
+    "_type": "TestAccessTrackInfo",
+    "createdBy": "qa",
+    "createdOn": "2016-11-23T13:29:56.367Z",
+    "updatedBy": "qa",
+    "updatedOn": "2016-11-23T13:29:56.367Z"
+  },
+  "policyDetail": {
+    "_type": "TestPolicyDetail",
+    "_modelName": "AutoTestProduct",
+    "_modelVersion": "1"
+  },
+  "state": "dataGather",
+  "parties": [
+    {
+      "_type": "TestParty",
+      "driverInfo": {
+        "_type": "TestDriverInfo",
+        "licenseInfo": [
+          {
+            "_type": "TestLicenseInfo",
+            "licenseNumber": "D123456",
+            "licenseStateCd": "NJ"
+          }
+        ]
+      },
+      "personInfo": {
+        "_type": "TestPolicyPerson",
+        "personBaseDetails": {
+          "firstName": "John",
+          "middleName": "",
+          "lastName": "Smith",
+          "_type": "PersonEntity"
+        }
+      }
+    },
+    {
+      "_type": "TestParty",
+      "driverInfo": {
+        "_type": "TestDriverInfo",
+        "licenseInfo": [
+          {
+            "_type": "TestLicenseInfo",
+            "licenseNumber": "D234456",
+            "licenseStateCd": "NJ"
+          }
+          ]
+      },
+      "personInfo": {
+        "_type": "TestPolicyPerson",
+        "personBaseDetails": {
+          "firstName": "Mary",
+          "middleName": "Jane",
+          "lastName": "Smith",
+          "_type": "PersonEntity"
+        }
+      }
+    },
+    {
+      "_type": "TestParty",
+      "driverInfo": {
+        "_type": "TestDriverInfo",
+        "licenseInfo": [
+          {
+            "_type": "TestLicenseInfo",
+            "licenseNumber": "D587634",
+            "licenseStateCd": "NJ"
+          }
+        ]
+      },
+      "personInfo": {
+        "personBaseDetails": {
+          "firstName": "Junior",
+          "lastName": "Smith",
+          "middleName": "",
+          "_type": "TestPersonEntity"
+        },
+        "_type": "TestPolicyPerson"
+      }
+    }
+  ],
+  "riskItems": [
+    {
+      "_type": "TestVehicle",
+      "_modelName": "AutoTestProduct",
+      "_modelVersion": "1",
+      "vin": "3N1CE2CP0EL417845",
+      "model": "Versa Note",
+      "modelYear": 2014,
+      "make": "Nissan",
+      "series": "1.6 SV",
+      "bodyTypeCd": "4dr Hatchback"
+    },
+    {
+      "_type": "TestVehicle",
+      "_modelName": "AutoTestProduct",
+      "_modelVersion": "1",
+      "vin": "1GNFC16037J352483",
+      "model": "Suburban",
+      "modelYear": 2007,
+      "make": "Chevrolet",
+      "series": "1500 LS",
+      "bodyTypeCd": "4dr SUV"
+    }
+  ]
+
+}

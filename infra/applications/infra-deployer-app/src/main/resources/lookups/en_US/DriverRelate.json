@@ -1,0 +1,46 @@
+[
+  {
+    "code": "D",
+    "defaultValue": "Daughter"
+  },
+  {
+    "code": "DP",
+    "defaultValue": "Domestic Partner"
+  },
+  {
+    "code": "EMP",
+    "defaultValue": "Employee"
+  },
+  {
+    "code": "HU",
+    "defaultValue": "Husband"
+  },
+  {
+    "code": "IN",
+    "defaultValue": "Insured"
+  },
+  {
+    "code": "M",
+    "defaultValue": "Mother"
+  },
+  {
+    "code": "OR",
+    "defaultValue": "Other Resident Relative"
+  },
+  {
+    "code": "OT",
+    "defaultValue": "Other"
+  },
+  {
+    "code": "P",
+    "defaultValue": "Father"
+  },
+  {
+    "code": "S",
+    "defaultValue": "Son"
+  },
+  {
+    "code": "WI",
+    "defaultValue": "Wife"
+  }
+]

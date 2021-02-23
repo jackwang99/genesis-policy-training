@@ -1,0 +1,14 @@
+Model INDIVIDUALCUSTOMER
+
+Common {
+    Number is output.customerNumber
+}
+
+Command init {
+    Disabled
+}
+
+
+Endpoint load {
+    
+}

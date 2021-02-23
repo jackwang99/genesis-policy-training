@@ -1,0 +1,14 @@
+Model Opportunity
+
+Common {
+    Number is output.opportunityId
+}
+
+Command init {
+    Disabled
+}
+
+
+Endpoint load {
+    
+}

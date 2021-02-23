@@ -1,0 +1,7 @@
+Model PolicyUnderwritingMeasure
+Root PolicyUnderwritingMeasure
+
+ModelType PolicyUnderwritingMeasure
+
+Stored using [ModelName]
+Indexed using ['umeasure']

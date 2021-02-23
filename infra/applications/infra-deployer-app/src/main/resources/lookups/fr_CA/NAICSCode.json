@@ -1,0 +1,5147 @@
+[
+  {
+    "code": "111110",
+    "parentLookupCode": "1111",
+    "defaultValue": "L'élevage de soja"
+  },
+  {
+    "code": "111120",
+    "defaultValue": "Culture d'oléagineux (sauf le soja)",
+    "parentLookupCode": "1111"
+  },
+  {
+    "code": "111130",
+    "defaultValue": "Culture de pois secs et de haricots secs",
+    "parentLookupCode": "1111"
+  },
+  {
+    "code": "111140",
+    "defaultValue": "L'agriculture du blé",
+    "parentLookupCode": "1111"
+  },
+  {
+    "code": "111150",
+    "parentLookupCode": "1111",
+    "defaultValue": "L'agriculture du maïs"
+  },
+  {
+    "code": "111160",
+    "defaultValue": "Riziculture",
+    "parentLookupCode": "1111"
+  },
+  {
+    "code": "111199",
+    "defaultValue": "Toutes les autres cultures céréalières",
+    "parentLookupCode": "1111"
+  },
+  {
+    "code": "111211",
+    "defaultValue": "L'élevage de pommes de terre",
+    "parentLookupCode": "1112"
+  },
+  {
+    "code": "111219",
+    "parentLookupCode": "1112",
+    "defaultValue": "Autre culture de légumes (sauf la pomme de terre) et de melon"
+  },
+  {
+    "code": "111310",
+    "parentLookupCode": "1113",
+    "defaultValue": "Orangeraies"
+  },
+  {
+    "code": "111320",
+    "parentLookupCode": "1113",
+    "defaultValue": "Agrumes (sauf les oranges)"
+  },
+  {
+    "code": "111331",
+    "defaultValue": "Pommeraies de pommiers",
+    "parentLookupCode": "1113"
+  },
+  {
+    "code": "111332",
+    "parentLookupCode": "1113",
+    "defaultValue": "Vignobles de raisin"
+  },
+  {
+    "code": "111333",
+    "parentLookupCode": "1113",
+    "defaultValue": "Fraise"
+  },
+  {
+    "code": "111334",
+    "parentLookupCode": "1113",
+    "defaultValue": "Berry (sauf les fraises)"
+  },
+  {
+    "code": "111335",
+    "parentLookupCode": "1113",
+    "defaultValue": "L'élevage des noix"
+  },
+  {
+    "code": "111336",
+    "defaultValue": "Combinaison de fruits et de noix",
+    "parentLookupCode": "1113"
+  },
+  {
+    "code": "111339",
+    "defaultValue": "Autres cultures fruitières non concitrites",
+    "parentLookupCode": "1113"
+  },
+  {
+    "code": "111411",
+    "parentLookupCode": "1114",
+    "defaultValue": "Production de champignons"
+  },
+  {
+    "code": "111419",
+    "parentLookupCode": "1114",
+    "defaultValue": "Autres cultures vivrières cultivées sous abri"
+  },
+  {
+    "code": "111421",
+    "defaultValue": "Pépinière et arboriculture",
+    "parentLookupCode": "1114"
+  },
+  {
+    "code": "111422",
+    "defaultValue": "Production floricole",
+    "parentLookupCode": "1114"
+  },
+  {
+    "code": "111910",
+    "defaultValue": "La culture du tabac",
+    "parentLookupCode": "1119"
+  },
+  {
+    "code": "111920",
+    "defaultValue": "La culture du coton",
+    "parentLookupCode": "1119"
+  },
+  {
+    "code": "111930",
+    "parentLookupCode": "1119",
+    "defaultValue": "L'élevage de canne à sucre"
+  },
+  {
+    "code": "111940",
+    "defaultValue": "L'agriculture de foin",
+    "parentLookupCode": "1119"
+  },
+  {
+    "code": "111991",
+    "defaultValue": "L'élevage de la betterave à sucre",
+    "parentLookupCode": "1119"
+  },
+  {
+    "code": "111992",
+    "parentLookupCode": "1119",
+    "defaultValue": "Culture d'arachide"
+  },
+  {
+    "code": "111998",
+    "parentLookupCode": "1119",
+    "defaultValue": "Toutes les autres cultures diverses"
+  },
+  {
+    "code": "11211",
+    "parentLookupCode": "1121",
+    "defaultValue": "Elevage et élevage de bovins de boucherie, y compris les parcs d'engraissement"
+  },
+  {
+    "code": "112111",
+    "defaultValue": "Élevage de boeuf et élevage",
+    "parentLookupCode": "1121"
+  },
+  {
+    "code": "112112",
+    "defaultValue": "Bovins d'engraissement",
+    "parentLookupCode": "1121"
+  },
+  {
+    "code": "112120",
+    "parentLookupCode": "1121",
+    "defaultValue": "Production de bovins laitiers et de lait"
+  },
+  {
+    "code": "112130",
+    "defaultValue": "Elevage et élevage de bovins à double usage",
+    "parentLookupCode": "1121"
+  },
+  {
+    "code": "112210",
+    "defaultValue": "L'élevage de porcs et de porcs",
+    "parentLookupCode": "1122"
+  },
+  {
+    "code": "112310",
+    "defaultValue": "Production d'oeufs de poulet",
+    "parentLookupCode": "1123"
+  },
+  {
+    "code": "112320",
+    "defaultValue": "Poulets et autres types de poulets",
+    "parentLookupCode": "1123"
+  },
+  {
+    "code": "112330",
+    "defaultValue": "Production de la Turquie",
+    "parentLookupCode": "1123"
+  },
+  {
+    "code": "112340",
+    "defaultValue": "Couveuses de volaille",
+    "parentLookupCode": "1123"
+  },
+  {
+    "code": "112390",
+    "parentLookupCode": "1123",
+    "defaultValue": "Autre production de volaille"
+  },
+  {
+    "code": "112410",
+    "defaultValue": "Élevage de moutons",
+    "parentLookupCode": "1124"
+  },
+  {
+    "code": "112420",
+    "parentLookupCode": "1124",
+    "defaultValue": "Élevage de chèvres"
+  },
+  {
+    "code": "112511",
+    "parentLookupCode": "1125",
+    "defaultValue": "Pisciculture et pisciculture"
+  },
+  {
+    "code": "112512",
+    "parentLookupCode": "1125",
+    "defaultValue": "La conchyliculture"
+  },
+  {
+    "code": "112519",
+    "defaultValue": "Autre aquaculture",
+    "parentLookupCode": "1125"
+  },
+  {
+    "code": "112910",
+    "parentLookupCode": "1129",
+    "defaultValue": "Apiculture"
+  },
+  {
+    "code": "112920",
+    "defaultValue": "Chevaux et autres productions équines",
+    "parentLookupCode": "1129"
+  },
+  {
+    "code": "112930",
+    "parentLookupCode": "1129",
+    "defaultValue": "Production d'animaux à fourrure et de lapins"
+  },
+  {
+    "code": "112990",
+    "parentLookupCode": "1129",
+    "defaultValue": "Toutes les autres productions animales"
+  },
+  {
+    "code": "113110",
+    "defaultValue": "Opérations sur les troncs de bois",
+    "parentLookupCode": "1131"
+  },
+  {
+    "code": "113210",
+    "defaultValue": "Pépinières forestières et collecte de produits forestiers",
+    "parentLookupCode": "1132"
+  },
+  {
+    "code": "113310",
+    "parentLookupCode": "1133",
+    "defaultValue": "Enregistrement"
+  },
+  {
+    "code": "114111",
+    "parentLookupCode": "1141",
+    "defaultValue": "Pêche aux poissons"
+  },
+  {
+    "code": "114112",
+    "parentLookupCode": "1141",
+    "defaultValue": "Pêche aux coquillages"
+  },
+  {
+    "code": "114119",
+    "defaultValue": "Autre pêche maritime",
+    "parentLookupCode": "1141"
+  },
+  {
+    "code": "114210",
+    "defaultValue": "Chasse et piégeage",
+    "parentLookupCode": "1142"
+  },
+  {
+    "code": "115111",
+    "parentLookupCode": "1151",
+    "defaultValue": "Égrenage du coton"
+  },
+  {
+    "code": "115112",
+    "defaultValue": "Préparation du sol, plantation et culture",
+    "parentLookupCode": "1151"
+  },
+  {
+    "code": "115113",
+    "parentLookupCode": "1151",
+    "defaultValue": "Récolte des récoltes, principalement par machine"
+  },
+  {
+    "code": "115114",
+    "defaultValue": "Activités de culture post-récolte (sauf l'égrenage du coton)",
+    "parentLookupCode": "1151"
+  },
+  {
+    "code": "115115",
+    "parentLookupCode": "1151",
+    "defaultValue": "Entrepreneurs de main-d'œuvre agricole et chefs d'équipe"
+  },
+  {
+    "code": "115116",
+    "defaultValue": "Services de gestion agricole",
+    "parentLookupCode": "1151"
+  },
+  {
+    "code": "115210",
+    "defaultValue": "Activités de soutien à la production animale",
+    "parentLookupCode": "1152"
+  },
+  {
+    "code": "115310",
+    "defaultValue": "Activités de soutien à la foresterie",
+    "parentLookupCode": "1153"
+  },
+  {
+    "code": "211111",
+    "defaultValue": "Extraction de pétrole brut et de gaz naturel",
+    "parentLookupCode": "2111"
+  },
+  {
+    "code": "211112",
+    "defaultValue": "Extraction de gaz naturel",
+    "parentLookupCode": "2111"
+  },
+  {
+    "code": "212111",
+    "defaultValue": "Charbon bitumineux et exploitation minière de surface de lignite",
+    "parentLookupCode": "2121"
+  },
+  {
+    "code": "212112",
+    "defaultValue": "Exploitation minière souterraine de charbon bitumineux",
+    "parentLookupCode": "2121"
+  },
+  {
+    "code": "212113",
+    "defaultValue": "Exploitation de l'anthracite",
+    "parentLookupCode": "2121"
+  },
+  {
+    "code": "212210",
+    "parentLookupCode": "2122",
+    "defaultValue": "Minerai de minerai de fer"
+  },
+  {
+    "code": "212221",
+    "parentLookupCode": "2122",
+    "defaultValue": "Minerai d'or"
+  },
+  {
+    "code": "212222",
+    "defaultValue": "Exploitation de minerais d'argent",
+    "parentLookupCode": "2122"
+  },
+  {
+    "code": "212231",
+    "defaultValue": "Minerai de plomb et minerai de zinc",
+    "parentLookupCode": "2122"
+  },
+  {
+    "code": "212234",
+    "parentLookupCode": "2122",
+    "defaultValue": "Minerai de cuivre et minerai de nickel"
+  },
+  {
+    "code": "212291",
+    "defaultValue": "Extraction de minerai d'uranium-radium-vanadium",
+    "parentLookupCode": "2122"
+  },
+  {
+    "code": "212299",
+    "defaultValue": "Tous les autres minerais métalliques",
+    "parentLookupCode": "2122"
+  },
+  {
+    "code": "212311",
+    "defaultValue": "Extraction et extraction de pierres de taille",
+    "parentLookupCode": "2123"
+  },
+  {
+    "code": "212312",
+    "parentLookupCode": "2123",
+    "defaultValue": "Extraction et extraction de calcaire concassé et brisé"
+  },
+  {
+    "code": "212313",
+    "parentLookupCode": "2123",
+    "defaultValue": "Exploitation et extraction de granite concassé et brisé"
+  },
+  {
+    "code": "212319",
+    "defaultValue": "Autres mines et carrières de pierre concassée et concassée",
+    "parentLookupCode": "2123"
+  },
+  {
+    "code": "212321",
+    "parentLookupCode": "2123",
+    "defaultValue": "Exploitation de sable de construction et de gravier"
+  },
+  {
+    "code": "212322",
+    "defaultValue": "Exploitation de sable industriel",
+    "parentLookupCode": "2123"
+  },
+  {
+    "code": "212324",
+    "defaultValue": "Exploitation de kaolin et d'argile à balles",
+    "parentLookupCode": "2123"
+  },
+  {
+    "code": "212325",
+    "parentLookupCode": "2123",
+    "defaultValue": "Extraction de minéraux argileux et céramiques et réfractaires"
+  },
+  {
+    "code": "212391",
+    "parentLookupCode": "2123",
+    "defaultValue": "Exploitation minière de potasse, de soude et de borate"
+  },
+  {
+    "code": "212392",
+    "defaultValue": "Exploitation de roches phosphatées",
+    "parentLookupCode": "2123"
+  },
+  {
+    "code": "212393",
+    "parentLookupCode": "2123",
+    "defaultValue": "Autre exploitation minière de produits chimiques et d'engrais"
+  },
+  {
+    "code": "212399",
+    "parentLookupCode": "2123",
+    "defaultValue": "Toutes les autres mines de minéraux non métalliques"
+  },
+  {
+    "code": "213111",
+    "defaultValue": "Puits de pétrole et de gaz de forage",
+    "parentLookupCode": "2131"
+  },
+  {
+    "code": "213112",
+    "parentLookupCode": "2131",
+    "defaultValue": "Activités de soutien aux opérations pétrolières et gazières"
+  },
+  {
+    "code": "213113",
+    "defaultValue": "Activités de soutien à l'extraction du charbon",
+    "parentLookupCode": "2131"
+  },
+  {
+    "code": "213114",
+    "defaultValue": "Activités de soutien à l'extraction des métaux",
+    "parentLookupCode": "2131"
+  },
+  {
+    "code": "213115",
+    "parentLookupCode": "2131",
+    "defaultValue": "Activités de soutien à l'exploitation minière des minéraux non métalliques (sauf les combustibles)"
+  },
+  {
+    "code": "221111",
+    "parentLookupCode": "2211",
+    "defaultValue": "Génération d'énergie hydroélectrique"
+  },
+  {
+    "code": "221112",
+    "parentLookupCode": "2211",
+    "defaultValue": "Production d'énergie électrique à combustible fossile"
+  },
+  {
+    "code": "221113",
+    "parentLookupCode": "2211",
+    "defaultValue": "Génération d'énergie nucléaire"
+  },
+  {
+    "code": "221114",
+    "parentLookupCode": "2211",
+    "defaultValue": "Génération d'énergie électrique solaire"
+  },
+  {
+    "code": "221115",
+    "defaultValue": "Génération d'énergie éolienne",
+    "parentLookupCode": "2211"
+  },
+  {
+    "code": "221116",
+    "defaultValue": "Génération d'énergie électrique géothermique",
+    "parentLookupCode": "2211"
+  },
+  {
+    "code": "221117",
+    "parentLookupCode": "2211",
+    "defaultValue": "Génération d'énergie électrique à la biomasse"
+  },
+  {
+    "code": "221118",
+    "defaultValue": "Autre génération d'énergie électrique",
+    "parentLookupCode": "2211"
+  },
+  {
+    "code": "221121",
+    "defaultValue": "Transmission et contrôle de la puissance électrique en vrac",
+    "parentLookupCode": "2211"
+  },
+  {
+    "code": "221122",
+    "defaultValue": "Distribution d'énergie électrique",
+    "parentLookupCode": "2211"
+  },
+  {
+    "code": "221210",
+    "defaultValue": "Distribution de gaz naturel",
+    "parentLookupCode": "2212"
+  },
+  {
+    "code": "221310",
+    "parentLookupCode": "2213",
+    "defaultValue": "Systèmes d'approvisionnement en eau et d'irrigation"
+  },
+  {
+    "code": "221320",
+    "defaultValue": "Installations de traitement des eaux usées",
+    "parentLookupCode": "2213"
+  },
+  {
+    "code": "221330",
+    "defaultValue": "Fourniture de vapeur et d'air conditionné",
+    "parentLookupCode": "2213"
+  },
+  {
+    "code": "236115",
+    "defaultValue": "Nouvelle construction de logements unifamiliaux (sauf les constructeurs à vendre)",
+    "parentLookupCode": "2361"
+  },
+  {
+    "code": "236116",
+    "defaultValue": "Nouvelle construction de logements multifamiliaux (sauf les constructeurs à vendre)",
+    "parentLookupCode": "2361"
+  },
+  {
+    "code": "236117",
+    "parentLookupCode": "2361",
+    "defaultValue": "Nouveaux constructeurs de maisons à vendre"
+  },
+  {
+    "code": "236118",
+    "defaultValue": "Remodeleurs résidentiels",
+    "parentLookupCode": "2361"
+  },
+  {
+    "code": "236210",
+    "defaultValue": "Construction de bâtiments industriels",
+    "parentLookupCode": "2362"
+  },
+  {
+    "code": "236220",
+    "parentLookupCode": "2362",
+    "defaultValue": "Construction de bâtiments commerciaux et institutionnels"
+  },
+  {
+    "code": "237110",
+    "defaultValue": "Construction de conduites d'eau et d'égout et structures connexes",
+    "parentLookupCode": "2371"
+  },
+  {
+    "code": "237120",
+    "defaultValue": "Construction d'oléoducs et de gazoducs et de structures connexes",
+    "parentLookupCode": "2371"
+  },
+  {
+    "code": "237130",
+    "parentLookupCode": "2371",
+    "defaultValue": "Construction de lignes de transmission d'énergie et de télécommunications et de structures connexes"
+  },
+  {
+    "code": "237210",
+    "defaultValue": "Subdivision terrestre",
+    "parentLookupCode": "2372"
+  },
+  {
+    "code": "237310",
+    "defaultValue": "Construction de routes, de rues et de ponts",
+    "parentLookupCode": "2373"
+  },
+  {
+    "code": "237990",
+    "parentLookupCode": "2379",
+    "defaultValue": "Autre construction de génie civil"
+  },
+  {
+    "code": "238110",
+    "parentLookupCode": "2381",
+    "defaultValue": "Entrepreneurs en fondation et structure en béton coulé"
+  },
+  {
+    "code": "238120",
+    "defaultValue": "Entrepreneurs en construction en acier et en béton préfabriqué",
+    "parentLookupCode": "2381"
+  },
+  {
+    "code": "238130",
+    "parentLookupCode": "2381",
+    "defaultValue": "Entrepreneurs en charpenterie"
+  },
+  {
+    "code": "238140",
+    "parentLookupCode": "2381",
+    "defaultValue": "Entrepreneurs en maçonnerie"
+  },
+  {
+    "code": "238150",
+    "defaultValue": "Verre et vitrage",
+    "parentLookupCode": "2381"
+  },
+  {
+    "code": "238160",
+    "parentLookupCode": "2381",
+    "defaultValue": "Entrepreneurs en couverture"
+  },
+  {
+    "code": "238170",
+    "parentLookupCode": "2381",
+    "defaultValue": "Entrepreneurs en revêtement"
+  },
+  {
+    "code": "238190",
+    "defaultValue": "Entrepreneurs en autres travaux de fondations, de structure, et d'extérieur de bâtiment",
+    "parentLookupCode": "2381"
+  },
+  {
+    "code": "238210",
+    "parentLookupCode": "2382",
+    "defaultValue": "Entrepreneurs en installation électrique et autres entrepreneurs en installation de câblage"
+  },
+  {
+    "code": "238220",
+    "parentLookupCode": "2382",
+    "defaultValue": "Entrepreneurs en plomberie, chauffage et climatisation"
+  },
+  {
+    "code": "238290",
+    "defaultValue": "Entrepreneurs en installation d'autres bâtiments",
+    "parentLookupCode": "2382"
+  },
+  {
+    "code": "238310",
+    "parentLookupCode": "2382",
+    "defaultValue": "Entrepreneurs en cloisons sèches et en isolation"
+  },
+  {
+    "code": "238320",
+    "parentLookupCode": "2382",
+    "defaultValue": "Entrepreneurs en peinture et tapisserie"
+  },
+  {
+    "code": "238330",
+    "defaultValue": "Entrepreneurs en revêtement de sol",
+    "parentLookupCode": "2382"
+  },
+  {
+    "code": "238340",
+    "parentLookupCode": "2382",
+    "defaultValue": "Carreleurs et entrepreneurs en terrazzo"
+  },
+  {
+    "code": "238350",
+    "parentLookupCode": "2382",
+    "defaultValue": "Entrepreneurs en charpenterie"
+  },
+  {
+    "code": "238390",
+    "defaultValue": "Autres entrepreneurs en finition de bâtiment",
+    "parentLookupCode": "2382"
+  },
+  {
+    "code": "238910",
+    "defaultValue": "Entrepreneurs en préparation de chantier",
+    "parentLookupCode": "2389"
+  },
+  {
+    "code": "238990",
+    "parentLookupCode": "2389",
+    "defaultValue": "Tous les autres entrepreneurs spécialisés"
+  },
+  {
+    "code": "311111",
+    "parentLookupCode": "3111",
+    "defaultValue": "Fabrication d'aliments pour chiens et chats"
+  },
+  {
+    "code": "311119",
+    "defaultValue": "Fabrication d'autres aliments pour animaux",
+    "parentLookupCode": "3111"
+  },
+  {
+    "code": "311211",
+    "defaultValue": "Meunerie",
+    "parentLookupCode": "3112"
+  },
+  {
+    "code": "311212",
+    "parentLookupCode": "3112",
+    "defaultValue": "Fraisage de riz"
+  },
+  {
+    "code": "311213",
+    "defaultValue": "Fabrication de malt",
+    "parentLookupCode": "3112"
+  },
+  {
+    "code": "311221",
+    "defaultValue": "Fraisage de maïs humide",
+    "parentLookupCode": "3112"
+  },
+  {
+    "code": "311224",
+    "defaultValue": "Traitement du soja et autres graines oléagineuses",
+    "parentLookupCode": "3112"
+  },
+  {
+    "code": "311225",
+    "parentLookupCode": "3112",
+    "defaultValue": "Raffinage et mélange de graisses et d'huiles"
+  },
+  {
+    "code": "311230",
+    "defaultValue": "Fabrication de céréales de petit déjeuner",
+    "parentLookupCode": "3112"
+  },
+  {
+    "code": "311313",
+    "parentLookupCode": "3113",
+    "defaultValue": "Fabrication de sucre de betterave"
+  },
+  {
+    "code": "311314",
+    "defaultValue": "Fabrication de sucre de canne",
+    "parentLookupCode": "3113"
+  },
+  {
+    "code": "311340",
+    "defaultValue": "Fabrication de confiseries sans chocolat",
+    "parentLookupCode": "3113"
+  },
+  {
+    "code": "311351",
+    "defaultValue": "Fabrication de chocolat et de confiseries à partir de fèves de cacao",
+    "parentLookupCode": "3113"
+  },
+  {
+    "code": "311352",
+    "parentLookupCode": "3113",
+    "defaultValue": "Fabrication de confiseries à partir de chocolat acheté"
+  },
+  {
+    "code": "311411",
+    "parentLookupCode": "3114",
+    "defaultValue": "Fabrication de fruits, de jus et de légumes congelés"
+  },
+  {
+    "code": "311412",
+    "defaultValue": "Fabrication d'aliments de spécialité surgelés",
+    "parentLookupCode": "3114"
+  },
+  {
+    "code": "311421",
+    "parentLookupCode": "3114",
+    "defaultValue": "Conserves de fruits et légumes"
+  },
+  {
+    "code": "311422",
+    "parentLookupCode": "3114",
+    "defaultValue": "Canning spécialisé"
+  },
+  {
+    "code": "311423",
+    "defaultValue": "Fabrication d'aliments séchés et déshydratés",
+    "parentLookupCode": "3114"
+  },
+  {
+    "code": "311511",
+    "defaultValue": "Fabrication de lait liquide",
+    "parentLookupCode": "3115"
+  },
+  {
+    "code": "311512",
+    "defaultValue": "Fabrication de beurre de crémerie",
+    "parentLookupCode": "3115"
+  },
+  {
+    "code": "311513",
+    "defaultValue": "Fabrication de fromage",
+    "parentLookupCode": "3115"
+  },
+  {
+    "code": "311514",
+    "defaultValue": "Fabrication de produits laitiers secs, condensés et évaporés",
+    "parentLookupCode": "3115"
+  },
+  {
+    "code": "311520",
+    "defaultValue": "Fabrication de crème glacée et de desserts congelés",
+    "parentLookupCode": "3115"
+  },
+  {
+    "code": "311611",
+    "parentLookupCode": "3116",
+    "defaultValue": "Abattage d'animaux (sauf de volaille)"
+  },
+  {
+    "code": "311612",
+    "defaultValue": "Viande transformée à partir de carcasses",
+    "parentLookupCode": "3116"
+  },
+  {
+    "code": "311613",
+    "parentLookupCode": "3116",
+    "defaultValue": "Rendu et traitement des sous-produits de viande"
+  },
+  {
+    "code": "311615",
+    "defaultValue": "Transformation de la volaille",
+    "parentLookupCode": "3116"
+  },
+  {
+    "code": "311710",
+    "parentLookupCode": "3117",
+    "defaultValue": "Préparation et conditionnement de produits de la mer"
+  },
+  {
+    "code": "311811",
+    "defaultValue": "Boulangeries au détail",
+    "parentLookupCode": "3118"
+  },
+  {
+    "code": "311812",
+    "parentLookupCode": "3118",
+    "defaultValue": "Boulangeries commerciales"
+  },
+  {
+    "code": "311813",
+    "defaultValue": "Fabrication de gâteaux surgelés, de tartes et d'autres pâtisseries",
+    "parentLookupCode": "3118"
+  },
+  {
+    "code": "311821",
+    "parentLookupCode": "3118",
+    "defaultValue": "Fabrication de biscuits et de craquelins"
+  },
+  {
+    "code": "311824",
+    "defaultValue": "Fabrication de pâtes sèches, de pâtes et de farines à partir de farine achetée",
+    "parentLookupCode": "3118"
+  },
+  {
+    "code": "311830",
+    "defaultValue": "Fabrication de tortillas",
+    "parentLookupCode": "3118"
+  },
+  {
+    "code": "311911",
+    "defaultValue": "Fabrication de noix grillées et de beurre d'arachide",
+    "parentLookupCode": "3119"
+  },
+  {
+    "code": "311919",
+    "defaultValue": "Fabrication d'autres aliments à grignoter",
+    "parentLookupCode": "3119"
+  },
+  {
+    "code": "311920",
+    "parentLookupCode": "3119",
+    "defaultValue": "Fabrication de café et de thé"
+  },
+  {
+    "code": "311930",
+    "defaultValue": "Fabrication de sirops et de concentrés aromatisants",
+    "parentLookupCode": "3119"
+  },
+  {
+    "code": "311941",
+    "parentLookupCode": "3119",
+    "defaultValue": "Fabrication de mayonnaise, de vinaigrette et d'autres préparations de sauce"
+  },
+  {
+    "code": "311942",
+    "parentLookupCode": "3119",
+    "defaultValue": "Fabrication d'épices et d'extraits"
+  },
+  {
+    "code": "311991",
+    "defaultValue": "Fabrication d'aliments préparés périssables",
+    "parentLookupCode": "3119"
+  },
+  {
+    "code": "311999",
+    "parentLookupCode": "3119",
+    "defaultValue": "Fabrication de tous les autres aliments divers"
+  },
+  {
+    "code": "312111",
+    "parentLookupCode": "3121",
+    "defaultValue": "Fabrication de boissons gazeuses"
+  },
+  {
+    "code": "312112",
+    "parentLookupCode": "3121",
+    "defaultValue": "Fabrication d'eau embouteillée"
+  },
+  {
+    "code": "312113",
+    "defaultValue": "Fabrication de glace",
+    "parentLookupCode": "3121"
+  },
+  {
+    "code": "312120",
+    "defaultValue": "Brasseries",
+    "parentLookupCode": "3121"
+  },
+  {
+    "code": "312130",
+    "parentLookupCode": "3121",
+    "defaultValue": "Vignobles"
+  },
+  {
+    "code": "312140",
+    "defaultValue": "Distilleries",
+    "parentLookupCode": "3121"
+  },
+  {
+    "code": "312230",
+    "parentLookupCode": "3122",
+    "defaultValue": "Fabrication de tabac"
+  },
+  {
+    "code": "313110",
+    "defaultValue": "Usines de fibres, de fils et de fils",
+    "parentLookupCode": "3131"
+  },
+  {
+    "code": "313210",
+    "parentLookupCode": "3132",
+    "defaultValue": "Usines de tissus à larges bords"
+  },
+  {
+    "code": "313220",
+    "parentLookupCode": "3132",
+    "defaultValue": "Usines de tissus étroits et broderie à la machine Schiffli"
+  },
+  {
+    "code": "313230",
+    "parentLookupCode": "3132",
+    "defaultValue": "Usines de tissu non-tissé"
+  },
+  {
+    "code": "313240",
+    "defaultValue": "Usines de tricot",
+    "parentLookupCode": "3132"
+  },
+  {
+    "code": "313310",
+    "parentLookupCode": "3133",
+    "defaultValue": "Usines de textiles et de finissage des tissus"
+  },
+  {
+    "code": "313320",
+    "defaultValue": "Usines de revêtement de tissu",
+    "parentLookupCode": "3133"
+  },
+  {
+    "code": "314110",
+    "parentLookupCode": "3141",
+    "defaultValue": "Usines de tapis et carpettes"
+  },
+  {
+    "code": "314120",
+    "parentLookupCode": "3141",
+    "defaultValue": "Usines de rideaux et de linge de maison"
+  },
+  {
+    "code": "314910",
+    "defaultValue": "Usines de sacs en textile et de toile",
+    "parentLookupCode": "3149"
+  },
+  {
+    "code": "314994",
+    "defaultValue": "Corde, cordage, ficelle, corde de pneu, et usines de tissu de pneu",
+    "parentLookupCode": "3149"
+  },
+  {
+    "code": "314999",
+    "defaultValue": "Tous les autres fabricants de produits textiles divers",
+    "parentLookupCode": "3149"
+  },
+  {
+    "code": "315110",
+    "defaultValue": "Chaussettes de bonneterie et de chaussettes",
+    "parentLookupCode": "3151"
+  },
+  {
+    "code": "315190",
+    "defaultValue": "Autres usines de tricotage",
+    "parentLookupCode": "3151"
+  },
+  {
+    "code": "315210",
+    "parentLookupCode": "3152",
+    "defaultValue": "Couper et coudre les entrepreneurs de vêtements"
+  },
+  {
+    "code": "315220",
+    "parentLookupCode": "3152",
+    "defaultValue": "Fabrication de vêtements coupés-cousus pour hommes et garçons"
+  },
+  {
+    "code": "315240",
+    "defaultValue": "Fabrication de vêtements coupés-cousus pour femmes, filles et bébés",
+    "parentLookupCode": "3152"
+  },
+  {
+    "code": "315280",
+    "parentLookupCode": "3152",
+    "defaultValue": "Fabrication d'autres vêtements coupés-cousus"
+  },
+  {
+    "code": "315990",
+    "defaultValue": "Fabrication d'accessoires vestimentaires et d'autres vêtements",
+    "parentLookupCode": "3159"
+  },
+  {
+    "code": "316110",
+    "parentLookupCode": "3161",
+    "defaultValue": "Cuir et peau Tannage et finition"
+  },
+  {
+    "code": "316210",
+    "parentLookupCode": "3162",
+    "defaultValue": "Fabrication de chaussures"
+  },
+  {
+    "code": "316992",
+    "parentLookupCode": "3169",
+    "defaultValue": "Fabrication de sacs à main et de sacs à main pour femmes"
+  },
+  {
+    "code": "316998",
+    "defaultValue": "Fabrication de tous les autres produits en cuir de qualité et produits connexes",
+    "parentLookupCode": "3169"
+  },
+  {
+    "code": "321113",
+    "defaultValue": "Scieries",
+    "parentLookupCode": "3211"
+  },
+  {
+    "code": "321114",
+    "parentLookupCode": "3211",
+    "defaultValue": "Préservation du bois"
+  },
+  {
+    "code": "321211",
+    "defaultValue": "Fabrication de placages et de contreplaqués de feuillus",
+    "parentLookupCode": "3212"
+  },
+  {
+    "code": "321212",
+    "parentLookupCode": "3212",
+    "defaultValue": "Fabrication de placages de résineux et de contreplaqués"
+  },
+  {
+    "code": "321213",
+    "defaultValue": "Fabrication de membres en bois reconstitué (sauf les fermes)",
+    "parentLookupCode": "3212"
+  },
+  {
+    "code": "321214",
+    "defaultValue": "Fabrication de fermes",
+    "parentLookupCode": "3212"
+  },
+  {
+    "code": "321219",
+    "defaultValue": "Fabrication de produits en bois reconstitué",
+    "parentLookupCode": "3212"
+  },
+  {
+    "code": "321911",
+    "parentLookupCode": "3219",
+    "defaultValue": "Fabrication de fenêtres et de portes en bois"
+  },
+  {
+    "code": "321912",
+    "parentLookupCode": "3219",
+    "defaultValue": "Couper le bois, scier le bois et raboter"
+  },
+  {
+    "code": "321918",
+    "parentLookupCode": "3219",
+    "defaultValue": "Autres menuiseries (y compris les planchers)"
+  },
+  {
+    "code": "321920",
+    "parentLookupCode": "3219",
+    "defaultValue": "Fabrication de contenants et de palettes en bois"
+  },
+  {
+    "code": "321991",
+    "defaultValue": "Fabrication de maisons préfabriquées (maisons mobiles)",
+    "parentLookupCode": "3219"
+  },
+  {
+    "code": "321992",
+    "parentLookupCode": "3219",
+    "defaultValue": "Fabrication de bâtiments en bois préfabriqués"
+  },
+  {
+    "code": "321999",
+    "parentLookupCode": "3219",
+    "defaultValue": "Fabrication de tous les autres produits divers en bois"
+  },
+  {
+    "code": "322110",
+    "defaultValue": "Usines de pâte",
+    "parentLookupCode": "3221"
+  },
+  {
+    "code": "322121",
+    "defaultValue": "Usines de papier (sauf le papier journal)",
+    "parentLookupCode": "3221"
+  },
+  {
+    "code": "322122",
+    "parentLookupCode": "3221",
+    "defaultValue": "Usines de papier journal"
+  },
+  {
+    "code": "322130",
+    "parentLookupCode": "3221",
+    "defaultValue": "Usines de carton"
+  },
+  {
+    "code": "322211",
+    "defaultValue": "Fabrication de boîtes de fibres ondulées et solides",
+    "parentLookupCode": "3222"
+  },
+  {
+    "code": "322212",
+    "parentLookupCode": "3222",
+    "defaultValue": "Fabrication de boîtes pliantes en carton"
+  },
+  {
+    "code": "322219",
+    "parentLookupCode": "3222",
+    "defaultValue": "Fabrication de contenants en carton"
+  },
+  {
+    "code": "322220",
+    "defaultValue": "Fabrication de sacs en papier et de papier couché et traité",
+    "parentLookupCode": "3222"
+  },
+  {
+    "code": "322230",
+    "defaultValue": "Fabrication de produits de papeterie",
+    "parentLookupCode": "3222"
+  },
+  {
+    "code": "322291",
+    "defaultValue": "Fabrication de produits de papier hygiénique",
+    "parentLookupCode": "3222"
+  },
+  {
+    "code": "322299",
+    "defaultValue": "Fabrication de tous les autres produits en papier transformé",
+    "parentLookupCode": "3222"
+  },
+  {
+    "code": "323111",
+    "parentLookupCode": "3231",
+    "defaultValue": "Impression commerciale (sauf écran et livres)"
+  },
+  {
+    "code": "323113",
+    "defaultValue": "Impression d'écran commerciale",
+    "parentLookupCode": "3231"
+  },
+  {
+    "code": "323117",
+    "parentLookupCode": "3231",
+    "defaultValue": "Impression de livres"
+  },
+  {
+    "code": "323120",
+    "defaultValue": "Activités de support pour l'impression",
+    "parentLookupCode": "3231"
+  },
+  {
+    "code": "324110",
+    "defaultValue": "Raffineries de pétrole",
+    "parentLookupCode": "3241"
+  },
+  {
+    "code": "324121",
+    "defaultValue": "Mélange de pavage d'asphalte et fabrication de blocs",
+    "parentLookupCode": "3241"
+  },
+  {
+    "code": "324122",
+    "parentLookupCode": "3241",
+    "defaultValue": "Fabrication de bardeaux et de matériaux de revêtement en asphalte"
+  },
+  {
+    "code": "324191",
+    "parentLookupCode": "3241",
+    "defaultValue": "Fabrication d'huile de graissage et de graissage de pétrole"
+  },
+  {
+    "code": "324199",
+    "parentLookupCode": "3241",
+    "defaultValue": "Fabrication de tous les autres produits du pétrole et du charbon"
+  },
+  {
+    "code": "325110",
+    "parentLookupCode": "3251",
+    "defaultValue": "Fabrication pétrochimique"
+  },
+  {
+    "code": "325120",
+    "parentLookupCode": "3251",
+    "defaultValue": "Fabrication de gaz industriels"
+  },
+  {
+    "code": "325130",
+    "defaultValue": "Fabrication de colorants synthétiques et de pigments",
+    "parentLookupCode": "3251"
+  },
+  {
+    "code": "325180",
+    "defaultValue": "Fabrication d'autres produits chimiques inorganiques de base",
+    "parentLookupCode": "3251"
+  },
+  {
+    "code": "325193",
+    "parentLookupCode": "3251",
+    "defaultValue": "Fabrication d'alcool éthylique"
+  },
+  {
+    "code": "325194",
+    "parentLookupCode": "3251",
+    "defaultValue": "Fabrication de produits cycliques bruts, intermédiaires et de produits chimiques pour gomme et bois"
+  },
+  {
+    "code": "325199",
+    "parentLookupCode": "3251",
+    "defaultValue": "Fabrication de tous les autres produits chimiques organiques de base"
+  },
+  {
+    "code": "325211",
+    "defaultValue": "Fabrication de matières plastiques et de résines",
+    "parentLookupCode": "3252"
+  },
+  {
+    "code": "325212",
+    "defaultValue": "Fabrication de caoutchouc synthétique",
+    "parentLookupCode": "3252"
+  },
+  {
+    "code": "325220",
+    "parentLookupCode": "3252",
+    "defaultValue": "Fabrication de fibres et de filaments artificiels et synthétiques"
+  },
+  {
+    "code": "325311",
+    "parentLookupCode": "3253",
+    "defaultValue": "Fabrication d'engrais azotés"
+  },
+  {
+    "code": "325312",
+    "defaultValue": "Fabrication d'engrais phosphatés",
+    "parentLookupCode": "3253"
+  },
+  {
+    "code": "325314",
+    "parentLookupCode": "3253",
+    "defaultValue": "Fertilisation (mélange uniquement)"
+  },
+  {
+    "code": "325320",
+    "parentLookupCode": "3253",
+    "defaultValue": "Fabrication de pesticides et d'autres produits chimiques agricoles"
+  },
+  {
+    "code": "325411",
+    "parentLookupCode": "3254",
+    "defaultValue": "Fabrication médicinale et botanique"
+  },
+  {
+    "code": "325412",
+    "defaultValue": "Fabrication de préparations pharmaceutiques",
+    "parentLookupCode": "3254"
+  },
+  {
+    "code": "325413",
+    "defaultValue": "Fabrication de substances diagnostiques in vitro",
+    "parentLookupCode": "3254"
+  },
+  {
+    "code": "325414",
+    "defaultValue": "Fabrication de produits biologiques (sauf les diagnostics)",
+    "parentLookupCode": "3254"
+  },
+  {
+    "code": "325510",
+    "parentLookupCode": "3255",
+    "defaultValue": "Fabrication de peinture et de revêtement"
+  },
+  {
+    "code": "325520",
+    "defaultValue": "Fabrication d'adhésif",
+    "parentLookupCode": "3255"
+  },
+  {
+    "code": "325611",
+    "defaultValue": "Fabrication de savon et d'autres détergents",
+    "parentLookupCode": "3256"
+  },
+  {
+    "code": "325612",
+    "defaultValue": "La bonne fabrication de produits polonais et d'autres produits d'assainissement",
+    "parentLookupCode": "3256"
+  },
+  {
+    "code": "325613",
+    "parentLookupCode": "3256",
+    "defaultValue": "Fabrication d'agents actifs de surface"
+  },
+  {
+    "code": "325620",
+    "defaultValue": "Fabrication de toilettes",
+    "parentLookupCode": "3256"
+  },
+  {
+    "code": "325910",
+    "parentLookupCode": "3259",
+    "defaultValue": "Fabrication d'encre d'imprimerie"
+  },
+  {
+    "code": "325920",
+    "defaultValue": "Fabrication d'explosifs",
+    "parentLookupCode": "3259"
+  },
+  {
+    "code": "325991",
+    "parentLookupCode": "3259",
+    "defaultValue": "Composition personnalisée des résines achetées"
+  },
+  {
+    "code": "325992",
+    "parentLookupCode": "3259",
+    "defaultValue": "Fabrication de pellicules photographiques, de papier, de plaques et de produits chimiques"
+  },
+  {
+    "code": "325998",
+    "defaultValue": "Fabrication de tous les autres produits chimiques et préparation divers",
+    "parentLookupCode": "3259"
+  },
+  {
+    "code": "326111",
+    "parentLookupCode": "3261",
+    "defaultValue": "Fabrication de sacs et de sachets en plastique"
+  },
+  {
+    "code": "326112",
+    "defaultValue": "Fabrication de pellicules et de feuilles d'emballage en plastique (y compris les laminés)",
+    "parentLookupCode": "3261"
+  },
+  {
+    "code": "326113",
+    "defaultValue": "Fabrication de pellicules et de feuilles de plastique non plastifiées (sauf les emballages)",
+    "parentLookupCode": "3261"
+  },
+  {
+    "code": "326122",
+    "parentLookupCode": "3261",
+    "defaultValue": "Fabrication de tuyaux et de raccords de tuyauterie en plastique"
+  },
+  {
+    "code": "326130",
+    "defaultValue": "Fabrication de tôles, de feuilles (sauf les emballages) et de formes en plastique laminé",
+    "parentLookupCode": "3261"
+  },
+  {
+    "code": "326140",
+    "parentLookupCode": "3261",
+    "defaultValue": "Fabrication de mousse de polystyrène"
+  },
+  {
+    "code": "326150",
+    "defaultValue": "Fabrication d'uréthane et d'autres produits en mousse (sauf le polystyrène)",
+    "parentLookupCode": "3261"
+  },
+  {
+    "code": "326160",
+    "parentLookupCode": "3261",
+    "defaultValue": "Fabrication de bouteilles en plastique"
+  },
+  {
+    "code": "326191",
+    "defaultValue": "Fabrication d'appareils de plomberie en plastique",
+    "parentLookupCode": "3261"
+  },
+  {
+    "code": "326199",
+    "defaultValue": "Fabrication de tous les autres produits en plastique",
+    "parentLookupCode": "3261"
+  },
+  {
+    "code": "326211",
+    "parentLookupCode": "3262",
+    "defaultValue": "Fabrication de pneus (sauf rechapage)"
+  },
+  {
+    "code": "326212",
+    "defaultValue": "Rechapage des pneus",
+    "parentLookupCode": "3262"
+  },
+  {
+    "code": "326220",
+    "defaultValue": "Fabrication de tuyaux et de courroies en caoutchouc et en plastique",
+    "parentLookupCode": "3262"
+  },
+  {
+    "code": "326291",
+    "defaultValue": "Fabrication de produits en caoutchouc à usage mécanique",
+    "parentLookupCode": "3262"
+  },
+  {
+    "code": "326299",
+    "defaultValue": "Fabrication de tous les autres produits en caoutchouc",
+    "parentLookupCode": "3262"
+  },
+  {
+    "code": "327110",
+    "parentLookupCode": "3271",
+    "defaultValue": "Fabrication de poteries, de céramiques et d'appareils de plomberie"
+  },
+  {
+    "code": "327120",
+    "defaultValue": "Fabrication de matériaux de construction et de réfractaires en argile",
+    "parentLookupCode": "3271"
+  },
+  {
+    "code": "327211",
+    "defaultValue": "Fabrication de verre plat",
+    "parentLookupCode": "3272"
+  },
+  {
+    "code": "327212",
+    "defaultValue": "Fabrication d'autres articles en verre soufflé et soufflé et de la verrerie",
+    "parentLookupCode": "3272"
+  },
+  {
+    "code": "327213",
+    "parentLookupCode": "3272",
+    "defaultValue": "Fabrication de contenants en verre"
+  },
+  {
+    "code": "327215",
+    "parentLookupCode": "3272",
+    "defaultValue": "Fabrication de produits en verre en verre acheté"
+  },
+  {
+    "code": "327310",
+    "defaultValue": "Fabrication de ciment",
+    "parentLookupCode": "3273"
+  },
+  {
+    "code": "327320",
+    "defaultValue": "Fabrication de béton prêt à l'emploi",
+    "parentLookupCode": "3273"
+  },
+  {
+    "code": "327331",
+    "parentLookupCode": "3273",
+    "defaultValue": "Fabrication de blocs de béton et de briques"
+  },
+  {
+    "code": "327332",
+    "defaultValue": "Fabrication de tuyaux en béton",
+    "parentLookupCode": "3273"
+  },
+  {
+    "code": "327390",
+    "defaultValue": "Fabrication d'autres produits en béton",
+    "parentLookupCode": "3273"
+  },
+  {
+    "code": "327410",
+    "defaultValue": "Fabrication de chaux",
+    "parentLookupCode": "3274"
+  },
+  {
+    "code": "327420",
+    "defaultValue": "Fabrication de produits en gypse",
+    "parentLookupCode": "3274"
+  },
+  {
+    "code": "327910",
+    "defaultValue": "Fabrication de produits abrasifs",
+    "parentLookupCode": "3279"
+  },
+  {
+    "code": "327991",
+    "defaultValue": "Fabrication de pierres de taille et de produits en pierre",
+    "parentLookupCode": "3279"
+  },
+  {
+    "code": "327992",
+    "parentLookupCode": "3279",
+    "defaultValue": "Fabrication de minéraux et de terre moulue ou traitée"
+  },
+  {
+    "code": "327993",
+    "parentLookupCode": "3279",
+    "defaultValue": "Fabrication de laine minérale"
+  },
+  {
+    "code": "327999",
+    "parentLookupCode": "3279",
+    "defaultValue": "Fabrication de tous les autres produits minéraux non métalliques"
+  },
+  {
+    "code": "331110",
+    "parentLookupCode": "3311",
+    "defaultValue": "Usines de fer et d'acier et fabrication de ferro-alliages"
+  },
+  {
+    "code": "331210",
+    "defaultValue": "Fabrication de tubes et de tuyaux en fer et en acier à partir d'acier acheté",
+    "parentLookupCode": "3312"
+  },
+  {
+    "code": "331221",
+    "parentLookupCode": "3312",
+    "defaultValue": "Fabrication de profilés en acier laminé"
+  },
+  {
+    "code": "331222",
+    "defaultValue": "Dessin de fil d'acier",
+    "parentLookupCode": "3312"
+  },
+  {
+    "code": "331313",
+    "parentLookupCode": "3313",
+    "defaultValue": "Raffinage d'alumine et production d'aluminium primaire"
+  },
+  {
+    "code": "331314",
+    "defaultValue": "Fonte secondaire et alliage d'aluminium",
+    "parentLookupCode": "3313"
+  },
+  {
+    "code": "331315",
+    "parentLookupCode": "3313",
+    "defaultValue": "Fabrication de tôles, de plaques et de feuilles d'aluminium"
+  },
+  {
+    "code": "331318",
+    "parentLookupCode": "3313",
+    "defaultValue": "Autres laminage, étirage et extrusion de l'aluminium"
+  },
+  {
+    "code": "331410",
+    "parentLookupCode": "3314",
+    "defaultValue": "Fusion et affinage de métaux non ferreux (sauf l'aluminium)"
+  },
+  {
+    "code": "331420",
+    "defaultValue": "Laminage, étirage, extrusion et alliage de cuivre",
+    "parentLookupCode": "3314"
+  },
+  {
+    "code": "331491",
+    "defaultValue": "Laminage, étirage et extrusion de métaux non ferreux (sauf le cuivre et l'aluminium)",
+    "parentLookupCode": "3314"
+  },
+  {
+    "code": "331492",
+    "parentLookupCode": "3314",
+    "defaultValue": "Fonte secondaire, affinage et alliage de métaux non ferreux (sauf le cuivre et l'aluminium)"
+  },
+  {
+    "code": "331511",
+    "defaultValue": "Fonderies de fer",
+    "parentLookupCode": "3315"
+  },
+  {
+    "code": "331512",
+    "parentLookupCode": "3315",
+    "defaultValue": "Fonderies d'investissement en acier"
+  },
+  {
+    "code": "331513",
+    "defaultValue": "Fonderies d'acier (sauf investissement)",
+    "parentLookupCode": "3315"
+  },
+  {
+    "code": "331523",
+    "defaultValue": "Fonderies de métaux non ferreux",
+    "parentLookupCode": "3315"
+  },
+  {
+    "code": "331524",
+    "parentLookupCode": "3315",
+    "defaultValue": "Fonderies d'aluminium (sauf moulage sous pression)"
+  },
+  {
+    "code": "331529",
+    "parentLookupCode": "3315",
+    "defaultValue": "Autres fonderies de métaux non ferreux (sauf moulage sous pression)"
+  },
+  {
+    "code": "332111",
+    "defaultValue": "Forgeron de fer et d'acier",
+    "parentLookupCode": "3321"
+  },
+  {
+    "code": "332112",
+    "parentLookupCode": "3321",
+    "defaultValue": "Forgeage non ferreux"
+  },
+  {
+    "code": "332114",
+    "defaultValue": "Formation de rouleaux personnalisés",
+    "parentLookupCode": "3321"
+  },
+  {
+    "code": "332117",
+    "defaultValue": "Fabrication de pièces en métallurgie des poudres",
+    "parentLookupCode": "3321"
+  },
+  {
+    "code": "332119",
+    "defaultValue": "Couronne en métal, fermeture et autre emboutissage de métal (sauf automobile)",
+    "parentLookupCode": "3321"
+  },
+  {
+    "code": "332215",
+    "parentLookupCode": "3322",
+    "defaultValue": "Fabrication de batteries de cuisine en métal, de coutellerie, de coutellerie et de coutellerie (sauf précieuses)"
+  },
+  {
+    "code": "332216",
+    "parentLookupCode": "3322",
+    "defaultValue": "Lame de scie et fabrication d'outils manuels"
+  },
+  {
+    "code": "332311",
+    "defaultValue": "Fabrication de bâtiments préfabriqués en métal et de composants",
+    "parentLookupCode": "3323"
+  },
+  {
+    "code": "332312",
+    "parentLookupCode": "3323",
+    "defaultValue": "Fabrication de charpentes métalliques"
+  },
+  {
+    "code": "332313",
+    "defaultValue": "Fabrication de tôles",
+    "parentLookupCode": "3323"
+  },
+  {
+    "code": "332321",
+    "parentLookupCode": "3323",
+    "defaultValue": "Fabrication de fenêtres et de portes en métal"
+  },
+  {
+    "code": "332322",
+    "parentLookupCode": "3323",
+    "defaultValue": "Fabrication de tôle"
+  },
+  {
+    "code": "332323",
+    "parentLookupCode": "3323",
+    "defaultValue": "Fabrication de produits métalliques d'ornement et d'architecture"
+  },
+  {
+    "code": "332410",
+    "parentLookupCode": "3324",
+    "defaultValue": "Fabrication de chaudières et d'échangeurs de chaleur"
+  },
+  {
+    "code": "332420",
+    "parentLookupCode": "3324",
+    "defaultValue": "Fabrication de réservoirs métalliques (jauge lourde)"
+  },
+  {
+    "code": "332431",
+    "defaultValue": "Fabrication de canettes métalliques",
+    "parentLookupCode": "3324"
+  },
+  {
+    "code": "332439",
+    "defaultValue": "Fabrication d'autres contenants en métal",
+    "parentLookupCode": "3324"
+  },
+  {
+    "code": "332510",
+    "parentLookupCode": "3325",
+    "defaultValue": "Fabrication de matériel"
+  },
+  {
+    "code": "332613",
+    "parentLookupCode": "3326",
+    "defaultValue": "Fabrication de printemps"
+  },
+  {
+    "code": "332618",
+    "defaultValue": "Fabrication d'autres produits en fil métallique",
+    "parentLookupCode": "3326"
+  },
+  {
+    "code": "332710",
+    "defaultValue": "Ateliers d'usinage",
+    "parentLookupCode": "3327"
+  },
+  {
+    "code": "332721",
+    "parentLookupCode": "3327",
+    "defaultValue": "Fabrication de produits tournés de précision"
+  },
+  {
+    "code": "332722",
+    "parentLookupCode": "3327",
+    "defaultValue": "Fabrication de boulons, écrous, vis, rivets et rondelles"
+  },
+  {
+    "code": "332811",
+    "defaultValue": "Traitement de chaleur en métal",
+    "parentLookupCode": "3328"
+  },
+  {
+    "code": "332812",
+    "defaultValue": "Revêtement de métal, gravure (sauf les bijoux et l'argenterie) et services connexes aux fabricants",
+    "parentLookupCode": "3328"
+  },
+  {
+    "code": "332813",
+    "parentLookupCode": "3328",
+    "defaultValue": "Galvanoplastie, placage, polissage, anodisation et coloration"
+  },
+  {
+    "code": "332911",
+    "defaultValue": "Fabrication de robinetterie industrielle",
+    "parentLookupCode": "3329"
+  },
+  {
+    "code": "332912",
+    "defaultValue": "Fabrication de robinets d'alimentation de fluide et de raccords de tuyaux",
+    "parentLookupCode": "3329"
+  },
+  {
+    "code": "332913",
+    "parentLookupCode": "3329",
+    "defaultValue": "Montage de raccords de plomberie et fabrication de garnitures"
+  },
+  {
+    "code": "332919",
+    "defaultValue": "Fabrication d'autres robinets et raccords de tuyauterie en métal",
+    "parentLookupCode": "3329"
+  },
+  {
+    "code": "332991",
+    "defaultValue": "Fabrication de roulements à billes et à rouleaux",
+    "parentLookupCode": "3329"
+  },
+  {
+    "code": "332992",
+    "parentLookupCode": "3329",
+    "defaultValue": "Fabrication de munitions pour armes légères"
+  },
+  {
+    "code": "332993",
+    "parentLookupCode": "3329",
+    "defaultValue": "Fabrication de munitions (sauf les armes légères)"
+  },
+  {
+    "code": "332994",
+    "defaultValue": "Fabrication d'accessoires pour armes de petit calibre, d'artillerie et d'artillerie",
+    "parentLookupCode": "3329"
+  },
+  {
+    "code": "332996",
+    "parentLookupCode": "3329",
+    "defaultValue": "Fabrication de tuyaux et de raccords de tuyauterie"
+  },
+  {
+    "code": "332999",
+    "defaultValue": "Fabrication de tous les autres produits métalliques divers",
+    "parentLookupCode": "3329"
+  },
+  {
+    "code": "333111",
+    "parentLookupCode": "3331",
+    "defaultValue": "Fabrication de machines et de matériel agricoles"
+  },
+  {
+    "code": "333112",
+    "parentLookupCode": "3331",
+    "defaultValue": "Fabrication de tracteurs de pelouse et de jardin et de matériel pour la maison et le jardin"
+  },
+  {
+    "code": "333120",
+    "parentLookupCode": "3331",
+    "defaultValue": "Fabrication de machines de construction"
+  },
+  {
+    "code": "333131",
+    "parentLookupCode": "3331",
+    "defaultValue": "Fabrication de machines et d'équipements miniers"
+  },
+  {
+    "code": "333132",
+    "parentLookupCode": "3331",
+    "defaultValue": "Fabrication de machines et de matériel pour champs pétroliers et gaziers"
+  },
+  {
+    "code": "333241",
+    "parentLookupCode": "3332",
+    "defaultValue": "Fabrication de machines pour produits alimentaires"
+  },
+  {
+    "code": "333242",
+    "defaultValue": "Fabrication de machines à semi-conducteurs",
+    "parentLookupCode": "3332"
+  },
+  {
+    "code": "333243",
+    "parentLookupCode": "3332",
+    "defaultValue": "Fabrication de scieries, de machines à bois et de machines à papier"
+  },
+  {
+    "code": "333244",
+    "parentLookupCode": "3332",
+    "defaultValue": "Fabrication de machines et de matériel d'impression"
+  },
+  {
+    "code": "333249",
+    "parentLookupCode": "3332",
+    "defaultValue": "Fabrication d'autres machines industrielles"
+  },
+  {
+    "code": "333314",
+    "defaultValue": "Fabrication d'instruments optiques et de lentilles",
+    "parentLookupCode": "3333"
+  },
+  {
+    "code": "333316",
+    "defaultValue": "Fabrication de matériel photographique et de photocopie",
+    "parentLookupCode": "3333"
+  },
+  {
+    "code": "333318",
+    "defaultValue": "Fabrication d'autres machines commerciales et industrielles",
+    "parentLookupCode": "3333"
+  },
+  {
+    "code": "333413",
+    "parentLookupCode": "3334",
+    "defaultValue": "Fabrication de ventilateurs et de soufflantes et de purificateurs d'air industriels et commerciaux"
+  },
+  {
+    "code": "333414",
+    "parentLookupCode": "3334",
+    "defaultValue": "Fabrication de matériel de chauffage (sauf les appareils de chauffage à air chaud)"
+  },
+  {
+    "code": "333415",
+    "defaultValue": "Fabrication de matériel de climatisation et de chauffage à air chaud et de matériel de réfrigération commercial et industriel",
+    "parentLookupCode": "3334"
+  },
+  {
+    "code": "333511",
+    "defaultValue": "Fabrication de moules industriels",
+    "parentLookupCode": "3335"
+  },
+  {
+    "code": "333514",
+    "parentLookupCode": "3335",
+    "defaultValue": "Fabrication de matrices spéciales et d'outils, de matrices, de gabarits et d'accessoires"
+  },
+  {
+    "code": "333515",
+    "parentLookupCode": "3335",
+    "defaultValue": "Fabrication d'outils de coupe et d'accessoires de machines-outils"
+  },
+  {
+    "code": "333517",
+    "defaultValue": "Fabrication de machines-outils",
+    "parentLookupCode": "3335"
+  },
+  {
+    "code": "333519",
+    "parentLookupCode": "3335",
+    "defaultValue": "Laminerie et autres machines-outils pour le travail du métal"
+  },
+  {
+    "code": "333611",
+    "defaultValue": "Fabrication de groupes électrogènes de turbines et de turbines",
+    "parentLookupCode": "3336"
+  },
+  {
+    "code": "333612",
+    "defaultValue": "Changeur de vitesse, entraînement industriel à grande vitesse et fabrication d'engrenages",
+    "parentLookupCode": "3336"
+  },
+  {
+    "code": "333613",
+    "parentLookupCode": "3336",
+    "defaultValue": "Fabrication d'équipement de transmission de puissance mécanique"
+  },
+  {
+    "code": "333618",
+    "parentLookupCode": "3336",
+    "defaultValue": "Fabrication d'autres types de moteurs"
+  },
+  {
+    "code": "333911",
+    "parentLookupCode": "3339",
+    "defaultValue": "Fabrication de pompes et de matériel de pompage"
+  },
+  {
+    "code": "333912",
+    "defaultValue": "Fabrication de compresseurs d'air et de gaz",
+    "parentLookupCode": "3339"
+  },
+  {
+    "code": "333913",
+    "parentLookupCode": "3339",
+    "defaultValue": "Fabrication de pompes de mesure et de distribution"
+  },
+  {
+    "code": "333921",
+    "defaultValue": "Fabrication d'ascenseurs et d'escaliers roulants",
+    "parentLookupCode": "3339"
+  },
+  {
+    "code": "333922",
+    "defaultValue": "Fabrication de convoyeurs et de matériel de manutention",
+    "parentLookupCode": "3339"
+  },
+  {
+    "code": "333923",
+    "parentLookupCode": "3339",
+    "defaultValue": "Système de grue mobile, de treuil et de monorail"
+  },
+  {
+    "code": "333924",
+    "parentLookupCode": "3339",
+    "defaultValue": "Fabrication de camions industriels, de tracteurs, de remorques et de machines de empilage"
+  },
+  {
+    "code": "333991",
+    "defaultValue": "Fabrication d'outils manuels motorisés",
+    "parentLookupCode": "3339"
+  },
+  {
+    "code": "333992",
+    "parentLookupCode": "3339",
+    "defaultValue": "Fabrication de matériel de soudure et de brasage"
+  },
+  {
+    "code": "333993",
+    "defaultValue": "Fabrication de machines d'emballage",
+    "parentLookupCode": "3339"
+  },
+  {
+    "code": "333994",
+    "defaultValue": "Fabrication de fours industriels et de fours industriels",
+    "parentLookupCode": "3339"
+  },
+  {
+    "code": "333995",
+    "defaultValue": "Fabrication de vérins et d'actionneurs de fluides",
+    "parentLookupCode": "3339"
+  },
+  {
+    "code": "333996",
+    "defaultValue": "Fabrication de pompes et de moteurs à fluide",
+    "parentLookupCode": "3339"
+  },
+  {
+    "code": "333997",
+    "defaultValue": "Balance et Balance",
+    "parentLookupCode": "3339"
+  },
+  {
+    "code": "333999",
+    "parentLookupCode": "3339",
+    "defaultValue": "Fabrication de toutes les autres machines diverses d'usage général"
+  },
+  {
+    "code": "334111",
+    "parentLookupCode": "3341",
+    "defaultValue": "Fabrication d'ordinateurs électroniques"
+  },
+  {
+    "code": "334112",
+    "defaultValue": "Fabrication de dispositifs de stockage informatique",
+    "parentLookupCode": "3341"
+  },
+  {
+    "code": "334118",
+    "parentLookupCode": "3341",
+    "defaultValue": "Fabrication de terminaux informatiques et d'autres équipements périphériques informatiques"
+  },
+  {
+    "code": "334210",
+    "parentLookupCode": "3342",
+    "defaultValue": "Fabrication d'appareils téléphoniques"
+  },
+  {
+    "code": "334220",
+    "parentLookupCode": "3342",
+    "defaultValue": "Fabrication de matériel de radiodiffusion, de télédiffusion et de communication sans fil"
+  },
+  {
+    "code": "334290",
+    "parentLookupCode": "3342",
+    "defaultValue": "Fabrication d'autres types de matériel de communication"
+  },
+  {
+    "code": "334310",
+    "parentLookupCode": "3343",
+    "defaultValue": "Fabrication de matériel audio et vidéo"
+  },
+  {
+    "code": "334412",
+    "defaultValue": "Fabrication de cartes de circuits imprimés nus",
+    "parentLookupCode": "3344"
+  },
+  {
+    "code": "334413",
+    "defaultValue": "Fabrication de semi-conducteurs et de dispositifs connexes",
+    "parentLookupCode": "3344"
+  },
+  {
+    "code": "334416",
+    "parentLookupCode": "3344",
+    "defaultValue": "Condensateurs, résistances, bobines, transformateurs et autres inducteurs"
+  },
+  {
+    "code": "334417",
+    "defaultValue": "Fabrication de connecteurs électroniques",
+    "parentLookupCode": "3344"
+  },
+  {
+    "code": "334418",
+    "parentLookupCode": "3344",
+    "defaultValue": "Assemblage de circuits imprimés (Assemblage électronique)"
+  },
+  {
+    "code": "334419",
+    "parentLookupCode": "3344",
+    "defaultValue": "Fabrication d'autres composants électroniques"
+  },
+  {
+    "code": "334510",
+    "parentLookupCode": "3345",
+    "defaultValue": "Fabrication d'appareils électromédicaux et électrothérapeutiques"
+  },
+  {
+    "code": "334511",
+    "defaultValue": "Recherche, détection, navigation, orientation, aéronautique et nautique et fabrication d'instruments et de systèmes",
+    "parentLookupCode": "3345"
+  },
+  {
+    "code": "334512",
+    "defaultValue": "Fabrication automatique de contrôle de l'environnement pour usage résidentiel, commercial et d'appareils ménagers",
+    "parentLookupCode": "3345"
+  },
+  {
+    "code": "334513",
+    "parentLookupCode": "3345",
+    "defaultValue": "Fabrication d'instruments et de produits connexes pour la mesure, l'affichage et le contrôle des variables de processus industriels"
+  },
+  {
+    "code": "334514",
+    "defaultValue": "Totalisation de la fabrication de compteurs de fluides et de dispositifs de comptage",
+    "parentLookupCode": "3345"
+  },
+  {
+    "code": "334515",
+    "parentLookupCode": "3345",
+    "defaultValue": "Fabrication d'instruments pour mesurer et tester les signaux électriques et électriques"
+  },
+  {
+    "code": "334516",
+    "parentLookupCode": "3345",
+    "defaultValue": "Fabrication d'instruments de laboratoire analytique"
+  },
+  {
+    "code": "334517",
+    "defaultValue": "Fabrication d'appareils d'irradiation",
+    "parentLookupCode": "3345"
+  },
+  {
+    "code": "334519",
+    "parentLookupCode": "3345",
+    "defaultValue": "Fabrication d'autres appareils de mesure et de contrôle"
+  },
+  {
+    "code": "334613",
+    "defaultValue": "Fabrication de supports d'enregistrement magnétiques et optiques vierges",
+    "parentLookupCode": "3346"
+  },
+  {
+    "code": "334614",
+    "parentLookupCode": "3346",
+    "defaultValue": "Logiciels et autres disques compacts préenregistrés, bandes et reproduction de disques"
+  },
+  {
+    "code": "335110",
+    "parentLookupCode": "3351",
+    "defaultValue": "Fabrication d'ampoules électriques et de pièces"
+  },
+  {
+    "code": "335121",
+    "defaultValue": "Fabrication de luminaires électriques résidentiels",
+    "parentLookupCode": "3351"
+  },
+  {
+    "code": "335122",
+    "defaultValue": "Fabrication de luminaires électriques commerciaux, industriels et institutionnels",
+    "parentLookupCode": "3351"
+  },
+  {
+    "code": "335129",
+    "parentLookupCode": "3351",
+    "defaultValue": "Fabrication d'autres appareils d'éclairage"
+  },
+  {
+    "code": "335210",
+    "defaultValue": "Fabrication de petits appareils électroménagers",
+    "parentLookupCode": "3352"
+  },
+  {
+    "code": "335221",
+    "parentLookupCode": "3352",
+    "defaultValue": "Fabrication d'appareils ménagers de cuisson"
+  },
+  {
+    "code": "335222",
+    "parentLookupCode": "3352",
+    "defaultValue": "Fabrication de réfrigérateurs et de congélateurs ménagers"
+  },
+  {
+    "code": "335224",
+    "defaultValue": "Fabrication d'équipement de buanderie domestique",
+    "parentLookupCode": "3352"
+  },
+  {
+    "code": "335228",
+    "parentLookupCode": "3352",
+    "defaultValue": "Fabrication d'autres gros appareils ménagers"
+  },
+  {
+    "code": "335311",
+    "parentLookupCode": "3353",
+    "defaultValue": "Production d'énergie, de distribution et de transformation de spécialité"
+  },
+  {
+    "code": "335312",
+    "defaultValue": "Fabrication de moteurs et de générateurs",
+    "parentLookupCode": "3353"
+  },
+  {
+    "code": "335313",
+    "parentLookupCode": "3353",
+    "defaultValue": "Fabrication d'appareillages de commutation et de tableaux de distribution"
+  },
+  {
+    "code": "335314",
+    "parentLookupCode": "3353",
+    "defaultValue": "Fabrication de relais et de contrôle industriel"
+  },
+  {
+    "code": "335911",
+    "defaultValue": "Fabrication de batteries de stockage",
+    "parentLookupCode": "3359"
+  },
+  {
+    "code": "335912",
+    "defaultValue": "Fabrication de batteries primaires",
+    "parentLookupCode": "3359"
+  },
+  {
+    "code": "335921",
+    "parentLookupCode": "3359",
+    "defaultValue": "Fabrication de câbles à fibres optiques"
+  },
+  {
+    "code": "335929",
+    "parentLookupCode": "3359",
+    "defaultValue": "Autres activités de communication et de fil énergétique"
+  },
+  {
+    "code": "335931",
+    "defaultValue": "Fabrication de dispositifs de câblage porteurs de courant",
+    "parentLookupCode": "3359"
+  },
+  {
+    "code": "335932",
+    "parentLookupCode": "3359",
+    "defaultValue": "Fabrication de dispositifs de câblage à courant non-porteur"
+  },
+  {
+    "code": "335991",
+    "defaultValue": "Fabrication de produits de carbone et de graphite",
+    "parentLookupCode": "3359"
+  },
+  {
+    "code": "335999",
+    "defaultValue": "Fabrication de tous les autres appareils électriques et de composants divers",
+    "parentLookupCode": "3359"
+  },
+  {
+    "code": "336111",
+    "defaultValue": "Fabrication d'automobiles",
+    "parentLookupCode": "3361"
+  },
+  {
+    "code": "336112",
+    "parentLookupCode": "3361",
+    "defaultValue": "Fabrication de camions légers et de véhicules utilitaires"
+  },
+  {
+    "code": "336120",
+    "parentLookupCode": "3361",
+    "defaultValue": "Fabrication de camions lourds"
+  },
+  {
+    "code": "336211",
+    "defaultValue": "Fabrication de carrosseries de véhicules automobiles",
+    "parentLookupCode": "3362"
+  },
+  {
+    "code": "336212",
+    "defaultValue": "Fabrication de remorques de camions",
+    "parentLookupCode": "3362"
+  },
+  {
+    "code": "336213",
+    "parentLookupCode": "3362",
+    "defaultValue": "Fabrication de maisons-moteurs"
+  },
+  {
+    "code": "336214",
+    "parentLookupCode": "3362",
+    "defaultValue": "Fabrication de remorques de voyage et de camping-cars"
+  },
+  {
+    "code": "336310",
+    "parentLookupCode": "3363",
+    "defaultValue": "Fabrication de moteurs à essence et de pièces de moteurs de véhicules automobiles"
+  },
+  {
+    "code": "336320",
+    "defaultValue": "Fabrication de matériel électrique et électronique pour véhicules automobiles",
+    "parentLookupCode": "3363"
+  },
+  {
+    "code": "336330",
+    "defaultValue": "Composants de direction et de suspension de véhicules automobiles (sauf les ressorts)",
+    "parentLookupCode": "3363"
+  },
+  {
+    "code": "336340",
+    "parentLookupCode": "3363",
+    "defaultValue": "Fabrication de systèmes de freinage de véhicules automobiles"
+  },
+  {
+    "code": "336350",
+    "defaultValue": "Fabrication de pièces de transmission et de groupe motopropulseur pour véhicules automobiles",
+    "parentLookupCode": "3363"
+  },
+  {
+    "code": "336360",
+    "parentLookupCode": "3363",
+    "defaultValue": "Fabrication de sièges et de garnitures intérieures de véhicules automobiles"
+  },
+  {
+    "code": "336370",
+    "parentLookupCode": "3363",
+    "defaultValue": "Emboutissage de véhicules automobiles en métal"
+  },
+  {
+    "code": "336390",
+    "defaultValue": "Fabrication d'autres pièces de véhicules automobiles",
+    "parentLookupCode": "3364"
+  },
+  {
+    "code": "336411",
+    "parentLookupCode": "3364",
+    "defaultValue": "Fabrication d'aéronefs"
+  },
+  {
+    "code": "336412",
+    "defaultValue": "Fabrication de moteurs d'aéronefs et de pièces de moteurs",
+    "parentLookupCode": "3364"
+  },
+  {
+    "code": "336413",
+    "defaultValue": "Fabrication d'autres pièces d'aéronefs et de matériel auxiliaire",
+    "parentLookupCode": "3364"
+  },
+  {
+    "code": "336414",
+    "defaultValue": "Fabrication de missiles guidés et de véhicules spatiaux",
+    "parentLookupCode": "3364"
+  },
+  {
+    "code": "336415",
+    "defaultValue": "Unité de propulsion de missiles guidés et de véhicules spatiaux et fabrication de pièces d'unités de propulsion",
+    "parentLookupCode": "3364"
+  },
+  {
+    "code": "336419",
+    "defaultValue": "Fabrication d'autres pièces d'équipement de missiles guidés et de véhicules spatiaux et de matériel auxiliaire",
+    "parentLookupCode": "3364"
+  },
+  {
+    "code": "336510",
+    "parentLookupCode": "3365",
+    "defaultValue": "Fabrication de matériel ferroviaire roulant"
+  },
+  {
+    "code": "336611",
+    "defaultValue": "Construction et réparation de navires",
+    "parentLookupCode": "3366"
+  },
+  {
+    "code": "336612",
+    "defaultValue": "Construction de bateaux",
+    "parentLookupCode": "3366"
+  },
+  {
+    "code": "336991",
+    "parentLookupCode": "3369",
+    "defaultValue": "Fabrication de motocyclettes, de bicyclettes et de pièces"
+  },
+  {
+    "code": "336992",
+    "defaultValue": "Fabrication de véhicules blindés militaires, de chars et de pièces de chars",
+    "parentLookupCode": "3369"
+  },
+  {
+    "code": "336999",
+    "defaultValue": "Fabrication de tous les autres types de matériel de transport",
+    "parentLookupCode": "3369"
+  },
+  {
+    "code": "337110",
+    "parentLookupCode": "3371",
+    "defaultValue": "Fabrication d'armoires et de comptoirs de cuisine en bois"
+  },
+  {
+    "code": "337121",
+    "defaultValue": "Fabrication de meubles de maison rembourrés",
+    "parentLookupCode": "3371"
+  },
+  {
+    "code": "337122",
+    "defaultValue": "Fabrication de meubles de maison en bois non rembourrés",
+    "parentLookupCode": "3371"
+  },
+  {
+    "code": "337124",
+    "defaultValue": "Fabrication de meubles de maison en métal",
+    "parentLookupCode": "3371"
+  },
+  {
+    "code": "337125",
+    "parentLookupCode": "3371",
+    "defaultValue": "Fabrication de meubles de maison (sauf le bois et le métal)"
+  },
+  {
+    "code": "337127",
+    "defaultValue": "Fabrication de meubles institutionnels",
+    "parentLookupCode": "3371"
+  },
+  {
+    "code": "337211",
+    "defaultValue": "Fabrication de meubles de bureau en bois",
+    "parentLookupCode": "3372"
+  },
+  {
+    "code": "337212",
+    "defaultValue": "Fabrication de boiseries architecturales et de menuiseries sur mesure",
+    "parentLookupCode": "3372"
+  },
+  {
+    "code": "337214",
+    "parentLookupCode": "3372",
+    "defaultValue": "Fabrication de meubles de bureau (sauf en bois)"
+  },
+  {
+    "code": "337215",
+    "defaultValue": "Fabrication de vitrines, de cloisons, de rayonnages et de casiers",
+    "parentLookupCode": "3372"
+  },
+  {
+    "code": "337910",
+    "parentLookupCode": "3379",
+    "defaultValue": "Fabrication de matelas"
+  },
+  {
+    "code": "337920",
+    "parentLookupCode": "3379",
+    "defaultValue": "Fabrication de stores et de stores"
+  },
+  {
+    "code": "339112",
+    "defaultValue": "Fabrication d'instruments chirurgicaux et médicaux",
+    "parentLookupCode": "3391"
+  },
+  {
+    "code": "339113",
+    "defaultValue": "Fabrication d'appareils et d'accessoires chirurgicaux",
+    "parentLookupCode": "3391"
+  },
+  {
+    "code": "339114",
+    "parentLookupCode": "3391",
+    "defaultValue": "Fabrication de matériel et fournitures dentaires"
+  },
+  {
+    "code": "339115",
+    "parentLookupCode": "3391",
+    "defaultValue": "Fabrication de produits ophtalmiques"
+  },
+  {
+    "code": "339116",
+    "parentLookupCode": "3391",
+    "defaultValue": "Laboratoires dentaires"
+  },
+  {
+    "code": "339910",
+    "parentLookupCode": "3399",
+    "defaultValue": "Fabrication de bijoux et d'argenterie"
+  },
+  {
+    "code": "339920",
+    "parentLookupCode": "3399",
+    "defaultValue": "Fabrication d'articles de sport et d'athlétisme"
+  },
+  {
+    "code": "339930",
+    "defaultValue": "Fabrication de poupées, de jouets et de jeux",
+    "parentLookupCode": "3399"
+  },
+  {
+    "code": "339940",
+    "parentLookupCode": "3399",
+    "defaultValue": "Fabrication de fournitures de bureau (sauf le papier)"
+  },
+  {
+    "code": "339950",
+    "defaultValue": "Fabrication de signes",
+    "parentLookupCode": "3399"
+  },
+  {
+    "code": "339991",
+    "parentLookupCode": "3399",
+    "defaultValue": "Fabrication de joints, d'emballage et de dispositifs d'étanchéité"
+  },
+  {
+    "code": "339992",
+    "defaultValue": "Fabrication d'instruments de musique",
+    "parentLookupCode": "3399"
+  },
+  {
+    "code": "339993",
+    "defaultValue": "Fabrication de fermetures, de boutons, d'aiguilles et de broches",
+    "parentLookupCode": "3399"
+  },
+  {
+    "code": "339994",
+    "defaultValue": "Fabrication de balais, de brosses et de vadrouilles",
+    "parentLookupCode": "3399"
+  },
+  {
+    "code": "339995",
+    "parentLookupCode": "3399",
+    "defaultValue": "Fabrication de cercueils funéraires"
+  },
+  {
+    "code": "339999",
+    "defaultValue": "Toutes les autres activités diverses de fabrication",
+    "parentLookupCode": "3399"
+  },
+  {
+    "code": "423110",
+    "parentLookupCode": "4231",
+    "defaultValue": "Grossistes-marchands de véhicules automobiles et d'autres véhicules automobiles"
+  },
+  {
+    "code": "423120",
+    "defaultValue": "Grossistes-marchands de fournitures pour véhicules automobiles et de pièces neuves",
+    "parentLookupCode": "4231"
+  },
+  {
+    "code": "423130",
+    "parentLookupCode": "4231",
+    "defaultValue": "Grossistes-marchands de pneus et de chambres à air"
+  },
+  {
+    "code": "423140",
+    "defaultValue": "Grossistes-marchands de pièces de véhicules automobiles usagés",
+    "parentLookupCode": "4231"
+  },
+  {
+    "code": "423210",
+    "parentLookupCode": "4232",
+    "defaultValue": "Grossistes-marchands de meubles"
+  },
+  {
+    "code": "423220",
+    "parentLookupCode": "4232",
+    "defaultValue": "Grossistes-marchands d'articles d'ameublement"
+  },
+  {
+    "code": "423310",
+    "parentLookupCode": "4233",
+    "defaultValue": "Grossistes-marchands de bois d'oeuvre, de contreplaqués, de menuiseries préfabriquées et de panneaux en bois"
+  },
+  {
+    "code": "423320",
+    "parentLookupCode": "4233",
+    "defaultValue": "Grossistes-marchands de brique, de pierre et de matériaux de construction connexes"
+  },
+  {
+    "code": "423330",
+    "parentLookupCode": "4233",
+    "defaultValue": "Grossistes-marchands de matériaux de toiture, de parement et d'isolation"
+  },
+  {
+    "code": "423390",
+    "parentLookupCode": "4233",
+    "defaultValue": "Grossistes-marchands d'autres matériaux de construction"
+  },
+  {
+    "code": "423410",
+    "parentLookupCode": "4234",
+    "defaultValue": "Grossistes-marchands de matériel et fournitures photographiques"
+  },
+  {
+    "code": "423420",
+    "defaultValue": "Grossistes-marchands de matériel de bureau",
+    "parentLookupCode": "4234"
+  },
+  {
+    "code": "423430",
+    "defaultValue": "Grossistes-marchands d'équipement et de logiciels informatiques et informatiques",
+    "parentLookupCode": "4234"
+  },
+  {
+    "code": "423440",
+    "parentLookupCode": "4234",
+    "defaultValue": "Grossistes-marchands d'autres équipements commerciaux"
+  },
+  {
+    "code": "423450",
+    "parentLookupCode": "4234",
+    "defaultValue": "Grossistes-marchands de matériel et fournitures médicales, dentaires et hospitaliers"
+  },
+  {
+    "code": "423460",
+    "parentLookupCode": "4234",
+    "defaultValue": "Grossistes-marchands d'articles ophtalmiques"
+  },
+  {
+    "code": "423490",
+    "parentLookupCode": "4234",
+    "defaultValue": "Grossistes-marchands d'autres équipements et fournitures professionnels"
+  },
+  {
+    "code": "423510",
+    "defaultValue": "Centres de services métaux et autres grossistes-marchands de métaux",
+    "parentLookupCode": "4235"
+  },
+  {
+    "code": "423520",
+    "defaultValue": "Grossistes-marchands de minéraux et de minerais et de charbon",
+    "parentLookupCode": "4235"
+  },
+  {
+    "code": "423610",
+    "parentLookupCode": "4236",
+    "defaultValue": "Grossistes-distributeurs d'appareils et d'équipements électriques, de fournitures de câblage et d'équipement connexe"
+  },
+  {
+    "code": "423620",
+    "defaultValue": "Grossistes-marchands d'appareils ménagers, d'articles ménagers électriques et d'appareils électroniques grand public",
+    "parentLookupCode": "4236"
+  },
+  {
+    "code": "423690",
+    "parentLookupCode": "4236",
+    "defaultValue": "Grossistes-marchands de pièces et d'équipements électroniques"
+  },
+  {
+    "code": "423710",
+    "parentLookupCode": "4237",
+    "defaultValue": "Grossistes-marchands de quincaillerie"
+  },
+  {
+    "code": "423720",
+    "defaultValue": "Grossistes-marchands de matériel et fournitures de plomberie et de chauffage (hydronique)",
+    "parentLookupCode": "4237"
+  },
+  {
+    "code": "423730",
+    "parentLookupCode": "4237",
+    "defaultValue": "Grossistes-marchands de matériel et fournitures de chauffage et de climatisation à air chaud"
+  },
+  {
+    "code": "423740",
+    "parentLookupCode": "4237",
+    "defaultValue": "Grossistes-marchands d'équipement et de fournitures de réfrigération"
+  },
+  {
+    "code": "423810",
+    "parentLookupCode": "4238",
+    "defaultValue": "Grossistes-marchands de machines et d'équipement de construction et d'extraction minière (sauf les puits de pétrole)"
+  },
+  {
+    "code": "423820",
+    "defaultValue": "Grossistes-marchands de machines et matériel pour l'agriculture et le jardin",
+    "parentLookupCode": "4238"
+  },
+  {
+    "code": "423830",
+    "defaultValue": "Grossistes-marchands de machines et d'équipement industriels",
+    "parentLookupCode": "4238"
+  },
+  {
+    "code": "423840",
+    "parentLookupCode": "4238",
+    "defaultValue": "Grossistes-marchands de fournitures industrielles"
+  },
+  {
+    "code": "423850",
+    "parentLookupCode": "4238",
+    "defaultValue": "Grossistes-marchands d'équipement et de fournitures d'établissement de services"
+  },
+  {
+    "code": "423860",
+    "defaultValue": "Grossistes-marchands de matériel et fournitures de transport (sauf véhicules automobiles)",
+    "parentLookupCode": "4238"
+  },
+  {
+    "code": "423910",
+    "parentLookupCode": "4239",
+    "defaultValue": "Grossistes-marchands d'articles de sport et de loisirs"
+  },
+  {
+    "code": "423920",
+    "parentLookupCode": "4239",
+    "defaultValue": "Grossistes-marchands de produits et fournitures pour jouets et articles de passe-temps"
+  },
+  {
+    "code": "423930",
+    "parentLookupCode": "4239",
+    "defaultValue": "Grossistes-marchands de matériaux recyclables"
+  },
+  {
+    "code": "423940",
+    "parentLookupCode": "4239",
+    "defaultValue": "Grossistes-marchands de bijoux, de montres, de pierres précieuses et de métaux précieux"
+  },
+  {
+    "code": "423990",
+    "parentLookupCode": "4239",
+    "defaultValue": "Grossistes-marchands d'autres biens durables divers"
+  },
+  {
+    "code": "424110",
+    "defaultValue": "Grossistes-marchands de papier d'imprimerie et d'écriture",
+    "parentLookupCode": "4241"
+  },
+  {
+    "code": "424120",
+    "defaultValue": "Grossistes-marchands de Papeterie et fournitures de bureau",
+    "parentLookupCode": "4241"
+  },
+  {
+    "code": "424130",
+    "defaultValue": "Grossistes-marchands de papier pour usage industriel et personnel",
+    "parentLookupCode": "4241"
+  },
+  {
+    "code": "424210",
+    "defaultValue": "Grossistes-marchands de drogues et de drogueries",
+    "parentLookupCode": "4242"
+  },
+  {
+    "code": "424310",
+    "parentLookupCode": "4243",
+    "defaultValue": "Marchandises à la pièce, articles de mercerie et autres marchands de marchandises sèches"
+  },
+  {
+    "code": "424320",
+    "defaultValue": "Grossistes-marchands de vêtements et d'accessoires pour hommes et garçonnets",
+    "parentLookupCode": "4243"
+  },
+  {
+    "code": "424330",
+    "parentLookupCode": "4243",
+    "defaultValue": "Marchands Grossistes de vêtements et d'accessoires pour femmes, enfants et bébés"
+  },
+  {
+    "code": "424340",
+    "parentLookupCode": "4243",
+    "defaultValue": "Grossistes-marchands de chaussures"
+  },
+  {
+    "code": "424410",
+    "parentLookupCode": "4244",
+    "defaultValue": "Grossistes-marchands d'épicerie General Line"
+  },
+  {
+    "code": "424420",
+    "defaultValue": "Grossistes-marchands d'aliments congelés emballés",
+    "parentLookupCode": "4244"
+  },
+  {
+    "code": "424430",
+    "defaultValue": "Grossistes-marchands de produits laitiers (sauf les produits secs ou en conserve)",
+    "parentLookupCode": "4244"
+  },
+  {
+    "code": "424440",
+    "parentLookupCode": "4244",
+    "defaultValue": "Grossistes-marchands de produits de volaille et de volaille"
+  },
+  {
+    "code": "424450",
+    "parentLookupCode": "4244",
+    "defaultValue": "Grossistes-marchands de confiseries"
+  },
+  {
+    "code": "424460",
+    "parentLookupCode": "4244",
+    "defaultValue": "Grossistes-marchands de poisson et de fruits de mer"
+  },
+  {
+    "code": "424470",
+    "parentLookupCode": "4244",
+    "defaultValue": "Grossistes-marchands de viande et de produits de viande"
+  },
+  {
+    "code": "424480",
+    "parentLookupCode": "4244",
+    "defaultValue": "Grossistes-marchands de fruits et légumes frais"
+  },
+  {
+    "code": "424490",
+    "parentLookupCode": "4244",
+    "defaultValue": "Grossistes-marchands d'autres produits d'épicerie et de produits analogues"
+  },
+  {
+    "code": "424510",
+    "parentLookupCode": "4245",
+    "defaultValue": "Grossistes-marchands de grains et de haricots"
+  },
+  {
+    "code": "424520",
+    "defaultValue": "Grossistes-marchands de bétail",
+    "parentLookupCode": "4245"
+  },
+  {
+    "code": "424590",
+    "parentLookupCode": "4245",
+    "defaultValue": "Grossistes-marchands de matières premières agricoles"
+  },
+  {
+    "code": "424610",
+    "parentLookupCode": "4246",
+    "defaultValue": "Grossistes-marchands de matières plastiques et formes et formes de base"
+  },
+  {
+    "code": "424690",
+    "parentLookupCode": "4246",
+    "defaultValue": "Grossistes-marchands d'autres produits chimiques et de produits analogues"
+  },
+  {
+    "code": "424710",
+    "defaultValue": "Stations et terminaux pétroliers en vrac",
+    "parentLookupCode": "4247"
+  },
+  {
+    "code": "424720",
+    "parentLookupCode": "4247",
+    "defaultValue": "Grossistes-marchands de pétrole et de produits pétroliers (sauf les gares et terminaux en vrac)"
+  },
+  {
+    "code": "424810",
+    "defaultValue": "Grossistes-marchands de bière et de bière",
+    "parentLookupCode": "4248"
+  },
+  {
+    "code": "424820",
+    "parentLookupCode": "4248",
+    "defaultValue": "Grossistes-marchands de vins et de boissons alcoolisées distillées"
+  },
+  {
+    "code": "424910",
+    "parentLookupCode": "4249",
+    "defaultValue": "Grossistes-marchands de fournitures agricoles"
+  },
+  {
+    "code": "424920",
+    "defaultValue": "Grossistes-marchands de livres, de périodiques et de journaux",
+    "parentLookupCode": "4249"
+  },
+  {
+    "code": "424930",
+    "defaultValue": "Grossistes-marchands de fleurs, de pépinières et de fournitures pour fleuristes",
+    "parentLookupCode": "4249"
+  },
+  {
+    "code": "424940",
+    "defaultValue": "Grossistes-marchands de tabac et de produits du tabac",
+    "parentLookupCode": "4249"
+  },
+  {
+    "code": "424950",
+    "defaultValue": "Grossistes-marchands de peinture, vernis et fournitures",
+    "parentLookupCode": "4249"
+  },
+  {
+    "code": "424990",
+    "defaultValue": "Grossistes-marchands d'autres produits non durables divers",
+    "parentLookupCode": "4249"
+  },
+  {
+    "code": "425110",
+    "parentLookupCode": "4251",
+    "defaultValue": "Marchés électroniques interentreprises"
+  },
+  {
+    "code": "425120",
+    "defaultValue": "Agents et courtiers du commerce de gros",
+    "parentLookupCode": "4251"
+  },
+  {
+    "code": "441110",
+    "defaultValue": "Concessionnaires de voitures neuves",
+    "parentLookupCode": "4411"
+  },
+  {
+    "code": "441120",
+    "defaultValue": "Concessionnaires de voitures d'occasion",
+    "parentLookupCode": "4411"
+  },
+  {
+    "code": "441210",
+    "parentLookupCode": "4412",
+    "defaultValue": "Concessionnaires de véhicules récréatifs"
+  },
+  {
+    "code": "441222",
+    "defaultValue": "Concessionnaires de bateaux",
+    "parentLookupCode": "4412"
+  },
+  {
+    "code": "441228",
+    "defaultValue": "Concessionnaires de motocyclettes, de VTT et de tous les autres véhicules automobiles",
+    "parentLookupCode": "4412"
+  },
+  {
+    "code": "441310",
+    "parentLookupCode": "4413",
+    "defaultValue": "Magasins de pièces et d'accessoires automobiles"
+  },
+  {
+    "code": "441320",
+    "parentLookupCode": "4413",
+    "defaultValue": "Revendeurs de pneus"
+  },
+  {
+    "code": "442110",
+    "parentLookupCode": "4421",
+    "defaultValue": "Magasins de meubles"
+  },
+  {
+    "code": "442210",
+    "defaultValue": "Magasins de revêtement de sol",
+    "parentLookupCode": "4422"
+  },
+  {
+    "code": "442291",
+    "parentLookupCode": "4422",
+    "defaultValue": "Magasins de traitement de fenêtre"
+  },
+  {
+    "code": "442299",
+    "parentLookupCode": "4422",
+    "defaultValue": "Tous les autres magasins d'accessoires de maison"
+  },
+  {
+    "code": "443141",
+    "defaultValue": "Magasins d'appareils ménagers",
+    "parentLookupCode": "4431"
+  },
+  {
+    "code": "443142",
+    "defaultValue": "Magasins d'électronique",
+    "parentLookupCode": "4431"
+  },
+  {
+    "code": "444110",
+    "parentLookupCode": "4441",
+    "defaultValue": "Centres de domicile"
+  },
+  {
+    "code": "444120",
+    "parentLookupCode": "4441",
+    "defaultValue": "Magasins de peinture et de papier peint"
+  },
+  {
+    "code": "444130",
+    "defaultValue": "Quincailleries",
+    "parentLookupCode": "4441"
+  },
+  {
+    "code": "444190",
+    "parentLookupCode": "4441",
+    "defaultValue": "Autres marchands de matériaux de construction"
+  },
+  {
+    "code": "444210",
+    "parentLookupCode": "4442",
+    "defaultValue": "Magasins d'équipement motorisé d'extérieur"
+  },
+  {
+    "code": "444220",
+    "defaultValue": "Magasins de matériel de pépinière, de jardinerie et d'équipement agricole",
+    "parentLookupCode": "4442"
+  },
+  {
+    "code": "445110",
+    "parentLookupCode": "4451",
+    "defaultValue": "Supermarchés et autres épiceries (sauf les dépanneurs)"
+  },
+  {
+    "code": "445120",
+    "defaultValue": "Dépanneurs",
+    "parentLookupCode": "4451"
+  },
+  {
+    "code": "445210",
+    "parentLookupCode": "4452",
+    "defaultValue": "Marchés de la viande"
+  },
+  {
+    "code": "445220",
+    "defaultValue": "Marchés de poisson et de fruits de mer",
+    "parentLookupCode": "4452"
+  },
+  {
+    "code": "445230",
+    "parentLookupCode": "4452",
+    "defaultValue": "Marchés de fruits et légumes"
+  },
+  {
+    "code": "445291",
+    "parentLookupCode": "4452",
+    "defaultValue": "Magasins de produits de boulangerie"
+  },
+  {
+    "code": "445292",
+    "defaultValue": "Confiseries et magasins de noix",
+    "parentLookupCode": "4452"
+  },
+  {
+    "code": "445299",
+    "defaultValue": "Tous les autres magasins d'alimentation spécialisée",
+    "parentLookupCode": "4452"
+  },
+  {
+    "code": "445310",
+    "defaultValue": "Magasins de bière, de vin et de spiritueux",
+    "parentLookupCode": "4453"
+  },
+  {
+    "code": "446110",
+    "defaultValue": "Pharmacies et pharmacies",
+    "parentLookupCode": "4461"
+  },
+  {
+    "code": "446120",
+    "defaultValue": "Magasins de cosmétiques, de produits de beauté et de parfums",
+    "parentLookupCode": "4461"
+  },
+  {
+    "code": "446130",
+    "parentLookupCode": "4461",
+    "defaultValue": "Magasins de produits optiques"
+  },
+  {
+    "code": "446191",
+    "defaultValue": "Magasins de suppléments alimentaires (santé)",
+    "parentLookupCode": "4461"
+  },
+  {
+    "code": "446199",
+    "parentLookupCode": "4461",
+    "defaultValue": "Tous les autres magasins de produits de santé et de soins personnels"
+  },
+  {
+    "code": "447110",
+    "parentLookupCode": "4471",
+    "defaultValue": "Stations-service avec dépanneurs"
+  },
+  {
+    "code": "447190",
+    "defaultValue": "Autres stations-service",
+    "parentLookupCode": "4471"
+  },
+  {
+    "code": "448110",
+    "defaultValue": "Magasins de vêtements pour hommes",
+    "parentLookupCode": "4481"
+  },
+  {
+    "code": "448120",
+    "defaultValue": "Magasins de vêtements pour femmes",
+    "parentLookupCode": "4481"
+  },
+  {
+    "code": "448130",
+    "parentLookupCode": "4481",
+    "defaultValue": "Magasins de vêtements pour enfants et bébés"
+  },
+  {
+    "code": "448140",
+    "defaultValue": "Magasins de vêtements familiaux",
+    "parentLookupCode": "4481"
+  },
+  {
+    "code": "448150",
+    "defaultValue": "Magasins d'accessoires de vêtements",
+    "parentLookupCode": "4481"
+  },
+  {
+    "code": "448190",
+    "defaultValue": "Magasins de vêtements",
+    "parentLookupCode": "4481"
+  },
+  {
+    "code": "448210",
+    "defaultValue": "Magasins de chaussures",
+    "parentLookupCode": "4482"
+  },
+  {
+    "code": "448310",
+    "defaultValue": "Bijouteries",
+    "parentLookupCode": "4483"
+  },
+  {
+    "code": "448320",
+    "defaultValue": "Magasins de bagages et de maroquinerie",
+    "parentLookupCode": "4483"
+  },
+  {
+    "code": "451110",
+    "defaultValue": "Magasins d'articles de sport",
+    "parentLookupCode": "4511"
+  },
+  {
+    "code": "451120",
+    "parentLookupCode": "4511",
+    "defaultValue": "Magasins d'articles de passe-temps, de jouets et de jeux"
+  },
+  {
+    "code": "451130",
+    "parentLookupCode": "4511",
+    "defaultValue": "Magasins de couture, de couture et d'articles de mercerie"
+  },
+  {
+    "code": "451140",
+    "parentLookupCode": "4511",
+    "defaultValue": "Magasins d'instruments de musique et de fournitures"
+  },
+  {
+    "code": "451211",
+    "parentLookupCode": "4512",
+    "defaultValue": "Librairies"
+  },
+  {
+    "code": "451212",
+    "defaultValue": "News Dealers et kiosques à journaux",
+    "parentLookupCode": "4512"
+  },
+  {
+    "code": "452111",
+    "defaultValue": "Grands magasins (sauf les grands magasins discount)",
+    "parentLookupCode": "4521"
+  },
+  {
+    "code": "452112",
+    "defaultValue": "Magasins à rabais",
+    "parentLookupCode": "4521"
+  },
+  {
+    "code": "452910",
+    "parentLookupCode": "4529",
+    "defaultValue": "Clubs d'entrepôt et supercentres"
+  },
+  {
+    "code": "452990",
+    "parentLookupCode": "4529",
+    "defaultValue": "Tous les autres magasins de marchandises diverses"
+  },
+  {
+    "code": "453110",
+    "defaultValue": "Fleuristes",
+    "parentLookupCode": "4531"
+  },
+  {
+    "code": "453210",
+    "parentLookupCode": "4532",
+    "defaultValue": "Magasins de fournitures de bureau et de papeterie"
+  },
+  {
+    "code": "453220",
+    "defaultValue": "Magasins de cadeaux, d'articles de fantaisie et de souvenirs",
+    "parentLookupCode": "4532"
+  },
+  {
+    "code": "453310",
+    "parentLookupCode": "4533",
+    "defaultValue": "Magasins de marchandises d'occasion"
+  },
+  {
+    "code": "453910",
+    "parentLookupCode": "4539",
+    "defaultValue": "Magasins d'accessoires pour animaux de compagnie"
+  },
+  {
+    "code": "453920",
+    "defaultValue": "Marchands d'art",
+    "parentLookupCode": "4539"
+  },
+  {
+    "code": "453930",
+    "parentLookupCode": "4539",
+    "defaultValue": "Concessionnaires de maisons préfabriquées (mobiles)"
+  },
+  {
+    "code": "453991",
+    "parentLookupCode": "4539",
+    "defaultValue": "Magasins de tabac"
+  },
+  {
+    "code": "453998",
+    "defaultValue": "Tous les autres magasins de détail divers (sauf les magasins de tabac)",
+    "parentLookupCode": "4539"
+  },
+  {
+    "code": "454111",
+    "defaultValue": "Achats électroniques",
+    "parentLookupCode": "4541"
+  },
+  {
+    "code": "454112",
+    "parentLookupCode": "4541",
+    "defaultValue": "Enchères électroniques"
+  },
+  {
+    "code": "454113",
+    "parentLookupCode": "4541",
+    "defaultValue": "Maisons de vente par correspondance"
+  },
+  {
+    "code": "454210",
+    "defaultValue": "Opérateurs de distributeurs automatiques",
+    "parentLookupCode": "4542"
+  },
+  {
+    "code": "454310",
+    "parentLookupCode": "4543",
+    "defaultValue": "Marchands de carburant"
+  },
+  {
+    "code": "454390",
+    "parentLookupCode": "4543",
+    "defaultValue": "Autres établissements de vente directe"
+  },
+  {
+    "code": "481111",
+    "defaultValue": "Transport aérien régulier de passagers",
+    "parentLookupCode": "4811"
+  },
+  {
+    "code": "481112",
+    "defaultValue": "Transport aérien régulier de fret",
+    "parentLookupCode": "4811"
+  },
+  {
+    "code": "481211",
+    "parentLookupCode": "4812",
+    "defaultValue": "Transport aérien de passagers affrété non enregistré"
+  },
+  {
+    "code": "481212",
+    "defaultValue": "Transport aérien non affrété",
+    "parentLookupCode": "4812"
+  },
+  {
+    "code": "481219",
+    "parentLookupCode": "4812",
+    "defaultValue": "Autres transports aériens non planifiés"
+  },
+  {
+    "code": "482111",
+    "parentLookupCode": "4821",
+    "defaultValue": "Lignes de chemin de fer de ligne"
+  },
+  {
+    "code": "482112",
+    "parentLookupCode": "4821",
+    "defaultValue": "Les chemins de fer à courte distance"
+  },
+  {
+    "code": "483111",
+    "defaultValue": "Transport de fret maritime",
+    "parentLookupCode": "4831"
+  },
+  {
+    "code": "483112",
+    "parentLookupCode": "4831",
+    "defaultValue": "Transport de passagers en haute mer"
+  },
+  {
+    "code": "483113",
+    "parentLookupCode": "4831",
+    "defaultValue": "Transport de marchandises côtier et des Grands Lacs"
+  },
+  {
+    "code": "483114",
+    "parentLookupCode": "4831",
+    "defaultValue": "Transport de passagers côtiers et des Grands Lacs"
+  },
+  {
+    "code": "483211",
+    "parentLookupCode": "4832",
+    "defaultValue": "Transport de marchandises par voie navigable intérieure"
+  },
+  {
+    "code": "483212",
+    "parentLookupCode": "4832",
+    "defaultValue": "Transport de passagers par voie navigable intérieure"
+  },
+  {
+    "code": "484110",
+    "parentLookupCode": "4841",
+    "defaultValue": "Camionnage général de marchandises, local"
+  },
+  {
+    "code": "484121",
+    "parentLookupCode": "4841",
+    "defaultValue": "Camionnage général de marchandises, longue distance, chargement complet"
+  },
+  {
+    "code": "484122",
+    "defaultValue": "Camionnage général de marchandises, longue distance, moins que transport de lots complets",
+    "parentLookupCode": "4841"
+  },
+  {
+    "code": "484210",
+    "defaultValue": "Marchandises usagées de ménage et de bureau",
+    "parentLookupCode": "4842"
+  },
+  {
+    "code": "484220",
+    "defaultValue": "Transport local par camion de marchandises spéciales (sauf les biens usagés)",
+    "parentLookupCode": "4842"
+  },
+  {
+    "code": "484230",
+    "parentLookupCode": "4842",
+    "defaultValue": "Transport par camion de marchandises spéciales (sauf les biens usagés), sur de longues distances"
+  },
+  {
+    "code": "485111",
+    "parentLookupCode": "4851",
+    "defaultValue": "Systèmes de transit en mode mixte"
+  },
+  {
+    "code": "485112",
+    "parentLookupCode": "4851",
+    "defaultValue": "Systèmes de trains de banlieue"
+  },
+  {
+    "code": "485113",
+    "defaultValue": "Systèmes de transport par autobus et autres véhicules automobiles",
+    "parentLookupCode": "4851"
+  },
+  {
+    "code": "485119",
+    "parentLookupCode": "4851",
+    "defaultValue": "Autres systèmes de transport urbain"
+  },
+  {
+    "code": "485210",
+    "defaultValue": "Transport interurbain et rural par autobus",
+    "parentLookupCode": "4852"
+  },
+  {
+    "code": "485310",
+    "defaultValue": "Service de taxi",
+    "parentLookupCode": "4853"
+  },
+  {
+    "code": "485320",
+    "defaultValue": "Service de limousine",
+    "parentLookupCode": "4853"
+  },
+  {
+    "code": "485410",
+    "parentLookupCode": "4854",
+    "defaultValue": "Transport scolaire et d'autobus"
+  },
+  {
+    "code": "485510",
+    "defaultValue": "Industrie d'autobus de charte",
+    "parentLookupCode": "4855"
+  },
+  {
+    "code": "485991",
+    "defaultValue": "Transport des besoins spéciaux",
+    "parentLookupCode": "4859"
+  },
+  {
+    "code": "485999",
+    "defaultValue": "Tous les autres transports en commun et de transport terrestre de passagers",
+    "parentLookupCode": "4859"
+  },
+  {
+    "code": "486110",
+    "defaultValue": "Transport par pipeline de pétrole brut",
+    "parentLookupCode": "4861"
+  },
+  {
+    "code": "486210",
+    "defaultValue": "Transport par pipeline de gaz naturel",
+    "parentLookupCode": "4862"
+  },
+  {
+    "code": "486910",
+    "parentLookupCode": "4869",
+    "defaultValue": "Transport par pipeline de produits pétroliers raffinés"
+  },
+  {
+    "code": "486990",
+    "parentLookupCode": "4869",
+    "defaultValue": "Tous les autres transports par pipeline"
+  },
+  {
+    "code": "487110",
+    "parentLookupCode": "4871",
+    "defaultValue": "Transport de tourisme et d'agrément, Terrain"
+  },
+  {
+    "code": "487210",
+    "parentLookupCode": "4872",
+    "defaultValue": "Transport de tourisme et d'agrément, Eau"
+  },
+  {
+    "code": "487990",
+    "parentLookupCode": "4879",
+    "defaultValue": "Transport de tourisme et d'agrément, Autre"
+  },
+  {
+    "code": "488111",
+    "defaultValue": "Le contrôle du trafic aérien",
+    "parentLookupCode": "4881"
+  },
+  {
+    "code": "488119",
+    "defaultValue": "Autres opérations aéroportuaires",
+    "parentLookupCode": "4881"
+  },
+  {
+    "code": "488190",
+    "defaultValue": "Autres activités de soutien au transport aérien",
+    "parentLookupCode": "4881"
+  },
+  {
+    "code": "488210",
+    "parentLookupCode": "4882",
+    "defaultValue": "Activités de soutien au transport ferroviaire"
+  },
+  {
+    "code": "488310",
+    "parentLookupCode": "4883",
+    "defaultValue": "Opérations portuaires et portuaires"
+  },
+  {
+    "code": "488320",
+    "parentLookupCode": "4883",
+    "defaultValue": "Manutention du fret maritime"
+  },
+  {
+    "code": "488330",
+    "parentLookupCode": "4883",
+    "defaultValue": "Services de navigation à la navigation"
+  },
+  {
+    "code": "488390",
+    "parentLookupCode": "4883",
+    "defaultValue": "Autres activités de soutien au transport par eau"
+  },
+  {
+    "code": "488410",
+    "parentLookupCode": "4884",
+    "defaultValue": "Remorquage de véhicule à moteur"
+  },
+  {
+    "code": "488490",
+    "parentLookupCode": "4884",
+    "defaultValue": "Autres activités de soutien au transport routier"
+  },
+  {
+    "code": "488510",
+    "defaultValue": "Arrangement de transport de marchandises",
+    "parentLookupCode": "4885"
+  },
+  {
+    "code": "488991",
+    "parentLookupCode": "4889",
+    "defaultValue": "Emballage et mise en caisse"
+  },
+  {
+    "code": "488999",
+    "defaultValue": "Toutes les autres activités de soutien au transport",
+    "parentLookupCode": "4889"
+  },
+  {
+    "code": "491110",
+    "defaultValue": "Service postal",
+    "parentLookupCode": "4911"
+  },
+  {
+    "code": "492110",
+    "parentLookupCode": "4921",
+    "defaultValue": "Messageries et services de livraison express"
+  },
+  {
+    "code": "492210",
+    "defaultValue": "Messagers locaux et livraison locale",
+    "parentLookupCode": "4922"
+  },
+  {
+    "code": "493110",
+    "parentLookupCode": "4931",
+    "defaultValue": "Entreposage général et entreposage"
+  },
+  {
+    "code": "493120",
+    "defaultValue": "Entreposage réfrigéré et entreposage",
+    "parentLookupCode": "4931"
+  },
+  {
+    "code": "493130",
+    "parentLookupCode": "4931",
+    "defaultValue": "Entreposage et entreposage de produits agricoles"
+  },
+  {
+    "code": "493190",
+    "defaultValue": "Autre entreposage et stockage",
+    "parentLookupCode": "4931"
+  },
+  {
+    "code": "511110",
+    "parentLookupCode": "5111",
+    "defaultValue": "Éditeurs de journaux"
+  },
+  {
+    "code": "511120",
+    "parentLookupCode": "5111",
+    "defaultValue": "Éditeurs de périodiques"
+  },
+  {
+    "code": "511130",
+    "defaultValue": "Éditeurs de livres",
+    "parentLookupCode": "5111"
+  },
+  {
+    "code": "511140",
+    "parentLookupCode": "5111",
+    "defaultValue": "Annuaire et éditeurs de listes de diffusion"
+  },
+  {
+    "code": "511191",
+    "defaultValue": "Éditeurs de cartes de voeux",
+    "parentLookupCode": "5111"
+  },
+  {
+    "code": "511199",
+    "parentLookupCode": "5111",
+    "defaultValue": "Tous les autres éditeurs"
+  },
+  {
+    "code": "511210",
+    "parentLookupCode": "5112",
+    "defaultValue": "Éditeurs de logiciels"
+  },
+  {
+    "code": "512110",
+    "defaultValue": "Production de films et de vidéos",
+    "parentLookupCode": "5121"
+  },
+  {
+    "code": "512120",
+    "defaultValue": "Distribution de films et de vidéos",
+    "parentLookupCode": "5121"
+  },
+  {
+    "code": "512131",
+    "defaultValue": "Cinémas (sauf Drive-Ins)",
+    "parentLookupCode": "5121"
+  },
+  {
+    "code": "512132",
+    "defaultValue": "Drive-In Cinéma",
+    "parentLookupCode": "5121"
+  },
+  {
+    "code": "512191",
+    "parentLookupCode": "5121",
+    "defaultValue": "Téléproduction et autres services de postproduction"
+  },
+  {
+    "code": "512199",
+    "defaultValue": "Autres industries du film et de la vidéo",
+    "parentLookupCode": "5121"
+  },
+  {
+    "code": "512210",
+    "parentLookupCode": "5122",
+    "defaultValue": "Production d'enregistrements"
+  },
+  {
+    "code": "512220",
+    "parentLookupCode": "5122",
+    "defaultValue": "Production / distribution d'enregistrements intégrés"
+  },
+  {
+    "code": "512230",
+    "parentLookupCode": "5122",
+    "defaultValue": "Éditeurs de musique"
+  },
+  {
+    "code": "512240",
+    "parentLookupCode": "5122",
+    "defaultValue": "Studios d'enregistrement sonore"
+  },
+  {
+    "code": "512290",
+    "defaultValue": "Autres industries de l'enregistrement sonore",
+    "parentLookupCode": "5122"
+  },
+  {
+    "code": "515111",
+    "parentLookupCode": "5151",
+    "defaultValue": "Réseaux radio"
+  },
+  {
+    "code": "515112",
+    "parentLookupCode": "5151",
+    "defaultValue": "Stations de radio"
+  },
+  {
+    "code": "515120",
+    "defaultValue": "Télévision",
+    "parentLookupCode": "5151"
+  },
+  {
+    "code": "515210",
+    "parentLookupCode": "5152",
+    "defaultValue": "Câble et autres programmes d'abonnement"
+  },
+  {
+    "code": "517110",
+    "parentLookupCode": "5171",
+    "defaultValue": "Télécommunications filaires"
+  },
+  {
+    "code": "517210",
+    "parentLookupCode": "5172",
+    "defaultValue": "Télécommunications sans fil (sauf par satellite)"
+  },
+  {
+    "code": "517410",
+    "parentLookupCode": "5174",
+    "defaultValue": "Télécommunications par satellite"
+  },
+  {
+    "code": "517911",
+    "defaultValue": "Revendeurs de télécommunications",
+    "parentLookupCode": "5179"
+  },
+  {
+    "code": "517919",
+    "parentLookupCode": "5179",
+    "defaultValue": "Toutes les autres télécommunications"
+  },
+  {
+    "code": "518210",
+    "parentLookupCode": "5182",
+    "defaultValue": "Traitement de données, hébergement et services connexes"
+  },
+  {
+    "code": "519110",
+    "defaultValue": "Syndicats de Nouvelles",
+    "parentLookupCode": "5191"
+  },
+  {
+    "code": "519120",
+    "defaultValue": "Bibliothèques et archives",
+    "parentLookupCode": "5191"
+  },
+  {
+    "code": "519130",
+    "parentLookupCode": "5191",
+    "defaultValue": "Publication Internet et diffusion et portails de recherche Web"
+  },
+  {
+    "code": "519190",
+    "defaultValue": "Tous les autres services d'information",
+    "parentLookupCode": "5191"
+  },
+  {
+    "code": "521110",
+    "defaultValue": "Autorités monétaires - Banque centrale",
+    "parentLookupCode": "5211"
+  },
+  {
+    "code": "522110",
+    "defaultValue": "La Banque commerciale",
+    "parentLookupCode": "5221"
+  },
+  {
+    "code": "522120",
+    "parentLookupCode": "5221",
+    "defaultValue": "Institutions d'épargne"
+  },
+  {
+    "code": "522130",
+    "defaultValue": "Les coopératives de crédit",
+    "parentLookupCode": "5221"
+  },
+  {
+    "code": "522190",
+    "parentLookupCode": "5221",
+    "defaultValue": "Autre intermédiation financière par dépôt"
+  },
+  {
+    "code": "522210",
+    "defaultValue": "Délivrance d'une carte de crédit",
+    "parentLookupCode": "5222"
+  },
+  {
+    "code": "522220",
+    "defaultValue": "Financement des ventes",
+    "parentLookupCode": "5222"
+  },
+  {
+    "code": "522291",
+    "defaultValue": "Prêt à la consommation",
+    "parentLookupCode": "5222"
+  },
+  {
+    "code": "522292",
+    "defaultValue": "Crédit immobilier",
+    "parentLookupCode": "5222"
+  },
+  {
+    "code": "522293",
+    "parentLookupCode": "5222",
+    "defaultValue": "Financement du commerce international"
+  },
+  {
+    "code": "522294",
+    "parentLookupCode": "5222",
+    "defaultValue": "Financement du marché secondaire"
+  },
+  {
+    "code": "522298",
+    "parentLookupCode": "5222",
+    "defaultValue": "Toutes les autres intermédiation de crédit non déclaratif"
+  },
+  {
+    "code": "522310",
+    "parentLookupCode": "5223",
+    "defaultValue": "Courtiers en prêts hypothécaires et non hypothécaires"
+  },
+  {
+    "code": "522320",
+    "parentLookupCode": "5223",
+    "defaultValue": "Activités de traitement des transactions financières, de réserve et de compensation"
+  },
+  {
+    "code": "522390",
+    "parentLookupCode": "5223",
+    "defaultValue": "Autres activités liées à l'intermédiation financière"
+  },
+  {
+    "code": "523110",
+    "parentLookupCode": "5231",
+    "defaultValue": "Banque d'investissement et négociation de titres"
+  },
+  {
+    "code": "523120",
+    "defaultValue": "Courtage de titres",
+    "parentLookupCode": "5231"
+  },
+  {
+    "code": "523130",
+    "parentLookupCode": "5231",
+    "defaultValue": "Traiter les contrats de marchandises"
+  },
+  {
+    "code": "523140",
+    "defaultValue": "Courtage de contrats de marchandises",
+    "parentLookupCode": "5231"
+  },
+  {
+    "code": "523210",
+    "defaultValue": "Valeurs mobilières et bourses de marchandises",
+    "parentLookupCode": "5232"
+  },
+  {
+    "code": "523910",
+    "parentLookupCode": "5239",
+    "defaultValue": "Intermédiation divers"
+  },
+  {
+    "code": "523920",
+    "defaultValue": "Gestion de portefeuille",
+    "parentLookupCode": "5239"
+  },
+  {
+    "code": "523930",
+    "parentLookupCode": "5239",
+    "defaultValue": "Conseil d'investissement"
+  },
+  {
+    "code": "523991",
+    "parentLookupCode": "5239",
+    "defaultValue": "Activités fiduciaires, fiduciaires et de garde"
+  },
+  {
+    "code": "523999",
+    "defaultValue": "Activités d'investissement financier diverses",
+    "parentLookupCode": "5239"
+  },
+  {
+    "code": "524113",
+    "parentLookupCode": "5241",
+    "defaultValue": "Sociétés d'assurance-vie directe"
+  },
+  {
+    "code": "524114",
+    "defaultValue": "Transporteurs directs d'assurance maladie et médicale",
+    "parentLookupCode": "5241"
+  },
+  {
+    "code": "524126",
+    "defaultValue": "Sociétés d'assurance directe de dommages",
+    "parentLookupCode": "5241"
+  },
+  {
+    "code": "524127",
+    "parentLookupCode": "5241",
+    "defaultValue": "Transporteurs d'assurance-titres directs"
+  },
+  {
+    "code": "524128",
+    "defaultValue": "Autres assureurs directs (sauf les compagnies d'assurance-vie, de santé et médicales)",
+    "parentLookupCode": "5241"
+  },
+  {
+    "code": "524130",
+    "parentLookupCode": "5241",
+    "defaultValue": "Transporteurs de réassurance"
+  },
+  {
+    "code": "524210",
+    "parentLookupCode": "5242",
+    "defaultValue": "Agences d'assurance et courtiers"
+  },
+  {
+    "code": "52429",
+    "defaultValue": "Autres activités liées à l'assurance",
+    "parentLookupCode": "5242"
+  },
+  {
+    "code": "524291",
+    "defaultValue": "Revendications ajustées",
+    "parentLookupCode": "5242"
+  },
+  {
+    "code": "524292",
+    "defaultValue": "Administration par des tiers des caisses d'assurance et de retraite",
+    "parentLookupCode": "5242"
+  },
+  {
+    "code": "524298",
+    "parentLookupCode": "5242",
+    "defaultValue": "Toutes les autres activités liées à l'assurance"
+  },
+  {
+    "code": "525110",
+    "parentLookupCode": "5251",
+    "defaultValue": "Les fonds de pension"
+  },
+  {
+    "code": "525120",
+    "parentLookupCode": "5251",
+    "defaultValue": "Fonds de santé et de bien-être"
+  },
+  {
+    "code": "525190",
+    "defaultValue": "Autres fonds d'assurance",
+    "parentLookupCode": "5251"
+  },
+  {
+    "code": "525910",
+    "defaultValue": "Fonds d'investissement à capital variable",
+    "parentLookupCode": "5259"
+  },
+  {
+    "code": "525920",
+    "parentLookupCode": "5259",
+    "defaultValue": "Fiducies, successions et comptes d'agence"
+  },
+  {
+    "code": "525990",
+    "parentLookupCode": "5259",
+    "defaultValue": "Autres véhicules financiers"
+  },
+  {
+    "code": "531110",
+    "defaultValue": "Bailleurs de bâtiments résidentiels et de logements",
+    "parentLookupCode": "5311"
+  },
+  {
+    "code": "531120",
+    "parentLookupCode": "5311",
+    "defaultValue": "Bailleurs de bâtiments non résidentiels (sauf les mini-maisons)"
+  },
+  {
+    "code": "531130",
+    "parentLookupCode": "5311",
+    "defaultValue": "Bailleurs de mini-maisons et d'unités de libre-entreposage"
+  },
+  {
+    "code": "531190",
+    "parentLookupCode": "5311",
+    "defaultValue": "Bailleurs d'autres biens immobiliers"
+  },
+  {
+    "code": "531210",
+    "defaultValue": "Bureaux d'agents et de courtiers immobiliers",
+    "parentLookupCode": "5312"
+  },
+  {
+    "code": "531311",
+    "defaultValue": "Gestionnaires de propriétés résidentielles",
+    "parentLookupCode": "5313"
+  },
+  {
+    "code": "531312",
+    "defaultValue": "Gestionnaires de biens non résidentiels",
+    "parentLookupCode": "5313"
+  },
+  {
+    "code": "531320",
+    "parentLookupCode": "5313",
+    "defaultValue": "Bureaux d'évaluateurs immobiliers"
+  },
+  {
+    "code": "531390",
+    "defaultValue": "Autres activités liées à l'immobilier",
+    "parentLookupCode": "5313"
+  },
+  {
+    "code": "532111",
+    "parentLookupCode": "5321",
+    "defaultValue": "Location de voitures"
+  },
+  {
+    "code": "532112",
+    "parentLookupCode": "5321",
+    "defaultValue": "Location de voitures particulières"
+  },
+  {
+    "code": "532120",
+    "parentLookupCode": "5321",
+    "defaultValue": "Location de camions, de remorques utilitaires et de véhicules de plaisance (location de véhicules récréatifs)"
+  },
+  {
+    "code": "532210",
+    "parentLookupCode": "5322",
+    "defaultValue": "Électronique grand public et location d'appareils ménagers"
+  },
+  {
+    "code": "532220",
+    "parentLookupCode": "5322",
+    "defaultValue": "Vêtements de cérémonie et location de costumes"
+  },
+  {
+    "code": "532230",
+    "defaultValue": "Location de vidéocassettes et de disques",
+    "parentLookupCode": "5322"
+  },
+  {
+    "code": "532291",
+    "defaultValue": "Location de matériel de santé à domicile",
+    "parentLookupCode": "5322"
+  },
+  {
+    "code": "532292",
+    "parentLookupCode": "5322",
+    "defaultValue": "Location d'articles de loisirs"
+  },
+  {
+    "code": "532299",
+    "parentLookupCode": "5322",
+    "defaultValue": "Location de tous les autres biens de consommation"
+  },
+  {
+    "code": "532310",
+    "defaultValue": "Centres de location généraux",
+    "parentLookupCode": "5323"
+  },
+  {
+    "code": "532411",
+    "parentLookupCode": "5324",
+    "defaultValue": "Location et location à bail de matériel de transport aérien, ferroviaire et maritime"
+  },
+  {
+    "code": "532412",
+    "defaultValue": "Location et location à bail de machines et matériel pour la construction, l'extraction minière et la foresterie",
+    "parentLookupCode": "5324"
+  },
+  {
+    "code": "532420",
+    "defaultValue": "Location et location à bail de machines et matériel de bureau",
+    "parentLookupCode": "5324"
+  },
+  {
+    "code": "532490",
+    "parentLookupCode": "5324",
+    "defaultValue": "Location et location à bail d'autres machines et matériel d'usage commercial et industriel"
+  },
+  {
+    "code": "533110",
+    "parentLookupCode": "5331",
+    "defaultValue": "Bailleurs de biens incorporels non financiers (sauf les œuvres protégées par le droit d'auteur)"
+  },
+  {
+    "code": "541110",
+    "parentLookupCode": "5411",
+    "defaultValue": "Cabinets d'avocats"
+  },
+  {
+    "code": "541120",
+    "parentLookupCode": "5411",
+    "defaultValue": "Bureaux de notaires"
+  },
+  {
+    "code": "541191",
+    "parentLookupCode": "5411",
+    "defaultValue": "Titre Abrégé et bureaux d'établissement"
+  },
+  {
+    "code": "541199",
+    "defaultValue": "Tous les autres services juridiques",
+    "parentLookupCode": "5411"
+  },
+  {
+    "code": "541211",
+    "defaultValue": "Bureaux de comptables publics certifiés",
+    "parentLookupCode": "5412"
+  },
+  {
+    "code": "541213",
+    "defaultValue": "Services de préparation d'impôt",
+    "parentLookupCode": "5412"
+  },
+  {
+    "code": "541214",
+    "parentLookupCode": "5412",
+    "defaultValue": "Des services de paie"
+  },
+  {
+    "code": "541219",
+    "defaultValue": "Autres services de comptabilité",
+    "parentLookupCode": "5412"
+  },
+  {
+    "code": "541310",
+    "defaultValue": "Services architecturaux",
+    "parentLookupCode": "5413"
+  },
+  {
+    "code": "541320",
+    "parentLookupCode": "5413",
+    "defaultValue": "Services d'architecture paysagère"
+  },
+  {
+    "code": "541330",
+    "defaultValue": "Services d'ingénierie",
+    "parentLookupCode": "5413"
+  },
+  {
+    "code": "541340",
+    "defaultValue": "Services de rédaction",
+    "parentLookupCode": "5413"
+  },
+  {
+    "code": "541350",
+    "parentLookupCode": "5413",
+    "defaultValue": "Services d'inspection de bâtiments"
+  },
+  {
+    "code": "541360",
+    "defaultValue": "Services de levés géophysiques et de cartographie",
+    "parentLookupCode": "5413"
+  },
+  {
+    "code": "541370",
+    "parentLookupCode": "5413",
+    "defaultValue": "Services d'arpentage et de cartographie (sauf géophysique)"
+  },
+  {
+    "code": "541380",
+    "parentLookupCode": "5413",
+    "defaultValue": "Laboratoires d'essais"
+  },
+  {
+    "code": "541410",
+    "parentLookupCode": "5414",
+    "defaultValue": "Services de design d'intérieur"
+  },
+  {
+    "code": "541420",
+    "defaultValue": "Services de design industriel",
+    "parentLookupCode": "5414"
+  },
+  {
+    "code": "541430",
+    "defaultValue": "Services de conception graphique",
+    "parentLookupCode": "5414"
+  },
+  {
+    "code": "541490",
+    "parentLookupCode": "5414",
+    "defaultValue": "Autres services de design spécialisé"
+  },
+  {
+    "code": "541511",
+    "parentLookupCode": "5415",
+    "defaultValue": "Services de programmation informatique personnalisés"
+  },
+  {
+    "code": "541512",
+    "parentLookupCode": "5415",
+    "defaultValue": "Services de conception de systèmes informatiques"
+  },
+  {
+    "code": "541513",
+    "parentLookupCode": "5415",
+    "defaultValue": "Services de gestion des installations informatiques"
+  },
+  {
+    "code": "541519",
+    "defaultValue": "Autres services informatiques",
+    "parentLookupCode": "5415"
+  },
+  {
+    "code": "541611",
+    "parentLookupCode": "5416",
+    "defaultValue": "Services de consultation en gestion administrative et en gestion générale"
+  },
+  {
+    "code": "541612",
+    "defaultValue": "Services de consultation en ressources humaines",
+    "parentLookupCode": "5416"
+  },
+  {
+    "code": "541613",
+    "defaultValue": "Services de conseil en marketing",
+    "parentLookupCode": "5416"
+  },
+  {
+    "code": "541614",
+    "defaultValue": "Services de conseil en processus, distribution physique et logistique",
+    "parentLookupCode": "5416"
+  },
+  {
+    "code": "541618",
+    "defaultValue": "Autres services de consultation en gestion",
+    "parentLookupCode": "5416"
+  },
+  {
+    "code": "541620",
+    "parentLookupCode": "5416",
+    "defaultValue": "Services de consultation en environnement"
+  },
+  {
+    "code": "541690",
+    "parentLookupCode": "5416",
+    "defaultValue": "Autres services de conseils scientifiques et techniques"
+  },
+  {
+    "code": "541711",
+    "parentLookupCode": "5417",
+    "defaultValue": "Recherche et développement en biotechnologie"
+  },
+  {
+    "code": "541712",
+    "parentLookupCode": "5417",
+    "defaultValue": "Recherche et développement en sciences physiques, en génie et en sciences de la vie (sauf la biotechnologie)"
+  },
+  {
+    "code": "541720",
+    "defaultValue": "Recherche et développement en sciences sociales et humaines",
+    "parentLookupCode": "5417"
+  },
+  {
+    "code": "541810",
+    "defaultValue": "Agences de publicité",
+    "parentLookupCode": "5418"
+  },
+  {
+    "code": "541820",
+    "defaultValue": "Agences de relations publiques",
+    "parentLookupCode": "5418"
+  },
+  {
+    "code": "54183",
+    "parentLookupCode": "5418",
+    "defaultValue": "Agences d'achat de médias"
+  },
+  {
+    "code": "541830",
+    "defaultValue": "Agences d'achat de médias",
+    "parentLookupCode": "5418"
+  },
+  {
+    "code": "541840",
+    "parentLookupCode": "5418",
+    "defaultValue": "Représentants des médias"
+  },
+  {
+    "code": "541850",
+    "parentLookupCode": "5418",
+    "defaultValue": "La publicité extérieure"
+  },
+  {
+    "code": "541860",
+    "parentLookupCode": "5418",
+    "defaultValue": "Publicité par publipostage"
+  },
+  {
+    "code": "541870",
+    "defaultValue": "Services de distribution de matériel publicitaire",
+    "parentLookupCode": "5418"
+  },
+  {
+    "code": "541890",
+    "defaultValue": "Autres services liés à la publicité",
+    "parentLookupCode": "5418"
+  },
+  {
+    "code": "541910",
+    "parentLookupCode": "5419",
+    "defaultValue": "Recherche marketing et sondage d'opinion publique"
+  },
+  {
+    "code": "541921",
+    "parentLookupCode": "5419",
+    "defaultValue": "Studios de photographie, Portrait"
+  },
+  {
+    "code": "541922",
+    "defaultValue": "Photographie commerciale",
+    "parentLookupCode": "5419"
+  },
+  {
+    "code": "541930",
+    "parentLookupCode": "5419",
+    "defaultValue": "Services de traduction et d'interprétation"
+  },
+  {
+    "code": "541940",
+    "defaultValue": "Services vétérinaires",
+    "parentLookupCode": "5419"
+  },
+  {
+    "code": "541990",
+    "defaultValue": "Tous les autres services professionnels, scientifiques et techniques",
+    "parentLookupCode": "5419"
+  },
+  {
+    "code": "551111",
+    "defaultValue": "Bureaux des sociétés de portefeuille bancaires",
+    "parentLookupCode": "5511"
+  },
+  {
+    "code": "551112",
+    "parentLookupCode": "5511",
+    "defaultValue": "Bureaux d'autres sociétés de portefeuille"
+  },
+  {
+    "code": "551114",
+    "defaultValue": "Bureaux de direction corporatifs, filiales et régionaux",
+    "parentLookupCode": "5511"
+  },
+  {
+    "code": "561110",
+    "defaultValue": "Services administratifs de bureau",
+    "parentLookupCode": "5611"
+  },
+  {
+    "code": "56121",
+    "parentLookupCode": "5611",
+    "defaultValue": "Services de soutien aux installations"
+  },
+  {
+    "code": "561210",
+    "defaultValue": "Services de soutien aux installations",
+    "parentLookupCode": "5611"
+  },
+  {
+    "code": "561311",
+    "defaultValue": "Agences de placement",
+    "parentLookupCode": "5613"
+  },
+  {
+    "code": "561312",
+    "defaultValue": "Services de recherche de cadres",
+    "parentLookupCode": "5613"
+  },
+  {
+    "code": "561320",
+    "defaultValue": "Services d'aide temporaire",
+    "parentLookupCode": "5613"
+  },
+  {
+    "code": "561330",
+    "defaultValue": "Organisations professionnelles d'employeurs",
+    "parentLookupCode": "5613"
+  },
+  {
+    "code": "561410",
+    "defaultValue": "Services de préparation de documents",
+    "parentLookupCode": "5614"
+  },
+  {
+    "code": "561421",
+    "parentLookupCode": "5614",
+    "defaultValue": "Services de réponse téléphonique"
+  },
+  {
+    "code": "561422",
+    "parentLookupCode": "5614",
+    "defaultValue": "Bureaux de télémarketing et autres centres de contact"
+  },
+  {
+    "code": "561431",
+    "defaultValue": "Centres de courrier privés",
+    "parentLookupCode": "5614"
+  },
+  {
+    "code": "561439",
+    "defaultValue": "Autres centres de services aux entreprises (y compris les magasins de reprographie)",
+    "parentLookupCode": "5614"
+  },
+  {
+    "code": "561440",
+    "parentLookupCode": "5614",
+    "defaultValue": "Agences de recouvrement"
+  },
+  {
+    "code": "561450",
+    "parentLookupCode": "5614",
+    "defaultValue": "Bureaux de crédit"
+  },
+  {
+    "code": "561491",
+    "parentLookupCode": "5614",
+    "defaultValue": "Services de reprise de possession"
+  },
+  {
+    "code": "561492",
+    "parentLookupCode": "5614",
+    "defaultValue": "Services de sténotypie et de sténotypie"
+  },
+  {
+    "code": "561499",
+    "parentLookupCode": "5614",
+    "defaultValue": "Tous les autres services de soutien aux entreprises"
+  },
+  {
+    "code": "561510",
+    "defaultValue": "Agence de voyages",
+    "parentLookupCode": "5615"
+  },
+  {
+    "code": "561520",
+    "defaultValue": "Voyagistes",
+    "parentLookupCode": "5615"
+  },
+  {
+    "code": "561591",
+    "parentLookupCode": "5615",
+    "defaultValue": "Bureaux de congrès et de visiteurs"
+  },
+  {
+    "code": "561599",
+    "defaultValue": "Tous les autres services de préparation de voyages et de réservation",
+    "parentLookupCode": "5615"
+  },
+  {
+    "code": "561611",
+    "defaultValue": "Services d'enquête",
+    "parentLookupCode": "5616"
+  },
+  {
+    "code": "561612",
+    "parentLookupCode": "5616",
+    "defaultValue": "Gardes de sécurité et services de patrouille"
+  },
+  {
+    "code": "561613",
+    "defaultValue": "Services de voitures blindées",
+    "parentLookupCode": "5616"
+  },
+  {
+    "code": "561621",
+    "parentLookupCode": "5616",
+    "defaultValue": "Services de systèmes de sécurité (sauf les serruriers)"
+  },
+  {
+    "code": "561622",
+    "parentLookupCode": "5616",
+    "defaultValue": "Serruriers"
+  },
+  {
+    "code": "561710",
+    "parentLookupCode": "5617",
+    "defaultValue": "Services d'extermination et de lutte antiparasitaire"
+  },
+  {
+    "code": "561720",
+    "defaultValue": "Services de conciergerie",
+    "parentLookupCode": "5617"
+  },
+  {
+    "code": "561730",
+    "parentLookupCode": "5617",
+    "defaultValue": "Services d'aménagement paysager"
+  },
+  {
+    "code": "561740",
+    "parentLookupCode": "5617",
+    "defaultValue": "Services de nettoyage de tapis et de meubles rembourrés"
+  },
+  {
+    "code": "56179",
+    "defaultValue": "Autres services aux bâtiments et aux logements",
+    "parentLookupCode": "5617"
+  },
+  {
+    "code": "561790",
+    "parentLookupCode": "5617",
+    "defaultValue": "Autres services aux bâtiments et aux logements"
+  },
+  {
+    "code": "561910",
+    "parentLookupCode": "5619",
+    "defaultValue": "Services d'emballage et d'étiquetage"
+  },
+  {
+    "code": "561920",
+    "parentLookupCode": "5619",
+    "defaultValue": "Organisateurs de congrès et de foires commerciales"
+  },
+  {
+    "code": "561990",
+    "defaultValue": "Tous les autres services de soutien",
+    "parentLookupCode": "5619"
+  },
+  {
+    "code": "562111",
+    "defaultValue": "Collecte des déchets solides",
+    "parentLookupCode": "5621"
+  },
+  {
+    "code": "562112",
+    "parentLookupCode": "5621",
+    "defaultValue": "Collecte des déchets dangereux"
+  },
+  {
+    "code": "562119",
+    "defaultValue": "Autre collecte des déchets",
+    "parentLookupCode": "5621"
+  },
+  {
+    "code": "562211",
+    "parentLookupCode": "5622",
+    "defaultValue": "Traitement et élimination des déchets dangereux"
+  },
+  {
+    "code": "562212",
+    "parentLookupCode": "5622",
+    "defaultValue": "Décharge de déchets solides"
+  },
+  {
+    "code": "562213",
+    "parentLookupCode": "5622",
+    "defaultValue": "Combustibles et incinérateurs de déchets solides"
+  },
+  {
+    "code": "562219",
+    "defaultValue": "Autres traitement et élimination des déchets non dangereux",
+    "parentLookupCode": "5622"
+  },
+  {
+    "code": "562910",
+    "parentLookupCode": "5629",
+    "defaultValue": "Services d'assainissement"
+  },
+  {
+    "code": "562920",
+    "parentLookupCode": "5629",
+    "defaultValue": "Installations de récupération de matériaux"
+  },
+  {
+    "code": "562991",
+    "defaultValue": "Fosse septique et services connexes",
+    "parentLookupCode": "5629"
+  },
+  {
+    "code": "562998",
+    "parentLookupCode": "5629",
+    "defaultValue": "Tous les autres services de gestion des déchets divers"
+  },
+  {
+    "code": "611110",
+    "defaultValue": "Écoles primaires et secondaires",
+    "parentLookupCode": "6111"
+  },
+  {
+    "code": "611210",
+    "parentLookupCode": "6112",
+    "defaultValue": "Collèges juniors"
+  },
+  {
+    "code": "611310",
+    "parentLookupCode": "6113",
+    "defaultValue": "Collèges, universités et écoles professionnelles"
+  },
+  {
+    "code": "611410",
+    "defaultValue": "Écoles d'affaires et de secrétariat",
+    "parentLookupCode": "6114"
+  },
+  {
+    "code": "611420",
+    "defaultValue": "Formation en informatique",
+    "parentLookupCode": "6114"
+  },
+  {
+    "code": "611430",
+    "defaultValue": "Formation professionnelle et perfectionnement en gestion",
+    "parentLookupCode": "6114"
+  },
+  {
+    "code": "611511",
+    "parentLookupCode": "6115",
+    "defaultValue": "Écoles de cosmétologie et de coiffure"
+  },
+  {
+    "code": "611512",
+    "defaultValue": "Formation de vol",
+    "parentLookupCode": "6115"
+  },
+  {
+    "code": "611513",
+    "defaultValue": "Formation en apprentissage",
+    "parentLookupCode": "6115"
+  },
+  {
+    "code": "611519",
+    "parentLookupCode": "6115",
+    "defaultValue": "Autres écoles techniques et commerciales"
+  },
+  {
+    "code": "611610",
+    "defaultValue": "Écoles d'art",
+    "parentLookupCode": "6116"
+  },
+  {
+    "code": "611620",
+    "parentLookupCode": "6116",
+    "defaultValue": "Instruction sportive et récréative"
+  },
+  {
+    "code": "611630",
+    "parentLookupCode": "6116",
+    "defaultValue": "Écoles de langues"
+  },
+  {
+    "code": "611691",
+    "defaultValue": "Préparation aux examens et tutorat",
+    "parentLookupCode": "6116"
+  },
+  {
+    "code": "611692",
+    "parentLookupCode": "6116",
+    "defaultValue": "Auto-écoles"
+  },
+  {
+    "code": "611699",
+    "defaultValue": "Toutes les autres écoles et cours divers",
+    "parentLookupCode": "6116"
+  },
+  {
+    "code": "611710",
+    "parentLookupCode": "6117",
+    "defaultValue": "Services de soutien à l'éducation"
+  },
+  {
+    "code": "711110",
+    "defaultValue": "Compagnies de théâtre et théâtres",
+    "parentLookupCode": "7111"
+  },
+  {
+    "code": "711120",
+    "defaultValue": "Compagnies de danse",
+    "parentLookupCode": "7111"
+  },
+  {
+    "code": "711130",
+    "defaultValue": "Groupes musicaux et artistes",
+    "parentLookupCode": "7111"
+  },
+  {
+    "code": "711190",
+    "defaultValue": "Autres compagnies d'arts de la scène",
+    "parentLookupCode": "7111"
+  },
+  {
+    "code": "711211",
+    "defaultValue": "Équipes sportives et clubs",
+    "parentLookupCode": "7112"
+  },
+  {
+    "code": "711212",
+    "defaultValue": "Pistes de course",
+    "parentLookupCode": "7112"
+  },
+  {
+    "code": "711219",
+    "defaultValue": "Autres sports-spectacles",
+    "parentLookupCode": "7112"
+  },
+  {
+    "code": "711310",
+    "parentLookupCode": "7113",
+    "defaultValue": "Promoteurs des arts de la scène, des sports et des événements similaires avec installations"
+  },
+  {
+    "code": "711320",
+    "parentLookupCode": "7113",
+    "defaultValue": "Promoteurs des arts de la scène, des sports et des événements similaires sans installations"
+  },
+  {
+    "code": "711410",
+    "parentLookupCode": "7114",
+    "defaultValue": "Agents et gestionnaires d'artistes, d'athlètes, d'artistes et d'autres personnalités publiques"
+  },
+  {
+    "code": "711510",
+    "defaultValue": "Artistes indépendants, écrivains et interprètes",
+    "parentLookupCode": "7115"
+  },
+  {
+    "code": "712110",
+    "defaultValue": "Musées",
+    "parentLookupCode": "7121"
+  },
+  {
+    "code": "712120",
+    "defaultValue": "Sites historiques",
+    "parentLookupCode": "7121"
+  },
+  {
+    "code": "712130",
+    "parentLookupCode": "7121",
+    "defaultValue": "Zoos et jardins botaniques"
+  },
+  {
+    "code": "712190",
+    "parentLookupCode": "7121",
+    "defaultValue": "Parcs naturels et autres institutions similaires"
+  },
+  {
+    "code": "713110",
+    "parentLookupCode": "7131",
+    "defaultValue": "Parcs d'attractions et à thème"
+  },
+  {
+    "code": "713120",
+    "defaultValue": "Salles de jeux",
+    "parentLookupCode": "7131"
+  },
+  {
+    "code": "713210",
+    "defaultValue": "Casinos (sauf casinos)",
+    "parentLookupCode": "7132"
+  },
+  {
+    "code": "713290",
+    "parentLookupCode": "7132",
+    "defaultValue": "Autres industries du jeu"
+  },
+  {
+    "code": "713910",
+    "defaultValue": "Terrains de golf et country clubs",
+    "parentLookupCode": "7139"
+  },
+  {
+    "code": "713920",
+    "defaultValue": "Installations de ski",
+    "parentLookupCode": "7139"
+  },
+  {
+    "code": "713930",
+    "defaultValue": "Marinas",
+    "parentLookupCode": "7139"
+  },
+  {
+    "code": "713940",
+    "defaultValue": "Centres de conditionnement physique et de sports récréatifs",
+    "parentLookupCode": "7139"
+  },
+  {
+    "code": "713950",
+    "defaultValue": "Centres de bowling",
+    "parentLookupCode": "7139"
+  },
+  {
+    "code": "713990",
+    "defaultValue": "Toutes les autres industries d'amusement et de loisirs",
+    "parentLookupCode": "7139"
+  },
+  {
+    "code": "721110",
+    "defaultValue": "Hôtels (sauf hôtels de casino) et Motels",
+    "parentLookupCode": "7211"
+  },
+  {
+    "code": "721120",
+    "defaultValue": "Casino Hôtels",
+    "parentLookupCode": "7211"
+  },
+  {
+    "code": "721191",
+    "defaultValue": "Chambres d'hôtes",
+    "parentLookupCode": "7211"
+  },
+  {
+    "code": "721199",
+    "defaultValue": "Tous les autres voyageurs",
+    "parentLookupCode": "7211"
+  },
+  {
+    "code": "721211",
+    "defaultValue": "Parcs de VR (véhicules récréatifs) et terrains de camping",
+    "parentLookupCode": "7212"
+  },
+  {
+    "code": "721214",
+    "parentLookupCode": "7212",
+    "defaultValue": "Camps récréatifs et de vacances (sauf les terrains de camping)"
+  },
+  {
+    "code": "721310",
+    "parentLookupCode": "7213",
+    "defaultValue": "Chambre et pension"
+  },
+  {
+    "code": "722310",
+    "parentLookupCode": "7223",
+    "defaultValue": "Entrepreneurs en service alimentaire"
+  },
+  {
+    "code": "722320",
+    "defaultValue": "Traiteurs",
+    "parentLookupCode": "7223"
+  },
+  {
+    "code": "722330",
+    "parentLookupCode": "7223",
+    "defaultValue": "Services de restauration mobiles"
+  },
+  {
+    "code": "722410",
+    "parentLookupCode": "7224",
+    "defaultValue": "Débits de boissons (boissons alcoolisées)"
+  },
+  {
+    "code": "722511",
+    "defaultValue": "Restaurants à service complet",
+    "parentLookupCode": "7225"
+  },
+  {
+    "code": "722513",
+    "defaultValue": "Restaurants à service restreint",
+    "parentLookupCode": "7225"
+  },
+  {
+    "code": "722514",
+    "parentLookupCode": "7225",
+    "defaultValue": "Cafétérias, buffets de gril et buffets"
+  },
+  {
+    "code": "722515",
+    "parentLookupCode": "7225",
+    "defaultValue": "Snack et barres de boissons non alcoolisées"
+  },
+  {
+    "code": "811111",
+    "defaultValue": "Réparation automobile générale",
+    "parentLookupCode": "8111"
+  },
+  {
+    "code": "811112",
+    "parentLookupCode": "8111",
+    "defaultValue": "Réparation de système d'échappement automobile"
+  },
+  {
+    "code": "811113",
+    "defaultValue": "Réparation de transmission automobile",
+    "parentLookupCode": "8111"
+  },
+  {
+    "code": "811118",
+    "defaultValue": "Autres réparations et entretien mécaniques et électriques de véhicules automobiles",
+    "parentLookupCode": "8111"
+  },
+  {
+    "code": "811121",
+    "defaultValue": "Réparation et entretien de carrosseries, de peintures et d'intérieurs de véhicules automobiles",
+    "parentLookupCode": "8111"
+  },
+  {
+    "code": "811122",
+    "defaultValue": "Magasins de remplacement de verre automobile",
+    "parentLookupCode": "8111"
+  },
+  {
+    "code": "811191",
+    "parentLookupCode": "8111",
+    "defaultValue": "Chantiers de vidange d'huile et de lubrification automobile"
+  },
+  {
+    "code": "811192",
+    "parentLookupCode": "8111",
+    "defaultValue": "Lavage de voitures"
+  },
+  {
+    "code": "811198",
+    "defaultValue": "Tous les autres réparation et entretien de véhicules automobiles",
+    "parentLookupCode": "8111"
+  },
+  {
+    "code": "811211",
+    "parentLookupCode": "8112",
+    "defaultValue": "Réparation et maintenance d'appareils électroniques grand public"
+  },
+  {
+    "code": "811212",
+    "parentLookupCode": "8112",
+    "defaultValue": "Réparation et entretien de machines et de matériel informatique et de bureau"
+  },
+  {
+    "code": "811213",
+    "parentLookupCode": "8112",
+    "defaultValue": "Réparation et entretien de matériel de communication"
+  },
+  {
+    "code": "811219",
+    "defaultValue": "Autres réparations et entretien de matériel électronique et de matériel de précision",
+    "parentLookupCode": "8112"
+  },
+  {
+    "code": "811310",
+    "defaultValue": "Réparation et entretien de machines et de matériel d'usage commercial et industriel (sauf les véhicules automobiles et le matériel électronique)",
+    "parentLookupCode": "8113"
+  },
+  {
+    "code": "811411",
+    "defaultValue": "Réparation et entretien de matériel de maison et de jardin",
+    "parentLookupCode": "8114"
+  },
+  {
+    "code": "811412",
+    "parentLookupCode": "8114",
+    "defaultValue": "Réparation et maintenance d'appareils"
+  },
+  {
+    "code": "811420",
+    "defaultValue": "Rembourrage et réparation de meubles",
+    "parentLookupCode": "8114"
+  },
+  {
+    "code": "811430",
+    "parentLookupCode": "8114",
+    "defaultValue": "Réparation de chaussures et de maroquinerie"
+  },
+  {
+    "code": "811490",
+    "parentLookupCode": "8114",
+    "defaultValue": "Autres réparations et entretien d'articles personnels et ménagers"
+  },
+  {
+    "code": "812111",
+    "parentLookupCode": "8121",
+    "defaultValue": "Barbiers"
+  },
+  {
+    "code": "812112",
+    "parentLookupCode": "8121",
+    "defaultValue": "Salons de beauté"
+  },
+  {
+    "code": "812113",
+    "parentLookupCode": "8121",
+    "defaultValue": "Ongleries"
+  },
+  {
+    "code": "812191",
+    "parentLookupCode": "8121",
+    "defaultValue": "Centres de réduction du poids et de l'alimentation"
+  },
+  {
+    "code": "812199",
+    "defaultValue": "Autres services de soins personnels",
+    "parentLookupCode": "8121"
+  },
+  {
+    "code": "812210",
+    "parentLookupCode": "8122",
+    "defaultValue": "Salons funéraires et services funéraires"
+  },
+  {
+    "code": "812220",
+    "defaultValue": "Cimetières et crématoires",
+    "parentLookupCode": "8122"
+  },
+  {
+    "code": "812310",
+    "parentLookupCode": "8123",
+    "defaultValue": "Blanchisseries à monnaie et nettoyeurs à sec"
+  },
+  {
+    "code": "812320",
+    "parentLookupCode": "8123",
+    "defaultValue": "Services de nettoyage à sec et de blanchisserie (sauf à jetons)"
+  },
+  {
+    "code": "812331",
+    "parentLookupCode": "8123",
+    "defaultValue": "Linge de maison"
+  },
+  {
+    "code": "812332",
+    "parentLookupCode": "8123",
+    "defaultValue": "Blanchisseurs industriels"
+  },
+  {
+    "code": "812910",
+    "parentLookupCode": "8129",
+    "defaultValue": "Services de soins pour animaux de compagnie (sauf vétérinaires)"
+  },
+  {
+    "code": "812921",
+    "defaultValue": "Laboratoires de photofinishing (sauf une heure)",
+    "parentLookupCode": "8129"
+  },
+  {
+    "code": "812922",
+    "parentLookupCode": "8129",
+    "defaultValue": "Photofinition d'une heure"
+  },
+  {
+    "code": "812930",
+    "defaultValue": "Terrains de stationnement et garages",
+    "parentLookupCode": "8129"
+  },
+  {
+    "code": "812990",
+    "defaultValue": "Tous les autres services personnels",
+    "parentLookupCode": "8129"
+  },
+  {
+    "code": "813110",
+    "parentLookupCode": "8131",
+    "defaultValue": "Organisations religieuses"
+  },
+  {
+    "code": "813211",
+    "defaultValue": "Fondations subventionnaires",
+    "parentLookupCode": "8132"
+  },
+  {
+    "code": "813212",
+    "parentLookupCode": "8132",
+    "defaultValue": "Organismes bénévoles de la santé"
+  },
+  {
+    "code": "813219",
+    "parentLookupCode": "8132",
+    "defaultValue": "Autres services de dons et de dons"
+  },
+  {
+    "code": "813311",
+    "parentLookupCode": "8133",
+    "defaultValue": "Organisations de défense"
+  },
+  {
+    "code": "813312",
+    "parentLookupCode": "8133",
+    "defaultValue": "Organismes environnementaux, de conservation et de la faune"
+  },
+  {
+    "code": "813319",
+    "parentLookupCode": "8133",
+    "defaultValue": "Autres organisations de défense sociale"
+  },
+  {
+    "code": "813410",
+    "defaultValue": "Organisations civiques et sociales",
+    "parentLookupCode": "8134"
+  },
+  {
+    "code": "813910",
+    "defaultValue": "Associations professionnelles",
+    "parentLookupCode": "8139"
+  },
+  {
+    "code": "813920",
+    "defaultValue": "Organisations professionnelles",
+    "parentLookupCode": "8139"
+  },
+  {
+    "code": "813930",
+    "parentLookupCode": "8139",
+    "defaultValue": "Syndicats ouvriers et organisations syndicales similaires"
+  },
+  {
+    "code": "813940",
+    "defaultValue": "Organisations politiques",
+    "parentLookupCode": "8139"
+  },
+  {
+    "code": "813990",
+    "parentLookupCode": "8139",
+    "defaultValue": "Autres organisations similaires (sauf les organisations commerciales, professionnelles, syndicales et politiques)"
+  },
+  {
+    "code": "814110",
+    "defaultValue": "Ménages privés",
+    "parentLookupCode": "8141"
+  },
+  {
+    "code": "921110",
+    "parentLookupCode": "9211",
+    "defaultValue": "Bureaux de direction"
+  },
+  {
+    "code": "921120",
+    "parentLookupCode": "9211",
+    "defaultValue": "Corps législatif"
+  },
+  {
+    "code": "921130",
+    "parentLookupCode": "9211",
+    "defaultValue": "Activités de finances publiques"
+  },
+  {
+    "code": "921140",
+    "defaultValue": "Bureaux exécutifs et législatifs, combinés",
+    "parentLookupCode": "9211"
+  },
+  {
+    "code": "921150",
+    "defaultValue": "Gouvernements tribaux amérindiens et autochtones de l'Alaska",
+    "parentLookupCode": "9211"
+  },
+  {
+    "code": "921190",
+    "defaultValue": "Autre soutien du gouvernement général",
+    "parentLookupCode": "9211"
+  },
+  {
+    "code": "922110",
+    "parentLookupCode": "9221",
+    "defaultValue": "Tribunaux"
+  },
+  {
+    "code": "922120",
+    "defaultValue": "Protection de la police",
+    "parentLookupCode": "9221"
+  },
+  {
+    "code": "922130",
+    "parentLookupCode": "9221",
+    "defaultValue": "Conseiller juridique et poursuites"
+  },
+  {
+    "code": "922140",
+    "parentLookupCode": "9221",
+    "defaultValue": "Institutions correctionnelles"
+  },
+  {
+    "code": "922150",
+    "defaultValue": "Bureaux de libération conditionnelle et bureaux de probation",
+    "parentLookupCode": "9221"
+  },
+  {
+    "code": "922160",
+    "defaultValue": "Protection contre le feu",
+    "parentLookupCode": "9221"
+  },
+  {
+    "code": "922190",
+    "defaultValue": "Autres activités liées à la justice, à l'ordre public et à la sécurité",
+    "parentLookupCode": "9221"
+  },
+  {
+    "code": "923110",
+    "parentLookupCode": "9231",
+    "defaultValue": "Administration des programmes d'éducation"
+  },
+  {
+    "code": "923120",
+    "parentLookupCode": "9231",
+    "defaultValue": "Administration des programmes de santé publique"
+  },
+  {
+    "code": "923130",
+    "parentLookupCode": "9231",
+    "defaultValue": "Administration des programmes de ressources humaines (sauf les programmes d'éducation, de santé publique et d'anciens combattants)"
+  },
+  {
+    "code": "923140",
+    "defaultValue": "Administration des affaires des anciens combattants",
+    "parentLookupCode": "9231"
+  },
+  {
+    "code": "924110",
+    "defaultValue": "Administration des programmes de gestion des ressources en air et en eau et des déchets solides",
+    "parentLookupCode": "9241"
+  },
+  {
+    "code": "924120",
+    "parentLookupCode": "9241",
+    "defaultValue": "Administration des programmes de conservation"
+  },
+  {
+    "code": "925110",
+    "defaultValue": "Administration des programmes de logement",
+    "parentLookupCode": "9251"
+  },
+  {
+    "code": "925120",
+    "parentLookupCode": "9251",
+    "defaultValue": "Administration de l'urbanisme et du développement communautaire et rural"
+  },
+  {
+    "code": "926110",
+    "defaultValue": "Administration des programmes économiques généraux",
+    "parentLookupCode": "9261"
+  },
+  {
+    "code": "926120",
+    "parentLookupCode": "9261",
+    "defaultValue": "Réglementation et administration des programmes de transport"
+  },
+  {
+    "code": "926130",
+    "parentLookupCode": "9261",
+    "defaultValue": "Réglementation et administration des communications, de l'électricité, du gaz et d'autres services publics"
+  },
+  {
+    "code": "926140",
+    "parentLookupCode": "9261",
+    "defaultValue": "Réglementation de la commercialisation agricole et des produits de base"
+  },
+  {
+    "code": "926150",
+    "defaultValue": "Réglementation, délivrance de permis et inspection de divers secteurs commerciaux",
+    "parentLookupCode": "9261"
+  },
+  {
+    "code": "927110",
+    "parentLookupCode": "9271",
+    "defaultValue": "Recherche spatiale et technologie"
+  },
+  {
+    "code": "928110",
+    "parentLookupCode": "9281",
+    "defaultValue": "La sécurité nationale"
+  },
+  {
+    "code": "928120",
+    "defaultValue": "Les affaires internationales",
+    "parentLookupCode": "9281"
+  }
+]

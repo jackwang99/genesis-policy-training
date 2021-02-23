@@ -1,0 +1,56 @@
+[
+  {
+    "code": "HeadOffice",
+    "defaultValue": "Head Office",
+    "entityType": "ORG"
+  },
+  {
+    "code": "MainOffice",
+    "defaultValue": "Main Office",
+    "entityType": "ORG"
+  },
+  {
+    "code": "ParentCompany",
+    "defaultValue": "Parent Company",
+    "entityType": "ORG"
+  },
+  {
+    "code": "SatelliteOffice",
+    "defaultValue": "Satellite Office",
+    "entityType": "ORG"
+  },
+  {
+    "code": "billing",
+    "defaultValue": "Billing",
+    "entityType": "ORG"
+  },
+  {
+    "code": "contact",
+    "defaultValue": "Contact",
+    "entityType": "ORG"
+  },
+  {
+    "code": "legal",
+    "defaultValue": "Legal",
+    "entityType": "ORG"
+  },
+  {
+    "code": "mailing",
+    "defaultValue": "Mailing"
+  },
+  {
+    "code": "other",
+    "defaultValue": "Other",
+    "entityType": "INDV"
+  },
+  {
+    "code": "previous",
+    "defaultValue": "Previous",
+    "entityType": "INDV"
+  },
+  {
+    "code": "residence",
+    "defaultValue": "Residence",
+    "entityType": "INDV"
+  }
+]

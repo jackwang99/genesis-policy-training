@@ -1,0 +1,11 @@
+Model INDIVIDUALCUSTOMER
+
+Namespace INDIVIDUALCUSTOMER
+
+EntryPoints [
+    "INDIVIDUALCUSTOMER Validation"
+]
+
+Decision Tables [
+    "Mandatory"
+]

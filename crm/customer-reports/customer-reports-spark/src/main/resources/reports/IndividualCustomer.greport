@@ -1,0 +1,77 @@
+Model CustomerReports
+
+Import Model INDIVIDUALCUSTOMER
+Import Model IndividualAgencyContainer
+
+Report IndividualCustomer from INDIVIDUALCUSTOMER {
+
+    // Attribute declarations
+    Attr updatedOn is _timestamp
+    Attr state
+    Attr customerNumber
+    Attr brandCd
+    Attr source
+    Attr createdOn is accessTrackInfo.createdOn
+    Attr preferredContactMethod is communicationInfo.preferredContactMethod
+    Attr preferredWrittenLanguage is details.preferredWrittenLanguage
+    Attr deathNotificationReceived is details.deathNotificationReceived
+    Attr fullName is details.person.firstName + ' ' + details.person.lastName
+    Attr firstName is details.person.firstName
+    Attr lastName is details.person.lastName
+    Attr birthDate is details.person.birthDate
+    Attr maritalStatus is details.person.maritalStatus
+    Attr genderCd is details.person.genderCd
+
+    // Related tables
+    Ref Phone is communicationInfo.phones {
+        Attr updatedOn is IndividualCustomer._timestamp
+        Attr phoneType is type
+        Attr phoneNumber is value
+        Attr consentStatus is consentInfo.consentStatus
+        Attr consentDate is consentInfo.consentDate
+    }
+
+    Ref Email is communicationInfo.emails {
+        Attr updatedOn is IndividualCustomer._timestamp
+        Attr emailType is type
+        Attr emailAddress is value
+        Attr consentStatus is consentInfo.consentStatus
+        Attr consentDate is consentInfo.consentDate
+    }
+
+    Ref Address is communicationInfo.addresses {
+        Attr updatedOn is IndividualCustomer._timestamp
+        Attr preferred
+        Attr countryCd is location.countryCd
+        Attr stateProvinceCd is location.stateProvinceCd
+        Attr city is location.city
+        Attr postalCode is location.postalCode
+        Attr addressLine1 is location.addressLine1
+        Attr addressLine2 is location.addressLine2
+        Attr addressLine3 is location.addressLine3
+    }
+
+    Ref EmploymentDetails is employmentDetails {
+        Attr updatedOn is IndividualCustomer._timestamp
+        Attr employerName
+        Attr occupationCd
+        Attr occupationStatusCd
+    }
+
+    Ref ProductsOwned is productsOwned {
+        Attr updatedOn is IndividualCustomer._timestamp
+        Attr policyTypeCd
+    }
+
+    Ref AgencyContainer is GenesisIndividualAgencyContainer {
+        Attr updatedOn is _timestamp
+        Attr agency
+    }
+
+    // Join-table statements
+    Join GenesisIndividualAgencyContainer using Relationships {
+        object == this
+        predicate == 'agencyContainer_customer'
+    }
+
+}

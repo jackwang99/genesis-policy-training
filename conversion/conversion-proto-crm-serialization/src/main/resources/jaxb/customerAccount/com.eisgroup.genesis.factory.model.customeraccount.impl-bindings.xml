@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml-bindings
+        xmlns="http://www.eclipse.org/eclipselink/xsds/persistence/oxm"
+        package-name="com.eisgroup.genesis.factory.model.customeraccount.impl">
+
+	<!--
+		Bindings overrides over generated bindings
+	-->
+
+    <java-types>
+
+		<java-type name="GenesisCustomerAccountImpl">    	
+             <java-attributes>
+             	<xml-transient java-attribute="customers" />
+            </java-attributes>
+    	</java-type>
+
+	</java-types>
+</xml-bindings>

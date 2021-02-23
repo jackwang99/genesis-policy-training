@@ -1,0 +1,559 @@
+{
+  "_key": {
+    "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+    "revisionNo": 1
+  },
+  "_modelName": "PersonalAuto",
+  "_modelVersion": "1",
+  "_timestamp": "2019-01-24T09:00:12.543Z",
+  "_type": "PersonalAutoPolicySummary",
+  "_variation": "policy",
+  "accessTrackInfo": {
+    "createdBy": "qa",
+    "createdOn": "2019-01-24T09:00:12.36Z",
+    "updatedBy": "qa",
+    "updatedOn": "2019-01-24T09:00:12.495Z",
+    "_key": {
+      "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+      "revisionNo": 1,
+      "parentId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+      "id": "18f5f69e-0540-428b-a59e-3d98ad432e78"
+    },
+    "_type": "AutoAccessTrackInfo",
+    "raw": "false/1f6dbf1e-7752-4788-b2df-9903d36026e4"
+  },
+  "businessDimensions": {
+    "agency": "74701132",
+    "organization": {
+      "_uri": "geroot://Organization/Organization//6ff65c5f-f0de-4159-850c-acf160bcef11"
+    },
+    "brand": "brandA",
+    "subProducer": "84198527",
+    "_type": "AutoBusinessDimensions",
+    "_key": {
+      "id": "94d92b4b-60f7-4140-be8b-f0d6c0473a5d",
+      "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+      "revisionNo": 1,
+      "parentId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2"
+    }
+  },
+  "country": "US",
+  "createdFromPolicyRev": 0,
+  "createdFromQuoteRev": 1,
+  "currencyCd": "USD",
+  "customer": {
+    "_uri": "gentity://Customer/INDIVIDUALCUSTOMER//eeb74f61-bc8b-4998-b2f2-646539ee841e/1"
+  },
+  "inceptionDate": "2019-01-24",
+  "overrideRateEffectiveDate": false,
+  "packagingDetail": {
+    "packageCd": "AL2018",
+    "planCd": "Standard",
+    "_type": "AutoPackagingDetail",
+    "_key": {
+      "id": "47aa1eee-c150-458b-84c7-15839a95aaa3",
+      "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+      "revisionNo": 1,
+      "parentId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2"
+    }
+  },
+  "parties": [
+    {
+      "priorCarrierInfo": {
+        "carrierPolicyExpDate": "2015-10-01",
+        "carrierPremium": {
+          "amount": 200,
+          "currency": "USD"
+        },
+        "carrierPolicyNo": "PC000001",
+        "carrierCd": "PrevCarrier",
+        "_key": {
+          "parentId": "ae06b625-1b16-4c34-b73d-dc080cde8f53",
+          "id": "aa5960bf-f8f3-4d67-beed-01022ba3b305",
+          "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+          "revisionNo": 1
+        },
+        "_type": "AutoPriorCarrierInfo"
+      },
+      "insuredInfo": {
+        "primary": true,
+        "_key": {
+          "parentId": "ae06b625-1b16-4c34-b73d-dc080cde8f53",
+          "id": "d54ab76e-300e-44e4-98c0-2ab9f3d96078",
+          "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+          "revisionNo": 1
+        },
+        "_type": "AutoInsuredInfo"
+      },
+      "roles": [
+        {
+          "role": "Insured",
+          "_key": {
+            "parentId": "ae06b625-1b16-4c34-b73d-dc080cde8f53",
+            "id": "310702c2-936d-4a8a-8fe7-64260fd80df0",
+            "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+            "revisionNo": 1
+          },
+          "_type": "AutoPartyRole"
+        },
+        {
+          "role": "Driver",
+          "_key": {
+            "parentId": "ae06b625-1b16-4c34-b73d-dc080cde8f53",
+            "id": "318a9b76-73b8-4a90-af48-b459af010ee0",
+            "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+            "revisionNo": 1
+          },
+          "_type": "AutoPartyRole"
+        }
+      ],
+      "driverInfo": {
+        "driverType": "P",
+        "_type": "AutoDriverInfo",
+        "_key": {
+          "parentId": "ae06b625-1b16-4c34-b73d-dc080cde8f53",
+          "id": "591883ce-6dc0-470f-be82-d4878b81acf7",
+          "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+          "revisionNo": 1
+        }
+      },
+      "personInfo": {
+        "personBaseDetails": {
+          "firstName": "Frank-23228",
+          "middleName": "Little",
+          "lastName": "Frisbey-73307",
+          "genderCd": "MALE",
+          "birthDate": "1980-10-01",
+          "maritalStatus": "MARRIED",
+          "_key": {
+            "parentId": "4ef293d5-dcfb-4307-876b-f6fcd4ddacf4",
+            "id": "d7be0d1f-7cf3-443f-9882-7feb7c6d2830",
+            "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+            "revisionNo": 1
+          },
+          "_type": "AutoPersonEntity",
+          "registryTypeId": "registry://Person/29ed55aa-a0ca-47c3-b2fc-74d767219f59"
+        },
+        "occupation": "ProfDriver",
+        "nameTypeCd": "IND",
+        "suffix": "Ph.D",
+        "salutation": "1",
+        "age": 25,
+        "_key": {
+          "parentId": "ae06b625-1b16-4c34-b73d-dc080cde8f53",
+          "id": "4ef293d5-dcfb-4307-876b-f6fcd4ddacf4",
+          "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+          "revisionNo": 1
+        },
+        "_type": "AutoPolicyPerson"
+      },
+      "relationToPrimaryInsured": "self",
+      "_key": {
+        "id": "ae06b625-1b16-4c34-b73d-dc080cde8f53",
+        "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+        "revisionNo": 1,
+        "parentId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2"
+      },
+      "_type": "PersonalAutoPolicyParty"
+    }
+  ],
+  "policyNumber": "P1548270323",
+  "policySource": "NEW",
+  "policyType": "STD",
+  "productCd": "PersonalAuto",
+  "rateEffectiveDate": "2019-01-24",
+  "riskStateCd": "AL",
+  "sendTo": "AUTOMATED_INTEGRATION",
+  "state": "issued",
+  "termDetails": {
+    "termCd": "ANNUAL",
+    "termNo": 1,
+    "termEffectiveDate": "2019-01-24",
+    "_key": {
+      "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+      "revisionNo": 1,
+      "parentId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+      "id": "47b75834-585b-49df-97ce-5428e85d427d"
+    },
+    "_type": "AutoTermDetails",
+    "termExpirationDate": "2020-01-24"
+  },
+  "transactionDetails": {
+    "txCreateDate": "2019-01-24T08:59:56.068Z",
+    "txType": "NEW_BUSINESS",
+    "_key": {
+      "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+      "revisionNo": 1,
+      "parentId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+      "id": "0bc0d618-9d7f-492e-8b51-dbcdca72ba76"
+    },
+    "_type": "AutoTransactionDetails",
+    "txEffectiveDate": "2019-01-24T00:00:00Z",
+    "totalPremium": {
+      "amount": 1367,
+      "currency": "USD"
+    },
+    "changePremium": {
+      "amount": 1367,
+      "currency": "USD"
+    }
+  },
+  "blob": {
+    "_key": {
+      "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+      "revisionNo": 1,
+      "parentId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+      "id": "eb11253e-998c-4c93-bbb4-c30b5bc25c6c"
+    },
+    "_modelName": "PersonalAuto",
+    "_modelVersion": "1",
+    "_timestamp": "2019-01-24T09:00:12.52Z",
+    "_type": "AutoBLOB",
+    "blobCd": "Personal",
+    "lobs": [
+      {
+        "_key": {
+          "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+          "revisionNo": 1,
+          "parentId": "eb11253e-998c-4c93-bbb4-c30b5bc25c6c",
+          "id": "c7d3705d-113d-48ae-9ab5-5653d552171c"
+        },
+        "_modelName": "PersonalAuto",
+        "_modelVersion": "1",
+        "_timestamp": "2019-01-24T09:00:12.52Z",
+        "_type": "AutoLOB",
+        "lobCd": "Auto",
+        "riskItems": [
+          {
+            "_key": {
+              "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+              "revisionNo": 1,
+              "parentId": "c7d3705d-113d-48ae-9ab5-5653d552171c",
+              "id": "698e4c96-67a8-4539-a49d-1ba31d0e2ea5"
+            },
+            "_modelName": "PersonalAuto",
+            "_modelVersion": "1",
+            "_timestamp": "2019-01-24T09:00:12.525Z",
+            "_type": "AutoVehicle",
+            "adjustmentToValue": 100,
+            "annualMiles": 5000,
+            "assignedDrivers": [
+              {
+                "driver": {
+                  "_ref": "ae06b625-1b16-4c34-b73d-dc080cde8f53"
+                },
+                "percentOfUsage": 100,
+                "assignDriverType": "driver/principal",
+                "_type": "AutoVehicleDriver",
+                "_key": {
+                  "id": "b5693926-572b-446e-8936-3934077f8c4b",
+                  "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+                  "revisionNo": 1,
+                  "parentId": "698e4c96-67a8-4539-a49d-1ba31d0e2ea5"
+                }
+              }
+            ],
+            "biSymbol": "1",
+            "coverageGroups": [
+              {
+                "code": "Single Coverage Group",
+                "coverages": [
+                  {
+                    "limitAmount": {
+                      "amount": 100000,
+                      "currency": "USD"
+                    },
+                    "_type": "AutoCSLCoverage",
+                    "code": "Combined Single Limit",
+                    "deductibleAmount": {
+                      "amount": 60,
+                      "currency": "USD"
+                    },
+                    "_key": {
+                      "id": "d4ada28a-a8e0-4f6b-b754-2c0a94a7cd75",
+                      "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+                      "revisionNo": 1,
+                      "parentId": "e8319bd5-f46a-4261-a537-f4754fe01da7"
+                    },
+                    "flatOverrideAmount": {
+                      "amount": 0,
+                      "currency": "USD"
+                    },
+                    "overwriteOverrideAmount": {
+                      "amount": 0,
+                      "currency": "USD"
+                    },
+                    "percentageOverrideAmount": 0
+                  },
+                  {
+                    "limitAmount": {
+                      "amount": 100000,
+                      "currency": "USD"
+                    },
+                    "_type": "AutoUMCSLCoverage",
+                    "code": "UM/UIM Combined",
+                    "deductibleAmount": {
+                      "amount": 600,
+                      "currency": "USD"
+                    },
+                    "_key": {
+                      "id": "dd9b0fb1-bf5d-4712-8283-68950ebf491c",
+                      "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+                      "revisionNo": 1,
+                      "parentId": "e8319bd5-f46a-4261-a537-f4754fe01da7"
+                    },
+                    "flatOverrideAmount": {
+                      "amount": 0,
+                      "currency": "USD"
+                    },
+                    "percentageOverrideAmount": 0,
+                    "overwriteOverrideAmount": {
+                      "amount": 0,
+                      "currency": "USD"
+                    }
+                  }
+                ],
+                "_type": "AutoSingleCoverageGroup",
+                "_key": {
+                  "id": "e8319bd5-f46a-4261-a537-f4754fe01da7",
+                  "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+                  "revisionNo": 1,
+                  "parentId": "698e4c96-67a8-4539-a49d-1ba31d0e2ea5"
+                },
+                "overwriteOverrideAmount": {
+                  "amount": 0,
+                  "currency": "USD"
+                },
+                "flatOverrideAmount": {
+                  "amount": 0,
+                  "currency": "USD"
+                },
+                "percentageOverrideAmount": 0
+              }
+            ],
+            "coverages": [
+              {
+                "_type": "AutoCOLLCoverage",
+                "code": "Collision",
+                "deductibleAmount": {
+                  "amount": 1000,
+                  "currency": "USD"
+                },
+                "_key": {
+                  "id": "d89876d8-2f3d-44cf-86da-6ba79317fdbe",
+                  "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+                  "revisionNo": 1,
+                  "parentId": "698e4c96-67a8-4539-a49d-1ba31d0e2ea5"
+                },
+                "overwriteOverrideAmount": {
+                  "amount": 0,
+                  "currency": "USD"
+                },
+                "flatOverrideAmount": {
+                  "amount": 0,
+                  "currency": "USD"
+                },
+                "percentageOverrideAmount": 0
+              },
+              {
+                "_type": "AutoCOMPCoverage",
+                "code": "Comprehensive",
+                "deductibleAmount": {
+                  "amount": 1000,
+                  "currency": "USD"
+                },
+                "_key": {
+                  "id": "471a7b54-0cb4-493b-9456-b06a2b895a27",
+                  "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+                  "revisionNo": 1,
+                  "parentId": "698e4c96-67a8-4539-a49d-1ba31d0e2ea5"
+                },
+                "overwriteOverrideAmount": {
+                  "amount": 0,
+                  "currency": "USD"
+                },
+                "percentageOverrideAmount": 0,
+                "flatOverrideAmount": {
+                  "amount": 0,
+                  "currency": "USD"
+                }
+              },
+              {
+                "limitAmount": {
+                  "amount": 5000,
+                  "currency": "USD"
+                },
+                "_type": "AutoMEDCoverage",
+                "code": "Medical Payments",
+                "_key": {
+                  "id": "60452f6e-812f-49f3-b532-1e3fcde70513",
+                  "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+                  "revisionNo": 1,
+                  "parentId": "698e4c96-67a8-4539-a49d-1ba31d0e2ea5"
+                },
+                "percentageOverrideAmount": 0,
+                "overwriteOverrideAmount": {
+                  "amount": 0,
+                  "currency": "USD"
+                },
+                "flatOverrideAmount": {
+                  "amount": 0,
+                  "currency": "USD"
+                }
+              },
+              {
+                "_type": "AutoRACoverage",
+                "code": "Roadside Assistance",
+                "level": "none",
+                "_key": {
+                  "id": "643a1f5b-a44a-4794-9486-3be55f8f9911",
+                  "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+                  "revisionNo": 1,
+                  "parentId": "698e4c96-67a8-4539-a49d-1ba31d0e2ea5"
+                },
+                "flatOverrideAmount": {
+                  "amount": 0,
+                  "currency": "USD"
+                },
+                "overwriteOverrideAmount": {
+                  "amount": 0,
+                  "currency": "USD"
+                },
+                "percentageOverrideAmount": 0
+              },
+              {
+                "limitAmount": {
+                  "amount": 50,
+                  "currency": "USD"
+                },
+                "_type": "AutoRRCoverage",
+                "code": "Rental Reimbursement",
+                "combinedLimit": "50",
+                "_key": {
+                  "id": "80eccf8e-13c7-4527-a1a7-2701d8473dfc",
+                  "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+                  "revisionNo": 1,
+                  "parentId": "698e4c96-67a8-4539-a49d-1ba31d0e2ea5"
+                },
+                "overwriteOverrideAmount": {
+                  "amount": 0,
+                  "currency": "USD"
+                },
+                "percentageOverrideAmount": 0,
+                "flatOverrideAmount": {
+                  "amount": 0,
+                  "currency": "USD"
+                }
+              }
+            ],
+            "declaredAnnualMiles": 10000,
+            "distanceForPleasurePerWeek": 1000,
+            "garagingAddress": {
+              "addressLine1": "addressLine1",
+              "addressLine2": "addressLine2",
+              "city": "New York",
+              "countryCd": "US",
+              "nationalId": "NewY",
+              "postalCode": "33768",
+              "stateProvinceCd": "NY",
+              "streetName": "Baker st. 41902",
+              "streetNumber": "77",
+              "unitNumber": "1",
+              "geoposition": {
+                "latitude": 124,
+                "longitude": 68,
+                "coordAccuracy": 2,
+                "_type": "AutoGeoCoord",
+                "_key": {
+                  "id": "5491c7b3-63fa-4a56-b100-9ef49c997e06",
+                  "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+                  "revisionNo": 1,
+                  "parentId": "6c50b253-156b-4634-9410-ff037f1721c4"
+                }
+              },
+              "_type": "AutoAddressInfo",
+              "_key": {
+                "id": "6c50b253-156b-4634-9410-ff037f1721c4",
+                "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+                "revisionNo": 1,
+                "parentId": "698e4c96-67a8-4539-a49d-1ba31d0e2ea5"
+              },
+              "registryTypeId": "registry://Location/6676b789-faec-4bb9-a724-a69abc848207"
+            },
+            "included": true,
+            "marketValue": {
+              "amount": 30000,
+              "currency": "USD"
+            },
+            "numDaysDrivenPerWeek": 5,
+            "odometerReading": 150000,
+            "pdSymbol": "1",
+            "pipMedSymbol": "1",
+            "plateNumber": "JBM116",
+            "registeredOwner": {
+              "_ref": "ae06b625-1b16-4c34-b73d-dc080cde8f53"
+            },
+            "registeredStateCd": "NY",
+            "series": "NAM",
+            "vehicleBaseDetails": {
+              "modelYear": 2012,
+              "manufactureYear": 2013,
+              "registrationRecords": [
+                {
+                  "registrationDate": "2013-10-01",
+                  "licensePlateNumber": "testlicensePlate31044",
+                  "_type": "AutoVehicleRegistrationRecord",
+                  "_key": {
+                    "id": "d7c9dccb-ea4a-4a21-bf66-ad1c0d32e608",
+                    "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+                    "revisionNo": 1,
+                    "parentId": "daa655da-ed8a-4ca2-bb05-c425d5d7fbd2"
+                  }
+                }
+              ],
+              "make": "BMW",
+              "vehicleIdentificationNumber": "VI75705346-777-666",
+              "fuelTypeCd": "DIES",
+              "model": "X5",
+              "firstRegistrationYear": 2013,
+              "enginePower": 200,
+              "armoredInd": false,
+              "daytimeRunningLampsInd": true,
+              "automaticBeltsInd": true,
+              "vehSymbol": "1",
+              "performanceCd": "H",
+              "bodyTypeCd": "1600 BAS",
+              "antiLockBrakeCd": "ABR",
+              "typeCd": "Regular",
+              "compSymbol": "1",
+              "airBagStatusCd": "DAP",
+              "securityOptionsCd": "TRCKSYS",
+              "collSymbol": "1",
+              "usageCd": "PL",
+              "_type": "AutoVehicleEntity",
+              "_key": {
+                "id": "daa655da-ed8a-4ca2-bb05-c425d5d7fbd2",
+                "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+                "revisionNo": 1,
+                "parentId": "698e4c96-67a8-4539-a49d-1ba31d0e2ea5"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "policyDetail": {
+    "_key": {
+      "rootId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+      "revisionNo": 1,
+      "parentId": "f21a4dcb-7549-4715-98f5-a6ec61a50ef2",
+      "id": "f9a06fac-7d1a-433c-8605-0c6ed9c350d3"
+    },
+    "_modelName": "PersonalAuto",
+    "_modelVersion": "1",
+    "_timestamp": "2019-01-24T09:00:12.525Z",
+    "_type": "AutoPolicyDetail",
+    "currentQuoteInd": true
+  }
+}

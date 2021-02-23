@@ -1,0 +1,66 @@
+[
+  {
+    "code": "1",
+    "defaultValue": "Le compte ne vise pas le marché"
+  },
+  {
+    "code": "2",
+    "defaultValue": "Expérience de perte d'eau inacceptable"
+  },
+  {
+    "code": "3",
+    "defaultValue": "Expérience inacceptable de perte de CAT"
+  },
+  {
+    "code": "4",
+    "defaultValue": "Expérience de perte de domicile inacceptable"
+  },
+  {
+    "code": "5",
+    "defaultValue": "Expérience de perte de PC de collections inacceptable"
+  },
+  {
+    "code": "6",
+    "defaultValue": "Expérience de perte de responsabilité inacceptable"
+  },
+  {
+    "code": "7",
+    "defaultValue": "Expérience Auto MVR / Clue inacceptable"
+  },
+  {
+    "code": "8",
+    "defaultValue": "Exposition côtière inacceptable"
+  },
+  {
+    "code": "9",
+    "defaultValue": "exposition inacceptable en Floride"
+  },
+  {
+    "code": "10",
+    "defaultValue": "Ne correspond pas à la stratégie EQ / Brush"
+  },
+  {
+    "code": "11",
+    "defaultValue": "Changement d'exposition - COC"
+  },
+  {
+    "code": "12",
+    "defaultValue": "Profil assuré inacceptable"
+  },
+  {
+    "code": "13",
+    "defaultValue": "Prix trop élevé"
+  },
+  {
+    "code": "14",
+    "defaultValue": "Garanties non compétitives"
+  },
+  {
+    "code": "15",
+    "defaultValue": "Autre"
+  },
+  {
+    "code": "OTH",
+    "defaultValue": "Autre"
+  }
+]

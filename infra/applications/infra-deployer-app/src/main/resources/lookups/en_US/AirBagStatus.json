@@ -1,0 +1,14 @@
+[
+  {
+    "code": "Driver and Passengers",
+    "defaultValue": "Driver and Passengers"
+  },
+  {
+    "code": "Driver Only",
+    "defaultValue": "Driver Only"
+  },
+  {
+    "code": "None",
+    "defaultValue": "None"
+  }
+]

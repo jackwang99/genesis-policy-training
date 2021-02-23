@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>fleet-auto-pom</artifactId>
+    <groupId>com.eisgroup.genesis.fleetauto</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>fleet-auto-rating-alg</artifactId>
+  <name>Fleet Auto Openl rating</name>
+  <description>Fleet Auto Openl Rating Module</description>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.openl.rules</groupId>
+        <artifactId>openl-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>compile</goal>
+              <goal>package</goal>
+              <goal>test</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.eisgroup.rating.server</groupId>
+      <artifactId>unified-rating-model-mapper</artifactId>
+      <version>${unified.rating.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.eisgroup.rating</groupId>
+      <artifactId>unified-rating-model</artifactId>
+      <version>${unified.rating.version}</version>
+    </dependency>
+
+    <!-- Exclude globally -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- The following dependencies exist in OpenL rating server -->
+    <dependency>
+      <groupId>org.openl.rules</groupId>
+      <artifactId>org.openl.rules</artifactId>
+      <version>${org.openl.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openl.rules</groupId>
+      <artifactId>org.openl.rules.ruleservice.annotation</artifactId>
+      <version>${org.openl.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openl.rules</groupId>
+      <artifactId>org.openl.rules.variation</artifactId>
+      <version>${org.openl.version}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.eisgroup.genesis.tfs.core</groupId>
+      <artifactId>tfs-api</artifactId>
+      <version>${genesis.core.version}</version>
+    </dependency>
+  </dependencies>
+</project>

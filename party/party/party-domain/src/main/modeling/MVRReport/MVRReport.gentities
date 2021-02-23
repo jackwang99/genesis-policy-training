@@ -1,0 +1,3 @@
+Entity MVRReportEntity is MVRReport, RootEntity {
+
+}

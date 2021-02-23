@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+		<groupId>com.eisgroup.genesis</groupId>
+		<artifactId>genesis-parent-pom</artifactId>
+		<version>10.11</version>
+        <relativePath>../parent-pom/pom.xml</relativePath>
+	</parent>
+
+    <groupId>com.eisgroup.genesis.proto</groupId>
+    <artifactId>security-pom</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    
+    <properties>
+        <!-- party core version -->
+        <party.core.version>10.11</party.core.version>
+    </properties>
+
+    <modules>
+        <module>security-domain</module>
+        <module>genesis-sso</module>
+        <module>security-lifecycle</module>
+        <module>security-lifecycle/model</module>
+        <module>security-endpoints</module>
+        <module>applications</module>
+    </modules>
+    
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.eisgroup.genesis.registry</groupId>
+                <artifactId>registry-bom</artifactId>
+                <version>${party.core.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

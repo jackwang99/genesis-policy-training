@@ -1,0 +1,18 @@
+[
+  {
+    "code": "COP",
+    "defaultValue": "Change of Plan"
+  },
+  {
+    "code": "OM",
+    "defaultValue": "Objectives met"
+  },
+  {
+    "code": "OT",
+    "defaultValue": "Other"
+  },
+  {
+    "code": "WR",
+    "defaultValue": "Weak results"
+  }
+]

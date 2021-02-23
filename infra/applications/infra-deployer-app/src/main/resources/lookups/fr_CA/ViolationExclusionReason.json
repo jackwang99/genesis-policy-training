@@ -1,0 +1,14 @@
+[
+  {
+    "code": "Customer Satisfaction",
+    "defaultValue": "Satisfaction du client"
+  },
+  {
+    "code": "Other",
+    "defaultValue": "Autre"
+  },
+  {
+    "code": "Supporting Documentation provided",
+    "defaultValue": "Documentation à l'appui fournie"
+  }
+]

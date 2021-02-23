@@ -1,0 +1,7 @@
+Model MajorAccount
+Root GenesisMajorAccount
+
+ModelType MajorAccount
+
+Stored using [ModelName]
+Indexed using ['majoraccount']

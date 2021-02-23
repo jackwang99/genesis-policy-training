@@ -1,0 +1,22 @@
+[
+  {
+    "code": "BU",
+    "defaultValue": "Entreprise"
+  },
+  {
+    "code": "FM",
+    "defaultValue": "Ferme"
+  },
+  {
+    "code": "LC",
+    "defaultValue": "Travail - Long trajet"
+  },
+  {
+    "code": "PL",
+    "defaultValue": "Plaisir"
+  },
+  {
+    "code": "SC",
+    "defaultValue": "Travail - Courte distance"
+  }
+]

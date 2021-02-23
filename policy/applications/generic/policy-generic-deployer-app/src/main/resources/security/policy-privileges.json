@@ -1,0 +1,237 @@
+[
+  {
+    "name": "Policy: Quote Copy from Policy",
+    "description": "Grants user access to the Copy From Policy action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Quote Suspense",
+    "description": "Grants user access to the Suspend action for a quote",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Quote Remove suspense",
+    "description": "Grants user access to the Remove Suspense Quote action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Policy Rewrite",
+    "description": "Grants user access to the Rewrite action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Cancel Manual Renewal",
+    "description": "Grants user access to the Remove Manual Renewal action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Policy Set Cancel Notice",
+    "description": "Grants user access to the Policy Set Cancel Notice action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Policy Cancel",
+    "description": "Grants user access to the Cancel action for a policy",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Quote Delete Endorsement",
+    "description": "Grants user access to the Delete Pending Endorsement action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Quote Delete Renewal",
+    "description": "Grants user access to the Delete Pending Renewal action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Policy Set Do not Renew",
+    "description": "Grants user access to the Policy Set Do not Renew action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Policy Remove Do not Renew",
+    "description": "Grants user access to the Policy Set Do not Renew action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Policy CTE",
+    "description": "Grants user privilege to proceed with a cross term endorsement and within-term out of sequence (OOS) endorsement. Note: future-dated cross-term endorsement, when policy is not renewed, is out of scope for this privilege",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Policy OOSE",
+    "description": "Grants user privilege to proceed with a within-term out of sequence (OOS) endorsement",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Quote Endorsement Issue",
+    "description": "Grants user access to the Issue action for an endorsement quote. Grants user access to Roll On action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Inquiry",
+    "description": "When user navigates to Policy, there on top is drop-down, where he/she can choose Policy Inquiry action. This action allows user to preview current policy. FNOL user is able to select Policy Inquiry action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Quote Issue",
+    "description": "Grants user access to the Issue action for a quote",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Policy Set Manual Renew",
+    "description": "Grants user access to the Policy Set Manual Renew action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Policy Reinstate",
+    "description": "Grants user access to the Policy Reinstatement action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Policy Remove Cancel Notice",
+    "description": "Grants user access to the Policy Remove Cancel Notice action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Policy renewal",
+    "description": "Grants user access to the Renew action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Policy Update",
+    "description": "Grants user access to the Update action for a policy",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Quote Bind",
+    "description": "Grants user access to the Bind action for a quote",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Quote Rate",
+    "description": "Grants user access to the Rate action for a quote",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Quote Decline by Company",
+    "description": "Grants user access to the Decline By Company action for a quote",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Quote Copy From Quote",
+    "description": "Grants user access to the Copy From Quote action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Quote Create Version",
+    "description": "Grants user access to the Create Version button for a quote",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Quote Decline by Customer",
+    "description": "Grants user access to the Decline By Customer action for a quote",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Quote Propose",
+    "description": "Grants user access to the Propose action for quote",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Quote Inquiry",
+    "description": "Grants user access to the Inquiry action for a quote",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Quote Update",
+    "description": "Grants user access to the Update action for a quote",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Policy Roll back",
+    "description": "Grants user privilege to proceed with a roll back endorsement",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Quote Initialize",
+    "description": "Grant user rights to initiate new quote image creation not saved in the database",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Update Quote Operations",
+    "description": "Grant user rights to update Quote operations",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Load Operations",
+    "description": "Grant user rights to load Policy operations",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Single BOR Transfer",
+    "description": "Grants user access to the Single Policy BOR Transfer action for a policy",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: NPBE Initiate",
+    "description": "Grants user access to Initiate NPBE action for a policy",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Policy Split",
+    "description": "Grants user access to the Split action for a policy",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Policy Spin",
+    "description": "Grants user access to the Spin action for a policy",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Policy Rescind",
+    "description": "Grants user access to the Rescind action for a policy",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Policy Premium Override Create",
+    "description": "Grants user access to create premium override",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Policy Premium Override Update",
+    "description": "Grants user access to update premium override",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: UW Measure Creation",
+    "description": "Grants user access to the UW Measure Creation action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: UW Measure Cancellation",
+    "description": "Grants user access to the UW Measure Delete action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Quote Move",
+    "description": "Grants user access to the Move Quote action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Revert OOSE from Policy",
+    "description": "Grants user access to the revert rolled on changes from Policy",
+    "scope": "Policy"
+  },
+  {
+    "name": "Decision Table: Write",
+    "description": "Grant user access to Decision Table write action",
+    "scope": "Policy"
+  },
+  {
+    "name": "Policy: Archive",
+    "description": "Grants user access to archive quote/policy",
+    "scope": "Policy"
+  }
+]

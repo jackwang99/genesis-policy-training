@@ -1,0 +1,147 @@
+Model FleetAuto
+
+@EntryPoint("Apply DT", "Quote Policy Validation", "Update dimension", "Harmonize", "Default apply")
+@RuleOrder
+@CrossTab
+@Versioned("Effective Date", "Request Date")
+Table "Applicability Configuration" {
+  InputColumn "User made choice"                  as Boolean : offered
+  InputColumn "Entry Point"                        as String : entryPoint
+  OutputColumn "Applicability Type"                as String : applicabilityType
+  OutputColumn "Allow to Change Default Offer"    as Boolean : allowChangeOffer
+  OutputColumn "Overridable"                      as Boolean : overridable
+  OutputColumn "Override Authority Level"         as Integer : overrideAuthorityLevel
+  AspectColumn "Action"                                      : applicabilityAction
+}
+
+@EntryPoint("Apply DT", "Quote Policy Validation", "Update dimension", "Harmonize", "Default apply")
+@RuleOrder
+@CrossTab
+Table "Offer Status Configuration" {
+  InputColumn "Entry Point"                        as String : entryPoint
+  OutputColumn "Offer Status"                      as String : offerStatus
+  OutputColumn "Set Offered Status"               as Boolean : setOfferedStatus
+}
+
+@EntryPoint("Apply DT", "Quote Policy Validation", "Update dimension", "Harmonize", "Default apply")
+@CrossTab
+@Versioned("Effective Date", "Request Date")
+Table "Entity Applicability" {
+  InputColumn "Grouped AutoVehicle" as Boolean : dimensions.grouped
+  InputColumn "Coverage Type" as String : dimensions.coverageType
+  AspectColumn "Entity" : entity
+  AspectColumn "Applicability" : applicability
+}
+
+@EntryPoint("Apply DT", "Quote Policy Validation", "Update dimension", "Harmonize", "Default apply")
+@CrossTab
+@Overridable
+@Category("KrakenRules")
+@Versioned("Effective Date", "Request Date")
+Table "Min Max" {
+  InputColumn "Authority" as Integer : securityContext.authorityLevel
+  AspectColumn "Entity" : entity
+  AspectColumn "Attribute" : attribute
+  AspectColumn "Min" : min
+  AspectColumn "Max" : max
+}
+
+@EntryPoint("Apply DT", "Quote Policy Validation", "Update dimension", "Harmonize", "Default apply")
+@CrossTab
+@Overridable
+@Category("KrakenRules")
+@Versioned("Effective Date", "Request Date")
+Table "Premium Override Min Max" {
+  InputColumn "Brand" as String : dimensions.brand
+  InputColumn "Authority" as Integer : securityContext.authorityLevel
+  AspectColumn "Entity" : entity
+  AspectColumn "Attribute" : attribute
+  AspectColumn "Min" : min
+  AspectColumn "Max" : max
+}
+
+@EntryPoint("Apply DT", "Quote Policy Validation", "Update dimension", "Harmonize", "Default apply")
+@Category("KrakenRules")
+@Versioned("Effective Date", "Request Date")
+Table "Default Values" {
+  AspectColumn "Entity" : entity
+  AspectColumn "Attribute" : attribute
+  AspectColumn "Default" : default
+}
+
+@EntryPoint("Apply DT", "Quote Policy Validation", "Update dimension", "Harmonize", "Default apply")
+@RuleOrder
+@Versioned("Effective Date", "Request Date")
+Table "Values List" {
+  AspectColumn "Entity" : entity
+  AspectColumn "Attribute" : attribute
+  OutputColumn "ValueList" as String : list
+}
+
+@EntryPoint("Apply DT", "Quote Policy Validation", "Update dimension", "Harmonize", "Default apply")
+@RuleOrder
+@Versioned("Effective Date", "Request Date")
+Table "Relationship" {
+  AspectColumn "Entity" : entity
+  AspectColumn "Relationship Type" : relationshipType
+  AspectColumn "Linked Entity" : linkedEntity
+}
+
+@RuleOrder
+Table "Invocation Points" {
+  InputColumn "Command Name" as String : commandName
+  InputColumn "Phase" as String : phaseId
+  InputColumn "Current State" as String : currentState
+  InputColumn "Target State" as String : targetState
+  AspectColumn "Entry Points" : entryPoints
+  AspectColumn "Execution Stage" : executionStage
+}
+
+@RuleOrder
+Table "Entity Manager" {
+  InputColumn "Manager" as String : manager
+  OutputColumn "Entity" as String : entity
+}
+
+@RuleOrder
+Table "Entity Manager Listener" {
+  InputColumn "Entry Point" as String : entryPoint
+  OutputColumn "Listener" as String : listener
+  OutputColumn "Order" as Integer : order
+}
+
+Table "Form Revisions" {
+  InputColumn "Form Code" as String : code
+  InputColumn "Date Range" as Date : date
+  OutputColumn "Effective" as Date : effective
+  OutputColumn "Expiration" as Date : expiration
+  OutputColumn "Form Revision Status" as String : status
+  OutputColumn "Revision" as String : revision
+}
+
+@EntryPoint("Apply DT", "Default apply")
+@CrossTab
+@Category("KrakenRules")
+Table "Form Revisions Info" {
+  InputColumn "Revision" as String : dimensions.revision
+  AspectColumn "Entity" : entity
+  AspectColumn "Attribute" : attribute
+  AspectColumn "Default" : default
+}
+
+@RuleOrder
+Table "Kraken Rule Eligibility" {
+    InputColumn "Value" : eligible.value
+    AspectColumn "Override Group" : overrideGroup
+    AspectColumn "Rule Name" : ruleName
+    AspectColumn "Eligible For Override" : eligibleForOverride
+}
+
+@RuleOrder
+Table "Decision Table Rule Eligibility" {
+    InputColumn "Value" : eligible.value
+    AspectColumn "Entity" : entity
+    AspectColumn "Attribute" : attribute
+    AspectColumn "Rule Type" : ruleType
+    AspectColumn "Eligible For Override" : eligibleForOverride
+}

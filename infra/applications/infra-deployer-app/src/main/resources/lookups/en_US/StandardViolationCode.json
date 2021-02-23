@@ -1,0 +1,272 @@
+[
+  {
+    "category": "Reinstatement",
+    "code": "12013",
+    "defaultValue": "REINSTATEMENT",
+    "points": ""
+  },
+  {
+    "category": "Major Violation",
+    "code": "12410",
+    "defaultValue": "DRIV WHILE LIC SUSP/REV",
+    "points": "3"
+  },
+  {
+    "category": "Suspension",
+    "code": "16110",
+    "defaultValue": "SUSP OR WITHDRWAL, UNSPECIFIED, OTHER",
+    "points": "5"
+  },
+  {
+    "category": "Suspension",
+    "code": "16120",
+    "defaultValue": "ADMIN WITHDRWAL, -FTA, TAX PAYMNT, ETC.-",
+    "points": "5"
+  },
+  {
+    "category": "Suspension",
+    "code": "16130",
+    "defaultValue": "SR-22/FIN/JUDG/INS WITHDRWAL",
+    "points": "5"
+  },
+  {
+    "category": "Suspension",
+    "code": "16140",
+    "defaultValue": "WITHDRWAL-FAIL TO COMPLY PROG/PROBATION",
+    "points": "5"
+  },
+  {
+    "category": "Suspension",
+    "code": "16150",
+    "defaultValue": "OUT OF STATE WITHDRWAL",
+    "points": "5"
+  },
+  {
+    "category": "Suspension",
+    "code": "16160",
+    "defaultValue": "ACCIDENT INVOLVEMENT WITHDRWAL",
+    "points": "5"
+  },
+  {
+    "category": "Suspension",
+    "code": "16170",
+    "defaultValue": "ACCUMULATED OFFENSE WITHDRWAL",
+    "points": "5"
+  },
+  {
+    "category": "Suspension",
+    "code": "16180",
+    "defaultValue": "POINT SYSTEM SUSP",
+    "points": "5"
+  },
+  {
+    "category": "Suspension",
+    "code": "16210",
+    "defaultValue": "SERIOUS OFFENSE -NON-ALCOHOL- WITHDRWAL",
+    "points": "5"
+  },
+  {
+    "category": "Suspension",
+    "code": "16220",
+    "defaultValue": "ALCOHOL/DRUG WITHDRAWAL",
+    "points": "5"
+  },
+  {
+    "category": "Suspension",
+    "code": "16230",
+    "defaultValue": "HABITUAL OFFENDER WITHDRAWAL",
+    "points": "5"
+  },
+  {
+    "category": "Suspension",
+    "code": "16240",
+    "defaultValue": "COURT ORDERED WITHDRWAL",
+    "points": "5"
+  },
+  {
+    "category": "Suspension",
+    "code": "16260",
+    "defaultValue": "ALCOHOL (BAC ABOVE LEGAL LIMIT) WITHDRAWAL",
+    "points": "5"
+  },
+  {
+    "category": "Suspension",
+    "code": "16290",
+    "defaultValue": "REVOCATION, UNSPECIFIED, OTHER",
+    "points": "5"
+  },
+  {
+    "category": "Suspension",
+    "code": "16420",
+    "defaultValue": "WITHDRWAL, LOSS OF CONSENT FOR MINOR",
+    "points": "5"
+  },
+  {
+    "category": "Suspension",
+    "code": "16430",
+    "defaultValue": "WITHDRWAL, MEDICAL REASONS/INCOMPETENCY",
+    "points": "5"
+  },
+  {
+    "category": "Suspension",
+    "code": "16450",
+    "defaultValue": "WITHDRWL, INCORRECT INFO",
+    "points": "5"
+  },
+  {
+    "category": "Suspension",
+    "code": "16460",
+    "defaultValue": "WITHDRWAL, FALSE INFO",
+    "points": "5"
+  },
+  {
+    "category": "Minor Speeding",
+    "code": "31100",
+    "defaultValue": "SPEEDING, GENERALLY",
+    "points": "1"
+  },
+  {
+    "category": "Minor Speeding",
+    "code": "311AQ",
+    "defaultValue": "SPEED 1-4 OVER LIMIT",
+    "points": "1"
+  },
+  {
+    "category": "Minor Speeding",
+    "code": "311AZ",
+    "defaultValue": "SPEED 1 PLUS OVER LIMIT",
+    "points": "1"
+  },
+  {
+    "category": "Minor Speeding",
+    "code": "311BC",
+    "defaultValue": "SPEED 6-10 OVER LIMIT",
+    "points": "1"
+  },
+  {
+    "category": "Minor Speeding",
+    "code": "311BD",
+    "defaultValue": "SPEED 6-14 OVER LIMIT",
+    "points": "1"
+  },
+  {
+    "category": "Minor Speeding",
+    "code": "311BE",
+    "defaultValue": "SPEED 6-15 OVER LIMIT",
+    "points": "1"
+  },
+  {
+    "category": "Minor Speeding",
+    "code": "311BG",
+    "defaultValue": "SPEED 6-20 OVER LIMIT",
+    "points": "1"
+  },
+  {
+    "category": "Minor Speeding",
+    "code": "311CE",
+    "defaultValue": "SPEED 9-15 OVER LIMIT",
+    "points": "1"
+  },
+  {
+    "category": "Minor Speeding",
+    "code": "311DD",
+    "defaultValue": "SPEED 10-14 OVER LIMIT",
+    "points": "1"
+  },
+  {
+    "category": "Minor Speeding",
+    "code": "311DF",
+    "defaultValue": "SPEED 10-19 OVER LIMIT",
+    "points": "1"
+  },
+  {
+    "category": "Minor Speeding",
+    "code": "311EF",
+    "defaultValue": "SPEEDING INTERMEDIATE 11-19 MPH OVER",
+    "points": "1"
+  },
+  {
+    "category": "Minor Speeding",
+    "code": "311EG",
+    "defaultValue": "SPEED 11-20 OVER LIMIT",
+    "points": "1"
+  },
+  {
+    "category": "Major Speeding",
+    "code": "311HI",
+    "defaultValue": "SPEED 20-29 OVER LIMIT",
+    "points": "2"
+  },
+  {
+    "category": "Major Speeding",
+    "code": "311HZ",
+    "defaultValue": "SPEED 20 PLUS OVER LIMIT",
+    "points": "2"
+  },
+  {
+    "category": "Major Speeding",
+    "code": "311JI",
+    "defaultValue": "SPEED 26-29 OVER LIMIT",
+    "points": "2"
+  },
+  {
+    "category": "Major Violation",
+    "code": "31610",
+    "defaultValue": "RACING OR PARTICIPATING IN ANY MANNER IN RACE",
+    "points": "3"
+  },
+  {
+    "category": "Major Violation",
+    "code": "31620",
+    "defaultValue": "PREARRANGED RACING",
+    "points": "3"
+  },
+  {
+    "category": "Major Violation",
+    "code": "32150",
+    "defaultValue": "FAIL TO YLD TO EMER VEH",
+    "points": "3"
+  },
+  {
+    "category": "Minor Violation",
+    "code": "36100",
+    "defaultValue": "FOLLOW TOO CLOSELY, GENERALLY",
+    "points": "1"
+  },
+  {
+    "category": "Driving Under Influence",
+    "code": "52100",
+    "defaultValue": "DUI, GENERALLY",
+    "points": "5"
+  },
+  {
+    "category": "Driving Under Influence",
+    "code": "52120",
+    "defaultValue": "DUI OF ALCOHOL",
+    "points": "5"
+  },
+  {
+    "category": "Driving Under Influence",
+    "code": "52130",
+    "defaultValue": "DUI OF DRUGS",
+    "points": "5"
+  },
+  {
+    "category": "Driving Under Influence",
+    "code": "52140",
+    "defaultValue": "DRIV UND COMB. INFLUENCE OF ALCOHOL AND DRUGS",
+    "points": "5"
+  },
+  {
+    "category": "Driving Under Influence",
+    "code": "52310",
+    "defaultValue": "DUI RESULTING IN DEATH/INJURY",
+    "points": "5"
+  },
+  {
+    "category": "Minor Violation",
+    "code": "61230",
+    "defaultValue": "FAIL TO USE HEADLIGHTS",
+    "points": "1"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "name": "QA Default",
+    "description": "Role with all privileges for QA testing, assigned to qa user",
+    "assignedAuthorities": [
+      "Security: Load User",
+      "Security: Load Security Domain",
+      "Security: Manage Domain",
+      "Security: Manage Access Profile",
+      "Security: Manage User",
+      "Security: Manage User Profile",
+      "Security: Manage Operational Assignment",
+      "Security: Manage Configured Access Profile"
+    ]
+  },
+  {
+    "name": "QA All",
+    "description": "Role with all privileges for QA testing, assigned to all users",
+    "assignedAuthorities": [
+      "Security: Bypass Dimension Filtering Rules",
+      "Security: Load User",
+      "Security: Load Security Domain",
+      "Security: Manage Domain",
+      "Security: Manage Access Profile",
+      "Security: Manage User",
+      "Security: Manage User Profile",
+      "Security: Manage Operational Assignment",
+      "Security: Manage Configured Access Profile"
+    ]
+  },
+  {
+    "name": "Privileges testing",
+    "description": "Role with all privileges for QA testing, assigned to privileges testing user",
+    "assignedAuthorities": [
+      "Security: Bypass Dimension Filtering Rules",
+      "Security: Load User",
+      "Security: Load Security Domain",
+      "Security: Manage Domain",
+      "Security: Manage Access Profile",
+      "Security: Manage User",
+      "Security: Manage User Profile",
+      "Security: Manage Operational Assignment",
+      "Security: Manage Configured Access Profile"
+    ]
+  },
+  {
+    "name": "QA Conversion",
+    "description": "Role with all privileges for QA conversion testing, assigned to conversion user",
+    "assignedAuthorities": [
+      "Optimistic Lock Override",
+      "Read-only Override"
+    ]
+  }
+]

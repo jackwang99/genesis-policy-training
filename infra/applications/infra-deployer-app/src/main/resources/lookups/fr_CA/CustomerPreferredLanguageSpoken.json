@@ -1,0 +1,30 @@
+[
+  {
+    "code": "ARABIC",
+    "defaultValue": "arabe"
+  },
+  {
+    "code": "CHINESE",
+    "defaultValue": "chinois"
+  },
+  {
+    "code": "ENGLISH",
+    "defaultValue": "Anglais"
+  },
+  {
+    "code": "FRENCH",
+    "defaultValue": "français"
+  },
+  {
+    "code": "GERMAN",
+    "defaultValue": "allemand"
+  },
+  {
+    "code": "RUSSIAN",
+    "defaultValue": "russe"
+  },
+  {
+    "code": "SPANISH",
+    "defaultValue": "Espanol"
+  }
+]

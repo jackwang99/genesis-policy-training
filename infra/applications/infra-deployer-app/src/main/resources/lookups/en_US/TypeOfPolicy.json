@@ -1,0 +1,14 @@
+[
+  {
+    "code": "AR",
+    "defaultValue": "Assigned Risk"
+  },
+  {
+    "code": "NAM",
+    "defaultValue": "Named Non-Owned"
+  },
+  {
+    "code": "STD",
+    "defaultValue": "Standard/Voluntary"
+  }
+]

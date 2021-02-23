@@ -1,0 +1,30 @@
+[
+  {
+    "code": "COGNITIVE",
+    "defaultValue": "Cognitif"
+  },
+  {
+    "code": "HEARING_LOSS_AND_DEAFNESS",
+    "defaultValue": "Perte auditive et surdité"
+  },
+  {
+    "code": "INVISIBLE_DISABILITY",
+    "defaultValue": "Invisible Invalidité"
+  },
+  {
+    "code": "MOBILITY_IMPAIRMENTS",
+    "defaultValue": "Troubles de la mobilité"
+  },
+  {
+    "code": "PSYCHOLOGICAL_DISORDERS",
+    "defaultValue": "Désordres psychologiques"
+  },
+  {
+    "code": "SPINAL_CORD_INJURY",
+    "defaultValue": "Lésion de la moelle épinière"
+  },
+  {
+    "code": "VISION_DISABILITY",
+    "defaultValue": "Vision invalidité"
+  }
+]

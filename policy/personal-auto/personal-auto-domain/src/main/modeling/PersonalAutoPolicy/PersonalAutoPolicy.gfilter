@@ -1,0 +1,6 @@
+Model PersonalAuto
+
+PersonalAutoPolicySummary {
+    !agency : AutoBusinessDimensions.agency,
+    !brand : AutoBusinessDimensions.brand
+}

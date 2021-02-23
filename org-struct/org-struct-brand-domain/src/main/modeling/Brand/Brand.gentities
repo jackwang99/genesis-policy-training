@@ -1,0 +1,10 @@
+Entity BrandEntity is Brand {
+    Attr accessTrackInfo: AccessTrackInfoEntity
+}
+
+Entity AccessTrackInfoEntity is AccessTrackInfo {
+    @Searchable
+    Attr createdOn: Datetime
+    @Searchable    
+    Attr updatedOn: Datetime
+}

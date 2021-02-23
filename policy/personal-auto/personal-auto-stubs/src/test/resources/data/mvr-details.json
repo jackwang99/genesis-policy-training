@@ -1,0 +1,24 @@
+{
+  "driverLicenseNo": "C123456",
+  "licenseStatus": "Suspended",
+  "violations": [
+    {
+      "convictionDate": "2015-06-13",
+      "violationCode": "52100",
+      "violationCodeDescription": "DUI, GENERALLY",
+      "violationType": "Driving Under Influence",
+      "violationPoints": "5"
+    }
+  ],
+  "suspensions": [
+    {
+      "suspensionDate": "2015-06-13",
+      "reinstatementDate": "2016-06-06",
+      "violationCode": "16220",
+      "violationCodeDescription": "ALCOHOL/DRUG WITHDRAWAL",
+      "violationType": "Suspension",
+      "violationPoints": "5"
+    }
+  ]
+}
+

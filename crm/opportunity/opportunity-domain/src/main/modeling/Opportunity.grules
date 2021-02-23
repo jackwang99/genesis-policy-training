@@ -1,0 +1,7 @@
+Model Opportunity
+
+Namespace Opportunity
+
+EntryPoints [
+    "Opportunity Validation"
+]

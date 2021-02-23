@@ -1,0 +1,26 @@
+[
+  {
+    "code": "INWHATCITY",
+    "defaultValue": "Dans quelle ville vos parents se sont-ils rencontrés?"
+  },
+  {
+    "code": "NAMEOFFIRSTPET",
+    "defaultValue": "Nom de ton premier animal domestique"
+  },
+  {
+    "code": "WHATCHILBOOK",
+    "defaultValue": "Quel est le livre de vos enfants préférés?"
+  },
+  {
+    "code": "WHATCHILDNICK",
+    "defaultValue": "Quel était ton surnom d'enfance?"
+  },
+  {
+    "code": "WHATDREAMJOB",
+    "defaultValue": "Quel est le travail de tes rêves?"
+  },
+  {
+    "code": "WHATMODELCAR",
+    "defaultValue": "Quel était le modèle de votre première voiture?"
+  }
+]

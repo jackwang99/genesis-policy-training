@@ -1,0 +1,14 @@
+@BaseDomain
+BaseType GFCoverage extends Coverage {    
+    Attr effectiveDate: Date
+	@ReadOnly
+    Attr expirationDate: Date
+	
+	@Description("lookup:GrandfatherReason")
+	Attr reason: String
+	Attr description: String	
+	
+	@Description("lookup:GrandfatherDuration")
+	@Within(["1YEAR", "3YEARS", "5YEARS"])
+	Attr duration: String
+}

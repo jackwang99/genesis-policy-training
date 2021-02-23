@@ -1,0 +1,9 @@
+BaseType CustomerCommonInfo {
+
+    Attr taxExempt: Boolean
+    Attr taxExemptComment: String
+    
+    @Lookup("Segment")
+    @Description("lookup:Segment")
+    Attr segments: *String
+}

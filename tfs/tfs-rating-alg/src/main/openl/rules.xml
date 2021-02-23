@@ -1,0 +1,16 @@
+<project>
+  <name>Policy Tax calculation</name>
+  <modules>
+    <module>
+      <name>datatypes</name>
+      <rules-root path="rules/datatypes.xlsx"/>
+    </module>
+    <module>
+      <name>AUTO-TFS-RATING</name>
+      <rules-root path="rules/AUTO-TFS-RATING.xlsx"/>
+    </module>
+  </modules>
+  <classpath>
+    <entry path="lib/*.jar"/>
+  </classpath>
+</project>

@@ -1,0 +1,22 @@
+[
+  {
+    "code": "LOSTCOMP",
+    "defaultValue": "Perdu au concurrent"
+  },
+  {
+    "code": "NOINTEREST",
+    "defaultValue": "Pas d'intérêt"
+  },
+  {
+    "code": "OTHER",
+    "defaultValue": "Autre"
+  },
+  {
+    "code": "PNFIT",
+    "defaultValue": "Le produit ne correspond pas"
+  },
+  {
+    "code": "WON",
+    "defaultValue": "A gagné"
+  }
+]

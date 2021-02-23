@@ -1,0 +1,10 @@
+[
+  {
+    "code": "female",
+    "defaultValue": "Female"
+  },
+  {
+    "code": "male",
+    "defaultValue": "Male"
+  }
+]

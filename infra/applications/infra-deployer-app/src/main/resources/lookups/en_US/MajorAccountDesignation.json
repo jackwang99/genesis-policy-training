@@ -1,0 +1,10 @@
+[
+  {
+    "code": "LARGE",
+    "defaultValue": "Large Account"
+  },
+  {
+    "code": "MAJOR",
+    "defaultValue": "Major Account"
+  }
+]

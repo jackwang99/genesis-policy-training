@@ -1,0 +1,38 @@
+[
+  {
+    "code": "colleague",
+    "defaultValue": "Colleague"
+  },
+  {
+    "code": "employee",
+    "defaultValue": "Employee"
+  },
+  {
+    "code": "family",
+    "defaultValue": "Family Member"
+  },
+  {
+    "code": "friend",
+    "defaultValue": "Friend"
+  },
+  {
+    "code": "neighbor",
+    "defaultValue": "Neighbor"
+  },
+  {
+    "code": "none",
+    "defaultValue": "None"
+  },
+  {
+    "code": "other",
+    "defaultValue": "Other"
+  },
+  {
+    "code": "self",
+    "defaultValue": "Self"
+  },
+  {
+    "code": "spouse",
+    "defaultValue": "Spouse"
+  }
+]

@@ -1,0 +1,7 @@
+Model JobProcessingStrategy
+Root PolicyJobProcessingStrategy
+
+ModelType JobProcessingStrategy
+
+Stored using [ModelName]
+Indexed using ['jobstrategy']

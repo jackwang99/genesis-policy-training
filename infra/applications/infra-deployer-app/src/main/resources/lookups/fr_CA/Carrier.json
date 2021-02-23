@@ -1,0 +1,114 @@
+[
+  {
+    "code": "00001",
+    "defaultValue": "COMPAGNIE D'ASSURANCE EXIGEN"
+  },
+  {
+    "code": "00005",
+    "defaultValue": "ASSURANCE ACE"
+  },
+  {
+    "code": "00006",
+    "defaultValue": "AIGM"
+  },
+  {
+    "code": "00007",
+    "defaultValue": "INDEMNITÉ D'ALLSTATE"
+  },
+  {
+    "code": "00008",
+    "defaultValue": "ALLSTATE ASSURANCE"
+  },
+  {
+    "code": "00009",
+    "defaultValue": "ALLSTATE P & C"
+  },
+  {
+    "code": "00010",
+    "defaultValue": "AMICA"
+  },
+  {
+    "code": "00011",
+    "defaultValue": "RISQUE ASSIGNÉ"
+  },
+  {
+    "code": "00012",
+    "defaultValue": "CHUBB"
+  },
+  {
+    "code": "00013",
+    "defaultValue": "LES AGRICULTEURS"
+  },
+  {
+    "code": "00014",
+    "defaultValue": "FONDS DES POMPIERS"
+  },
+  {
+    "code": "00015",
+    "defaultValue": "GEICO"
+  },
+  {
+    "code": "00016",
+    "defaultValue": "GEICO INDEMNITY COMPANY"
+  },
+  {
+    "code": "00017",
+    "defaultValue": "HARTFORD"
+  },
+  {
+    "code": "00018",
+    "defaultValue": "LIBERTY MUTUAL"
+  },
+  {
+    "code": "00019",
+    "defaultValue": "MÉTROPOLITAIN"
+  },
+  {
+    "code": "00020",
+    "defaultValue": "NATIONWIDE"
+  },
+  {
+    "code": "00021",
+    "defaultValue": "PAS D'ASSURANCE ANTÉRIEURE"
+  },
+  {
+    "code": "00022",
+    "defaultValue": "NY CENTRALE MUTUELLE"
+  },
+  {
+    "code": "00023",
+    "defaultValue": "AUTRE PROGRESSIF"
+  },
+  {
+    "code": "00024",
+    "defaultValue": "PROGRESSIF NORD-OUEST"
+  },
+  {
+    "code": "00025",
+    "defaultValue": "PRUDENTIEL"
+  },
+  {
+    "code": "00026",
+    "defaultValue": "FAUTE DE L'ÉTAT INCENDIE ET ​​PERTURBATION"
+  },
+  {
+    "code": "00027",
+    "defaultValue": "MUTUELLE DE L'ÉTAT"
+  },
+  {
+    "code": "00028",
+    "defaultValue": "VOYAGEURS"
+  },
+  {
+    "code": "00029",
+    "defaultValue": "INCONNU"
+  },
+  {
+    "code": "00030",
+    "defaultValue": "USAA"
+  },
+  {
+    "code": "00031",
+    "defaultValue": "AUTRE"
+  }
+]

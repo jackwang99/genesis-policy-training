@@ -1,0 +1,4014 @@
+@DimensionRoot("PolicyDimensionRoot")
+@StateMachine
+Entity PersonalHomePolicySummary is PolicySummary {
+
+    @NonComparable
+    @Required
+    Attr accessTrackInfo: PersonalHomesAccessTrackInfo
+
+    Attr billingAccount: String
+
+    Attr businessDimensions: PersonalHomesBusinessDimensions
+
+    @Dimension("country")
+    @Tag("Billable")
+    Attr country: String
+
+    @NonComparable
+    @ReadOnly
+    @Required
+    Attr createdFromPolicyRev: Integer
+
+
+    @NonComparable
+    @ReadOnly
+    Attr createdFromQuoteRev: Integer
+
+
+    @Required
+    Attr currencyCd: String
+
+    @NonComparable
+    @ReadOnly
+    Attr inceptionDate: Datetime
+
+    Attr methodOfDelivery: String
+
+    Attr notes: String
+
+
+    @NonComparable
+    Attr offerStatus: String
+
+    Attr overrideRateEffectiveDate: Boolean
+
+    Attr packagingDetail: PersonalHomePackagingDetail
+
+    @EntityNumber
+    @Length(11)
+    @NonComparable
+    @Rateable
+    @ReadOnly
+    @Required
+    @Searchable
+    Attr policyNumber: String
+
+    @Constant("Personal Home")
+    @ConstantFeature
+    @ReadOnly
+    @Searchable
+    Attr productCd: String
+
+    @Dimension("rateEffectiveDate")
+    @Rateable
+    @Tag("Billable")
+    Attr rateEffectiveDate: Datetime
+
+    @Dimension("riskStateCd")
+    @Searchable
+    @Tag("Billable")
+    Attr riskStateCd: String
+
+    Attr sendTo: String
+
+    @Dimension("state")
+    @NonComparable
+    @ReadOnly
+    @Searchable
+    Attr state: String
+
+    @NonComparable
+    @Required
+    Attr termDetails: PersonalHomeTermDetails
+
+    @NonComparable
+    @Required
+    Attr transactionDetails: PersonalHomeTransactionDetails
+
+    @Searchable
+    ExtLink customer: RootEntity
+
+    //Conversion/Bookroll ID
+    Attr conversionBookrollId: String
+
+    //Pre-Conversion Policy Number
+    Attr conversionPolicyNumber: String
+
+    //Pre-Conversion Policy Premium
+    Attr conversionPolicyPremium: Decimal
+
+    Attr forms: *{OthInsLocationEndorsement, MiscellEndorsement, ManuscriptEndorsement}
+
+    @Embedded
+    Ref blob: HomeBLOB
+
+    Ref policyDetail: PersonalHomePolicyDetail
+}
+
+Entity PersonalHomeLocation is RiskItem, PremiumOverrideHolder {
+
+    @NonComparable
+    Attr offerStatus: String
+
+    Attr address: PersonalHomeAddressInfo
+
+    @Max(1000000.00)
+    @Min(0.00)
+    @Rateable
+    Attr adjustedValue: Decimal
+
+    Attr adlSymbol: String
+
+    Attr atHomeCredit: PersonalHomeAtHomeCreditInfo
+
+    //"BCEG"
+    Attr bceg: String
+
+    Attr brushFire: PersonalHomeBrushFireInfo
+
+    Attr claims: *PersonalHomeClaimInfo
+
+    //"Course of Construction"
+    Attr cocInd: Boolean
+
+    //"Description"
+    Attr constructionDesc: String
+
+    //"Construction Type"
+    Attr constructionTypeCd: String
+
+    Attr coverages: *{ACoverage, AAddCoverage, BCoverage, CCoverage, ConstructionCoverage, DCoverage, DFairCoverage, ECoverage, EAddCoverage, EarLossAssessmentCoverage, EarthquakeCoverage, FCoverage, FungiMoldCoverage, HurricaneCoverage, IdentityTheftCoverage, LCoverage, LossAssessmentCoverage, MCoverage, SewerDrainCoverage}
+
+    //"Distance to Fire Hydrant (Feet)"
+    Attr distanceToFireHydrant: Integer
+
+    //"Distance to Fire Station (Mile)"
+    Attr distanceToFireStation: Integer
+
+    //"Distance to Shore"
+    Attr distanceToShore: String
+
+    //"Number Of Families"
+    Attr familyNum: String
+
+    //"Fire Line Score"
+    Attr fireLineScore: Integer
+
+    //"Floor #"
+    Attr floor: Integer
+
+    Attr forms: *{HomeBusInsuranceEndorsement, IncFarmPerLiabEndorsement, BusPursuitsEndorsement, AddResidToOthEndorsement, HomeDayCareEndorsement, WatercraftEndorsement, InflatGuardEndorsement, OwnMotoGolfEndorsement, AddInsResPremEndorsement, BuildAddAltOthResidSchEndorsement, PermitIncOperEndorsement, OrdLawIncCovEndorsement, TheftCoverageEndrosement, IncLowPowRecMotorVehEndorsement}
+
+    Attr iSO360Report: PersonalHomeISO360Report
+
+    Attr inspectionRequest: PersonalHomeInspectionRequest
+
+    //"ISO Territory Code"
+    Attr isoTerritoryCd: String
+
+    //"EQ Territory"
+    Attr isoTerritoryEQ: String
+
+    //"ISO Territory Name"
+    Attr isoTerritoryName: String
+
+    //"Area / Square Footage"
+    Attr livingArea: Integer
+
+    Attr locationUse: PersonalHomeLocationUse
+
+    Attr additionalInterests: *PersonalHomeAdditionalInterestInfo
+
+    //"Number of Empoyees at this location"
+    Attr numOfEmpl: String
+
+    //"Number of Stories"
+    Attr numberOfStories: Integer
+
+    //"Is this Residence owned or rented?"
+    Attr owned: String
+
+    //"Primary Residence?"
+    Attr primaryResidenceInd: Boolean
+
+    Attr priorAddress: PersonalHomeAddressInfo
+
+    Attr protection: PersonalHomeProtectionInfo
+
+    //"Protection Class"
+    Attr protectionClassCd: String
+
+    //"Home Purchase Date"
+    Attr purchaseDate: Date
+
+    Attr renovation: PersonalHomeRenovationInfo
+
+    //"Risk Retrofitted?"
+    Attr riskRetrofittedInd: Boolean
+
+    //"Roof Type"
+    Attr roofType: String
+
+    //"Description"
+    Attr roofTypeDesc: String
+
+    Attr safety: PersonalHomeSafetyInfo
+
+    //"SLOSH"
+    Attr slosh: String
+
+    //"Territory"
+    Attr territoryCd: String
+
+    //"Tier"
+    Attr tier: String
+
+    //"Year Built"
+    Attr yearBuilt: Integer
+}
+//"A. Dwelling Limit"
+@BusinessKey("code")
+@PremiumHolder("Coverage")
+Entity ACoverage is Coverage {
+
+    @Rateable
+    Attr code: String
+
+    //"Deductible Amount"
+    @Rateable
+    Attr deductibleAmount: Money
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    //"Limit Amount"
+    @Rateable
+    Attr limitAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+}
+//"A. Additions and Alterations"
+@BusinessKey("code")
+@PremiumHolder("Coverage")
+Entity AAddCoverage is Coverage {
+
+    @Rateable
+    Attr code: String
+
+    //"Deductible Amount"
+    @Rateable
+    Attr deductibleAmount: Money
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    //"Limit Amount"
+    @Rateable
+    Attr limitAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+}
+//"B. Other Structures"
+@BusinessKey("code")
+@PremiumHolder("Coverage")
+Entity BCoverage is Coverage {
+
+    @Rateable
+    Attr code: String
+
+    //"Deductible Amount"
+    @Rateable
+    Attr deductibleAmount: Money
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    //"Limit Amount"
+    @Rateable
+    Attr limitAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+}
+//"C. Personal Property"
+@BusinessKey("code")
+@PremiumHolder("Coverage")
+Entity CCoverage is Coverage {
+
+    @Rateable
+    Attr code: String
+
+    //"Deductible Amount"
+    @Rateable
+    Attr deductibleAmount: Money
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+
+    //"Cost of all scheduled items"
+    Attr entireCost: Money
+
+    //"Scheduled items"
+    Attr items: *ScheduledItem
+}
+//"C. Course of Construction"
+@BusinessKey("code")
+@PremiumHolder("Coverage")
+Entity ConstructionCoverage is Coverage {
+
+    @Rateable
+    Attr code: String
+
+    //"Deductible Amount"
+    Attr deductibleAmount: Money
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    //"Limit Amount"
+    Attr limitAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+
+    Attr covConstructionInd: Boolean
+}
+//"D. Loss of Use"
+@BusinessKey("code")
+@PremiumHolder("Coverage")
+Entity DCoverage is Coverage {
+
+    @Rateable
+    Attr code: String
+
+    //"Deductible Amount"
+    Attr deductibleAmount: Money
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    //"Limit Amount"
+    @Rateable
+    Attr limitAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+}
+//"D. Fair Rental Value"
+@BusinessKey("code")
+@PremiumHolder("Coverage")
+Entity DFairCoverage is Coverage {
+
+    @Rateable
+    Attr code: String
+
+    //"Deductible Amount"
+    Attr deductibleAmount: Money
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    //"Limit Amount"
+    @Rateable
+    Attr limitAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+}
+//"E. Personal Liability"
+@BusinessKey("code")
+@PremiumHolder("Coverage")
+Entity ECoverage is Coverage {
+
+    @Rateable
+    Attr code: String
+
+    //"Deductible Amount"
+    Attr deductibleAmount: Money
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    //"Limit Amount"
+    @Rateable
+    Attr limitAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+}
+//"E. Additional Living Expense"
+@BusinessKey("code")
+@PremiumHolder("Coverage")
+Entity EAddCoverage is Coverage {
+
+    @Rateable
+    Attr code: String
+
+    //"Deductible Amount"
+    Attr deductibleAmount: Money
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    //"Limit Amount"
+    @Rateable
+    Attr limitAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+}
+//"Earthquake Loss Assessment"
+@BusinessKey("code")
+@PremiumHolder("Coverage")
+Entity EarLossAssessmentCoverage is Coverage {
+
+    @Rateable
+    Attr code: String
+
+    //"Deductible Amount"
+    Attr deductibleAmount: Money
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    //"Limit Amount"
+    @Rateable
+    Attr limitAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+}
+//"Earthquake"
+@BusinessKey("code")
+@PremiumHolder("Coverage")
+Entity EarthquakeCoverage is Coverage {
+
+    @Rateable
+    Attr code: String
+
+    //"Deductible Amount"
+    Attr deductibleAmount: Money
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    //"Limit Amount"
+    @Rateable
+    Attr limitAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+}
+//"F. Medical Payments"
+@BusinessKey("code")
+@PremiumHolder("Coverage")
+Entity FCoverage is Coverage {
+
+    @Rateable
+    Attr code: String
+
+    //"Deductible Amount"
+    Attr deductibleAmount: Money
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    //"Limit Amount"
+    @Rateable
+    Attr limitAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+}
+//"Fungi and Mold"
+@BusinessKey("code")
+@PremiumHolder("Coverage")
+Entity FungiMoldCoverage is Coverage {
+
+    @Rateable
+    Attr code: String
+
+    //"Deductible Amount"
+    Attr deductibleAmount: Money
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    //"Limit Amount"
+    @Rateable
+    Attr limitAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+}
+//"Hurricane"
+@BusinessKey("code")
+@PremiumHolder("Coverage")
+Entity HurricaneCoverage is Coverage {
+
+    @Rateable
+    Attr code: String
+
+    //"Deductible Amount"
+    @Rateable
+    Attr deductibleAmount: Money
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    //"Limit Amount"
+    @Rateable
+    Attr limitAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+
+    Attr covHurricaneInd: Boolean
+}
+//"Identity Theft"
+@BusinessKey("code")
+@PremiumHolder("Coverage")
+Entity IdentityTheftCoverage is Coverage {
+
+    @Rateable
+    Attr code: String
+
+    //"Deductible Amount"
+    @Rateable
+    Attr deductibleAmount: Money
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    //"Limit Amount"
+    @Rateable
+    Attr limitAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+}
+//"L. Personal Liability"
+@BusinessKey("code")
+@PremiumHolder("Coverage")
+Entity LCoverage is Coverage {
+
+    @Rateable
+    Attr code: String
+
+    //"Deductible Amount"
+    Attr deductibleAmount: Money
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    //"Limit Amount"
+    @Rateable
+    Attr limitAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+}
+//"Loss Assessment"
+@BusinessKey("code")
+@PremiumHolder("Coverage")
+Entity LossAssessmentCoverage is Coverage {
+
+    @Rateable
+    Attr code: String
+
+    //"Deductible Amount"
+    Attr deductibleAmount: Money
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    //"Limit Amount"
+    @Rateable
+    Attr limitAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+}
+//"M. Medical Payments"
+@BusinessKey("code")
+@PremiumHolder("Coverage")
+Entity MCoverage is Coverage {
+
+    @Rateable
+    Attr code: String
+
+    //"Deductible Amount"
+    Attr deductibleAmount: Money
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    //"Limit Amount"
+    @Rateable
+    Attr limitAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+}
+//"Water Backup of Sewer and Drain"
+@BusinessKey("code")
+@PremiumHolder("Coverage")
+Entity SewerDrainCoverage is Coverage {
+
+    @Rateable
+    Attr code: String
+
+    //"Deductible Amount"
+    Attr deductibleAmount: Money
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    //"Limit Amount"
+    @Rateable
+    Attr limitAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+}
+//"Additional Insured Residence Premises Endorsement"
+@BusinessKey("code")
+@PremiumHolder("Form")
+Entity AddInsResPremEndorsement is Form {
+
+    Attr category: String
+
+
+    @Rateable
+    Attr code: String
+
+    Attr description: String
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    Attr name: String
+
+    Attr number: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+
+    //"Address"
+    Attr address: String
+
+    //"Interest"
+    Attr interest: String
+
+    //"Name of Person or Organization"
+    Attr nameOfPersonOrOrganization: String
+}
+//"Additional Residence Rented To Others Endorsement"
+@BusinessKey("code")
+@PremiumHolder("Form")
+Entity AddResidToOthEndorsement is Form {
+
+    Attr category: String
+
+
+    @Rateable
+    Attr code: String
+
+    Attr description: String
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    Attr name: String
+
+    Attr number: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+
+    //"Dwelling Has Central Heating?"
+    Attr dwellHasCenHeatInd: Boolean
+
+    //"Number of Families"
+    Attr familyNum: String
+
+    //"Lead Safe Certificate On File?"
+    Attr leadSafeCertificateInd: Boolean
+
+    //"Year Built"
+    Attr yearBuilt: Integer
+}
+//"Building Additions And Alterations Increased Limit Endorsement"
+@BusinessKey("code")
+@PremiumHolder("Form")
+Entity BuildAddAltOthResidSchEndorsement is Form {
+
+    Attr category: String
+
+
+    @Rateable
+    Attr code: String
+
+    Attr description: String
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    Attr name: String
+
+    Attr number: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+
+    //"Building Addition And Alterations Limit"
+    Attr buildAddAndAltLimit: Decimal
+
+    //"Increase In Limit Of Liability"
+    Attr incInLimitOfLiab: Decimal
+
+    //"Total Limit Of Liability"
+    Attr totalLimitOfLiab: Decimal
+}
+//"Business Pursuits Endorsement"
+@BusinessKey("code")
+@PremiumHolder("Form")
+Entity BusPursuitsEndorsement is Form {
+
+    Attr category: String
+
+
+    @Rateable
+    Attr code: String
+
+    Attr description: String
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    Attr name: String
+
+    Attr number: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+
+    //"Name Insured"
+    Attr nameInsured: String
+
+    //"Type of Business"
+    Attr typeOfBusiness: String
+}
+//"Home Business Insurance Endorsement"
+@BusinessKey("code")
+@PremiumHolder("Form")
+Entity HomeBusInsuranceEndorsement is Form {
+
+    Attr category: String
+
+
+    @Rateable
+    Attr code: String
+
+    Attr description: String
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    //"Business Name"
+    Attr name: String
+
+    Attr number: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+
+    //"All Other Business Liability Limit"
+    Attr allOthBusLiabLimit: Decimal
+
+    //"Business Occupancy"
+    Attr busOccup: Integer
+
+    //"Entity Type"
+    Attr entityType: String
+
+    //"Gross Annual Receipts"
+    Attr grossAnnRecpt: Decimal
+
+    //"Medical Payments Limit"
+    Attr medPayLimit: Decimal
+
+    //"New Business"
+    Attr newBusInd: Boolean
+
+    //"Number Of Visitors"
+    Attr numOfVisitors: Integer
+
+    //"Off Premises Increase Property Coverage"
+    Attr offPremIncProCov: Decimal
+
+    //"Off Premises Property Limit"
+    Attr offPremProLimit: Decimal
+
+    //"Description Of Business"
+    Attr otherDescription: String
+
+    //"Products Completed-Operations Hazards Liability Limit"
+    Attr prodComOperHazLiabLimit: Decimal
+}
+//"Home Business Day Care Endorsement"
+@BusinessKey("code")
+@PremiumHolder("Form")
+Entity HomeDayCareEndorsement is Form {
+
+    Attr category: String
+
+
+    @Rateable
+    Attr code: String
+
+    Attr description: String
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    Attr name: String
+
+    Attr number: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+
+    //"Limit"
+    Attr limit: Decimal
+
+    //"Location"
+    Attr location: String
+
+    //"Number Of Persons"
+    Attr numOfPerson: Integer
+}
+//"Farmers Personal Liability Endorsement"
+@BusinessKey("code")
+@PremiumHolder("Form")
+Entity IncFarmPerLiabEndorsement is Form {
+
+    Attr category: String
+
+
+    @Rateable
+    Attr code: String
+
+    Attr description: String
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    Attr name: String
+
+    Attr number: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+
+    //"Farming Business Exceptions"
+    Attr farmBusExcept: String
+
+    //"Farming Business"
+    Attr farmBusInd: Boolean
+
+    //"Farming Business Types"
+    Attr farmBusTypes: String
+
+    //"Location"
+    Attr location: String
+
+    //"Total Acreage"
+    Attr totalAcreage: Integer
+
+    //"Total Acreage Flat Charge"
+    Attr totalAcreageFlatCharge: Integer
+}
+//"Incidental Low Power Recreational Motor Vehicle Endorsement"
+@BusinessKey("code")
+@PremiumHolder("Form")
+Entity IncLowPowRecMotorVehEndorsement is Form {
+
+    Attr category: String
+
+
+    @Rateable
+    Attr code: String
+
+    Attr description: String
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    Attr name: String
+
+    Attr number: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+
+    //"Number Of Vehicles"
+    Attr numOfVeh: Integer
+}
+//"Inflation Guard Endorsement"
+@BusinessKey("code")
+@PremiumHolder("Form")
+Entity InflatGuardEndorsement is Form {
+
+    Attr category: String
+
+
+    @Rateable
+    Attr code: String
+
+    Attr description: String
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    Attr name: String
+
+    Attr number: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+
+    //"Inflation Guard Percentage"
+    Attr inflationGuardPercentage: Decimal
+
+    //"Inflation Guard (HO 04 06)"
+    Attr precInflationGuardInd: Boolean
+}
+//"Miscellaneous Endorsement"
+@BusinessKey("code")
+@PremiumHolder("Form")
+Entity MiscellEndorsement is Form {
+
+    Attr category: String
+
+
+    @Rateable
+    Attr code: String
+
+    Attr description: String
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    Attr name: String
+
+    Attr number: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+
+    //"Endorsement Name"
+    Attr endorsementName: String
+
+    //"Premium"
+    @Rateable
+    Attr premium: Decimal
+}
+//"Ordinance Law Increased Coverage Endorsement"
+@BusinessKey("code")
+@PremiumHolder("Form")
+Entity OrdLawIncCovEndorsement is Form {
+
+    Attr category: String
+
+
+    @Rateable
+    Attr code: String
+
+    Attr description: String
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    Attr name: String
+
+    Attr number: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+
+    //"Ordinance Or Law Increased Amount Of Coverage"
+    Attr ordinOrLawAmt: String
+}
+//"Other Insured Location Occupied by Insured Endorsement"
+@BusinessKey("code")
+@PremiumHolder("Form")
+Entity OthInsLocationEndorsement is Form {
+
+    Attr category: String
+
+
+    @Rateable
+    Attr code: String
+
+    Attr description: String
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    Attr name: String
+
+    Attr number: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+
+    //"Address"
+    Attr address: String
+
+    //"Number Of Families"
+    Attr familyNum: String
+
+    //"Location Number"
+    Attr locationNum: Integer
+}
+//"Owned Motorized Golf Cart Physical Loss Coverage Endorsement"
+@BusinessKey("code")
+@PremiumHolder("Form")
+Entity OwnMotoGolfEndorsement is Form {
+
+    Attr category: String
+
+
+    @Rateable
+    Attr code: String
+
+    Attr description: String
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    Attr name: String
+
+    Attr number: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+
+    //"Collision Peril Applies"
+    Attr collPerAppInd: Boolean
+
+    //"Liability Limit"
+    Attr liabLimit: Decimal
+
+    //"Make Or Model"
+    Attr makeOrModel: String
+
+    //"Serial Number"
+    Attr serNum: String
+}
+//"Permitted Incidental Operations Endorsement"
+@BusinessKey("code")
+@PremiumHolder("Form")
+Entity PermitIncOperEndorsement is Form {
+
+    Attr category: String
+
+
+    @Rateable
+    Attr code: String
+
+    //"Business Description"
+    Attr description: String
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    Attr name: String
+
+    Attr number: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+
+    //"Is business being conducted in the dwelling where the person resides?"
+    Attr conductPersonResidenceInd: Boolean
+
+    //"Is business being conducted in another structure outside of the primary residence?"
+    Attr conductPrimaryResidenceInd: Boolean
+
+    //"Limit Amount"
+    Attr limitAmount: Decimal
+
+    //"Description Of Other Structures"
+    Attr otherDescription: String
+}
+//"Theft Coverage Endorsement"
+@BusinessKey("code")
+@PremiumHolder("Form")
+Entity TheftCoverageEndrosement is Form {
+
+    Attr category: String
+
+
+    @Rateable
+    Attr code: String
+
+    Attr description: String
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    Attr name: String
+
+    Attr number: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+
+    //"Theft Coverage Deductible"
+    Attr identityTheftDed: Decimal
+
+    //"Theft Coverage Limit"
+    Attr identityTheftLimit: Decimal
+}
+//"Watercraft Endorsement"
+@BusinessKey("code")
+@PremiumHolder("Form")
+Entity WatercraftEndorsement is Form {
+
+    Attr category: String
+
+    Attr description: String
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    Attr name: String
+
+    Attr number: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+
+    //"Bodily Injury Limit"
+    Attr bodilyInjuryLimit: String
+
+    //"Captain Crew Operated"
+    Attr captainCrewInd: Boolean
+
+    //"Coastal Navigation Period"
+    Attr coastalNavigationPeriod: String
+
+    //"Coast Guard Certificate?"
+    Attr coastGuardInd: Boolean
+
+
+    @Rateable
+    Attr code: String
+
+    //"Collision Deductible"
+    Attr collisionDeductible: Decimal
+
+    //"Comprehensive Deductible"
+    Attr comprehensiveDeductible: Decimal
+
+    //"Coverage Type"
+    Attr coverageType: String
+
+    //"Engine/Outdriver modified for Performance?"
+    Attr engineOutdriverInd: Boolean
+
+    //"Engine Type"
+    Attr engineType: String
+
+    //"Fishing Equipment"
+    Attr fishingEquipment: String
+
+    //"Horsepower"
+    Attr horsepower: Decimal
+
+    //"Hull"
+    Attr hull: Decimal
+
+    //"Hull Identification Number (HIN)"
+    Attr hullIndNumber: String
+
+    //"Hull Material"
+    Attr hullMaterial: String
+
+    //"Is Watercraft Involved in Racing?"
+    Attr isRacingInvCrewInd: Boolean
+
+    //"Is Watercraft Co-Owned"
+    Attr isWatercraftCoInd: Boolean
+
+    //"Is Watercraft Involved in Racing?"
+    Attr isWatercraftInvInRacingInd: Boolean
+
+    //"Layup Period"
+    Attr layupPeriod: String
+
+    //"Length"
+    Attr length: Decimal
+
+    //"Manufacturer"
+    Attr manufacturer: String
+
+    //"Marina Name"
+    Attr marinaName: String
+
+    //"Market Value"
+    Attr marketValue: Decimal
+
+    //"Maximum Speed (mph)"
+    Attr maximumSpeed: Decimal
+
+    //"Medical Payments Limit"
+    Attr medicalPaymentsLimit: Decimal
+
+    //"Model"
+    Attr model: String
+
+    //"Model Year"
+    Attr modelYear: Integer
+
+    //"Navigation Limit"
+    Attr navigationLimit: Decimal
+
+    //"Number of At Fault Watercraft Accidents in the last 3 years?"
+    Attr numberOfAtFault: Integer
+
+    //"Number Of Engines"
+    Attr numberOfEngines: Integer
+
+    //"On Water Towing Coverage"
+    Attr onWaterTowingCoverage: String
+
+    //"Operator Experience (Years)"
+    Attr operatorExperience: Integer
+
+    //"Other Manufacturer"
+    Attr otherManufacturer: String
+
+    //"Other Series"
+    Attr otherSeries: String
+
+    //"Property Damage Limit"
+    Attr propertyDamageLimit: Decimal
+
+    //"Replacement Cost Personal Effects"
+    Attr replacementCost: Decimal
+
+    //"Roadside Assistance"
+    Attr roadsideAssistanceInd: Boolean
+
+    //"Series"
+    Attr series: String
+
+    //"Limit"
+    Attr singleLimit: Decimal
+
+    //"Trailer Insurance"
+    Attr trailerInsuranceInd: Boolean
+
+    //"Uninsured Limit"
+    Attr uninsuredLimit: Decimal
+
+    //"Usage Type"
+    Attr usageType: String
+
+    //"Watercraft Type"
+    Attr watercraftType: String
+
+    //"Year Purchased"
+    Attr yearPurchased: Integer
+}
+//"Manuscript Endorsement Form"
+@BusinessKey("code")
+@PremiumHolder("Form")
+Entity ManuscriptEndorsement is Form {
+
+    Attr category: String
+
+
+    @Rateable
+    Attr code: String
+
+    Attr description: String
+
+    Attr excludeFromHighLevelOverride: Boolean
+
+    Attr excludeFromTotal: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr flatOverrideAmount: Money
+
+    Attr name: String
+
+    Attr number: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideOtherReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overrideReason: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr overwriteOverrideAmount: Money
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr percentageOverrideAmount: Decimal
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    @Within(["PERCENTAGE", "FLAT", "OVERWRITE"])
+    Attr premiumOverrideType: String
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr propagateOverride: Boolean
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr startTerm: Integer
+
+
+    @PremiumImpact
+    @SecuredCreate(["Policy: Policy Premium Override Create"])
+    @SecuredUpdate(["Policy: Policy Premium Override Update"])
+    Attr validForTerms: Integer
+}
+
+Entity PersonalHomePersonEntity is PersonBase {
+
+    Attr birthDate: Date
+
+    Attr deceased: Boolean
+
+    Attr deceasedDate: Date
+
+
+    @Searchable("personFirstName")
+    Attr firstName: String
+
+
+    @Description("lookup:Gender")
+    @Rateable
+    Attr genderCd: String
+
+
+    @Searchable("personLastName")
+    Attr lastName: String
+
+
+    @Description("lookup:MaritalStatus")
+    @Rateable
+    Attr maritalStatus: String
+
+    Attr middleName: String
+
+    Attr registryEntityNumber: String
+
+    Attr registryTypeId: String
+
+
+    @Description("lookup:Title")
+    Attr salutation: String
+
+
+    @Confidential("ssnStrategy")
+    Attr taxId: String
+
+    Attr communicationInfo: *PersonalHomeCommunicationInfo
+
+    Attr legalIdentities: *PersonalHomePolicyPersonLegalIdentity
+}
+//"Claim details"
+Entity PersonalHomeClaimInfo  {
+
+    Attr claimStatus: String
+
+    Attr claimType: String
+
+    Attr dateOfLoss: Date
+
+    Attr description: String
+
+    Attr lossType: String
+
+    Attr totalClaimCost: Decimal
+
+    //"Catastrophic Indicator"
+    Attr catastrophicIndicator: String
+
+    //"Include in Rating"
+    Attr includeToRatingInd: Boolean
+
+    //"Incident Source"
+    @Lookup("DiscoveredBy")
+    Attr incidentSource: String
+
+    Attr lossAmount: Decimal
+
+    //"Description of Loss"
+    Attr lossDescription: String
+
+    //"Reason"
+    Attr reason: String
+
+    //"Sequence #"
+    Attr sequence: Integer
+}
+
+Entity CreditScore  {
+
+    //"Credit Score"
+    Attr creditScore: String
+
+    //"Credit Score Code"
+    Attr creditScoreTypeCd: String
+}
+
+Entity HomeBLOB is PnCBLOBContainer {
+
+    @Constant("Personal")
+    @ConstantFeature
+    Attr blobCd: String
+
+    Ref lobs: *HomeLOB
+}
+//"Inspection details"
+Entity PersonalHomeInspectionRequest is InspectionRequest {
+
+    //"Agent Contact E-mail"
+    Attr agentEmail: String
+
+    //"Agent Contact Name"
+    Attr agentName: String
+
+    //"Agent Contact Phone"
+    Attr agentPhoneNumber: String
+
+    //"Ext."
+    Attr agentPhoneNumberExt: Integer
+
+    //"Are Inspection Reports Available?"
+    Attr areInspectionReportsAvailable: Boolean
+
+    //"Date Of Inspection"
+    Attr dateOfInspection: Date
+
+    //"Date Ordered"
+    Attr dateOrdered: Date
+
+    //"Order Inspection"
+    Attr orderInspectionInd: Boolean
+
+    //"Primary Contact Name"
+    Attr primaryContactName: String
+
+    //"Primary Contact Phone"
+    Attr primaryContactPhone: String
+
+    //"Inspection Reason"
+    @Lookup("InspectionReason")
+    Attr reasonCd: String
+
+    //"Reason for Not Ordering Inspection"
+    Attr reasonForNotOrderingInspection: String
+
+    //"Report Type"
+    @Lookup("InspectionReportTypeCd")
+    Attr reportTypeCd: String
+
+    //"Secondary Contact Name"
+    Attr secContactName: String
+
+    //"Secondary Contact Phone"
+    Attr secContactPhone: String
+
+    //"Special Instructions"
+    Attr specInstructions: String
+
+    //"Inspection Status"
+    Attr statusCd: String
+
+    //"Underwriter Contact E-mail"
+    Attr uwEmail: String
+
+    //"Underwriter Contact Name"
+    Attr uwName: String
+
+    //"Underwriter Contact Phone"
+    Attr uwPhoneNumber: String
+
+    //"Ext."
+    Attr uwPhoneNumberExt: Integer
+}
+
+Entity HomeLOB is PersonalHomeLOB {
+
+    @Constant("Home")
+    @ConstantFeature
+    @Searchable
+    Attr lobCd: String
+
+    Ref riskItems: *PersonalHomeLocation
+}
+//"Estimation details"
+Entity PersonalHomeISO360Report  {
+
+    //"ISO Replacement Cost"
+    Attr isoReplacementCost: Decimal
+}
+
+Entity PersonalHomeLocationUnderwritingInfo  {
+
+    Attr isRenovationPlanned: Boolean
+
+    Attr isSalePlanned: Boolean
+}
+
+Entity PersonalHomeLocationUse  {
+
+    //"Business Conducted on Premises"
+    Attr businessConductedInd: Boolean
+
+    //"Exclude Liability?"
+    Attr excludeLiabilityInd: Boolean
+
+    //"Farming Conducted on Premises"
+    Attr farmingConductedInd: Boolean
+
+    //"Number of Tenants Rented to per Year"
+    Attr numOfTenantsRented: Integer
+
+    //"Number of Weeks Rented Per Year"
+    Attr numOfWeeksRented: Integer
+
+    //"Occasionally Rented to Others?"
+    Attr occasionallyRentedToOthersInd: Boolean
+
+    //"Occupancy Type"
+    @Lookup("ОccupancyType")
+    Attr occupancyType: String
+}
+//"Additional Interest (Mortgagee) details"
+Entity PersonalHomeAdditionalInterestInfo  {
+
+    //"Address"
+    Attr address: PersonalHomeAddressInfo
+
+    //"E-mail"
+    Attr email: String
+
+    //"Loan Amount"
+    Attr loanAmt: Money
+
+    //"Loan #"
+    Attr loanNo: String
+
+    Attr lossPayeeExpDate: Date
+
+    //"Name"
+    Attr name: String
+
+    //"Rank"
+    Attr rank: Integer
+
+    //"Second Name"
+    Attr secondName: String
+
+    //"Interest Type"
+    Attr type: String
+}
+
+Entity PersonalHomeAddressInfo is Location {
+
+    Attr addressLine1: String
+
+    Attr addressLine2: String
+
+    Attr addressLine3: String
+
+
+    @Description("lookup:AddressType")
+    Attr addressType: String
+
+
+    @Searchable("personCity")
+    Attr city: String
+
+
+    @Description("lookup:Country")
+    @Searchable("personCountry")
+    Attr countryCd: String
+
+    Attr geoposition: PersonalHomeGeoCoord
+
+    Attr nationalId: String
+
+
+    @Rateable
+    @Searchable("personZipCode")
+    Attr postalCode: String
+
+    Attr registryEntityNumber: String
+
+    Attr registryTypeId: String
+
+
+    @Description("lookup:StateProv")
+    @Searchable("personStateProv")
+    Attr stateProvinceCd: String
+
+    Attr county: String
+
+    Attr doNotSolicit: Boolean
+
+    Attr streetAddress: String
+
+    Attr streetName: String
+
+    Attr streetNumber: String
+
+    Attr unitNumber: String
+
+    Attr zipPlus4Code: String
+
+    Attr addressLine1: String
+
+    Attr addressLine2: String
+
+    Attr addressLine3: String
+
+    Attr addressType: String
+
+    Attr addressValidated: String
+
+    Attr city: String
+
+    Attr countryCd: String
+
+    Attr county: String
+
+    Attr postalCode: String
+
+    Attr sameInsuredAddressInd: Boolean
+
+    Attr stateProvCd: String
+}
+//"AtHomeCredit details"
+Entity PersonalHomeAtHomeCreditInfo  {
+
+    //"Is there an Adult in the home for > 20 hrs a week?"
+    Attr insuredAgeQuestionInd: Boolean
+}
+//"BrushFire details"
+Entity PersonalHomeBrushFireInfo  {
+
+    //"Brush Fire Eligibility"
+    Attr brushFireEligibilityInd: Boolean
+
+    //"Brush Fire Surcharge?"
+    Attr brushFireSurchargeInd: Boolean
+
+    //"Fuel"
+    @Lookup("Fuel")
+    Attr fuel: String
+
+    //"Road Access"
+    @Lookup("RoadAccess")
+    Attr roadAccess: String
+
+    //"Slope of Insured Location"
+    @Lookup("SlopeLocation")
+    Attr slopeOfLocation: String
+}
+
+Entity PersonalHomeEmailInfo is EmailInfo {
+
+    @Description("lookup:EmailType")
+    Attr type: String
+
+    Attr updatedOn: Datetime
+
+    Attr value: String
+}
+
+Entity PersonalHomeInsuredInfo is InsuredInfo {
+
+    Attr primary: Boolean
+
+    //"CLUE (Comprehensive Loss Underwriting Exchange) report"
+    Attr clueReport: PersonalHomeReportInfo
+}
+
+Entity PersonalHomeMembershipInfo  {
+
+    //"Membership Date"
+    Attr membershipDate: Date
+
+    //"Membership #"
+    Attr membershipNo: String
+
+    //"Member Of"
+    Attr organizationCd: String
+}
+
+Entity PersonalHomePackagingDetail is PackagingDetail {
+
+    Attr declineVariationInd: Boolean
+
+    Attr declineVariationReason: String
+
+
+    @Dimension("packageCd")
+    @Searchable("packageCd")
+    Attr packageCd: String
+
+
+    @Dimension("planCd")
+    @Searchable("planCd")
+    Attr planCd: String
+}
+
+Entity PersonalHomePhoneInfo is PhoneInfo {
+
+    @Description("lookup:Country")
+    Attr countryCd: String
+
+    Attr phoneExtension: String
+
+
+    @Description("lookup:PhoneType")
+    Attr type: String
+
+    Attr updatedOn: Datetime
+
+    Attr value: String
+}
+
+Entity PersonalHomePolicyDetail is PolicyDetail {
+
+    @Searchable
+    Attr archivedAtPolicyRevision: Integer
+
+
+    @ReadOnly
+    Attr cancelNotice: Boolean
+
+    Attr cancelNoticeDate: Datetime
+
+
+    @Min(0)
+    Attr cancelNoticeDays: Integer
+
+    Attr cancelNoticeOtherReason: String
+
+    Attr cancelNoticeReason: String
+
+
+    @ReadOnly
+    Attr currentQuoteInd: Boolean
+
+    Attr declineDate: Datetime
+
+    Attr declineOtherReason: String
+
+    Attr declineReason: String
+
+
+    @ReadOnly
+    Attr doNotRenew: Boolean
+
+    Attr doNotRenewOtherReason: String
+
+    Attr doNotRenewReason: String
+
+    Attr doNotRenewStatus: String
+
+    Attr followUpRequired: Boolean
+
+
+    @ReadOnly
+    Attr manualRenew: Boolean
+
+    Attr manualRenewOtherReason: String
+
+    Attr manualRenewReason: String
+
+
+    @ReadOnly
+    Attr oosProcessingStage: String
+
+    Attr printNotice: Boolean
+
+    Attr proposeNotes: String
+
+    Attr supportingData: String
+
+    Attr suspendDate: Datetime
+
+    Attr suspendOtherReason: String
+
+    Attr suspendReason: String
+
+    Attr versionDescription: String
+}
+//"PriorCarrier details"
+Entity PersonalHomePriorCarrierInfo is PriorCarrierInfo {
+
+    Attr carrierName: String
+
+    Attr carrierPolicyNo: String
+
+    Attr deductibles: Money
+
+    Attr limitsBiPd: String
+
+    Attr status: String
+
+    //"Prior Carrier"
+    Attr carrierCd: String
+
+    //"Description"
+    Attr carrierDesc: String
+
+    //"Prior Policy Expiration Date"
+    Attr carrierPolicyExpirationDate: Date
+
+    //"Prior Carrier Policy Number"
+    Attr carrierPolicyNumber: String
+
+    //"Prior Carrier Policy Premium"
+    Attr carrierPolicyPremium: Decimal
+
+    //"If Not Previously Insured, Explain"
+    Attr insuranceExplanation: String
+}
+//"Protection details"
+Entity PersonalHomeProtectionInfo  {
+
+    //"Burglar Alarm Type"
+    @Lookup("BurglarAlarm")
+    Attr burglarAlarmTypeCd: String
+
+    //"Dead Bolt on Premises?"
+    Attr deadBoltInd: Boolean
+
+    //"Is there Doorman on Guard?"
+    Attr doormanOnGuardInd: Boolean
+
+    //"Extended Perimeter Protection?"
+    Attr extendedPerimeterProtectionInd: Boolean
+
+    //"Fire Alarm Type"
+    @Lookup("FireAlarm")
+    Attr fireAlarmTypeCd: String
+
+    //"Fire Extinguisher on Premises"
+    Attr fireExtinguisherInd: Boolean
+
+    //"Guarded/Gated Community?"
+    Attr guardedGatedCommunityInd: Boolean
+
+    //"Is Property Gated?"
+    Attr propertyGatedInd: Boolean
+
+    //"Smoke Detector on Premises?"
+    Attr smokeDetectorInd: Boolean
+
+    //"Sprinkler System Type"
+    @Lookup("Sprinklers")
+    Attr sprinklerSystemTypeCd: String
+}
+//"Renovation details"
+Entity PersonalHomeRenovationInfo  {
+
+    //"Property renovated in last 5 years?"
+    Attr fiveYearsPropertyRenovatedInd: Boolean
+
+    //"Complete New Electrical/Wiring Within Past Five Years?"
+    Attr newElectricsInd: Boolean
+
+    //"Complete New Plumbing Within Past Five Years?"
+    Attr newPlumbingInd: Boolean
+
+    //"Complete New Roof Within Past Five Years?"
+    Attr newRoofInd: Boolean
+
+    //"New Hot Water Tank Within Past Five Years?"
+    Attr newWaterTankInd: Boolean
+
+    //"Year of Renovation"
+    Attr renovationYear: Integer
+}
+//"Animals details"
+Entity PersonalHomeSafetyInfo  {
+
+    //"Does the insured own Any Listed Dogs or Horses?"
+    Attr animalsInd: Boolean
+
+    //"Does the Woodstove Meet Safety Criteria?"
+    Attr stovesInd: Boolean
+
+    //"Does the Pool Meet Safety Criteria?"
+    Attr swimPoolInd: Boolean
+}
+
+Entity PersonalHomeTermDetails is TermDetails {
+
+    @NonComparable
+    @Required
+    Attr termCd: String
+
+
+    @Dimension("termEffectiveDate")
+    @NonComparable
+    @Required
+    @Searchable
+    Attr termEffectiveDate: Datetime
+
+
+    @NonComparable
+    @Required
+    @Searchable
+    Attr termExpirationDate: Datetime
+
+
+    @Max(99)
+    @Min(0)
+    @NonComparable
+    @ReadOnly
+    @Required
+    Attr termNo: Integer
+}
+
+Entity PersonalHomeTransactionDetails is TransactionDetails {
+
+    @NonComparable
+    @ReadOnly
+    Attr txCreateDate: Datetime
+
+
+    @NonComparable
+    @Required
+    @Searchable
+    Attr txEffectiveDate: Datetime
+
+
+    @NonComparable
+    Attr txOtherReason: String
+
+
+    @NonComparable
+    Attr txReasonCd: String
+
+
+    @Length(50)
+    @NonComparable
+    @ReadOnly
+    @Required
+    @Searchable
+    Attr txType: String
+}
+
+Entity PersonalHomesAccessTrackInfo is PolicyAccessTrackInfo {
+
+    @ReadOnly
+    Attr createdBy: String
+
+
+    @ReadOnly
+    @Searchable
+    Attr createdOn: Datetime
+
+    Attr raw: String
+
+
+    @ReadOnly
+    Attr updatedBy: String
+
+
+    @ReadOnly
+    @Searchable
+    Attr updatedOn: Datetime
+}
+
+Entity PersonalHomesBusinessDimensions is PolicyBusinessDimensions {
+
+    Attr agency: String
+
+    Attr brand: String
+
+
+    @Searchable
+    Attr subProducer: String
+
+    ExtLink organization: RootEntity
+}
+
+Entity PersonalHomeCommunicationInfo is CommunicationInfo {
+
+    Attr emails: *PersonalHomeEmailInfo
+
+    Attr phones: *PersonalHomePhoneInfo
+
+    Attr emailTypeCd: String
+
+    Attr phoneTypeCd: String
+}
+
+Entity PersonalHomePolicyPersonLegalIdentity is CommunicationInfo {
+
+    @Description("lookup:PersonalIdentityType")
+    Attr legalIdentityType: String
+
+    Attr legalIdentityValue: String
+}
+
+Entity PersonalHomePartyRole is PartyRole {
+
+    Attr role: String
+}
+
+Entity PersonalHomePolicyPerson is PolicyPerson {
+
+    Attr addressInfo: *PersonalHomeAddressInfo
+
+    Attr employer: String
+
+    Attr employmentStatus: String
+
+    Attr otherName: String
+
+    Attr personBaseDetails: PersonalHomePersonEntity
+
+    Attr salutation: String
+
+    Attr suffix: String
+
+    Attr title: String
+
+
+    @Rateable
+    Attr age: Integer
+
+    Attr nameTypeCd: String
+
+
+    @Rateable
+    Attr occupation: String
+
+    Attr occupationDescription: String
+
+    Attr sameHomeAddress: Boolean
+
+
+    @Confidential("ssnStrategy")
+    Attr ssn: String
+}
+
+@BusinessKey("personInfo.personBaseDetails.registryTypeId")
+Entity PersonalHomePolicyParty is PolicyParty {
+
+    Attr creditScoreInfo: PersonalHomeCreditScoreInfo
+
+    Attr priorCarrierInfo: PersonalHomePriorCarrierInfo
+
+    Attr personInfo: PersonalHomePolicyPerson
+
+    Attr relationToPrimaryInsured: String
+
+    Attr insuredInfo: PersonalHomeInsuredInfo
+
+    Attr roles: *PersonalHomePartyRole
+}
+//"Insured details"
+Entity PersonalHomeCreditScoreInfo is CreditScoreInfo {
+
+    Attr score: String
+
+    //"Company Alert Database Status"
+    Attr isCompanyAlert: Boolean
+
+    //"OFAC Clearance"
+    Attr ofacClearance: Boolean
+}
+
+Entity PersonalHomeGeoCoord is GeoCoord {
+
+}
+
+Entity PersonalHomeReportInfo  {
+
+    Attr order: Boolean
+
+    Attr reorder: Boolean
+
+    Attr ordered: Boolean
+
+    Attr response: Boolean
+
+    Attr orderDate: Date
+
+    Attr receiptDate: Date
+
+    Attr bandNumber: String
+}
+
+Entity ScheduledItem  {
+
+    //"Item Type: Fine Art, Firearm, Fur, Jewelry, Miscellaneous, Money, Portable Electronic Equipment, Security, Silverware, Sport Equipment"
+    Attr itemType: String
+
+    //"Item Cost"
+    @Rateable
+    Attr cost: Money
+
+    //"Description"
+    Attr description: String
+}

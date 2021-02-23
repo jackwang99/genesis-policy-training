@@ -1,0 +1,10 @@
+[
+  {
+    "code": "cheque",
+    "defaultValue": "Vérifier"
+  },
+  {
+    "code": "eft",
+    "defaultValue": "Transfert électronique de fonds (TEF)"
+  }
+]

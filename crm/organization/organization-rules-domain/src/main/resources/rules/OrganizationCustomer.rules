@@ -1,0 +1,15 @@
+Namespace ORGANIZATIONCUSTOMER
+
+Include Base
+
+Rule "CrmBusinessDetailsCodeSectionsAreMandatory" On CrmBusinessDetails.sicCode {
+  Assert sicCode != null || naicsCode != null
+  Error "CrmBusinessDetailsCodeSectionsAreMandatory": "Either 'SIC Classification' section or 'NAICS Classification' section is required"
+}
+
+Rule "CrmDivisionExpirationDateMustBeGreaterThanEffectiveDate" On GenesisCrmDivision.effectiveDate {
+	When effectiveDate != null && expirationDate != null
+	Assert effectiveDate < expirationDate
+	Error "CrmDivisionExpirationDateMustBeGreaterThanEffectiveDate": "Expiration Date is less than Effective Date"  
+} 
+

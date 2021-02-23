@@ -1,0 +1,27 @@
+Model CUSTOMERACCOUNT
+
+PersonToAccount {
+    Predicate {
+        subject: PersonBase
+        predicate: "Account"
+        object: CustomerAccount
+    }
+    Selector {
+        subject: @object > .customers > .link > IndividualDetails > .person
+        predicate: "Account"
+        object: CustomerAccount
+    }
+}
+
+LegalEntityToAccount {
+    Predicate {
+        subject: LegalEntityBase
+        predicate: "Account"
+        object: CustomerAccount
+    }
+    Selector {
+        subject: @object > .customers > .link > BusinessDetails > .legalEntity
+        predicate: "Account"
+        object: CustomerAccount
+    }
+}

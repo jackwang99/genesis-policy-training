@@ -1,0 +1,56 @@
+Model PersonalAuto
+
+Common {
+    Number is output.policyNumber
+    Attribute txType is output.transactionDetails.txType
+    Attribute txEffectiveDate is output.transactionDetails.txEffectiveDate
+    Attribute termEffectiveDate is output.termDetails.termEffectiveDate
+    Attribute txReasonCd is output.transactionDetails.txReasonCd
+    Attribute txOtherReason is output.transactionDetails.txOtherReason
+}
+
+Command newBusinessIssue, endorsementIssue, rewriteIssue variation quote {
+    Attribute totalPremium is extendedData.premium.GROSS_PREMIUM.actualAmount
+}
+
+Command reinstate variation policy {
+    Attribute totalPremium is extendedData.premium.GROSS_PREMIUM.actualAmount
+}
+
+Command cancelTerm {
+    Attribute totalPremium is extendedData.premium.GROSS_PREMIUM.actualAmount
+    Attribute changePremium is extendedData.premium.GROSS_PREMIUM.changeAmount
+}
+
+Command cancelNotice variation policy {
+    Attribute cancelNoticeDate is output.policyDetail.cancelNoticeDate
+    Attribute cancelNoticeReason is output.policyDetail.cancelNoticeReason
+    Attribute cancelNoticeOtherReason is output.policyDetail.cancelNoticeOtherReason
+    Attribute cancelNoticeDays is output.policyDetail.cancelNoticeDays
+}
+
+Command customerDecline, companyDecline variation quote {
+    Attribute declineDate is output.policyDetail.declineDate
+    Attribute declineReason is output.policyDetail.declineReason
+    Attribute declineOtherReason is output.policyDetail.declineOtherReason
+}
+
+Command doNotRenew variation policy {
+    Attribute doNotRenewReason is output.policyDetail.doNotRenewReason
+    Attribute doNotRenewOtherReason is output.policyDetail.doNotRenewOtherReason
+    Attribute doNotRenewStatus is output.policyDetail.doNotRenewStatus
+}
+
+Command manualRenew variation policy {
+    Attribute manualRenewReason is output.policyDetail.manualRenewReason
+    Attribute manualRenewOtherReason is output.policyDetail.manualRenewOtherReason
+}
+
+Command suspense {
+    Attribute suspendReason is output.policyDetail.suspendReason
+    Attribute suspendOtherReason is output.policyDetail.suspendOtherReason
+}
+
+Endpoint load {
+    
+}

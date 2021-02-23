@@ -1,0 +1,30 @@
+[
+  {
+    "code": "125/2500",
+    "defaultValue": "$125/$2,500"
+  },
+  {
+    "code": "15/450",
+    "defaultValue": "$15/$450"
+  },
+  {
+    "code": "25/800",
+    "defaultValue": "$25/$800"
+  },
+  {
+    "code": "30/900 ",
+    "defaultValue": "$30/$900"
+  },
+  {
+    "code": "40/1200",
+    "defaultValue": "$40/$1,200"
+  },
+  {
+    "code": "50/1500",
+    "defaultValue": "$50/$1,500"
+  },
+  {
+    "code": "60/1800",
+    "defaultValue": "$60/$1,800"
+  }
+]

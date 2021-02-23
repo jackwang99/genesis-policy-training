@@ -1,0 +1,10 @@
+[
+  {
+    "code": "IND",
+    "defaultValue": "Individuel"
+  },
+  {
+    "code": "OTH",
+    "defaultValue": "Autre"
+  }
+]

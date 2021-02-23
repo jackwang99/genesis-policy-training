@@ -1,0 +1,14 @@
+[
+    {
+        "code": "PERCENTAGE",
+        "defaultValue": "Pourcentage"
+    },
+    {
+        "code": "FLAT",
+        "defaultValue": "Montant forfaitaire"
+    },
+    {
+        "code": "OVERWRITE",
+        "defaultValue": "Écraser"
+    }
+]

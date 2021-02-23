@@ -1,0 +1,38 @@
+[
+  {
+    "code": "bound",
+    "defaultValue": "Bound"
+  },
+  {
+    "code": "cancelled",
+    "defaultValue": "Canceled"
+  },
+  {
+    "code": "companyDeclined",
+    "defaultValue": "Company Declined"
+  },
+  {
+    "code": "customerDeclined",
+    "defaultValue": "Customer Declined"
+  },
+  {
+    "code": "dataGather",
+    "defaultValue": "Data Gathering"
+  },
+  {
+    "code": "expired",
+    "defaultValue": "Expired"
+  },
+  {
+    "code": "issued",
+    "defaultValue": "Issued"
+  },
+  {
+    "code": "proposed",
+    "defaultValue": "Proposed"
+  },
+  {
+    "code": "rated",
+    "defaultValue": "Rated"
+  }
+]

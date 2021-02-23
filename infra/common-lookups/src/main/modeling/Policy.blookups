@@ -1,0 +1,208 @@
+/* Policy */
+Lookup TypeOfPolicy {
+}
+
+Lookup QuoteExpiration {
+}
+
+Lookup PolicyStatus {
+}
+
+Lookup Source {
+}
+
+Lookup Coverages {
+    target: String
+    type: String
+}
+
+Lookup LineOfBusiness {
+}
+
+Lookup GenesisCOMPCoverage {
+}
+Lookup GenesisCOLLCoverage {
+}
+Lookup GenesisBICoverage {
+}
+Lookup GenesisUMPDCoverage {
+}
+Lookup GenesisUMCSLCoverage {
+}
+Lookup GenesisUMBICoverage {
+}
+Lookup GenesisRRCoverage {
+}
+Lookup GenesisRACoverage {
+}
+Lookup GenesisCSLCoverage {
+}
+Lookup GenesisMEDCoverage {
+}
+Lookup GenesisMPCoverage {
+}
+Lookup GenesisPDCoverage {
+}
+Lookup GlassCoverage {
+}
+
+Lookup SendTo {
+}
+
+Lookup ACPEEType {
+}
+
+Lookup PaymentPlan {
+}
+
+Lookup RuleOverrideCategory {
+}
+
+Lookup RelationshipToInsureds {
+}
+
+Lookup ContractTerm {
+    noOfMonthsInTerm: String
+    productCd: String
+}
+
+Lookup ContractTermType {
+    effective: String
+    expiration: String
+    noOfMonthsInTerm: String
+    productCd: String
+    riskStateCd: String
+    underwriterCd: String
+}
+
+Lookup DefaultTermType {
+}
+
+Lookup GenesisPolicyTerm {
+}
+
+Lookup StandardViolationCode {
+    category: String
+    points: String
+}
+
+Lookup TripInterruptionCoverage {
+}
+
+Lookup TripInterruptionExpense {
+}
+
+Lookup FilingType {
+}
+
+Lookup FillingType {
+}
+
+Lookup PrecEmailType {
+}
+
+Lookup PrecPhoneType {
+}
+
+Lookup ClaimExclusionReason {
+}
+
+
+/* Vehicle */
+Lookup VehicleType {
+}
+
+Lookup VehicleSeries {
+    make: VehicleMake
+    model: VehicleModel
+    modelYear: String
+}
+
+Lookup VehicleModel {
+    makes: VehicleMake
+    modelYear: String
+}
+
+Lookup VehicleMake {
+}
+
+Lookup VehicleUsage {
+}
+
+Lookup VehicleBodyType {
+}
+
+Lookup VehicleSecurityOptions {
+}
+
+Lookup VehiclePerformance {
+}
+
+Lookup RegistrationType {
+}
+
+Lookup LicenseClass {
+}
+
+Lookup LicenseStatus {
+}
+
+Lookup LicenseType {
+}
+
+Lookup AirBagStatus {
+}
+
+Lookup NoVinReason {
+    productCd: String
+}
+
+Lookup ViolationExclusionReason {
+}
+
+Lookup CustAnnualDist {
+}
+
+Lookup FuelType {
+}
+
+Lookup MiscellaneousTypesMotorhomes {
+}
+
+Lookup AntiLockBrake {
+    vin_antiLockCode: String
+}
+
+Lookup OwnershipType {
+}
+
+Lookup VehicleDriver {
+}
+
+Lookup DriverRelate {
+}
+
+Lookup DriverType {
+}
+
+Lookup DriverExclusionReason {
+}
+
+Lookup RentOwn {
+}
+
+
+/* Home */
+Lookup AdditionalInterestType {
+}
+
+Lookup InterestType {
+}
+
+/* Fleet */
+Lookup CoverageType {
+}
+
+/* Garage */
+Lookup GarageActivity {
+}

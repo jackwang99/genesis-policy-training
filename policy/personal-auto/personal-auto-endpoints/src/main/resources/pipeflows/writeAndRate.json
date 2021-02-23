@@ -1,0 +1,48 @@
+{
+  "flow":[
+    {
+      "type":"command",
+      "operations":[
+        {
+          "commandName":"writeAndRate",
+          "variation":"quote",
+          "modelName":"PersonalAuto",
+          "body":{
+            "quote":"$.quote"
+          },
+          "flowRequestId":{
+            "_key":"$.quote._key"
+          }
+        }
+      ]
+    },
+    {
+      "type":"facade",
+      "operations":[
+        {
+          "facade":{
+            "name":"load",
+            "endpoint": "/{variation}/{rootId}/{revisionNo}",
+            "method":"UNDETERMINED"
+          },
+          "pathParams":{
+            "modelName":"PersonalAuto",
+            "modelVersion": "1",
+            "variation":"quote",
+            "rootId":"$.data._key.rootId",
+            "revisionNo":"$.data._key.revisionNo"
+          },
+          "queryParams":{
+            "embed":"*,premiums"
+          },
+          "body":{
+
+          },
+          "flowRequestId":{
+            "_key":"$.data._key"
+          }
+        }
+      ]
+    }
+  ]
+}

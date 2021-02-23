@@ -1,0 +1,72 @@
+{
+  "_key": {
+    "rootId": "1214d6af-22ff-49c8-90bb-eff7347902c7",
+    "revisionNo": 1
+  },
+  "state": "unqualified",
+  "_type": "IndividualCustomer",
+  "_modelName": "INDIVIDUALCUSTOMER",
+  "_modelVersion": "1",
+  "employmentDetails": [
+    {
+      "employerName": "abc",
+      "occupationCd": "Accountant",
+      "occupationStatusCd": "OTHER",
+      "jobTitleCd": "CLAIMS_REPRESENT",
+      "jobTitleDescription": "Claims Representative",
+      "asOfDate": "2017-01-01",
+      "_type": "GenesisCrmEmploymentDetails",
+      "communicationInfo": {
+        "_modelName": "INDIVIDUALCUSTOMER",
+        "_modelVersion": "1",
+        "_type": "GenesisCrmCommunicationInfo",
+        "phones": [
+          {
+            "_key": {
+              "id": "283c9010-4da3-4fb1-982a-1723df9f6000",
+              "revisionNo": 1
+            },
+            "_type": "GenesisCrmPhone",
+            "type": "HOME",
+            "value": "236-00-544",
+            "updatedOn": "2018-10-01T12:01:25.981Z"
+          }
+        ],
+        "addresses": [
+          {
+            "_key": {
+              "id": "183c9010-4da3-4fb1-982a-1723df007000",
+              "revisionNo": 1
+            },
+            "location": {
+              "addressType": "legal",            
+              "accuracy": "accuracy",            
+              "addressLine1": "333",
+              "addressLine2": "444",
+              "addressLine3": "addressLine3",              
+              "city": "New City",
+              "countryCd": "JP",
+              "postalCode": "220082",
+              "_type": "GenesisLocation"
+            },
+            "preferred": false,
+            "doNotSolicit": false,
+            "schedulingContactInfo": {
+              "effectiveFrom": "2017-01-01",
+              "effectiveTo": "2019-10-03",
+              "temporary": false,
+              "_type": "GenesisCrmSchedulingContactInfo"
+            },
+            "inCareOf": "inCareOf",
+            "attention": "123123",
+            "subdivision": "subdivision",
+            "addressValidatedInd": "addressValidatedInd",
+            "referenceId": "referenceId",
+            "communicationPreferences": ["BILL_STATE", "PLAN_NEWS"],
+            "_type": "GenesisCrmAddress"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "code": "C",
+    "defaultValue": "Contract"
+  },
+  {
+    "code": "Contract Purchaser",
+    "defaultValue": "Contract Purchaser"
+  },
+  {
+    "code": "E",
+    "defaultValue": "Employer"
+  },
+  {
+    "code": "H",
+    "defaultValue": "Hire Purchase"
+  },
+  {
+    "code": "Interest",
+    "defaultValue": "Interest"
+  },
+  {
+    "code": "Lender",
+    "defaultValue": "Lender"
+  },
+  {
+    "code": "Loss Payee",
+    "defaultValue": "Loss Payee"
+  },
+  {
+    "code": "N",
+    "defaultValue": "None"
+  },
+  {
+    "code": "Titleholder",
+    "defaultValue": "Titleholder"
+  }
+]

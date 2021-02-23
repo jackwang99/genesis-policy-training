@@ -1,0 +1,1040 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <!--Release: ${buildInfo.eis-build} Sprint: ${buildInfo.sprint-no} EIS: ${buildInfo.eis-version} Revision: ${buildInfo.git-sha-1} Date: 02.08.2019 16:18:39 Host:rix71113-->
+   <xsd:complexType name="conversionEntityLinkList">
+      <xsd:sequence>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="value" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="conversionReaderModel">
+      <xsd:sequence>
+         <xsd:choice maxOccurs="unbounded">
+            <xsd:element minOccurs="0" name="customerAccount" type="CUSTOMERACCOUNT.GenesisCustomerAccountImpl"/>
+            <xsd:element minOccurs="0" name="individualCustomer" type="INDIVIDUALCUSTOMER.IndividualCustomerImpl"/>
+            <xsd:element minOccurs="0" name="organizationCustomer" type="ORGANIZATIONCUSTOMER.OrganizationCustomerImpl"/>
+            <xsd:element minOccurs="0" name="opportunity" type="Opportunity.GenesisOpportunityImpl"/>
+            <xsd:element minOccurs="0" name="individualAgencyContainer" type="IndividualAgencyContainer.GenesisIndividualAgencyContainerImpl"/>
+            <xsd:element minOccurs="0" name="organizationAgencyContainer" type="OrganizationAgencyContainer.GenesisOrganizationAgencyContainerImpl"/>
+         </xsd:choice>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:element name="conversionReaderModel" type="conversionReaderModel"/>
+   <xsd:complexType name="CUSTOMERACCOUNT.GenesisAccessTrackInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="createdBy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="createdOn" type="xsd:dateTime"/>
+         <xsd:element minOccurs="0" name="updatedBy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="CUSTOMERACCOUNT.GenesisCustomerAccountImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="accessTrackInfo" type="CUSTOMERACCOUNT.GenesisAccessTrackInfoImpl"/>
+         <xsd:element minOccurs="0" name="accountGroupInfos" type="conversionEntityLinkList"/>
+         <xsd:element minOccurs="0" name="accountNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="agency" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="confidentialInd" type="xsd:boolean"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="designatedContacts" type="CUSTOMERACCOUNT.GenesisDesignatedContactImpl"/>
+         <xsd:element minOccurs="0" name="name" type="xsd:string"/>
+         <xsd:element name="specialHandling" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="state" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="type" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="CUSTOMERACCOUNT.GenesisCustomerAssociationImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="customerNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="link" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="CUSTOMERACCOUNT.GenesisDesignatedContactImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="agent" type="xsd:string"/>
+         <xsd:element name="contactPhone" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="IndividualAgencyContainer.GenesisAccessTrackInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="createdBy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="createdOn" type="xsd:dateTime"/>
+         <xsd:element minOccurs="0" name="updatedBy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="IndividualAgencyContainer.GenesisCrmAddressImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="addressType" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="addressValidatedInd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="attention" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="comment" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="communicationPreferences" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="county" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="doNotSolicit" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="inCareOf" type="xsd:string"/>
+         <xsd:element name="location" type="IndividualAgencyContainer.GenesisLocationImpl"/>
+         <xsd:element minOccurs="0" name="preferred" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="referenceId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="schedulingContactInfo" type="IndividualAgencyContainer.GenesisCrmSchedulingContactInfoImpl"/>
+         <xsd:element minOccurs="0" name="subdivision" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="IndividualAgencyContainer.GenesisCrmBillingInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="billingAccount" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="currentDueAmount" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="currentDueDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="link" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="totalPaid" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="unpaidBalance" type="xsd:decimal"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="IndividualAgencyContainer.GenesisCrmClaimInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="claimFileOwner" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="claimFileOwnerPhone" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="claimId" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="claimants" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="dateOfLoss" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="incurred" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="link" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policyProduct" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="status" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="IndividualAgencyContainer.GenesisCrmGeoCoordImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="coordAccuracy" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="latitude" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="longitude" type="xsd:decimal"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="IndividualAgencyContainer.GenesisCrmProductOwnedImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="carrierNameCd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="carrierNameDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="link" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policyExpirationDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="policyNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policyTypeCd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="productOwnedId" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="IndividualAgencyContainer.GenesisCrmSchedulingContactInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="effectiveFrom" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="effectiveTo" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="temporary" type="xsd:boolean"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="IndividualAgencyContainer.GenesisCustomerRelationshipImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="answer" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="authorisationOption" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="challengeQuestion" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="designatedComment" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="passwordPassphrase" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="passwordReminder" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="relatedCustomer" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="relationshipDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="relationshipType" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="serviceRole" type="xsd:boolean"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="serviceRoleCds" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="IndividualAgencyContainer.GenesisIndividualAgencyContainerImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="accessTrackInfo" type="IndividualAgencyContainer.GenesisAccessTrackInfoImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="addresses" type="IndividualAgencyContainer.GenesisCrmAddressImpl"/>
+         <xsd:element name="agency" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="billingsInfo" type="IndividualAgencyContainer.GenesisCrmBillingInfoImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="claimsInfo" type="IndividualAgencyContainer.GenesisCrmClaimInfoImpl"/>
+         <xsd:element minOccurs="0" name="customer" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="paperless" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="preferredSpokenLanguage" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="preferredWrittenLanguage" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="productsOwned" type="IndividualAgencyContainer.GenesisCrmProductOwnedImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="relationships" type="IndividualAgencyContainer.GenesisCustomerRelationshipImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="segments" type="xsd:string"/>
+         <xsd:element name="state" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="IndividualAgencyContainer.GenesisLocationImpl">
+      <xsd:sequence>
+         <xsd:element name="addressLine1" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="addressLine2" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="addressLine3" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="addressType" type="xsd:string"/>
+         <xsd:element name="city" type="xsd:string"/>
+         <xsd:element name="countryCd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="geoposition" type="IndividualAgencyContainer.GenesisCrmGeoCoordImpl"/>
+         <xsd:element minOccurs="0" name="nationalId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="postalCode" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="registryEntityNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="registryTypeId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="stateProvinceCd" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.EmploymentDetailsCustomerAssociationImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="customerNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="link" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.EmploymentDetailsImpl">
+      <xsd:sequence>
+         <xsd:element name="customer" type="INDIVIDUALCUSTOMER.EmploymentDetailsCustomerAssociationImpl"/>
+         <xsd:element minOccurs="0" name="departmentId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="divisionId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="employeeId" type="xsd:string"/>
+         <xsd:element name="employmentStatus" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="employmentType" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="expatriate" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="hourlyWage" type="xsd:string"/>
+         <xsd:element name="jobCode" type="xsd:string"/>
+         <xsd:element name="jobTitle" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="locationId" type="xsd:string"/>
+         <xsd:element name="originalHireDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="payClass" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="payType" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="payrollFrequency" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="rehireDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="salaryAmount" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="unionMember" type="xsd:boolean"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisAccessTrackInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="createdBy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="createdOn" type="xsd:dateTime"/>
+         <xsd:element minOccurs="0" name="updatedBy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisConsentInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="consentDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="consentStatus" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCrmAddressImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="addressValidatedInd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="attention" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="comment" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="communicationPreferences" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="county" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="doNotSolicit" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="inCareOf" type="xsd:string"/>
+         <xsd:element name="location" type="INDIVIDUALCUSTOMER.GenesisLocationImpl"/>
+         <xsd:element minOccurs="0" name="preferred" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="referenceId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="schedulingContactInfo" type="INDIVIDUALCUSTOMER.GenesisCrmSchedulingContactInfoImpl"/>
+         <xsd:element minOccurs="0" name="subdivision" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCrmBillingInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="billingAccount" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="currentDueAmount" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="currentDueDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="link" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="totalPaid" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="unpaidBalance" type="xsd:decimal"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCrmBusinessDetailsImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="businessName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="businessType" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="description" type="xsd:string"/>
+         <xsd:element name="legalEntity" type="INDIVIDUALCUSTOMER.GenesisCrmLegalEntityImpl"/>
+         <xsd:element minOccurs="0" name="naicsCode" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="naicsDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="naicsIndustryGroup" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="naicsSector" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="naicsSubSector" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="numberOfContinuous" type="xsd:long"/>
+         <xsd:element minOccurs="0" name="sicCode" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="sicDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="sicDivision" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="sicIndustry" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCrmBusinessEntityImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="communicationInfo" type="INDIVIDUALCUSTOMER.GenesisCrmCommunicationInfoImpl"/>
+         <xsd:element minOccurs="0" name="details" type="INDIVIDUALCUSTOMER.GenesisCrmBusinessDetailsImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="entityTypes" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="taxExempt" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="taxExemptComment" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCrmChatImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="comment" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="communicationPreferences" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="doNotSolicit" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="preferred" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="type" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+         <xsd:element name="value" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCrmClaimInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="claimFileOwner" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="claimFileOwnerPhone" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="claimId" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="claimants" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="dateOfLoss" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="incurred" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="link" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policyProduct" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="status" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCrmCommunicationInfoImpl">
+      <xsd:sequence>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="addresses" type="INDIVIDUALCUSTOMER.GenesisCrmAddressImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="chats" type="INDIVIDUALCUSTOMER.GenesisCrmChatImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="emails" type="INDIVIDUALCUSTOMER.GenesisCrmEmailImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="phones" type="INDIVIDUALCUSTOMER.GenesisCrmPhoneImpl"/>
+         <xsd:element minOccurs="0" name="preferredContactMethod" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="socialNets" type="INDIVIDUALCUSTOMER.GenesisCrmSocialNetImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="webAddresses" type="INDIVIDUALCUSTOMER.GenesisCrmWebAddressImpl"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCrmEmailImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="comment" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="communicationPreferences" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="consentInfo" type="INDIVIDUALCUSTOMER.GenesisConsentInfoImpl"/>
+         <xsd:element minOccurs="0" name="doNotSolicit" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="preferred" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="type" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+         <xsd:element name="value" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCrmEmploymentDetailsImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="asOfDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="communicationInfo" type="INDIVIDUALCUSTOMER.GenesisCrmCommunicationInfoImpl"/>
+         <xsd:element minOccurs="0" name="employerName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="jobTitleCd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="jobTitleDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="occupationCd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="occupationStatusCd" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCrmGeoCoordImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="coordAccuracy" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="latitude" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="longitude" type="xsd:decimal"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCrmIndividualDetailsImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="citizenship" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="customerInterests" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="deathNotificationReceived" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="designation" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="designationDescription" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="disabilities" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="nickname" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="occupation" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="occupationDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="otherName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="paperless" type="xsd:boolean"/>
+         <xsd:element name="person" type="INDIVIDUALCUSTOMER.GenesisCrmPersonImpl"/>
+         <xsd:element minOccurs="0" name="preferredSpokenLanguage" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="preferredWrittenLanguage" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="registerOnline" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="suffix" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="tobaccoCd" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCrmLegalEntityImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="dateStarted" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="dbaName" type="xsd:string"/>
+         <xsd:element name="legalId" type="xsd:string"/>
+         <xsd:element name="legalName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="publicName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="registryEntityNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="registryTypeId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="taxIdentificationId" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCrmPersonImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="birthDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="deceased" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="deceasedDate" type="xsd:anySimpleType"/>
+         <xsd:element name="firstName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="genderCd" type="xsd:string"/>
+         <xsd:element name="lastName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="maritalStatus" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="middleName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="registryEntityNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="registryTypeId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="salutation" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="taxId" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCrmPhoneImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="comment" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="communicationPreferences" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="consentInfo" type="INDIVIDUALCUSTOMER.GenesisConsentInfoImpl"/>
+         <xsd:element minOccurs="0" name="consentToTextDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="consentToTextStatus" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="countryCd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="doNotSolicit" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="phoneExtension" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="preferred" type="xsd:boolean"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="preferredDaysToContact" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="preferredTimesToContact" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="schedulingContactInfo" type="INDIVIDUALCUSTOMER.GenesisCrmSchedulingContactInfoImpl"/>
+         <xsd:element minOccurs="0" name="type" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+         <xsd:element minOccurs="0" name="value" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCrmProductOwnedImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="carrierNameCd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="carrierNameDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="link" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policyExpirationDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="policyNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policyTypeCd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="productOwnedId" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCrmSchedulingContactInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="effectiveFrom" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="effectiveTo" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="temporary" type="xsd:boolean"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCrmSocialNetImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="comment" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="communicationPreferences" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="doNotSolicit" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="preferred" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="type" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+         <xsd:element name="value" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCrmWebAddressImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="comment" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="communicationPreferences" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="doNotSolicit" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="preferred" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="type" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+         <xsd:element name="value" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCustomerGroupInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="comment" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="groupInfo" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="membershipDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="membershipLevel" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="membershipNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="membershipStatus" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisCustomerRelationshipImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="answer" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="authorisationOption" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="challengeQuestion" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="designatedComment" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="passwordPassphrase" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="passwordReminder" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="relatedCustomer" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="relationshipDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="relationshipType" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="serviceRole" type="xsd:boolean"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="serviceRoleCds" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisIndividualCustomerAdditionalNameImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="description" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="designation" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="firstName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="lastName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="middleName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="salutation" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="suffix" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisLocationImpl">
+      <xsd:sequence>
+         <xsd:element name="addressLine1" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="addressLine2" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="addressLine3" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="addressType" type="xsd:string"/>
+         <xsd:element name="city" type="xsd:string"/>
+         <xsd:element name="countryCd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="geoposition" type="INDIVIDUALCUSTOMER.GenesisCrmGeoCoordImpl"/>
+         <xsd:element minOccurs="0" name="nationalId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="postalCode" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="registryEntityNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="registryTypeId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="stateProvinceCd" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.GenesisParticipationInfoImpl">
+      <xsd:sequence>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="employments" type="INDIVIDUALCUSTOMER.EmploymentDetailsImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="memberships" type="INDIVIDUALCUSTOMER.MembershipDetailsImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="students" type="INDIVIDUALCUSTOMER.StudentDetailsImpl"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.IndividualCustomerImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="accessTrackInfo" type="INDIVIDUALCUSTOMER.GenesisAccessTrackInfoImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="additionalNames" type="INDIVIDUALCUSTOMER.GenesisIndividualCustomerAdditionalNameImpl"/>
+         <xsd:element minOccurs="0" name="associateBusinessEntity" type="xsd:boolean"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="billingInfos" type="INDIVIDUALCUSTOMER.GenesisCrmBillingInfoImpl"/>
+         <xsd:element minOccurs="0" name="brandCd" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="businessEntities" type="INDIVIDUALCUSTOMER.GenesisCrmBusinessEntityImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="claimInfos" type="INDIVIDUALCUSTOMER.GenesisCrmClaimInfoImpl"/>
+         <xsd:element minOccurs="0" name="communicationInfo" type="INDIVIDUALCUSTOMER.GenesisCrmCommunicationInfoImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="customerGroupInfos" type="INDIVIDUALCUSTOMER.GenesisCustomerGroupInfoImpl"/>
+         <xsd:element minOccurs="0" name="customerNumber" type="xsd:string"/>
+         <xsd:element name="details" type="INDIVIDUALCUSTOMER.GenesisCrmIndividualDetailsImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="employmentDetails" type="INDIVIDUALCUSTOMER.GenesisCrmEmploymentDetailsImpl"/>
+         <xsd:element minOccurs="0" name="leadOwner" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="majorAccount" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="majorAccountId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="majorAccountName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="mergedFrom" type="conversionEntityLinkList"/>
+         <xsd:element minOccurs="0" name="mergedTo" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="participationInfo" type="INDIVIDUALCUSTOMER.GenesisParticipationInfoImpl"/>
+         <xsd:element minOccurs="0" name="preferredCurrency" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="productsOwned" type="INDIVIDUALCUSTOMER.GenesisCrmProductOwnedImpl"/>
+         <xsd:element minOccurs="0" name="rating" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="relationships" type="INDIVIDUALCUSTOMER.GenesisCustomerRelationshipImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="segments" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="source" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="sourceDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="splitFrom" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="splitTo" type="conversionEntityLinkList"/>
+         <xsd:element name="state" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="taxExempt" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="taxExemptComment" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.MembershipDetailsCustomerAssociationImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="customerNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="link" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.MembershipDetailsImpl">
+      <xsd:sequence>
+         <xsd:element name="customer" type="INDIVIDUALCUSTOMER.MembershipDetailsCustomerAssociationImpl"/>
+         <xsd:element minOccurs="0" name="memberId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="membershipId" type="xsd:string"/>
+         <xsd:element name="membershipStartDate" type="xsd:anySimpleType"/>
+         <xsd:element name="membershipStatus" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.StudentDetailsCustomerAssociationImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="customerNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="link" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="INDIVIDUALCUSTOMER.StudentDetailsImpl">
+      <xsd:sequence>
+         <xsd:element name="customer" type="INDIVIDUALCUSTOMER.StudentDetailsCustomerAssociationImpl"/>
+         <xsd:element minOccurs="0" name="divisionId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="fieldOfStudy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="studentAthlete" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="studentId" type="xsd:string"/>
+         <xsd:element name="studentStartDate" type="xsd:anySimpleType"/>
+         <xsd:element name="studentStatus" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="studentType" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="Opportunity.GenesisAccessTrackInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="createdBy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="createdOn" type="xsd:dateTime"/>
+         <xsd:element minOccurs="0" name="updatedBy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="Opportunity.GenesisEntityAssociationImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="actualPremium" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="entityNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="link" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="Opportunity.GenesisOpportunityImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="accessTrackInfo" type="Opportunity.GenesisAccessTrackInfoImpl"/>
+         <xsd:element minOccurs="0" name="agency" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="associations" type="Opportunity.GenesisEntityAssociationImpl"/>
+         <xsd:element minOccurs="0" name="campaignId" type="xsd:string"/>
+         <xsd:element name="channel" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="closeReason" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="closeReasonDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="description" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="effectiveDate" type="xsd:anySimpleType"/>
+         <xsd:element name="likelihood" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="opportunityId" type="xsd:string"/>
+         <xsd:choice>
+            <xsd:element minOccurs="0" name="owner.GenesisWorkQueue" type="Opportunity.GenesisWorkQueueImpl"/>
+            <xsd:element minOccurs="0" name="owner.GenesisUserOwner" type="Opportunity.GenesisUserOwnerImpl"/>
+         </xsd:choice>
+         <xsd:element minOccurs="0" name="potential" type="xsd:decimal"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="products" type="Opportunity.GenesisOpportunityProductInfoImpl"/>
+         <xsd:element minOccurs="0" name="referral" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="state" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="Opportunity.GenesisOpportunityProductInfoImpl">
+      <xsd:sequence>
+         <xsd:element name="lineOfBusiness" type="xsd:string"/>
+         <xsd:element name="productCd" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="Opportunity.GenesisUserOwnerImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="link" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="Opportunity.GenesisWorkQueueImpl">
+      <xsd:sequence>
+         <xsd:element name="name" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="OrganizationAgencyContainer.GenesisAccessTrackInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="createdBy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="createdOn" type="xsd:dateTime"/>
+         <xsd:element minOccurs="0" name="updatedBy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="OrganizationAgencyContainer.GenesisCrmAddressImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="addressType" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="addressValidatedInd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="attention" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="comment" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="communicationPreferences" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="county" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="doNotSolicit" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="inCareOf" type="xsd:string"/>
+         <xsd:element name="location" type="OrganizationAgencyContainer.GenesisLocationImpl"/>
+         <xsd:element minOccurs="0" name="preferred" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="referenceId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="schedulingContactInfo" type="OrganizationAgencyContainer.GenesisCrmSchedulingContactInfoImpl"/>
+         <xsd:element minOccurs="0" name="subdivision" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="OrganizationAgencyContainer.GenesisCrmBillingInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="billingAccount" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="currentDueAmount" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="currentDueDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="link" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="totalPaid" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="unpaidBalance" type="xsd:decimal"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="OrganizationAgencyContainer.GenesisCrmClaimInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="claimFileOwner" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="claimFileOwnerPhone" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="claimId" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="claimants" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="dateOfLoss" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="incurred" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="link" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policyProduct" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="status" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="OrganizationAgencyContainer.GenesisCrmGeoCoordImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="coordAccuracy" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="latitude" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="longitude" type="xsd:decimal"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="OrganizationAgencyContainer.GenesisCrmProductOwnedImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="carrierNameCd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="carrierNameDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="link" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policyExpirationDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="policyNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policyTypeCd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="productOwnedId" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="OrganizationAgencyContainer.GenesisCrmSchedulingContactInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="effectiveFrom" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="effectiveTo" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="temporary" type="xsd:boolean"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="OrganizationAgencyContainer.GenesisCustomerRelationshipImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="answer" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="authorisationOption" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="challengeQuestion" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="designatedComment" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="passwordPassphrase" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="passwordReminder" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="relatedCustomer" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="relationshipDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="relationshipType" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="serviceRole" type="xsd:boolean"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="serviceRoleCds" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="OrganizationAgencyContainer.GenesisLocationImpl">
+      <xsd:sequence>
+         <xsd:element name="addressLine1" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="addressLine2" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="addressLine3" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="addressType" type="xsd:string"/>
+         <xsd:element name="city" type="xsd:string"/>
+         <xsd:element name="countryCd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="geoposition" type="OrganizationAgencyContainer.GenesisCrmGeoCoordImpl"/>
+         <xsd:element minOccurs="0" name="nationalId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="postalCode" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="registryEntityNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="registryTypeId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="stateProvinceCd" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="OrganizationAgencyContainer.GenesisOrganizationAgencyContainerImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="accessTrackInfo" type="OrganizationAgencyContainer.GenesisAccessTrackInfoImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="addresses" type="OrganizationAgencyContainer.GenesisCrmAddressImpl"/>
+         <xsd:element name="agency" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="billingsInfo" type="OrganizationAgencyContainer.GenesisCrmBillingInfoImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="claimsInfo" type="OrganizationAgencyContainer.GenesisCrmClaimInfoImpl"/>
+         <xsd:element minOccurs="0" name="customer" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="paperless" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="preferredSpokenLanguage" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="preferredWrittenLanguage" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="productsOwned" type="OrganizationAgencyContainer.GenesisCrmProductOwnedImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="relationships" type="OrganizationAgencyContainer.GenesisCustomerRelationshipImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="segments" type="xsd:string"/>
+         <xsd:element name="state" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisAccessTrackInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="createdBy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="createdOn" type="xsd:dateTime"/>
+         <xsd:element minOccurs="0" name="updatedBy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisConsentInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="consentDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="consentStatus" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisCrmAddressImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="addressValidatedInd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="attention" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="comment" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="communicationPreferences" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="county" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="doNotSolicit" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="inCareOf" type="xsd:string"/>
+         <xsd:element name="location" type="ORGANIZATIONCUSTOMER.GenesisLocationImpl"/>
+         <xsd:element minOccurs="0" name="preferred" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="referenceId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="schedulingContactInfo" type="ORGANIZATIONCUSTOMER.GenesisCrmSchedulingContactInfoImpl"/>
+         <xsd:element minOccurs="0" name="subdivision" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisCrmBillingInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="billingAccount" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="currentDueAmount" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="currentDueDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="link" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="totalPaid" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="unpaidBalance" type="xsd:decimal"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisCrmBusinessDetailsImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="businessName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="businessType" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="description" type="xsd:string"/>
+         <xsd:element name="legalEntity" type="ORGANIZATIONCUSTOMER.GenesisCrmLegalEntityImpl"/>
+         <xsd:element minOccurs="0" name="naicsCode" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="naicsDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="naicsIndustryGroup" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="naicsSector" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="naicsSubSector" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="numberOfContinuous" type="xsd:long"/>
+         <xsd:element minOccurs="0" name="paperless" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="preferredSpokenLanguage" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="preferredWrittenLanguage" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="registerOnline" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="sicCode" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="sicDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="sicDivision" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="sicIndustry" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisCrmChatImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="comment" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="communicationPreferences" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="doNotSolicit" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="preferred" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="type" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+         <xsd:element name="value" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisCrmClaimInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="claimFileOwner" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="claimFileOwnerPhone" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="claimId" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="claimants" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="dateOfLoss" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="incurred" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="link" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policyProduct" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="status" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisCrmCommunicationInfoImpl">
+      <xsd:sequence>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="addresses" type="ORGANIZATIONCUSTOMER.GenesisCrmAddressImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="chats" type="ORGANIZATIONCUSTOMER.GenesisCrmChatImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="emails" type="ORGANIZATIONCUSTOMER.GenesisCrmEmailImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="phones" type="ORGANIZATIONCUSTOMER.GenesisCrmPhoneImpl"/>
+         <xsd:element minOccurs="0" name="preferredContactMethod" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="socialNets" type="ORGANIZATIONCUSTOMER.GenesisCrmSocialNetImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="webAddresses" type="ORGANIZATIONCUSTOMER.GenesisCrmWebAddressImpl"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisCrmDivisionImpl">
+      <xsd:sequence>
+         <xsd:element name="billingMethod" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="communicationInfo" type="ORGANIZATIONCUSTOMER.GenesisCrmCommunicationInfoImpl"/>
+         <xsd:element name="divisionName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="divisionNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="effectiveDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="expirationDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="numberOfInsureds" type="xsd:long"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisCrmEmailImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="comment" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="communicationPreferences" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="consentInfo" type="ORGANIZATIONCUSTOMER.GenesisConsentInfoImpl"/>
+         <xsd:element minOccurs="0" name="doNotSolicit" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="preferred" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="type" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+         <xsd:element name="value" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisCrmGeoCoordImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="coordAccuracy" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="latitude" type="xsd:decimal"/>
+         <xsd:element minOccurs="0" name="longitude" type="xsd:decimal"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisCrmLegalEntityImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="dateStarted" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="dbaName" type="xsd:string"/>
+         <xsd:element name="legalId" type="xsd:string"/>
+         <xsd:element name="legalName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="publicName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="registryEntityNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="registryTypeId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="taxIdentificationId" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisCrmPhoneImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="comment" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="communicationPreferences" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="consentInfo" type="ORGANIZATIONCUSTOMER.GenesisConsentInfoImpl"/>
+         <xsd:element minOccurs="0" name="consentToTextDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="consentToTextStatus" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="countryCd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="doNotSolicit" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="phoneExtension" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="preferred" type="xsd:boolean"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="preferredDaysToContact" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="preferredTimesToContact" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="schedulingContactInfo" type="ORGANIZATIONCUSTOMER.GenesisCrmSchedulingContactInfoImpl"/>
+         <xsd:element minOccurs="0" name="type" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+         <xsd:element minOccurs="0" name="value" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisCrmProductOwnedImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="carrierNameCd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="carrierNameDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="link" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policyExpirationDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="policyNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="policyTypeCd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="productOwnedId" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisCrmSchedulingContactInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="effectiveFrom" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="effectiveTo" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="temporary" type="xsd:boolean"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisCrmSocialNetImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="comment" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="communicationPreferences" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="doNotSolicit" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="preferred" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="type" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+         <xsd:element name="value" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisCrmWebAddressImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="comment" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="communicationPreferences" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="doNotSolicit" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="preferred" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="type" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+         <xsd:element name="value" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisCustomerGroupInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="comment" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="groupInfo" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="membershipDate" type="xsd:anySimpleType"/>
+         <xsd:element minOccurs="0" name="membershipLevel" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="membershipNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="membershipStatus" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisCustomerRelationshipImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="answer" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="authorisationOption" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="challengeQuestion" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="designatedComment" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="passwordPassphrase" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="passwordReminder" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="relatedCustomer" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="relationshipDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="relationshipType" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="serviceRole" type="xsd:boolean"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="serviceRoleCds" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisLocationImpl">
+      <xsd:sequence>
+         <xsd:element name="addressLine1" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="addressLine2" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="addressLine3" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="addressType" type="xsd:string"/>
+         <xsd:element name="city" type="xsd:string"/>
+         <xsd:element name="countryCd" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="geoposition" type="ORGANIZATIONCUSTOMER.GenesisCrmGeoCoordImpl"/>
+         <xsd:element minOccurs="0" name="nationalId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="postalCode" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="registryEntityNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="registryTypeId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="stateProvinceCd" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.GenesisOrganizationAdditionalNameImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="dbaName" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="ORGANIZATIONCUSTOMER.OrganizationCustomerImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="accessTrackInfo" type="ORGANIZATIONCUSTOMER.GenesisAccessTrackInfoImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="additionalNames" type="ORGANIZATIONCUSTOMER.GenesisOrganizationAdditionalNameImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="billingInfos" type="ORGANIZATIONCUSTOMER.GenesisCrmBillingInfoImpl"/>
+         <xsd:element minOccurs="0" name="brandCd" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="claimInfos" type="ORGANIZATIONCUSTOMER.GenesisCrmClaimInfoImpl"/>
+         <xsd:element minOccurs="0" name="communicationInfo" type="ORGANIZATIONCUSTOMER.GenesisCrmCommunicationInfoImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="customerGroupInfos" type="ORGANIZATIONCUSTOMER.GenesisCustomerGroupInfoImpl"/>
+         <xsd:element minOccurs="0" name="customerNumber" type="xsd:string"/>
+         <xsd:element name="details" type="ORGANIZATIONCUSTOMER.GenesisCrmBusinessDetailsImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="divisions" type="ORGANIZATIONCUSTOMER.GenesisCrmDivisionImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="entityTypes" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="groupSponsor" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="leadOwner" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="majorAccount" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="majorAccountId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="majorAccountName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="mergedFrom" type="conversionEntityLinkList"/>
+         <xsd:element minOccurs="0" name="mergedTo" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="numberOfEmployees" type="xsd:long"/>
+         <xsd:element minOccurs="0" name="preferredCurrency" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="productsOwned" type="ORGANIZATIONCUSTOMER.GenesisCrmProductOwnedImpl"/>
+         <xsd:element minOccurs="0" name="rating" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="referenceCategories" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="referenceComment" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="relationships" type="ORGANIZATIONCUSTOMER.GenesisCustomerRelationshipImpl"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="segments" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="source" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="sourceDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="splitFrom" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="splitTo" type="conversionEntityLinkList"/>
+         <xsd:element name="state" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="taxExempt" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="taxExemptComment" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="useAsReference" type="xsd:boolean"/>
+      </xsd:sequence>
+   </xsd:complexType>
+</xsd:schema>

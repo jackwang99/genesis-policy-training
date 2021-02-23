@@ -1,0 +1,10 @@
+[
+  {
+    "code": "category1",
+    "defaultValue": "Category1"
+  },
+  {
+    "code": "category2",
+    "defaultValue": "Category2"
+  }
+]

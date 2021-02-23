@@ -1,0 +1,30 @@
+[
+  {
+    "code": "ACT",
+    "defaultValue": "Active"
+  },
+  {
+    "code": "DEC",
+    "defaultValue": "Deceased"
+  },
+  {
+    "code": "INA",
+    "defaultValue": "Inactive"
+  },
+  {
+    "code": "LWOP",
+    "defaultValue": "Leave without Pay"
+  },
+  {
+    "code": "LWP",
+    "defaultValue": "Leave with Pay"
+  },
+  {
+    "code": "RET",
+    "defaultValue": "Retired"
+  },
+  {
+    "code": "TER",
+    "defaultValue": "Terminated"
+  }
+]

@@ -1,0 +1,39 @@
+Export Customer {
+    Report Customer.Customer
+    Default Ignore
+
+    // Main
+    Attribute state to status
+    Attribute customerNumber
+    Attribute brandCd
+    Attribute preferredContactMethod
+    Attribute preferredWrittenLanguage
+    Attribute deathNotificationReceived
+    Attribute fullName
+    Attribute birthDate
+    Attribute maritalStatus
+    Attribute genderCd
+
+    // Address
+    Attribute Address.countryCd to countryCd
+    Attribute Address.stateProvinceCd to stateProvinceCd
+    Attribute Address.postalCode to postalCode
+    Attribute Address.city to city
+    Attribute Address.addressLine1 to addressLine1
+    Attribute Address.addressLine2 to addressLine2
+    Attribute Address.addressLine3 to addressLine3
+
+    // Phone
+    Attribute Phone.phoneType to phoneType
+    Attribute Phone.phoneNumber to phoneNumber
+    Attribute Phone.consentDate to consentDate
+    Attribute Phone.consentStatus to consentStatus
+
+    // Joins
+    Join Address on {
+        rootId eq rootId
+    }
+    Join Phone on {
+        rootId eq rootId
+    }
+}

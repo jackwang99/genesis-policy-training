@@ -1,0 +1,8 @@
+Namespace FleetAuto
+
+Include Base
+
+Rule "AutoPolicyDetail-180725-70W11j" On AutoPolicyDetail.manualRenew {
+  When Count(TripInterruptionEndorsement) > 0
+  Reset To true
+}

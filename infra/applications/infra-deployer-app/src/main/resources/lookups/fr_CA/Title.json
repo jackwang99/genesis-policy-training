@@ -1,0 +1,354 @@
+[
+  {
+    "code": "1",
+    "defaultValue": "Docteur"
+  },
+  {
+    "code": "10",
+    "defaultValue": "Chef"
+  },
+  {
+    "code": "11",
+    "defaultValue": "Colonel"
+  },
+  {
+    "code": "12",
+    "defaultValue": "Le commandant"
+  },
+  {
+    "code": "13",
+    "defaultValue": "Commodore"
+  },
+  {
+    "code": "14",
+    "defaultValue": "Dame"
+  },
+  {
+    "code": "15",
+    "defaultValue": "Lieutenant d'aviation"
+  },
+  {
+    "code": "16",
+    "defaultValue": "Général"
+  },
+  {
+    "code": "17",
+    "defaultValue": "Honorable"
+  },
+  {
+    "code": "18",
+    "defaultValue": "Juge"
+  },
+  {
+    "code": "19",
+    "defaultValue": "Dame"
+  },
+  {
+    "code": "2",
+    "defaultValue": "Mademoiselle"
+  },
+  {
+    "code": "20",
+    "defaultValue": "Lieutenant"
+  },
+  {
+    "code": "21",
+    "defaultValue": "Seigneur"
+  },
+  {
+    "code": "22",
+    "defaultValue": "Majeur"
+  },
+  {
+    "code": "23",
+    "defaultValue": "Maîtriser"
+  },
+  {
+    "code": "24",
+    "defaultValue": "Professeur"
+  },
+  {
+    "code": "25",
+    "defaultValue": "Chef d'escadron"
+  },
+  {
+    "code": "26",
+    "defaultValue": "Commandant de l'aile"
+  },
+  {
+    "code": "27",
+    "defaultValue": "Frère"
+  },
+  {
+    "code": "28",
+    "defaultValue": "Conseiller"
+  },
+  {
+    "code": "29",
+    "defaultValue": "Rabbin"
+  },
+  {
+    "code": "3",
+    "defaultValue": "M"
+  },
+  {
+    "code": "30",
+    "defaultValue": "Sœur"
+  },
+  {
+    "code": "31",
+    "defaultValue": "Le très honorable"
+  },
+  {
+    "code": "32",
+    "defaultValue": "Bon Révérend"
+  },
+  {
+    "code": "33",
+    "defaultValue": "Très révérend"
+  },
+  {
+    "code": "34",
+    "defaultValue": "Exécuteur (s) de"
+  },
+  {
+    "code": "35",
+    "defaultValue": "Père"
+  },
+  {
+    "code": "36",
+    "defaultValue": "Mère"
+  },
+  {
+    "code": "37",
+    "defaultValue": "Un t'Uasal"
+  },
+  {
+    "code": "38",
+    "defaultValue": "Haricot"
+  },
+  {
+    "code": "39",
+    "defaultValue": "Air Chief Maréchal"
+  },
+  {
+    "code": "4",
+    "defaultValue": "Madame"
+  },
+  {
+    "code": "40",
+    "defaultValue": "Amiral"
+  },
+  {
+    "code": "41",
+    "defaultValue": "Commodore de l'air"
+  },
+  {
+    "code": "42",
+    "defaultValue": "Aviateur"
+  },
+  {
+    "code": "43",
+    "defaultValue": "Police de l'air"
+  },
+  {
+    "code": "44",
+    "defaultValue": "Vice-maréchal de l'air"
+  },
+  {
+    "code": "45",
+    "defaultValue": "Bombardier"
+  },
+  {
+    "code": "46",
+    "defaultValue": "Canon"
+  },
+  {
+    "code": "47",
+    "defaultValue": "Corporel"
+  },
+  {
+    "code": "48",
+    "defaultValue": "doyen"
+  },
+  {
+    "code": "49",
+    "defaultValue": "Maréchal"
+  },
+  {
+    "code": "5",
+    "defaultValue": "Mme"
+  },
+  {
+    "code": "50",
+    "defaultValue": "Sergent de section"
+  },
+  {
+    "code": "51",
+    "defaultValue": "Capitaine de groupe"
+  },
+  {
+    "code": "52",
+    "defaultValue": "Canonnier"
+  },
+  {
+    "code": "53",
+    "defaultValue": "Lance Bombardier"
+  },
+  {
+    "code": "54",
+    "defaultValue": "lieutenant colonel"
+  },
+  {
+    "code": "55",
+    "defaultValue": "Caporal"
+  },
+  {
+    "code": "56",
+    "defaultValue": "lieutenant général"
+  },
+  {
+    "code": "57",
+    "defaultValue": "Privé"
+  },
+  {
+    "code": "58",
+    "defaultValue": "Amiral arrière"
+  },
+  {
+    "code": "59",
+    "defaultValue": "Sergent-major régimentaire"
+  },
+  {
+    "code": "6",
+    "defaultValue": "Révérend"
+  },
+  {
+    "code": "60",
+    "defaultValue": "Sergent"
+  },
+  {
+    "code": "61",
+    "defaultValue": "Sergent-chef"
+  },
+  {
+    "code": "62",
+    "defaultValue": "Adjudant 1"
+  },
+  {
+    "code": "63",
+    "defaultValue": "Adjudant 2"
+  },
+  {
+    "code": "64",
+    "defaultValue": "Sergent-chef"
+  },
+  {
+    "code": "65",
+    "defaultValue": "Vicomte"
+  },
+  {
+    "code": "66",
+    "defaultValue": "Le plus révérend"
+  },
+  {
+    "code": "67",
+    "defaultValue": "Le Vénérable"
+  },
+  {
+    "code": "68",
+    "defaultValue": "Baron"
+  },
+  {
+    "code": "69",
+    "defaultValue": "Baronne"
+  },
+  {
+    "code": "7",
+    "defaultValue": "Monsieur"
+  },
+  {
+    "code": "70",
+    "defaultValue": "Cardinal"
+  },
+  {
+    "code": "71",
+    "defaultValue": "Compter"
+  },
+  {
+    "code": "72",
+    "defaultValue": "Comtesse"
+  },
+  {
+    "code": "73",
+    "defaultValue": "L'honorable dame"
+  },
+  {
+    "code": "74",
+    "defaultValue": "L'Honorable Mme"
+  },
+  {
+    "code": "75",
+    "defaultValue": "L'honorable monsieur"
+  },
+  {
+    "code": "76",
+    "defaultValue": "lieutenant-commandant"
+  },
+  {
+    "code": "77",
+    "defaultValue": "Prévôt"
+  },
+  {
+    "code": "78",
+    "defaultValue": "Vicomtesse"
+  },
+  {
+    "code": "79",
+    "defaultValue": "Monsieur le juge"
+  },
+  {
+    "code": "8",
+    "defaultValue": "Brigadier"
+  },
+  {
+    "code": "80",
+    "defaultValue": "Prince"
+  },
+  {
+    "code": "81",
+    "defaultValue": "Cheik"
+  },
+  {
+    "code": "82",
+    "defaultValue": "Le comte de"
+  },
+  {
+    "code": "83",
+    "defaultValue": "Le duc de"
+  },
+  {
+    "code": "84",
+    "defaultValue": "Le marquis de"
+  },
+  {
+    "code": "85",
+    "defaultValue": "Major général"
+  },
+  {
+    "code": "86",
+    "defaultValue": "L'honorable Mlle"
+  },
+  {
+    "code": "87",
+    "defaultValue": "Propriété de"
+  },
+  {
+    "code": "88",
+    "defaultValue": "Syndics de"
+  },
+  {
+    "code": "9",
+    "defaultValue": "Capitaine"
+  }
+]

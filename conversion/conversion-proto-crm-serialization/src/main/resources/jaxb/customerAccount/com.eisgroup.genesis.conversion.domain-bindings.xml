@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xml-bindings
+        xmlns="http://www.eclipse.org/eclipselink/xsds/persistence/oxm"
+        package-name="com.eisgroup.genesis.conversion.domain"
+        xml-accessor-type="PROPERTY" xml-accessor-order="ALPHABETICAL">
+
+    <java-types>     
+        <java-type name="ConversionReaderModel">
+        	<xml-root-element></xml-root-element>
+            <java-attributes>
+                <xml-elements java-attribute="rootEntities" container-type="java.util.ArrayList">
+                    <xml-element name="customerAccount" type="com.eisgroup.genesis.factory.model.customeraccount.impl.GenesisCustomerAccountImpl" />
+
+					<xml-element name="individualCustomer" type="com.eisgroup.genesis.factory.model.individualcustomer.impl.IndividualCustomerImpl" />
+					<xml-element name="organizationCustomer" type="com.eisgroup.genesis.factory.model.organizationcustomer.impl.OrganizationCustomerImpl" />
+					<xml-element name="opportunity" type="com.eisgroup.genesis.factory.model.opportunity.impl.GenesisOpportunityImpl" />
+					<xml-element name="individualAgencyContainer" type="com.eisgroup.genesis.factory.model.individualagencycontainer.impl.GenesisIndividualAgencyContainerImpl" />
+					<xml-element name="organizationAgencyContainer" type="com.eisgroup.genesis.factory.model.organizationagencycontainer.impl.GenesisOrganizationAgencyContainerImpl" />
+				</xml-elements>
+            </java-attributes>
+        </java-type>
+   </java-types>
+</xml-bindings>

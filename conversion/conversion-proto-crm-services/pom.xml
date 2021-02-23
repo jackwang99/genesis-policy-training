@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>conversion-proto-pom</artifactId>
+        <groupId>com.eisgroup.genesis.proto</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>conversion-proto-crm-services</artifactId>
+    <name>Conversion Prototypes CRM Services</name>
+    <description>Conversion Prototypes CRM Services Module</description>
+    <packaging>jar</packaging>
+
+    <dependencies>
+
+        <!-- Conversion Bundle -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.conversion</groupId>
+            <artifactId>conversion-bundle</artifactId>
+            <classifier>crm-services</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <!-- Genesis Dependencies -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.customer</groupId>
+            <artifactId>crm-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.customeraccount</groupId>
+            <artifactId>account-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.individual</groupId>
+            <artifactId>individual-domain</artifactId>
+        </dependency>
+
+        <!-- Test Dependencies -->       
+         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.utils</groupId>
+            <artifactId>testing-utils</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

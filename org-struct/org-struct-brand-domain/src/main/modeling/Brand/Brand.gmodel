@@ -1,0 +1,7 @@
+Model Brand
+Root BrandEntity
+
+ModelType OrgStruct
+
+Stored using [ModelName]
+Indexed using ['brand']

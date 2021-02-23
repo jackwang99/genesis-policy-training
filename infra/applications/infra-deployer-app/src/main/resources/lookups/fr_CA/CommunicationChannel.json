@@ -1,0 +1,58 @@
+[
+  {
+    "code": "AGENCY_OFFICE",
+    "defaultValue": "Bureau de l'agence"
+  },
+  {
+    "code": "APPOINTMENT",
+    "defaultValue": "Rendez-vous"
+  },
+  {
+    "code": "BULLETIN",
+    "defaultValue": "Bulletin"
+  },
+  {
+    "code": "CALL",
+    "defaultValue": "Appel"
+  },
+  {
+    "code": "CALL_CENTER",
+    "defaultValue": "Centre d'appel"
+  },
+  {
+    "code": "CHAT",
+    "defaultValue": "Bavarder"
+  },
+  {
+    "code": "EMAIL",
+    "defaultValue": "Email"
+  },
+  {
+    "code": "MAIL",
+    "defaultValue": "Courrier"
+  },
+  {
+    "code": "MOBILE",
+    "defaultValue": "Mobile"
+  },
+  {
+    "code": "MOBILE_ALERT",
+    "defaultValue": "Alerte mobile"
+  },
+  {
+    "code": "MOBILE_SELF_SERVICE",
+    "defaultValue": "Mobile Self Service"
+  },
+  {
+    "code": "SMS",
+    "defaultValue": "SMS"
+  },
+  {
+    "code": "WEB",
+    "defaultValue": "Web"
+  },
+  {
+    "code": "WEB_SELF_SERVICE",
+    "defaultValue": "Web Self Service"
+  }
+]

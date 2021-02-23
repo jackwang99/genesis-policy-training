@@ -1,0 +1,11 @@
+{
+  "vehicleBaseDetails": {
+    "model": "X5",
+    "modelYear": 2013,
+    "justMoney": {
+      "amount": 2000,
+      "currency": "USD"
+    },
+    "_type": "TestAutoType"
+  }
+}

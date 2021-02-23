@@ -1,0 +1,22 @@
+[
+  {
+    "code": "AUDIOEQ",
+    "defaultValue": "Audio Equipment"
+  },
+  {
+    "code": "HANDEQ",
+    "defaultValue": "Handicap Equipment"
+  },
+  {
+    "code": "OTHREQ",
+    "defaultValue": "Other Equipment"
+  },
+  {
+    "code": "PROPEQ",
+    "defaultValue": "Propane Equipment"
+  },
+  {
+    "code": "VIDEOEQ",
+    "defaultValue": "Video Equipment"
+  }
+]

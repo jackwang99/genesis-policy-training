@@ -1,0 +1,14 @@
+Model GarageAuto
+Version 1
+Root GarageAutoPolicySummary
+ModelType Policy
+
+Stored using [ModelName, Variation]
+Indexed using ['policy']
+
+Variation quote
+Variation policy
+Variation archivedQuote
+Variation archivedPolicy
+Variation legacyPolicy
+Variation archivedLegacyPolicy

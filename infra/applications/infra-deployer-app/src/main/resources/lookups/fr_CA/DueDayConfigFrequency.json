@@ -1,0 +1,30 @@
+[
+  {
+    "code": "1",
+    "defaultValue": "1er"
+  },
+  {
+    "code": "13",
+    "defaultValue": "1er et 3ème"
+  },
+  {
+    "code": "2",
+    "defaultValue": "2ème"
+  },
+  {
+    "code": "24",
+    "defaultValue": "2ème et 4ème"
+  },
+   {
+    "code": "3",
+    "defaultValue": "3ème"
+  },
+  {
+    "code": "4",
+    "defaultValue": "4ème"
+  },
+  {
+    "code": "5",
+    "defaultValue": "Dernier"
+  }
+]

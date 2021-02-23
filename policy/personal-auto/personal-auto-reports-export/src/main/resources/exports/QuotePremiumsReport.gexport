@@ -1,0 +1,11 @@
+Export QuotePremiumsReport {
+    Report QuotePremiumsReport.Quote
+    Default Ignore
+
+    Attribute termPremium to premium
+    Attribute quoteInitiationDate to initDate
+    Attribute updatedOn
+    Attribute rootId
+    Attribute revisionNo
+    Attribute quoteNumber
+}

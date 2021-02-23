@@ -1,0 +1,12 @@
+[
+  {
+    "code": "ABR",
+    "vin_antiLockCode": "S",
+    "defaultValue": "REMISE DE FREINS ANTILOCK"
+  },
+  {
+    "code": "NO DISCOUNT",
+    "vin_antiLockCode": "N",
+    "defaultValue": "PAS DE RABAIS"
+  }
+]

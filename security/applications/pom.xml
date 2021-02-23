@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>security-pom</artifactId>
+        <groupId>com.eisgroup.genesis.proto</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>security-applications-pom</artifactId>
+    <groupId>com.eisgroup.genesis.proto.security.applications</groupId>
+    <packaging>pom</packaging>
+
+    <name>Security Prototype Applications Parent</name>
+    <description>Security Prototype Applications Parent Module</description>
+    
+    <modules>
+        <module>security-facade-app</module>
+        <module>security-facade-app/model</module>
+        <module>security-deployer-app</module>
+        <module>security-events-app</module>
+        <module>security-app-suite</module>
+        <module>security-commands-app</module>
+    </modules>
+
+</project>

@@ -1,0 +1,22 @@
+[
+  {
+    "code": "closed",
+    "defaultValue": "Closed"
+  },
+  {
+    "code": "draft",
+    "defaultValue": "Draft"
+  },
+  {
+    "code": "inactive",
+    "defaultValue": "Inactive"
+  },
+  {
+    "code": "inPipeline",
+    "defaultValue": "In Pipeline"
+  },
+  {
+    "code": "quoted",
+    "defaultValue": "Quoted"
+  }
+]

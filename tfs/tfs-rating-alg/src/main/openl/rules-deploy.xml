@@ -1,0 +1,15 @@
+<rules-deploy>
+  <isProvideRuntimeContext>false</isProvideRuntimeContext>
+  <isProvideVariations>false</isProvideVariations>
+  <useRuleServiceRuntimeContext>false</useRuleServiceRuntimeContext>
+  <serviceName>tfs-rating-rules</serviceName>
+
+  <publishers>
+    <publisher>RESTFUL</publisher>
+  </publishers>
+
+  <!--interceptingTemplateClassName>com.eisgroup.genesis.tfs.calculation.TfsPolicyRatingService</interceptingTemplateClassName-->
+
+  <url>com.eisgroup.genesis.tfs.calculation.TfsPolicyRatingService</url>
+
+</rules-deploy>

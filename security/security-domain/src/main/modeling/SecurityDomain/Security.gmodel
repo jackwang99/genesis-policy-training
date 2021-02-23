@@ -1,0 +1,7 @@
+Model Security
+Root GenesisSecurityDomain
+
+ModelType SecurityDomain
+
+Stored using ['security']
+Indexed using ['securitydomain']

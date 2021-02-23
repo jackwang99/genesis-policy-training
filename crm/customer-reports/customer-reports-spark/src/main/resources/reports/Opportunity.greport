@@ -1,0 +1,36 @@
+Model CustomerReports
+
+Import Model Opportunity
+Import Model OrganizationalPerson
+
+Report Opportunity from Opportunity {
+
+    Attr updatedOn is _timestamp
+    Attr createdOn is accessTrackInfo.createdOn
+    Attr state
+    Attr opportunityId
+    Attr description
+    Attr closeReason
+    Attr channel
+    Attr likelihood
+    Attr owner is Employee.securityIdentity
+    Attr potential
+    Attr customerId is Last(ExtLinkAsId(associations.link))
+    Attr campaignId
+
+    Ref OpportunityEntity is associations {
+      Attr updatedOn is Opportunity._timestamp
+      Attr entityNumber is entityNumber
+      Attr entityType is ExtLinkAsType(link)
+      Attr actualPremium is actualPremium
+    }
+
+    Ref OpportunityProduct is products {
+      Attr updatedOn is Opportunity._timestamp
+      Attr productCd is productCd
+    }
+
+    Join Employee using ModeledLink {
+      linkAttribute == owner.link
+    }
+}

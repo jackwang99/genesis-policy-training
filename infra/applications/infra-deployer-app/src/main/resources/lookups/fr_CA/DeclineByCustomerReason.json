@@ -1,0 +1,14 @@
+[
+  {
+    "code": "price",
+    "defaultValue": "Prix trop élevé"
+  },
+  {
+    "code": "cnotc",
+    "defaultValue": "Des couvertures non compétitives"
+  },
+  {
+    "code": "other",
+    "defaultValue": "Autre"
+  }
+]

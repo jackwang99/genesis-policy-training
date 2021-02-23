@@ -1,0 +1,107 @@
+{
+  "flow": [
+    {
+      "type":"command",
+      "operations":[
+        {
+          "commandName":"write",
+          "variation":"quote",
+          "modelName":"PersonalAuto",
+          "body":{
+            "quote":"$.quote"
+          },
+          "flowRequestId":{
+            "_key":"$.quote._key"
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "operations": [
+        {
+          "commandName": "synchronizeOption",
+          "variation": "quote",
+          "modelName": "PersonalAuto",
+          "body": {
+            "_key": {
+              "rootId": "$.data._key.rootId",
+              "revisionNo": "$.data._key.revisionNo"
+            }
+          },
+          "flowRequestId": {
+            "_key": "$.data._key"
+          }
+        }
+      ]
+    },
+    {
+      "type": "facade",
+      "operations": [
+        {
+          "facade": {
+            "name": "quotePlanVersion",
+            "endpoint": "/load/{rootId}",
+            "method": "GET"
+          },
+          "pathParams": {
+            "modelName":"PersonalAuto",
+            "modelVersion": "1",
+            "rootId": "$.data._key.rootId"
+          },
+          "body": {
+          },
+          "flowRequestId": {
+            "_key": "$.data._key"
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "operations": [
+        {
+          "commandName": "rate",
+          "variation": "quote",
+          "modelName": "PersonalAuto",
+          "body": {
+            "_key": {
+              "rootId": "$._key.rootId",
+              "revisionNo": "$._key.revisionNo"
+            }
+          },
+          "flowRequestId": {
+            "_key": "$._key"
+          }
+        }
+      ]
+    },
+    {
+      "type": "facade",
+      "operations": [
+        {
+          "facade": {
+            "name": "load",
+            "endpoint": "/{variation}/{rootId}/{revisionNo}",
+            "method": "UNDETERMINED"
+          },
+          "pathParams": {
+            "modelName":"PersonalAuto",
+            "modelVersion": "1",
+            "variation": "quote",
+            "rootId": "$.data._key.rootId",
+            "revisionNo": "$.data._key.revisionNo"
+          },
+          "queryParams": {
+            "embed": "*,premiums"
+          },
+          "body": {
+          },
+          "flowRequestId": {
+            "_key": "$.data._key"
+          }
+        }
+      ]
+    }
+  ]
+}

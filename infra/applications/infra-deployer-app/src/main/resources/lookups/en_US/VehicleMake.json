@@ -1,0 +1,250 @@
+[
+  {
+    "code": "acura",
+    "defaultValue": "Acura"
+  },
+  {
+    "code": "alfa-romeo",
+    "defaultValue": "Alfa Romeo"
+  },
+  {
+    "code": "am-general",
+    "defaultValue": "AM General"
+  },
+  {
+    "code": "aston-martin",
+    "defaultValue": "Aston Martin"
+  },
+  {
+    "code": "audi",
+    "defaultValue": "Audi"
+  },
+  {
+    "code": "bentley",
+    "defaultValue": "Bentley"
+  },
+  {
+    "code": "bmw",
+    "defaultValue": "BMW"
+  },
+  {
+    "code": "bugatti",
+    "defaultValue": "Bugatti"
+  },
+  {
+    "code": "buick",
+    "defaultValue": "Buick"
+  },
+  {
+    "code": "cadillac",
+    "defaultValue": "Cadillac"
+  },
+  {
+    "code": "chevrolet",
+    "defaultValue": "Chevrolet"
+  },
+  {
+    "code": "chrysler",
+    "defaultValue": "Chrysler"
+  },
+  {
+    "code": "daewoo",
+    "defaultValue": "Daewoo"
+  },
+  {
+    "code": "dodge",
+    "defaultValue": "Dodge"
+  },
+  {
+    "code": "eagle",
+    "defaultValue": "Eagle"
+  },
+  {
+    "code": "ferrari",
+    "defaultValue": "Ferrari"
+  },
+  {
+    "code": "fiat",
+    "defaultValue": "FIAT"
+  },
+  {
+    "code": "fisker",
+    "defaultValue": "Fisker"
+  },
+  {
+    "code": "ford",
+    "defaultValue": "Ford"
+  },
+  {
+    "code": "genesis",
+    "defaultValue": "Genesis"
+  },
+  {
+    "code": "geo",
+    "defaultValue": "Geo"
+  },
+  {
+    "code": "gmc",
+    "defaultValue": "GMC"
+  },
+  {
+    "code": "honda",
+    "defaultValue": "Honda"
+  },
+  {
+    "code": "hummer",
+    "defaultValue": "HUMMER"
+  },
+  {
+    "code": "hyundai",
+    "defaultValue": "Hyundai"
+  },
+  {
+    "code": "infiniti",
+    "defaultValue": "Infiniti"
+  },
+  {
+    "code": "isuzu",
+    "defaultValue": "Isuzu"
+  },
+  {
+    "code": "jaguar",
+    "defaultValue": "Jaguar"
+  },
+  {
+    "code": "jeep",
+    "defaultValue": "Jeep"
+  },
+  {
+    "code": "kia",
+    "defaultValue": "Kia"
+  },
+  {
+    "code": "lamborghini",
+    "defaultValue": "Lamborghini"
+  },
+  {
+    "code": "land-rover",
+    "defaultValue": "Land Rover"
+  },
+  {
+    "code": "lexus",
+    "defaultValue": "Lexus"
+  },
+  {
+    "code": "lincoln",
+    "defaultValue": "Lincoln"
+  },
+  {
+    "code": "lotus",
+    "defaultValue": "Lotus"
+  },
+  {
+    "code": "maserati",
+    "defaultValue": "Maserati"
+  },
+  {
+    "code": "maybach",
+    "defaultValue": "Maybach"
+  },
+  {
+    "code": "mazda",
+    "defaultValue": "Mazda"
+  },
+  {
+    "code": "mclaren",
+    "defaultValue": "McLaren"
+  },
+  {
+    "code": "mercedes-benz",
+    "defaultValue": "Mercedes-Benz"
+  },
+  {
+    "code": "mercury",
+    "defaultValue": "Mercury"
+  },
+  {
+    "code": "mini",
+    "defaultValue": "MINI"
+  },
+  {
+    "code": "mitsubishi",
+    "defaultValue": "Mitsubishi"
+  },
+  {
+    "code": "nissan",
+    "defaultValue": "Nissan"
+  },
+  {
+    "code": "oldsmobile",
+    "defaultValue": "Oldsmobile"
+  },
+  {
+    "code": "panoz",
+    "defaultValue": "Panoz"
+  },
+  {
+    "code": "plymouth",
+    "defaultValue": "Plymouth"
+  },
+  {
+    "code": "pontiac",
+    "defaultValue": "Pontiac"
+  },
+  {
+    "code": "porsche",
+    "defaultValue": "Porsche"
+  },
+  {
+    "code": "ram",
+    "defaultValue": "Ram"
+  },
+  {
+    "code": "rolls-royce",
+    "defaultValue": "Rolls-Royce"
+  },
+  {
+    "code": "saab",
+    "defaultValue": "Saab"
+  },
+  {
+    "code": "saturn",
+    "defaultValue": "Saturn"
+  },
+  {
+    "code": "scion",
+    "defaultValue": "Scion"
+  },
+  {
+    "code": "smart",
+    "defaultValue": "smart"
+  },
+  {
+    "code": "spyker",
+    "defaultValue": "Spyker"
+  },
+  {
+    "code": "subaru",
+    "defaultValue": "Subaru"
+  },
+  {
+    "code": "suzuki",
+    "defaultValue": "Suzuki"
+  },
+  {
+    "code": "tesla",
+    "defaultValue": "Tesla"
+  },
+  {
+    "code": "toyota",
+    "defaultValue": "Toyota"
+  },
+  {
+    "code": "volkswagen",
+    "defaultValue": "Volkswagen"
+  },
+  {
+    "code": "volvo",
+    "defaultValue": "Volvo"
+  }
+]

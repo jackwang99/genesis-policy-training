@@ -1,0 +1,22 @@
+[
+  {
+    "code": "12000_17999",
+    "defaultValue": "12000-17999"
+  },
+  {
+    "code": "18000_23999",
+    "defaultValue": "18000-23999"
+  },
+  {
+    "code": "24000Up",
+    "defaultValue": "24000 and up"
+  },
+  {
+    "code": "8000_11999",
+    "defaultValue": "8000-11999"
+  },
+  {
+    "code": "Under7999",
+    "defaultValue": "0-7999"
+  }
+]

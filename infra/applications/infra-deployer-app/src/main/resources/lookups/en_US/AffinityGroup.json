@@ -1,0 +1,34 @@
+[
+  {
+    "code": "MHWAG",
+    "defaultValue": "Mental Health and Wellness Affinity Group (MHWAG)"
+  },
+  {
+    "code": "IEEE",
+    "defaultValue": "IEEE Women in Engineering"
+  },
+  {
+    "code": "IAPP",
+    "defaultValue": "International Association of Privacy Professionals (IAPP)"
+  },
+  {
+    "code": "ERG",
+    "defaultValue": "Employee Resource Groups"
+  },
+  {
+    "code": "HA",
+    "defaultValue": "Homeowner association"
+  },
+  {
+    "code": "USAA",
+    "defaultValue": "United Services Automobile Association"
+  },
+  {
+    "code": "SC",
+    "defaultValue": "Senior's Coalition"
+  },
+  {
+    "code": "NIAS",
+    "defaultValue": "National Institute for Automotive Service"
+  }
+]

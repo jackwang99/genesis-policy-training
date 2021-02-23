@@ -1,0 +1,46 @@
+[
+  {
+    "code": "ACCOUNT",
+    "defaultValue": "Account"
+  },
+  {
+    "code": "BILLING",
+    "defaultValue": "Billing"
+  },
+  {
+    "code": "BILLING_BACK_OFFICE",
+    "defaultValue": "Billing Back Office"
+  },
+  {
+    "code": "CAMPAIGN",
+    "defaultValue": "Campaign"
+  },
+  {
+    "code": "CLAIM",
+    "defaultValue": "Claim"
+  },
+  {
+    "code": "CUSTOMER",
+    "defaultValue": "Lead/Customer"
+  },
+  {
+    "code": "OPPORTUNITY",
+    "defaultValue": "Opportunity"
+  },
+  {
+    "code": "OTHER",
+    "defaultValue": "Other"
+  },
+  {
+    "code": "POLICY",
+    "defaultValue": "Policy"
+  },
+  {
+    "code": "QUOTE",
+    "defaultValue": "Quote"
+  },
+  {
+    "code": "REPORT",
+    "defaultValue": "Report"
+  }
+]

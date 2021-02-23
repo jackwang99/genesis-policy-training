@@ -1,0 +1,14 @@
+[
+  {
+    "code": "BKROL",
+    "defaultValue": "Bookroll"
+  },
+  {
+    "code": "CONV",
+    "defaultValue": "Conversion"
+  },
+  {
+    "code": "NEW",
+    "defaultValue": "New Business"
+  }
+]

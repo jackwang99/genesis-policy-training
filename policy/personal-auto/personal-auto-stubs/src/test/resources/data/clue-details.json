@@ -1,0 +1,20 @@
+{
+  "mainDriverLicenseNo": "D123456",
+  "carrierInfo": {
+    "carrierName": "Progreico",
+    "status": "Cancelled",
+    "limitsBiPd": "50/100/50",
+    "deductibles": {"amount":500,"currency":"USD"},
+    "carrierPolicyNo": "G7700004"
+  },
+  "claims": [
+    {
+      "dateOfLoss": "2016-08-08",
+      "claimType": "Comprehensive",
+      "description": "driving accident",
+      "claimStatus": "initiated",
+      "totalClaimCost": {"amount":2000,"currency":"USD"},
+      "lossType": "type of loss"
+    }
+  ]
+}

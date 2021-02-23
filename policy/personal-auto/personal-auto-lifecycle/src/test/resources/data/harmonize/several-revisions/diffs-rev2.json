@@ -1,0 +1,27 @@
+{
+  "operations": [
+    {
+      "diffs": [],
+      "operation": "createVersion",
+      "isAutomatic": false,
+      "_key": {
+        "revisionNo": 2,
+        "timestamp": "2018-12-01T12:00:07.000Z"
+      }
+    },
+    {
+      "diffs": [
+        {
+          "operationType": "removed",
+          "path": "vehicleBaseDetails//enginePower",
+          "sourceValue": 200,
+          "readOnly": false
+        }
+      ],
+      "operation": "write",
+      "_key": {
+        "timestamp": "2018-12-01T12:00:08.000Z"
+      }
+    }
+  ]
+}

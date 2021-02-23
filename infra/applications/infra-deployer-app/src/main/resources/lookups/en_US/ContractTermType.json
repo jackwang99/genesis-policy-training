@@ -1,0 +1,102 @@
+[
+  {
+    "code": "<NS>",
+    "defaultValue": "Non-Standard",
+    "effective": "",
+    "expiration": "",
+    "noOfMonthsInTerm": "0",
+    "productCd": "GENERIC",
+    "riskStateCd": "",
+    "underwriterCd": ""
+  },
+  {
+    "code": "CUSTOM",
+    "defaultValue": "Custom Term",
+    "effective": "",
+    "expiration": "",
+    "noOfMonthsInTerm": "0",
+    "productCd": "GENERIC",
+    "riskStateCd": "",
+    "underwriterCd": ""
+  },
+  {
+    "code": "AN",
+    "defaultValue": "Annual",
+    "effective": "",
+    "expiration": "",
+    "noOfMonthsInTerm": "12",
+    "productCd": "GENERIC",
+    "riskStateCd": "",
+    "underwriterCd": ""
+  },
+  {
+    "code": "ANNUAL",
+    "defaultValue": "Annual",
+    "effective": "",
+    "expiration": "",
+    "noOfMonthsInTerm": "12",
+    "productCd": "GENERIC",
+    "riskStateCd": "",
+    "underwriterCd": ""
+  },
+  {
+    "code": "MO",
+    "defaultValue": "Monthly",
+    "effective": "",
+    "expiration": "",
+    "noOfMonthsInTerm": "1",
+    "productCd": "GENERIC",
+    "riskStateCd": "",
+    "underwriterCd": ""
+  },
+  {
+    "code": "MONTHLY",
+    "defaultValue": "Monthly",
+    "effective": "",
+    "expiration": "",
+    "noOfMonthsInTerm": "1",
+    "productCd": "GENERIC",
+    "riskStateCd": "",
+    "underwriterCd": ""
+  },
+  {
+    "code": "SA",
+    "defaultValue": "6 Months",
+    "effective": "",
+    "expiration": "",
+    "noOfMonthsInTerm": "6",
+    "productCd": "GENERIC",
+    "riskStateCd": "",
+    "underwriterCd": ""
+  },
+  {
+    "code": "BI_ANNUAL",
+    "defaultValue": "6 months",
+    "effective": "",
+    "expiration": "",
+    "noOfMonthsInTerm": "6",
+    "productCd": "GENERIC",
+    "riskStateCd": "",
+    "underwriterCd": ""
+  },
+  {
+    "code": "TMO",
+    "defaultValue": "True Monthly",
+    "effective": "",
+    "expiration": "",
+    "noOfMonthsInTerm": "1",
+    "productCd": "GENERIC",
+    "riskStateCd": "",
+    "underwriterCd": ""
+  },
+  {
+    "code": "QUARTERLY",
+    "defaultValue": "3 months",
+    "effective": "",
+    "expiration": "",
+    "noOfMonthsInTerm": "3",
+    "productCd": "GENERIC",
+    "riskStateCd": "",
+    "underwriterCd": ""
+  }
+]

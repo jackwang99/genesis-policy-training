@@ -1,0 +1,32 @@
+[
+  {
+    "code": "<NS>",
+    "noOfMonthsInTerm": "0",
+    "productCd": "GENERIC",
+    "defaultValue": "Non standard"
+  },
+  {
+    "code": "AN",
+    "noOfMonthsInTerm": "12",
+    "productCd": "GENERIC",
+    "defaultValue": "Annuel"
+  },
+  {
+    "code": "MO",
+    "noOfMonthsInTerm": "1",
+    "productCd": "GENERIC",
+    "defaultValue": "Mensuel"
+  },
+  {
+    "code": "SA",
+    "noOfMonthsInTerm": "6",
+    "productCd": "GENERIC",
+    "defaultValue": "6 mois"
+  },
+  {
+    "code": "TMO",
+    "noOfMonthsInTerm": "1",
+    "productCd": "GENERIC",
+    "defaultValue": "True Monthly"
+  }
+]

@@ -1,0 +1,27 @@
+Model ORGANIZATIONCUSTOMER
+
+LegalEntityCustomers {
+    Predicate {
+        subject: LegalEntityBase
+        predicate: [ "Customer" ]
+        object: OrganizationCustomerBase
+    }
+    Selector {
+        subject: @object > BusinessDetails > .legalEntity
+        predicate: "Customer"
+        object: OrganizationCustomerBase
+    }
+}
+
+LegalEntityLocations {
+    Predicate {
+            subject: LegalEntityBase
+            predicate: Lookup("AddressType")
+            object: LocationBase
+    }
+    Selector {
+            subject: OrganizationCustomer > GenesisCrmBusinessDetails > .legalEntity
+            predicate: @object > .addressType
+            object: OrganizationCustomer GenesisCrmCommunicationInfo > GenesisCrmAddress > .location
+    }
+}

@@ -1,0 +1,41 @@
+BaseType CrmBusinessDetails extends BusinessDetails {
+
+    @Min(0)
+    @Max(999)
+    Attr numberOfContinuous: Integer
+    
+    @Length(20)
+    @Lookup("SICCode")
+    @Description("lookup:SICCode")
+    Attr sicCode: String
+    
+    @Lookup("SICIndustry")
+    @Description("lookup:SICIndustry")
+    Attr sicIndustry: String
+    
+    @Lookup("SICDivision")
+    @Description("lookup:SICDivision")
+    Attr sicDivision: String
+    Attr sicDescription: String
+    
+    @Length(20)
+    @Lookup("NAICSCode")
+    @Description("lookup:NAICSCode")
+    Attr naicsCode: String
+    
+    @Lookup("NAICSIndustryGroup")
+    @Description("lookup:NAICSIndustryGroup")
+    Attr naicsIndustryGroup: String
+    
+    @Lookup("NAICSSubSector")
+    @Description("lookup:NAICSSubSector")
+    Attr naicsSubSector: String
+    
+    @Lookup("NAICSSector")
+    @Description("lookup:NAICSSector")
+    Attr naicsSector: String
+    Attr naicsDescription: String
+
+    Attr description: String
+
+}

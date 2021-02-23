@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.eisgroup.genesis.proto</groupId>
+        <artifactId>org-struct-pom</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>org-struct-brand-domain</artifactId>
+    <name>OrgStruct Brand prototype Domain Model</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.eisgroup.genesis.tools</groupId>
+                <artifactId>fgenerator-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <configuration>
+                            <inputDirectory>${project.build.directory}/classes</inputDirectory>
+                            <outputDirectory>${project.build.directory}/generated-sources/</outputDirectory>
+                            <generators>
+                                <generator>
+                                    <groupId>com.eisgroup.genesis.domain</groupId>
+                                    <artifactId>entity-dsl-fgenerator</artifactId>
+                                    <version>${domain.framework.version}</version>
+                                </generator>
+                            </generators>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.eisgroup.genesis.tools</groupId>
+                <artifactId>fcompiler-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <configuration>
+                            <compilers>
+                                <compiler>
+                                    <groupId>com.eisgroup.genesis.domain</groupId>
+                                    <artifactId>entity-dsl-fcompiler</artifactId>
+                                    <version>${domain.framework.version}</version>
+                                </compiler>
+                                <compiler>
+                                    <groupId>com.eisgroup.genesis.relationships</groupId>
+                                    <artifactId>relationship-dsl-fcompiler</artifactId>
+                                    <version>${relationship.version}</version>
+                                </compiler>
+                                <compiler>
+                                    <groupId>com.eisgroup.genesis.dimension</groupId>
+                                    <artifactId>dimension-filtering-fcompiler</artifactId>
+                                    <version>${security.version}</version>
+                                </compiler>
+                                <compiler>
+                                    <groupId>com.eisgroup.genesis.bam</groupId>
+                                    <artifactId>bam-dsl-fcompiler</artifactId>
+                                    <version>${bam.version}</version>
+                                </compiler>
+                            </compilers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.eisgroup.genesis.orgstruct</groupId>
+            <artifactId>brand-domain</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

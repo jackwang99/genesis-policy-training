@@ -1,0 +1,106 @@
+[
+  {
+    "code": "ACEINSURANCE",
+    "defaultValue": "ACE INSURANCE"
+  },
+  {
+    "code": "AIGM",
+    "defaultValue": "AIGM"
+  },
+  {
+    "code": "ALLSTATEINDEMNITY",
+    "defaultValue": "ALLSTATE INDEMNITY"
+  },
+  {
+    "code": "ALLSTATEINSURANCE",
+    "defaultValue": "ALL STATE INSURANCE"
+  },
+  {
+    "code": "ALLSTATEPC",
+    "defaultValue": "ALLSTATE P&C"
+  },
+  {
+    "code": "AMICA",
+    "defaultValue": "AMICA"
+  },
+  {
+    "code": "ASSIGNEDRISK",
+    "defaultValue": "ASSIGNED RISK"
+  },
+  {
+    "code": "CHUBB",
+    "defaultValue": "CHUBB"
+  },
+  {
+    "code": "FARMERS",
+    "defaultValue": "FARMERS"
+  },
+  {
+    "code": "FIREMANSFUND",
+    "defaultValue": "FIREMANS FUND"
+  },
+  {
+    "code": "GEICO",
+    "defaultValue": "GEICO"
+  },
+  {
+    "code": "GEICOINDEMNITYCOMPANY",
+    "defaultValue": "GEICO INDEMNITY COMPANY"
+  },
+  {
+    "code": "HARTFORD",
+    "defaultValue": "HARTFORD"
+  },
+  {
+    "code": "LIBERTYMUTUAL",
+    "defaultValue": "LIBERTY MUTUAL"
+  },
+  {
+    "code": "METROPOLITAN",
+    "defaultValue": "METROPOLITAN"
+  },
+  {
+    "code": "NATIONWIDE",
+    "defaultValue": "NATIONWIDE"
+  },
+  {
+    "code": "NYCENTRALMUTUAL",
+    "defaultValue": "NY CENTRAL MUTUAL"
+  },
+  {
+    "code": "OTHER",
+    "defaultValue": "OTHER"
+  },
+  {
+    "code": "OTHERPROGRESSIVE",
+    "defaultValue": "OTHER PROGRESSIVE"
+  },
+  {
+    "code": "PROGRESSIVENORTHWESTERN",
+    "defaultValue": "PROGRESSIVE NORTHWESTERN"
+  },
+  {
+    "code": "PRUDENTIAL",
+    "defaultValue": "PRUDENTIAL"
+  },
+  {
+    "code": "STATEFARMFIREANDCASUALTY",
+    "defaultValue": "STATE FARM FIRE AND CASUALTY"
+  },
+  {
+    "code": "STATEFARMMUTUAL",
+    "defaultValue": "STATE FARM MUTUAL"
+  },
+  {
+    "code": "TRAVELERS",
+    "defaultValue": "TRAVELERS"
+  },
+  {
+    "code": "UNKNOWN",
+    "defaultValue": "UNKNOWN"
+  },
+  {
+    "code": "USAA",
+    "defaultValue": "USAA"
+  }
+]

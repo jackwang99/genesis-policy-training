@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+       					   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd">
+
+	<bean id="conversionCustomerAccountBindingsProvider" parent="conversionCustomerAccountBindingsProviderParent" />
+	<bean id="conversionCustomerAccountBindingsProviderParent" abstract="true"
+		parent="conversionAbstractBindingsProviderParent">
+		<property name="bindings">
+			<list merge="true">
+                <value>jaxb/com.eisgroup.genesis.conversion.domain-bindings.xml</value>
+                
+				<value>jaxb-gen/com.eisgroup.genesis.factory.modeling.types.immutable-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.modeling.types-bindings.xml</value>
+ 				
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.customeraccount.immutable-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.individualcustomer.immutable-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.organizationcustomer.immutable-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.opportunity.immutable-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.individualagencycontainer.immutable-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.organizationagencycontainer.immutable-bindings.xml</value>
+
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.customeraccount-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.individualcustomer-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.organizationcustomer-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.opportunity-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.individualagencycontainer-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.organizationagencycontainer-bindings.xml</value>
+
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.customeraccount.impl-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.individualcustomer.impl-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.organizationcustomer.impl-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.opportunity.impl-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.individualagencycontainer.impl-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.organizationagencycontainer.impl-bindings.xml</value>
+
+				<value>jaxb/customerAccount/com.eisgroup.genesis.factory.model.customeraccount.impl-bindings.xml</value>
+				<value>jaxb/customerAccount/com.eisgroup.genesis.factory.model.organizationcustomer.impl-bindings.xml</value>
+
+				<value>jaxb/customerAccount/com.eisgroup.genesis.conversion.domain-bindings.xml</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="conversionCustomerRelationshipBindingsProvider" parent="conversionCustomerRelationshipBindingsProviderParent" />
+	<bean id="conversionCustomerRelationshipBindingsProviderParent"
+		abstract="true" parent="conversionAbstractBindingsProviderParent">
+		<property name="bindings">
+			<list merge="true">
+                <value>jaxb/com.eisgroup.genesis.conversion.domain-bindings.xml</value>
+                
+				<value>jaxb-gen/com.eisgroup.genesis.factory.modeling.types.immutable-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.modeling.types-bindings.xml</value>
+								
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.individualcustomer.immutable-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.organizationcustomer.immutable-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.individualagencycontainer.immutable-bindings.xml</value>
+                <value>jaxb-gen/com.eisgroup.genesis.factory.model.organizationagencycontainer.immutable-bindings.xml</value>
+                
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.individualcustomer-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.organizationcustomer-bindings.xml</value>
+                <value>jaxb-gen/com.eisgroup.genesis.factory.model.individualagencycontainer-bindings.xml</value>
+                <value>jaxb-gen/com.eisgroup.genesis.factory.model.organizationagencycontainer-bindings.xml</value>
+				
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.individualcustomer.impl-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.organizationcustomer.impl-bindings.xml</value>
+				<value>jaxb-gen/com.eisgroup.genesis.factory.model.individualagencycontainer.impl-bindings.xml</value>
+                <value>jaxb-gen/com.eisgroup.genesis.factory.model.organizationagencycontainer.impl-bindings.xml</value>
+				 
+                <value>jaxb/customerRelationship/com.eisgroup.genesis.factory.model.individualcustomer.impl-bindings.xml</value>
+                <value>jaxb/customerRelationship/com.eisgroup.genesis.factory.model.organizationcustomer.impl-bindings.xml</value>
+				 
+				<value>jaxb/customerRelationship/com.eisgroup.genesis.conversion.domain-relationship-bindings.xml</value>				
+			</list>
+		</property>
+	</bean>
+ 
+    <bean id="conversionMajorAccountBindingsProvider" parent="conversionMajorAccountBindingsProviderParent" />
+    <bean id="conversionMajorAccountBindingsProviderParent" abstract="true"
+            parent="conversionAbstractBindingsProviderParent">
+        <property name="bindings">
+            <list merge="true">
+                <value>jaxb-gen/com.eisgroup.genesis.factory.modeling.types.immutable-bindings.xml</value>
+                <value>jaxb-gen/com.eisgroup.genesis.factory.modeling.types-bindings.xml</value>                 
+                 
+                <value>jaxb-gen/com.eisgroup.genesis.factory.model.majoraccount-bindings.xml</value>
+                <value>jaxb-gen/com.eisgroup.genesis.factory.model.majoraccount.immutable-bindings.xml</value>
+                <value>jaxb-gen/com.eisgroup.genesis.factory.model.majoraccount.impl-bindings.xml</value>                
+     
+                <value>jaxb/majorAccount/com.eisgroup.genesis.conversion.domain-majoraccount-bindings.xml</value>
+           </list>
+      </property>
+ </bean>
+	
+</beans>

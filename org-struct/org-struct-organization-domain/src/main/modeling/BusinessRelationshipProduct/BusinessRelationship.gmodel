@@ -1,0 +1,7 @@
+Model BusinessRelationshipProduct
+Root BusinessRelationshipEntity
+
+ModelType BusinessRelationship
+
+Stored using ['businessrelationship']
+Indexed using ['businessrelationship']

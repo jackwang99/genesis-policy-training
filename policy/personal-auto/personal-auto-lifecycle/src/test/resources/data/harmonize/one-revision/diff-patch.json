@@ -1,0 +1,33 @@
+{
+  "diffs": [
+    {
+      "operationType": "changed",
+      "path": "vehicleBaseDetails//model",
+      "sourceValue": "X3",
+      "targetValue": "X5",
+      "readOnly": false
+    },
+    {
+      "operationType": "changed",
+      "path": "vehicleBaseDetails//modelYear",
+      "sourceValue": 2012,
+      "targetValue": 2013,
+      "readOnly": false
+    },
+    {
+      "operationType": "changed",
+      "path": "vehicleBaseDetails//justMoney//amount",
+      "sourceValue": 1000,
+      "targetValue": 2000,
+      "readOnly": false
+    },
+    {
+      "operationType": "removed",
+      "path": "vehicleBaseDetails//removeMe",
+      "sourceValue": "remove"
+     ,
+      "targetValue": null,
+      "readOnly": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+Namespace GarageAuto
+
+Include Base
+
+Rule "AutoEmailTypeRequired-180722-2tW11j" On AutoPhoneInfo.type {
+  Set Mandatory
+  Error "AutoEmailTypeRequired-180722-2tW11j": "Email type is required"
+}
+
+Rule "AutoPhoneTypeRequired-180722-1tW11j" On AutoEmailInfo.type {
+  Set Mandatory
+  Error "AutoPhoneTypeRequired-180722-1tW11j": "Phone type is required"
+}

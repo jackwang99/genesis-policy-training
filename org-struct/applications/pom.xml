@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>org-struct-pom</artifactId>
+        <groupId>com.eisgroup.genesis.proto</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.eisgroup.genesis.proto.org-struct.applications</groupId>
+    <artifactId>org-struct-applications-pom</artifactId>
+    <packaging>pom</packaging>
+
+    <name>Organization Structure Prototype Applications Parent</name>
+    <description>Organization Structure Prototype Applications Parent Module</description>
+    <modules>
+        <module>org-struct-commands-app</module>
+        <module>org-struct-events-app</module>
+        <module>org-struct-facade-app</module>
+        <module>org-struct-facade-app/model</module>
+        <module>org-struct-deployer-app</module>
+        <module>org-struct-app-suite</module>
+    </modules>
+
+</project>

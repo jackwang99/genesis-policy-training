@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+		<groupId>com.eisgroup.genesis</groupId>
+		<artifactId>genesis-parent-pom</artifactId>
+		<version>10.11</version>
+        <relativePath>../parent-pom/pom.xml</relativePath>
+    </parent>
+
+    <groupId>com.eisgroup.genesis.proto</groupId>
+    <artifactId>crm-pom</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    
+    <properties>
+        <!-- Core Version -->
+        <crm.core.version>10.11</crm.core.version>
+        <genesis.core.version>10.11</genesis.core.version>
+        <rules.core.version>10.11</rules.core.version>        
+        <registry.core.version>10.11</registry.core.version>
+        <org.structure.core.version>10.11</org.structure.core.version>
+        <policy.core.version>10.11</policy.core.version>
+
+        <!-- ref impl versions -->
+        <registry.ms.version>${project.version}</registry.ms.version>
+    </properties>
+
+    <modules>
+        <!--module>customer-reports</module-->
+        <module>customer-lifecycle</module>
+        <module>individual</module>
+        <module>organization</module>
+        <module>crm-domain</module>
+        <module>account</module>
+        <module>crm-custom-validation</module>
+        <module>crm-services</module>
+        <module>communication</module>
+        <module>opportunity</module>
+        <module>campaign</module>
+        <module>majoraccount</module>
+        <module>groupinfo</module>
+        <module>container-search-integration</module>
+        <!--module>customer-reports-export</module-->
+        <module>applications</module>
+    </modules>
+    
+    <dependencyManagement>
+        <dependencies>
+            <!-- CRM BOM import -->
+            <dependency>
+                <groupId>com.eisgroup.genesis</groupId>
+                <artifactId>crm-bom</artifactId>
+                <version>${crm.core.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            
+            <!-- Rules BOM -->
+            <dependency>
+                <groupId>com.eisgroup.genesis</groupId>
+                <artifactId>rules-bom</artifactId>
+                <version>${rules.core.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>            
+
+            <!-- Registry BOM -->
+            <dependency>
+                <groupId>com.eisgroup.genesis.registry</groupId>
+                <artifactId>registry-bom</artifactId>
+                <version>${registry.core.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            
+            <!-- Core Pom Import -->
+            <dependency>
+                <groupId>com.eisgroup.genesis</groupId>
+                <artifactId>core-pom</artifactId>
+                <version>${genesis.core.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.platform</groupId>
+                <artifactId>platform-bom</artifactId>
+                <version>${genesis.core.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.platform</groupId>
+                <artifactId>generic-features-bom</artifactId>
+                <version>${genesis.core.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            
+            <!-- Org-Struct BOM -->
+            <dependency>
+                <groupId>com.eisgroup.genesis</groupId>
+                <artifactId>org-struct-bom</artifactId>
+                <version>${org.structure.core.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>            
+            
+            <!-- Policy -->
+            <dependency>
+                <groupId>com.eisgroup.genesis.policy.core</groupId>
+                <artifactId>policy-core-lifecycle-api</artifactId>
+                <version>${policy.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.integration</groupId>
+                <artifactId>policy-integration-api</artifactId>
+                <version>${policy.core.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>policy-core-repository-read-impl</artifactId>
+                <groupId>com.eisgroup.genesis.policy.core</groupId>
+                <version>${policy.core.version}</version>
+            </dependency>                        
+        </dependencies>
+    </dependencyManagement>
+
+</project>

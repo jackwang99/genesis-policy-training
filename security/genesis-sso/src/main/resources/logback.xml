@@ -1,0 +1,9 @@
+<configuration>
+  <jmxConfigurator />
+  <property scope="context" name="appName" value="genesis-sso"/>
+
+  <!-- includes -->
+  <include optional="true" resource="zookeeper-logback.xml"/>
+  <include optional="true"  resource="spring-app-logback.xml"/>
+
+</configuration>

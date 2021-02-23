@@ -1,0 +1,246 @@
+[
+  {
+    "code": "Accountant",
+    "defaultValue": "Comptable"
+  },
+  {
+    "code": "Agent",
+    "defaultValue": "Directeur commercial / agent"
+  },
+  {
+    "code": "Broadcaster",
+    "defaultValue": "Diffuseur"
+  },
+  {
+    "code": "BusinessOwner",
+    "defaultValue": "Propriétaire d'entreprise"
+  },
+  {
+    "code": "CALicensedPhy",
+    "defaultValue": "Médecin licencié en Californie"
+  },
+  {
+    "code": "Columnist",
+    "defaultValue": "Journaliste"
+  },
+  {
+    "code": "CurCompanyEmpl",
+    "defaultValue": "Employé de l'entreprise actuel / retraité"
+  },
+  {
+    "code": "Dentist",
+    "defaultValue": "Dentiste"
+  },
+  {
+    "code": "Editor",
+    "defaultValue": "Éditeur"
+  },
+  {
+    "code": "Educator",
+    "defaultValue": "Éducateur"
+  },
+  {
+    "code": "Engineer",
+    "defaultValue": "Ingénieur / Scientifique"
+  },
+  {
+    "code": "Entertainer",
+    "defaultValue": "Artiste"
+  },
+  {
+    "code": "Farm Owner",
+    "defaultValue": "Propriétaire de ferme"
+  },
+  {
+    "code": "Farming",
+    "defaultValue": "Agriculture"
+  },
+  {
+    "code": "Fire Fighter",
+    "defaultValue": "Sapeur pompier"
+  },
+  {
+    "code": "ForeignDiplomat",
+    "defaultValue": "Diplomate étranger"
+  },
+  {
+    "code": "ForeignNational",
+    "defaultValue": "Étranger national"
+  },
+  {
+    "code": "GolfProf",
+    "defaultValue": "Professionnel du golf"
+  },
+  {
+    "code": "HealthCareProf",
+    "defaultValue": "Professionnel de la Santé"
+  },
+  {
+    "code": "HomeMaint",
+    "defaultValue": "Accueil / Entretien de la pelouse"
+  },
+  {
+    "code": "Homemaker",
+    "defaultValue": "Ménagère"
+  },
+  {
+    "code": "InHomeDayCare",
+    "defaultValue": "Dans le service de garde à domicile"
+  },
+  {
+    "code": "Inside Sales",
+    "defaultValue": "Ventes internes"
+  },
+  {
+    "code": "Laborer",
+    "defaultValue": "Ouvrier"
+  },
+  {
+    "code": "LawEnforcement",
+    "defaultValue": "Policier / Application de la loi"
+  },
+  {
+    "code": "Manufacturing",
+    "defaultValue": "Fabrication"
+  },
+  {
+    "code": "Military",
+    "defaultValue": "Militaire"
+  },
+  {
+    "code": "NewsReporter",
+    "defaultValue": "Journaliste"
+  },
+  {
+    "code": "Other",
+    "defaultValue": "Autre"
+  },
+  {
+    "code": "OtherGrDisc",
+    "defaultValue": "Autre - Remise de groupe éligible"
+  },
+  {
+    "code": "OutHomeDayCare",
+    "defaultValue": "Soins de jour à domicile à l'extérieur"
+  },
+  {
+    "code": "OutsideSales",
+    "defaultValue": "Ventes externes"
+  },
+  {
+    "code": "Paramedic",
+    "defaultValue": "Paramédical"
+  },
+  {
+    "code": "Paramedic/EMT",
+    "defaultValue": "Paramédic / EMT"
+  },
+  {
+    "code": "Pharmacist",
+    "defaultValue": "Pharmacien"
+  },
+  {
+    "code": "Pilot",
+    "defaultValue": "Pilote"
+  },
+  {
+    "code": "PoliceOfficer",
+    "defaultValue": "Officier de police"
+  },
+  {
+    "code": "PolOfficial",
+    "defaultValue": "Officiel politique / lobbyiste"
+  },
+  {
+    "code": "ProfAthlete",
+    "defaultValue": "Athlète professionnel / entraîneur"
+  },
+  {
+    "code": "ProfDriver",
+    "defaultValue": "Pilote professionnel"
+  },
+  {
+    "code": "Professional",
+    "defaultValue": "Professionnel"
+  },
+  {
+    "code": "ProfJournalist",
+    "defaultValue": "Journaliste professionnel"
+  },
+  {
+    "code": "ProfLecturer",
+    "defaultValue": "Maître de conférences"
+  },
+  {
+    "code": "ProfPilot",
+    "defaultValue": "Pilote professionnel"
+  },
+  {
+    "code": "Publisher",
+    "defaultValue": "Éditeur"
+  },
+  {
+    "code": "RadioTVPers",
+    "defaultValue": "Personnalité radio et TV"
+  },
+  {
+    "code": "Real Estate",
+    "defaultValue": "Immobilier"
+  },
+  {
+    "code": "RestFoodservice",
+    "defaultValue": "Restaurant / Service de restauration"
+  },
+  {
+    "code": "Retired",
+    "defaultValue": "Retraité"
+  },
+  {
+    "code": "ScriptWriter",
+    "defaultValue": "Script / Scénariste"
+  },
+  {
+    "code": "Self Employed",
+    "defaultValue": "Travailleur indépendant"
+  },
+  {
+    "code": "SelfEmplContr",
+    "defaultValue": "Entrepreneur indépendant"
+  },
+  {
+    "code": "SelfEmplMaint",
+    "defaultValue": "Entretien personnel"
+  },
+  {
+    "code": "Student",
+    "defaultValue": "Étudiant"
+  },
+  {
+    "code": "Teacher",
+    "defaultValue": "Enseignant / éducateur"
+  },
+  {
+    "code": "TeamManager",
+    "defaultValue": "Responsable d'équipe, cadre"
+  },
+  {
+    "code": "TeamOwner",
+    "defaultValue": "Propriétaire de l'équipe"
+  },
+  {
+    "code": "Telecaster",
+    "defaultValue": "Telecaster"
+  },
+  {
+    "code": "Unemployed",
+    "defaultValue": "Sans emploi"
+  },
+  {
+    "code": "Unknown",
+    "defaultValue": "Inconnu"
+  },
+  {
+    "code": "Veterinarian",
+    "defaultValue": "Vétérinaire"
+  }
+]

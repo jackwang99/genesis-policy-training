@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversionReaderModel> 	
+	<individualCustomer>
+		<customerNumber>IC0000001031</customerNumber>		
+		<relationships>
+			<answer>answer</answer>
+			<relatedCustomer>IC0000001031</relatedCustomer>
+			<relationshipType>employer</relationshipType>			
+		</relationships>
+	</individualCustomer>	
+    <individualAgencyContainer>
+        <agency>A</agency>
+        <customer>IC500001</customer>
+        <relationships>
+            <answer>answer</answer> 
+            <relatedCustomer>IC500002</relatedCustomer>
+            <relationshipType>FRIEND</relationshipType>
+        </relationships>
+        <state>active</state>
+    </individualAgencyContainer>
+</conversionReaderModel>
+

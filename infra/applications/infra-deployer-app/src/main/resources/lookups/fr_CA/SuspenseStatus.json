@@ -1,0 +1,22 @@
+[
+  {
+    "code": "incomplete",
+    "defaultValue": "Exceptionnel"
+  },
+  {
+    "code": "cleared",
+    "defaultValue": "Effacé"
+  },
+  {
+    "code": "reversed",
+    "defaultValue": "Suspense inversé"
+  },
+  {
+    "code": "completed",
+    "defaultValue": "Terminé"
+  },
+  {
+    "code": "declined",
+    "defaultValue": "Diminué"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Party: Create Party",
+    "description": "Grants user access to the create party action",
+    "scope": "Party"
+  },
+  {
+    "name": "Party: Update Party",
+    "description": "Grants user access to the update party action",
+    "scope": "Party"
+  },
+  {
+    "name": "Party: Merge Party",
+    "description": "Grants user access to the merge party action",
+    "scope": "Party"
+  },
+  {
+    "name": "Party: Access Party",
+    "description": "Grants user access to the party load action",
+    "scope": "Party"
+  },
+  {
+    "name": "Party: Search Party",
+    "description": "Grants user access to the party search action",
+    "scope": "Party"
+  },
+  {
+    "name": "Party: Manage Batch",
+    "description": "Grants user access to batch party actions",
+    "scope": "Party"
+  },
+  {
+    "name": "Party: Access History",
+    "description": "Grants user access to the party historic search action",
+    "scope": "Party"
+  }
+]

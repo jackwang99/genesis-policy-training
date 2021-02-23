@@ -1,0 +1,38 @@
+[
+  {
+    "code": "A",
+    "defaultValue": "UNE"
+  },
+  {
+    "code": "B",
+    "defaultValue": "B"
+  },
+  {
+    "code": "C",
+    "defaultValue": "C"
+  },
+  {
+    "code": "D",
+    "defaultValue": "ré"
+  },
+  {
+    "code": "G",
+    "defaultValue": "g"
+  },
+  {
+    "code": "G1",
+    "defaultValue": "G1"
+  },
+  {
+    "code": "G2",
+    "defaultValue": "G2"
+  },
+  {
+    "code": "M",
+    "defaultValue": "M"
+  },
+  {
+    "code": "O",
+    "defaultValue": "Autre"
+  }
+]

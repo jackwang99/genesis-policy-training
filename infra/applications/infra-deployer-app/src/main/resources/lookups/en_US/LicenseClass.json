@@ -1,0 +1,38 @@
+[
+  {
+    "code": "A",
+    "defaultValue": "A"
+  },
+  {
+    "code": "B",
+    "defaultValue": "B"
+  },
+  {
+    "code": "C",
+    "defaultValue": "C"
+  },
+  {
+    "code": "D",
+    "defaultValue": "D"
+  },
+  {
+    "code": "G",
+    "defaultValue": "G"
+  },
+  {
+    "code": "G1",
+    "defaultValue": "G1"
+  },
+  {
+    "code": "G2",
+    "defaultValue": "G2"
+  },
+  {
+    "code": "M",
+    "defaultValue": "M"
+  },
+  {
+    "code": "O",
+    "defaultValue": "Other"
+  }
+]

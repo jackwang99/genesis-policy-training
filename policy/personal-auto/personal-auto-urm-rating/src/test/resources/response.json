@@ -1,0 +1,155 @@
+{
+  "@class": "com.eisgroup.genesis.tfs.services.api.impl.DefaultTfsCalculationResult",
+  "premiums": [],
+  "status": "SUCCESS",
+  "premiumAttributes": [
+    {
+      "attributeId": "99a56ac3-c0ff-4ae4-8af6-fae1c27078a6",
+      "attributeCode": "AutoCOLLCoverage",
+      "attributeType": "TAX",
+      "attributeValue": 14.3,
+      "children": [
+        {
+          "attributeId": "99a56ac3-c0ff-4ae4-8af6-fae1c27078a6",
+          "attributeCode": "REFUND",
+          "attributeType": "TAX",
+          "attributeValue": "REFUNDABLE",
+          "attributeValueType": "java.lang.String",
+          "attributeVariation": 1
+        },
+        {
+          "attributeId": "99a56ac3-c0ff-4ae4-8af6-fae1c27078a6",
+          "attributeCode": "INCLUDED",
+          "attributeType": "TAX",
+          "attributeValue": true,
+          "attributeValueType": "java.lang.Boolean",
+          "attributeVariation": 1
+        },
+        {
+          "attributeId": "99a56ac3-c0ff-4ae4-8af6-fae1c27078a6",
+          "attributeCode": "ROUNDING",
+          "attributeType": "TAX",
+          "attributeValue": true,
+          "attributeValueType": "java.lang.Boolean",
+          "attributeVariation": 1
+        },
+        {
+          "attributeId": "99a56ac3-c0ff-4ae4-8af6-fae1c27078a6",
+          "attributeCode": "ROUNDING_SCALE",
+          "attributeType": "TAX",
+          "attributeValue": 2,
+          "attributeValueType": "java.lang.Integer",
+          "attributeVariation": 1
+        },
+        {
+          "attributeId": "99a56ac3-c0ff-4ae4-8af6-fae1c27078a6",
+          "attributeCode": "RATE_VALUE",
+          "attributeType": "TAX",
+          "attributeValue": "0.1",
+          "attributeValueType": "java.lang.String",
+          "attributeVariation": 1
+        },
+        {
+          "attributeId": "99a56ac3-c0ff-4ae4-8af6-fae1c27078a6",
+          "attributeCode": "RATE_VALUE_TYPE",
+          "attributeType": "TAX",
+          "attributeValue": "RATE",
+          "attributeValueType": "java.lang.String",
+          "attributeVariation": 1
+        },
+        {
+          "attributeId": "99a56ac3-c0ff-4ae4-8af6-fae1c27078a6",
+          "attributeCode": "FREQUENCY",
+          "attributeType": "TAX",
+          "attributeValue": "EVERY_TERM",
+          "attributeValueType": "java.lang.String",
+          "attributeVariation": 1
+        },
+        {
+          "attributeId": "99a56ac3-c0ff-4ae4-8af6-fae1c27078a6",
+          "attributeCode": "CALCULATION",
+          "attributeType": "TAX",
+          "attributeValue": "APPLY_TO_AP_RP",
+          "attributeValueType": "java.lang.String",
+          "attributeVariation": 1
+        }
+      ],
+      "attributeVariation": 0,
+      "attributeValueType": "java.math.BigDecimal"
+    },
+    {
+      "attributeId": "99a56ac3-c0ff-4ae4-8af6-fae1c27078a6",
+      "attributeCode": "AutoCOLLCoverage",
+      "attributeType": "FEE",
+      "attributeValue": 28.6,
+      "children": [
+        {
+          "attributeId": "99a56ac3-c0ff-4ae4-8af6-fae1c27078a6",
+          "attributeCode": "REFUND",
+          "attributeType": "FEE",
+          "attributeValue": "REFUNDABLE_ON_FLAT_CANCEL",
+          "attributeValueType": "java.lang.String",
+          "attributeVariation": 1
+        },
+        {
+          "attributeId": "99a56ac3-c0ff-4ae4-8af6-fae1c27078a6",
+          "attributeCode": "INCLUDED",
+          "attributeType": "FEE",
+          "attributeValue": true,
+          "attributeValueType": "java.lang.Boolean",
+          "attributeVariation": 1
+        },
+        {
+          "attributeId": "99a56ac3-c0ff-4ae4-8af6-fae1c27078a6",
+          "attributeCode": "ROUNDING",
+          "attributeType": "FEE",
+          "attributeValue": true,
+          "attributeValueType": "java.lang.Boolean",
+          "attributeVariation": 1
+        },
+        {
+          "attributeId": "99a56ac3-c0ff-4ae4-8af6-fae1c27078a6",
+          "attributeCode": "ROUNDING_SCALE",
+          "attributeType": "FEE",
+          "attributeValue": 2,
+          "attributeValueType": "java.lang.Integer",
+          "attributeVariation": 1
+        },
+        {
+          "attributeId": "99a56ac3-c0ff-4ae4-8af6-fae1c27078a6",
+          "attributeCode": "RATE_VALUE",
+          "attributeType": "FEE",
+          "attributeValue": "0.2",
+          "attributeValueType": "java.lang.String",
+          "attributeVariation": 1
+        },
+        {
+          "attributeId": "99a56ac3-c0ff-4ae4-8af6-fae1c27078a6",
+          "attributeCode": "RATE_VALUE_TYPE",
+          "attributeType": "FEE",
+          "attributeValue": "RATE",
+          "attributeValueType": "java.lang.String",
+          "attributeVariation": 1
+        },
+        {
+          "attributeId": "99a56ac3-c0ff-4ae4-8af6-fae1c27078a6",
+          "attributeCode": "FREQUENCY",
+          "attributeType": "FEE",
+          "attributeValue": "EVERY_TERM",
+          "attributeValueType": "java.lang.String",
+          "attributeVariation": 1
+        },
+        {
+          "attributeId": "99a56ac3-c0ff-4ae4-8af6-fae1c27078a6",
+          "attributeCode": "CALCULATION",
+          "attributeType": "FEE",
+          "attributeValue": "APPLY_TO_AP_RP",
+          "attributeValueType": "java.lang.String",
+          "attributeVariation": 1
+        }
+      ],
+      "attributeVariation": 0,
+      "attributeValueType": "java.math.BigDecimal"
+    }
+  ]
+}

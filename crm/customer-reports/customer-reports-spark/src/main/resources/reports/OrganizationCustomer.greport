@@ -1,0 +1,64 @@
+Model CustomerReports
+
+Import Model ORGANIZATIONCUSTOMER
+Import Model OrganizationAgencyContainer
+
+Report OrganizationCustomer from ORGANIZATIONCUSTOMER {
+
+    // Attribute declarations
+    Attr updatedOn is _timestamp
+    Attr state
+    Attr customerNumber
+    Attr brandCd
+    Attr source
+    Attr createdOn is accessTrackInfo.createdOn
+    Attr preferredContactMethod is communicationInfo.preferredContactMethod
+    Attr preferredWrittenLanguage is details.preferredWrittenLanguage
+    Attr fullName is details.legalEntity.legalName
+
+    // Related tables
+    Ref Phone is communicationInfo.phones {
+        Attr updatedOn is OrganizationCustomer._timestamp
+        Attr phoneType is type
+        Attr phoneNumber is value
+        Attr consentStatus is consentInfo.consentStatus
+        Attr consentDate is consentInfo.consentDate
+    }
+
+    Ref Email is communicationInfo.emails {
+        Attr updatedOn is OrganizationCustomer._timestamp
+        Attr emailType is type
+        Attr emailAddress is value
+        Attr consentStatus is consentInfo.consentStatus
+        Attr consentDate is consentInfo.consentDate
+    }
+
+    Ref Address is communicationInfo.addresses {
+        Attr updatedOn is OrganizationCustomer._timestamp
+        Attr preferred
+        Attr countryCd is location.countryCd
+        Attr stateProvinceCd is location.stateProvinceCd
+        Attr city is location.city
+        Attr postalCode is location.postalCode
+        Attr addressLine1 is location.addressLine1
+        Attr addressLine2 is location.addressLine2
+        Attr addressLine3 is location.addressLine3
+    }
+
+    Ref ProductsOwned is productsOwned {
+        Attr updatedOn is OrganizationCustomer._timestamp
+        Attr policyTypeCd
+    }
+
+    Ref AgencyContainer is GenesisOrganizationAgencyContainer {
+        Attr updatedOn is _timestamp
+        Attr agency
+    }
+
+    // Join-table statements
+    Join GenesisOrganizationAgencyContainer using Relationships {
+        object == this
+        predicate == 'agencyContainer_customer'
+    }
+
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "code": "ALLCUSTOMERS",
+    "defaultValue": "All Lead/Customers"
+  },
+  {
+    "code": "LEADIMPORTONLY",
+    "defaultValue": "Lead Import Only"
+  }
+]

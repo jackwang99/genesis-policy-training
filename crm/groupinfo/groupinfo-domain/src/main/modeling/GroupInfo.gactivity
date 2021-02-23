@@ -1,0 +1,14 @@
+Model GroupInfo
+
+Common {
+    Number is output.groupId
+}
+
+Command init {
+    Disabled
+}
+
+
+Endpoint load {
+    
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "code": "1",
+    "defaultValue": "Jr."
+  },
+  {
+    "code": "2",
+    "defaultValue": "Sr."
+  },
+  {
+    "code": "3",
+    "defaultValue": "II"
+  },
+  {
+    "code": "4",
+    "defaultValue": "III"
+  },
+  {
+    "code": "5",
+    "defaultValue": "IV"
+  },
+  {
+    "code": "6",
+    "defaultValue": "V"
+  },
+  {
+    "code": "7",
+    "defaultValue": "Doctorat"
+  },
+  {
+    "code": "8",
+    "defaultValue": "MARYLAND"
+  }
+]

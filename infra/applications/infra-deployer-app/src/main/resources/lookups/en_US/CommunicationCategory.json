@@ -1,0 +1,18 @@
+[
+  {
+    "code": "ADVISORY",
+    "defaultValue": "Advisory"
+  },
+  {
+    "code": "BILLING",
+    "defaultValue": "Billing/Premiums"
+  },
+  {
+    "code": "CLAIMS",
+    "defaultValue": "Claims Inquiry"
+  },
+  {
+    "code": "FORMS",
+    "defaultValue": "Forms & Materials"
+  }
+]

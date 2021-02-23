@@ -1,0 +1,14 @@
+[
+  {
+    "code": "1YEAR",
+    "defaultValue": "1 year"
+  },
+  {
+    "code": "3YEARS",
+    "defaultValue": "3 years"
+  },
+  {
+    "code": "5YEARS",
+    "defaultValue": "5 years"
+  }
+]

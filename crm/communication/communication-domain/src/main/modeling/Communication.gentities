@@ -1,0 +1,20 @@
+Entity GenesisCommunication is Communication {
+
+    Attr agency: String
+
+    Attr products: *GenesisCommunicationProductInfo
+    Attr associations: *GenesisEntityAssociation
+    
+    Attr accessTrackInfo: GenesisAccessTrackInfo    
+}
+
+Entity GenesisCommunicationProductInfo is ProductInfo {}
+
+Entity GenesisEntityAssociation is EntityAssociation {}
+
+Entity GenesisAccessTrackInfo is AccessTrackInfo {
+    @Searchable
+    Attr createdOn: Datetime
+    @Searchable    
+    Attr updatedOn: Datetime
+} 

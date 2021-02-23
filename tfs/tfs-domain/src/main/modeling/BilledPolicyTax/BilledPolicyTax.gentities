@@ -1,0 +1,13 @@
+Entity BilledPolicyTaxEntity is BilledPolicyTax {
+    Ref premiumTxEntries:     *PremiumTaxEntryEntity
+    Ref premiumBillEntries:   *BillTaxEntryEntity
+}
+
+
+Entity PremiumTaxEntryEntity is PremiumTaxEntry {
+}
+
+Entity BillTaxEntryEntity is BillTaxEntry {
+}
+
+

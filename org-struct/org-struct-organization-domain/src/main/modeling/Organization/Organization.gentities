@@ -1,0 +1,96 @@
+Entity OrganizationEntity is Organization {
+	Attr details : OrganizationDetailsEntity
+	Attr assignedRoles : *OrganizationRoleEntity
+    Attr accessTrackInfo: AccessTrackInfoEntity
+}
+
+Entity OrganizationDetailsEntity is OrganizationDetails {
+    Attr organizationAddress : *OrganizationAddressEntity
+	Attr legalEntityBase : OrganizationLegalEntity
+}
+
+Entity OrganizationLegalEntity is OrganizationLegalEntityBase {
+    Attr communicationInfo: CommunicationInfoEntity
+
+    // added because attributes in party model changed, remove attributes if not needed
+    Attr businessType: String
+    Attr businessName: String
+}
+
+Entity PersonEntity is Person {
+    Attr communicationInfo: *CommunicationInfoEntity
+    Attr legalIdentities: *PersonLegalIdentityEntity
+}
+
+Entity PersonLegalIdentityEntity is PersonLegalIdentity {
+}
+
+Entity CommunicationInfoEntity is CommunicationInfo {
+    Attr emails: *EmailInfoEntity
+    Attr phones: *PhoneInfoEntity
+}
+
+Entity EmailInfoEntity is EmailInfo { }
+
+Entity PhoneInfoEntity is PhoneInfo { }
+
+Entity OrganizationAddressEntity is OrganizationAddress {
+    @Required
+    Attr address : OrganizationLocationEntity
+}
+
+Entity OrganizationLocationEntity is Location {
+    @Searchable
+    @Lookup("Country")
+    Attr countryCd: String
+
+    @Searchable
+    Attr city: String
+
+    @Searchable
+    @Lookup("StateProv")
+    Attr stateProvinceCd: String
+
+    @Searchable
+    Attr postalCode: String
+
+    Attr geoposition: GeoCoordEntity
+}
+
+Entity GeoCoordEntity is GeoCoord { }
+
+Entity OrganizationRoleEntity is OrganizationRole {
+	Attr roleDetails : { ProducerEntity, UnderwritingCompanyEntity, InsurerEntity, AgencyEntity }
+}
+
+Entity ProducerEntity is Producer, OrganizationRoleDetails {
+    @Searchable
+    Attr producerCd : String
+    // uri to role?
+    ExtLink insurerRef : Organization
+}
+
+Entity UnderwritingCompanyEntity is UnderwritingCompany, OrganizationRoleDetails {
+    @Searchable
+    Attr underwritingCompanyCd : String
+}
+
+Entity InsurerEntity is Insurer, OrganizationRoleDetails {
+    @Searchable
+    Attr insurerCd : String
+}
+
+Entity AgencyEntity is Agency, OrganizationRoleDetails {
+    @Searchable
+    Attr agencyCd : String
+    // uri to role?
+    ExtLink insurerRef : Organization
+}
+
+
+Entity AccessTrackInfoEntity is AccessTrackInfo {
+    @Searchable
+    Attr createdOn: Datetime
+    @Searchable    
+    Attr updatedOn: Datetime
+}

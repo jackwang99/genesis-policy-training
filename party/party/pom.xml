@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>ref-impl</artifactId>
+        <groupId>com.eisgroup.genesis.proto</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>ref-party-impl</artifactId>
+    <packaging>pom</packaging>
+
+    <name>Party Registry Reference (Prototype) Parent POM</name>
+    <description>Party Registry Reference (Prototype) Parent POM Module</description>
+
+    <modules>
+        <module>party-base-domain</module>
+        <module>party-domain</module>
+        <module>party-lifecycle</module>
+        <module>party-lifecycle/model</module>
+        <module>party-impl</module>
+        <module>applications</module>
+        <module>bom</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto</groupId>
+                <artifactId>prototype-party-registry-bom</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

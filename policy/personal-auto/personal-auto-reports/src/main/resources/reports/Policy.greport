@@ -1,0 +1,55 @@
+Model PolicyReports
+
+Import Model PersonalAuto
+
+Report Policy from PersonalAuto[IsPolicy] {
+
+    // Attribute declarations
+    Attr updatedOn is _timestamp
+    Attr updatedBy is accessTrackInfo.updatedBy
+    Attr productCd
+    Attr riskStateCd
+    Attr policyNumber
+    Attr state
+    Attr variation is _variation
+    Attr blobCd is AutoBLOB.blobCd
+    Attr txType is transactionDetails.txType
+    Attr txCreateDate is transactionDetails.txCreateDate
+    Attr txEffectiveDate is transactionDetails.txEffectiveDate
+    Attr agency is businessDimensions.agency
+    Attr subProducer is businessDimensions.subProducer
+    Attr termEffectiveDate is termDetails.termEffectiveDate
+    Attr termExpirationDate is termDetails.termExpirationDate
+    Attr customerId is ExtLinkAsId(customer)
+
+    // Child tables
+    Ref LineOfBusiness is AutoLOB {
+        Attr updatedOn is Policy._timestamp
+        Attr lobCd
+        Attr numberOfRiskItems is Count(AutoVehicle)
+        Attr blobCd is AutoBLOB.blobCd
+
+        // Join-table statements
+        Join AutoVehicle
+        Join AutoBLOB
+    }
+
+    Ref PremiumEntry is PremiumAggregate.premiumEntries {
+        Attr revisionNo is Policy.revisionNo
+        Attr timestamp is Policy._timestamp
+        Attr updatedOn is Policy._timestamp
+        Attr premiumType
+        Attr changeAmount is changeAmount.amount
+        Attr actualAmount is actualAmount.amount
+        Attr termAmount is termAmount.amount
+    }
+
+    // Join-table statements
+    Join AutoBLOB
+    Join AutoLOB
+    Join PremiumAggregate
+}
+
+Filter IsPolicy {
+    _variation eq "policy"
+}

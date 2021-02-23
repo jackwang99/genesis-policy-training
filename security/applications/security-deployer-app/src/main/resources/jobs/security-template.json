@@ -1,0 +1,5 @@
+{
+  "description": "A POC job implementation that creates a BAM entry for the user provided in the request",
+  "name": "SecurityBamCreate",
+  "triggerUri": "command://jobs//createUserBam"
+}

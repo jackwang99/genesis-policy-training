@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.eisgroup.genesis.proto</groupId>
+        <artifactId>product-server-pom</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>json-reducer-ref-decision-impl</artifactId>
+    <name>Json Reducer Decision Table Integration</name>
+    <packaging>jar</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.eisgroup.genesis.tools</groupId>
+                <artifactId>fgenerator-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <configuration>
+                            <inputDirectory>${project.build.directory}/classes</inputDirectory>
+                            <outputDirectory>${project.build.directory}/generated-sources/</outputDirectory>
+                            <generators>
+                                <generator>
+                                    <groupId>com.eisgroup.genesis.domain</groupId>
+                                    <artifactId>entity-dsl-fgenerator</artifactId>
+                                    <version>${domain.framework.version}</version>
+                                </generator>
+                            </generators>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>com.eisgroup.genesis.tools</groupId>
+                <artifactId>fcompiler-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <configuration>
+                            <compilers>
+                                <compiler>
+                                    <groupId>com.eisgroup.genesis.decision</groupId>
+                                    <artifactId>decision-dsl-fcompiler</artifactId>
+                                    <version>${genesis.core.version}</version>
+                                </compiler>
+                            </compilers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>com.atlassian.maven.plugins</groupId>
+                <artifactId>maven-clover2-plugin</artifactId>
+                <version>4.0.3</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.eisgroup.genesis.product.server.core.tools.json.reducer</groupId>
+            <artifactId>json-reducer-impl</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.model</groupId>
+            <artifactId>model-repository-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.decision</groupId>
+            <artifactId>decision-api</artifactId>
+            <version>${genesis.core.version}</version>
+        </dependency>
+
+        <!-- Testing -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.data</groupId>
+            <artifactId>column-store-testing</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.test.product</groupId>
+            <artifactId>test-product-model</artifactId>
+            <version>${genesis.core.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.model</groupId>
+            <artifactId>model-repository-binary-impl</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.decision</groupId>
+            <artifactId>decision-dimension-impl</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.decision</groupId>
+            <artifactId>decision-repository-impl</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.decision</groupId>
+            <artifactId>decision-impl</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
+

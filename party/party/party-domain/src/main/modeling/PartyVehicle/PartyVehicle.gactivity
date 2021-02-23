@@ -1,0 +1,5 @@
+Model Vehicle
+
+Common {
+    Number is output.registryEntityNumber
+}

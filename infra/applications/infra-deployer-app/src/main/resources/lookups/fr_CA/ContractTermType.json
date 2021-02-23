@@ -1,0 +1,52 @@
+[
+  {
+    "code": "<NS>",
+    "effective": "",
+    "expiration": "",
+    "noOfMonthsInTerm": "0",
+    "productCd": "GENERIC",
+    "riskStateCd": "",
+    "underwriterCd": "",
+    "defaultValue": "Non standard"
+  },
+  {
+    "code": "AN",
+    "effective": "",
+    "expiration": "",
+    "noOfMonthsInTerm": "12",
+    "productCd": "GENERIC",
+    "riskStateCd": "",
+    "underwriterCd": "",
+    "defaultValue": "Annuel"
+  },
+  {
+    "code": "MO",
+    "effective": "",
+    "expiration": "",
+    "noOfMonthsInTerm": "1",
+    "productCd": "GENERIC",
+    "riskStateCd": "",
+    "underwriterCd": "",
+    "defaultValue": "Mensuel"
+  },
+  {
+    "code": "SA",
+    "effective": "",
+    "expiration": "",
+    "noOfMonthsInTerm": "6",
+    "productCd": "GENERIC",
+    "riskStateCd": "",
+    "underwriterCd": "",
+    "defaultValue": "6 mois"
+  },
+  {
+    "code": "TMO",
+    "effective": "",
+    "expiration": "",
+    "noOfMonthsInTerm": "1",
+    "productCd": "GENERIC",
+    "riskStateCd": "",
+    "underwriterCd": "",
+    "defaultValue": "True Monthly"
+  }
+]

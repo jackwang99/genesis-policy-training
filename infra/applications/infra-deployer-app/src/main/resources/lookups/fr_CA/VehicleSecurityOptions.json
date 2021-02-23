@@ -1,0 +1,23 @@
+[
+  {
+    "code": "Active",
+    "defaultValue": "actif"
+  },
+  {
+    "code": "Alarm",
+    "defaultValue": "Alarme"
+  },
+  {
+    "code": "None",
+    "vin_antiTheftCode": "N",
+    "defaultValue": "Aucun"
+  },
+  {
+    "code": "Passive",
+    "defaultValue": "Passif"
+  },
+  {
+    "code": "TrackingSystem",
+    "defaultValue": "Système de pistage"
+  }
+]

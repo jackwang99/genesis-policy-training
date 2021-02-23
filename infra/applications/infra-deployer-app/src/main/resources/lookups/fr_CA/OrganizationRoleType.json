@@ -1,0 +1,18 @@
+[
+  {
+    "code": "Agency",
+    "defaultValue": "Agence"
+  },
+  {
+    "code": "Insurer",
+    "defaultValue": "Assureur"
+  },
+  {
+    "code": "Producer",
+    "defaultValue": "Producteur"
+  },
+  {
+    "code": "UnderwritingCompany",
+    "defaultValue": "Société de souscription"
+  }
+]

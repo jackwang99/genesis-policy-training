@@ -1,0 +1,7 @@
+Model OrganizationAgencyContainer
+
+Namespace OrganizationAgencyContainer
+
+EntryPoints [
+    "OrganizationAgencyContainer Validation"
+]

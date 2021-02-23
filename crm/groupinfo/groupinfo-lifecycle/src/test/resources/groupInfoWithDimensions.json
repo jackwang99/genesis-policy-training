@@ -1,0 +1,29 @@
+{
+    "_key": {
+        "rootId": "8743077a-d93e-48c4-a166-f37b6126c490",
+        "revisionNo": 1
+    },          
+    "groupType": "string",
+    "groupName": "string",
+    "groupId": "1",
+    "state": "active",
+    "effectiveDate": "2018-08-09",
+    "dimensions": [
+        {
+            "agency": "agencyA",
+            "_type": "GenesisCrmDimensionValueHolder"
+        },
+        {
+            "agency": "agencyB",
+            "_type": "GenesisCrmDimensionValueHolder"
+        },              
+        {
+            "agency": "agencyC",
+            "_type": "GenesisCrmDimensionValueHolder"
+        }               
+    ],
+    "expirationDate": "2028-08-09",
+    "_type": "GenesisGroupInfo",
+    "_modelName": "GroupInfo",
+    "_modelVersion": "1"
+}

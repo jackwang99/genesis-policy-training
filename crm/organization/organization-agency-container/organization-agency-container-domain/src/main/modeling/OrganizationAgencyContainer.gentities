@@ -1,0 +1,77 @@
+Entity GenesisOrganizationAgencyContainer is OrganizationAgencyContainer {
+
+    @Lookup("CustomerPreferredLanguageSpoken")
+    @Description("lookup:CustomerPreferredLanguageSpoken")
+    Attr preferredSpokenLanguage: String
+    
+    @Lookup("CustomerPreferredLanguageWritten")
+    @Description("lookup:CustomerPreferredLanguageWritten")
+    Attr preferredWrittenLanguage: String
+    Attr paperless: Boolean
+    
+    @Lookup("Segment")
+    @Description("lookup:Segment")
+    Attr segments: *String
+
+    Attr addresses: *GenesisCrmAddress
+    Attr productsOwned: *GenesisCrmProductOwned
+    Attr claimsInfo: *GenesisCrmClaimInfo
+    Attr billingsInfo: *GenesisCrmBillingInfo
+    
+    Attr relationships: *GenesisCustomerRelationship
+    
+    Attr accessTrackInfo: GenesisAccessTrackInfo    
+}
+
+Entity GenesisCrmSchedulingContactInfo is SchedulingContactInfo {}
+
+Entity GenesisCrmAddress is CrmAddress, AddressInfo {
+
+    Attr referenceId: String
+
+    Attr location: GenesisLocation
+    Attr schedulingContactInfo: GenesisCrmSchedulingContactInfo
+}
+Entity GenesisLocation is Location {
+    @Lookup("AddressType")
+    @Description("lookup:AddressType")
+    Attr addressType: String
+
+    Attr geoposition: GenesisCrmGeoCoord
+}
+
+Entity GenesisCrmGeoCoord is GeoCoord {
+}
+
+Entity GenesisCrmProductOwned is ProductOwned {
+
+    Attr productOwnedId: String
+}
+Entity GenesisCrmClaimInfo is CustomerClaimInfo {
+
+    Attr policy: String
+    Attr policyProduct: String
+    Attr incurred: Decimal
+    Attr claimants: *String
+    Attr claimFileOwner: String
+    Attr claimFileOwnerPhone: String
+}
+Entity GenesisCrmBillingInfo is CustomerBillingInfo {
+
+    @Searchable
+    Attr billingAccount: String
+    Attr policy: String
+    Attr totalPaid: Decimal
+    Attr unpaidBalance: Decimal
+    Attr currentDueDate: Date
+    Attr currentDueAmount: Decimal
+}
+
+Entity GenesisCustomerRelationship is CustomerRelationship {}
+
+Entity GenesisAccessTrackInfo is AccessTrackInfo {
+    @Searchable
+    Attr createdOn: Datetime
+    @Searchable    
+    Attr updatedOn: Datetime
+} 

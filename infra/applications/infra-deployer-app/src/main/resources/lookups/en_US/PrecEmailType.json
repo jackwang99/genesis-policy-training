@@ -1,0 +1,14 @@
+[
+  {
+    "code": "Office",
+    "defaultValue": "Office"
+  },
+  {
+    "code": "Other",
+    "defaultValue": "Other"
+  },
+  {
+    "code": "Personal",
+    "defaultValue": "Personal"
+  }
+]

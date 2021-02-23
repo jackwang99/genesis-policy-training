@@ -1,0 +1,7 @@
+Model User
+Root GenesisUser
+
+ModelType UserDomain
+
+Stored using ['security']
+Indexed using ['userdomain']

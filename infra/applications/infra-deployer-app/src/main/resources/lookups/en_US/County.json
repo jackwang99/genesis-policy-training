@@ -1,0 +1,242 @@
+[
+  {
+    "code": "Alameda County",
+    "defaultValue": "Alameda County"
+  },
+  {
+    "code": "Alpine County",
+    "defaultValue": "Alpine County"
+  },
+  {
+    "code": "Amador County",
+    "defaultValue": "Amador County"
+  },
+  {
+    "code": "Butte County",
+    "defaultValue": "Butte County"
+  },
+  {
+    "code": "Calaveras County",
+    "defaultValue": "Calaveras County"
+  },
+  {
+    "code": "Colusa County",
+    "defaultValue": "Colusa County"
+  },
+  {
+    "code": "Contra Costa County",
+    "defaultValue": "Contra Costa County"
+  },
+  {
+    "code": "Del Norte County",
+    "defaultValue": "Del Norte County"
+  },
+  {
+    "code": "El Dorado County",
+    "defaultValue": "El Dorado County"
+  },
+  {
+    "code": "Fresno County",
+    "defaultValue": "Fresno County"
+  },
+  {
+    "code": "Glenn County",
+    "defaultValue": "Glenn County"
+  },
+  {
+    "code": "Humboldt County",
+    "defaultValue": "Humboldt County"
+  },
+  {
+    "code": "Imperial County",
+    "defaultValue": "Imperial County"
+  },
+  {
+    "code": "Inyo County",
+    "defaultValue": "Inyo County"
+  },
+  {
+    "code": "Kern County",
+    "defaultValue": "Kern County"
+  },
+  {
+    "code": "Kings County",
+    "defaultValue": "Kings County"
+  },
+  {
+    "code": "Lake County",
+    "defaultValue": "Lake County"
+  },
+  {
+    "code": "Lassen County",
+    "defaultValue": "Lassen County"
+  },
+  {
+    "code": "Los Angeles County",
+    "defaultValue": "Los Angeles County"
+  },
+  {
+    "code": "Madera County",
+    "defaultValue": "Madera County"
+  },
+  {
+    "code": "Marin County",
+    "defaultValue": "Marin County"
+  },
+  {
+    "code": "Mariposa County",
+    "defaultValue": "Mariposa County"
+  },
+  {
+    "code": "Mendocino County",
+    "defaultValue": "Mendocino County"
+  },
+  {
+    "code": "Merced County",
+    "defaultValue": "Merced County"
+  },
+  {
+    "code": "Modoc County",
+    "defaultValue": "Modoc County"
+  },
+  {
+    "code": "Mono County",
+    "defaultValue": "Mono County"
+  },
+  {
+    "code": "Monterey County",
+    "defaultValue": "Monterey County"
+  },
+  {
+    "code": "Napa County",
+    "defaultValue": "Napa County"
+  },
+  {
+    "code": "Nevada County",
+    "defaultValue": "Nevada County"
+  },
+  {
+    "code": "New York County",
+    "defaultValue": "New York County"
+  },
+  {
+    "code": "Orange County",
+    "defaultValue": "Orange County"
+  },
+  {
+    "code": "Placer County",
+    "defaultValue": "Placer County"
+  },
+  {
+    "code": "Plumas County",
+    "defaultValue": "Plumas County"
+  },
+  {
+    "code": "Riverside County",
+    "defaultValue": "Riverside County"
+  },
+  {
+    "code": "Sacramento County",
+    "defaultValue": "Sacramento County"
+  },
+  {
+    "code": "Salt Lake County",
+    "defaultValue": "Salt Lake County"
+  },
+  {
+    "code": "San Benito County",
+    "defaultValue": "San Benito County"
+  },
+  {
+    "code": "San Bernardino County",
+    "defaultValue": "San Bernardino County"
+  },
+  {
+    "code": "San Diego County",
+    "defaultValue": "San Diego County"
+  },
+  {
+    "code": "San Francisco County",
+    "defaultValue": "San Francisco County"
+  },
+  {
+    "code": "San Joaquin County",
+    "defaultValue": "San Joaquin County"
+  },
+  {
+    "code": "San Luis Obispo County",
+    "defaultValue": "San Luis Obispo County"
+  },
+  {
+    "code": "San Mateo County",
+    "defaultValue": "San Mateo County"
+  },
+  {
+    "code": "Santa Barbara County",
+    "defaultValue": "Santa Barbara County"
+  },
+  {
+    "code": "Santa Clara County",
+    "defaultValue": "Santa Clara County"
+  },
+  {
+    "code": "Santa Cruz County",
+    "defaultValue": "Santa Cruz County"
+  },
+  {
+    "code": "Shasta County",
+    "defaultValue": "Shasta County"
+  },
+  {
+    "code": "Sierra County",
+    "defaultValue": "Sierra County"
+  },
+  {
+    "code": "Siskiyou County",
+    "defaultValue": "Siskiyou County"
+  },
+  {
+    "code": "Solano County",
+    "defaultValue": "Solano County"
+  },
+  {
+    "code": "Sonoma County",
+    "defaultValue": "Sonoma County"
+  },
+  {
+    "code": "Stanislaus County",
+    "defaultValue": "Stanislaus County"
+  },
+  {
+    "code": "Sutter County",
+    "defaultValue": "Sutter County"
+  },
+  {
+    "code": "Tehama County",
+    "defaultValue": "Tehama County"
+  },
+  {
+    "code": "Trinity County",
+    "defaultValue": "Trinity County"
+  },
+  {
+    "code": "Tulare County",
+    "defaultValue": "Tulare County"
+  },
+  {
+    "code": "Tuolumne County",
+    "defaultValue": "Tuolumne County"
+  },
+  {
+    "code": "Ventura County",
+    "defaultValue": "Ventura County"
+  },
+  {
+    "code": "Yolo County",
+    "defaultValue": "Yolo County"
+  },
+  {
+    "code": "Yuba County",
+    "defaultValue": "Yuba County"
+  }
+]

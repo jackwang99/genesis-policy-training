@@ -1,0 +1,11 @@
+{
+    "_key": {
+        "rootId": "ddd6ab61-158e-4a7c-b3e1-8dcb3f111cf7",
+        "revisionNo": 1
+    },
+    "_type": "GenesisCustomerAccount",
+    "_modelName": "CUSTOMERACCOUNT",
+    "_modelVersion": "1",
+    "accountNumber": "A111111111",
+    "name": "Test Account"
+}

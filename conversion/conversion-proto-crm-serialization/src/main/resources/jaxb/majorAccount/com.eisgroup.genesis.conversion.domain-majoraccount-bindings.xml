@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<xml-bindings
+        xmlns="http://www.eclipse.org/eclipselink/xsds/persistence/oxm"
+        package-name="com.eisgroup.genesis.conversion.domain"
+        xml-accessor-type="PROPERTY" xml-accessor-order="ALPHABETICAL">
+
+    <java-types>     
+        <java-type name="ConversionReaderModel">
+        	<xml-root-element></xml-root-element>
+            <java-attributes>
+                <xml-elements java-attribute="rootEntities" container-type="java.util.ArrayList">
+                    <xml-element name="majorAccount" type="com.eisgroup.genesis.factory.model.majoraccount.impl.GenesisMajorAccountImpl" />
+                </xml-elements>
+            </java-attributes>
+        </java-type>        
+    </java-types>
+
+</xml-bindings>

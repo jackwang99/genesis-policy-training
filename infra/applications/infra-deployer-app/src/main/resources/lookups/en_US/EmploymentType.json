@@ -1,0 +1,17 @@
+[
+  {
+    "code": "1",
+    "defaultValue": "Full time",
+    "productCd": "Home"
+  },
+  {
+    "code": "2",
+    "defaultValue": "Part time",
+    "productCd": "Home"
+  },
+  {
+    "code": "3",
+    "defaultValue": "Occasional",
+    "productCd": "Home"
+  }
+]

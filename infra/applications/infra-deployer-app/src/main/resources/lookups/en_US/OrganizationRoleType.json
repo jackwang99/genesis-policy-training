@@ -1,0 +1,18 @@
+[
+  {
+    "code": "Agency",
+    "defaultValue": "Agency"
+  },
+  {
+    "code": "Insurer",
+    "defaultValue": "Insurer"
+  },
+  {
+    "code": "Producer",
+    "defaultValue": "Producer"
+  },
+  {
+    "code": "UnderwritingCompany",
+    "defaultValue": "Underwriting Company"
+  }
+]

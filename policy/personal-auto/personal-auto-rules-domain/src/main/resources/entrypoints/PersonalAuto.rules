@@ -1,0 +1,94 @@
+Namespace PersonalAuto
+
+Include Base
+
+EntryPoint "Grandfather" {
+  "AutoMBICoverage-181129-AQsJ7",
+  "AutoMBICoverage-181129-dP3Ks",
+  "AutoMBICoverage-181129-1gRQ9",
+  "AutoMBICoverage-181129-ux3AR"
+}
+EntryPoint "Quote Policy Validation" {
+  "AutoAddressInfo-180710-3UHI6",
+  "AutoBusinessDimensions-180709-rcsCd",
+  "PolicySummary-180709-c6LcI",
+  "PolicySummary-201218-c4Ac1",
+  "PolicySummary-181220-HPOGL",
+  "PersonalAutoPolicySummary-180709-k1uVG",
+  "PersonalAutoPolicySummary-180709-MeDui",
+  "PersonalAutoPolicySummary-180709-Me12Qi",
+  "PersonalAutoPolicySummary-180726-M12ui",
+  "PersonalAutoPolicySummary-180710-XVhYY",
+  "PersonalAutoPolicySummary-180710-BH0X1",
+  "PersonalAutoPolicySummary-180710-XjZRC",
+  "PersonalAutoPolicySummary-180710-z4zHv",
+  "PersonalAutoPolicySummary-180710-m6HW8",
+  "PersonalAutoPolicySummary-180710-yw2xr",
+  "PersonalAutoPolicyDetail-180726-rc21c",
+  "AutoTermDetails-180726-rc23d",
+  "AutoTermDetails-180710-7G9iD",
+  "AutoTermDetails-180710-0yZQ9",
+  "AutoTermDetails-180710-Yy6dY",
+  "AutoTermDetails-180710-ktEL6",
+  "AutoTermDetails-180710-7GENi",
+  "AutoEmailTypeRequired-180722-2tW11j",
+  "AutoPhoneTypeRequired-180722-1tW11j",
+  "AutoCSLCoverage-180725-74tu2j",
+  "AutoCOMPCoverage-180722-122ej",
+  "AutoCOMPCoverage-180725-5rra4g",
+  "AutoCOLLCoverage-180725-51Ra4g",
+  "AutoRRCoverage-180725-7hWa4g",
+  "AutoRRCoverage-180725-7tW31j",
+  "AutoRACoverage-180722-12W1j",
+  "AutoRACoverage-180725-7hWa4g",
+  "AutoUMBICoverage-180725-75W14g",
+  "AutoUMCSLCoverage-180725-74W22j",
+  "AutoUMPDCoverage-180725-79W21j",
+  "AutoBICoverage-180725-70W11j",
+  "AutoPDCoverage-180725-78W21j",
+  "AutoMEDCoverage-180725-77W11j",
+  "AutoPersonEntity-180710-hT7H8",
+  "AutoDriverInfo-180710-BMu37",
+  "AutoVehicle-180709-i2vMm",
+  "AutoVehicle-180709-8tW1j",
+  "AutoVehicle-181015-i2SMm",
+  "AutoVehicle-180710-8eLHn",
+  "AutoVehicle-180709-VfhuG",
+  "AutoVehicle-180710-nSeoF",
+  "AutoVehicleEntity-180710-7ZM1y",
+  "AutoVehicleEntity-180710-ehe94",
+  "AutoVehicleEntity-180722-8tW12j",
+  "MBICoverageUserChoiceContainer-280902-sd34",
+  "MBICoverageUserChoiceContainer-280902-xcv54",
+  "PremiumOverrideHolder-190228-d7Lsa"
+}
+
+EntryPoint "Default apply" {
+  "ADBEndorsement-180902-Feer4",
+  "ADBEndorsement-180902-Fe34G",
+  "ADBEndorsement-180902-FG3rG",
+  "ADBEndorsement-180902-FGhuG",
+  "AddPartsElecEquipEndorsement-180902-F2qr4",
+  "AddPartsElecEquipEndorsement-180902-F31wk",
+  "AddPartsElecEquipEndorsement-180902-Fw34",
+  "AddPartsElecEquipEndorsement-180902-Fcs12e",
+  "MiscellaneousTypesMotorhomesEndorsement-180902-sswe1",
+  "MiscellaneousTypesMotorhomesEndorsement-180902-F3er5",
+  "MiscellaneousTypesMotorhomesEndorsement-180902-F23ed",
+  "MiscellaneousTypesMotorhomesEndorsement-180902-swe3d",
+  "ReplacementCostEndorsement-180902-ss34e1",
+  "ReplacementCostEndorsement-180902-ss3aa",
+  "ReplacementCostEndorsement-180902-aq12c",
+  "ReplacementCostEndorsement-180902-s2axc",
+  "TripInterruptionEndorsement-180902-sd34",
+  "TripInterruptionEndorsement-180902-xcv54",
+  "AutoMBICoverage-181129-zo3Cg",
+  "AutoMBICoverage-181129-bQtPN",
+  "AutoMBICoverage-181129-L2SXA",
+  "AutoMBICoverage-181129-W5nUw",
+  "AutoMBICoverage-181129-c0MgS"
+}
+
+EntryPoint "UnderwritingMeasure"{
+    "PersonalAuto-181115-8tQ1j"
+}

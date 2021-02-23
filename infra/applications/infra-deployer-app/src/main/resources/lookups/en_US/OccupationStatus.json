@@ -1,0 +1,18 @@
+[
+  {
+    "code": "CONTRACTOR",
+    "defaultValue": "Contractor"
+  },
+  {
+    "code": "FULL_TIME",
+    "defaultValue": "Full Time"
+  },
+  {
+    "code": "OTHER",
+    "defaultValue": "Other"
+  },
+  {
+    "code": "PART_TIME",
+    "defaultValue": "Part Time"
+  }
+]

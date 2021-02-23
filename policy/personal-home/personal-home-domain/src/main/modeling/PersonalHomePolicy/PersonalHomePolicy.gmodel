@@ -1,0 +1,12 @@
+Model PersonalHome
+Version 1
+
+Root PersonalHomePolicySummary
+ModelType Policy
+
+Stored using [ModelName, Variation]
+Indexed using ['policy']
+
+Variation quote
+Variation policy
+Variation legacyPolicy

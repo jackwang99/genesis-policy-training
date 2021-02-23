@@ -1,0 +1,7 @@
+Namespace Opportunity
+
+Include Base
+
+EntryPoint "Opportunity Validation" {
+  "EntityAssociationLinkIsMandatory"
+}

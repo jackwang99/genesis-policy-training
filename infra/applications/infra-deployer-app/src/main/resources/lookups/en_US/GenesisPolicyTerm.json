@@ -1,0 +1,50 @@
+[
+  {
+    "code": "1",
+    "defaultValue": "1 Month"
+  },
+  {
+    "code": "10",
+    "defaultValue": "10 Months"
+  },
+  {
+    "code": "11",
+    "defaultValue": "11 Months"
+  },
+  {
+    "code": "12",
+    "defaultValue": "12 Months"
+  },
+  {
+    "code": "2",
+    "defaultValue": "2 Months"
+  },
+  {
+    "code": "3",
+    "defaultValue": "3 Months"
+  },
+  {
+    "code": "4",
+    "defaultValue": "4 Months"
+  },
+  {
+    "code": "5",
+    "defaultValue": "5 Months"
+  },
+  {
+    "code": "6",
+    "defaultValue": "6 Months"
+  },
+  {
+    "code": "7",
+    "defaultValue": "7 Months"
+  },
+  {
+    "code": "8",
+    "defaultValue": "8 Months"
+  },
+  {
+    "code": "9",
+    "defaultValue": "9 Months"
+  }
+]

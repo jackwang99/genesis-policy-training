@@ -1,0 +1,10 @@
+[
+  {
+    "code": "AFFINITY",
+    "defaultValue": "Affinité"
+  },
+  {
+    "code": "PROFESSIONAL",
+    "defaultValue": "Professionnel"
+  }
+]

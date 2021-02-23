@@ -1,0 +1,67 @@
+[
+  {
+    "description":"Expires quotes",
+    "name":"Quote Expiration",
+    "triggerUri":"command://policyJobs/quote/expirationQuoteJob"
+  },
+  {
+    "description": "Delete archived quotes/policies",
+    "name": "Archived Quote/Policy Deletion",
+    "triggerUri": "command://policyJobs//deleteArchivedPolicyJob"
+  },
+  {
+    "description":"Initiate an endorsement according to configured strategies",
+    "name":"Endorsement initiation job",
+    "triggerUri":"command://policyJobs//endorsementInitJob"
+  },
+  {
+    "description":"Initiate an renewal according to configured strategies",
+    "name":"Renewal initiation job",
+    "triggerUri":"command://policyJobs//renewalInitJob"
+  },
+  {
+    "description":"Rate an renewal according to configured strategies",
+    "name":"Renewal rate job",
+    "triggerUri":"command://policyJobs//renewalRateJob"
+  },
+  {
+    "description":"Propose renewal according to configured strategies",
+    "name":"Renewal proposing job",
+    "triggerUri":"command://policyJobs//renewalProposingJob"
+  },
+  {
+    "description":"Issue renewals according to configured strategies",
+    "name":"Renewal issue job",
+    "triggerUri":"command://policyJobs//renewalIssueJob"
+  },
+  {
+    "description":"Rate an endorsement according to configured strategies",
+    "name":"Endorsement rate job",
+    "triggerUri":"command://policyJobs//endorsementRateJob"
+  },
+  {
+    "description":"Propose endorsements according to configured strategies",
+    "name":"Endorsement proposing job",
+    "triggerUri":"command://policyJobs//endorsementProposingJob"
+  },
+  {
+    "description":"Issue endorsements according to configured strategies",
+    "name":"Endorsement issue job",
+    "triggerUri":"command://policyJobs//endorsementIssueJob"
+  },
+  {
+    "description":"Perform bulk BOR transfer according to configured strategies",
+    "name":"Bulk BOR Transfer",
+    "triggerUri":"command://policyJobs//policyBORTransferJob"
+  },
+  {
+    "description": "Archives quotes/policies",
+    "name": "Quote/Policies Archiving",
+    "triggerUri": "command://policyJobs//archiveJob"
+  },
+  {
+    "description": "Quote common job for  quotes",
+    "name": "Quote Common Job",
+    "triggerUri": "command://policyJobs/quote/quoteCommonJob"
+  }
+]

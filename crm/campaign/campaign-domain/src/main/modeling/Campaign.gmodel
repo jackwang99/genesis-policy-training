@@ -1,0 +1,7 @@
+Model Campaign
+Root GenesisCampaign
+
+ModelType Campaign
+
+Stored using [ModelName]
+Indexed using ['campaign']

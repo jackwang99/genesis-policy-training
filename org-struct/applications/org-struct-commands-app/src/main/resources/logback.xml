@@ -1,0 +1,11 @@
+<configuration>
+  <jmxConfigurator />
+  <property scope="context" name="appName" value="org-struct-commands-app"/>
+
+  <!-- includes -->
+  <include optional="true" resource="zookeeper-logback.xml"/>
+  <include optional="true" resource="stream-consumer-logback.xml"/>
+  <include optional="true" resource="stream-producer-logback.xml"/>
+  <include resource="spring-app-logback.xml"/>
+
+</configuration>

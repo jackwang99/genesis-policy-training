@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Organization: Organization Administrator",
+    "description": "Role with access to all Organization rights",
+    "assignedAuthorities": [
+      "Organization: Manage Organizational Person",
+      "Organization: Search Organization by Role",
+      "Organization: Search Person",
+      "Organization: Load Organization",
+      "Organization: Apply Role",
+      "Organization: Manage Organization",
+      "Organization: Load Organization Roles",
+      "Organization: Load Organization Person"
+    ]
+  },
+  {
+    "name": "Organization: Organizational Assignment Administrato",
+    "description": "Role with access to write Organization Roles",
+    "assignedAuthorities": [
+      "Organization: Apply Role"
+    ]
+  },
+  {
+    "name": "Organization: Organization Access",
+    "description": "Role with access to all Organization rights",
+    "assignedAuthorities": [
+      "Organization: Load Organization",
+      "Organization: Load Organization Roles",
+      "Organization: Manage Organizational Person",
+      "Organization: Search Person",
+      "Organization: Search Organization by Role"
+    ]
+  }
+]

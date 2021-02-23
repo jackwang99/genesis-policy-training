@@ -1,0 +1,95 @@
+{
+    "_key": {
+        "rootId": "1214d6af-22ff-49c8-90bb-eff7347902c7",
+        "revisionNo": 1
+    },
+    "state": "unqualified",
+    "_type": "IndividualCustomer",
+    "_modelName": "INDIVIDUALCUSTOMER",
+    "_modelVersion": "1",
+    "communicationInfo": {
+        "_key": {
+            "id": "183c9010-4da3-4fb1-982a-1723df9f6b47",
+            "rootId": "85293771-1b88-4c9a-8ad1-661cac09e6c8",
+            "revisionNo": 1,
+            "parentId": "85293771-1b88-4c9a-8ad1-661cac09e6c8"
+        },
+        "_type": "GenesisCrmCommunicationInfo",
+        "addresses": [
+            {
+                "schedulingContactInfo": {
+                    "effectiveTo": "2028-07-27",
+                    "temporary": false,
+                    "effectiveFrom": "2018-07-27",
+                    "_type": "GenesisCrmSchedulingContactInfo"
+                },
+                "inCareOf": "string",
+                "addressValidatedInd": "string",
+                "county": "string",
+                "referenceId": "string",
+                "communicationPreferences": ["BILL_STATE"],
+                "subdivision": "string",
+                "doNotSolicit": false,
+                "attention": "string",
+                "location": {
+                    "addressType": "string",                
+                    "accuracy": "string",
+                    "nationalId": "string",
+                    "city": "string",
+                    "stateProvinceCd": "string",
+                    "geoposition": {
+                        "latitude": 1.0,
+                        "coordAccuracy": 1.0,
+                        "longitude": 1.0,
+                        "_type": "GenesisCrmGeoCoord"
+                    },
+                    "postalCode": "string",
+                    "countryCd": "US",
+                    "addressLine1": "string",
+                    "addressLine2": "string",
+                    "addressLine3": "string",                    
+                    "_type": "GenesisLocation"
+                },
+                "comment": "string",
+                "preferred": false,
+                "_type": "GenesisCrmAddress"
+            }
+        ],                
+        "phones": [
+            {
+                "_key": {
+                    "id": "183c9010-4da3-4fb1-982a-1723df9f6000",
+                    "revisionNo": 1
+                },            
+                "_type": "GenesisCrmPhone",
+                "type": "HOME",
+                "value": "236-00-544",
+                "updatedOn": "2018-10-01T12:01:25.981Z"
+            },
+            {
+                "_type": "GenesisCrmPhone",
+                "type": "WORk",
+                "value": "236-00-000"
+            },
+            {
+                "_key": {
+                },            
+                "_type": "GenesisCrmPhone",
+                "type": "MOB",
+                "value": "236-00-111"
+            }
+        ],
+        "emails": [
+            {
+                "_key": {
+                    "id": "183c9010-4da3-4fb1-982a-1723df007000",
+                    "revisionNo": 1
+                },            
+                "_type": "GenesisCrmEmail",
+                "type": "PRI",
+                "value": "genesis@gmail.com",
+                "updatedOn": "2018-10-01T12:01:25.981Z"
+            }
+        ]        
+    }    
+}

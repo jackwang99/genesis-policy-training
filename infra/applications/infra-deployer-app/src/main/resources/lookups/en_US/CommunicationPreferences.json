@@ -1,0 +1,26 @@
+[
+  {
+    "code": "BENEFIT_INFO",
+    "defaultValue": "Benefits Information about your Plan"
+  },
+  {
+    "code": "BILL_STATE",
+    "defaultValue": "Billing Statement"
+  },
+  {
+    "code": "EXP_BENEFIT_STATE",
+    "defaultValue": "Explanation of Benefits Statement"
+  },
+  {
+    "code": "OTHER_PROD_INFO",
+    "defaultValue": "Information about other Products or Services"
+  },
+  {
+    "code": "PLAN_NEWS",
+    "defaultValue": "Newsletters about your Plan"
+  },
+  {
+    "code": "POLICY_DOC",
+    "defaultValue": "Policy Document"
+  }
+]

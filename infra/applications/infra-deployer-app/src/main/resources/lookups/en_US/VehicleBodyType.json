@@ -1,0 +1,498 @@
+[
+  {
+    "code": "2D",
+    "defaultValue": "Two Door Sedan"
+  },
+  {
+    "code": "2DRHT",
+    "defaultValue": "Two Door Hardtop"
+  },
+  {
+    "code": "2H",
+    "defaultValue": "Two Door Hatchback"
+  },
+  {
+    "code": "2L",
+    "defaultValue": "Two Door Liftback"
+  },
+  {
+    "code": "2W",
+    "defaultValue": "Two Door Wagon"
+  },
+  {
+    "code": "3C",
+    "defaultValue": "3 Door Extended Cab/Chassis"
+  },
+  {
+    "code": "4C",
+    "defaultValue": "4 Door Extended Cab/Chassis"
+  },
+  {
+    "code": "4DRHT",
+    "defaultValue": "Four Door Hardtop"
+  },
+  {
+    "code": "4H",
+    "defaultValue": "Four Door Hatchback"
+  },
+  {
+    "code": "4L",
+    "defaultValue": "Four Door Liftback"
+  },
+  {
+    "code": "4W",
+    "defaultValue": "Four Door Wagon"
+  },
+  {
+    "code": "4WD",
+    "defaultValue": "Four-Wheel Drive"
+  },
+  {
+    "code": "5D",
+    "defaultValue": "Five Door Sedan"
+  },
+  {
+    "code": "AA",
+    "defaultValue": "Antique Auto"
+  },
+  {
+    "code": "AM",
+    "defaultValue": "Amphibious Auto"
+  },
+  {
+    "code": "AMB",
+    "defaultValue": "Ambulance"
+  },
+  {
+    "code": "AMBE",
+    "defaultValue": "Ambulance (emergency)"
+  },
+  {
+    "code": "AMBNE",
+    "defaultValue": "Ambulance (non emergency)"
+  },
+  {
+    "code": "ARPTL",
+    "defaultValue": "Airport Limousine"
+  },
+  {
+    "code": "ATV",
+    "defaultValue": "All Terrain Vehicle"
+  },
+  {
+    "code": "BUS",
+    "defaultValue": "Bus"
+  },
+  {
+    "code": "BUSARP",
+    "defaultValue": "Airport Bus"
+  },
+  {
+    "code": "BUSCHR",
+    "defaultValue": "Church Bus"
+  },
+  {
+    "code": "BUSICTY",
+    "defaultValue": "Inter City Bus"
+  },
+  {
+    "code": "BUSOTH",
+    "defaultValue": "Buses Otherwise Not Classified"
+  },
+  {
+    "code": "BUSPPIL",
+    "defaultValue": "Private Passenger Rated from CLM, Business Use"
+  },
+  {
+    "code": "BUSPSP",
+    "defaultValue": "School Bus Owned by Political Subdivision or School District"
+  },
+  {
+    "code": "BUSSSE",
+    "defaultValue": "Sightseeing Bus"
+  },
+  {
+    "code": "BUSURB",
+    "defaultValue": "Urban Bus"
+  },
+  {
+    "code": "CB",
+    "defaultValue": "Detachable Camper Body"
+  },
+  {
+    "code": "CC",
+    "defaultValue": "Compact Car"
+  },
+  {
+    "code": "CDS",
+    "defaultValue": "Driver Training - Commercial"
+  },
+  {
+    "code": "CDSDC",
+    "defaultValue": "Commercial Driving School with Dual Controls"
+  },
+  {
+    "code": "CDSW",
+    "defaultValue": "Commercial Driving School without Dual Controls"
+  },
+  {
+    "code": "CHRTB",
+    "defaultValue": "Charter Bus"
+  },
+  {
+    "code": "CL",
+    "defaultValue": "Classic Auto"
+  },
+  {
+    "code": "CONVT",
+    "defaultValue": "Convertible"
+  },
+  {
+    "code": "COUPE",
+    "defaultValue": "Coupe"
+  },
+  {
+    "code": "CT",
+    "defaultValue": "Camper Trailer"
+  },
+  {
+    "code": "DB",
+    "defaultValue": "Dune Buggy"
+  },
+  {
+    "code": "DMPST",
+    "defaultValue": "Dump Semi-Trailer"
+  },
+  {
+    "code": "DMPT",
+    "defaultValue": "Dump Trailer"
+  },
+  {
+    "code": "EA",
+    "defaultValue": "Electric Auto"
+  },
+  {
+    "code": "FDNP",
+    "defaultValue": "Fire Departments (non-private passenger type)"
+  },
+  {
+    "code": "FDP",
+    "defaultValue": "Fire Departments (private passenger type)"
+  },
+  {
+    "code": "FNRE",
+    "defaultValue": "Funeral (combination Hearse-Ambulance, Emergency)"
+  },
+  {
+    "code": "FNRFC",
+    "defaultValue": "Funeral Flower Car"
+  },
+  {
+    "code": "FNRH",
+    "defaultValue": "Funeral Hearse"
+  },
+  {
+    "code": "FNRL",
+    "defaultValue": "Funeral Limousine"
+  },
+  {
+    "code": "FNRN",
+    "defaultValue": "Funeral (combination Hearse-Ambulance, non-Emergency)"
+  },
+  {
+    "code": "FPCPR",
+    "defaultValue": "Folding or Pop-up Campers"
+  },
+  {
+    "code": "GC",
+    "defaultValue": "Golf Cart"
+  },
+  {
+    "code": "GO",
+    "defaultValue": "Go Cart"
+  },
+  {
+    "code": "HATCH",
+    "defaultValue": "Hatch Back"
+  },
+  {
+    "code": "HDTOP",
+    "defaultValue": "Hardtop"
+  },
+  {
+    "code": "LEAM",
+    "defaultValue": "Law Enforcement Agency (Motorcycle)"
+  },
+  {
+    "code": "LEAP",
+    "defaultValue": "Law Enforcement Agency (PPT)"
+  },
+  {
+    "code": "LENN",
+    "defaultValue": "Law Enforcement Agency (non-PPT, non-Motorcycle)"
+  },
+  {
+    "code": "LL",
+    "defaultValue": "Suburban or Carry All"
+  },
+  {
+    "code": "LM",
+    "defaultValue": "Limousine"
+  },
+  {
+    "code": "MB",
+    "defaultValue": "Motorbike"
+  },
+  {
+    "code": "MC",
+    "defaultValue": "Motorcycle"
+  },
+  {
+    "code": "MH",
+    "defaultValue": "Motor Home"
+  },
+  {
+    "code": "MNS",
+    "defaultValue": "Minibike"
+  },
+  {
+    "code": "MOBL22",
+    "defaultValue": "Mobile Home Trailer Less than 22 feet"
+  },
+  {
+    "code": "MOBO22",
+    "defaultValue": "Mobile Home Trailer Over 22 feet"
+  },
+  {
+    "code": "MOBOT",
+    "defaultValue": "Mobile Home Trailer Other"
+  },
+  {
+    "code": "MOBUN",
+    "defaultValue": "Mobile Home Trailer Unspecified"
+  },
+  {
+    "code": "MP",
+    "defaultValue": "Moped"
+  },
+  {
+    "code": "MS",
+    "defaultValue": "Motor Scooter"
+  },
+  {
+    "code": "OMC",
+    "defaultValue": "Other Motorized Cycles"
+  },
+  {
+    "code": "OT",
+    "defaultValue": "Other"
+  },
+  {
+    "code": "Othsb",
+    "defaultValue": "Other School Bus"
+  },
+  {
+    "code": "PP",
+    "defaultValue": "Private Passenger Automobile Make"
+  },
+  {
+    "code": "PPIL",
+    "defaultValue": "Private Passenger Rated from CLM, Pleasure Use (Illinois Only)"
+  },
+  {
+    "code": "PPRC",
+    "defaultValue": "Private Passenger Rated from CLM"
+  },
+  {
+    "code": "PPRCF",
+    "defaultValue": "Private Passenger Rated from CLM (Farm)"
+  },
+  {
+    "code": "PU",
+    "defaultValue": "Pickup Truck"
+  },
+  {
+    "code": "PUCM",
+    "defaultValue": "Pickup with Camper Body"
+  },
+  {
+    "code": "PVNOC",
+    "defaultValue": "Public Vehicle Not Otherwise Classified"
+  },
+  {
+    "code": "RT",
+    "defaultValue": "Recreational Trailer"
+  },
+  {
+    "code": "RV",
+    "defaultValue": "Recreational Vehicle"
+  },
+  {
+    "code": "SC",
+    "defaultValue": "Sport Coupe"
+  },
+  {
+    "code": "SD",
+    "defaultValue": "Sedan Delivery or Panel Truck"
+  },
+  {
+    "code": "SDS",
+    "defaultValue": "School Driver Training"
+  },
+  {
+    "code": "SDSD",
+    "defaultValue": "School Driver Training with Dual Controls"
+  },
+  {
+    "code": "SDSW",
+    "defaultValue": "School Driver Training without Dual Controls"
+  },
+  {
+    "code": "SEDAN",
+    "defaultValue": "Sedan"
+  },
+  {
+    "code": "SHRMT",
+    "defaultValue": "Showroom Trailer"
+  },
+  {
+    "code": "SMEF",
+    "defaultValue": "Special or Mobile Equipment (Farm)"
+  },
+  {
+    "code": "SMEN",
+    "defaultValue": "Special or Mobile Equipment (non-Farm)"
+  },
+  {
+    "code": "SNOWM",
+    "defaultValue": "Snowmobile"
+  },
+  {
+    "code": "SRVT",
+    "defaultValue": "Service or Utility Trailer"
+  },
+  {
+    "code": "SSEMP",
+    "defaultValue": "Social Services Auto (Employee Operated)"
+  },
+  {
+    "code": "SSOTH",
+    "defaultValue": "Social Services Auto (all other)"
+  },
+  {
+    "code": "ST",
+    "defaultValue": "Semi-Trailer"
+  },
+  {
+    "code": "STWAG",
+    "defaultValue": "Station Wagon"
+  },
+  {
+    "code": "TAXI",
+    "defaultValue": "Taxi"
+  },
+  {
+    "code": "TB",
+    "defaultValue": "Trail Bike"
+  },
+  {
+    "code": "TCDSD",
+    "defaultValue": "Commercial Driving School with Dual Controls (Trucks-Tractors-Trailers)"
+  },
+  {
+    "code": "TCDSW",
+    "defaultValue": "Commercial Driving School without Dual Controls (Trucks-Tractors-Trailers)"
+  },
+  {
+    "code": "TR",
+    "defaultValue": "Trailer"
+  },
+  {
+    "code": "TRAE",
+    "defaultValue": "Transportation of Athletes and Entertainers"
+  },
+  {
+    "code": "TREMO",
+    "defaultValue": "Transportation of Employees (all other)"
+  },
+  {
+    "code": "TREMP",
+    "defaultValue": "Transportation of Employees (PPT)"
+  },
+  {
+    "code": "TRUCKD",
+    "defaultValue": "Dump Truck"
+  },
+  {
+    "code": "TRUCKT",
+    "defaultValue": "Truck"
+  },
+  {
+    "code": "TRUCKTKTR",
+    "defaultValue": "Truck-Tractor"
+  },
+  {
+    "code": "UT",
+    "defaultValue": "Utility Trailer"
+  },
+  {
+    "code": "VAN",
+    "defaultValue": "Van"
+  },
+  {
+    "code": "VAN8V",
+    "defaultValue": "Eight Passenger Sport Van"
+  },
+  {
+    "code": "VANCRG",
+    "defaultValue": "Cargo Van"
+  },
+  {
+    "code": "VANEC",
+    "defaultValue": "Extended Cargo Van"
+  },
+  {
+    "code": "VANES",
+    "defaultValue": "Extended Sport Van"
+  },
+  {
+    "code": "VANEW",
+    "defaultValue": "Extended Window Van"
+  },
+  {
+    "code": "VANMV",
+    "defaultValue": "Mini Van"
+  },
+  {
+    "code": "VANPAN",
+    "defaultValue": "Panel Van"
+  },
+  {
+    "code": "VANPE",
+    "defaultValue": "Van Pools (Employer Furnished)"
+  },
+  {
+    "code": "VANPO",
+    "defaultValue": "Van Pools (All Other)"
+  },
+  {
+    "code": "VANSTP",
+    "defaultValue": "Step Van"
+  },
+  {
+    "code": "VANSV",
+    "defaultValue": "Sport Van"
+  },
+  {
+    "code": "VANUTIL",
+    "defaultValue": "Utility Van"
+  },
+  {
+    "code": "VANVC",
+    "defaultValue": "Van Camper"
+  },
+  {
+    "code": "VANWD",
+    "defaultValue": "Window Van"
+  }
+]

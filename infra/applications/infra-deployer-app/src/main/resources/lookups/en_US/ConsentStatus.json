@@ -1,0 +1,18 @@
+[
+  {
+    "code": "DENIED",
+    "defaultValue": "Denied"
+  },
+  {
+    "code": "GRANTED",
+    "defaultValue": "Granted"
+  },
+  {
+    "code": "NOT_REQUESTED",
+    "defaultValue": "Not Requested"
+  },
+  {
+    "code": "REQUESTED",
+    "defaultValue": "Requested"
+  }
+]

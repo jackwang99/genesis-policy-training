@@ -1,0 +1,106 @@
+[
+  {
+    "code": "ACEINSURANCE",
+    "defaultValue": "ASSURANCE ACE"
+  },
+  {
+    "code": "AIGM",
+    "defaultValue": "AIGM"
+  },
+  {
+    "code": "ALLSTATEINDEMNITY",
+    "defaultValue": "INDEMNITÉ D'ALLSTATE"
+  },
+  {
+    "code": "ALLSTATEINSURANCE",
+    "defaultValue": "ALLSTATE ASSURANCE"
+  },
+  {
+    "code": "ALLSTATEPC",
+    "defaultValue": "ALLSTATE P & C"
+  },
+  {
+    "code": "AMICA",
+    "defaultValue": "AMICA"
+  },
+  {
+    "code": "ASSIGNEDRISK",
+    "defaultValue": "RISQUE ASSIGNÉ"
+  },
+  {
+    "code": "CHUBB",
+    "defaultValue": "CHUBB"
+  },
+  {
+    "code": "FARMERS",
+    "defaultValue": "LES AGRICULTEURS"
+  },
+  {
+    "code": "FIREMANSFUND",
+    "defaultValue": "FONDS DES POMPIERS"
+  },
+  {
+    "code": "GEICO",
+    "defaultValue": "GEICO"
+  },
+  {
+    "code": "GEICOINDEMNITYCOMPANY",
+    "defaultValue": "GEICO INDEMNITY COMPANY"
+  },
+  {
+    "code": "HARTFORD",
+    "defaultValue": "HARTFORD"
+  },
+  {
+    "code": "LIBERTYMUTUAL",
+    "defaultValue": "LIBERTY MUTUAL"
+  },
+  {
+    "code": "METROPOLITAN",
+    "defaultValue": "MÉTROPOLITAIN"
+  },
+  {
+    "code": "NATIONWIDE",
+    "defaultValue": "NATIONWIDE"
+  },
+  {
+    "code": "NYCENTRALMUTUAL",
+    "defaultValue": "NY CENTRALE MUTUELLE"
+  },
+  {
+    "code": "OTHER",
+    "defaultValue": "AUTRE"
+  },
+  {
+    "code": "OTHERPROGRESSIVE",
+    "defaultValue": "AUTRE PROGRESSIF"
+  },
+  {
+    "code": "PROGRESSIVENORTHWESTERN",
+    "defaultValue": "PROGRESSIF NORD-OUEST"
+  },
+  {
+    "code": "PRUDENTIAL",
+    "defaultValue": "PRUDENTIEL"
+  },
+  {
+    "code": "STATEFARMFIREANDCASUALTY",
+    "defaultValue": "FAUTE DE L'ÉTAT INCENDIE ET ​​PERTURBATION"
+  },
+  {
+    "code": "STATEFARMMUTUAL",
+    "defaultValue": "MUTUELLE DE L'ÉTAT"
+  },
+  {
+    "code": "TRAVELERS",
+    "defaultValue": "VOYAGEURS"
+  },
+  {
+    "code": "UNKNOWN",
+    "defaultValue": "INCONNU"
+  },
+  {
+    "code": "USAA",
+    "defaultValue": "USAA"
+  }
+]

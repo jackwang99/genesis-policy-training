@@ -1,0 +1,4 @@
+extend type Query {
+    # Additional query added in the reference implementation as example
+    productByCd(productCd: String!): PolicyProduct
+}

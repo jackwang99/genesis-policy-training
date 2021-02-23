@@ -1,0 +1,102 @@
+{
+  "_key": {
+    "rootId": "9f657ee8-ef07-4730-b898-4a32e462cdc5",
+    "revisionNo": 1
+  },
+  "_type": "PersonalHomePolicySummary",
+  "_modelName": "PersonalHome",
+  "_modelVersion": "1",
+  "accessTrackInfo": {
+    "_key": {
+      "rootId": "9f657ee8-ef07-4730-b898-4a32e462cdc5",
+      "revisionNo": 1,
+      "parentId": "9f657ee8-ef07-4730-b898-4a32e462cdc5",
+      "id": "031913e4-c7c2-4337-8121-8c8a54a8f299"
+    },
+    "_type": "PersonalHomesAccessTrackInfo",
+    "createdBy": "qa",
+    "createdOn": "2018-05-10T05: 14: 46.105Z",
+    "updatedBy": "qa",
+    "updatedOn": "2018-05-10T05: 14: 46.106Z"
+  },
+  "inceptionDate": "2017-07-26",
+  "methodOfDelivery": "mail",
+  "notes": "no notes",
+  "policyNumber": "P0000001004",
+  "sendTo": "customer",
+  "createdFromPolicyRev": 0,
+  "state": "issued",
+  "termDetails": {
+    "_key": {
+      "id": "e6b97b9a-ae99-42dd-ae96-37148c921f3b",
+      "rootId": "9f657ee8-ef07-4730-b898-4a32e462cdc5",
+      "revisionNo": 1,
+      "parentId": "9f657ee8-ef07-4730-b898-4a32e462cdc5"
+    },
+    "_type": "PersonalHomeTermDetails",
+    "termNo": 1,
+    "termCd": "ANNUAL",
+    "termEffectiveDate": "2018-05-10",
+    "termExpirationDate": "2019-05-10"
+  },
+  "transactionDetails": {
+    "_key": {
+      "rootId": "9f657ee8-ef07-4730-b898-4a32e462cdc5",
+      "revisionNo": 1,
+      "parentId": "9f657ee8-ef07-4730-b898-4a32e462cdc5",
+      "id": "f52ded6e-749e-4dbc-91ef-744a2f67642c"
+    },
+    "_type": "PersonalHomeTransactionDetails",
+    "txEffectiveDate": "2018-05-10T00: 00: 00Z",
+    "txCreateDate": "2018-05-10T05: 14: 46.105Z",
+    "txType": "NEW_BUSINESS"
+  },
+  "riskItems": [
+  {
+    "_key": {
+      "rootId": "9f657ee8-ef07-4730-b898-4a32e462cdc5",
+      "revisionNo": 1,
+      "parentId": "9f657ee8-ef07-4730-b898-4a32e462cdc5",
+      "id": "c7eaa3d6-c81a-43a1-89b1-1d8cee2a0488"
+    },
+    "_type": "RiskLocation",
+    "_modelName": "PersonalHome",
+    "_modelVersion": "1",
+    "coverages": [
+      {
+        "code": "ADL",
+        "limitAmount": 100,
+        "deductibleAmount": 750,
+        "_type": "CovA",
+        "_key": {
+          "id": "c387cf9c-7c80-4f6f-b9bc-81217b542188",
+          "rootId": "9f657ee8-ef07-4730-b898-4a32e462cdc5",
+          "revisionNo": 1,
+          "parentId": "c7eaa3d6-c81a-43a1-89b1-1d8cee2a0488"
+        }
+      }
+    ]
+  }
+  ],
+  "policyDetail": {
+    "_key": {
+      "rootId": "9f657ee8-ef07-4730-b898-4a32e462cdc5",
+      "revisionNo": 1,
+      "parentId": "9f657ee8-ef07-4730-b898-4a32e462cdc5",
+      "id": "c7eaa3d6-c81a-43a1-89b1-1d8cee2a049e"
+    },
+    "_type": "PersonalHomePolicyDetail",
+    "_modelName": "PersonalHome",
+    "_modelVersion": "1",
+    "currentQuoteInd": true
+  },
+  "packagingDetail": {
+    "_key": {
+      "id": "5b41676c-1f0f-4875-9a93-cc37097b2e55",
+      "rootId": "9f657ee8-ef07-4730-b898-4a32e462cdc5",
+      "revisionNo": 1,
+      "parentId": "9f657ee8-ef07-4730-b898-4a32e462cdc5"
+    },
+    "_type": "PersonalHomePolicyDetail"
+  }
+}

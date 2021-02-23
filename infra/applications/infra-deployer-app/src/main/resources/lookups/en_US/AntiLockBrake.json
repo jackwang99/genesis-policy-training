@@ -1,0 +1,12 @@
+[
+  {
+    "code": "ABR",
+    "defaultValue": "ANTILOCK BRAKE DISCOUNT",
+    "vin_antiLockCode": "S"
+  },
+  {
+    "code": "NO DISCOUNT",
+    "defaultValue": "NO DISCOUNT",
+    "vin_antiLockCode": "N"
+  }
+]

@@ -1,0 +1,9 @@
+Model PersonalAuto
+
+ProductCd PersonalAuto
+BLOB Personal
+LOB [Auto]
+
+effectiveDate Date(2018, 10, 12)
+customStringProp1 "CustomProp1"
+customStringProp2 "General Auto Policy"

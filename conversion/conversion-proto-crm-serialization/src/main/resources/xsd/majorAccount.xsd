@@ -1,0 +1,30 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <!--Release: ${buildInfo.eis-build} Sprint: ${buildInfo.sprint-no} EIS: ${buildInfo.eis-version} Revision: ${buildInfo.git-sha-1} Date: 02.08.2019 16:20:03 Host:rix71113-->
+   <xsd:complexType name="conversionReaderModel">
+      <xsd:sequence>
+         <xsd:choice maxOccurs="unbounded">
+            <xsd:element minOccurs="0" name="majorAccount" type="MajorAccount.GenesisMajorAccountImpl"/>
+         </xsd:choice>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:element name="conversionReaderModel" type="conversionReaderModel"/>
+   <xsd:complexType name="MajorAccount.GenesisAccessTrackInfoImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="createdBy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="createdOn" type="xsd:dateTime"/>
+         <xsd:element minOccurs="0" name="updatedBy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="updatedOn" type="xsd:dateTime"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="MajorAccount.GenesisMajorAccountImpl">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="accessTrackInfo" type="MajorAccount.GenesisAccessTrackInfoImpl"/>
+         <xsd:element minOccurs="0" name="accountId" type="xsd:string"/>
+         <xsd:element name="designation" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="managers" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="name" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="serviceLevel" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="state" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+</xsd:schema>

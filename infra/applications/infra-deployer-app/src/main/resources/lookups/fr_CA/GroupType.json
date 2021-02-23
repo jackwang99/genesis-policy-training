@@ -1,0 +1,22 @@
+[
+  {
+    "code": "PRIVATE",
+    "defaultValue": "Private"
+  },
+  {
+    "code": "PUBLIC",
+    "defaultValue": "Public"
+  },
+  {
+    "code": "TRUCK_AND_TRAILERS",
+    "defaultValue": "Truck & Trailers"
+  },
+  {
+    "code": "MOTORBIKE",
+    "defaultValue": "Motorbike"
+  },
+  {
+    "code": "SNOW_BIKE",
+    "defaultValue": "Snow Bike"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "code": "Home",
+    "defaultValue": "Accueil"
+  },
+  {
+    "code": "Mobile",
+    "defaultValue": "Mobile"
+  },
+  {
+    "code": "Other",
+    "defaultValue": "Autre"
+  },
+  {
+    "code": "Work",
+    "defaultValue": "Travail"
+  }
+]

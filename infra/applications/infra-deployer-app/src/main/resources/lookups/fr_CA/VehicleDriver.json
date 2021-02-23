@@ -1,0 +1,22 @@
+[
+  {
+    "code": "driver/additional",
+    "defaultValue": "Additionnel"
+  },
+  {
+    "code": "driver/excluded",
+    "defaultValue": "Exclu"
+  },
+  {
+    "code": "driver/non-driver",
+    "defaultValue": "Non-conducteur"
+  },
+  {
+    "code": "driver/ocasional",
+    "defaultValue": "Pilote occasionnel"
+  },
+  {
+    "code": "driver/principal",
+    "defaultValue": "Pilote principal"
+  }
+]

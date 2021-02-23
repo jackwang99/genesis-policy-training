@@ -1,0 +1,112 @@
+[
+    {
+        "quotePolicyAction": "BOR Transfer",
+        "code": "Agent retired",
+        "defaultValue": "Agent à la retraite"
+    },
+    {
+        "quotePolicyAction": "BOR Transfer",
+        "code": "New agent hired",
+        "defaultValue": "Nouvel agent embauché"
+    },
+    {
+        "quotePolicyAction": "BOR Transfer",
+        "code": "Agent out of business",
+        "defaultValue": "L'Agent hors de l'entreprise"
+    },
+    {
+        "quotePolicyAction": "Endorsement",
+        "code": "TBD Endorsement Reason 1",
+        "defaultValue": "Approbation de TBD raison 1"
+    },
+    {
+        "quotePolicyAction": "Endorsement",
+        "code": "TBD Endorsement Reason 2",
+        "defaultValue": "Approbation de TBD raison 2"
+    },
+    {
+        "quotePolicyAction": "Endorsement",
+        "code": "TBD Endorsement Reason 3",
+        "defaultValue": "Approbation de TBD raison 3"
+    },
+    {
+        "quotePolicyAction": "Endorsement",
+        "code": "TBD Endorsement Reason 4",
+        "defaultValue": "Approbation de TBD raison 4"
+    },
+    {
+        "quotePolicyAction": "Endorsement",
+        "code": "TBD Endorsement Reason 5",
+        "defaultValue": "Approbation de TBD raison 5"
+    },
+    {
+        "quotePolicyAction": "Endorsement",
+        "code": "Pended renewal is Not Current due to a change on the current term policy",
+        "defaultValue": "Le renouvellement différé N'est pas à jour en raison d'un changement à la politique actuelle sur les contrats à durée déterminée"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Non Payment of Premium",
+        "defaultValue": "Non Paiement de la Prime"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Insured Request - Due To Poor Customer Service",
+        "defaultValue": "Insured Request - Due To Poor Customer Service"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Insured Request - Due To Poor Claim Service",
+        "defaultValue": "Demande Assurée - En Raison D'Un Mauvais Service À La Clientèle"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Insured Request - Due To High Premium",
+        "defaultValue": "Demande Assurée - En Raison D'Une Prime Élevée"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Insured Request - Not Specified",
+        "defaultValue": "Demande D'Assurance - Non Spécifiée"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Replaced With New Carrier",
+        "defaultValue": "Remplacé Par Un Nouveau Transporteur"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Rewrite",
+        "defaultValue": "Réécrire"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Underwriting Criteria",
+        "defaultValue": "Critères De Souscription"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Renewal flat cancelled due to prior term cancellationOther",
+        "defaultValue": "Renouvellement flat annulé en raison d'une résiliation anticipée"
+    },
+    {
+        "quotePolicyAction": "Cancellation",
+        "code": "Other",
+        "defaultValue": "Autre"
+    },
+    {
+        "quotePolicyAction": "Cancel notice",
+        "code": "Non Payment of Premium",
+        "defaultValue": "Non Paiement de la Prime"
+    },
+    {
+        "quotePolicyAction": "Cancel notice",
+        "code": "Underwriting Criteria",
+        "defaultValue": "Critères De Souscription"
+    },
+    {
+        "quotePolicyAction": "Cancel notice",
+        "code": "Other",
+        "defaultValue": "Autre"
+    }
+]

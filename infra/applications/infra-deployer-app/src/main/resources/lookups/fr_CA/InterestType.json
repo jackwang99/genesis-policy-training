@@ -1,0 +1,38 @@
+[
+  {
+    "code": "COWN",
+    "defaultValue": "Co-Owner"
+  },
+  {
+    "code": "LEASED",
+    "defaultValue": "Loué"
+  },
+  {
+    "code": "LENDLOSS",
+    "defaultValue": "Payeur du prêteur"
+  },
+  {
+    "code": "CONTRACT",
+    "defaultValue": "Contrat"
+  },
+  {
+    "code": "CONTRACTPURCHASER",
+    "defaultValue": "Acheteur contractuel"
+  },
+  {
+    "code": "EMPLOYER",
+    "defaultValue": "Employeur"
+  },
+  {
+    "code": "HIREPURCHASE",
+    "defaultValue": "Contrat de crédit"
+  },
+  {
+    "code": "LENDER",
+    "defaultValue": "Prêteur"
+  },
+  {
+    "code": "LOSSPAYEE",
+    "defaultValue": "Bénéficiaire de perte"
+  }
+]

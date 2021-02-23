@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>tfs-applications-pom</artifactId>
+        <groupId>com.eisgroup.genesis.proto.tfs.applications</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>tfs-deployer-app</artifactId>
+    <profiles>
+        <profile>
+            <id>package-rating</id>
+            <activation>
+                <property>
+                    <name>!noRating</name>
+                </property>
+            </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>com.eisgroup.genesis.tfs.core</groupId>
+                    <artifactId>tfs-rating-deployer</artifactId>
+                    <version>${genesis.core.version}</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.eisgroup.genesis.proto.tfs</groupId>
+                    <artifactId>tfs-rating-alg</artifactId>
+                    <version>${project.version}</version>
+                    <type>zip</type>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <classifier>fat</classifier>
+                    <attach>false</attach>
+                    <mainClass>com.eisgroup.genesis.boot.Bootstrap</mainClass>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>buildnumber-maven-plugin</artifactId>
+                <version>1.1</version>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>create</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/banner.txt</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+
+
+    <dependencies>
+
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.tfs</groupId>
+            <artifactId>tfs-ms-bundle</artifactId>
+            <classifier>deployer</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <!-- Tfs entities -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.tfs</groupId>
+            <artifactId>tfs-domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.tfs</groupId>
+            <artifactId>tfs-lifecycle-model</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.tfs.core</groupId>
+            <artifactId>tfs-repository-core</artifactId>
+            <version>${genesis.core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.tfs</groupId>
+            <artifactId>tfs-rating-alg</artifactId>
+            <version>${project.version}</version>
+            <optional>true</optional>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+
+</project>

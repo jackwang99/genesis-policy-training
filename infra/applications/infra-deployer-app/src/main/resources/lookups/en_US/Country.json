@@ -1,0 +1,1022 @@
+[
+  {
+    "code": "AD",
+    "defaultValue": "Andorra"
+  },
+  {
+    "code": "AE",
+    "defaultValue": "United Arab Emirates"
+  },
+  {
+    "code": "AF",
+    "defaultValue": "Afghanistan"
+  },
+  {
+    "code": "AG",
+    "defaultValue": "Antigua and Barbuda"
+  },
+  {
+    "code": "AI",
+    "defaultValue": "Anguilla"
+  },
+  {
+    "code": "AL",
+    "defaultValue": "Albania"
+  },
+  {
+    "code": "AM",
+    "defaultValue": "Armenia"
+  },
+  {
+    "code": "AN",
+    "defaultValue": "Netherlands Antilles"
+  },
+  {
+    "code": "AO",
+    "defaultValue": "Angola"
+  },
+  {
+    "code": "AQ",
+    "defaultValue": "Antarctica"
+  },
+  {
+    "code": "AR",
+    "defaultValue": "Argentina"
+  },
+  {
+    "code": "AS",
+    "defaultValue": "American Samoa"
+  },
+  {
+    "code": "AT",
+    "defaultValue": "Austria"
+  },
+  {
+    "code": "AU",
+    "defaultValue": "Australia"
+  },
+  {
+    "code": "AW",
+    "defaultValue": "Aruba"
+  },
+  {   
+    "code": "AX",
+    "defaultValue": "Aland Islands"
+  },
+  {
+    "code": "AZ",
+    "defaultValue": "Azerbaijan"
+  },
+  {
+    "code": "BA",
+    "defaultValue": "Bosnia and Herzegovina"
+  },
+  {
+    "code": "BB",
+    "defaultValue": "Barbados"
+  },
+  {
+    "code": "BD",
+    "defaultValue": "Bangladesh"
+  },
+  {
+    "code": "BE",
+    "defaultValue": "Belgium"
+  },
+  {
+    "code": "BF",
+    "defaultValue": "Burkina Faso"
+  },
+  {
+    "code": "BG",
+    "defaultValue": "Bulgaria"
+  },
+  {
+    "code": "BH",
+    "defaultValue": "Bahrain"
+  },
+  {
+    "code": "BI",
+    "defaultValue": "Burundi"
+  },
+  {
+    "code": "BJ",
+    "defaultValue": "Benin"
+  },
+  {
+    "code": "BL",
+    "defaultValue": "Saint-Barthélemy"
+  },
+  {
+    "code": "BM",
+    "defaultValue": "Bermuda"
+  },
+  {
+    "code": "BN",
+    "defaultValue": "Brunei Darussalam"
+  },
+  {
+    "code": "BO",
+    "defaultValue": "Bolivia"
+  },
+  {
+    "code": "BQ",
+    "defaultValue": "Bonaire, Sint Eustatius and Saba"
+  },
+  {
+    "code": "BR",
+    "defaultValue": "Brazil"
+  },
+  {
+    "code": "BS",
+    "defaultValue": "Bahamas"
+  },
+  {
+    "code": "BT",
+    "defaultValue": "Bhutan"
+  },
+  {
+    "code": "BV",
+    "defaultValue": "Bouvet Island"
+  },
+  {
+    "code": "BW",
+    "defaultValue": "Botswana"
+  },
+  {
+    "code": "BY",
+    "defaultValue": "Belarus"
+  },
+  {
+    "code": "BZ",
+    "defaultValue": "Belize"
+  },
+  {
+    "code": "CA",
+    "defaultValue": "Canada"
+  },
+  {
+    "code": "CC",
+    "defaultValue": "Cocos (Keeling) Islands"
+  },
+  {
+    "code": "CD",
+    "defaultValue": "Congo (Kinshasa)"
+  },
+  {
+    "code": "CF",
+    "defaultValue": "Central African Republic"
+  },
+  {
+    "code": "CG",
+    "defaultValue": "Congo (Brazzaville)"
+  },
+  {
+    "code": "CH",
+    "defaultValue": "Switzerland"
+  },
+  {
+    "code": "CI",
+    "defaultValue": "Côte d'Ivoire"
+  },
+  {
+    "code": "CK",
+    "defaultValue": "Cook Islands"
+  },
+  {
+    "code": "CL",
+    "defaultValue": "Chile"
+  },
+  {
+    "code": "CM",
+    "defaultValue": "Cameroon"
+  },
+  {
+    "code": "CN",
+    "defaultValue": "China"
+  },
+  {
+    "code": "CO",
+    "defaultValue": "Colombia"
+  },
+  {
+    "code": "CR",
+    "defaultValue": "Costa Rica"
+  },
+  {
+    "code": "CS",
+    "defaultValue": "Slovakia"
+  },
+  {
+    "code": "CU",
+    "defaultValue": "Cuba"
+  },
+  {
+    "code": "CV",
+    "defaultValue": "Cape Verde"
+  },
+  {
+    "code": "CW",
+    "defaultValue": "Curacao"
+  },
+  {
+    "code": "CX",
+    "defaultValue": "Christmas Island"
+  },
+  {
+    "code": "CY",
+    "defaultValue": "Cyprus"
+  },
+  {
+    "code": "CZ",
+    "defaultValue": "Czech Republic"
+  },
+  {
+    "code": "DE",
+    "defaultValue": "Germany"
+  },
+  {
+    "code": "DJ",
+    "defaultValue": "Djibouti"
+  },
+  {
+    "code": "DK",
+    "defaultValue": "Denmark"
+  },
+  {
+    "code": "DM",
+    "defaultValue": "Dominica"
+  },
+  {
+    "code": "DO",
+    "defaultValue": "Dominican Republic"
+  },
+  {
+    "code": "DZ",
+    "defaultValue": "Algeria"
+  },
+  {
+    "code": "EC",
+    "defaultValue": "Ecuador"
+  },
+  {
+    "code": "EE",
+    "defaultValue": "Estonia"
+  },
+  {
+    "code": "EG",
+    "defaultValue": "Egypt"
+  },
+  {
+    "code": "EH",
+    "defaultValue": "Western Sahara"
+  },
+  {
+    "code": "ER",
+    "defaultValue": "Eritrea"
+  },
+  {
+    "code": "ES",
+    "defaultValue": "Spain"
+  },
+  {
+    "code": "ET",
+    "defaultValue": "Ethiopia"
+  },
+  {
+    "code": "FI",
+    "defaultValue": "Finland"
+  },
+  {
+    "code": "FJ",
+    "defaultValue": "Fiji"
+  },
+  {
+    "code": "FK",
+    "defaultValue": "Falkland Islands (Malvinas)"
+  },
+  {
+    "code": "FM",
+    "defaultValue": "Federated States of Micronesia"
+  },
+  {
+    "code": "FO",
+    "defaultValue": "Faroe Islands"
+  },
+  {
+    "code": "FR",
+    "defaultValue": "France"
+  },
+  {
+    "code": "GA",
+    "defaultValue": "Gabon"
+  },
+  {
+    "code": "GB",
+    "defaultValue": "United Kingdom"
+  },
+  {
+    "code": "GD",
+    "defaultValue": "Grenada"
+  },
+  {
+    "code": "GE",
+    "defaultValue": "Georgia"
+  },
+  {
+    "code": "GF",
+    "defaultValue": "French Guiana"
+  },
+  {
+    "code": "GG",
+    "defaultValue": "Guernsey"
+  },
+  {
+    "code": "GH",
+    "defaultValue": "Ghana"
+  },
+  {
+    "code": "GI",
+    "defaultValue": "Gibraltar"
+  },
+  {
+    "code": "GL",
+    "defaultValue": "Greenland"
+  },
+  {
+    "code": "GM",
+    "defaultValue": "Gambia"
+  },
+  {
+    "code": "GN",
+    "defaultValue": "Guinea"
+  },
+  {
+    "code": "GP",
+    "defaultValue": "Guadeloupe"
+  },
+  {
+    "code": "GQ",
+    "defaultValue": "Equatorial Guinea"
+  },
+  {
+    "code": "GR",
+    "defaultValue": "Greece"
+  },
+  {
+    "code": "GS",
+    "defaultValue": "South Georgia and the South Sandwich Islands"
+  },
+  {
+    "code": "GT",
+    "defaultValue": "Guatemala"
+  },
+  {
+    "code": "GU",
+    "defaultValue": "Guam"
+  },
+  {
+    "code": "GW",
+    "defaultValue": "Guinea-Bissau"
+  },
+  {
+    "code": "GY",
+    "defaultValue": "Guyana"
+  },
+  {
+    "code": "HK",
+    "defaultValue": "Hong Kong, SAR China"
+  },
+  {
+    "code": "HM",
+    "defaultValue": "Heard and McDonald Islands"
+  },
+  {
+    "code": "HN",
+    "defaultValue": "Honduras"
+  },
+  {
+    "code": "HR",
+    "defaultValue": "Croatia"
+  },
+  {
+    "code": "HT",
+    "defaultValue": "Haiti"
+  },
+  {
+    "code": "HU",
+    "defaultValue": "Hungary"
+  },
+  {
+    "code": "ID",
+    "defaultValue": "Indonesia"
+  },
+  {
+    "code": "IE",
+    "defaultValue": "Ireland"
+  },
+  {
+    "code": "IL",
+    "defaultValue": "Israel"
+  },
+  {
+    "code": "IN",
+    "defaultValue": "India"
+  },
+  {
+    "code": "IM",
+    "defaultValue": "Isle of Man"
+  },
+  {
+    "code": "INT",
+    "defaultValue": "International"
+  },
+  {
+    "code": "IO",
+    "defaultValue": "British Indian Ocean Territory"
+  },
+  {
+    "code": "IQ",
+    "defaultValue": "Iraq"
+  },
+  {
+    "code": "IR",
+    "defaultValue": "Islamic Republic of Iran"
+  },
+  {
+    "code": "IS",
+    "defaultValue": "Iceland"
+  },
+  {
+    "code": "IT",
+    "defaultValue": "Italy"
+  },
+  {
+    "code": "JE",
+    "defaultValue": "Jersey"
+  },
+  {
+    "code": "JM",
+    "defaultValue": "Jamaica"
+  },
+  {
+    "code": "JO",
+    "defaultValue": "Jordan"
+  },
+  {
+    "code": "JP",
+    "defaultValue": "Japan"
+  },
+  {
+    "code": "KE",
+    "defaultValue": "Kenya"
+  },
+  {
+    "code": "KG",
+    "defaultValue": "Kyrgyzstan"
+  },
+  {
+    "code": "KH",
+    "defaultValue": "Cambodia"
+  },
+  {
+    "code": "KI",
+    "defaultValue": "Kiribati"
+  },
+  {
+    "code": "KM",
+    "defaultValue": "Comoros"
+  },
+  {
+    "code": "KN",
+    "defaultValue": "Saint Kitts and Nevis"
+  },
+  {
+    "code": "KP",
+    "defaultValue": "Korea (North)"
+  },
+  {
+    "code": "KR",
+    "defaultValue": "Korea (South)"
+  },
+  {
+    "code": "KW",
+    "defaultValue": "Kuwait"
+  },
+  {
+    "code": "KY",
+    "defaultValue": "Cayman Islands"
+  },
+  {
+    "code": "KZ",
+    "defaultValue": "Kazakhstan"
+  },
+  {
+    "code": "LA",
+    "defaultValue": "Lao PDR"
+  },
+  {
+    "code": "LB",
+    "defaultValue": "Lebanon"
+  },
+  {
+    "code": "LC",
+    "defaultValue": "Saint Lucia"
+  },
+  {
+    "code": "LI",
+    "defaultValue": "Liechtenstein"
+  },
+  {
+    "code": "LK",
+    "defaultValue": "Sri Lanka"
+  },
+  {
+    "code": "LR",
+    "defaultValue": "Liberia"
+  },
+  {
+    "code": "LS",
+    "defaultValue": "Lesotho"
+  },
+  {
+    "code": "LT",
+    "defaultValue": "Lithuania"
+  },
+  {
+    "code": "LU",
+    "defaultValue": "Luxembourg"
+  },
+  {
+    "code": "LV",
+    "defaultValue": "Latvia"
+  },
+  {
+    "code": "LY",
+    "defaultValue": "Libya"
+  },
+  {
+    "code": "MA",
+    "defaultValue": "Morocco"
+  },
+  {
+    "code": "MC",
+    "defaultValue": "Monaco"
+  },
+  {
+    "code": "MD",
+    "defaultValue": "Moldova"
+  },
+  {
+    "code": "ME",
+    "defaultValue": "Montenegro"
+  },
+  {
+    "code": "MF",
+    "defaultValue": "Saint-Martin (French part)"
+  },
+  {
+    "code": "MG",
+    "defaultValue": "Madagascar"
+  },
+  {
+    "code": "MH",
+    "defaultValue": "Marshall Islands"
+  },
+  {
+    "code": "MK",
+    "defaultValue": "Republic of Macedonia"
+  },
+  {
+    "code": "ML",
+    "defaultValue": "Mali"
+  },
+  {
+    "code": "MM",
+    "defaultValue": "Myanmar"
+  },
+  {
+    "code": "MN",
+    "defaultValue": "Mongolia"
+  },
+  {
+    "code": "MO",
+    "defaultValue": "Macao, SAR China"
+  },
+  {
+    "code": "MP",
+    "defaultValue": "Northern Mariana Islands"
+  },
+  {
+    "code": "MQ",
+    "defaultValue": "Martinique"
+  },
+  {
+    "code": "MR",
+    "defaultValue": "Mauritania"
+  },
+  {
+    "code": "MS",
+    "defaultValue": "Montserrat"
+  },
+  {
+    "code": "MT",
+    "defaultValue": "Malta"
+  },
+  {
+    "code": "MU",
+    "defaultValue": "Mauritius"
+  },
+  {
+    "code": "MV",
+    "defaultValue": "Maldives"
+  },
+  {
+    "code": "MW",
+    "defaultValue": "Malawi"
+  },
+  {
+    "code": "MX",
+    "defaultValue": "Mexico"
+  },
+  {
+    "code": "MY",
+    "defaultValue": "Malaysia"
+  },
+  {
+    "code": "MZ",
+    "defaultValue": "Mozambique"
+  },
+  {
+    "code": "NA",
+    "defaultValue": "Namibia"
+  },
+  {
+    "code": "NC",
+    "defaultValue": "New Caledonia"
+  },
+  {
+    "code": "NE",
+    "defaultValue": "Niger"
+  },
+  {
+    "code": "NF",
+    "defaultValue": "Norfolk Island"
+  },
+  {
+    "code": "NG",
+    "defaultValue": "Nigeria"
+  },
+  {
+    "code": "NI",
+    "defaultValue": "Nicaragua"
+  },
+  {
+    "code": "NL",
+    "defaultValue": "Netherlands"
+  },
+  {
+    "code": "NO",
+    "defaultValue": "Norway"
+  },
+  {
+    "code": "NP",
+    "defaultValue": "Nepal"
+  },
+  {
+    "code": "NR",
+    "defaultValue": "Nauru"
+  },
+  {
+    "code": "NT",
+    "defaultValue": "Neutral Zone"
+  },
+  {
+    "code": "NU",
+    "defaultValue": "Niue"
+  },
+  {
+    "code": "NZ",
+    "defaultValue": "New Zealand"
+  },
+  {
+    "code": "OM",
+    "defaultValue": "Oman"
+  },
+  {
+    "code": "PA",
+    "defaultValue": "Panama"
+  },
+  {
+    "code": "PE",
+    "defaultValue": "Peru"
+  },
+  {
+    "code": "PF",
+    "defaultValue": "French Polynesia"
+  },
+  {
+    "code": "PG",
+    "defaultValue": "Papua New Guinea"
+  },
+  {
+    "code": "PH",
+    "defaultValue": "Philippines"
+  },
+  {
+    "code": "PK",
+    "defaultValue": "Pakistan"
+  },
+  {
+    "code": "PL",
+    "defaultValue": "Poland"
+  },
+  {
+    "code": "PM",
+    "defaultValue": "Saint Pierre and Miquelon"
+  },
+  {
+    "code": "PN",
+    "defaultValue": "Pitcairn"
+  },
+  {
+    "code": "PR",
+    "defaultValue": "Puerto Rico"
+  },
+  {
+    "code": "PS",
+    "defaultValue": "Palestinian Territory"
+  },
+  {
+    "code": "PT",
+    "defaultValue": "Portugal"
+  },
+  {
+    "code": "PW",
+    "defaultValue": "Palau"
+  },
+  {
+    "code": "PY",
+    "defaultValue": "Paraguay"
+  },
+  {
+    "code": "QA",
+    "defaultValue": "Qatar"
+  },
+  {
+    "code": "RE",
+    "defaultValue": "Réunion"
+  },
+  {
+    "code": "RO",
+    "defaultValue": "Romania"
+  },
+  {
+    "code": "RS",
+    "defaultValue": "Serbia"
+  },
+  {
+    "code": "RU",
+    "defaultValue": "Russian Federation"
+  },
+  {
+    "code": "RW",
+    "defaultValue": "Rwanda"
+  },
+  {
+    "code": "SA",
+    "defaultValue": "Saudi Arabia"
+  },
+  {
+    "code": "SB",
+    "defaultValue": "Solomon Islands"
+  },
+  {
+    "code": "SC",
+    "defaultValue": "Seychelles"
+  },
+  {
+    "code": "SD",
+    "defaultValue": "Sudan"
+  },
+  {
+    "code": "SE",
+    "defaultValue": "Sweden"
+  },
+  {
+    "code": "SG",
+    "defaultValue": "Singapore"
+  },
+  {
+    "code": "SH",
+    "defaultValue": "Saint Helena"
+  },
+  {
+    "code": "SI",
+    "defaultValue": "Slovenia"
+  },
+  {
+    "code": "SJ",
+    "defaultValue": "Svalbard and Jan Mayen Islands"
+  },
+  {
+    "code": "SK",
+    "defaultValue": "Slovakia"
+  },
+  {
+    "code": "SL",
+    "defaultValue": "Sierra Leone"
+  },
+  {
+    "code": "SM",
+    "defaultValue": "San Marino"
+  },
+  {
+    "code": "SN",
+    "defaultValue": "Senegal"
+  },
+  {
+    "code": "SO",
+    "defaultValue": "Somalia"
+  },
+  {
+    "code": "SR",
+    "defaultValue": "Suriname"
+  },
+  {
+    "code": "SS",
+    "defaultValue": "South Sudan"
+  },
+  {
+    "code": "ST",
+    "defaultValue": "Sao Tome and Principe"
+  },
+  {
+    "code": "SV",
+    "defaultValue": "El Salvador"
+  },
+  {
+    "code": "SX",
+    "defaultValue": "Saint Martin (Dutch)"
+  },
+  {
+    "code": "SY",
+    "defaultValue": "Syrian Arab Republic (Syria)"
+  },
+  {
+    "code": "SZ",
+    "defaultValue": "Swaziland"
+  },
+  {
+    "code": "TC",
+    "defaultValue": "Turks and Caicos Islands"
+  },
+  {
+    "code": "TD",
+    "defaultValue": "Chad"
+  },
+  {
+    "code": "TF",
+    "defaultValue": "French Southern Territories"
+  },
+  {
+    "code": "TG",
+    "defaultValue": "Togo"
+  },
+  {
+    "code": "TH",
+    "defaultValue": "Thailand"
+  },
+  {
+    "code": "TJ",
+    "defaultValue": "Tajikistan"
+  },
+  {
+    "code": "TK",
+    "defaultValue": "Tokelau"
+  },
+  {
+    "code": "TL",
+    "defaultValue": "Timor-Leste"
+  },
+  {
+    "code": "TM",
+    "defaultValue": "Turkmenistan"
+  },
+  {
+    "code": "TN",
+    "defaultValue": "Tunisia"
+  },
+  {
+    "code": "TO",
+    "defaultValue": "Tonga"
+  },
+  {
+    "code": "TP",
+    "defaultValue": "Timor-Leste"
+  },
+  {
+    "code": "TR",
+    "defaultValue": "Turkey"
+  },
+  {
+    "code": "TT",
+    "defaultValue": "Trinidad and Tobago"
+  },
+  {
+    "code": "TV",
+    "defaultValue": "Tuvalu"
+  },
+  {
+    "code": "TW",
+    "defaultValue": "Taiwan, Republic of China"
+  },
+  {
+    "code": "TZ",
+    "defaultValue": "United Republic of Tanzania"
+  },
+  {
+    "code": "UA",
+    "defaultValue": "Ukraine"
+  },
+  {
+    "code": "UG",
+    "defaultValue": "Uganda"
+  },
+  {
+    "code": "UK",
+    "defaultValue": "United Kingdom"
+  },
+  {
+    "code": "UM",
+    "defaultValue": "US Minor Outlying Islands"
+  },
+  {
+    "code": "US",
+    "defaultValue": "United States of America"
+  },
+  {
+    "code": "UY",
+    "defaultValue": "Uruguay"
+  },
+  {
+    "code": "UZ",
+    "defaultValue": "Uzbekistan"
+  },
+  {
+    "code": "VA",
+    "defaultValue": "Holy See (Vatican City State)"
+  },
+  {
+    "code": "VC",
+    "defaultValue": "Saint Vincent and Grenadines"
+  },
+  {
+    "code": "VE",
+    "defaultValue": "Venezuela (Bolivarian Republic)"
+  },
+  {
+    "code": "VG",
+    "defaultValue": "British Virgin Islands"
+  },
+  {
+    "code": "VI",
+    "defaultValue": "Virgin Islands, US"
+  },
+  {
+    "code": "VN",
+    "defaultValue": "Viet Nam"
+  },
+  {
+    "code": "VU",
+    "defaultValue": "Vanuatu"
+  },
+  {
+    "code": "WF",
+    "defaultValue": "Wallis and Futuna Islands"
+  },
+  {
+    "code": "WS",
+    "defaultValue": "Samoa"
+  },
+  {
+    "code": "YE",
+    "defaultValue": "Yemen"
+  },
+  {
+    "code": "YT",
+    "defaultValue": "Mayotte"
+  },
+  {
+    "code": "ZA",
+    "defaultValue": "South Africa"
+  },
+  {
+    "code": "ZM",
+    "defaultValue": "Zambia"
+  },
+  {
+    "code": "ZW",
+    "defaultValue": "Zimbabwe"
+  }
+]

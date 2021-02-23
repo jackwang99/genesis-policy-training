@@ -1,0 +1,7 @@
+Model MajorAccount
+
+Namespace MajorAccount
+
+EntryPoints [
+    "MajorAccount Validation"
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "code": "CORPORATE",
+    "defaultValue": "Corporate",
+    "entityType": "ORG"
+  },
+  {
+    "code": "PERS",
+    "defaultValue": "Personal",
+    "entityType": "INDV"
+  }
+]

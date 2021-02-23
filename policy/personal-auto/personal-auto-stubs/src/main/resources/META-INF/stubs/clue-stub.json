@@ -1,0 +1,88 @@
+{
+  "reports": [
+    {
+      "mainDriverLicenseNo": "D123456",
+      "carrierInfo": {
+        "carrierName": "Progreico",
+        "status": "Cancelled",
+        "limitsBiPd": "50/100/50",
+        "deductibles": {"amount":500,"currency":"USD"},
+        "carrierPolicyNo": "P1005544"
+      },
+      "claims": [
+        {
+          "dateOfLoss": "2016-08-08",
+          "claimType": "Comprehensive",
+          "totalClaimCost": {"amount":2000,"currency":"USD"},
+          "description": "driving accident",
+          "claimStatus": "initiated",
+          "lossType": "type of loss"
+        },
+        {
+          "dateOfLoss": "2015-09-09",
+          "claimType": "Comprehensive",
+          "claimAmount": "500",
+          "description": "driving accident",
+          "claimStatus": "initiated",
+          "lossType": "type of loss"
+        },
+        {
+          "dateOfLoss": "2014-01-01",
+          "claimType": "Glass",
+          "totalClaimCost": {"amount":400,"currency":"USD"},
+          "description": "driving accident",
+          "claimStatus": "initiated",
+          "lossType": "type of loss"
+        }
+      ]
+    },
+    {
+      "mainDriverLicenseNo": "C123456",
+      "carrierInfo": {
+        "carrierName": "Insuright",
+        "status": "Active",
+        "limitsBiPd": "25/50/25",
+        "deductibles": {"amount":0,"currency":"USD"},
+        "carrierPolicyNo": "A9007504"
+      },
+      "claims": [
+        {
+          "dateOfLoss": "2015-04-12",
+          "claimType": "Injury",
+          "totalClaimCost": {"amount":26000,"currency":"USD"},
+          "description": "driving accident",
+          "claimStatus": "initiated",
+          "lossType": "type of loss"
+        }
+      ]
+    },
+    {
+      "mainDriverLicenseNo": "I09877612",
+      "carrierInfo": {
+        "carrierName": "Regressive",
+        "status": "Cancelled",
+        "limitsBiPd": "25/50/25",
+        "deductibles": {"amount":1000,"currency":"USD"},
+        "carrierPolicyNo": "G7700004"
+      },
+      "claims": [
+        {
+          "dateOfLoss": "2016-09-23",
+          "claimType": "Comprehensive",
+          "totalClaimCost": {"amount":750,"currency":"USD"},
+          "description": "driving accident",
+          "claimStatus": "initiated",
+          "lossType": "type of loss"
+        },
+        {
+          "dateOfLoss": "2015-07-14",
+          "claimType": "Comprehensive",
+          "totalClaimCost": {"amount":1700,"currency":"USD"},
+          "description": "driving accident",
+          "claimStatus": "initiated",
+          "lossType": "type of loss"
+        }
+      ]
+    }
+  ]
+}

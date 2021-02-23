@@ -1,0 +1,18 @@
+Entity GenesisMajorAccount is MajorAccount {
+    
+    @Required
+    @Lookup("MajorAccountDesignation")
+    @Description("lookup:MajorAccountDesignation")
+    Attr designation: String
+    
+    Attr managers: *String
+
+    Attr accessTrackInfo: GenesisAccessTrackInfo    
+}
+
+Entity GenesisAccessTrackInfo is AccessTrackInfo {
+    @Searchable
+    Attr createdOn: Datetime
+    @Searchable    
+    Attr updatedOn: Datetime
+}

@@ -1,0 +1,16 @@
+Entity GenesisGroupInfo is GroupInfo {
+
+    Attr dimensions: *GenesisCrmDimensionValueHolder
+    
+    Attr accessTrackInfo: GenesisAccessTrackInfo    
+}
+
+Entity GenesisCrmDimensionValueHolder is CrmDimensionValueHolder {
+}
+
+Entity GenesisAccessTrackInfo is AccessTrackInfo {
+    @Searchable
+    Attr createdOn: Datetime
+    @Searchable    
+    Attr updatedOn: Datetime
+} 

@@ -1,0 +1,42 @@
+[
+  {
+    "code": "1",
+    "defaultValue": "Non paiement de prime"
+  },
+  {
+    "code": "2",
+    "defaultValue": "Demande assurée - en raison d'un service client médiocre"
+  },
+  {
+    "code": "3",
+    "defaultValue": "Demande assurée - En raison d'un service de réclamation faible"
+  },
+  {
+    "code": "4",
+    "defaultValue": "Demande assurée - en raison d'une prime élevée"
+  },
+  {
+    "code": "5",
+    "defaultValue": "Demande assurée - Non spécifié"
+  },
+  {
+    "code": "6",
+    "defaultValue": "Remplacé par un nouveau transporteur"
+  },
+  {
+    "code": "7",
+    "defaultValue": "Rewrite"
+  },
+  {
+    "code": "8",
+    "defaultValue": "Critères de souscription"
+  },
+  {
+    "code": "9",
+    "defaultValue": "Renouvellement du bail d'un appartement en raison d'une annulation antérieure"
+  },
+  {
+    "code": "10",
+    "defaultValue": "Autre"
+  }
+]

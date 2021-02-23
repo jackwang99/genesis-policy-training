@@ -1,0 +1,22 @@
+[
+  {
+    "code": "closed",
+    "defaultValue": "Fermé"
+  },
+  {
+    "code": "draft",
+    "defaultValue": "Brouillon"
+  },
+  {
+    "code": "inactive",
+    "defaultValue": "Inactif"
+  },
+  {
+    "code": "inPipeline",
+    "defaultValue": "Dans Pipeline"
+  },
+  {
+    "code": "quoted",
+    "defaultValue": "Cité"
+  }
+]

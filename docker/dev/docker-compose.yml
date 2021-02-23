@@ -1,0 +1,1093 @@
+version: '2.2'
+
+services:
+    #########################################################
+    #                General                                #
+    #########################################################
+    jaeger:
+        image: jaegertracing/all-in-one:1.9
+        container_name: jaeger
+        hostname: jaeger
+        networks: 
+            - genesis_net
+        ports: 
+            - "5775:5775/udp"
+            - "6831:6831/udp"
+            - "6832:6832/udp"
+            - "5778:5778"
+            - "16686:16686" # UI port
+            - "14268:14268"
+
+    zookeeper:
+        image: zookeeper:3.5.5
+        container_name: zookeeper
+        hostname: zookeeper
+        networks: 
+            - genesis_net
+        volumes:
+            - "vol_zookeeper:/data"
+        ports:
+            - "2181:2181"
+
+    kafka:
+        image: suzeisnexus03.exigengroup.com:5000/kafka:2.3.0
+        networks:
+            - genesis_net
+        ports:
+            - "9092:9092"
+        volumes:
+            - "vol_kafka_logs:/var/lib/kafka/logs"
+            - "vol_kafka_data:/var/lib/kafka/data"
+        command: /usr/bin/sh -c "NM_HOST=$$EXTERNAL_IP && NM_HOST=$${NM_HOST:-kafka} && export NM_HOST && export ENABLE_METRICS=$${graphite_host:+true} && /var/lib/kafka/bin/kafka-server-start.sh /var/lib/kafka/config/server.properties --override broker.id=$${broker_id:--1} --override log.dirs=/var/lib/kafka/data --override zookeeper.connect=$${zookeeper_connect} --override advertised.host.name=$${host:-$${NM_HOST}} --override advertised.port=$${port:-9092} --override kafka.graphite.metrics.host=$${graphite_host:-localhost} --override kafka.graphite.metrics.port=$${graphite_port:-2003} --override kafka.graphite.metrics.prefix=$$(hostname) --override kafka.graphite.metrics.reporter.enabled=$${ENABLE_METRICS:-false}"
+        environment:
+            - "zookeeper_connect=zookeeper:2181"
+            - "EXTERNAL_IP=${EXTERNAL_IP}"
+            - "broker_id=0"
+
+###       IN CASE OF UNCOMMENTING THIS      ###
+#         Comment out dse, remove dse related paths like genesis_solr_url from service url's.
+#
+#     solr:
+#         image: vnoeisdockhub.exigengroup.com/solr:6.5
+#         networks:
+#             - genesis_net
+#         ports:
+#             - "8983:8983"
+#         volumes:
+#             - "vol_solr_logs:/var/lib/solr/server/logs"
+#             - "vol_solr_data:/var/lib/solr/server/data"
+#         environment:
+#             - "zookeeper_connect=zookeeper:2181"
+#             - "SOLR_HOST=solr"
+
+#
+#    cassandra:
+#        image: cassandra:3.9
+#        container_name: cassandra
+#        hostname: cassandra
+#        networks:
+#           - genesis_net
+#        ports:
+#            - "9042:9042"
+#        volumes:
+#            - "vol_cassandra:/var/lib/cassandra"
+    dse:
+        image: datastax/dse-server:6.7.0
+        container_name: cassandra
+        hostname: cassandra
+        command: -f -s
+        networks:
+            - genesis_net
+        ports:
+            - "9042:9042"
+            - "8983:8983"
+        volumes:
+            - "vol_dse:/var/lib/cassandra"
+        environment:
+            - "DS_LICENSE=accept"
+            - "JVM_EXTRA_OPTS=-Xmx1g -Xms1g -XX:+AlwaysPreTouch"
+
+#    postgres:
+#        image: postgres:9
+#        container_name: postgres
+#        hostname: postgres
+#        networks:
+#           - genesis_net
+#        ports:
+#            - "5432:5432"
+#        volumes:
+#            - "vol_postgres:/var/lib/postgresql/data"
+#        environment:
+#            - "POSTGRES_USER=admin"
+#            - "POSTGRES_PASSWORD=admin"
+#    spark:
+#      #  image: vnoeisdockhub.exigengroup.com/spark:2.3.0z
+#        image: sfoeisnexus03.exigengroup.com/genesis-docker/spark:2.3.3
+#        container_name: spark-master
+#        hostname: spark-master
+#        command: start-spark local
+#        networks:
+#           - genesis_net
+#        ports:
+#            # debug port
+#            - "5005:5005"
+#            # HDFS namenode web-ui
+#            - "50070:50070"
+#            - "50075:50075"
+#            # Spark master/job web-ui
+#            - "9080:8080"
+#            - "4040:4040"
+#            # Livy UI/REST API
+#            - "9081:80"
+#            - "8998:8998"
+#            # Zeppelin
+#            - "8180:8180"
+#            # Hive jdbc/odbc
+#            - "10000:10000"
+#        volumes:
+#            - "vol_hdfs:/opt/hdfs"
+#            - "vol_hive:/opt/derby"
+#        environment:
+#            zookeeper_connect: 'zookeeper:2181'
+#            JAEGER_AGENT_HOST: jaeger
+#            JAEGER_AGENT_PORT: 6831
+#            JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#            genesis_cassandra_url: 'cassandra:9042'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+    #########################################################
+    #                   Infra                               #
+    #########################################################
+    infra_commands:
+                build: ./../../infra/applications/infra-commands-app
+                networks:
+                    - genesis_net
+                ports:
+                    - "1066:1066"
+                    - "4010:4010"
+                environment:
+                    genesis.authorization.server.url: 'http://sec_facade:8088'
+                    spring.profiles.include: write
+                    zookeeper_connect: 'zookeeper:2181'
+                    JAEGER_AGENT_HOST: jaeger
+                    JAEGER_AGENT_PORT: 6831
+                    JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+                    genesis.stream.partitions: 1
+                    JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx256m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1066 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4010 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4010'
+                    genesis_cassandra_url: 'cassandra:9042'
+                    GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+    infra_deployer:
+            build: ../../infra/applications/infra-deployer-app
+            command: deploy all
+            ports:
+                - "1081:1081"
+            networks:
+               - genesis_net
+            environment:
+    #            deployer_goal: 'clean,deploy'
+                genesis.authorization.server.url: 'http://sec_facade:8088'
+                spring.profiles.include: write
+                zookeeper_hostname: 'zookeeper'
+                cassandra_hostname: 'cassandra'
+                genesis_solr_url: 'http://cassandra:8983/solr'
+                genesis_hdfs_url: 'webhdfs://spark-master:50070'
+                genesis_postgres_url: 'jdbc:postgresql://postgres:5432/admin'
+                genesis_postgres_username: 'admin'
+                genesis_postgres_password: 'admin'
+                JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx1256m -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1081'
+                GENESIS_CASSANDRA_URL: #    environment-var passthrough
+
+    infra_events:
+            build: ./../../infra/applications/infra-events-app
+            networks:
+                - genesis_net
+            ports:
+                - "1052:1052"
+                - "4011:4011"
+            environment:
+                genesis.authorization.server.url: 'http://sec_facade:8088'
+                spring.profiles.include: write
+                zookeeper_connect: 'zookeeper:2181'
+                JAEGER_AGENT_HOST: jaeger
+                JAEGER_AGENT_PORT: 6831
+                JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+                JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx256m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1052 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4011 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4011'
+                genesis_cassandra_url: 'cassandra:9042'
+                GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+    infra_facade:
+            build: ../../infra/applications/infra-facade-app
+            networks:
+                - genesis_net
+            ports:
+                - "8080:8080"
+                - "1045:1045"
+                - "4002:4002"
+            environment:
+                EXTERNAL_IP: infra_facade
+                spring.profiles.active: 'basic-login'
+                zookeeper_connect: 'zookeeper:2181'
+                JAEGER_AGENT_HOST: jaeger
+                JAEGER_AGENT_PORT: 6831
+                JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+                genesis.authorization.server.url: 'http://sec_facade:8088'
+                JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms128m -Xmx512m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1045 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4002 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4002 -Dgenesis.facade.cors.enabled=true -Dgenesis.facade.cors.allowed.origins=* -Dgenesis.facade.cors.allowed.methods=GET,POST,HEAD,OPTIONS,PUT,DELETE -Dgenesis.facade.cors.allowed.headers=Origin,Accept,X-Requested-With,Content-Type,Access-Control-Request-Method,Access-Control-Request-Headers,authorization,cache-control,pragma'
+                genesis_cassandra_url: 'cassandra:9042'
+                GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+    #########################################################
+    #                   Security                            #
+    #########################################################
+    sec_commands:
+                    build: ./../../security/applications/security-commands-app
+                    networks:
+                        - genesis_net
+                    ports:
+                        - "1068:1068"
+                        - "4026:4026"
+                    environment:
+                        genesis.authorization.server.url: 'http://sec_facade:8088'
+                        spring.profiles.include: write
+                        zookeeper_connect: 'zookeeper:2181'
+                        JAEGER_AGENT_HOST: jaeger
+                        JAEGER_AGENT_PORT: 6831
+                        JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+                        genesis.stream.partitions: 1
+                        JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx256m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1068 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4026 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4026'
+                        genesis_cassandra_url: 'cassandra:9042'
+                        GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+    sec_events:
+                build: ./../../security/applications/security-events-app
+                networks:
+                    - genesis_net
+                ports:
+                    - "1054:1054"
+                    - "4024:4024"
+                environment:
+                    genesis.authorization.server.url: 'http://sec_facade:8088'
+                    spring.profiles.include: write
+                    zookeeper_connect: 'zookeeper:2181'
+                    JAEGER_AGENT_HOST: jaeger
+                    JAEGER_AGENT_PORT: 6831
+                    JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+                    JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx256m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1054 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4024 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4024'
+                    genesis_cassandra_url: 'cassandra:9042'
+                    GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+    sec_facade:
+                build: ../../security/applications/security-facade-app
+                networks:
+                    - genesis_net
+                ports:
+                    - "8088:8088"
+                    - "1048:1048"
+                    - "4009:4009"
+                environment:
+                    EXTERNAL_IP: sec_facade
+                    security.thirdparty.client.url: http://sso_provider:8081
+                    spring.profiles.active: 'basic-login'
+                    zookeeper_connect: 'zookeeper:2181'
+                    JAEGER_AGENT_HOST: jaeger
+                    JAEGER_AGENT_PORT: 6831
+                    JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+                    JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms128m -Xmx512m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1048 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4009 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4009'
+                    genesis_cassandra_url: 'cassandra:9042'
+                    GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+    sec_deployer:
+                build: ../../security/applications/security-deployer-app
+                command: deploy all
+                ports:
+                    - "1083:1083"
+                networks:
+                   - genesis_net
+                environment:
+        #            deployer_goal: 'clean,deploy'
+                    spring.profiles.include: write
+                    zookeeper_hostname: 'zookeeper'
+                    cassandra_hostname: 'cassandra'
+                    genesis_solr_url: 'http://cassandra:8983/solr'
+                    genesis_hdfs_url: 'webhdfs://spark-master:50070'
+                    genesis_postgres_url: 'jdbc:postgresql://postgres:5432/admin'
+                    genesis_postgres_username: 'admin'
+                    genesis_postgres_password: 'admin'
+                    JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx512m -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1083'
+                    GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+#    sso_provider:
+#            build: ./../../security/genesis-sso
+#            networks:
+#                - genesis_net
+#            ports:
+#                - "8081:8081"
+#                - "1050:1050"
+#                - "4008:4008"
+#            command: /usr/bin/sh -c "NM_HOST=$$EXTERNAL_IP && NM_HOST=$${NM_HOST:-$$( ping $$(hostname) -c 1 | grep -oE -m 1 \"\\b([0-9]{1,3}\.){3}[0-9]{1,3}\\b\")} && export NM_HOST && java $${JAVA_OPTS} -Dgenesis.zookeeper.url=$${zookeeper_connect} -Dgenesis.cassandra.url=$${genesis_cassandra_url} -Dgenesis.solr.url=$${genesis_solr_url} -jar /usr/lib/genesis/sso/sso-provider-fat.jar"
+#            environment:
+#                zookeeper_connect: 'zookeeper:2181'
+#                genesis_solr_url: 'http://cassandra:8983/solr'
+#                JAEGER_AGENT_HOST: jaeger
+#                JAEGER_AGENT_PORT: 6831
+#                JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#                genesis_cassandra_url: 'cassandra:9042'
+#                JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx256m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1050'
+
+    #########################################################
+    #            Organization Structure                     #
+    #########################################################
+#    org_commands:
+#                build: ./../../org-struct/applications/org-struct-commands-app
+#                networks:
+#                    - genesis_net
+#                ports:
+#                    - "1051:1051"
+#                    - "4025:4025"
+#                environment:
+#                    genesis.authorization.server.url: 'http://sec_facade:8088'
+#                    spring.profiles.include: write
+#                    zookeeper_connect: 'zookeeper:2181'
+#                    JAEGER_AGENT_HOST: jaeger
+#                    JAEGER_AGENT_PORT: 6831
+#                    JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#                    genesis.stream.partitions: 1
+#                    JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms128m -Xmx512m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1051 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4007 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4016'
+#                    genesis_cassandra_url: 'cassandra:9042'
+#                    GENESIS_CASSANDRA_URL: #environment-var passthrough
+#
+#    org_deployer:
+#            build: ../../org-struct/applications/org-struct-deployer-app
+#            command: deploy all
+#            ports:
+#                - "1082:1082"
+#            networks:
+#               - genesis_net
+#            environment:
+#    #            deployer_goal: 'clean,deploy'
+#                genesis.authorization.server.url: 'http://sec_facade:8088'
+#                spring.profiles.include: write
+#                zookeeper_hostname: 'zookeeper'
+#                cassandra_hostname: 'cassandra'
+#                genesis_solr_url: 'http://cassandra:8983/solr'
+#                genesis_hdfs_url: 'webhdfs://spark-master:50070'
+#                genesis_postgres_url: 'jdbc:postgresql://postgres:5432/admin'
+#                genesis_postgres_username: 'admin'
+#                genesis_postgres_password: 'admin'
+#                JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx512m -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1082'
+#                GENESIS_CASSANDRA_URL: #environment-var passthrough
+#
+#    org_events:
+#            build: ./../../org-struct/applications/org-struct-events-app
+#            networks:
+#                - genesis_net
+#            ports:
+#                - "1047:1047"
+#                - "4023:4023"
+#            environment:
+#                genesis.authorization.server.url: 'http://sec_facade:8088'
+#                spring.profiles.include: write
+#                zookeeper_connect: 'zookeeper:2181'
+#                JAEGER_AGENT_HOST: jaeger
+#                JAEGER_AGENT_PORT: 6831
+#                JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#                JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx256m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1047 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4023 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4023'
+#                genesis_cassandra_url: 'cassandra:9042'
+#                GENESIS_CASSANDRA_URL: #environment-var passthrough
+#
+#    org_facade:
+#            build: ../../org-struct/applications/org-struct-facade-app
+#            networks:
+#                - genesis_net
+#            ports:
+#                - "8087:8087"
+#                - "1046:1046"
+#                - "4003:4003"
+#            environment:
+#                EXTERNAL_IP: org_facade
+#                spring.profiles.active: 'basic-login'
+#                zookeeper_connect: 'zookeeper:2181'
+#                JAEGER_AGENT_HOST: jaeger
+#                JAEGER_AGENT_PORT: 6831
+#                JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#                genesis.authorization.server.url: 'http://sec_facade:8088'
+#                JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms128m -Xmx512m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1046 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4003 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4003'
+#                genesis_cassandra_url: 'cassandra:9042'
+#                GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+    #########################################################
+    #                   Customer                            #
+    #########################################################
+#    crm_commands:
+#        build: ./../../crm/applications/crm-commands-app
+#        networks:
+#            - genesis_net
+#        ports:
+#            - "1053:1053"
+#            - "4007:4007"
+#        environment:
+#            spring.profiles.include: write
+#            zookeeper_connect: 'zookeeper:2181'
+#            JAEGER_AGENT_HOST: jaeger
+#            JAEGER_AGENT_PORT: 6831
+#            JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#            genesis.stream.partitions: 1
+#            genesis.authorization.server.url: 'http://sec_facade:8088'
+#            GENESIS_PARTY_FACADE_URL: 'http://party_facade:8090'
+#            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx512m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1053 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4007 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4007'
+#            genesis_cassandra_url: 'cassandra:9042'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+#
+#    crm_events:
+#        build: ./../../crm/applications/crm-events-app
+#        networks:
+#            - genesis_net
+#        ports:
+#            - "1079:1079"
+#            - "4005:4005"
+#        environment:
+#            genesis.authorization.server.url: 'http://sec_facade:8088'
+#            spring.profiles.include: write
+#            zookeeper_connect: 'zookeeper:2181'
+#            JAEGER_AGENT_HOST: jaeger
+#            JAEGER_AGENT_PORT: 6831
+#            JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx256m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1079 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4005 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4005'
+#            genesis_cassandra_url: 'cassandra:9042'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+#
+#    crm_deployer:
+#        build: ../../crm/applications/crm-deployer-app
+#        command: deploy all
+#        ports:
+#            - "1078:1078"
+#        networks:
+#           - genesis_net
+#        environment:
+##            deployer_goal: 'clean,deploy'
+#            zookeeper_hostname: 'zookeeper'
+#            cassandra_hostname: 'cassandra'
+#            genesis_solr_url: 'http://cassandra:8983/solr'
+#            genesis_hdfs_url: 'webhdfs://spark-master:50070'
+#            genesis_postgres_url: 'jdbc:postgresql://postgres:5432/admin'
+#            genesis_postgres_username: 'admin'
+#            genesis_postgres_password: 'admin'
+#            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx512m -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1078'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+#
+#    crm_facade:
+#        build: ../../crm/applications/crm-facade-app
+#        networks:
+#            - genesis_net
+#        ports:
+#            - "8083:8083"
+#            - "1080:1080"
+#            - "4015:4015"
+#        environment:
+#            EXTERNAL_IP: crm_facade
+#            spring.profiles.active: 'basic-login'
+#            zookeeper_connect: 'zookeeper:2181'
+#            JAEGER_AGENT_HOST: jaeger
+#            JAEGER_AGENT_PORT: 6831
+#            JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#            genesis.authorization.server.url: 'http://sec_facade:8088'
+#            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms128m -Xmx512m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1080 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4015 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4015'
+#            genesis_cassandra_url: 'cassandra:9042'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+#
+#    crm_batch_commands:
+#        build: ./../../crm/applications/crm-batch-commands-app
+#        networks:
+#            - genesis_net
+#        ports:
+#            - "1070:1070"
+#            - "4028:4028"
+#        environment:
+#            genesis.authorization.server.url: 'http://sec_facade:8088'
+#            spring.profiles.include: write
+#            zookeeper_connect: 'zookeeper:2181'
+#            JAEGER_AGENT_HOST: jaeger
+#            JAEGER_AGENT_PORT: 6831
+#            JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#            genesis.stream.partitions: 1
+#            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx256m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1070 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4028 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4028'
+#            genesis_cassandra_url: 'cassandra:9042'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+    #########################################################
+    #                       Party                           #
+    #########################################################
+#    party_facade:
+#        build: ./../../party/party/applications/party-facade-app
+#        networks:
+#            - genesis_net
+#        ports:
+#            - "8090:8090"
+#            - "1061:1061"
+#            - "4018:4018"
+#        environment:
+#            EXTERNAL_IP: party_facade
+#            spring.profiles.active: 'basic-login'
+#            zookeeper_connect: 'zookeeper:2181'
+#            JAEGER_AGENT_HOST: jaeger
+#            JAEGER_AGENT_PORT: 6831
+#            JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#            genesis.authorization.server.url: 'http://sec_facade:8088'
+#            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms128m -Xmx512m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1061 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4018 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4018'
+#            genesis_cassandra_url: 'cassandra:9042'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+#
+#    party_events:
+#        build: ./../../party/party/applications/party-events-app
+#        networks:
+#            - genesis_net
+#        ports:
+#            - "1062:1062"
+#            - "4019:4019"
+#        environment:
+#            genesis.authorization.server.url: 'http://sec_facade:8088'
+#            spring.profiles.include: write
+#            zookeeper_connect: 'zookeeper:2181'
+#            JAEGER_AGENT_HOST: jaeger
+#            JAEGER_AGENT_PORT: 6831
+#            JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx256m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1062 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4019 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4019'
+#            genesis_cassandra_url: 'cassandra:9042'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+#
+#    party_commands:
+#        build: ./../../party/party/applications/party-commands-app
+#        networks:
+#            - genesis_net
+#        ports:
+#            - "1065:1065"
+#            - "4022:4022"
+#        environment:
+#            genesis.authorization.server.url: 'http://sec_facade:8088'
+#            spring.profiles.include: write
+#            zookeeper_connect: 'zookeeper:2181'
+#            JAEGER_AGENT_HOST: jaeger
+#            JAEGER_AGENT_PORT: 6831
+#            JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx256m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1065 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4022 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4022'
+#            genesis_cassandra_url: 'cassandra:9042'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+#
+#    party_deployer:
+#        build: ../../party/party/applications/party-deployer-app
+#        command: deploy all
+#        ports:
+#            - "1086:1086"
+#        networks:
+#           - genesis_net
+#        environment:
+##            deployer_goal: 'clean,deploy'
+#            zookeeper_hostname: 'zookeeper'
+#            cassandra_hostname: 'cassandra'
+#            genesis_solr_url: 'http://cassandra:8983/solr'
+#            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx512m -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1086'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+#
+#    eis_party_events:
+#        build: ./../../party/party/applications/eissuite-party-events-app
+#        networks:
+#            - genesis_net
+#        ports:
+#           - "1071:1071"
+#           - "4030:4030"
+#        environment:
+#            genesis.authorization.server.url: 'http://sec_facade:8088'
+#            spring.profiles.include: write
+#            zookeeper_connect: 'zookeeper:2181'
+#            JAEGER_AGENT_HOST: jaeger
+#            JAEGER_AGENT_PORT: 6831
+#            JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx256m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1071 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4030 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4030'
+#            genesis_cassandra_url: 'cassandra:9042'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+    #########################################################
+    #                        Policy Auto                    #
+    #########################################################
+    policy_auto_commands:
+        build: ./../../policy/applications/auto/policy-auto-commands-app
+        networks:
+            - genesis_net
+        ports:
+            - "1063:1063"
+            - "4020:4020"
+        environment:
+            genesis.authorization.server.url: 'http://sec_facade:8088'
+            spring.profiles.include: write
+            zookeeper_connect: 'zookeeper:2181'
+            JAEGER_AGENT_HOST: jaeger
+            JAEGER_AGENT_PORT: 6831
+            JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+            GENESIS_PARTY_FACADE_URL: 'http://party_facade:8090'
+            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms512m -Xmx1536m -XX:+UseParallelGC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1063 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4020 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4020'
+            genesis_cassandra_url: 'cassandra:9042'
+            rating_server_url: 'http://rating-server:8080'
+            GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+    policy_auto_facade:
+        build: ./../../policy/applications/auto/policy-auto-facade-app
+        networks:
+            - genesis_net
+        ports:
+            - "8084:8084"
+            - "1064:1064"
+            - "4021:4021"
+        environment:
+            EXTERNAL_IP: policy_auto_facade
+            spring.profiles.active: 'basic-login'
+            zookeeper_connect: 'zookeeper:2181'
+            JAEGER_AGENT_HOST: jaeger
+            JAEGER_AGENT_PORT: 6831
+            JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+            genesis.authorization.server.url: 'http://sec_facade:8088'
+            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms256m -Xmx1024m -XX:+UseParallelGC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1064 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4021 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4021'
+            genesis_cassandra_url: 'cassandra:9042'
+            GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+    policy_auto_deployer:
+        build: ../../policy/applications/auto/policy-auto-deployer-app
+        command: deploy all
+        ports:
+        - "1087:1087"
+        networks:
+        - genesis_net
+        environment:
+            #            deployer_goal: 'clean,deploy'
+            zookeeper_hostname: 'zookeeper'
+            cassandra_hostname: 'cassandra'
+            genesis_solr_url: 'http://cassandra:8983/solr'
+            genesis_hdfs_url: 'webhdfs://spark-master:50070'
+            genesis_postgres_url: 'jdbc:postgresql://postgres:5432/admin'
+            genesis_postgres_username: 'admin'
+            genesis_postgres_password: 'admin'
+            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms256m -Xmx1024m -XX:+UseParallelGC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1087'
+            GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+    #########################################################
+    #                        Policy Fleet                   #
+    #########################################################
+#    policy_fleet_commands:
+#        build: ./../../policy/applications/fleet/policy-fleet-commands-app
+#        networks:
+#            - genesis_net
+#        ports:
+#            - "1111:1111"
+#            - "4444:4444"
+#        environment:
+#            genesis.authorization.server.url: 'http://sec_facade:8088'
+#            spring.profiles.include: write
+#            zookeeper_connect: 'zookeeper:2181'
+#            JAEGER_AGENT_HOST: jaeger
+#            JAEGER_AGENT_PORT: 6831
+#            JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#            GENESIS_PARTY_FACADE_URL: 'http://party_facade:8090'
+#            JAVA_OPTS: '-Djute.maxbuffer=10000000 -javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms512m -Xmx1536m -XX:+UseParallelGC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1111 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4444 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4444'
+#            genesis_cassandra_url: 'cassandra:9042'
+#            rating_server_url: 'http://rating-server:8080'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+#
+#    policy_fleet_facade:
+#        build: ./../../policy/applications/fleet/policy-fleet-facade-app
+#        networks:
+#            - genesis_net
+#        ports:
+#            - "8888:8888"
+#            - "1112:1112"
+#            - "4445:4445"
+#        environment:
+#            EXTERNAL_IP: policy_fleet_facade
+#            spring.profiles.active: 'basic-login'
+#            zookeeper_connect: 'zookeeper:2181'
+#            JAEGER_AGENT_HOST: jaeger
+#            JAEGER_AGENT_PORT: 6831
+#            JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#            genesis.authorization.server.url: 'http://sec_facade:8088'
+#            JAVA_OPTS: '-Djute.maxbuffer=10000000 -javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms256m -Xmx1024m -XX:+UseParallelGC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1112 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4445 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4445'
+#            genesis_cassandra_url: 'cassandra:9042'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+#
+#    policy_fleet_deployer:
+#        build: ../../policy/applications/fleet/policy-fleet-deployer-app
+#        command: deploy all
+#        ports:
+#        - "1113:1113"
+#        networks:
+#        - genesis_net
+#        environment:
+#            #            deployer_goal: 'clean,deploy'
+#            zookeeper_hostname: 'zookeeper'
+#            cassandra_hostname: 'cassandra'
+#            genesis_solr_url: 'http://cassandra:8983/solr'
+#            genesis_hdfs_url: 'webhdfs://spark-master:50070'
+#            genesis_postgres_url: 'jdbc:postgresql://postgres:5432/admin'
+#            genesis_postgres_username: 'admin'
+#            genesis_postgres_password: 'admin'
+#            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms256m -Xmx1024m -XX:+UseParallelGC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1113'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+
+    #########################################################
+    #                        Policy Garage                  #
+    #########################################################
+#    policy_garage_commands:
+#        build: ./../../policy/applications/garage/policy-garage-commands-app
+#        networks:
+#            - genesis_net
+#        ports:
+#            - "5111:5111"
+#            - "5444:5444"
+#        environment:
+#            genesis.authorization.server.url: 'http://sec_facade:8088'
+#            spring.profiles.include: write
+#            zookeeper_connect: 'zookeeper:2181'
+#            JAEGER_AGENT_HOST: jaeger
+#            JAEGER_AGENT_PORT: 6831
+#            JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#            GENESIS_PARTY_FACADE_URL: 'http://party_facade:8090'
+#            JAVA_OPTS: '-Djute.maxbuffer=10000000 -javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms512m -Xmx1536m -XX:+UseParallelGC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:5111 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=5444 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=2111'
+#            genesis_cassandra_url: 'cassandra:9042'
+#            rating_server_url: 'http://rating-server:8080'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+#
+#    policy_garage_facade:
+#        build: ./../../policy/applications/garage/policy-garage-facade-app
+#        networks:
+#            - genesis_net
+#        ports:
+#            - "9999:9999"
+#            - "3111:3111"
+#            - "6444:6444"
+#        environment:
+#            EXTERNAL_IP: policy_garage_facade
+#            spring.profiles.active: 'basic-login'
+#            zookeeper_connect: 'zookeeper:2181'
+#            JAEGER_AGENT_HOST: jaeger
+#            JAEGER_AGENT_PORT: 6831
+#            JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#            genesis.authorization.server.url: 'http://sec_facade:8088'
+#            JAVA_OPTS: '-Djute.maxbuffer=10000000 -javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms256m -Xmx1024m -XX:+UseParallelGC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:3111 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=6444 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=6444'
+#            genesis_cassandra_url: 'cassandra:9042'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+#
+#    policy_garage_deployer:
+#        build: ../../policy/applications/garage/policy-garage-deployer-app
+#        command: deploy all
+#        ports:
+#        - "4111:4111"
+#        networks:
+#        - genesis_net
+#        environment:
+#            #            deployer_goal: 'clean,deploy'
+#            zookeeper_hostname: 'zookeeper'
+#            cassandra_hostname: 'cassandra'
+#            genesis_solr_url: 'http://cassandra:8983/solr'
+#            genesis_hdfs_url: 'webhdfs://spark-master:50070'
+#            genesis_postgres_url: 'jdbc:postgresql://postgres:5432/admin'
+#            genesis_postgres_username: 'admin'
+#            genesis_postgres_password: 'admin'
+#            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms256m -Xmx1024m -XX:+UseParallelGC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:4111'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+
+
+    #########################################################
+    #                        Policy Property                #
+    #########################################################
+#    policy_property_commands:
+#        build: ./../../policy/applications/property/policy-property-commands-app
+#        networks:
+#        - genesis_net
+#        ports:
+#        - "1075:1075"
+#        - "4035:4035"
+#        environment:
+#            genesis.authorization.server.url: 'http://sec_facade:8088'
+#            spring.profiles.include: write
+#            zookeeper_connect: 'zookeeper:2181'
+#            JAEGER_AGENT_HOST: jaeger
+#            JAEGER_AGENT_PORT: 6831
+#            JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#            GENESIS_PARTY_FACADE_URL: 'http://party_facade:8090'
+#            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms256m -Xmx768m -XX:+UseParallelGC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1075 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4035 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4035'
+#            genesis_cassandra_url: 'cassandra:9042'
+#            rating_server_url: 'http://rating-server:8080'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+#
+#    policy_property_facade:
+#        build: ./../../policy/applications/property/policy-property-facade-app
+#        networks:
+#        - genesis_net
+#        ports:
+#        - "8091:8091"
+#        - "1069:1069"
+#        - "4029:4029"
+#        environment:
+#            spring.profiles.active: 'basic-login'
+#            EXTERNAL_IP: policy_property_facade
+#            zookeeper_connect: 'zookeeper:2181'
+#            JAEGER_AGENT_HOST: jaeger
+#            JAEGER_AGENT_PORT: 6831
+#            JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#            genesis.authorization.server.url: 'http://sec_facade:8088'
+#            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms256m -Xmx512m -XX:+UseParallelGC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1069 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4029 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4029'
+#            genesis_cassandra_url: 'cassandra:9042'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+#
+#    policy_property_deployer:
+#        build: ../../policy/applications/property/policy-property-deployer-app
+#        command: deploy all
+#        ports:
+#        - "1088:1088"
+#        networks:
+#        - genesis_net
+#        environment:
+#            #            deployer_goal: 'clean,deploy'
+#            zookeeper_hostname: 'zookeeper'
+#            cassandra_hostname: 'cassandra'
+#            genesis_solr_url: 'http://cassandra:8983/solr'
+#            genesis_hdfs_url: 'webhdfs://spark-master:50070'
+#            genesis_postgres_url: 'jdbc:postgresql://postgres:5432/admin'
+#            genesis_postgres_username: 'admin'
+#            genesis_postgres_password: 'admin'
+#            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms256m -Xmx768m -XX:+UseParallelGC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1088'
+#            GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+    #########################################################
+    #                        Policy Generic                 #
+    #########################################################
+    policy_generic_commands:
+        build: ./../../policy/applications/generic/policy-generic-commands-app
+        networks:
+        - genesis_net
+        ports:
+        - "1067:1067"
+        - "4027:4027"
+        environment:
+            genesis.authorization.server.url: 'http://sec_facade:8088'
+            spring.profiles.include: write
+            zookeeper_connect: 'zookeeper:2181'
+            JAEGER_AGENT_HOST: jaeger
+            JAEGER_AGENT_PORT: 6831
+            JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+            GENESIS_PARTY_FACADE_URL: 'http://party_facade:8090'
+            genesis.stream.partitions: 1
+            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms128m -Xmx512m -XX:+UseParallelGC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1067 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4027 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4027'
+            genesis_cassandra_url: 'cassandra:9042'
+            GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+    policy_generic_facade:
+        build: ./../../policy/applications/generic/policy-generic-facade-app
+        networks:
+        - genesis_net
+        ports:
+        - "8093:8093"
+        - "1072:1072"
+        - "4036:4036"
+        environment:
+            spring.profiles.active: 'basic-login'
+            EXTERNAL_IP: policy_generic_facade
+            zookeeper_connect: 'zookeeper:2181'
+            JAEGER_AGENT_HOST: jaeger
+            JAEGER_AGENT_PORT: 6831
+            JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+            genesis.authorization.server.url: 'http://sec_facade:8088'
+            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms256m -Xmx512m -XX:+UseParallelGC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1072 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4036 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4036'
+            genesis_cassandra_url: 'cassandra:9042'
+            GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+    policy_generic_deployer:
+        build: ../../policy/applications/generic/policy-generic-deployer-app
+        command: deploy all
+        ports:
+        - "1073:1073"
+        networks:
+        - genesis_net
+        environment:
+            #            deployer_goal: 'clean,deploy'
+            zookeeper_hostname: 'zookeeper'
+            cassandra_hostname: 'cassandra'
+            genesis_solr_url: 'http://cassandra:8983/solr'
+            genesis_hdfs_url: 'webhdfs://spark-master:50070'
+            genesis_postgres_url: 'jdbc:postgresql://postgres:5432/admin'
+            genesis_postgres_username: 'admin'
+            genesis_postgres_password: 'admin'
+            genesis.authorization.server.url: 'http://sec_facade:8088'
+            JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms256m -Xmx768m -XX:+UseParallelGC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1073'
+            GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+    policy_generic_events:
+            build: ./../../policy/applications/generic/policy-generic-events-app
+            networks:
+                - genesis_net
+            ports:
+                - "1074:1074"
+                - "4034:4034"
+            environment:
+                genesis.authorization.server.url: 'http://sec_facade:8088'
+                spring.profiles.include: write
+                zookeeper_connect: 'zookeeper:2181'
+                JAEGER_AGENT_HOST: jaeger
+                JAEGER_AGENT_PORT: 6831
+                JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+                JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms512m -Xmx1536m -XX:+UseParallelGC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1074 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4034 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4034'
+                genesis_cassandra_url: 'cassandra:9042'
+                GENESIS_CASSANDRA_URL: #environment-var passthrough
+
+    #########################################################
+    #                      Conversion                       #
+    #########################################################
+#    conversion_events:
+#            build: ./../../conversion/applications/conversion-events-app
+#            networks:
+#                - genesis_net
+#            ports:
+#                - "4120:4120"
+#                - "1096:1096"
+#            environment:
+#                conversion.auth.token: 'Basic cWE6cWE='
+#                genesis.authorization.server.url: 'http://sec_facade:8088'
+#                genesis_cassandra_url: 'cassandra:9042'
+#                genesis_solr_url: 'http://cassandra:8983/solr'
+#                zookeeper_connect: 'zookeeper:2181'
+#                JAEGER_AGENT_HOST: jaeger
+#                JAEGER_AGENT_PORT: 6831
+#                JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#                JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx256m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1096 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4029 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4120'
+#
+#    conversion_deployer:
+#            build: ../../conversion/applications/conversion-deployer-app
+#            command: deploy all
+#            ports:
+#                - "1189:1189"
+#                - "1087:1087"
+#            networks:
+#               - genesis_net
+#            environment:
+#    #            deployer_goal: 'clean,deploy'
+#                zookeeper_hostname: 'zookeeper'
+#                cassandra_hostname: 'cassandra'
+#                genesis_solr_url: 'http://cassandra:8983/solr'
+#                genesis_hdfs_url: 'webhdfs://spark-master:50070'
+#                genesis_postgres_url: 'jdbc:postgresql://postgres:5432/admin'
+#                genesis_postgres_username: 'admin'
+#                genesis_postgres_password: 'admin'
+#                JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx512m -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=1087'
+#                GENESIS_CASSANDRA_URL: #environment-var passthrough
+#
+#    conversion_job_commands:
+#            build: ./../../conversion/applications/conversion-job-commands-app
+#            networks:
+#                - genesis_net
+#            ports:
+#               - "4124:4124"
+#               - "1059:1059"
+#            environment:
+#                genesis_cassandra_url: 'cassandra:9042'
+#                genesis_solr_url: 'http://cassandra:8983/solr'
+#                zookeeper_connect: 'zookeeper:2181'
+#                JAEGER_AGENT_HOST: jaeger
+#                JAEGER_AGENT_PORT: 6831
+#                JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#                JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms64m -Xmx256m -XX:+UseConcMarkSweepGC -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1059 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4029 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4124'
+#
+#    conversion_mapping_commands:
+#            build: ./../../conversion/applications/conversion-mapping-commands-app
+#            ports:
+#                - "8184:8184"
+#                - "4126:4126"
+#                - "1100:1100"
+#            networks:
+#                - genesis_net
+#            environment:
+#                conversion.auth.token: 'Basic cWE6cWE='
+#                genesis_cassandra_url: 'cassandra:9042'
+#                genesis_solr_url: 'http://cassandra:8983/solr'
+#                genesis.solr.url: 'http://cassandra:8983/solr'
+#                spring.profiles.include: 'write'
+#                genesis.platform.baseurl: 'http://infra_facade:8080'
+#                zookeeper_connect: 'zookeeper:2181'
+#                JAEGER_AGENT_HOST: jaeger
+#                JAEGER_AGENT_PORT: 6831
+#                JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#                JAVA_OPTS: '-Djute.maxbuffer=10000000 -javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Xms64m -Xmx256m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1100 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4029 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4126'
+#                GENESIS_INFRA_FACADE_URL: 'http://infra_facade:8080'
+#
+#    conversion_facade:
+#            build: ./../../conversion/applications/conversion-facade-app
+#            ports:
+#                - "8183:8183"
+#                - "4125:4125"
+#                - "1088:1088"
+#            networks:
+#                - genesis_net
+#            environment:
+#                spring.profiles.active: 'basic-login'
+#                genesis.authorization.server.url: 'http://sec_facade:8088'
+#                genesis_cassandra_url: 'cassandra:9042'
+#                genesis_solr_url: 'http://cassandra:8983/solr'
+#                zookeeper_connect: 'zookeeper:2181'
+#                JAVA_OPTS: '-Xms64m -Xmx256m -XX:+UseConcMarkSweepGC -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1088 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4029 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4125'
+#
+##########################################################
+##                        Product Server                 #
+##########################################################
+#    product_server_deployer:
+#      build: ./../../product-server/applications/product-server-deployer-app
+#      command: deploy all
+#      ports:
+#        - "1114:1114"
+#      networks:
+#        - genesis_net
+#      environment:
+#        #            deployer_goal: 'clean,deploy'
+#        zookeeper_hostname: 'zookeeper'
+#        cassandra_hostname: 'cassandra'
+#        genesis_solr_url: 'http://cassandra:8983/solr'
+#        genesis_hdfs_url: 'webhdfs://spark-master:50070'
+#        genesis_postgres_url: 'jdbc:postgresql://postgres:5432/admin'
+#        genesis_postgres_username: 'admin'
+#        genesis_postgres_password: 'admin'
+#        genesis.authorization.server.url: 'http://sec_facade:8088'
+#        JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms256m -Xmx768m -XX:+UseParallelGC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1114'
+#        GENESIS_CASSANDRA_URL: #environment-var passthrough
+#
+#    product_server:
+#            build: ./../../product-server/applications/product-server-app
+#            networks:
+#                - genesis_net
+#            ports:
+#                - "8094:8094"
+#                - "1094:1094"
+#                - "4094:4094"
+#            environment:
+#                EXTERNAL_IP: product_server
+#                spring.profiles.active: 'basic-login'
+#                genesis.authorization.server.url: 'http://sec_facade:8088'
+#                zookeeper_connect: 'zookeeper:2181'
+#                JAEGER_AGENT_HOST: jaeger
+#                JAEGER_AGENT_PORT: 6831
+#                JAEGER_SAMPLER_MANAGER_HOST_PORT: 'jaeger:5778'
+#                genesis_cassandra_url: 'cassandra:9042'
+#                GENESIS_CASSANDRA_URL: #environment-var passthrough
+#                JAVA_OPTS: '-javaagent:/opt/timeshiftagent/timeshifter-javaagent.jar -XX:CompileCommandFile=/opt/timeshiftagent/jit.excludes -Dgenesis.timeshifter.enabled=true -Dgenesis.reports.enabled=false -Xms128m -Xmx512m -XX:+CMSParallelRemarkEnabled -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:1094 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=4094 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.rmi.port=4094'
+#
+#
+#
+#    dxp_gateway:
+#        image: sfoeisnexus03.exigengroup.com/genesis-docker/dxp-gateway:1.0-qa
+#        networks:
+#            - genesis_net
+#        ports:
+#            - "9090:9090"
+#        environment:
+#            zookeeper_connect: "zookeeper:2181"
+#            GENESIS_SSO_URL: 'http://sso_provider:8081'
+#            GENESIS_INFRA_FACADE_URL: 'http://infra_facade:8080'
+#            GENESIS_PARTY_FACADE_URL: 'http://party_facade:8090'
+#            GENESIS_CRM_FACADE_URL: 'http://crm_facade:8083'
+#            GENESIS_SEC_FACADE_URL: 'http://sec_facade:8088'
+#            GENESIS_POLICY_AUTO_FACADE_URL: 'http://policy_auto_facade:8084'
+#            GENESIS_POLICY_PROPERTY_FACADE_URL: 'http://policy_property_facade:8091'
+#            GENESIS_POLICY_GENERIC_FACADE_URL: 'http://policy_generic_facade:8093'
+#            GENESIS_ORG_FACADE_URL: 'http://org_facade:8087'
+
+networks:
+    genesis_net:
+        driver: bridge
+
+volumes:
+    vol_zookeeper:
+    vol_kafka_logs:
+    vol_kafka_data:
+#    vol_solr_logs:
+#    vol_solr_data:
+#    vol_cassandra:
+    vol_dse:
+    vol_postgres:
+    vol_hdfs:
+    vol_hive:

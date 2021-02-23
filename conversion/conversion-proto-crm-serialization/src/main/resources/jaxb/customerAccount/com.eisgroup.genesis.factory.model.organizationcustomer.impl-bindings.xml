@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<xml-bindings
+        xmlns="http://www.eclipse.org/eclipselink/xsds/persistence/oxm"
+        package-name="com.eisgroup.genesis.factory.model.organizationcustomer.impl">
+
+	<!--
+		Bindings overrides over generated bindings
+	-->
+
+    <java-types>
+    
+		<java-type name="GenesisCustomerGroupInfoImpl" xml-accessor-type="PROPERTY" super-type="java.lang.Object">
+			<xml-type factory-class="com.eisgroup.genesis.factory.model.organizationcustomer.impl.ORGANIZATIONCUSTOMERFactory"
+                      factory-method="createGenesisCustomerGroupInfo"
+                      name="ORGANIZATIONCUSTOMER.GenesisCustomerGroupInfoImpl" />    
+			<java-attributes>
+				<xml-transient java-attribute="key"/>
+			</java-attributes>
+		</java-type>
+		
+		<java-type name="GenesisCustomerRelationshipImpl" xml-accessor-type="PROPERTY" super-type="java.lang.Object">    	
+    		<xml-type factory-class="com.eisgroup.genesis.factory.model.organizationcustomer.impl.ORGANIZATIONCUSTOMERFactory"
+                      factory-method="createGenesisCustomerRelationship"
+                      name="ORGANIZATIONCUSTOMER.GenesisCustomerRelationshipImpl" />                          
+            <java-attributes>
+            	<xml-transient java-attribute="key"/>
+            </java-attributes>
+    	</java-type>
+
+	</java-types>
+</xml-bindings>

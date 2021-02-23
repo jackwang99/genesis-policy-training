@@ -1,0 +1,15 @@
+<rules-deploy>
+  <isProvideRuntimeContext>true</isProvideRuntimeContext>
+  <isProvideVariations>false</isProvideVariations>
+  <useRuleServiceRuntimeContext>false</useRuleServiceRuntimeContext>
+  <serviceName>garage-auto-rules</serviceName>
+
+  <publishers>
+    <publisher>RESTFUL</publisher>
+  </publishers>
+
+  <interceptingTemplateClassName>com.eisgroup.genesis.garage.rating.RatingService</interceptingTemplateClassName>
+
+  <url>com.eisgroup.genesis.garage.rating.RatingService</url>
+
+</rules-deploy>

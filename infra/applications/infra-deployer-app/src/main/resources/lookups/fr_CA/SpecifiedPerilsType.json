@@ -1,0 +1,38 @@
+[
+  {
+    "code": "FIRE",
+    "defaultValue": "Fire"
+  },
+  {
+    "code": "THEFT_OR_ATTEMPTED_THEFT",
+    "defaultValue": "Theft or Attempted Theft"
+  },
+  {
+    "code": "LIGHTNING",
+    "defaultValue": "Lightning"
+  },
+  {
+    "code": "WINDSTORM",
+    "defaultValue": "Windstorm"
+  },
+  {
+    "code": "HAIL",
+    "defaultValue": "Hail"
+  },
+  {
+    "code": "RAISING_WATER",
+    "defaultValue": "Raising Water"
+  },
+  {
+    "code": "EARTHQUAKE",
+    "defaultValue": "Earthquake"
+  },
+  {
+    "code": "EXPLOSION",
+    "defaultValue": "Explosion"
+  },
+  {
+    "code": "RIOT_OR_CIVIL_DISTURBANCE",
+    "defaultValue": "Riot or Civil Disturbance"
+  }
+]

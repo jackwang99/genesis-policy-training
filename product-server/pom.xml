@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.eisgroup.genesis</groupId>
+        <artifactId>genesis-parent-pom</artifactId>
+        <version>10.11</version>
+        <relativePath>../parent-pom/pom.xml</relativePath>
+    </parent>
+
+    <groupId>com.eisgroup.genesis.proto</groupId>
+    <artifactId>product-server-pom</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>Product Server Prototype Parent</name>
+    <description>Product Server Prototype Parent Module</description>
+
+    <properties>
+        <rules.core.version>10.11</rules.core.version>
+        <genesis.core.version>10.11</genesis.core.version>
+        <!-- override the version of genesis antlr version (4.5.3), for graphql needs -->
+        <antlr.version>4.7.1</antlr.version>
+    </properties>
+
+    <modules>
+        <module>applications</module>
+        <module>product-server-ref-graphql-facade</module>
+        <module>json-reducer-ref-decision-impl</module>
+        <module>json-reducer-ref-decision-app</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.eisgroup.genesis</groupId>
+                <artifactId>product-server-bom</artifactId>
+                <version>${genesis.core.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.eisgroup.genesis</groupId>
+                <artifactId>rules-bom</artifactId>
+                <version>${rules.core.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.antlr</groupId>
+                <artifactId>antlr4-runtime</artifactId>
+                <version>${antlr.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>

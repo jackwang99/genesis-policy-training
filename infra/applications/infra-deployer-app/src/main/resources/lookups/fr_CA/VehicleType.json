@@ -1,0 +1,14 @@
+[
+  {
+    "code": "Collector",
+    "defaultValue": "Collectionneur"
+  },
+  {
+    "code": "Misc",
+    "defaultValue": "Divers"
+  },
+  {
+    "code": "Regular",
+    "defaultValue": "Ordinaire"
+  }
+]

@@ -1,0 +1,7 @@
+Model CUSTOMERACCOUNT
+
+Namespace CUSTOMERACCOUNT
+
+EntryPoints [
+    "CUSTOMERACCOUNT Validation"
+]

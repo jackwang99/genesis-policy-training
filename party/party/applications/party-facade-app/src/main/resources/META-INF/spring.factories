@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.eisgroup.genesis.registry.core.search.config.SearchRepositoryConfig

@@ -1,0 +1,9 @@
+Model Organization
+
+OrganizationEntity {
+    !organization : OrganizationLegalEntity.legalId
+    underwriter : UnderwritingCompanyEntity.underwritingCompanyCd
+    agency : AgencyEntity.agencyCd
+    producer : ProducerEntity.producerCd
+    insurer : InsurerEntity.insurerCd
+}

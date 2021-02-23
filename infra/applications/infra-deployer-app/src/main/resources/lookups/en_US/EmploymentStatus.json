@@ -1,0 +1,26 @@
+[
+  {
+    "code": "EMP",
+    "defaultValue": "Employee"
+  },
+  {
+    "code": "HOH",
+    "defaultValue": "Housewife/Husband"
+  },
+  {
+    "code": "PTE",
+    "defaultValue": "Part-time Employee"
+  },
+  {
+    "code": "RET",
+    "defaultValue": "Retired"
+  },
+  {
+    "code": "SEM",
+    "defaultValue": "Self Employed"
+  },
+  {
+    "code": "UNE",
+    "defaultValue": "Unemployed"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "code": "CP",
+    "defaultValue": "Civil Union Partner"
+  },
+  {
+    "code": "D",
+    "defaultValue": "Divorced"
+  },
+  {
+    "code": "DP",
+    "defaultValue": "Domestic Partner"
+  },
+  {
+    "code": "M",
+    "defaultValue": "Married"
+  },
+  {
+    "code": "P",
+    "defaultValue": "Other"
+  },
+  {
+    "code": "S",
+    "defaultValue": "Single"
+  },
+  {
+    "code": "W",
+    "defaultValue": "Widowed"
+  }
+]

@@ -1,0 +1,16 @@
+Namespace INDIVIDUALCUSTOMER
+
+Include Base
+
+EntryPoint "INDIVIDUALCUSTOMER Validation" {
+  "GenesisCrmPersonDeceasedDateFromBirthDate",
+  "LegalEntityBaseLegalIdFormat.0",
+  "LegalEntityBaseLegalIdFormat.1",
+  "CrmBusinessDetailsCodeSectionsAreMandatory",
+  "CustomerRelationshipRelationshipTypeIsMandatory",
+  "LegalEntityDateStartedCannotBeInTheFuture",
+  "SchedulingContactInfoEffectiveDatesComparison",
+  "EmploymentDetailsPayrollFrequencyIsMandatory",
+  "EmploymentDetailsSalaryAmountIsMandatory",
+  "EmploymentDetailsHourlyWageIsMandatory"
+}

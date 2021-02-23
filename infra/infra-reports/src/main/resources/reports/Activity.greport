@@ -1,0 +1,23 @@
+Model ActivityReports
+
+Import Model User
+
+Report Activity from Activities.ActivityAggregate {
+
+    // Attribute declarations
+    Attr timestamp
+    Attr updatedOn is timestamp
+    Attr entityId
+    Attr activityArea is group
+    Attr activityName is messageId
+    Attr entityNumber
+    Attr performer is GenesisUser.uuid
+    Attr activityStatus is status
+    Attr activityStartDate is startedTime
+    Attr activityEndDate is endedTime
+
+    // Join-table statements
+    Join GenesisUser using SecurityLink {
+        linkAttribute == userKey
+    }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "code": "A",
+    "defaultValue": "A - Agriculture, Forestry & Fishing"
+  },
+  {
+    "code": "B",
+    "defaultValue": "B - Mining"
+  },
+  {
+    "code": "C",
+    "defaultValue": "C - Construction"
+  },
+  {
+    "code": "D",
+    "defaultValue": "D - Manufacturing"
+  },
+  {
+    "code": "E",
+    "defaultValue": "E - Transportation, Communications, Electric, Gas & Sanitary Services"
+  },
+  {
+    "code": "F",
+    "defaultValue": "F - Wholesale Trade"
+  },
+  {
+    "code": "G",
+    "defaultValue": "G - Retail Trade"
+  },
+  {
+    "code": "H",
+    "defaultValue": "H - Finance, Insurance & Real Estate"
+  },
+  {
+    "code": "I",
+    "defaultValue": "I - Services"
+  },
+  {
+    "code": "J",
+    "defaultValue": "J - Public Administration"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "code": "EMPLOYEE",
+    "defaultValue": "Employé"
+  },
+  {
+    "code": "MILLENIAL",
+    "defaultValue": "Millénaire"
+  },
+  {
+    "code": "SANCTIONED",
+    "defaultValue": "Sanctionné"
+  },
+  {
+    "code": "VIP",
+    "defaultValue": "VIP"
+  }
+]

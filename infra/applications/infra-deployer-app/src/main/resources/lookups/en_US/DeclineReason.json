@@ -1,0 +1,66 @@
+[
+  {
+    "code": "1",
+    "defaultValue": "Account not target market"
+  },
+  {
+    "code": "2",
+    "defaultValue": "Unacceptable water loss experience"
+  },
+  {
+    "code": "3",
+    "defaultValue": "Unacceptable CAT loss experience"
+  },
+  {
+    "code": "4",
+    "defaultValue": "Unacceptable Home loss experience"
+  },
+  {
+    "code": "5",
+    "defaultValue": "Unacceptable Collections PC loss experience"
+  },
+  {
+    "code": "6",
+    "defaultValue": "Unacceptable Liability loss experience"
+  },
+  {
+    "code": "7",
+    "defaultValue": "Unacceptable Auto MVR/Clue experience"
+  },
+  {
+    "code": "8",
+    "defaultValue": "Unacceptable Coastal exposure"
+  },
+  {
+    "code": "9",
+    "defaultValue": "Unacceptable Florida exposure"
+  },
+  {
+    "code": "10",
+    "defaultValue": "Does not fit EQ/Brush strategy"
+  },
+  {
+    "code": "11",
+    "defaultValue": "Change in Exposure - COC"
+  },
+  {
+    "code": "12",
+    "defaultValue": "Unacceptable Insured Profile"
+  },
+  {
+    "code": "13",
+    "defaultValue": "Price too high"
+  },
+  {
+    "code": "14",
+    "defaultValue": "Coverages not competitive"
+  },
+  {
+    "code": "15",
+    "defaultValue": "Other"
+  },
+  {
+    "code": "OTH",
+    "defaultValue": "Other"
+  }
+]

@@ -1,0 +1,7 @@
+Namespace CUSTOMERACCOUNT
+
+Include Base
+
+EntryPoint "CUSTOMERACCOUNT Validation" {
+  "CustomerAssociationLinkIsMandatory"
+}

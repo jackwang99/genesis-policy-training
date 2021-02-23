@@ -1,0 +1,272 @@
+[
+  {
+    "code": "12013",
+    "points": "",
+    "category": "Réintégration",
+    "defaultValue": "RÉINTÉGRATION"
+  },
+  {
+    "code": "12410",
+    "points": "3",
+    "category": "Violation majeure",
+    "defaultValue": "DRIV PENDANT LIC SUSP / REV"
+  },
+  {
+    "code": "16110",
+    "category": "Suspension",
+    "defaultValue": "SUSP OU WITHDRWAL, NON SPÉCIFIÉ, AUTRE",
+    "points": "5"
+  },
+  {
+    "code": "16120",
+    "defaultValue": "RETRAIT ADMIN., -FTA, PAIEMENT FISCAL, ETC.-",
+    "category": "Suspension",
+    "points": "5"
+  },
+  {
+    "code": "16130",
+    "defaultValue": "SR-22 / FIN / JUGE / EST RETRAIT",
+    "category": "Suspension",
+    "points": "5"
+  },
+  {
+    "code": "16140",
+    "category": "Suspension",
+    "defaultValue": "RETRAIT-NE PAS SE CONFORMER AU PROG / PROBATION",
+    "points": "5"
+  },
+  {
+    "code": "16150",
+    "points": "5",
+    "defaultValue": "RETRAIT HORS DE L'ÉTAT",
+    "category": "Suspension"
+  },
+  {
+    "code": "16160",
+    "points": "5",
+    "category": "Suspension",
+    "defaultValue": "RETRAIT D'IMPLICATION D'ACCIDENT"
+  },
+  {
+    "code": "16170",
+    "points": "5",
+    "category": "Suspension",
+    "defaultValue": "RETRAIT ACCUSE DE L'INFRACTION"
+  },
+  {
+    "code": "16180",
+    "defaultValue": "POINT SYSTEM SUSP",
+    "points": "5",
+    "category": "Suspension"
+  },
+  {
+    "code": "16210",
+    "defaultValue": "INFRACTION GRAVE - NON-ALCOOL - RETRAIT",
+    "points": "5",
+    "category": "Suspension"
+  },
+  {
+    "code": "16220",
+    "category": "Suspension",
+    "points": "5",
+    "defaultValue": "ALCOOL / RETRAIT DE DROGUES"
+  },
+  {
+    "code": "16230",
+    "points": "5",
+    "category": "Suspension",
+    "defaultValue": "RETRAIT DU DÉLINQUANT HABITUEL"
+  },
+  {
+    "code": "16240",
+    "points": "5",
+    "defaultValue": "TRIBUNAL ORDONNÉ DE RETRAIT",
+    "category": "Suspension"
+  },
+  {
+    "code": "16260",
+    "points": "5",
+    "defaultValue": "ALCOOL (BAC AU-DESSUS DE LA LIMITE LÉGALE) RETRAIT",
+    "category": "Suspension"
+  },
+  {
+    "code": "16290",
+    "points": "5",
+    "defaultValue": "RÉVOCATION NON SPÉCIFIÉE, AUTRE",
+    "category": "Suspension"
+  },
+  {
+    "code": "16420",
+    "defaultValue": "RETRAIT, PERTE DE CONSENTEMENT POUR MINEUR",
+    "points": "5",
+    "category": "Suspension"
+  },
+  {
+    "code": "16430",
+    "defaultValue": "RETRAIT, RAISONS MÉDICALES / INCOMPÉTENCE",
+    "category": "Suspension",
+    "points": "5"
+  },
+  {
+    "code": "16450",
+    "points": "5",
+    "category": "Suspension",
+    "defaultValue": "RETRAIT, INCORRECT INFO"
+  },
+  {
+    "code": "16460",
+    "points": "5",
+    "defaultValue": "RETRAIT, FAUX INFO",
+    "category": "Suspension"
+  },
+  {
+    "code": "31100",
+    "category": "Accélération mineure",
+    "points": "1",
+    "defaultValue": "VITESSE, GÉNÉRALEMENT"
+  },
+  {
+    "code": "311AQ",
+    "defaultValue": "VITESSE 1-4 SUR LIMITE",
+    "points": "1",
+    "category": "Accélération mineure"
+  },
+  {
+    "code": "311AZ",
+    "points": "1",
+    "defaultValue": "VITESSE 1 PLUS SUR LIMITE",
+    "category": "Accélération mineure"
+  },
+  {
+    "code": "311BC",
+    "points": "1",
+    "category": "Accélération mineure",
+    "defaultValue": "VITESSE 6-10 SUR LIMITE"
+  },
+  {
+    "code": "311BD",
+    "category": "Accélération mineure",
+    "defaultValue": "VITESSE 6-14 SUR LIMITE",
+    "points": "1"
+  },
+  {
+    "code": "311BE",
+    "defaultValue": "VITESSE 6-15 SUR LIMITE",
+    "points": "1",
+    "category": "Accélération mineure"
+  },
+  {
+    "code": "311BG",
+    "points": "1",
+    "category": "Accélération mineure",
+    "defaultValue": "VITESSE 6-20 SUR LIMITE"
+  },
+  {
+    "code": "311CE",
+    "category": "Accélération mineure",
+    "defaultValue": "VITESSE 9-15 SUR LIMITE",
+    "points": "1"
+  },
+  {
+    "code": "311DD",
+    "category": "Accélération mineure",
+    "defaultValue": "VITESSE 10-14 SUR LIMITE",
+    "points": "1"
+  },
+  {
+    "code": "311DF",
+    "defaultValue": "VITESSE 10-19 SUR LIMITE",
+    "points": "1",
+    "category": "Accélération mineure"
+  },
+  {
+    "code": "311EF",
+    "defaultValue": "VITESSE INTERMÉDIAIRE 11-19 MPH OVER",
+    "points": "1",
+    "category": "Accélération mineure"
+  },
+  {
+    "code": "311EG",
+    "points": "1",
+    "category": "Accélération mineure",
+    "defaultValue": "VITESSE 11-20 SUR LIMITE"
+  },
+  {
+    "code": "311HI",
+    "category": "Accélération majeure",
+    "defaultValue": "VITESSE 20-29 SUR LIMITE",
+    "points": "2"
+  },
+  {
+    "code": "311HZ",
+    "category": "Accélération majeure",
+    "defaultValue": "VITESSE 20 PLUS LIMITE",
+    "points": "2"
+  },
+  {
+    "code": "311JI",
+    "category": "Accélération majeure",
+    "defaultValue": "VITESSE 26-29 SUR LIMITE",
+    "points": "2"
+  },
+  {
+    "code": "31610",
+    "defaultValue": "COURIR OU PARTICIPER DE TOUTE MANIÈRE EN COURSE",
+    "points": "3",
+    "category": "Violation majeure"
+  },
+  {
+    "code": "31620",
+    "points": "3",
+    "category": "Violation majeure",
+    "defaultValue": "COURSE PRÉ-ÉCHANGÉE"
+  },
+  {
+    "code": "32150",
+    "points": "3",
+    "category": "Violation majeure",
+    "defaultValue": "ÉCHEC DU VÉHICULE D'URGENCE"
+  },
+  {
+    "code": "36100",
+    "points": "1",
+    "category": "Violation mineure",
+    "defaultValue": "SUIVRE TROP ÉTROITEMENT, GÉNÉRALEMENT"
+  },
+  {
+    "code": "52100",
+    "category": "Conduire sous influence",
+    "defaultValue": "DUI, GÉNÉRALEMENT",
+    "points": "5"
+  },
+  {
+    "code": "52120",
+    "defaultValue": "DUI D'ALCOOL",
+    "points": "5",
+    "category": "Conduire sous influence"
+  },
+  {
+    "code": "52130",
+    "defaultValue": "DUI DE DROGUES",
+    "category": "Conduire sous influence",
+    "points": "5"
+  },
+  {
+    "code": "52140",
+    "points": "5",
+    "category": "Conduire sous influence",
+    "defaultValue": "DRIV UND COMB. INFLUENCE DE L'ALCOOL ET DES DROGUES"
+  },
+  {
+    "code": "52310",
+    "points": "5",
+    "defaultValue": "DUI RÉSULTANT DE LA MORT / BLESSURE",
+    "category": "Conduire sous influence"
+  },
+  {
+    "code": "61230",
+    "category": "Violation mineure",
+    "defaultValue": "NE PAS UTILISER LES PHARES",
+    "points": "1"
+  }
+]

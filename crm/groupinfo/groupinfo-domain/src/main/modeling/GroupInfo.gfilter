@@ -1,0 +1,5 @@
+Model GroupInfo
+
+GenesisGroupInfo {
+    !agency : CrmDimensionValueHolder > .agency
+}

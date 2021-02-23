@@ -1,0 +1,31 @@
+Entity VehicleEntity is Vehicle, RootEntity, StatefulEntity, MergeableEntity {
+
+    @Searchable
+    Attr registryTypeId: String
+
+    @ReadOnly
+    @Searchable
+    Attr registryEntityNumber: String
+
+    @Searchable
+    @IgnoreCase
+    @Required
+    Attr make: String
+
+    @Searchable
+    @IgnoreCase
+    @Required
+    Attr model: String
+
+    @Searchable
+    Attr modelYear: Integer
+
+    @Searchable
+    Attr manufactureYear: Integer
+
+    @Searchable
+    @IgnoreCase
+    @Required
+    Attr vehicleIdentificationNumber: String
+
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "code": "PolicyCancel",
+    "defaultValue": "Policy Cancel"
+  },
+  {
+    "code": "PolicyChange",
+    "defaultValue": "Policy Change"
+  },
+  {
+    "code": "PolicyRequestDoc",
+    "defaultValue": "Request Document"
+  }
+]

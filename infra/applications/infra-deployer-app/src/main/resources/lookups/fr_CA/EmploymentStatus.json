@@ -1,0 +1,26 @@
+[
+  {
+    "code": "EMP",
+    "defaultValue": "Employé"
+  },
+  {
+    "code": "HOH",
+    "defaultValue": "Femme au foyer/Mari"
+  },
+  {
+    "code": "PTE",
+    "defaultValue": "Employé à temps partiel"
+  },
+  {
+    "code": "RET",
+    "defaultValue": "À la retraite"
+  },
+  {
+    "code": "SEM",
+    "defaultValue": "Travailleur indépendant"
+  },
+  {
+    "code": "UNE",
+    "defaultValue": "Sans emploi"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "code": "driver/additional",
+    "defaultValue": "Additional"
+  },
+  {
+    "code": "driver/excluded",
+    "defaultValue": "Excluded"
+  },
+  {
+    "code": "driver/non-driver",
+    "defaultValue": "Non-Driver"
+  },
+  {
+    "code": "driver/ocasional",
+    "defaultValue": "Occasional Driver"
+  },
+  {
+    "code": "driver/principal",
+    "defaultValue": "Principal Driver"
+  }
+]

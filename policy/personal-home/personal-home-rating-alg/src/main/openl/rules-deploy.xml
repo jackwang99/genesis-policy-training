@@ -1,0 +1,15 @@
+<rules-deploy>
+  <isProvideRuntimeContext>true</isProvideRuntimeContext>
+  <isProvideVariations>false</isProvideVariations>
+  <useRuleServiceRuntimeContext>false</useRuleServiceRuntimeContext>
+  <serviceName>personal-home-rules</serviceName>
+
+  <publishers>
+    <publisher>RESTFUL</publisher>
+  </publishers>
+
+  <interceptingTemplateClassName>com.eisgroup.genesis.personalhome.rating.PersonalHomeRatingService</interceptingTemplateClassName>
+
+  <url>com.eisgroup.genesis.personalhome.rating.PersonalHomeRatingService</url>
+
+</rules-deploy>

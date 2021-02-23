@@ -1,0 +1,44 @@
+[
+  {
+    "name": "QA Default",
+    "description": "Role with all privileges for QA testing, assigned to qa user",
+    "assignedAuthorities": [
+      "Organization: Manage Organizational Person",
+      "Organization: Search Organization by Role",
+      "Organization: Search Person",
+      "Organization: Load Organization",
+      "Organization: Apply Role",
+      "Organization: Manage Organization",
+      "Organization: Load Organization Roles",
+      "Organization: Load Organization Person"
+    ]
+  },
+  {
+    "name": "QA All",
+    "description": "Role with all privileges for QA testing, assigned to all users",
+    "assignedAuthorities": [
+      "Organization: Manage Organizational Person",
+      "Organization: Search Organization by Role",
+      "Organization: Search Person",
+      "Organization: Load Organization",
+      "Organization: Apply Role",
+      "Organization: Manage Organization",
+      "Organization: Load Organization Roles",
+      "Organization: Load Organization Person"
+    ]
+  },
+  {
+    "name": "Privileges testing",
+    "description": "Role with all privileges for QA testing, assigned to privileges testing user",
+    "assignedAuthorities": [
+      "Organization: Manage Organizational Person",
+      "Organization: Search Organization by Role",
+      "Organization: Search Person",
+      "Organization: Load Organization",
+      "Organization: Apply Role",
+      "Organization: Manage Organization",
+      "Organization: Load Organization Roles",
+      "Organization: Load Organization Person"
+    ]
+  }
+]

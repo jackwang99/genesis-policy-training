@@ -1,0 +1,13 @@
+Namespace ORGANIZATIONCUSTOMER
+
+Include Base
+
+EntryPoint "ORGANIZATIONCUSTOMER Validation" {
+  "LegalEntityBaseLegalIdFormat.0",
+  "LegalEntityBaseLegalIdFormat.1",
+  "CrmBusinessDetailsCodeSectionsAreMandatory",
+  "CustomerRelationshipRelationshipTypeIsMandatory",
+  "LegalEntityDateStartedCannotBeInTheFuture",
+  "SchedulingContactInfoEffectiveDatesComparison",
+  "CrmDivisionExpirationDateMustBeGreaterThanEffectiveDate"
+}

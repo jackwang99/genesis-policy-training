@@ -1,0 +1,14 @@
+[
+{ 
+   "code": "CALLER1",
+   "defaultValue": "Caller ID: 1"
+},
+{ 
+   "code": "CALLER2",
+   "defaultValue": "Caller ID: 2"
+},
+{ 
+   "code": "CALLER3",
+   "defaultValue": "Caller ID: 3"
+}
+]

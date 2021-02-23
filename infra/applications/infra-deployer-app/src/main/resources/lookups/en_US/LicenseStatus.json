@@ -1,0 +1,26 @@
+[
+  {
+    "code": "C",
+    "defaultValue": "Cancelled / Surrendered"
+  },
+  {
+    "code": "E",
+    "defaultValue": "Expired"
+  },
+  {
+    "code": "P",
+    "defaultValue": "Permit / Provisional"
+  },
+  {
+    "code": "R",
+    "defaultValue": "Revoked"
+  },
+  {
+    "code": "S",
+    "defaultValue": "Suspended"
+  },
+  {
+    "code": "V",
+    "defaultValue": "Valid"
+  }
+]

@@ -1,0 +1,18 @@
+[
+    {
+      "code": "active",
+      "defaultValue": "Active"
+    },
+    {
+      "code": "NM",
+      "defaultValue": "No measure"
+    },
+    {
+      "code": "cancelled",
+      "defaultValue": "Cancelled"
+    },
+    {
+      "code": "expired",
+      "defaultValue": "Expired"
+    }
+  ]

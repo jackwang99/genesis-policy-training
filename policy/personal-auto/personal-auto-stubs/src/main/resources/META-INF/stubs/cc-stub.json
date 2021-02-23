@@ -1,0 +1,16 @@
+{
+  "reports": [
+    {
+      "driverLicenseNo": "D123456",
+      "score": "690"
+    },
+    {
+      "driverLicenseNo": "C123456",
+      "score": "750"
+    },
+    {
+      "driverLicenseNo": "I09877612",
+      "score": "820"
+    }
+  ]
+}

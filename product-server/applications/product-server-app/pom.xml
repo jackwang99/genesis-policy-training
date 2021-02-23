@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.eisgroup.genesis.proto.product.server.applications</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <artifactId>product-server-applications-pom</artifactId>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>product-server-app</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>Product Server Application</name>
+    <description>Product Server Application Module</description>
+    <packaging>jar</packaging>
+
+    <properties>
+        <!-- override the base version of poi (3.17), for openl needs -->
+        <apache.poi>4.1.0</apache.poi>
+        <servlet.api>3.0.1</servlet.api>
+    </properties>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/buildNumber.properties</include>
+                    <include>**/banner.txt</include>
+                </includes>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <classifier>fat</classifier>
+                    <attach>false</attach>
+                    <mainClass>com.eisgroup.genesis.boot.Bootstrap</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>mockModel</id>
+            <activation>
+                <property>
+                    <name>mockModel</name>
+                </property>
+            </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>com.eisgroup.genesis.product.server.core.runtime.policy</groupId>
+                    <artifactId>policy-model-repository-mock</artifactId>
+                    <scope>runtime</scope>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.eisgroup.genesis.product.server.core</groupId>
+            <artifactId>product-server-ms-bundle</artifactId>
+            <type>tile</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.eisgroup.genesis</groupId>
+            <artifactId>timeshifter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto</groupId>
+            <artifactId>product-server-ref-graphql-facade</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!--Product Model repository-->
+        <dependency>
+            <groupId>com.eisgroup.genesis.model</groupId>
+            <artifactId>model-repository-binary-impl</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- Logging dependencies -->
+        <dependency>
+            <groupId>org.codehaus.janino</groupId>
+            <artifactId>janino</artifactId>
+            <version>3.0.6</version>
+        </dependency>
+
+        <!-- Policy domain artifacts -->
+        <!-- Required to resolve base types and features classes( to deserialize DomainModel) -->
+        <!-- Should be removed from classpath, when infra will provide the endpoint to resolve remotely (GENESIS-15863) -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalauto</groupId>
+            <artifactId>personal-auto-domain</artifactId>
+            <version>${project.version}</version>
+            <scope>runtime</scope>
+            <exclusions>
+                <exclusion>
+                    <!-- Should be fixed in scope https://jira.exigeninsurance.com/browse/GENESIS-19621 -->
+                    <groupId>com.eisgroup.genesis.events</groupId>
+                    <artifactId>event-stream-producer</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalhome</groupId>
+            <artifactId>personal-home-domain</artifactId>
+            <version>${project.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${servlet.api}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Testing dependencies -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.product.server.core.runtime.policy</groupId>
+            <artifactId>policy-model-repository-mock</artifactId>
+            <version>${genesis.core.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.data</groupId>
+            <artifactId>column-store-mock</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.utils</groupId>
+            <artifactId>testing-utils</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.data</groupId>
+            <artifactId>column-store-testing</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

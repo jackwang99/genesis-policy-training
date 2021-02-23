@@ -1,0 +1,9 @@
+Model BilledPolicyTax
+
+Common {
+    Number is output.policyNumber
+}
+
+Command init {
+    Disabled
+}

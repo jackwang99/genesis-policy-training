@@ -1,0 +1,6 @@
+Model Location
+Root LocationEntity
+ModelType Party
+
+Stored using [ModelType, ModelName]
+Indexed using [ModelName]

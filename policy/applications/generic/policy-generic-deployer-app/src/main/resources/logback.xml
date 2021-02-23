@@ -1,0 +1,9 @@
+<configuration>
+  <jmxConfigurator />
+  <property scope="context" name="appName" value="policy-generic-deployer-app"/>
+
+  <!-- includes -->
+  <include optional="true" resource="zookeeper-logback.xml"/>
+  <include resource="spring-app-logback.xml"/>
+
+</configuration>

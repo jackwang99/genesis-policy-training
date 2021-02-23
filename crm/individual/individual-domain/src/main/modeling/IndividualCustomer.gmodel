@@ -1,0 +1,8 @@
+Model INDIVIDUALCUSTOMER
+Root IndividualCustomer
+
+ModelType Customer
+Import CrmAddress, BusinessDetails, CrmBusinessDetails, CustomerRelationship
+
+Stored using [ModelName]
+Indexed using ['customer']

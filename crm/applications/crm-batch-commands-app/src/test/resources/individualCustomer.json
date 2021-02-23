@@ -1,0 +1,90 @@
+{
+    "_key": {
+        "rootId": "910fba51-b01d-4c20-a457-99c70fb738ab",
+        "revisionNo": 1
+    },
+    "customerNumber": "C0000001152",
+    "state": "unqualified",
+    "taxExempt": "string",
+    "taxExemptComment": "string",
+    "associateBusinessEntity": false,
+    "communicationInfo": {
+        "addresses": [
+            {
+                "preferred": true,
+                "doNotSolicit": false,
+                "_type": "GenesisCrmAddress",
+                "_key": {
+                    "id": "55deae9a-f2df-4093-bc71-c8ebfec193c8",
+                    "rootId": "910fba51-b01d-4c20-a457-99c70fb738ab",
+                    "revisionNo": 1,
+                    "parentId": "fba0abb3-a398-4c48-9b87-b3866bebe309"
+                },
+                "updatedOn": "2018-10-01T12:01:25.981Z",                
+                "location": {
+                    "_type": "GenesisLocation",
+                    "city": "New City",
+                    "countryCd": "JP",
+                    "postalCode": "220082",
+                    "addressLine1": "abc",
+                    "addressLine2": "abc 2"
+                }
+            }
+        ],
+        "_type": "GenesisCrmCommunicationInfo",
+        "_key": {
+            "id": "fba0abb3-a398-4c48-9b87-b3866bebe309",
+            "rootId": "910fba51-b01d-4c20-a457-99c70fb738ab",
+            "revisionNo": 1,
+            "parentId": "910fba51-b01d-4c20-a457-99c70fb738ab"
+        }
+    },
+    "details": {
+        "person": {
+            "_type": "GenesisCrmPerson",
+            "firstName": "Tom",
+            "lastName": "Ross",
+            "middleName": "string",
+            "birthDate": "1980-07-15",
+            "genderCd": "male"
+        },
+        "designationDescription": "string",
+        "occupation": "Pilot",
+        "deceased": "string",
+        "occupationDescription": "string",
+        "rating": "string",
+        "suffix": "string",
+        "title": "string",
+        "nickname": "string",
+        "preferredWrittenLanguage": "string",
+        "citizenship": "Cambodia",
+        "preferredSpokenLanguage": "string",
+        "paperless": false,
+        "disabilities": [
+            "SPINAL_CORD_INJURY",
+            "HEARING_LOSS_AND_DEAFNESS"
+        ],
+        "deathNotificationReceived": "string",
+        "taxId": "string",
+        "tobaccoCd": "string",
+        "otherName": "string",
+        "designation": "string",
+        "salutation": "string",
+        "maritalStatus": "string",
+        "registerOnline": false,
+        "customerInterests": [
+            "SPORTS",
+            "READING"
+        ],
+        "_type": "GenesisCrmIndividualDetails",
+        "_key": {
+            "id": "1fe308a3-4208-49e5-9ebf-26a521f6b278",
+            "rootId": "910fba51-b01d-4c20-a457-99c70fb738ab",
+            "revisionNo": 1,
+            "parentId": "910fba51-b01d-4c20-a457-99c70fb738ab"
+        }
+    },
+    "_type": "IndividualCustomer",
+    "_modelName": "INDIVIDUALCUSTOMER",
+    "_modelVersion": "1"
+}

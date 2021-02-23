@@ -1,0 +1,18 @@
+[
+  {
+    "code": "HIGH",
+    "defaultValue": "High"
+  },
+  {
+    "code": "LOW",
+    "defaultValue": "Low"
+  },
+  {
+    "code": "MEDIUM",
+    "defaultValue": "Medium"
+  },
+  {
+    "code": "UNKNOWN",
+    "defaultValue": "Unknown"
+  }
+]

@@ -1,0 +1,14 @@
+Model CUSTOMERACCOUNT
+
+Common {
+    Number is output.accountNumber
+}
+
+Command init {
+    Disabled
+}
+
+
+Endpoint load {
+    
+}

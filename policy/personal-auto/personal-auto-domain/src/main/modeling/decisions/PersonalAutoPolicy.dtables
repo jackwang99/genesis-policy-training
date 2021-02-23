@@ -1,0 +1,264 @@
+Model PersonalAuto
+
+Table "Package Eligibility" {
+  InputColumn "Effective" as Date : dimensions.termEffectiveDate
+  InputColumn "State" as String : dimensions.riskStateCd
+  InputColumn "Country" as String : dimensions.country
+  InputColumn "Brand" as String : dimensions.brand
+  AspectColumn "Package Code" : packageCode
+  AspectColumn "Package Label" : packageLabel
+  AspectColumn "Rank" : packageRank
+}
+
+Table "Plans" {
+  InputColumn "Package Code" as String : dimensions.packageCd
+  AspectColumn "Plan" : planCode
+  AspectColumn "Rank" : planRank
+  InputColumn "Authority" as Integer : securityContext.authorityLevel
+}
+
+@EntryPoint("Apply DT", "Quote Policy Validation", "Update dimension", "Harmonize", "Default apply")
+@RuleOrder
+@CrossTab
+@Versioned("Effective Date", "Request Date")
+Table "Applicability Configuration" {
+  InputColumn "User made choice"                  as Boolean : offered
+  InputColumn "Entry Point"                        as String : entryPoint
+  OutputColumn "Applicability Type"                as String : applicabilityType
+  OutputColumn "Allow to Change Default Offer"    as Boolean : allowChangeOffer
+  OutputColumn "Overridable"                      as Boolean : overridable
+  OutputColumn "Override Authority Level"         as Integer : overrideAuthorityLevel
+  AspectColumn "Action"                                      : applicabilityAction
+}
+
+@EntryPoint("Apply DT", "Quote Policy Validation", "Update dimension", "Harmonize", "Default apply")
+@RuleOrder
+@CrossTab
+Table "Offer Status Configuration" {
+  InputColumn "Entry Point"                        as String : entryPoint
+  OutputColumn "Offer Status"                      as String : offerStatus
+  OutputColumn "Set Offered Status"               as Boolean : setOfferedStatus
+}
+
+@EntryPoint("Apply DT", "Quote Policy Validation", "Update dimension", "Harmonize", "Default apply")
+@CrossTab
+@Versioned("Effective Date", "Request Date")
+Table "Entity Applicability" {
+  InputColumn "Package Code" as String : dimensions.packageCd
+  InputColumn "Plan" as String : dimensions.planCd
+  AspectColumn "Entity" : entity
+  AspectColumn "Applicability" : applicability
+}
+
+@EntryPoint("Apply DT", "Quote Policy Validation", "Update dimension", "Harmonize", "Default apply")
+@CrossTab
+@Overridable
+@Category("KrakenRules")
+@Versioned("Effective Date", "Request Date")
+Table "MinMax" {
+  InputColumn "Package Code" as String : dimensions.packageCd
+  InputColumn "Plan" as String : dimensions.planCd
+  InputColumn "Authority" as Integer : securityContext.authorityLevel
+  AspectColumn "Entity" : entity
+  AspectColumn "Attribute" : attribute
+  AspectColumn "Min" : min
+  AspectColumn "Max" : max
+}
+
+@EntryPoint("Apply DT", "Quote Policy Validation", "Update dimension", "Harmonize", "Default apply")
+@CrossTab
+@Overridable
+@Category("KrakenRules")
+@Versioned("Effective Date", "Request Date")
+Table "PremiumOverrideMinMax" {
+  InputColumn "Risk State" as String : dimensions.riskStateCd
+  InputColumn "Package Code" as String : dimensions.packageCd
+  AspectColumn "Entity" : entity
+  InputColumn "Authority" as Integer : securityContext.authorityLevel
+  InputColumn "Brand" as String : dimensions.brand
+  AspectColumn "Attribute" : attribute
+  AspectColumn "Min" : min
+  AspectColumn "Max" : max
+}
+
+@EntryPoint("Apply DT", "Quote Policy Validation", "Update dimension", "Harmonize", "Default apply")
+@CrossTab
+@Category("KrakenRules")
+@Versioned("Effective Date", "Request Date")
+Table "Default value" {
+  InputColumn "Package Code" as String : dimensions.packageCd
+  InputColumn "Plan" as String : dimensions.planCd
+  AspectColumn "Entity" : entity
+  AspectColumn "Attribute" : attribute
+  AspectColumn "Default" : default
+}
+
+@EntryPoint("Apply DT", "Quote Policy Validation", "Update dimension", "Harmonize", "Default apply")
+@RuleOrder
+@CrossTab
+@Versioned("Effective Date", "Request Date")
+Table "Values List" {
+  InputColumn "Package Code" as String : dimensions.packageCd
+  InputColumn "Plan" as String : dimensions.planCd
+  AspectColumn "Entity" : entity
+  AspectColumn "Attribute" : attribute
+  OutputColumn "ValueList" as String : list
+}
+
+@EntryPoint("Apply DT", "Quote Policy Validation", "Update dimension", "Harmonize", "Default apply")
+@CrossTab
+@Category("KrakenRules")
+@Versioned("Effective Date", "Request Date")
+Table "Mandatory" {
+  InputColumn "Package Code" as String : dimensions.packageCd
+  InputColumn "Plan" as String : dimensions.planCd
+  AspectColumn "Entity" : entity
+  AspectColumn "Attribute" : attribute
+  AspectColumn "Mandatory" : mandatory
+}
+
+@EntryPoint("Apply DT", "Quote Policy Validation", "Update dimension", "Harmonize", "Default apply")
+@CrossTab
+@Category("KrakenRules")
+@Versioned("Effective Date", "Request Date")
+Table "Attribute Visibility" {
+  InputColumn "Brand" as String : dimensions.brand
+  InputColumn "Agency" as String : dimensions.agency
+  InputColumn "Role" as String : securityContext.dtRole
+  AspectColumn "Entity" : entity
+  AspectColumn "Attribute" : attribute
+  AspectColumn "Visible" : visible
+  OutputColumn "Rank" as String : rank
+}
+
+@CrossTab
+@Category("KrakenRules")
+@Versioned("Effective Date", "Request Date")
+@EntryPoint
+Table "Attribute Accessibility" {
+  InputColumn "Package Code" as String : dimensions.packageCd
+  InputColumn "Plan" as String : dimensions.planCd
+  AspectColumn "Entity" : entity
+  AspectColumn "Attribute" : attribute
+  AspectColumn "Accessible" : accessible
+}
+
+@EntryPoint("Apply DT", "Quote Policy Validation", "Update dimension", "Harmonize", "Default apply")
+@CrossTab
+@RuleOrder
+@Versioned("Effective Date", "Request Date")
+Table "Relationship" {
+  InputColumn "Package Code" as String : dimensions.packageCd
+  AspectColumn "Entity" : entity
+  AspectColumn "Relationship Type" : relationshipType
+  AspectColumn "Linked Entity" : linkedEntity
+}
+
+@RuleOrder
+Table "LifeCycle" {
+  InputColumn "Command Name" as String : commandName
+  InputColumn "Phase" as String : phaseId
+  InputColumn "Current State" as String : currentState
+  InputColumn "Target State" as String : targetState
+  AspectColumn "Entry Points" : entryPoints
+  AspectColumn "Execution Stage" : executionStage
+}
+
+@RuleOrder
+Table "Entity Manager" {
+  InputColumn "Manager" as String : manager
+  OutputColumn "Entity" as String : entity
+}
+
+@RuleOrder
+Table "Entity Manager Listener" {
+  InputColumn "Entry Point" as String : entryPoint
+  OutputColumn "Listener" as String : listener
+  OutputColumn "Order" as Integer : order
+}
+
+Table "Form Revision" {
+  InputColumn "Form Code" as String : code
+  InputColumn "Date Range" as Date : date
+  OutputColumn "Effective" as Date : effective
+  OutputColumn "Expiration" as Date : expiration
+  OutputColumn "Form Revision Status" as String : status
+  OutputColumn "Revision" as String : revision
+}
+
+@EntryPoint("Apply DT", "Default apply")
+@CrossTab
+@Category("KrakenRules")
+Table "Form Revision Info" {
+  InputColumn "Revision" as String : dimensions.revision
+  AspectColumn "Entity" : entity
+  AspectColumn "Attribute" : attribute
+  AspectColumn "Default" : default
+}
+
+@RuleOrder
+Table "Kraken Rule Eligibility" {
+    InputColumn "Value" : eligible.value
+    AspectColumn "Override Group" : overrideGroup
+    AspectColumn "Rule Name" : ruleName
+    AspectColumn "Eligible For Override" : eligibleForOverride
+}
+
+@RuleOrder
+Table "Decision Table Rule Eligibility" {
+    InputColumn "Value" : eligible.value
+    AspectColumn "Entity" : entity
+    AspectColumn "Attribute" : attribute
+    AspectColumn "Rule Type" : ruleType
+    AspectColumn "Eligible For Override" : eligibleForOverride
+}
+
+@CrossTab
+@RuleOrder
+Table "Quote Command Privilege" {
+    InputColumn "State" as String : state
+    InputColumn "Transaction Type" as String : txType
+    OutputColumn "Quote Command" as String : quoteCommand
+    OutputColumn "Privilege" as String : privilege
+}
+
+@CrossTab
+@RuleOrder
+Table "Policy Command Privilege" {
+    InputColumn "State" as String : dimensions.state
+    InputColumn "Transaction Type" as String : txType
+    OutputColumn "Policy Command" as String : policyCommand
+    OutputColumn "Privilege" as String : privilege
+}
+
+@EntryPoint("UnderwritingMeasure")
+@RuleOrder
+@Category("KrakenRules")
+@Versioned("Effective Date", "Request Date")
+Table "Underwriting warnings rules" {
+    AspectColumn "Entity" : entity
+    AspectColumn "Attribute" : attribute
+    @Overridable(true)
+    @Warning
+    AspectColumn "Max" : max
+    AspectColumn "Warning Code" : maxCode
+    AspectColumn "Warning Message" : maxMessage
+}
+
+@RuleOrder
+Table "Impact table" {
+    InputColumn "Impact" as String          : impact
+    AspectColumn "Entity"                   : entity
+    AspectColumn "Attribute"                : attribute
+    OutputColumn "Is Empty" as Boolean      : isEmpty
+    OutputColumn "Reset Value" as String    : resetValue
+}
+
+@EntryPoint("Reset DT")
+@RuleOrder
+@Category("KrakenRules")
+Table "Reset Value" {
+    AspectColumn "Entity" : entity
+    AspectColumn "Attribute" : attribute
+    AspectColumn "Reset" : reset
+}

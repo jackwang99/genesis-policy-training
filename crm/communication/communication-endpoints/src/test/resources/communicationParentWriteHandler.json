@@ -1,0 +1,15 @@
+{
+    "_key": {
+        "rootId": "1214d6af-22ff-49c8-90bb-eff7347902c7",
+        "revisionNo": 1
+    },
+    "thread": [
+        {
+            "_uri": "gentity://Communication/Communication//ddd5ab61-158e-4a7c-b3e1-8dcb3f111cf7/1"
+        }],
+    "channel": "string",
+    "direction": "Outbound",
+    "_type": "GenesisCommunication",
+    "_modelName": "Communication",
+    "_modelVersion": "1"
+}

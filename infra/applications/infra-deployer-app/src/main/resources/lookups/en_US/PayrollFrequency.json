@@ -1,0 +1,22 @@
+[
+  {
+    "code": "AN",
+    "defaultValue": "Annual"
+  },
+  {
+    "code": "BW",
+    "defaultValue": "Bi-Weekly"
+  },
+  {
+    "code": "MO",
+    "defaultValue": "Monthly"
+  },
+  {
+    "code": "SM",
+    "defaultValue": "Semi-Monthly"
+  },
+  {
+    "code": "WE",
+    "defaultValue": "Weekly"
+  }
+]

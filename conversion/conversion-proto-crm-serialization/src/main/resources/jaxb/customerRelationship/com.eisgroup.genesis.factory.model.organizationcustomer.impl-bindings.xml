@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml-bindings xmlns="http://www.eclipse.org/eclipselink/xsds/persistence/oxm"
+	package-name="com.eisgroup.genesis.factory.model.organizationcustomer.impl">
+
+	<!-- Bindings overrides over generated bindings -->
+
+	<java-types>
+
+		<java-type name="OrganizationCustomerImpl">
+			<java-attributes>
+				<xml-element java-attribute="details" required="false"
+					type="com.eisgroup.genesis.factory.model.organizationcustomer.impl.GenesisCrmBusinessDetailsImpl" />
+				<xml-element java-attribute="state" required="false" />
+			</java-attributes>
+		</java-type>
+
+	</java-types>
+</xml-bindings>

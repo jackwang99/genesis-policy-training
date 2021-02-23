@@ -1,0 +1,22 @@
+[
+  {
+    "code": "A",
+    "defaultValue": "Performance standard"
+  },
+  {
+    "code": "H",
+    "defaultValue": "Haute performance"
+  },
+  {
+    "code": "I",
+    "defaultValue": "Performance intermédiaire"
+  },
+  {
+    "code": "P",
+    "defaultValue": "Sports Premium Performance"
+  },
+  {
+    "code": "S",
+    "defaultValue": "Performance sportive"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "code": "OWN",
+    "defaultValue": "Posséder"
+  },
+  {
+    "code": "RENT",
+    "defaultValue": "Location"
+  }
+]

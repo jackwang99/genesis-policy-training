@@ -1,0 +1,9 @@
+Namespace GroupInfo
+
+Include Base
+
+Rule "GroupInfoDatesComparison" On GroupInfo.effectiveDate {
+  When effectiveDate != null && expirationDate != null
+  Assert effectiveDate < expirationDate
+  Error "GroupInfoDatesComparison": "Expiration Date is less than Effective Date"
+}

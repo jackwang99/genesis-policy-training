@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>proto-policy-parent-pom</artifactId>
+    <groupId>com.eisgroup.genesis.proto.policy</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <groupId>com.eisgroup.genesis.personalauto</groupId>
+  <artifactId>personal-auto-pom</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+
+  <modules>
+    <module>personal-auto-stubs</module>
+    <module>personal-auto-domain</module>
+    <module>personal-auto-services-impl</module>
+    <module>personal-auto-events</module>
+    <module>personal-auto-lifecycle</module>
+    <module>personal-auto-lifecycle/model</module>
+    <module>personal-auto-endpoints</module>
+    <!--module>personal-auto-reports</module-->
+    <module>personal-auto-urm-rating</module>
+    <module>personal-auto-rating-alg</module>
+    <module>personal-auto-premiums-service-impl</module>
+    <module>personal-auto-rules-domain</module>
+    <module>personal-auto-services-api</module>
+<!--    <module>personal-auto-reports-export</module>-->
+  </modules>
+
+</project>

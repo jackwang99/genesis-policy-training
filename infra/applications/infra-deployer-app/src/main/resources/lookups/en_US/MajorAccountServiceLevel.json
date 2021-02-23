@@ -1,0 +1,14 @@
+[
+  {
+    "code": "GREEN",
+    "defaultValue": "Green (Low Touch)"
+  },
+  {
+    "code": "RED",
+    "defaultValue": "Red (High Touch)"
+  },
+  {
+    "code": "YELLOW",
+    "defaultValue": "Yellow (Medium Touch)"
+  }
+]

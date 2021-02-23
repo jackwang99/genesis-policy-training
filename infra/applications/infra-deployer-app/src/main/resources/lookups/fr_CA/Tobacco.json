@@ -1,0 +1,12 @@
+[
+{ 
+   "code": "YES",
+   "orderNo": "1",
+   "defaultValue": "Yes"
+},
+{ 
+   "code": "NO",
+   "orderNo": "2",
+   "defaultValue": "No"
+}
+]

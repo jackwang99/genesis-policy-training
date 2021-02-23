@@ -1,0 +1,794 @@
+@DimensionRoot("PolicyDimensionRoot")
+Entity PersonalAutoPolicySummary is AutoPolicySummary {
+
+    @Searchable
+    @Constant("PersonalAuto")
+    Attr productCd: String
+
+    @Rateable
+    @Length(11)
+    Attr policyNumber: String
+
+    @NonComparable
+    Attr createdFromPolicyRev: Integer
+
+    @Dimension("state")
+    @NonComparable
+    @Searchable
+    @ReadOnly
+    Attr state: String
+
+    @Dimension("country")
+    @Tag("Billable")
+    Attr country: String
+
+    @Dimension("riskStateCd")
+    @Tag(["Billable", "Rateable", "FixPrice"])
+    Attr riskStateCd: String
+
+    Attr preConvPolicyNumber: String
+    Attr preConvPolicyPremium: String
+    Attr bookrollId: String
+
+    @Dimension("rateEffectiveDate")
+    @Tag(["Billable", "Rateable"])
+    @Rateable
+    Attr rateEffectiveDate: Datetime
+	
+    Attr overrideRateEffectiveDate: Boolean
+
+	@Embedded
+    Ref blob: AutoBLOB
+
+    @Required
+    Attr transactionDetails: AutoTransactionDetails
+
+    Attr termDetails: AutoTermDetails
+	@NonComparable
+    Attr accessTrackInfo: AutoAccessTrackInfo
+
+    @KrakenField
+    @KrakenChildContext
+    Attr parties: *PersonalAutoPolicyParty
+    Attr document: AutoDocumentDeliveryOptions
+
+    Attr forms: *{TripInterruptionEndorsement}
+    Attr prefillInfo: AutoPrefillInfo
+    Attr paymentPlan: AutoPaymentPlan
+    Attr billingInfo: AutoBillingInfo
+
+    @Embedded
+    @NonComparable
+    Ref policyDetail: AutoPolicyDetail
+
+    Attr packagingDetail: AutoPackagingDetail
+    Attr businessDimensions: AutoBusinessDimensions
+}
+
+Entity AutoBLOB is PnCBLOBContainer {
+
+    @Constant("Personal")
+    Attr blobCd: String
+
+    @KrakenField
+    @KrakenChildContext
+    Ref lobs: *AutoLOB
+}
+
+Entity AutoLOB is PersonalAutoLOB, PremiumOverrideHolder, Sequencer {
+    @Numbered
+    Ref riskItems: *AutoVehicle
+    @ReadOnly
+    @NonComparable
+    Attr sequences: *AutoSequences
+}
+
+Entity AutoSequences is Sequences {
+
+}
+
+Entity AutoTransactionDetails is TransactionDetails {
+    @Rateable
+    Attr txType: String
+
+    @Dimension("txEffectiveDate")
+    Attr txEffectiveDate: Datetime
+}
+
+Entity AutoTermDetails is TermDetails {
+    Attr contractTermTypeCd: String
+
+    @Dimension("termEffectiveDate")
+    @Rateable
+    Attr termEffectiveDate: Datetime
+}
+
+Entity AutoPaymentPlan is PaymentPlan {
+    Attr code: String
+    Attr dueDate: Integer
+}
+
+Entity AutoVehicleRegistrationRecord is VehicleRegistrationRecord {
+
+}
+
+@BusinessKey("registryTypeId")
+Entity AutoVehicleEntity is Vehicle {
+    @Rateable
+    @Tag("export")
+    Attr model: String
+
+    @Rateable
+    @Tag("export")
+    Attr modelYear: Integer
+
+    @Description("lookup:FuelType")
+    Attr fuelTypeCd: String
+
+    Attr registrationRecords: *AutoVehicleRegistrationRecord
+
+    @Tag(["Billable", "Rateable"])
+    Attr vehSymbol: String
+
+    @Rateable
+    Attr compSymbol: String
+
+    @Rateable
+    Attr collSymbol: String
+
+    @Description("lookup:AirBagStatus")
+    @Rateable
+    Attr airBagStatusCd: String
+
+    @Description("lookup:AntiLockBrake")
+    @Rateable
+    Attr antiLockBrakeCd: String
+
+    @Rateable
+    Attr automaticBeltsInd: Boolean
+
+    @Rateable
+    Attr daytimeRunningLampsInd: Boolean
+
+    @Rateable
+    Attr recoveryDeviceInd: Boolean
+
+    @Rateable
+    Attr armoredInd: Boolean
+
+    @Description("lookup:VehicleSecurityOptions")
+    @Rateable
+    Attr securityOptionsCd: String
+
+    @Description("lookup:VehicleType")
+    @Rateable
+    Attr typeCd: String
+
+    @Description("lookup:VehicleUsage")
+    @Rateable
+    Attr usageCd: String
+
+    Attr firstRegistrationYear: Integer
+
+    Attr enginePower: Integer
+
+    @Description("lookup:NoVinReason")
+    Attr noVinReasonCd: String
+
+    @Description("lookup:VehiclePerformance")
+    Attr performanceCd: String
+
+    @Description("lookup:VehicleBodyType")
+    Attr bodyTypeCd: String
+
+    @Description("lookup:VehicleSeries")
+    Attr seriesCd: String
+
+    Attr purchasedDate: Date
+
+    Attr purchasedNew: Boolean
+
+    Attr marketValue: Money
+
+    Attr adjustmentToValue: Decimal
+
+    Attr adjustedValue: Money
+
+    Attr costNew: Money
+}
+
+@DimensionRoot("RiskItemDimensionRoot")
+@LocationHolder("garagingAddress")
+Entity AutoVehicle is VehicleRiskItem, PremiumOverrideHolder, Numbered {
+
+    Attr vehicleBaseDetails: AutoVehicleEntity
+
+    Attr prefilled: Boolean
+
+    @Lookup("StateProv")
+    @Description("lookup:StateProv")
+    Attr registeredStateCd: String
+
+    @Overridable(["Policy: Policy renewal", "Policy: Quote Update"])
+    @Min(0.00)
+    @Max(1000000.00)
+    @Tag("export")
+    Attr marketValue: Money
+
+    @Min(0.00)
+    @Max(100.00)
+    Attr adjustmentToValue: Decimal
+
+    @Rateable
+    @Min(0.00)
+    @Max(1000000.00)
+    Attr adjustedValue: Money
+
+    @Min(0.00)
+    @Max(1000000.00)
+    Attr costNew: Money
+
+    @Min(0.00)
+    @Max(1000000.00)
+    Attr statedAmt: Money
+
+    @Rateable
+    Attr biSymbol: String
+    @Rateable
+    Attr pdSymbol: String
+    @Rateable
+    Attr pipMedSymbol: String
+    @Rateable
+    Attr liabSymbol: String
+
+
+    @Min(0)
+    @Max(1000000)
+    Attr declaredAnnualMiles: Integer
+    @Rateable
+    Attr annualMiles: Integer
+    @Min(0)
+    @Max(999999)
+    Attr odometerReading: Integer
+    Attr odometerReadingDate: Date
+    Attr distanceOneWay: Integer
+    Attr distanceForPleasurePerWeek: Integer
+    Attr numDaysDrivenPerWeek: Integer
+
+    Attr existingDamage: Boolean
+    Attr damageDescription: String
+    Attr farmOrRanchDisc: Boolean
+    Attr garageParked: Boolean
+    Attr isGaragingAddressSameAsInsured: Boolean
+    Attr garagingAddress: AutoAddressInfo
+
+    Attr registrationType: String
+    Link registeredOwner: PersonalAutoPolicyParty
+
+    Attr assignedDrivers: *AutoVehicleDriver
+
+    Attr additionalInterests: *AutoAdditionalInterestInfo
+
+    @ExcludeFromOptionSync
+    Attr forms: *{ReplacementCostEndorsement, MiscellaneousTypesMotorhomesEndorsement, AddPartsElecEquipEndorsement}
+
+    @ExcludeFromOptionSync
+    Attr coverages: *{AutoCOLLCoverage, AutoCOMPCoverage, AutoMEDCoverage, AutoRACoverage, AutoRRCoverage, MBICoverageUserChoiceContainer}
+
+    @ExcludeFromOptionSync
+    Attr coverageGroups: *{AutoSingleCoverageGroup, AutoSplitCoverageGroup}
+
+    Attr vehicleUnderwritingInfo: VehicleUnderwritingInfo
+
+    Attr isKitCar: Boolean
+
+    Attr registeredAtDmv: Boolean
+    Attr businessUseInd: Boolean
+    Attr businessUseDescription: String
+
+    @Dimension("planCd")
+    Attr planCd: String
+}
+
+@PremiumHolder("CoverageGroup")
+Entity AutoSingleCoverageGroup is CoverageGroup {
+    Attr coverages: *{AutoCSLCoverage, AutoUMCSLCoverage}
+}
+
+@PremiumHolder("CoverageGroup")
+Entity AutoSplitCoverageGroup is CoverageGroup {
+    Attr coverages: *{AutoPDCoverage, AutoUMPDCoverage, AutoBICoverage, AutoUMBICoverage}
+}
+
+//Combined Single Limit coverage
+@PremiumHolder("Coverage")
+Entity AutoCSLCoverage is Coverage {
+    @Rateable
+    Attr code: String
+    @Rateable
+    Attr limitAmount: Money
+    @Rateable
+    Attr deductibleAmount: Money
+}
+
+//Bodily Injury coverage
+@PremiumHolder("Coverage")
+Entity AutoBICoverage is Coverage {
+    @Rateable
+    Attr code: String
+    @Rateable
+    Attr combinedLimit: String
+    @Rateable
+    Attr limitAmount: Money
+    @Rateable
+    Attr additionalLimitAmount: Money
+}
+
+//Property Damage coverage
+@PremiumHolder("Coverage")
+Entity AutoPDCoverage is Coverage {
+    @Rateable
+    Attr code: String
+    @Rateable
+    Attr limitAmount: Money
+}
+
+//Uninsured/Underinsured Motorist Combined Single Limit coverage
+@PremiumHolder("Coverage")
+Entity AutoUMCSLCoverage is Coverage {
+    @Rateable
+    Attr code: String
+    @Rateable
+    Attr limitAmount: Money
+    Attr deductible: Money
+}
+
+//Uninsured/Underinsured Motorist Bodily Injury coverage
+@PremiumHolder("Coverage")
+Entity AutoUMBICoverage is Coverage {
+    @Rateable
+    Attr code: String
+    @Rateable
+    Attr combinedLimit: String
+    @Rateable
+    Attr limitAmount: Money
+    @Rateable
+    Attr additionalLimitAmount: Money
+}
+
+//Uninsured/Underinsured Motorist Property Damage coverage
+@SeasonalPremiumHolder("Coverage")
+Entity AutoUMPDCoverage is SeasonalPremiumHolderEntity {
+    @Rateable
+    Attr code: String
+    @Rateable
+    Attr limitAmount: Money
+}
+
+//Collision coverage
+@SeasonalPremiumHolder("Coverage")
+Entity AutoCOLLCoverage is SeasonalPremiumHolderEntity {
+    @Rateable
+    Attr code: String
+    @Rateable
+    Attr deductibleAmount: Money
+}
+
+//Comprehensive coverage
+@PremiumHolder("Coverage")
+Entity AutoCOMPCoverage is Coverage {
+    @Rateable
+    Attr code: String
+    @Rateable
+    Attr deductibleAmount: Money
+}
+
+//Medical Payments coverage
+@PremiumHolder("Coverage")
+@FixPrice
+Entity AutoMEDCoverage is Coverage {
+    @Rateable
+    Attr code: String
+    @Rateable
+    Attr limitAmount: Money
+}
+
+//Roadside Assistance coverage
+@PremiumHolder("Coverage")
+Entity AutoRACoverage is Coverage {
+    @Rateable
+    Attr code: String
+    @Rateable
+    Attr level: String
+}
+
+//Rental Reimbursement/Transportation Expense coverage
+@PremiumHolder("Coverage")
+Entity AutoRRCoverage is Coverage {
+    @Rateable
+    Attr code: String
+    @Rateable
+    Attr combinedLimit: String
+    @Rateable
+    Attr limitAmount: Money
+    @Rateable
+    Attr additionalLimitAmount: Money
+}
+
+@PremiumHolder("Coverage")
+Entity AutoMBICoverage is GFCoverage {    
+    Attr code: String    
+}
+
+Entity MBICoverageUserChoiceContainer is UserChoiceContainer {
+    @TrackChanges
+	@Derived
+	Attr userChoice: Boolean
+	
+    Attr coverage: AutoMBICoverage
+}
+
+Entity AutoVehicleDriver is VehicleDriver {
+    Link driver: PersonalAutoPolicyParty
+    Attr percentOfUsage: Decimal
+    Attr forms: *{ADBEndorsement}
+    Attr assignDriverType: String
+}
+
+Entity AutoAccessTrackInfo is PolicyAccessTrackInfo {
+
+}
+
+Entity AutoPolicyDetail is PolicyDetail {
+
+}
+
+Entity AutoBusinessDimensions is PolicyBusinessDimensions {
+    @Dimension("agency")
+    Attr agency: String
+    @Dimension("brand")
+    Attr brand: String
+}
+
+Entity AutoPackagingDetail is PackagingDetail {
+
+    @Searchable("packageCd")
+    @Dimension("packageCd")
+    Attr packageCd: String
+
+    @Searchable("planCd")
+    @Dimension("planCd")
+    @ExcludeFromOptionSync
+    Attr planCd: String
+}
+
+Entity AutoDocumentDeliveryOptions {
+    Attr suppressGeneration: Boolean
+    Attr noGenerationType: String
+    Attr suppressPrint: Boolean
+    Attr noPrintType: String
+    Attr deliveryMethod: String
+    Attr divert: Boolean
+    Attr divertType: String
+    Attr divertTo: String
+    Attr paymentPlanAuth: String
+    Attr policyApplication: Boolean
+}
+
+Entity AutoPartyRole is PartyRole {
+    Attr role: String
+}
+
+@BusinessKey("personInfo.personBaseDetails.registryTypeId")
+Entity PersonalAutoPolicyParty is AutoPolicyParty {
+    Attr roles: *AutoPartyRole
+    Attr relationToPrimaryInsured: String
+    Attr personInfo: AutoPolicyPerson
+    Attr priorCarrierInfo: AutoPriorCarrierInfo
+    Attr creditScoreInfo: AutoCreditScoreInfo
+    Attr insuredInfo: AutoInsuredInfo
+    Attr driverInfo: AutoDriverInfo
+}
+
+Entity AutoPolicyPersonLegalIdentity is PersonLegalIdentity {
+}
+
+Entity AutoPersonEntity is PersonBase {
+    @Searchable("personFirstName")
+    Attr firstName: String
+    @Searchable("personLastName")
+    Attr lastName: String
+    @Rateable
+    Attr genderCd: String
+    @Rateable
+    Attr maritalStatus: String
+
+    Attr communicationInfo: *AutoCommunicationInfo
+    Attr legalIdentities: *AutoPolicyPersonLegalIdentity
+}
+
+Entity AutoPolicyPerson is PolicyPerson {
+
+    Attr personBaseDetails: AutoPersonEntity
+
+    @Confidential("ssnStrategy")
+    Attr ssn: String
+    Attr nameTypeCd: String
+    @Rateable
+    Attr age: Integer
+    @Rateable
+    Attr occupation: String
+    Attr occupationDescription: String
+    Attr sameHomeAddress: Boolean
+    Attr addressInfo: *AutoAddressInfo
+}
+
+Entity AutoGeoCoord is GeoCoord {
+
+}
+
+@BusinessKey("registryTypeId")
+Entity AutoAddressInfo is Location {
+    @Searchable("personCountry")
+    Attr countryCd: String
+    @Searchable("personStateProv")
+    Attr stateProvinceCd: String
+    @Rateable
+    @Searchable("personZipCode")
+    Attr postalCode: String
+    @Searchable ("personCity")
+    Attr city: String
+
+    Attr geoposition: AutoGeoCoord
+
+    // added because attributes in party model changed, remove attributes if not needed
+    Attr doNotSolicit: Boolean
+    Attr streetAddress: String
+    Attr zipPlus4Code: String
+    Attr county: String
+    Attr streetName: String
+    Attr streetNumber: String
+    Attr unitNumber: String
+}
+
+Entity AutoEmailInfo is EmailInfo {
+}
+
+Entity AutoPhoneInfo is PhoneInfo {
+}
+
+Entity AutoCommunicationInfo is CommunicationInfo {
+    Attr emails: *AutoEmailInfo
+    Attr phones: *AutoPhoneInfo
+}
+
+Entity AutoLicenseInfo is LicenseInfo {
+    Attr licenseTypeCd: String
+    Attr permitBeforeLicense: Boolean
+    @Rateable
+    Attr dateFirstLicensed: Date
+    Attr totalDriverExpYears: Integer
+    Attr revocationPending: Boolean
+}
+
+Entity AutoPriorCarrierInfo is PriorCarrierInfo {
+    Attr carrierCd: String
+    Attr carrierPolicyExpDate: Date
+    Attr carrierPremium: Money
+}
+
+Entity AutoCreditScoreInfo is CreditScoreInfo {
+    Attr ofacClearance: Boolean
+    Attr isCompanyAlert: Boolean
+}
+
+Entity AutoDriverInfo is DriverInfo {
+    @Rateable
+    Attr driverType: String
+    Attr prefilled: Boolean
+    Attr reasonForExclusion: String
+    Attr convictedOfFelonyInd: Boolean
+    Attr trainingCompletionDate: Date
+    Attr companyEmployee: Boolean
+    Attr companyEmployeeNumber: String
+    Attr continuouslyWithCompany: Date
+    Attr licenseInfo: *AutoLicenseInfo
+    Attr studentInfo: AutoStudentInfo
+    Attr fillingInfo: AutoDriverFillingInfo
+    Attr underwritingInfo: AutoDriverUnderwritingInfo
+    Attr suspensions: *AutoSuspensionInfo
+    Attr violations: *AutoViolationInfo
+    Attr claims: *AutoClaimInfo
+}
+
+Entity AutoClaimInfo is ClaimInfo {
+    @Rateable
+    Attr claimType: String
+    Attr claimNumber: String
+    Attr policyNumber: String
+    Attr policyType: String
+    Attr claimAssociation: String
+}
+
+Entity AutoStudentInfo is StudentInfo {
+
+}
+
+Entity AutoViolationInfo is ViolationInfo {
+
+}
+
+Entity AutoSuspensionInfo is SuspensionInfo {
+
+}
+
+Entity AutoDriverFillingInfo {
+    Attr needed: Boolean
+    Attr date: Date
+    Attr state: String
+    Attr type: String
+    Attr caseNumber: String
+    Attr reason: String
+}
+
+Entity AutoDriverUnderwritingInfo {
+    @Rateable
+    Attr driverTraining: Boolean
+    @Rateable
+    Attr goodStudent: Boolean
+
+    //Has Driver ever been convicted of a felony
+    Attr isFelonyConvicted: Boolean
+
+    //Custody of Children
+    Attr isChildrenCustody: Boolean
+
+    //Live with Parents
+    Attr isLivingWithParents: Boolean
+
+    //Previously on Parents Policy
+    Attr isOnParentsPolicy: Boolean
+
+    //Parents Insured with Company
+    Attr isParentsInsuredRelatedCompany: Boolean
+
+    //Income Derived from Farming/Ranching
+    Attr isIncomeFarmingDerived: Boolean
+
+    //State Resident For
+    Attr residentFor: String
+}
+
+Entity VehicleUnderwritingInfo {
+    //Is vehicle used in any commercial business operations?
+    Attr isVehicleCommercialUsed: Boolean
+    //Garage or Public Parking Operations
+    Attr isParkingOperations: Boolean
+    //Automobile Sales Agency
+    Attr isAutoSalesAgency: Boolean
+    //Repair Shop/Service Station
+    Attr isRepairServiceStation: Boolean
+    //Public Transportation of People or Property (i.e. livery, van pool, delivery or route)
+    Attr isPublicTransportation: Boolean
+    //Residential or Office Use
+    Attr isOfficeUse: Boolean
+    //Emergency Services
+    Attr isEmergencyServices: Boolean
+    Attr isRacing: Boolean
+    //Rental or Lease to Others
+    Attr isRentalToOthers: Boolean
+    Attr isCompanyCar: Boolean
+}
+
+Entity AutoAdditionalInterestInfo {
+    Attr rank: String
+    Attr type: String
+    Attr name: String
+    Attr secondName: String
+    Attr email: String
+    Attr loanNo: String
+    Attr loanAmt: Money
+    Attr lossPayeeExpDate: Date
+    Attr address: AutoAddressInfo
+}
+
+Entity AutoInsuredInfo is InsuredInfo {
+    Attr clueReport: AutoReportInfo
+    Attr personalAutoInsuredMembership: PersonalAutoInsuredMembership
+    Attr mvrReport: AutoReportInfo
+}
+
+Entity AutoPrefillInfo is PrefillInfo {
+    Attr address: AutoAddressInfo
+    Attr email: String
+    Attr policyState: String
+    Attr ordered: Boolean
+    Attr used: Boolean
+    Attr skipped: Boolean
+}
+
+Entity AutoReportInfo {
+    Attr order: Boolean
+    Attr reorder: Boolean
+    Attr ordered: Boolean
+    Attr response: Boolean
+    Attr orderDate: Date
+    Attr receiptDate: Date
+    Attr bandNumber: String
+}
+
+Entity AutoBillingInfo {
+    Attr recurringPayment: Boolean
+    Attr paymentMethod: String
+    Attr sameBillingAddress: Boolean
+    Attr paperless: Boolean
+    Attr paymentAmt: Money
+    Attr paymentAuthorized: Boolean
+
+    Attr creditCardInfo: AutoCreditCardInfo
+    Attr bankAccountInfo: AutoBankAccountInfo
+    Attr address: AutoAddressInfo
+    Attr communicationInfo: AutoCommunicationInfo
+}
+
+Entity AutoCreditCardInfo {
+    Attr cardType: String
+    Attr cardNumber: String
+    Attr cvv: Decimal
+    Attr expirationDate: Date
+}
+
+Entity AutoBankAccountInfo {
+    Attr routingNumber: String
+    Attr accountNumber: String
+    Attr bankName: String
+}
+
+Entity PersonalAutoInsuredMembership {
+    Attr organizationCd: String
+    Attr membershipNo: Integer
+}
+
+@VersionedResource("Form Revision", "txEffectiveDate", "rateEffectiveDate", "date")
+@PremiumHolder("Form")
+@DimensionRoot("FormDimensionRoot")
+Entity TripInterruptionEndorsement is Form {
+	@VersionedResourceKey("code")
+    @Rateable
+    Attr code: String
+	
+    @Rateable
+    Attr tripInterExpense: Integer
+	
+	@VersionedResourceRevision("revision", "status")
+	@Dimension("revision")
+	Attr revision: String
+}
+
+@PremiumHolder("Form")
+Entity ReplacementCostEndorsement is Form {
+    @Rateable
+    Attr code: String
+}
+
+@PremiumHolder("Form")
+Entity MiscellaneousTypesMotorhomesEndorsement is Form {
+    @Rateable
+    Attr code: String
+    @Rateable
+    Attr numberOfWeeks: Integer
+    Attr period: String
+    Attr miscellaneousTypesMotorhomes: String
+}
+
+Entity AddPartsElecEquipEndorsement is Form {
+    Attr ACPEEEquipmentDescription: String
+    Attr deductible: Money
+    Attr ACPEECoverage: Decimal
+    Attr ACPEEType: String
+}
+
+Entity ADBEndorsement is Form {
+    @Rateable
+    Attr code: String
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>ref-party-impl</artifactId>
+        <groupId>com.eisgroup.genesis.proto</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.eisgroup.genesis.proto.party.applications</groupId>
+    <artifactId>proto-party-applications-parent-pom</artifactId>
+    <packaging>pom</packaging>
+
+    <name>Party Registry Reference Applications Parent POM</name>
+    <description>Party Registry Reference Applications Parent POM Module</description>
+
+    <modules>
+        <module>party-app-suite</module>
+        <module>party-deployer-app</module>
+        <module>party-commands-app</module>
+        <module>party-facade-app</module>
+        <module>party-facade-app/model</module>
+        <module>party-events-app</module>
+        <module>eissuite-party-events-app</module>
+    </modules>
+
+</project>

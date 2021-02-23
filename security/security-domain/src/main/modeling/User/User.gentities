@@ -1,0 +1,10 @@
+Entity GenesisUser is User {
+    Attr userProfiles : *GenesisUserProfile
+}
+
+Entity GenesisUserProfile is UserProfile {
+    Attr operationalAssignments : *GenesisUserOperationalAssignment
+}
+
+Entity GenesisUserOperationalAssignment is UserOperationalAssignment {
+}

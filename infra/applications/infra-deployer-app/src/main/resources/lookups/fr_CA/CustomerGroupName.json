@@ -1,0 +1,27 @@
+[
+  {
+    "code": "AFF_AAA",
+    "crmGroupTypeCd": "AFFINITY",
+    "defaultValue": "Association automobile américaine (AAA)"
+  },
+  {
+    "code": "AFF_AARP",
+    "crmGroupTypeCd": "AFFINITY",
+    "defaultValue": "Association américaine des retraités (AARP)"
+  },
+  {
+    "code": "AFF_AFT",
+    "crmGroupTypeCd": "AFFINITY",
+    "defaultValue": "Fédération américaine des enseignants (AFT)"
+  },
+  {
+    "code": "PROF_COMPANY_EMPLOYEES",
+    "crmGroupTypeCd": "PROFESSIONAL",
+    "defaultValue": "Employés de l'entreprise"
+  },
+  {
+    "code": "PROF_COMPANY_EXECUTIVES",
+    "crmGroupTypeCd": "PROFESSIONAL",
+    "defaultValue": "Dirigeants d'entreprise"
+  }
+]

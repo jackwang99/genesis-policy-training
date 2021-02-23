@@ -1,0 +1,6 @@
+Namespace MajorAccount
+
+Include Base
+
+EntryPoint "MajorAccount Validation" {
+}

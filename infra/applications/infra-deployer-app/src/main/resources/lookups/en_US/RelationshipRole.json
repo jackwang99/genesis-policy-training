@@ -1,0 +1,272 @@
+[
+  {
+    "code": "ACCOUNTING",
+    "defaultValue": "Accounting",
+    "entityType": "ORG",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "AGENT",
+    "defaultValue": "Agent",
+    "entityType": "ORG",
+    "relationshipType": "ORG"
+  },
+  {
+    "code": "ASVICEPRESIDENT",
+    "defaultValue": "Associate Vice President",
+    "entityType": "ORG",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "BILLING",
+    "defaultValue": "Billing",
+    "entityType": "ORG",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "CEO",
+    "defaultValue": "CEO",
+    "entityType": "ORG",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "CFO",
+    "defaultValue": "CFO",
+    "entityType": "ORG",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "CHILD_DAUGHTER",
+    "defaultValue": "Child - Daughter ",
+    "entityType": "INDV",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "CHILD_SON",
+    "defaultValue": "Child - Son",
+    "entityType": "INDV",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "CLAIMS",
+    "defaultValue": "Claims",
+    "entityType": "ORG",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "CLIENT_AGENCY",
+    "defaultValue": "Client (Agency)",
+    "entityType": "INDV",
+    "relationshipType": "ORG"
+  },
+  {
+    "code": "CLIENT_ATTORNEY",
+    "defaultValue": "Client (Attorney)",
+    "entityType": "INDV",
+    "relationshipType": "ORG"
+  },
+  {
+    "code": "CLIENT_SUPPLIER",
+    "defaultValue": "Client (Supplier)",
+    "entityType": "INDV",
+    "relationshipType": "ORG"
+  },
+  {
+    "code": "COLLEAGUE",
+    "defaultValue": "Colleague",
+    "entityType": "INDV",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "DIRECTOR",
+    "defaultValue": "Director",
+    "entityType": "ORG",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "DIVISION",
+    "defaultValue": "Division",
+    "entityType": "ORG",
+    "relationshipType": "ORG"
+  },
+  {
+    "code": "DOMESTIC_PARTNER",
+    "defaultValue": "Spouse - Domestic Partner",
+    "entityType": "INDV",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "EMPLOYEE",
+    "defaultValue": "Employee",
+    "entityType": "ORG",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "EMPLOYER",
+    "defaultValue": "Employer",
+    "entityType": "INDV",
+    "relationshipType": "ORG"
+  },
+  {
+    "code": "FRANCHISEE",
+    "defaultValue": "Franchisee",
+    "entityType": "ORG",
+    "relationshipType": "ORG"
+  },
+  {
+    "code": "FRANCHISOR",
+    "defaultValue": "Franchisor",
+    "entityType": "ORG",
+    "relationshipType": "ORG"
+  },
+  {
+    "code": "FRIEND",
+    "defaultValue": "Friend",
+    "entityType": "INDV",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "HUMAN_RESOURCES",
+    "defaultValue": "Human Resources",
+    "entityType": "ORG",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "INSPECTION",
+    "defaultValue": "Inspection",
+    "entityType": "ORG",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "LEGAL",
+    "defaultValue": "Legal",
+    "entityType": "ORG",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "LEGAL_REPRESENT",
+    "defaultValue": "Legal Representation",
+    "entityType": "ORG",
+    "relationshipType": "ORG"
+  },  
+  {
+    "code": "OFFICEMANAGER",
+    "defaultValue": "Office Manager",
+    "entityType": "ORG",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "OFFICER",
+    "defaultValue": "Officer",
+    "entityType": "ORG",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "OTHER",
+    "defaultValue": "Other",
+    "entityType": "",
+    "relationshipType": ""
+  },
+  {
+    "code": "OWNER",
+    "defaultValue": "Owner",
+    "entityType": "ORG",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "PARENT_COMPANY",
+    "defaultValue": "Parent Company",
+    "entityType": "ORG",
+    "relationshipType": "ORG"
+  },
+  {
+    "code": "PARENT_FATHER",
+    "defaultValue": "Parent- Father",
+    "entityType": "INDV",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "PARENT_MOTHER",
+    "defaultValue": "Parent- Mother",
+    "entityType": "INDV",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "PARTNER",
+    "defaultValue": "Partner",
+    "entityType": "ORG",
+    "relationshipType": "ORG"
+  },
+  {
+    "code": "PRESIDENT",
+    "defaultValue": "President",
+    "entityType": "ORG",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "RELATIVE",
+    "defaultValue": "Relative",
+    "entityType": "INDV",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "RISKMANAGER",
+    "defaultValue": "Risk Manager",
+    "entityType": "ORG",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "SIBLING_BROTHER",
+    "defaultValue": "Sibling- Brother",
+    "entityType": "INDV",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "SIBLING_SISTER",
+    "defaultValue": "Sibling- Sister",
+    "entityType": "INDV",
+    "relationshipType": "INDV"
+  },  
+  {
+    "code": "SPOUSE_HUSBAND",
+    "defaultValue": "Spouse  - Husband",
+    "entityType": "INDV",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "SPOUSE_WIFE",
+    "defaultValue": "Spouse - Wife",
+    "entityType": "INDV",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "SRVICEPRESIDENT",
+    "defaultValue": "Sr. Vice President",
+    "entityType": "ORG",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "SUBSIDIARY",
+    "defaultValue": "Subsidiary",
+    "entityType": "ORG",
+    "relationshipType": "ORG"
+  },
+  {
+    "code": "SUPPLIER",
+    "defaultValue": "Supplier",
+    "entityType": "ORG",
+    "relationshipType": "ORG"
+  },
+  {
+    "code": "TRUST",
+    "defaultValue": "Trust",
+    "entityType": "",
+    "relationshipType": "INDV"
+  },
+  {
+    "code": "UNDERWRITING",
+    "defaultValue": "Underwriting",
+    "entityType": "ORG",
+    "relationshipType": "INDV"
+  }
+]

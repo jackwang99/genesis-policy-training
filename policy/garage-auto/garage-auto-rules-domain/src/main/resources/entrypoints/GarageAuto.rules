@@ -1,0 +1,16 @@
+Namespace GarageAuto
+
+Include Base
+
+EntryPoint "Quote Policy Validation" {
+  "GarageAuto-190419-hZLwi",
+  "GarageAuto-190419-ThPG5",
+  "GarageAuto-190419-WzqdH"
+}
+
+EntryPoint "UW referral" {
+  "GarageLocation-190516-dHL4Q",
+  "GarageLocation-190516-GVFsr",
+  "GarageLocation-190605-F1913",
+  "GarageLiabilityCoverage-190520-qHfdX"
+}

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.eisgroup.genesis.analytics</groupId>
+        <artifactId>analytics-parent-pom</artifactId>  <!-- stand-alone parent is intended here -->
+        <version>1.8.4</version>
+    </parent>
+
+    <groupId>com.eisgroup.genesis.proto.infra</groupId>
+    <artifactId>infra-reports</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <domain.version>10.1-proto</domain.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.eisgroup.genesis.tools</groupId>
+                <artifactId>fgenerator-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <generators>
+                                <generator>
+                                    <groupId>com.eisgroup.genesis.analytics</groupId>
+                                    <artifactId>analytics-fgenerator</artifactId>
+                                    <version>${parent.version}</version>
+                                </generator>
+                            </generators>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <executions>
+                    <!-- Packages fat-jar with report dependencies (excluding
+                        spark runtime) -->
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <shadedArtifactAttached>true</shadedArtifactAttached>
+                            <shadedClassifierName>spark-job</shadedClassifierName>
+                            <promoteTransitiveDependencies>true</promoteTransitiveDependencies>
+                            <artifactSet>
+                                <excludes>
+                                    <exclude>org.scala-lang:*</exclude>
+                                </excludes>
+                            </artifactSet>
+                            <filters>
+                                <filter>
+                                    <artifact>*:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/*.SF</exclude>
+                                        <exclude>META-INF/*.DSA</exclude>
+                                        <exclude>META-INF/*.RSA</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${org.apache.maven.plugins.maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!-- Report infra -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.analytics</groupId>
+            <artifactId>analytics-api</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.11</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming_2.11</artifactId>
+        </dependency>
+
+        <!-- Pojo Generation Deps -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto</groupId>
+            <artifactId>security-domain</artifactId>
+            <version>${domain.version}</version>
+            <optional>true</optional>
+            <scope>runtime</scope>     
+        </dependency>
+
+        <!-- Pojo API's -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.domain</groupId>
+            <artifactId>entity-dsl-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.lifecycle</groupId>
+            <artifactId>state-machine-api</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

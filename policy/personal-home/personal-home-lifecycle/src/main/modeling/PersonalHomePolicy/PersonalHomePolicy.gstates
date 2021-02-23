@@ -1,0 +1,13 @@
+StateMachine PersonalHomePolicy {
+    State dataGather for quote {
+        Using write command transit to dataGather
+    }
+
+    State initialized for quote {
+        Using write command transit to dataGather
+    }
+
+    EntryState uninitialized for quote {
+        Using init command transit to initialized
+    }
+}

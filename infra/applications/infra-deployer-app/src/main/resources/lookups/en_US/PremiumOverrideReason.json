@@ -1,0 +1,22 @@
+[
+    {
+        "code": "MQ",
+        "defaultValue": "Match Quote"
+    },
+    {
+        "code": "RD",
+        "defaultValue": "Referral Discount"
+    },
+    {
+        "code": "OE",
+        "defaultValue": "Operator Error"
+    },
+    {
+        "code": "MPD",
+        "defaultValue": "Multi Policy Discount"
+    },
+    {
+        "code": "OTH",
+        "defaultValue": "Other"
+    }
+]

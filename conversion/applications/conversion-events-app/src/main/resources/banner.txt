@@ -1,0 +1,14 @@
+ ______       ________      ______      
+/_____/\     /_______/\    /_____/\     
+\::::_\/_    \__.::._\/    \::::_\/_    
+ \:\/___/\      \::\ \      \:\/___/\   
+  \::___\/_     _\::\ \__    \_::._\:\  
+   \:\____/\   /__\::\__/\     /____\:\ 
+    \_____\/   \________\/     \_____\/ 
+ :: ${project.name} ::        ${project.version}
+ 
+ : Build Number  :  ${buildNumber}
+ : Sprint Number :  ${sprintNumber}
+ : EIS Build     :  ${eisBuild}
+ : EIS Version   :  ${eisVersion}
+ : Spring Boot   :  ${spring-boot.version}

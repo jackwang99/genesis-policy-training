@@ -1,0 +1,18 @@
+[
+  {
+    "code": "contact",
+    "defaultValue": "Contact"
+  },
+  {
+    "code": "legal",
+    "defaultValue": "Légal"
+  },
+  {
+    "code": "living",
+    "defaultValue": "Vivant"
+  },
+  {
+    "code": "mailing",
+    "defaultValue": "Envoi postal"
+  }
+]

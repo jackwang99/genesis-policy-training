@@ -1,0 +1,10 @@
+Namespace FleetAuto
+
+Include Base
+
+Rule "VehicleIsRentalToOthers-190425-hT7H5" On VehicleUnderwritingInfo.isRentalToOthers {
+  When isRentalToOthers != null
+  Assert isRentalToOthers = false
+  Error "VehicleIsRentalToOthers-190425-hT7H5": "The vehicle is rental to others, the quote should be referred to underwriting."
+  Overridable
+}

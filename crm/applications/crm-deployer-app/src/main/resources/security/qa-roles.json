@@ -1,0 +1,41 @@
+[
+  {
+    "name": "QA Default",
+    "description": "Role with all privileges for QA testing, assigned to qa user",
+    "assignedAuthorities": [
+      "CEM: Create/Update Customer",
+      "CEM: Load Customer",
+      "CEM: Create Scheduled Update",
+      "CEM: Load Scheduled Update",
+      "CEM: Delete Scheduled Update",
+      "CEM: Create/Update Communication",
+      "CEM: Create/Update Opportunity"
+    ]
+  },
+  {
+    "name": "QA All",
+    "description": "Role with all privileges for QA testing, assigned to all users",
+    "assignedAuthorities": [
+      "CEM: Create/Update Customer",
+      "CEM: Load Customer",
+      "CEM: Create Scheduled Update",
+      "CEM: Load Scheduled Update",
+      "CEM: Delete Scheduled Update",
+      "CEM: Create/Update Communication",
+      "CEM: Create/Update Opportunity"
+    ]
+  },
+  {
+    "name": "Privileges testing",
+    "description": "Role with all privileges for QA testing, assigned to privileges testing user",
+    "assignedAuthorities": [
+      "CEM: Create/Update Customer",
+      "CEM: Load Customer",
+      "CEM: Create Scheduled Update",
+      "CEM: Load Scheduled Update",
+      "CEM: Delete Scheduled Update",
+      "CEM: Create/Update Communication",
+      "CEM: Create/Update Opportunity"
+    ]
+  }
+]

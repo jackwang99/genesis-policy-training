@@ -1,0 +1,12 @@
+{
+      "_key": {
+      },
+      "_type": "GenesisOpportunity",
+      "_modelName": "Opportunity",
+      "_modelVersion": "1",
+
+      "closeReasonDescription": "string",
+      "channel": "string",
+      "likelihood": "string",
+      "state": "unqualified"
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "code": "DIES",
+    "defaultValue": "Diesel"
+  },
+  {
+    "code": "ETHN",
+    "defaultValue": "Ethanol"
+  },
+  {
+    "code": "FLEX",
+    "defaultValue": "Flex - gaz et éthanol"
+  },
+  {
+    "code": "GASL",
+    "defaultValue": "De l'essence"
+  },
+  {
+    "code": "HBRD",
+    "defaultValue": "Hybride - gaz et batterie"
+  },
+  {
+    "code": "OTHR",
+    "defaultValue": "Autre"
+  },
+  {
+    "code": "PROP",
+    "defaultValue": "Propane"
+  }
+]

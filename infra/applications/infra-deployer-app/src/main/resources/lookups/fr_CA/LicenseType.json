@@ -1,0 +1,14 @@
+[
+  {
+    "code": "AU",
+    "defaultValue": "Voiture"
+  },
+  {
+    "code": "MO",
+    "defaultValue": "Moto"
+  },
+  {
+    "code": "OTH",
+    "defaultValue": "Autre"
+  }
+]

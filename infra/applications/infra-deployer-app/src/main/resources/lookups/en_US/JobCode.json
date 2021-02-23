@@ -1,0 +1,26 @@
+[
+  {
+    "code": "ANY",
+    "defaultValue": "Any Work"
+  },
+  {
+    "code": "HE",
+    "defaultValue": "Heavy (max lift 100 lbs)"
+  },
+  {
+    "code": "LI",
+    "defaultValue": "Light (max lift 20 lbs)"
+  },
+  {
+    "code": "ME",
+    "defaultValue": "Medium (max lift 50 lbs)"
+  },
+  {
+    "code": "SE",
+    "defaultValue": "Sedentary (max lift 10 lbs)"
+  },
+  {
+    "code": "VH",
+    "defaultValue": "Very Heavy (max lift > 100 lbs)"
+  }
+]

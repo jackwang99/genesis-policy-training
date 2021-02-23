@@ -1,0 +1,62 @@
+[
+  {
+    "code": "ANTQ",
+    "defaultValue": "Antique",
+    "productCd": "PREC-UM"
+  },
+  {
+    "code": "ANTQ",
+    "defaultValue": "Antique",
+    "productCd": "PREC-AU"
+  },
+  {
+    "code": "CLSC",
+    "defaultValue": "Classic",
+    "productCd": "PREC-UM"
+  },
+  {
+    "code": "CLSC",
+    "defaultValue": "Classic",
+    "productCd": "PREC-AU"
+  },
+  {
+    "code": "IMPTD",
+    "defaultValue": "Imported",
+    "productCd": "PREC-UM"
+  },
+  {
+    "code": "IMPTD",
+    "defaultValue": "Imported",
+    "productCd": "PREC-AU"
+  },
+  {
+    "code": "KITC",
+    "defaultValue": "Kit Car",
+    "productCd": "PREC-UM"
+  },
+  {
+    "code": "KITC",
+    "defaultValue": "Kit Car",
+    "productCd": "PREC-AU"
+  },
+  {
+    "code": "RVEHICLE",
+    "defaultValue": "Recreational Vehicle",
+    "productCd": "PREC-UM"
+  },
+  {
+    "code": "VNA",
+    "defaultValue": "VIN Not Applicable",
+    "productCd": "PREC-AU"
+  },
+  {
+    "code": "VNEW",
+    "defaultValue": "Very New",
+    "productCd": "PREC-UM"
+  },
+  {
+    "code": "VNEW",
+    "defaultValue": "Very New",
+    "productCd": "PREC-AU"
+  }
+]

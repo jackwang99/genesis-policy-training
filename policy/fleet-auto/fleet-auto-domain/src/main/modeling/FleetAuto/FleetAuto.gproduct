@@ -1,0 +1,7 @@
+Model FleetAuto
+
+ProductCd FleetAuto
+BLOB Personal
+LOB [Auto]
+
+effectiveDate Date(2018, 10, 12)

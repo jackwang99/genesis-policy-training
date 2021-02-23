@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>garage-auto-pom</artifactId>
+    <groupId>com.eisgroup.genesis.garageauto</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>garage-auto-urm-rating</artifactId>
+  <name>Garage Auto Rating Integration</name>
+  <description>Garage Auto Rating Integration with URM</description>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.eisgroup.genesis.garageauto</groupId>
+      <artifactId>garage-auto-domain</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.eisgroup.genesis.policy.core.rating</groupId>
+      <artifactId>rating-services</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.eisgroup.rating.server</groupId>
+      <artifactId>unified-rating-model-mapper</artifactId>
+      <version>${unified.rating.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.eisgroup.genesis.utils</groupId>
+      <artifactId>testing-utils</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.eisgroup.genesis.model</groupId>
+      <artifactId>model-repository-binary-impl</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <version>${jackson.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.eisgroup.genesis.tfs.core</groupId>
+      <artifactId>tfs-api</artifactId>
+      <version>${genesis.core.version}</version>
+    </dependency>
+  </dependencies>
+</project>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>conversion-applications-pom</artifactId>
+        <groupId>com.eisgroup.genesis.proto</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>conversion-deployer-app</artifactId>
+
+    <name>Conversion Deployer Application</name>
+    <description>Conversion Deployer Application Module</description>
+    <packaging>jar</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <classifier>fat</classifier>
+                    <attach>false</attach>
+                    <mainClass>com.eisgroup.genesis.boot.Bootstrap</mainClass>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>buildnumber-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>create</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/banner.txt</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+
+    <dependencies>
+        <!-- Conversion Prototypes Dependencies -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto</groupId>
+            <artifactId>conversion-proto-deployer</artifactId>
+        </dependency>
+
+        <!-- Conversion Bundle -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.conversion</groupId>
+            <artifactId>conversion-bundle</artifactId>
+            <classifier>deployer</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <!-- Logging -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- Execution Context Schema -->
+        <dependency>
+            <groupId>com.eisgroup.genesis</groupId>
+            <artifactId>execution-context-bundle</artifactId>
+            <classifier>deployer</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <!-- Versioning Schema -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.domain</groupId>
+            <artifactId>entities-bundle.versioning</artifactId>
+            <classifier>deployer</classifier>
+            <type>tile</type>
+        </dependency>
+
+    </dependencies>
+
+</project>

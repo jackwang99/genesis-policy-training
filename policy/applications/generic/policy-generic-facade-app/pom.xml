@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+        <artifactId>policy-facade-app-pom</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../../parent-poms/policy-facade-app/pom.xml</relativePath>
+    </parent>
+
+    <artifactId>policy-generic-facade-app</artifactId>
+    <name>Policy Generic Facade</name>
+    <description>Policy Generic Facade Application Module</description>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- BAM -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.bam</groupId>
+            <artifactId>bam-bundle</artifactId>
+            <classifier>facade</classifier>
+            <type>tile</type>
+        </dependency>
+        
+        <!-- Policy Search -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.policy.core</groupId>
+            <artifactId>policy-core-search-facade</artifactId>
+        </dependency>
+        
+        <!-- JPS -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.jps</groupId>
+            <artifactId>policy-jps-facade</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- Policy domains, required for Search facade -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalauto</groupId>
+            <artifactId>personal-auto-domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalhome</groupId>
+            <artifactId>personal-home-domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.umeasure</groupId>
+            <artifactId>policy-umeasure-domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>

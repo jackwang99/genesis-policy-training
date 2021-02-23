@@ -1,0 +1,54 @@
+[
+  {
+    "code": "ATM",
+    "defaultValue": "Le compte ne cible pas le marché"
+  },
+  {
+    "code": "UWLE",
+    "defaultValue": "Expérience de perte d'eau inacceptable"
+  },
+  {
+    "code": "UCLE",
+    "defaultValue": "Expérience de perte de CAT inacceptable"
+  },
+  {
+    "code": "UHLE",
+    "defaultValue": "Expérience de perte de domicile inacceptable"
+  },
+  {
+    "code": "UCPLE",
+    "defaultValue": "Collections inacceptables Expérience de perte de PC"
+  },
+  {
+    "code": "ULLE",
+    "defaultValue": "Expérience de perte de responsabilité inacceptable"
+  },
+  {
+    "code": "UAME",
+    "defaultValue": "Expérience Auto MVR / Clue inacceptable"
+  },
+  {
+    "code": "UCE",
+    "defaultValue": "Exposition côtière inacceptable"
+  },
+  {
+    "code": "UFE",
+    "defaultValue": "Exposition inacceptable en Floride"
+  },
+  {
+    "code": "ES",
+    "defaultValue": "Ne correspond pas à la stratégie EQ / Brush"
+  },
+  {
+    "code": "COC",
+    "defaultValue": "Changement d'exposition - COC"
+  },
+  {
+    "code": "UIP",
+    "defaultValue": "Profil assuré inacceptable"
+  },
+  {
+    "code": "other",
+    "defaultValue": "Autre"
+  }
+]

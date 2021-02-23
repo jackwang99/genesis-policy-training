@@ -1,0 +1,472 @@
+[
+  {
+    "code": "111",
+    "parentLookupCode": "11",
+    "defaultValue": "111 - Production végétale"
+  },
+  {
+    "code": "112",
+    "parentLookupCode": "11",
+    "defaultValue": "112 - Production animale"
+  },
+  {
+    "code": "113",
+    "parentLookupCode": "11",
+    "defaultValue": "113 - Foresterie et exploitation forestière"
+  },
+  {
+    "code": "114",
+    "parentLookupCode": "11",
+    "defaultValue": "114 - Pêche, chasse et piégeage"
+  },
+  {
+    "code": "115",
+    "parentLookupCode": "11",
+    "defaultValue": "115 - Activités de soutien à l'agriculture et à la foresterie"
+  },
+  {
+    "code": "211",
+    "defaultValue": "211 - Extraction de pétrole et de gaz",
+    "parentLookupCode": "21"
+  },
+  {
+    "code": "212",
+    "parentLookupCode": "21",
+    "defaultValue": "212 - Mines (sauf le pétrole et le gaz)"
+  },
+  {
+    "code": "213",
+    "defaultValue": "213 - Activités de soutien à l'exploitation minière",
+    "parentLookupCode": "21"
+  },
+  {
+    "code": "221",
+    "defaultValue": "221- Services publics",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "236",
+    "defaultValue": "236 - Construction de bâtiments",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "237",
+    "defaultValue": "237 - Construction de génie civil",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "238",
+    "parentLookupCode": "23",
+    "defaultValue": "238 - Entrepreneurs spécialisés"
+  },
+  {
+    "code": "311",
+    "defaultValue": "311 - Fabrication d'aliments",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "312",
+    "parentLookupCode": "31",
+    "defaultValue": "312 - Fabrication de boissons et de produits du tabac"
+  },
+  {
+    "code": "313",
+    "defaultValue": "313 - Usines de textiles",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "314",
+    "defaultValue": "314 - Usines de produits textiles",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "315",
+    "defaultValue": "315 - Fabrication de vêtements",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "316",
+    "defaultValue": "316 - Fabrication de produits en cuir et de produits analogues",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "321",
+    "parentLookupCode": "32",
+    "defaultValue": "321 - Fabrication de produits en bois"
+  },
+  {
+    "code": "322",
+    "parentLookupCode": "32",
+    "defaultValue": "322 - Fabrication de papier"
+  },
+  {
+    "code": "323",
+    "defaultValue": "323 - Impression et activités de soutien connexes",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "324",
+    "defaultValue": "324 - Fabrication de produits du pétrole et du charbon",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "325",
+    "parentLookupCode": "32",
+    "defaultValue": "325 - Fabrication de produits chimiques"
+  },
+  {
+    "code": "326",
+    "parentLookupCode": "32",
+    "defaultValue": "326 - Fabrication de produits en plastique et en caoutchouc"
+  },
+  {
+    "code": "327",
+    "defaultValue": "327 - Fabrication de produits minéraux non métalliques",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "331",
+    "parentLookupCode": "33",
+    "defaultValue": "331 - Première transformation des métaux"
+  },
+  {
+    "code": "332",
+    "parentLookupCode": "33",
+    "defaultValue": "332 - Fabrication de produits métalliques"
+  },
+  {
+    "code": "333",
+    "defaultValue": "333 - Fabrication de machines",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "334",
+    "parentLookupCode": "33",
+    "defaultValue": "334 - Fabrication de produits informatiques et électroniques"
+  },
+  {
+    "code": "335",
+    "parentLookupCode": "33",
+    "defaultValue": "335 - Fabrication de matériel, d'appareils et de composants électriques"
+  },
+  {
+    "code": "336",
+    "parentLookupCode": "33",
+    "defaultValue": "336 - Fabrication de matériel de transport"
+  },
+  {
+    "code": "337",
+    "defaultValue": "337 - Fabrication de meubles et de produits connexes",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "339",
+    "parentLookupCode": "33",
+    "defaultValue": "339 - Fabrication divers"
+  },
+  {
+    "code": "423",
+    "defaultValue": "423 - Grossistes-marchands, biens durables",
+    "parentLookupCode": "42"
+  },
+  {
+    "code": "424",
+    "parentLookupCode": "42",
+    "defaultValue": "424 - Grossistes-marchands, biens non durables"
+  },
+  {
+    "code": "425",
+    "defaultValue": "425 - Marchés électroniques de gros et agents et courtiers",
+    "parentLookupCode": "42"
+  },
+  {
+    "code": "441",
+    "defaultValue": "441 - Marchands de véhicules automobiles et de leurs pièces",
+    "parentLookupCode": "44"
+  },
+  {
+    "code": "442",
+    "parentLookupCode": "44",
+    "defaultValue": "442 - Magasins de meubles et d'accessoires de maison"
+  },
+  {
+    "code": "443",
+    "defaultValue": "443 - Magasins d'appareils électroniques et ménagers",
+    "parentLookupCode": "44"
+  },
+  {
+    "code": "444",
+    "defaultValue": "444 - Marchands de matériaux de construction et de matériel et fournitures de jardinage",
+    "parentLookupCode": "44"
+  },
+  {
+    "code": "445",
+    "defaultValue": "445 - Magasins d'alimentation et de boissons",
+    "parentLookupCode": "44"
+  },
+  {
+    "code": "446",
+    "parentLookupCode": "44",
+    "defaultValue": "446 - Magasins de produits de santé et de soins personnels"
+  },
+  {
+    "code": "447",
+    "parentLookupCode": "44",
+    "defaultValue": "447 - Stations-service"
+  },
+  {
+    "code": "448",
+    "parentLookupCode": "44",
+    "defaultValue": "448 - Magasins de vêtements et d'accessoires vestimentaires"
+  },
+  {
+    "code": "451",
+    "parentLookupCode": "45",
+    "defaultValue": "451 - Magasins d'articles de sport, de passe-temps, d'instruments de musique et de livres"
+  },
+  {
+    "code": "452",
+    "parentLookupCode": "45",
+    "defaultValue": "452 - Magasins de marchandises diverses"
+  },
+  {
+    "code": "453",
+    "parentLookupCode": "45",
+    "defaultValue": "453 - Magasins de détail divers"
+  },
+  {
+    "code": "454",
+    "defaultValue": "454 - Détaillants Nonstore",
+    "parentLookupCode": "45"
+  },
+  {
+    "code": "481",
+    "parentLookupCode": "48",
+    "defaultValue": "481 - Transport aérien"
+  },
+  {
+    "code": "482",
+    "defaultValue": "482 - Transport ferroviaire",
+    "parentLookupCode": "48"
+  },
+  {
+    "code": "483",
+    "defaultValue": "483 - Transport par eau",
+    "parentLookupCode": "48"
+  },
+  {
+    "code": "484",
+    "parentLookupCode": "48",
+    "defaultValue": "484 - Transport par camion"
+  },
+  {
+    "code": "485",
+    "parentLookupCode": "48",
+    "defaultValue": "485 - Transport en commun et transport terrestre de voyageurs"
+  },
+  {
+    "code": "486",
+    "defaultValue": "486 - Transport par pipeline",
+    "parentLookupCode": "48"
+  },
+  {
+    "code": "487",
+    "parentLookupCode": "48",
+    "defaultValue": "487 - Transport de tourisme et d'agrément"
+  },
+  {
+    "code": "488",
+    "parentLookupCode": "48",
+    "defaultValue": "488 - Activités de soutien au transport"
+  },
+  {
+    "code": "491",
+    "parentLookupCode": "49",
+    "defaultValue": "491 - Service postal"
+  },
+  {
+    "code": "492",
+    "parentLookupCode": "49",
+    "defaultValue": "492 - Messageries et messagers"
+  },
+  {
+    "code": "493",
+    "parentLookupCode": "49",
+    "defaultValue": "493 - Entreposage et entreposage"
+  },
+  {
+    "code": "511",
+    "parentLookupCode": "51",
+    "defaultValue": "511 - Industries de l'édition (sauf Internet)"
+  },
+  {
+    "code": "512",
+    "defaultValue": "512 - Industries du film et de l'enregistrement sonore",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "515",
+    "parentLookupCode": "51",
+    "defaultValue": "515 - Radiodiffusion (sauf Internet)"
+  },
+  {
+    "code": "517",
+    "parentLookupCode": "51",
+    "defaultValue": "517 - Télécommunications"
+  },
+  {
+    "code": "518",
+    "parentLookupCode": "51",
+    "defaultValue": "518 - Traitement de données, hébergement de données et services connexes"
+  },
+  {
+    "code": "519",
+    "parentLookupCode": "51",
+    "defaultValue": "519 - Autres services d'information"
+  },
+  {
+    "code": "521",
+    "parentLookupCode": "52",
+    "defaultValue": "521 - Autorités monétaires - Banque centrale"
+  },
+  {
+    "code": "522",
+    "defaultValue": "522 - Intermédiation financière et activités connexes",
+    "parentLookupCode": "52"
+  },
+  {
+    "code": "523",
+    "defaultValue": "523 - Valeurs mobilières, contrats de marchandises et autres placements financiers et activités connexes",
+    "parentLookupCode": "52"
+  },
+  {
+    "code": "524",
+    "parentLookupCode": "52",
+    "defaultValue": "524 - Compagnies d'assurance et activités connexes"
+  },
+  {
+    "code": "525",
+    "parentLookupCode": "52",
+    "defaultValue": "525 - Fonds, fiducies et autres instruments financiers"
+  },
+  {
+    "code": "531",
+    "defaultValue": "531 - Immobilier",
+    "parentLookupCode": "53"
+  },
+  {
+    "code": "532",
+    "parentLookupCode": "53",
+    "defaultValue": "532 - Services de location et de crédit-bail"
+  },
+  {
+    "code": "541",
+    "defaultValue": "541 - Services professionnels, scientifiques et techniques",
+    "parentLookupCode": "54"
+  },
+  {
+    "code": "551",
+    "parentLookupCode": "55",
+    "defaultValue": "551 - Gestion des entreprises et des entreprises"
+  },
+  {
+    "code": "561",
+    "parentLookupCode": "56",
+    "defaultValue": "561 - Services administratifs et de soutien"
+  },
+  {
+    "code": "562",
+    "parentLookupCode": "56",
+    "defaultValue": "562 - Services de gestion des déchets et d'assainissement"
+  },
+  {
+    "code": "611",
+    "parentLookupCode": "61",
+    "defaultValue": "611 - Services éducatifs"
+  },
+  {
+    "code": "711",
+    "defaultValue": "711 - Arts de la scène, sports-spectacles et industries connexes",
+    "parentLookupCode": "71"
+  },
+  {
+    "code": "712",
+    "defaultValue": "712 - Musées, sites historiques et institutions similaires",
+    "parentLookupCode": "71"
+  },
+  {
+    "code": "713",
+    "defaultValue": "713 - Divertissement, jeux de hasard et loisirs",
+    "parentLookupCode": "71"
+  },
+  {
+    "code": "721",
+    "defaultValue": "721 - Hébergement",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "722",
+    "parentLookupCode": "72",
+    "defaultValue": "722 - Services de restauration et débits de boissons"
+  },
+  {
+    "code": "811",
+    "parentLookupCode": "81",
+    "defaultValue": "811 - Réparation et maintenance"
+  },
+  {
+    "code": "812",
+    "parentLookupCode": "81",
+    "defaultValue": "812 - Services personnels et de blanchisserie"
+  },
+  {
+    "code": "813",
+    "parentLookupCode": "81",
+    "defaultValue": "813 - Organismes religieux, subventionnaires, civiques, professionnels et similaires"
+  },
+  {
+    "code": "814",
+    "parentLookupCode": "81",
+    "defaultValue": "814 - Ménages privés"
+  },
+  {
+    "code": "921",
+    "defaultValue": "921 - Soutien administratif général, législatif et autre",
+    "parentLookupCode": "92"
+  },
+  {
+    "code": "922",
+    "defaultValue": "922 - Justice, ordre public et activités de sécurité",
+    "parentLookupCode": "92"
+  },
+  {
+    "code": "923",
+    "parentLookupCode": "92",
+    "defaultValue": "923 - Administration des programmes de ressources humaines"
+  },
+  {
+    "code": "924",
+    "defaultValue": "924 - Administration des programmes de qualité de l'environnement",
+    "parentLookupCode": "92"
+  },
+  {
+    "code": "925",
+    "defaultValue": "925 - Administration des programmes de logement, de l'urbanisme et du développement communautaire",
+    "parentLookupCode": "92"
+  },
+  {
+    "code": "926",
+    "defaultValue": "926 - Administration des programmes économiques",
+    "parentLookupCode": "92"
+  },
+  {
+    "code": "927",
+    "defaultValue": "927 - Recherche spatiale et technologie",
+    "parentLookupCode": "92"
+  },
+  {
+    "code": "928",
+    "parentLookupCode": "92",
+    "defaultValue": "928 - Sécurité nationale et affaires internationales"
+  }
+]

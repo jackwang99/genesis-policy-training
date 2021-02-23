@@ -1,0 +1,7 @@
+Model GroupInfo
+
+Namespace GroupInfo
+
+EntryPoints [
+    "GroupInfo Validation"
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "code": "AMEX",
+    "defaultValue": "American Express"
+  },
+  {
+    "code": "DINERS",
+    "defaultValue": "Diners"
+  },
+  {
+    "code": "DISC",
+    "defaultValue": "Découvrir"
+  },
+  {
+    "code": "JCB",
+    "defaultValue": "JCB"
+  },
+  {
+    "code": "MC",
+    "defaultValue": "MasterCard"
+  },
+  {
+    "code": "VISA",
+    "defaultValue": "Visa"
+  }
+]

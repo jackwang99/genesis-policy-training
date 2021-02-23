@@ -1,0 +1,22 @@
+[
+  {
+    "code": "incomplete",
+    "defaultValue": "Outstanding"
+  },
+  {
+    "code": "cleared",
+    "defaultValue": "Cleared"
+  },
+  {
+    "code": "reversed",
+    "defaultValue": "Suspense Reversed"
+  },
+  {
+    "code": "completed",
+    "defaultValue": "Completed"
+  },
+  {
+    "code": "declined",
+    "defaultValue": "Declined"
+  }
+]

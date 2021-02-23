@@ -1,0 +1,10 @@
+[
+  {
+    "code": "BASIC",
+    "defaultValue": "Basic"
+  },
+  {
+    "code": "PREFERRED",
+    "defaultValue": "Preferred"
+  }
+]

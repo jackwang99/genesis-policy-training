@@ -1,0 +1,10 @@
+[
+  {
+    "code": "DIS",
+    "defaultValue": "désactivé"
+  },
+  {
+    "code": "OTH",
+    "defaultValue": "Autre"
+  }
+]

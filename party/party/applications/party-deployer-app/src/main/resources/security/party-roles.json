@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Party: Party Administrator",
+    "description": "Role with access to all Party rights",
+    "assignedAuthorities": [
+      "Party: Manage Batch",
+      "Party: Party Write"
+    ]
+  },
+  {
+    "name": "Party: Party Write",
+    "description": "Role with access to read/write Party rights",
+    "assignedAuthorities": [
+      "Party: Create Party",
+      "Party: Update Party",
+      "Party: Merge Party",
+      "Party: Party Access"
+    ]
+  },
+  {
+    "name": "Party: Party Access",
+    "description": "Role with access to read-only Party rights",
+    "assignedAuthorities": [
+      "Party: Access Party",
+      "Party: Access History",
+      "Party: Search Party"
+    ]
+  }
+]

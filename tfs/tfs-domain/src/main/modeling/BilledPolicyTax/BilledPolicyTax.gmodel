@@ -1,0 +1,7 @@
+Model BilledPolicyTax
+Root BilledPolicyTaxEntity
+
+ModelType BilledPolicyTax
+
+Stored using [ModelName]
+Indexed using [ModelName]

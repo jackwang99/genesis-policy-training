@@ -1,0 +1,10 @@
+Model INDIVIDUALCUSTOMER
+
+@EntryPoint("INDIVIDUALCUSTOMER Validation")
+@Category("KrakenRules")
+Table "Mandatory" {
+  AspectColumn "Entity" : entity
+  AspectColumn "Attribute" : attribute
+  AspectColumn "Condition" : conditionExpression
+  AspectColumn "Mandatory" : mandatory
+}

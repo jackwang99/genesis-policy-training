@@ -1,0 +1,14 @@
+[
+  {
+    "code": "Internal",
+    "defaultValue": "Interne"
+  },
+  {
+    "code": "Other",
+    "defaultValue": "Autre"
+  },
+  {
+    "code": "ReferralAgent",
+    "defaultValue": "Agent de référence"
+  }
+]

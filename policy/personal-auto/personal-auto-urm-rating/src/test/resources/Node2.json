@@ -1,0 +1,861 @@
+{
+  "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+  "name": "rootNode",
+  "businessType": "Policy",
+  "type": "PersonalAutoPolicySummary",
+  "children": [
+    {
+      "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+      "name": "transactionDetails",
+      "businessType": "Policy or Coverage or RI",
+      "type": "AutoTransactionDetails",
+      "children": [
+        {
+          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+          "name": "txType",
+          "type": "String",
+          "value": "NEW_BUSINESS",
+          "collection": false,
+          "simple": true
+        },
+        {
+          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+          "name": "id",
+          "type": "String",
+          "value": "071f5729-cf46-446f-82ea-43f8d049202c",
+          "collection": false,
+          "simple": true
+        }
+      ],
+      "collection": false,
+      "simple": false
+    },
+    {
+      "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+      "name": "termDetails",
+      "businessType": "Policy or Coverage or RI",
+      "type": "AutoTermDetails",
+      "children": [
+        {
+          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+          "name": "termEffectiveDate",
+          "type": "LocalDate",
+          "value": "2018-11-19",
+          "collection": false,
+          "simple": true
+        },
+        {
+          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+          "name": "id",
+          "type": "String",
+          "value": "b6dbba82-62e6-4b0b-980c-23bfb6eb4645",
+          "collection": false,
+          "simple": true
+        }
+      ],
+      "collection": false,
+      "simple": false
+    },
+    {
+      "@class": "com.eisgroup.rating.input.impl.NodeList",
+      "name": "parties",
+      "elements": [
+        {
+          "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+          "name": "el0",
+          "businessType": "Policy or Coverage or RI",
+          "type": "PersonalAutoPolicyParty",
+          "children": [
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "id",
+              "type": "String",
+              "value": "ae06b625-1b16-4c34-b73d-dc080cde8f53",
+              "collection": false,
+              "simple": true
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+              "name": "driverInfo",
+              "businessType": "Policy or Coverage or RI",
+              "type": "AutoDriverInfo",
+              "children": [
+                {
+                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                  "name": "driverType",
+                  "type": "String",
+                  "value": "driver/principal",
+                  "collection": false,
+                  "simple": true
+                },
+                {
+                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                  "name": "id",
+                  "type": "String",
+                  "value": "e263fc24-855f-4f3f-8526-a88fab05f897",
+                  "collection": false,
+                  "simple": true
+                }
+              ],
+              "collection": false,
+              "simple": false
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+              "name": "personInfo",
+              "businessType": "Policy or Coverage or RI",
+              "type": "AutoPolicyPerson",
+              "children": [
+                {
+                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                  "name": "occupation",
+                  "type": "String",
+                  "value": "DRIVER",
+                  "collection": false,
+                  "simple": true
+                },
+                {
+                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                  "name": "age",
+                  "type": "Long",
+                  "value": "25",
+                  "collection": false,
+                  "simple": true
+                },
+                {
+                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                  "name": "maritalStatus",
+                  "type": "String",
+                  "value": "MARRIED",
+                  "collection": false,
+                  "simple": true
+                },
+                {
+                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                  "name": "id",
+                  "type": "String",
+                  "value": "dbc5d916-68dc-4bb3-9988-6ba29e174e2d",
+                  "collection": false,
+                  "simple": true
+                },
+                {
+                  "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+                  "name": "personBaseDetails",
+                  "businessType": "Policy or Coverage or RI",
+                  "type": "AutoPersonEntity",
+                  "children": [
+                    {
+                      "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                      "name": "genderCd",
+                      "type": "String",
+                      "value": "MALE",
+                      "collection": false,
+                      "simple": true
+                    },
+                    {
+                      "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                      "name": "id",
+                      "type": "String",
+                      "value": "f7e1fddd-d17d-49c7-a162-5ae8442d07cb",
+                      "collection": false,
+                      "simple": true
+                    }
+                  ],
+                  "collection": false,
+                  "simple": false
+                }
+              ],
+              "collection": false,
+              "simple": false
+            }
+          ],
+          "collection": false,
+          "simple": false
+        }
+      ],
+      "type": "List",
+      "collection": true,
+      "simple": false
+    },
+    {
+      "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+      "name": "blob",
+      "businessType": "Policy or Coverage or RI",
+      "type": "AutoBLOB",
+      "children": [
+        {
+          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+          "name": "id",
+          "type": "String",
+          "value": "3bc65522-f121-4fd0-bd83-dda40788c633",
+          "collection": false,
+          "simple": true
+        },
+        {
+          "@class": "com.eisgroup.rating.input.impl.NodeList",
+          "name": "lobs",
+          "elements": [
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+              "name": "el0",
+              "businessType": "Policy or Coverage or RI",
+              "type": "AutoLOB",
+              "children": [
+                {
+                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                  "name": "id",
+                  "type": "String",
+                  "value": "d37de7b1-8213-4c00-9656-7d0cb8e14fd1",
+                  "collection": false,
+                  "simple": true
+                },
+                {
+                  "@class": "com.eisgroup.rating.input.impl.NodeList",
+                  "name": "riskItems",
+                  "elements": [
+                    {
+                      "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+                      "name": "el0",
+                      "businessType": "Policy or Coverage or RI",
+                      "type": "AutoVehicle",
+                      "children": [
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                          "name": "collSymbol",
+                          "type": "String",
+                          "value": "1",
+                          "collection": false,
+                          "simple": true
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                          "name": "antiLockBrakeCd",
+                          "type": "String",
+                          "value": "ABR",
+                          "collection": false,
+                          "simple": true
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                          "name": "liabSymbol",
+                          "type": "String",
+                          "value": null,
+                          "collection": false,
+                          "simple": true
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                          "name": "usageCd",
+                          "type": "String",
+                          "value": "PL",
+                          "collection": false,
+                          "simple": true
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                          "name": "biSymbol",
+                          "type": "String",
+                          "value": "1",
+                          "collection": false,
+                          "simple": true
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                          "name": "annualMiles",
+                          "type": "Long",
+                          "value": "5000",
+                          "collection": false,
+                          "simple": true
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                          "name": "recoveryDeviceInd",
+                          "type": "Boolean",
+                          "value": null,
+                          "collection": false,
+                          "simple": true
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                          "name": "armoredInd",
+                          "type": "Boolean",
+                          "value": "false",
+                          "collection": false,
+                          "simple": true
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                          "name": "compSymbol",
+                          "type": "String",
+                          "value": "1",
+                          "collection": false,
+                          "simple": true
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                          "name": "pipMedSymbol",
+                          "type": "String",
+                          "value": "1",
+                          "collection": false,
+                          "simple": true
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                          "name": "securityOptionsCd",
+                          "type": "String",
+                          "value": "TRCKSYS",
+                          "collection": false,
+                          "simple": true
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                          "name": "daytimeRunningLampsInd",
+                          "type": "Boolean",
+                          "value": "true",
+                          "collection": false,
+                          "simple": true
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                          "name": "adjustedValue",
+                          "type": "BigDecimal",
+                          "value": null,
+                          "collection": false,
+                          "simple": true
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                          "name": "airBagStatusCd",
+                          "type": "String",
+                          "value": "DAP",
+                          "collection": false,
+                          "simple": true
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                          "name": "pdSymbol",
+                          "type": "String",
+                          "value": "1",
+                          "collection": false,
+                          "simple": true
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                          "name": "typeCd",
+                          "type": "String",
+                          "value": "Regular",
+                          "collection": false,
+                          "simple": true
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                          "name": "automaticBeltsInd",
+                          "type": "Boolean",
+                          "value": "true",
+                          "collection": false,
+                          "simple": true
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                          "name": "id",
+                          "type": "String",
+                          "value": "8f21b7df-c92b-4053-886c-e00f34b23831",
+                          "collection": false,
+                          "simple": true
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.NodeList",
+                          "name": "coverages",
+                          "elements": [
+                            {
+                              "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+                              "name": "el0",
+                              "businessType": "Policy or Coverage or RI",
+                              "type": "AutoCOLLCoverage",
+                              "children": [
+                                {
+                                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                                  "name": "code",
+                                  "type": "String",
+                                  "value": "Collision",
+                                  "collection": false,
+                                  "simple": true
+                                },
+                                {
+                                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                                  "name": "deductibleAmount",
+                                  "type": "BigDecimal",
+                                  "value": "1000",
+                                  "collection": false,
+                                  "simple": true
+                                },
+                                {
+                                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                                  "name": "id",
+                                  "type": "String",
+                                  "value": "30693c77-6172-4744-b942-757929aaeee3",
+                                  "collection": false,
+                                  "simple": true
+                                },
+                                {
+                                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                                  "name": "ratedPremium",
+                                  "type": "BigDecimal",
+                                  "value": "208.146",
+                                  "collection": false,
+                                  "simple": true
+                                }
+                              ],
+                              "collection": false,
+                              "simple": false
+                            },
+                            {
+                              "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+                              "name": "el1",
+                              "businessType": "Policy or Coverage or RI",
+                              "type": "AutoCOMPCoverage",
+                              "children": [
+                                {
+                                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                                  "name": "code",
+                                  "type": "String",
+                                  "value": "Comprehensive",
+                                  "collection": false,
+                                  "simple": true
+                                },
+                                {
+                                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                                  "name": "deductibleAmount",
+                                  "type": "BigDecimal",
+                                  "value": "1000",
+                                  "collection": false,
+                                  "simple": true
+                                },
+                                {
+                                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                                  "name": "id",
+                                  "type": "String",
+                                  "value": "60e8b146-6c0c-410a-85e2-c43228a1ba11",
+                                  "collection": false,
+                                  "simple": true
+                                },
+                                {
+                                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                                  "name": "ratedPremium",
+                                  "type": "BigDecimal",
+                                  "value": "405.854",
+                                  "collection": false,
+                                  "simple": true
+                                }
+                              ],
+                              "collection": false,
+                              "simple": false
+                            },
+                            {
+                              "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+                              "name": "el2",
+                              "businessType": "Policy or Coverage or RI",
+                              "type": "AutoMEDCoverage",
+                              "children": [
+                                {
+                                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                                  "name": "code",
+                                  "type": "String",
+                                  "value": "Medical Payments",
+                                  "collection": false,
+                                  "simple": true
+                                },
+                                {
+                                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                                  "name": "limitAmount",
+                                  "type": "BigDecimal",
+                                  "value": "5000",
+                                  "collection": false,
+                                  "simple": true
+                                },
+                                {
+                                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                                  "name": "id",
+                                  "type": "String",
+                                  "value": "0235167b-3f2a-4ccf-b123-01c88cac2536",
+                                  "collection": false,
+                                  "simple": true
+                                },
+                                {
+                                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                                  "name": "ratedPremium",
+                                  "type": "BigDecimal",
+                                  "value": "568.564",
+                                  "collection": false,
+                                  "simple": true
+                                }
+                              ],
+                              "collection": false,
+                              "simple": false
+                            },
+                            {
+                              "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+                              "name": "el3",
+                              "businessType": "Policy or Coverage or RI",
+                              "type": "AutoRRCoverage",
+                              "children": [
+                                {
+                                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                                  "name": "code",
+                                  "type": "String",
+                                  "value": "Rental Reimbursement",
+                                  "collection": false,
+                                  "simple": true
+                                },
+                                {
+                                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                                  "name": "additionalLimitAmount",
+                                  "type": "BigDecimal",
+                                  "value": null,
+                                  "collection": false,
+                                  "simple": true
+                                },
+                                {
+                                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                                  "name": "limitAmount",
+                                  "type": "BigDecimal",
+                                  "value": "7500",
+                                  "collection": false,
+                                  "simple": true
+                                },
+                                {
+                                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                                  "name": "combinedLimit",
+                                  "type": "String",
+                                  "value": "50",
+                                  "collection": false,
+                                  "simple": true
+                                },
+                                {
+                                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                                  "name": "id",
+                                  "type": "String",
+                                  "value": "a7232b93-e9a4-47f8-86f2-e9abbc5fa090",
+                                  "collection": false,
+                                  "simple": true
+                                },
+                                {
+                                  "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                                  "name": "ratedPremium",
+                                  "type": "BigDecimal",
+                                  "value": "270.774",
+                                  "collection": false,
+                                  "simple": true
+                                }
+                              ],
+                              "collection": false,
+                              "simple": false
+                            }
+                          ],
+                          "type": "List",
+                          "collection": true,
+                          "simple": false
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+                          "name": "garagingAddress",
+                          "businessType": "Policy or Coverage or RI",
+                          "type": "AutoAddressInfo",
+                          "children": [
+                            {
+                              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                              "name": "postalCode",
+                              "type": "String",
+                              "value": "63523",
+                              "collection": false,
+                              "simple": true
+                            },
+                            {
+                              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                              "name": "id",
+                              "type": "String",
+                              "value": "1b108c9e-8b84-4f9e-8508-a5666f1fc9b8",
+                              "collection": false,
+                              "simple": true
+                            }
+                          ],
+                          "collection": false,
+                          "simple": false
+                        },
+                        {
+                          "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+                          "name": "vehicleBaseDetails",
+                          "businessType": "Policy or Coverage or RI",
+                          "type": "AutoVehicleEntity",
+                          "children": [
+                            {
+                              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                              "name": "model",
+                              "type": "String",
+                              "value": "X5",
+                              "collection": false,
+                              "simple": true
+                            },
+                            {
+                              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                              "name": "modelYear",
+                              "type": "Long",
+                              "value": "2012",
+                              "collection": false,
+                              "simple": true
+                            },
+                            {
+                              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                              "name": "id",
+                              "type": "String",
+                              "value": "1517531f-a3e5-4281-b967-4fc5cc3ea3df",
+                              "collection": false,
+                              "simple": true
+                            }
+                          ],
+                          "collection": false,
+                          "simple": false
+                        }
+                      ],
+                      "collection": false,
+                      "simple": false
+                    }
+                  ],
+                  "type": "List",
+                  "collection": true,
+                  "simple": false
+                }
+              ],
+              "collection": false,
+              "simple": false
+            }
+          ],
+          "type": "List",
+          "collection": true,
+          "simple": false
+        }
+      ],
+      "collection": false,
+      "simple": false
+    },
+    {
+      "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+      "name": "id",
+      "type": "String",
+      "value": "b41f2a7b-a95f-45f6-8beb-00da20b70387",
+      "collection": false,
+      "simple": true
+    },
+    {
+      "@class": "com.eisgroup.rating.input.impl.NodeList",
+      "name": "policyPremiums",
+      "elements": [
+        {
+          "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+          "name": "premiumHolder_30693c77-6172-4744-b942-757929aaeee3",
+          "businessType": "Policy or Coverage or RI",
+          "type": "PremiumHolder",
+          "children": [
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "countryCode",
+              "type": "String",
+              "value": "US",
+              "collection": false,
+              "simple": true
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "stateCode",
+              "type": "String",
+              "value": "NY",
+              "collection": false,
+              "simple": true
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "premium",
+              "type": "BigDecimal",
+              "value": "208.146",
+              "collection": false,
+              "simple": true
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "premiumCode",
+              "type": "String",
+              "value": "AutoCOLLCoverage",
+              "collection": false,
+              "simple": true
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "id",
+              "type": "String",
+              "value": "30693c77-6172-4744-b942-757929aaeee3",
+              "collection": false,
+              "simple": true
+            }
+          ],
+          "collection": false,
+          "simple": false
+        },
+        {
+          "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+          "name": "premiumHolder_60e8b146-6c0c-410a-85e2-c43228a1ba11",
+          "businessType": "Policy or Coverage or RI",
+          "type": "PremiumHolder",
+          "children": [
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "countryCode",
+              "type": "String",
+              "value": "US",
+              "collection": false,
+              "simple": true
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "stateCode",
+              "type": "String",
+              "value": "NY",
+              "collection": false,
+              "simple": true
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "premium",
+              "type": "BigDecimal",
+              "value": "405.854",
+              "collection": false,
+              "simple": true
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "premiumCode",
+              "type": "String",
+              "value": "AutoCOMPCoverage",
+              "collection": false,
+              "simple": true
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "id",
+              "type": "String",
+              "value": "60e8b146-6c0c-410a-85e2-c43228a1ba11",
+              "collection": false,
+              "simple": true
+            }
+          ],
+          "collection": false,
+          "simple": false
+        },
+        {
+          "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+          "name": "premiumHolder_0235167b-3f2a-4ccf-b123-01c88cac2536",
+          "businessType": "Policy or Coverage or RI",
+          "type": "PremiumHolder",
+          "children": [
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "countryCode",
+              "type": "String",
+              "value": "US",
+              "collection": false,
+              "simple": true
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "stateCode",
+              "type": "String",
+              "value": "NY",
+              "collection": false,
+              "simple": true
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "premium",
+              "type": "BigDecimal",
+              "value": "568.564",
+              "collection": false,
+              "simple": true
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "premiumCode",
+              "type": "String",
+              "value": "AutoMEDCoverage",
+              "collection": false,
+              "simple": true
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "id",
+              "type": "String",
+              "value": "0235167b-3f2a-4ccf-b123-01c88cac2536",
+              "collection": false,
+              "simple": true
+            }
+          ],
+          "collection": false,
+          "simple": false
+        },
+        {
+          "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+          "name": "premiumHolder_a7232b93-e9a4-47f8-86f2-e9abbc5fa090",
+          "businessType": "Policy or Coverage or RI",
+          "type": "PremiumHolder",
+          "children": [
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "countryCode",
+              "type": "String",
+              "value": "US",
+              "collection": false,
+              "simple": true
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "stateCode",
+              "type": "String",
+              "value": "NY",
+              "collection": false,
+              "simple": true
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "premium",
+              "type": "BigDecimal",
+              "value": "270.774",
+              "collection": false,
+              "simple": true
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "premiumCode",
+              "type": "String",
+              "value": "AutoRRCoverage",
+              "collection": false,
+              "simple": true
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "id",
+              "type": "String",
+              "value": "a7232b93-e9a4-47f8-86f2-e9abbc5fa090",
+              "collection": false,
+              "simple": true
+            }
+          ],
+          "collection": false,
+          "simple": false
+        }
+      ],
+      "type": "List",
+      "collection": true,
+      "simple": false
+    }
+  ],
+  "collection": false,
+  "simple": false
+}

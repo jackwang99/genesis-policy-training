@@ -1,0 +1,56 @@
+Model INDIVIDUALCUSTOMER
+
+PersonCustomers {
+    Predicate {
+        subject: PersonBase
+        predicate: [ "Customer" ]
+        object: IndividualCustomerBase
+    }
+    Selector {
+        subject: @object > IndividualDetails > .person
+        predicate: "Customer"
+        object: IndividualCustomerBase
+    }
+}
+
+PersonAddress {
+    Predicate {
+            subject: PersonBase
+            predicate: Lookup("AddressType")
+            object: LocationBase
+    }
+    Selector {
+            subject: IndividualCustomer > GenesisCrmIndividualDetails > .person
+            predicate: @object > .addressType
+            object: IndividualCustomer GenesisCrmCommunicationInfo > GenesisCrmAddress > .location
+    }
+}
+
+LegalEntityLocations {
+    Predicate {
+            subject: LegalEntityBase
+            predicate: Lookup("AddressType")
+            object: LocationBase
+    }
+    Selector {
+            subject: IndividualCustomer > GenesisCrmBusinessEntity > GenesisCrmBusinessDetails > .legalEntity
+            predicate: @object > .addressType
+            object: @subject < GenesisCrmBusinessDetails + GenesisCrmCommunicationInfo > GenesisCrmAddress > .location
+    }
+}
+
+LegalEntityEmails {
+    Selector {
+            subject: IndividualCustomer > GenesisCrmBusinessEntity > GenesisCrmBusinessDetails > .legalEntity
+            predicate: @object > .type
+            object: @subject < GenesisCrmBusinessDetails + GenesisCrmCommunicationInfo > GenesisCrmEmail
+    }
+}
+
+LegalEntityPhones {
+    Selector {
+            subject: IndividualCustomer > GenesisCrmBusinessEntity > GenesisCrmBusinessDetails > .legalEntity
+            predicate: @object > .type
+            object: @subject < GenesisCrmBusinessDetails + GenesisCrmCommunicationInfo > GenesisCrmPhone
+    }
+}

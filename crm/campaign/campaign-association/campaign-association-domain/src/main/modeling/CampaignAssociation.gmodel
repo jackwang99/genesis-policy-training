@@ -1,0 +1,7 @@
+Model CampaignAssociation
+Root GenesisCampaignAssociation
+
+ModelType CampaignAssociation
+
+Stored using ['Campaign']
+Indexed using ['campaignassociation']

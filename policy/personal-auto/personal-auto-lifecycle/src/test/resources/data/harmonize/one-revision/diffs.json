@@ -1,0 +1,115 @@
+{
+  "operations": [
+    {
+      "diffs": [
+        {
+          "operationType": "changed",
+          "path": "vehicleBaseDetails//model",
+          "sourceValue": "X1",
+          "targetValue": "X2",
+          "readOnly": false
+        }
+      ],
+      "operation": "write",
+      "_key": {
+        "timestamp": "2018-12-01T12:00:01.000Z"
+      }
+    },
+    {
+      "diffs": [],
+      "operation": "completeOffer",
+      "_key": {
+        "timestamp": "2018-12-01T12:00:02.000Z"
+      }
+    },
+    {
+      "diffs": [
+        {
+          "operationType": "changed",
+          "path": "vehicleBaseDetails//model",
+          "sourceValue": "X2",
+          "targetValue": "X3",
+          "readOnly": false
+        }
+      ],
+      "operation": "write",
+      "_key": {
+        "timestamp": "2018-12-01T12:00:03.000Z"
+      }
+    },
+    {
+      "diffs": [],
+      "operation": "completeOffer",
+      "_key": {
+        "timestamp": "2018-12-01T12:00:04.000Z"
+      }
+    },
+    {
+      "diffs": [
+        {
+          "operationType": "changed",
+          "path": "vehicleBaseDetails//model",
+          "sourceValue": "X3",
+          "targetValue": "X4",
+          "readOnly": false
+        },
+        {
+          "operationType": "removed",
+          "path": "vehicleBaseDetails//modelYear",
+          "sourceValue": 2012,
+          "readOnly": false
+        },
+        {
+          "operationType": "added",
+          "path": "vehicleBaseDetails//firstRegistrationYear",
+          "targetValue": 2015,
+          "readOnly": false
+        }
+      ],
+      "operation": "write",
+      "_key": {
+        "timestamp": "2018-12-01T12:00:05.000Z"
+      }
+    },
+    {
+      "diffs": [
+        {
+          "operationType": "changed",
+          "path": "vehicleBaseDetails//model",
+          "sourceValue": "X4",
+          "targetValue": "X5",
+          "readOnly": false
+        },
+        {
+          "operationType": "changed",
+          "path": "vehicleBaseDetails//justMoney//amount",
+          "sourceValue": 1000,
+          "targetValue": 2000,
+          "readOnly": false
+        },
+        {
+          "operationType": "added",
+          "path": "vehicleBaseDetails//modelYear",
+          "targetValue": 2013,
+          "readOnly": false
+        },
+        {
+          "operationType": "removed",
+          "path": "vehicleBaseDetails//firstRegistrationYear",
+          "sourceValue": 2015,
+          "readOnly": false
+        },
+        {
+          "operationType": "removed",
+          "path": "vehicleBaseDetails//removeMe",
+          "sourceValue": "remove",
+          "readOnly": false
+        }
+      ],
+      "operation": "write",
+      "_key": {
+        "timestamp": "2018-12-01T12:00:06.000Z"
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+Namespace FleetAuto
+
+Include Base
+
+Rule "FleetVehicle-181015-i2SMm" On FleetVehicle.adjustedValue {
+  When adjustedValue != null
+  Assert adjustedValue >= 0 and adjustedValue <= 10000
+  Error "FleetVehicle-181015-i2SMm": "The 'Adjusted Value' must be within 10000"
+  Overridable
+}
+
+Rule "FleetVehicle-180709-8tW1j" On FleetVehicle.numDaysDrivenPerWeek {
+  When numDaysDrivenPerWeek != null
+  Assert 0 <= numDaysDrivenPerWeek and numDaysDrivenPerWeek <= 7
+  Error "FleetVehicle-180709-8tW1j": "Number of Days Commute per Week must be >= 0 and <= 7"
+}
+
+Rule "FleetVehicle-180710-nSeoF" On FleetVehicle.annualMiles {
+  When FleetVehicleEntity.usageCd = 'LC' or FleetVehicleEntity.usageCd = 'SC'
+  Set Hidden
+}
+
+Rule "VehicleHasExistingDamage-190425-hT7H5" On FleetVehicle.existingDamage {
+  When existingDamage != null
+  Assert existingDamage = false
+  Error "VehicleHasExistingDamage-190425-hT7H5": "The vehicle has existing damage, the quote should be referred to underwriting."
+  Overridable
+}
+
+Rule "DefaultNumDaysDrivenPerWeekForPL-180710-XVhYY" On FleetVehicle.numDaysDrivenPerWeek {
+  When FleetVehicleEntity.usageCd = 'PL'
+  Default To 2
+}
+
+Rule "ResetNumDaysDrivenPerWeek-190425-XVhYY" On FleetVehicle.numDaysDrivenPerWeek {
+  Reset To null
+}

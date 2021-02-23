@@ -1,0 +1,14 @@
+[
+  {
+    "code": "Other",
+    "defaultValue": "Autre"
+  },
+  {
+    "code": "Supporting Documentation provided",
+    "defaultValue": "Documentation à l'appui fournie"
+  },
+  {
+    "code": "Surcharge Waived",
+    "defaultValue": "Surtaxe annulée"
+  }
+]

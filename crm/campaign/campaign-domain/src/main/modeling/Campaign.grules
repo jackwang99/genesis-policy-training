@@ -1,0 +1,7 @@
+Model Campaign
+
+Namespace Campaign
+
+EntryPoints [
+    "Campaign Validation"
+]

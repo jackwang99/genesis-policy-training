@@ -1,0 +1,10 @@
+Namespace FleetAuto
+
+Include Base
+
+Rule "LicenseStatusIsInvalid-190425-hT7H9" On AutoLicenseInfo.licenseStatusCd {
+  When licenseStatusCd != null
+  Assert licenseStatusCd = 'V'
+  Error "LicenseStatusIsInvalid-190425-hT7H9": "License status is invalid, the quote should be referred to underwriting."
+  Overridable
+}

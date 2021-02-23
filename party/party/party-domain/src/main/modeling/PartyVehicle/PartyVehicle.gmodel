@@ -1,0 +1,6 @@
+Model Vehicle
+Root VehicleEntity
+ModelType Party
+
+Stored using [ModelType, ModelName]
+Indexed using [ModelName]

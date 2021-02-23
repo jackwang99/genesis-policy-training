@@ -1,0 +1,48 @@
+Model PersonalAuto
+
+Namespace PersonalAuto
+
+EntryPoints [
+    "Apply DT",
+    "Update dimension",
+    "Harmonize",
+    "Grandfather",
+    "Quote Policy Validation",
+    "Default apply",
+    "UnderwritingMeasure",
+    "Premium Override Term",
+    "Reset DT"
+]
+
+Decision Tables [
+    "Package Eligibility",
+    "Plans",
+    "Applicability Configuration",
+    "Offer Status Configuration",
+    "Entity Applicability",
+    "MinMax",
+    "PremiumOverrideMinMax",
+    "Default value",
+    "Values List",
+    "Mandatory",
+    "Attribute Visibility",
+    "Attribute Accessibility",
+    "Relationship",
+    "LifeCycle",
+    "Entity Manager",
+    "Entity Manager Listener",
+    "Form Revision",
+    "Form Revision Info",
+    "Kraken Rule Eligibility",
+    "Decision Table Rule Eligibility",
+    "Quote Command Privilege",
+    "Policy Command Privilege",
+    "Underwriting warnings rules",
+    "Impact table",
+    "Reset Value"
+]
+
+VersioningConfiguration [
+    "Effective Date",
+    "Request Date"
+]

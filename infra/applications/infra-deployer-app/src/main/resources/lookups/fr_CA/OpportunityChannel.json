@@ -1,0 +1,22 @@
+[
+  {
+    "code": "BROKER",
+    "defaultValue": "Courtier"
+  },
+  {
+    "code": "DIRECT",
+    "defaultValue": "Direct"
+  },
+  {
+    "code": "IA",
+    "defaultValue": "IA"
+  },
+  {
+    "code": "RETAIL",
+    "defaultValue": "Vente au détail"
+  },
+  {
+    "code": "UNKNOWN",
+    "defaultValue": "Inconnu"
+  }
+]

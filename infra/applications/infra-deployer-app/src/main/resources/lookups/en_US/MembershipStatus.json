@@ -1,0 +1,18 @@
+[
+  {
+    "code": "ACT",
+    "defaultValue": "Active"
+  },
+  {
+    "code": "DEC",
+    "defaultValue": "Deceased"
+  },
+  {
+    "code": "INA",
+    "defaultValue": "Inactive"
+  },
+  {
+    "code": "TER",
+    "defaultValue": "Terminated"
+  }
+]

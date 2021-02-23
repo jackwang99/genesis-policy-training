@@ -1,0 +1,30 @@
+[
+  {
+    "code": "SUNDAY",
+    "defaultValue": "dimanche"
+  },
+  {
+    "code": "MONDAY",
+    "defaultValue": "Lundi"
+  },
+  {
+    "code": "TUESDAY",
+    "defaultValue": "Mardi"
+  },
+  {
+    "code": "WEDNESDAY",
+    "defaultValue": "Mercredi"
+  },
+   {
+    "code": "THURSDAY",
+    "defaultValue": "Jeudi"
+  },
+  {
+    "code": "FRIDAY",
+    "defaultValue": "Vendredi"
+  },
+  {
+    "code": "SATURDAY",
+    "defaultValue": "samedi"
+  }
+]

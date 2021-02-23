@@ -1,0 +1,189 @@
+ [
+	{
+		"name": "Policy: Quote Create Version"
+	},
+	{
+		"name": "Policy: Delete Endorsement"
+	},
+	{
+		"name": "Policy: Quote Customer Decline"
+	},
+	{
+		"name": "Policy: Endorsement Issue"
+	},
+	{
+		"name": "Policy: Cancel Manual Renewal"
+	},
+	{
+		"name": "Policy: Delete Renewal"
+	},
+	{
+		"name": "Policy: Manual Quote Suspend"
+	},
+	{
+		"name": "Policy: Quote Company Decline"
+	},
+	{
+		"name": "Policy: Do Not Renew"
+	},
+	{
+		"name": "Policy: Endorse CTE"
+	},
+	{
+		"name": "Policy: Inquiry"
+	},
+	{
+		"name": "Policy: Quote Bind"
+	},
+	{
+		"name": "Policy: Quote Generate Proposal"
+	},
+	{
+		"name": "Policy: Reinstatement"
+	},
+	{
+		"name": "Policy: Quote Inquiry"
+	},
+	{
+		"name": "Policy: Renewal"
+	},
+	{
+		"name": "Policy: Quote Update"
+	},
+	{
+		"name": "Policy: Quote Copy From Quote"
+	},
+	{
+		"name": "Policy: Update"
+	},
+	{
+		"name": "Policy: Roll back Endorsement"
+	},
+	{
+		"name": "Policy: Manual Renewal Flag"
+	},
+	{
+		"name": "Policy: Quote Rate"
+	},
+	{
+		"name": "Policy: Issue"
+	},
+	{
+		"name": "Policy: Remove Do Not Renew Flag"
+	},
+	{
+		"name": "Policy: Remove Cancel Notice"
+	},
+	{
+		"name": "Policy: Endorse OOSE"
+	},
+	{
+		"name": "Policy: Cancel Notice"
+	},
+	{
+		"name": "Policy: Rewrite"
+	},
+	{
+		"name": "Policy: Cancellation"
+	},
+	{
+		"name": "Policy: Copy From Policy"
+	},
+	{
+		"name": "Billing: Account Create"
+	},
+	{
+		"name": "Party: Create Party"
+	},
+	{
+		"name": "Party: Update Party"
+	},
+	{
+		"name": "Party: Merge Party"
+	},
+	{
+		"name": "Party: Access Party"
+	},
+	{
+		"name": "Party: Search Party"
+	},
+	{
+		"name": "Party: Manage Batch"
+	},
+	{
+		"name": "Party: Access History"
+	},
+	{
+		"name": "CEM: Create/Update Customer"
+	},
+	{
+		"name": "CEM: Load Customer"
+	},
+	{
+		"name": "CEM: Create Scheduled Update"
+	},
+	{
+		"name": "CEM: Load Scheduled Update"
+	},
+	{
+		"name": "CEM: Delete Scheduled Update"
+	},
+	{
+		"name": "CEM: Create/Update Communication"
+	},
+	{
+		"name": "CEM: Create/Update Opportunity"
+	},
+	{
+		"name": "Security: Bypass Dimension Filtering Rules"
+	},
+	{
+		"name": "Security: Load User"
+	},
+	{
+		"name": "Security: Load Security Domain"
+	},
+	{
+		"name": "Security: Manage Domain"
+	},
+	{
+		"name": "Security: Manage Access Profile"
+	},
+	{
+		"name": "Security: Manage User"
+	},
+	{
+		"name": "Security: Manage User Profile"
+	},
+	{
+		"name": "Security: Manage Operational Assignment"
+	},
+	{
+		"name": "Security: Manage Configured Access Profile"
+	},
+	{
+		"name": "Organization: Manage Organizational Person"
+	},
+	{
+		"name": "Organization: Search Organization by Role"
+	},
+	{
+		"name": "Organization: Search Person"
+	},
+	{
+		"name": "Organization: Load Organization"
+	},
+	{
+		"name": "Organization: Apply Role"
+	},
+	{
+		"name": "Organization: Manage Organization"
+	},
+	{
+		"name": "Organization: Load Organization Roles"
+	},
+	{
+		"name": "Organization: Load Organization Person"
+	}
+]
+      

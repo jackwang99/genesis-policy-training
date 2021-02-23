@@ -1,0 +1,7 @@
+Model Organization
+Root OrganizationEntity
+
+ModelType OrgStruct
+
+Stored using ['orgstruct']
+Indexed using ['orgstruct']

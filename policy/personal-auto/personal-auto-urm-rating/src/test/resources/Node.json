@@ -1,0 +1,489 @@
+{
+  "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+  "name": "rootNode",
+  "businessType": "Policy",
+  "type": "TestPolicySummary",
+  "children": [
+    {
+      "@class": "com.eisgroup.rating.input.impl.NodeList",
+      "name": "coverages",
+      "elements": [
+        {
+          "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+          "name": "el0",
+          "businessType": "Policy or Coverage or RI",
+          "type": "TestCoverage",
+          "children": [
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "id",
+              "type": "String",
+              "value": "93d9404a-35d5-4225-8e69-da58c5b818fa",
+              "collection": false,
+              "simple": true
+            }
+          ],
+          "collection": false,
+          "simple": false
+        },
+        {
+          "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+          "name": "el1",
+          "businessType": "Policy or Coverage or RI",
+          "type": "TestCoverageTwo",
+          "children": [
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "limit",
+              "type": "BigDecimal",
+              "value": "222",
+              "collection": false,
+              "simple": true
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "id",
+              "type": "String",
+              "value": "573ecc7d-66b6-4f5d-beb5-a06ba0d7fada",
+              "collection": false,
+              "simple": true
+            }
+          ],
+          "collection": false,
+          "simple": false
+        },
+        {
+          "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+          "name": "el2",
+          "businessType": "Policy or Coverage or RI",
+          "type": "TestCoverageThree",
+          "children": [
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "id",
+              "type": "String",
+              "value": "704198b2-60de-4846-8023-e63c356da909",
+              "collection": false,
+              "simple": true
+            }
+          ],
+          "collection": false,
+          "simple": false
+        },
+        {
+          "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+          "name": "el3",
+          "businessType": "Policy or Coverage or RI",
+          "type": "TestCoverageFour",
+          "children": [
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "id",
+              "type": "String",
+              "value": "dca9b282-a764-40fb-a60e-205945fd7bfc",
+              "collection": false,
+              "simple": true
+            }
+          ],
+          "collection": false,
+          "simple": false
+        }
+      ],
+      "type": "List",
+      "collection": true,
+      "simple": false
+    },
+    {
+      "@class": "com.eisgroup.rating.input.impl.NodeList",
+      "name": "riskItems",
+      "elements": [
+        {
+          "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+          "name": "el0",
+          "businessType": "Policy or Coverage or RI",
+          "type": "TestRiskItem",
+          "children": [
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "id",
+              "type": "String",
+              "value": "accfce8b-c82e-4831-a8f1-d08eae519832",
+              "collection": false,
+              "simple": true
+            },
+            {
+              "@class": "com.eisgroup.rating.input.impl.NodeList",
+              "name": "coverages",
+              "elements": [
+                {
+                  "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+                  "name": "el0",
+                  "businessType": "Policy or Coverage or RI",
+                  "type": "TestCoverage",
+                  "children": [
+                    {
+                      "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                      "name": "id",
+                      "type": "String",
+                      "value": "93d9404a-35d5-4225-8e69-da58c5b81456",
+                      "collection": false,
+                      "simple": true
+                    }
+                  ],
+                  "collection": false,
+                  "simple": false
+                },
+                {
+                  "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+                  "name": "el1",
+                  "businessType": "Policy or Coverage or RI",
+                  "type": "TestCoverageTwo",
+                  "children": [
+                    {
+                      "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                      "name": "limit",
+                      "type": "BigDecimal",
+                      "value": "333",
+                      "collection": false,
+                      "simple": true
+                    },
+                    {
+                      "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                      "name": "id",
+                      "type": "String",
+                      "value": "573ecc7d-66b6-4f5d-beb5-a06ba0d7fghj",
+                      "collection": false,
+                      "simple": true
+                    }
+                  ],
+                  "collection": false,
+                  "simple": false
+                },
+                {
+                  "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+                  "name": "el2",
+                  "businessType": "Policy or Coverage or RI",
+                  "type": "TestCoverageThree",
+                  "children": [
+                    {
+                      "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                      "name": "id",
+                      "type": "String",
+                      "value": "704198b2-60de-4846-8023-e63c356da667",
+                      "collection": false,
+                      "simple": true
+                    }
+                  ],
+                  "collection": false,
+                  "simple": false
+                },
+                {
+                  "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+                  "name": "el3",
+                  "businessType": "Policy or Coverage or RI",
+                  "type": "TestCoverageFour",
+                  "children": [
+                    {
+                      "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                      "name": "id",
+                      "type": "String",
+                      "value": "dca9b282-a764-40fb-a60e-205945fd7tyu",
+                      "collection": false,
+                      "simple": true
+                    }
+                  ],
+                  "collection": false,
+                  "simple": false
+                }
+              ],
+              "type": "List",
+              "collection": true,
+              "simple": false
+            }
+          ],
+          "collection": false,
+          "simple": false
+        }
+      ],
+      "type": "List",
+      "collection": true,
+      "simple": false
+    },
+    {
+      "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+      "name": "id",
+      "type": "String",
+      "value": "27e12b0f-d314-4a4e-8795-c3cb2e516ngf",
+      "collection": false,
+      "simple": true
+    },
+    {
+      "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+      "name": "PolicyPremiums",
+      "businessType": "Policy",
+      "type": "Premium",
+      "children": [
+        {
+          "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+          "name": "93d9404a-35d5-4225-8e69-da58c5b818fa",
+          "businessType": "e8b77868-74d8-4b63-93ce-825cd59fc82b",
+          "type": "PremiumHolder",
+          "children": [
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "el0",
+              "type": "ANNUAL",
+              "value": {
+                "currency": {
+                  "context": {
+                    "empty": false,
+                    "providerName": "java.util.Currency"
+                  },
+                  "defaultFractionDigits": 2,
+                  "numericCode": 840,
+                  "currencyCode": "USD"
+                },
+                "number": 10,
+                "factory": {
+                  "defaultMonetaryContext": {
+                    "fixedScale": false,
+                    "maxScale": 63,
+                    "amountType": "org.javamoney.moneta.Money",
+                    "precision": 0,
+                    "empty": false,
+                    "providerName": null
+                  },
+                  "maxNumber": null,
+                  "minNumber": null,
+                  "amountType": "org.javamoney.moneta.Money",
+                  "maximalMonetaryContext": {
+                    "fixedScale": false,
+                    "maxScale": -1,
+                    "amountType": "org.javamoney.moneta.Money",
+                    "precision": 0,
+                    "empty": false,
+                    "providerName": null
+                  }
+                },
+                "context": {
+                  "fixedScale": false,
+                  "maxScale": -1,
+                  "amountType": "org.javamoney.moneta.Money",
+                  "precision": 256,
+                  "empty": false,
+                  "providerName": null
+                },
+                "negativeOrZero": false,
+                "positive": true,
+                "positiveOrZero": true,
+                "numberStripped": 1E+1,
+                "zero": false,
+                "negative": false
+              },
+              "collection": false,
+              "simple": true
+            }
+          ],
+          "collection": false,
+          "simple": false
+        },
+        {
+          "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+          "name": "573ecc7d-66b6-4f5d-beb5-a06ba0d7fada",
+          "businessType": "e8b77868-74d8-4b63-93ce-825cd59fc82b",
+          "type": "PremiumHolder",
+          "children": [
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "el1",
+              "type": "ANNUAL",
+              "value": {
+                "currency": {
+                  "context": {
+                    "empty": false,
+                    "providerName": "java.util.Currency"
+                  },
+                  "defaultFractionDigits": 2,
+                  "numericCode": 840,
+                  "currencyCode": "USD"
+                },
+                "number": 10,
+                "factory": {
+                  "defaultMonetaryContext": {
+                    "fixedScale": false,
+                    "maxScale": 63,
+                    "amountType": "org.javamoney.moneta.Money",
+                    "precision": 0,
+                    "empty": false,
+                    "providerName": null
+                  },
+                  "maxNumber": null,
+                  "minNumber": null,
+                  "amountType": "org.javamoney.moneta.Money",
+                  "maximalMonetaryContext": {
+                    "fixedScale": false,
+                    "maxScale": -1,
+                    "amountType": "org.javamoney.moneta.Money",
+                    "precision": 0,
+                    "empty": false,
+                    "providerName": null
+                  }
+                },
+                "context": {
+                  "fixedScale": false,
+                  "maxScale": -1,
+                  "amountType": "org.javamoney.moneta.Money",
+                  "precision": 256,
+                  "empty": false,
+                  "providerName": null
+                },
+                "negativeOrZero": false,
+                "positive": true,
+                "positiveOrZero": true,
+                "numberStripped": 1E+1,
+                "zero": false,
+                "negative": false
+              },
+              "collection": false,
+              "simple": true
+            }
+          ],
+          "collection": false,
+          "simple": false
+        },
+        {
+          "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+          "name": "704198b2-60de-4846-8023-e63c356da909",
+          "businessType": "e8b77868-74d8-4b63-93ce-825cd59fc82b",
+          "type": "PremiumHolder",
+          "children": [
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "el2",
+              "type": "ANNUAL",
+              "value": {
+                "currency": {
+                  "context": {
+                    "empty": false,
+                    "providerName": "java.util.Currency"
+                  },
+                  "defaultFractionDigits": 2,
+                  "numericCode": 840,
+                  "currencyCode": "USD"
+                },
+                "number": 10,
+                "factory": {
+                  "defaultMonetaryContext": {
+                    "fixedScale": false,
+                    "maxScale": 63,
+                    "amountType": "org.javamoney.moneta.Money",
+                    "precision": 0,
+                    "empty": false,
+                    "providerName": null
+                  },
+                  "maxNumber": null,
+                  "minNumber": null,
+                  "amountType": "org.javamoney.moneta.Money",
+                  "maximalMonetaryContext": {
+                    "fixedScale": false,
+                    "maxScale": -1,
+                    "amountType": "org.javamoney.moneta.Money",
+                    "precision": 0,
+                    "empty": false,
+                    "providerName": null
+                  }
+                },
+                "context": {
+                  "fixedScale": false,
+                  "maxScale": -1,
+                  "amountType": "org.javamoney.moneta.Money",
+                  "precision": 256,
+                  "empty": false,
+                  "providerName": null
+                },
+                "negativeOrZero": false,
+                "positive": true,
+                "positiveOrZero": true,
+                "numberStripped": 1E+1,
+                "zero": false,
+                "negative": false
+              },
+              "collection": false,
+              "simple": true
+            }
+          ],
+          "collection": false,
+          "simple": false
+        },
+        {
+          "@class": "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+          "name": "dca9b282-a764-40fb-a60e-205945fd7bfc",
+          "businessType": "e8b77868-74d8-4b63-93ce-825cd59fc82b",
+          "type": "PremiumHolder",
+          "children": [
+            {
+              "@class": "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+              "name": "el3",
+              "type": "ANNUAL",
+              "value": {
+                "currency": {
+                  "context": {
+                    "empty": false,
+                    "providerName": "java.util.Currency"
+                  },
+                  "defaultFractionDigits": 2,
+                  "numericCode": 840,
+                  "currencyCode": "USD"
+                },
+                "number": 10,
+                "factory": {
+                  "defaultMonetaryContext": {
+                    "fixedScale": false,
+                    "maxScale": 63,
+                    "amountType": "org.javamoney.moneta.Money",
+                    "precision": 0,
+                    "empty": false,
+                    "providerName": null
+                  },
+                  "maxNumber": null,
+                  "minNumber": null,
+                  "amountType": "org.javamoney.moneta.Money",
+                  "maximalMonetaryContext": {
+                    "fixedScale": false,
+                    "maxScale": -1,
+                    "amountType": "org.javamoney.moneta.Money",
+                    "precision": 0,
+                    "empty": false,
+                    "providerName": null
+                  }
+                },
+                "context": {
+                  "fixedScale": false,
+                  "maxScale": -1,
+                  "amountType": "org.javamoney.moneta.Money",
+                  "precision": 256,
+                  "empty": false,
+                  "providerName": null
+                },
+                "negativeOrZero": false,
+                "positive": true,
+                "positiveOrZero": true,
+                "numberStripped": 1E+1,
+                "zero": false,
+                "negative": false
+              },
+              "collection": false,
+              "simple": true
+            }
+          ],
+          "collection": false,
+          "simple": false
+        }
+      ],
+      "collection": false,
+      "simple": false
+    }
+  ],
+  "collection": false,
+  "simple": false
+}

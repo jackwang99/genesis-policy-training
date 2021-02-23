@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.eisgroup.genesis.proto</groupId>
+        <artifactId>product-server-pom</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>product-server-ref-graphql-facade</artifactId>
+    <name>Product Server GraphQL API Reference implementation</name>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.eisgroup.genesis.product.server.core</groupId>
+            <artifactId>product-server-graphql-facade</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.product.server.core.design</groupId>
+            <artifactId>product-specification-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.design.tooling</groupId>
+            <artifactId>tooling-specification-repo-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.design.tooling</groupId>
+            <artifactId>tooling-specification-in-memory-repo-impl</artifactId>
+        </dependency>
+
+        <!-- Testing dependencies -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.product.server.core.runtime.policy</groupId>
+            <artifactId>policy-model-repository-mock</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.data</groupId>
+            <artifactId>column-store-mock</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.utils</groupId>
+            <artifactId>testing-utils</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- antlr is needed for graphql runtime -->
+        <dependency>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr4-runtime</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.product.server.core.design</groupId>
+            <artifactId>product-specification-repo-api</artifactId>
+        </dependency>
+    </dependencies>
+</project>

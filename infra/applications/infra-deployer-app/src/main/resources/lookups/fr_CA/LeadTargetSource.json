@@ -1,0 +1,10 @@
+[
+  {
+    "code": "ALLCUSTOMERS",
+    "defaultValue": "Tous les clients / clients"
+  },
+  {
+    "code": "LEADIMPORTONLY",
+    "defaultValue": "Importation de plomb seulement"
+  }
+]

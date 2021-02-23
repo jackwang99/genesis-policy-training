@@ -1,0 +1,28 @@
+Model PolicyReports
+
+Import Model PersonalAuto
+
+Report QuotePremiums from PersonalAuto[IsRatedQuote] {
+    // Attribute declarations
+    Attr quoteNumber is policyNumber
+    Attr quoteStatus is state
+    Attr quoteInitiationDate is accessTrackInfo.createdOn
+    Attr quoteTransactionType is transactionDetails.txType
+    Attr termPremium is Sum(PremiumAggregate.premiumEntries[IsGWP].termAmount.amount)
+
+    // Attribute filter predicates
+    Filter IsGWP {
+        premiumCode == "GWP"
+    }
+
+    // Join-table statements
+    Join PremiumAggregate using {
+        rootId == rootId
+        revisionNo == revisionNo
+    }
+}
+
+Filter IsRatedQuote {
+    _variation eq "quote" 
+    state in ("rated", "bound", "proposed")
+}

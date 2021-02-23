@@ -1,0 +1,22 @@
+[
+  {
+    "code": "AFTERNOON",
+    "orderNo": "2",
+    "defaultValue": "Afternoon (12PM-5:59PM)"
+  },
+  {
+    "code": "EVENING",
+    "orderNo": "3",
+    "defaultValue": "Evening (6PM-11:59PM)"
+  },
+  {
+    "code": "MORNING",
+    "orderNo": "1",
+    "defaultValue": "Morning (8AM-11:59AM)"
+  },
+  {
+    "code": "NIGHT",
+    "orderNo": "4",
+    "defaultValue": "Night (12AM-7:59AM)"
+  }
+]

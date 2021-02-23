@@ -1,0 +1,124 @@
+Model PersonalHome
+
+Table "Package Eligibility" {
+  InputColumn "Effective" as Date : dimensions.termEffectiveDate
+  InputColumn "State" as String : dimensions.riskStateCd
+  InputColumn "Country" as String : dimensions.country
+  AspectColumn "Package Code" : packageCode
+  AspectColumn "Package Label" : packageLabel
+  AspectColumn "Rank" : packageRank
+}
+
+Table "Plans" {
+  InputColumn "Package Code" as String : dimensions.packageCd
+  AspectColumn "Plan" : planCode
+  AspectColumn "Rank" : planRank
+}
+
+@EntryPoint("Quote Policy Refreshment for Applicability", "Home Quote Policy Validation")
+@CrossTab
+@Versioned("Effective Date", "Request Date")
+Table "Entity Applicability" {
+  InputColumn "Package Code" as String : dimensions.packageCd
+  InputColumn "Plan" as String : dimensions.planCd
+  AspectColumn "Entity" : entity
+  AspectColumn "Applicability" : applicability
+}
+
+@EntryPoint("Home Quote Policy Validation")
+@CrossTab
+@Category("KrakenRules")
+@Versioned("Effective Date", "Request Date")
+Table "MinMax" {
+  InputColumn "Package Code" as String : dimensions.packageCd
+  InputColumn "Plan" as String : dimensions.planCd
+  AspectColumn "Entity" : entity
+  AspectColumn "Attribute" : attribute
+  AspectColumn "Min" : min
+  AspectColumn "Max" : max
+}
+
+@EntryPoint("Quote Policy Refreshment for Applicability")
+@CrossTab
+@Category("KrakenRules")
+@Versioned("Effective Date", "Request Date")
+Table "Default value" {
+  InputColumn "Package Code" as String : dimensions.packageCd
+  InputColumn "Plan" as String : dimensions.planCd
+  AspectColumn "Entity" : entity
+  AspectColumn "Attribute" : attribute
+  AspectColumn "Default" : default
+}
+
+@EntryPoint("Home Quote Policy Validation")
+@RuleOrder
+@CrossTab
+@Versioned("Effective Date", "Request Date")
+Table "Values List" {
+  InputColumn "Package Code" as String : dimensions.packageCd
+  InputColumn "Plan" as String : dimensions.planCd
+  AspectColumn "Entity" : entity
+  AspectColumn "Attribute" : attribute
+  OutputColumn "ValueList" as String : list
+}
+
+@EntryPoint("Home Quote Policy Validation")
+@CrossTab
+@Category("KrakenRules")
+@Versioned("Effective Date", "Request Date")
+Table "Mandatory" {
+  InputColumn "Package Code" as String : dimensions.packageCd
+  InputColumn "Plan" as String : dimensions.planCd
+  AspectColumn "Entity" : entity
+  AspectColumn "Attribute" : attribute
+  AspectColumn "Mandatory" : mandatory
+}
+
+@CrossTab
+@Category("KrakenRules")
+@Versioned("Effective Date", "Request Date")
+@EntryPoint
+Table "Visible" {
+  InputColumn "Package Code" as String : dimensions.packageCd
+  InputColumn "Plan" as String : dimensions.planCd
+  AspectColumn "Entity" : entity
+  AspectColumn "Attribute" : attribute
+  AspectColumn "Visible" : visible
+}
+
+@CrossTab
+@Category("KrakenRules")
+@Versioned("Effective Date", "Request Date")
+@EntryPoint
+Table "Accessible" {
+  InputColumn "Package Code" as String : dimensions.packageCd
+  InputColumn "Plan" as String : dimensions.planCd
+  AspectColumn "Entity" : entity
+  AspectColumn "Attribute" : attribute
+  AspectColumn "Accessible" : accessible
+}
+
+@EntryPoint("Quote Policy Refreshment for Applicability", "Home Quote Policy Validation")
+@CrossTab
+@RuleOrder
+Table "Relationship" {
+  InputColumn "Package Code" as String : dimensions.packageCd
+  AspectColumn "Entity" : entity
+  AspectColumn "Relationship Type" : relationshipType
+  AspectColumn "Linked Entity" : linkedEntity
+}
+
+@RuleOrder
+Table "LifeCycle" {
+  InputColumn "Command Name" as String : commandName
+  InputColumn "Phase" as String : phaseId
+  InputColumn "Current State" as String : currentState
+  InputColumn "Target State" as String : targetState
+  AspectColumn "Entry Points" : entryPoints
+}
+
+@RuleOrder
+Table "Entity Manager" {
+  InputColumn "Manager" as String : manager
+  OutputColumn "Entity" as String : entity
+}

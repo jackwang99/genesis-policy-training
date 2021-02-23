@@ -1,0 +1,10 @@
+[
+  {
+    "code": "OVN",
+    "defaultValue": "Annulé"
+  },
+  {
+    "code": "PAPR",
+    "defaultValue": "Validation en attente"
+  }
+]

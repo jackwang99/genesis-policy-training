@@ -1,0 +1,10 @@
+Model Vehicle
+
+@RequiredWeight(10)
+UniquenessConfiguration {
+
+    @Weight(10)
+    @Strategy("Historic")
+    Field vehicleIdentificationNumber
+
+}

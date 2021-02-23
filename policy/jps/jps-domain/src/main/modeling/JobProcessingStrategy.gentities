@@ -1,0 +1,18 @@
+Entity PolicyJobProcessingStrategy is JobProcessingStrategy {
+
+    Attr details: {DefEndorsementJobStrategyDetails, DefRenewalJobStrategyDetails, DefBORTransferJobStrategyDetails, DefExpirationJobStrategyDetails, DefArchiveJobStrategyDetails, DefDeleteJobStrategyDetails, DefQuoteCommonJobStrategyDetails}
+}
+
+Entity DefEndorsementJobStrategyDetails is EndorsementJobStrategyDetails {}
+
+Entity DefBORTransferJobStrategyDetails is BORTransferJobStrategyDetails {}
+
+Entity DefRenewalJobStrategyDetails is RenewalJobStrategyDetails {}
+
+Entity DefExpirationJobStrategyDetails is ExpirationJobStrategyDetails {}
+
+Entity DefArchiveJobStrategyDetails is ArchiveJobStrategyDetails {}
+
+Entity DefDeleteJobStrategyDetails is DeleteJobStrategyDetails {}
+
+Entity DefQuoteCommonJobStrategyDetails is QuoteCommonJobStrategyDetails {}

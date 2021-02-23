@@ -1,0 +1,14 @@
+[
+    {
+      "code": "W",
+      "defaultValue": "Hebdomadaire"
+    },
+    {
+      "code": "M",
+      "defaultValue": "Mensuel"
+    },
+    {
+      "code": "KM",
+      "defaultValue": "Km"
+    }
+  ]

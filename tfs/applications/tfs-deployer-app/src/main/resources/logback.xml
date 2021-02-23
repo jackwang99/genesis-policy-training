@@ -1,0 +1,64 @@
+<configuration>
+    <property scope="context" name="appName" value="tfs-deployer-app"/>
+
+    <conversionRule conversionWord="requestId" converterClass="com.eisgroup.genesis.logging.RequestIdConverter"/>
+
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %highlight(%-5level) [%cyan(%property{appName}):%thread] [%requestId] %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <if condition='isDefined("genesis.logs.path")'>
+        <then>
+            <appender name="Json" class="ch.qos.logback.core.rolling.RollingFileAppender">
+                <file>${genesis.logs.path}/json/${appName}.json</file>
+                <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                    <fileNamePattern>${logsPath}/json/${appName}.json.%d{yyyy-MM-dd}</fileNamePattern>
+                    <maxHistory>30</maxHistory>
+                </rollingPolicy>
+                <encoder class="net.logstash.logback.encoder.LogstashEncoder"/>
+            </appender>
+            <appender name="File" class="ch.qos.logback.core.rolling.RollingFileAppender">
+                <file>${genesis.logs.path}/${appName}.log</file>
+                <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                    <fileNamePattern>${logsPath}/${appName}.log.%d{yyyy-MM-dd}</fileNamePattern>
+                    <maxHistory>30</maxHistory>
+                </rollingPolicy>
+                <encoder>
+                    <pattern>%d{HH:mm:ss.SSS} [%thread] [%requestId] %-5level %logger{36} - %msg%n</pattern>
+                </encoder>
+            </appender>
+            <root level="${genesis.logging.level:-INFO}">
+                <appender-ref ref="Json"/>
+                <appender-ref ref="File"/>
+            </root>
+        </then>
+    </if>
+
+    <logger name="org.apache.zookeeper.ClientCnxn" level="ERROR"/>
+
+    <logger name="org.apache.kafka.clients.consumer.internals.AbstractCoordinator" level="WARN"/>
+    <logger name="org.apache.kafka.clients.consumer.ConsumerConfig" level="WARN"/>
+
+    <logger name="org.springframework.context.support.GenericApplicationContext" level="WARN"/>
+    <logger name="org.springframework.beans.factory.support.DefaultListableBeanFactory" level="WARN"/>
+
+    <logger name="com.eisgroup.genesis.rx" level="DEBUG"/>
+    <logger name="com.eisgroup.genesis.rx.wrapper" level="DEBUG"/>
+
+    <logger name="com.eisgroup.genesis.streams.consumer" level="DEBUG"/>
+    <!-- Produces better view of messages being sent through kafka, uncomment when it is unclear if messages are recieved. -->
+    <!-- <logger name="com.eisgroup.genesis.streams.consumer.kafka" level="trace"/> -->
+    <logger name="com.eisgroup.genesis.streams.publisher.kafka.KafkaMessagePublisher" level="DEBUG"/>
+
+    <logger name="com.eisgroup.genesis.factory.commands.ProductCommandHandlerExecutor" level="DEBUG"/>
+
+    <logger name="com.eisgroup.genesis.facade.servlet.request.RequestDispatcher" level="DEBUG"/>
+
+    <logger name="com.eisgroup.genesis.facade.io.response.ResponseBroadcasterAdapter" level="DEBUG"/>
+
+    <root level="${genesis.logging.level:-INFO}">
+        <appender-ref ref="Console"/>
+    </root>
+</configuration>

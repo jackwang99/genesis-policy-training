@@ -1,0 +1,8 @@
+Namespace FleetAuto
+
+Include Base
+
+Rule "FleetAddressInfo-180710-3UHI6" On FleetAddressInfo.countryCd {
+  Set Mandatory
+  Error "FleetAddressInfo-180710-3UHI6": "Country is mandatory"
+}

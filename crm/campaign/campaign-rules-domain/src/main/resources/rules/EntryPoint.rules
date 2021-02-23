@@ -1,0 +1,7 @@
+Namespace Campaign
+
+Include Base
+
+EntryPoint "Campaign Validation" {
+  "CampaignDivertToIsMandatoryWhenDivertCampaignNotificationIsTrue"
+}

@@ -1,0 +1,3 @@
+Entity PolicyUnderwritingMeasure is UnderwritingMeasure {
+
+}

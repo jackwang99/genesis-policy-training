@@ -1,0 +1,22 @@
+[
+  {
+    "code": "0",
+    "defaultValue": "Pas de couverture"
+  },
+  {
+    "code": "100",
+    "defaultValue": "100 $"
+  },
+  {
+    "code": "1000",
+    "defaultValue": "1000 $"
+  },
+  {
+    "code": "250",
+    "defaultValue": "250 $"
+  },
+  {
+    "code": "500",
+    "defaultValue": "500 $"
+  }
+]

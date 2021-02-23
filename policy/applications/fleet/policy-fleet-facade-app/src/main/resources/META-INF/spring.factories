@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.eisgroup.genesis.policy.core.umeasure.services.UMeasureDefaultConfig

@@ -1,0 +1,14 @@
+[
+  {
+    "code": "Collector",
+    "defaultValue": "Collector"
+  },
+  {
+    "code": "Misc",
+    "defaultValue": "Miscellaneous"
+  },
+  {
+    "code": "Regular",
+    "defaultValue": "Regular"
+  }
+]

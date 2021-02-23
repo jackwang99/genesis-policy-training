@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.esigroup.genesis.product.server.ref.config.GraphQLSchemaConfig

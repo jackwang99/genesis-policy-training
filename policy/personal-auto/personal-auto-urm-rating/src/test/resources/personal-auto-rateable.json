@@ -1,0 +1,245 @@
+{
+  "@class" : "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+  "name" : "rootNode",
+  "businessType" : "Policy",
+  "type" : "PersonalAutoPolicySummary",
+  "children" : [ {
+    "@class" : "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+    "name" : "termDetails",
+    "businessType" : "Policy or Coverage or RI",
+    "type" : "AutoTermDetails",
+    "children" : [ {
+      "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+      "name" : "termEffectiveDate",
+      "type" : "LocalDate",
+      "value" : "2017-07-26",
+      "collection" : false,
+      "simple" : true
+    } ],
+    "collection" : false,
+    "simple" : false
+  }, {
+    "@class" : "com.eisgroup.rating.input.impl.NodeList",
+    "name" : "riskItems",
+    "elements" : [ {
+      "@class" : "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+      "name" : "el0",
+      "businessType" : "Policy or Coverage or RI",
+      "type" : "AutoVehicle",
+      "children" : [ {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "collSymbol",
+        "type" : "String",
+        "value" : "1",
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "antiLockBrakeCd",
+        "type" : "String",
+        "value" : "ABR",
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "liabSymbol",
+        "type" : "String",
+        "value" : null,
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "model",
+        "type" : "String",
+        "value" : "X5",
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "usageCd",
+        "type" : "String",
+        "value" : "PL",
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "biSymbol",
+        "type" : "String",
+        "value" : "1",
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "annualMiles",
+        "type" : "Long",
+        "value" : "5000",
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "recoveryDeviceInd",
+        "type" : "Boolean",
+        "value" : null,
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "armoredInd",
+        "type" : "Boolean",
+        "value" : "false",
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "compSymbol",
+        "type" : "String",
+        "value" : "1",
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "modelYear",
+        "type" : "Long",
+        "value" : "2012",
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "pipMedSymbol",
+        "type" : "String",
+        "value" : "1",
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "securityOptionsCd",
+        "type" : "String",
+        "value" : "TRCKSYS",
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "daytimeRunningLampsInd",
+        "type" : "Boolean",
+        "value" : "true",
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "adjustedValue",
+        "type" : "BigDecimal",
+        "value" : null,
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "airBagStatusCd",
+        "type" : "String",
+        "value" : "DAP",
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "pdSymbol",
+        "type" : "String",
+        "value" : "1",
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "typeCd",
+        "type" : "String",
+        "value" : "Regular",
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "automaticBeltsInd",
+        "type" : "Boolean",
+        "value" : "true",
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+        "name" : "garagingAddress",
+        "businessType" : "Policy or Coverage or RI",
+        "type" : "AutoAddressInfo",
+        "children" : [ {
+          "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+          "name" : "postalCode",
+          "type" : "String",
+          "value" : "07100",
+          "collection" : false,
+          "simple" : true
+        } ],
+        "collection" : false,
+        "simple" : false
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.NodeList",
+        "name" : "variations",
+        "elements" : [ {
+          "@class" : "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+          "name" : "el0",
+          "businessType" : "Policy or Coverage or RI",
+          "type" : "AutoVariation",
+          "children" : [ {
+            "@class" : "com.eisgroup.rating.input.impl.NodeList",
+            "name" : "coverages",
+            "elements" : [ {
+              "@class" : "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+              "name" : "el0",
+              "businessType" : "Policy or Coverage or RI",
+              "type" : "AutoCOLLCoverage",
+              "children" : [ {
+                "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                "name" : "deductibleAmount",
+                "type" : "BigDecimal",
+                "value" : null,
+                "collection" : false,
+                "simple" : true
+              }, {
+                "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                "name" : "limitAmount",
+                "type" : "BigDecimal",
+                "value" : "250",
+                "collection" : false,
+                "simple" : true
+              }, {
+                "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                "name" : "code",
+                "type" : "String",
+                "value" : null,
+                "collection" : false,
+                "simple" : true
+              }, {
+                "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                "name" : "effectiveDate",
+                "type" : "LocalDate",
+                "value" : "2015-11-17",
+                "collection" : false,
+                "simple" : true
+              } ],
+              "collection" : false,
+              "simple" : false
+            } ],
+            "type" : "List",
+            "collection" : true,
+            "simple" : false
+          } ],
+          "collection" : false,
+          "simple" : false
+        } ],
+        "type" : "List",
+        "collection" : true,
+        "simple" : false
+      } ],
+      "collection" : false,
+      "simple" : false
+    } ],
+    "type" : "List",
+    "collection" : true,
+    "simple" : false
+  } ],
+  "collection" : false,
+  "simple" : false
+}

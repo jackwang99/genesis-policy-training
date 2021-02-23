@@ -1,0 +1,22 @@
+[
+  {
+    "code": "CLAIMS",
+    "defaultValue": "Claims"
+  },
+  {
+    "code": "INSTALL",
+    "defaultValue": "Install"
+  },
+  {
+    "code": "OPERATIONS",
+    "defaultValue": "Operations"
+  },
+  {
+    "code": "PRODUCTS",
+    "defaultValue": "Products"
+  },
+  {
+    "code": "SERVICES",
+    "defaultValue": "Services"
+  }
+]

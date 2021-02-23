@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>crm-pom</artifactId>
+        <groupId>com.eisgroup.genesis.proto</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.eisgroup.genesis.proto.communication</groupId>
+    <artifactId>communication-pom</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>   
+
+    <modules>
+        <module>communication-domain</module>
+        <module>communication-lifecycle</module>
+        <module>communication-lifecycle/model</module>        
+        <module>communication-endpoints</module>
+        <module>communication-rules-domain</module>
+    </modules>
+
+</project>

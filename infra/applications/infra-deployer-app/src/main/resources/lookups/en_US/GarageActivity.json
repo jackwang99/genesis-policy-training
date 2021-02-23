@@ -1,0 +1,58 @@
+[
+  {
+    "code": "AUTO_BODY_SHOP",
+    "defaultValue": "Automobile body shop"
+  },
+  {
+    "code": "AUTO_PAINT_BODY_SHOP",
+    "defaultValue": "Automobile paint and body shop"
+  },
+  {
+    "code": "AUTO_REPAIR",
+    "defaultValue": "Vehicle mechanical repair garage"
+  },
+  {
+    "code": "TRAILER_INST",
+    "defaultValue": "Trailer hitch sales and installation"
+  },
+  {
+    "code": "AUTO_EQ_INST",
+    "defaultValue": "Vehicle equipment installation"
+  },
+  {
+    "code": "CAR_WASH",
+    "defaultValue": "Car wash"
+  },
+  {
+    "code": "CAR_WASH_AUTO",
+    "defaultValue": "Automatic car wash"
+  },
+  {
+    "code": "AUTO_LETTERING",
+    "defaultValue": "Car lettering and accent stripe application"
+  },
+  {
+    "code": "AUTO_STORAGE",
+    "defaultValue": "Vehicle storage"
+  },
+  {
+    "code": "RUSTPROOFING_SERVICE",
+    "defaultValue": "Rustproofing service"
+  },
+  {
+    "code": "PARKING_SERVICE",
+    "defaultValue": "Valet parking service"
+  },
+  {
+    "code": "SERVICE_STATION",
+    "defaultValue": "Service station"
+  },
+  {
+    "code": "PARKING_FACILITIES",
+    "defaultValue": "Automobile parking facilities"
+  },
+  {
+    "code": "OTHER",
+    "defaultValue": "Other (to refer to UW)"
+  }
+]

@@ -1,0 +1,24 @@
+Namespace FleetAuto
+
+Include Base
+
+EntryPoint "Quote Policy Validation" {
+  "VehicleIsRentalToOthers-190425-hT7H5",
+  "VehicleHasExistingDamage-190425-hT7H5",
+  "LicenseStatusIsInvalid-190425-hT7H9",
+  "DriverConvictedInFelony-190425-hT7H8",
+  "PersonBirthDateInFuture-180710-hT7H8",
+  "AutoVINRegExpMatch-190606-70W11j"
+}
+
+EntryPoint "Apply DT" {
+  "DefaultNumDaysDrivenPerWeekForPL-180710-XVhYY"
+}
+
+EntryPoint "Reset values" {
+  "ResetNumDaysDrivenPerWeek-190425-XVhYY"
+}
+
+EntryPoint "Issue Rules apply" {
+  "AutoPolicyDetail-180725-70W11j"
+}

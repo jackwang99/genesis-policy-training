@@ -1,0 +1,22 @@
+[
+  {
+    "name": "QA Conversion",
+    "description": "Role with all privileges for QA conversion testing, assigned to conversion user",
+    "assignedAuthorities": [
+      "Conversion: Generate XSD Schema",
+      "Conversion: Generate Mapping Report",
+      "Conversion: Import",
+      "Conversion: Export"
+    ]
+  },
+  {
+    "name": "QA All",
+    "description": "Role with all privileges for QA testing, assigned to all users",
+    "assignedAuthorities": [
+      "Conversion: Generate XSD Schema",
+      "Conversion: Generate Mapping Report",
+      "Conversion: Import",
+      "Conversion: Export"
+    ]
+  }
+]

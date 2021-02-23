@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<constraint-mappings
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://jboss.org/xml/ns/javax/validation/mapping validation-mapping-1.1.xsd"
+    xmlns="http://jboss.org/xml/ns/javax/validation/mapping" version="1.1">
+
+    <bean class="com.eisgroup.genesis.factory.model.organizationcustomer.OrganizationCustomer">
+        <class>
+            <constraint annotation="com.eisgroup.genesis.crm.validation.LegalAddress">
+                <message>{crm.business.legalAddress}</message>
+            </constraint>
+        </class>
+        <getter name="relationships">
+            <constraint annotation="com.eisgroup.genesis.crm.validation.RelationshipType">
+                <message>{crm.relationshipType}</message>
+                <element name="type">com.eisgroup.genesis.factory.modeling.types.OrganizationCustomerBase</element>
+            </constraint>
+        </getter>
+        <getter name="communicationInfo">
+            <valid/>
+            <constraint annotation="com.eisgroup.genesis.crm.validation.OrgContactsCount">
+                <message>{crm.contactsCount}</message>
+                <element name="min">1</element>
+            </constraint>
+        </getter>
+
+        <getter name="details">
+            <valid/>
+        </getter>
+
+        <getter name="divisions">
+            <valid/>
+        </getter>
+    </bean>
+
+</constraint-mappings>

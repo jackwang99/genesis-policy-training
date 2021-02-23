@@ -1,0 +1,5 @@
+{
+  "description": "Conversion Import Job",
+  "name": "ConversionImportJob",
+  "triggerUri": "command://conversionJobs//conversionImportJob"
+}

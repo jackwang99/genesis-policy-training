@@ -1,0 +1,26 @@
+[
+  {
+    "code": "COLL",
+    "defaultValue": "Collision Deductible",
+    "target": "riskItem",
+    "type": "GenesisCOLLCoverage"
+  },
+  {
+    "code": "COMP",
+    "defaultValue": "Comprehensive Deductible",
+    "target": "riskItem",
+    "type": "GenesisCOMPCoverage"
+  },
+  {
+    "code": "CSL",
+    "defaultValue": "Combined Single Limit",
+    "target": "policy",
+    "type": "GenesisCSLCoverage"
+  },
+  {
+    "code": "UMCSL",
+    "defaultValue": "UM/UIM Combined Single Limit",
+    "target": "policy",
+    "type": "GenesisUMCSLCoverage"
+  }
+]

@@ -1,0 +1,101 @@
+<!--Release: TEST-BUILD Sprint: TEST-SPRINT EIS: TEST-VERSION Revision: TEST-REVISION Date: 02.08.2019 16:15:03 Host:rix71113-->
+   <xsd:complexType name="conversionActionStatus">
+      <xsd:complexContent>
+         <xsd:extension base="conversionStatusMessage">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="duration" type="xsd:double"/>
+               <xsd:element minOccurs="0" name="endDt" type="xsd:dateTime"/>
+               <xsd:choice maxOccurs="unbounded">
+                  <xsd:element minOccurs="0" name="statusMessage" type="conversionStatusMessage"/>
+                  <xsd:element minOccurs="0" name="entityImage" type="conversionEntityImage"/>
+                  <xsd:element minOccurs="0" name="actionStatus" type="conversionActionStatus"/>
+                  <xsd:element minOccurs="0" name="entityStatus" type="conversionEntityStatus"/>
+                  <xsd:element minOccurs="0" name="taskStatus" type="conversionTaskStatus"/>
+               </xsd:choice>
+               <xsd:element minOccurs="0" name="startDt" type="xsd:dateTime"/>
+            </xsd:sequence>
+            <xsd:attribute name="action" type="xsd:string"/>
+         </xsd:extension>
+      </xsd:complexContent>
+   </xsd:complexType>
+   <xsd:complexType name="conversionAdaptedEntry">
+      <xsd:simpleContent>
+         <xsd:extension base="xsd:string">
+            <xsd:attribute name="name" type="xsd:string"/>
+         </xsd:extension>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="conversionAdaptedMap">
+      <xsd:sequence>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="property" type="conversionAdaptedEntry"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="conversionEntityImage">
+      <xsd:complexContent>
+         <xsd:extension base="conversionStatusMessage">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="image" type="xsd:string"/>
+               <xsd:element minOccurs="0" name="stage" type="xsd:string"/>
+            </xsd:sequence>
+         </xsd:extension>
+      </xsd:complexContent>
+   </xsd:complexType>
+   <xsd:complexType name="conversionEntityStatus">
+      <xsd:complexContent>
+         <xsd:extension base="conversionActionStatus">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="entityNumber" type="xsd:string"/>
+               <xsd:element minOccurs="0" name="entityType" type="xsd:string"/>
+               <xsd:element minOccurs="0" name="importFileName" type="xsd:string"/>
+               <xsd:element minOccurs="0" name="rootId" type="xsd:string"/>
+            </xsd:sequence>
+         </xsd:extension>
+      </xsd:complexContent>
+   </xsd:complexType>
+   <xsd:complexType name="conversionResponse">
+      <xsd:complexContent>
+         <xsd:extension base="conversionTaskStatus">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="buildInfo" type="xsd:string"/>
+               <xsd:element minOccurs="0" name="conversionId" type="xsd:string"/>
+               <xsd:element minOccurs="0" name="conversionType" type="xsd:string"/>
+               <xsd:element minOccurs="0" name="entityImage" type="conversionEntityImage"/>
+               <xsd:element minOccurs="0" name="hostName" type="xsd:string"/>
+               <xsd:element minOccurs="0" name="processingProperties" type="conversionAdaptedMap"/>
+            </xsd:sequence>
+         </xsd:extension>
+      </xsd:complexContent>
+   </xsd:complexType>
+   <xsd:element name="conversionResponse" type="conversionResponse"/>
+   <xsd:simpleType name="conversionStatusEnum">
+      <xsd:restriction base="xsd:string">
+         <xsd:enumeration value="Failure"/>
+         <xsd:enumeration value="Info"/>
+         <xsd:enumeration value="Interrupted"/>
+         <xsd:enumeration value="Processing"/>
+         <xsd:enumeration value="Rejected"/>
+         <xsd:enumeration value="Success"/>
+         <xsd:enumeration value="SuccessWithWarnings"/>
+         <xsd:enumeration value="Warning"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:complexType name="conversionStatusMessage">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="code" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="context" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="errorStackTrace" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="logReference" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="message" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="status" type="conversionStatusEnum"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="conversionTaskStatus">
+      <xsd:complexContent>
+         <xsd:extension base="conversionEntityStatus">
+            <xsd:sequence>
+               <xsd:element minOccurs="0" name="conversionTaskId" type="xsd:string"/>
+            </xsd:sequence>
+         </xsd:extension>
+      </xsd:complexContent>
+   </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>infra-applications-pom</artifactId>
+        <groupId>com.eisgroup.genesis.proto.infra.applications</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>infra-deployer-app</artifactId>
+
+    <name>Infrastructure Deployer Application</name>
+    <description>Infrastructure Deployer Application Module</description>
+    <packaging>jar</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>dependency-list</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>list</goal>
+                        </goals>
+                        <configuration>
+                            <outputFile>target/classes/dependency.list</outputFile>
+                        </configuration>
+                    </execution>
+<!--                    <execution>-->
+<!--                        <id>copy-dependencies</id>-->
+<!--                        <phase>process-resources</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>copy</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            <artifactItems>-->
+<!--                                <artifactItem>-->
+<!--                                    <groupId>com.eisgroup.genesis.proto.infra</groupId>-->
+<!--                                    <artifactId>infra-reports</artifactId>-->
+<!--                                    <classifier>spark-job</classifier>-->
+<!--                                </artifactItem>-->
+<!--                            </artifactItems>-->
+<!--                            <stripVersion>true</stripVersion>-->
+<!--                            <stripClassifier>true</stripClassifier>-->
+<!--                            <outputDirectory>${project.build.directory}/classes/spark-jobs</outputDirectory>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <classifier>fat</classifier>
+                    <attach>false</attach>
+                    <mainClass>com.eisgroup.genesis.boot.Bootstrap</mainClass>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>buildnumber-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>create</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/banner.txt</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+
+    <dependencies>
+        <!-- Application metadata -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.application.metadata</groupId>
+            <artifactId>app-metadata-bundle</artifactId>
+            <type>tile</type>
+        </dependency>
+        
+        <!-- Security -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.security</groupId>
+            <artifactId>security-bundle</artifactId>
+            <classifier>deployer</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <!-- Lookups -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.lookups</groupId>
+            <artifactId>lookups-bundle</artifactId>
+            <classifier>deployer</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <!-- BAM Schema -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.bam</groupId>
+            <artifactId>bam-bundle</artifactId>
+            <classifier>deployer</classifier>
+            <type>tile</type>
+        </dependency>
+        <!-- Alerts Schema -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.alert</groupId>
+            <artifactId>alert-bundle</artifactId>
+            <classifier>deployer</classifier>
+            <type>tile</type>
+        </dependency>
+        <!-- Jobs Schema -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.jobs</groupId>
+            <artifactId>jobs-bundle</artifactId>
+            <classifier>deployer</classifier>
+            <type>tile</type>
+        </dependency>
+        <!-- Saga Schema -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.lifecycle</groupId>
+            <artifactId>lifecycle-bundle.saga</artifactId>
+            <classifier>deployer</classifier>
+            <type>tile</type>
+        </dependency>
+        <!-- Information Propogation Schema -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.propagation</groupId>
+            <artifactId>information-propagation-bundle</artifactId>
+            <classifier>deployer</classifier>
+            <type>tile</type>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.domain</groupId>
+            <artifactId>entities-bundle.relationships</artifactId>
+            <type>tile</type>
+            <classifier>deployer</classifier>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.domain</groupId>
+            <artifactId>entities-bundle.search.single-line</artifactId>
+            <type>tile</type>
+            <classifier>deployer</classifier>
+        </dependency>
+        <!-- DLQ Schema -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.lifecycle</groupId>
+            <artifactId>lifecycle-bundle.dead-letter-queue</artifactId>
+            <classifier>deployer</classifier>
+            <type>tile</type>
+        </dependency>
+        <!-- Decision Table Schema -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.decision</groupId>
+            <artifactId>rules.decision-bundle</artifactId>
+            <classifier>deployer</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <!-- Genesis Rules -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.kraken</groupId>
+            <artifactId>rules.genesis-rules-bundle</artifactId>
+            <classifier>deployer</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <!-- Registry Integration -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.registry.core.integration</groupId>
+            <artifactId>registry-bundle.integration</artifactId>
+            <classifier>deployer</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <!-- Execution Context Schema -->
+        <dependency>
+            <groupId>com.eisgroup.genesis</groupId>
+            <artifactId>execution-context-bundle</artifactId>
+            <classifier>deployer</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <!-- Versioning Schema -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.domain</groupId>
+            <artifactId>entities-bundle.versioning</artifactId>
+            <classifier>deployer</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <!-- Logging -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- Analytics -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.analytics</groupId>
+            <artifactId>analytics-deployer</artifactId>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.eisgroup.genesis.proto.infra</groupId>-->
+<!--            <artifactId>infra-reports</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--            <optional>true</optional>-->
+<!--            <scope>provided</scope>-->
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>*</groupId>-->
+<!--                    <artifactId>*</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+<!--        </dependency>-->
+    </dependencies>
+
+</project>

@@ -1,0 +1,36 @@
+Entity GenesisCampaign is Campaign {
+
+    Attr channels: *GenesisCampaignChannelInfo
+    Attr products: *GenesisCampaignProductInfo
+    ExtLink parent: Campaign
+    Attr targetCharacteristics: *{ GenesisStringTargetCharacteristic, GenesisDateTargetCharacteristic, GenesisDecimalTargetCharacteristic }
+
+    ExtLink owner: User
+
+    @Searchable
+    Attr startDate: Date
+    @Searchable
+    Attr autoStart: Boolean
+    
+    Attr accessTrackInfo: GenesisAccessTrackInfo
+}
+
+Entity GenesisCampaignChannelInfo is CampaignChannelInfo {}
+
+Entity GenesisCampaignProductInfo is ProductInfo {}
+
+Entity GenesisStringTargetCharacteristic is StringTargetCharacteristic {
+}
+
+Entity GenesisDateTargetCharacteristic is DateTargetCharacteristic {
+}
+
+Entity GenesisDecimalTargetCharacteristic is DecimalTargetCharacteristic {
+}
+
+Entity GenesisAccessTrackInfo is AccessTrackInfo {
+    @Searchable
+    Attr createdOn: Datetime
+    @Searchable    
+    Attr updatedOn: Datetime
+}

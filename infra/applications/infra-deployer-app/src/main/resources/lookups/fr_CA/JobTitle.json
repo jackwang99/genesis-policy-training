@@ -1,0 +1,42 @@
+[
+  {
+    "code": "ACCOUNT_EXECUTIVE",
+    "defaultValue": "Compte executif"
+  },
+  {
+    "code": "ACCOUNT_MANAGER",
+    "defaultValue": "Gestionnaire de compte"
+  },
+  {
+    "code": "ACCOUNT_REPRESENT",
+    "defaultValue": "Représentant de compte"
+  },
+  {
+    "code": "ADMINISTRATOR",
+    "defaultValue": "Administrateur"
+  },
+  {
+    "code": "ANALYST",
+    "defaultValue": "Analyste"
+  },
+  {
+    "code": "BILLING_REPRESENT",
+    "defaultValue": "Représentant de facturation"
+  },
+  {
+    "code": "CLAIMS_REPRESENT",
+    "defaultValue": "Représentant des réclamations"
+  },
+  {
+    "code": "CUST_SERV_REPRESENT",
+    "defaultValue": "Représentant du service à la clientèle"
+  },
+  {
+    "code": "OTHER",
+    "defaultValue": "Autre"
+  },
+  {
+    "code": "UNKNOWN",
+    "defaultValue": "Inconnu"
+  }
+]

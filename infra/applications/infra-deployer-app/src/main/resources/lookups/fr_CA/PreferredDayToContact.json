@@ -1,0 +1,37 @@
+[
+  {
+    "code": "FRIDAY",
+    "defaultValue": "Vendredi",
+    "orderNo": "5"
+  },
+  {
+    "code": "MONDAY",
+    "orderNo": "1",
+    "defaultValue": "Lundi"
+  },
+  {
+    "code": "SATURDAY",
+    "orderNo": "6",
+    "defaultValue": "samedi"
+  },
+  {
+    "code": "SUNDAY",
+    "defaultValue": "dimanche",
+    "orderNo": "7"
+  },
+  {
+    "code": "THURSDAY",
+    "orderNo": "4",
+    "defaultValue": "Jeudi"
+  },
+  {
+    "code": "TUESDAY",
+    "orderNo": "2",
+    "defaultValue": "Mardi"
+  },
+  {
+    "code": "WEDNESDAY",
+    "orderNo": "3",
+    "defaultValue": "Mercredi"
+  }
+]

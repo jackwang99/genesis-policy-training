@@ -1,0 +1,32 @@
+[
+  {
+    "code": "UNKNOWN",
+    "orderNo": "1",    
+    "defaultValue": "Inconnu"
+  },
+  {
+    "code": "EXTERNAL",
+    "orderNo": "2",    
+    "defaultValue": "Externe"
+  },
+  {
+    "code": "WEBPORTAL",
+    "orderNo": "3",    
+    "defaultValue": "Portail Web"
+  },  
+  {
+    "code": "PUBLIC_RELATIONSHIPS",
+    "orderNo": "4",    
+    "defaultValue": "Relations publiques"
+  },
+  {
+    "code": "REFERRAL",
+    "orderNo": "5",    
+    "defaultValue": "Référence"
+  },
+  {
+    "code": "OTHER",
+    "orderNo": "6",    
+    "defaultValue": "Autre"
+  }  
+]

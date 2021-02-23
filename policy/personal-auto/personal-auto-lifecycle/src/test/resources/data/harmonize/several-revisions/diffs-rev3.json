@@ -1,0 +1,42 @@
+{
+  "operations": [
+    {
+      "diffs": [],
+      "operation": "createVersion",
+      "isAutomatic": false,
+      "_key": {
+        "revisionNo": 3,
+        "timestamp": "2018-12-01T12:00:09.000Z"
+      }
+    },
+    {
+      "diffs": [
+        {
+          "operationType": "changed",
+          "path": "vehicleBaseDetails//model",
+          "sourceValue": "X3",
+          "targetValue": "X4",
+          "readOnly": false
+        }
+      ],
+      "operation": "write",
+      "_key": {
+        "timestamp": "2018-12-01T12:00:10.000Z"
+      }
+    },
+    {
+      "diffs": [
+        {
+          "operationType": "added",
+          "path": "vehicleBaseDetails//make",
+          "sourceValue": "BMW",
+          "readOnly": false
+        }
+      ],
+      "operation": "write",
+      "_key": {
+        "timestamp": "2018-12-01T12:00:11.000Z"
+      }
+    }
+  ]
+}

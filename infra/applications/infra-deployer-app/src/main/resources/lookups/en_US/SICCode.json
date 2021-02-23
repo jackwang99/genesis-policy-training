@@ -1,0 +1,4572 @@
+[
+  {
+    "code": "0111",
+    "defaultValue": "wheat",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0112",
+    "defaultValue": "Rice",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0115",
+    "defaultValue": "Corn",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0116",
+    "defaultValue": "Soybeans",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0119",
+    "defaultValue": "Cash Grains, Nec",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0131",
+    "defaultValue": "Cotton",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0132",
+    "defaultValue": "Tobacco",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0133",
+    "defaultValue": "Sugarcane and Sugar Beets",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0134",
+    "defaultValue": "Irish Potatoes",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0139",
+    "defaultValue": "Field Crops, Except Cash Grain",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0161",
+    "defaultValue": "Vegetables and Melons",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0171",
+    "defaultValue": "Berry Crops",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0172",
+    "defaultValue": "Grapes",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0173",
+    "defaultValue": "Tree Nuts",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0174",
+    "defaultValue": "Citrus Fruits",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0175",
+    "defaultValue": "Deciduous Tree Fruits",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0179",
+    "defaultValue": "Fruits and Tree Nuts, Nec",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0181",
+    "defaultValue": "Ornamental Nursery Products",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0182",
+    "defaultValue": "Food Crops Grown Under Cover",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0191",
+    "defaultValue": "General Farms, Primarily Crop",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0211",
+    "defaultValue": "Beef Cattle Feedlots",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0212",
+    "defaultValue": "Beef Cattle, Except Feedlots",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0213",
+    "defaultValue": "Hogs",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0214",
+    "defaultValue": "Sheep and Goats",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0219",
+    "defaultValue": "General Livestock, Nec",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0241",
+    "defaultValue": "Dairy Farms",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0251",
+    "defaultValue": "Broiler, Fryer, and Roaster Chickens",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0252",
+    "defaultValue": "Chicken Eggs",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0253",
+    "defaultValue": "Turkeys and Turkey Eggs",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0254",
+    "defaultValue": "Poultry Hatcheries",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0259",
+    "defaultValue": "Poultry and Eggs, Nec",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0271",
+    "defaultValue": "Fur-bearing Animals and Rabbits",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0272",
+    "defaultValue": "Horses and Other Equines",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0273",
+    "defaultValue": "Animal Aquaculture",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0279",
+    "defaultValue": "Animal Specialties, Nec",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0291",
+    "defaultValue": "General Farms, Primarily animals",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0711",
+    "defaultValue": "Soil Preparation Services",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0721",
+    "defaultValue": "Crop Planting and Protection",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0722",
+    "defaultValue": "Crop Harvesting",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0723",
+    "defaultValue": "Crop Preparation Services For Market",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0724",
+    "defaultValue": "Cotton Ginning",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0741",
+    "defaultValue": "Veterinary Services For Livestock",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0742",
+    "defaultValue": "Veterinary Services, Specialties",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0751",
+    "defaultValue": "Livestock Services, Except Veterinary",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0752",
+    "defaultValue": "Animal Specialty Services",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0761",
+    "defaultValue": "Farm Labor Contractors",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0762",
+    "defaultValue": "Farm Management Services",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0781",
+    "defaultValue": "Landscape Counseling and Planning",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0782",
+    "defaultValue": "Lawn and Garden Services",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0783",
+    "defaultValue": "Ornamental Shrub and Tree Services",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0811",
+    "defaultValue": "Timber Tracts",
+    "parentLookupCode": "08"
+  },
+  {
+    "code": "0831",
+    "defaultValue": "Forest Products",
+    "parentLookupCode": "08"
+  },
+  {
+    "code": "0851",
+    "defaultValue": "Forestry Services",
+    "parentLookupCode": "08"
+  },
+  {
+    "code": "0912",
+    "defaultValue": "Finfish",
+    "parentLookupCode": "09"
+  },
+  {
+    "code": "0913",
+    "defaultValue": "Shellfish",
+    "parentLookupCode": "09"
+  },
+  {
+    "code": "0919",
+    "defaultValue": "Miscellaneous Marine Products",
+    "parentLookupCode": "09"
+  },
+  {
+    "code": "0921",
+    "defaultValue": "Fish Hatcheries and Preserves",
+    "parentLookupCode": "09"
+  },
+  {
+    "code": "0971",
+    "defaultValue": "Hunting, Trapping, Game Propagation",
+    "parentLookupCode": "09"
+  },
+  {
+    "code": "1011",
+    "defaultValue": "Iron Ores",
+    "parentLookupCode": "10"
+  },
+  {
+    "code": "1021",
+    "defaultValue": "Copper Ores",
+    "parentLookupCode": "10"
+  },
+  {
+    "code": "1031",
+    "defaultValue": "Lead and Zinc Ores",
+    "parentLookupCode": "10"
+  },
+  {
+    "code": "1041",
+    "defaultValue": "Gold Ores",
+    "parentLookupCode": "10"
+  },
+  {
+    "code": "1044",
+    "defaultValue": "Silver Ores",
+    "parentLookupCode": "10"
+  },
+  {
+    "code": "1061",
+    "defaultValue": "Ferroalloy Ores, Except Vanadium",
+    "parentLookupCode": "10"
+  },
+  {
+    "code": "1081",
+    "defaultValue": "Metal Mining Services",
+    "parentLookupCode": "10"
+  },
+  {
+    "code": "1094",
+    "defaultValue": "Uranium-radium-vanadium Ores",
+    "parentLookupCode": "10"
+  },
+  {
+    "code": "1099",
+    "defaultValue": "Metal Ores, Nec",
+    "parentLookupCode": "10"
+  },
+  {
+    "code": "1221",
+    "defaultValue": "Bituminous Coal and Lignite-surface Mining",
+    "parentLookupCode": "12"
+  },
+  {
+    "code": "1222",
+    "defaultValue": "Bituminous Coal-underground Mining",
+    "parentLookupCode": "12"
+  },
+  {
+    "code": "1231",
+    "defaultValue": "Anthracite Mining",
+    "parentLookupCode": "12"
+  },
+  {
+    "code": "1241",
+    "defaultValue": "Coal Mining Services",
+    "parentLookupCode": "12"
+  },
+  {
+    "code": "1311",
+    "defaultValue": "Crude Petroleum and Natural Gas",
+    "parentLookupCode": "13"
+  },
+  {
+    "code": "1321",
+    "defaultValue": "Natural Gas Liquids",
+    "parentLookupCode": "13"
+  },
+  {
+    "code": "1381",
+    "defaultValue": "Drilling Oil and Gas Wells",
+    "parentLookupCode": "13"
+  },
+  {
+    "code": "1382",
+    "defaultValue": "Oil and Gas Exploration Services",
+    "parentLookupCode": "13"
+  },
+  {
+    "code": "1389",
+    "defaultValue": "Oil and Gas Field Services, Nec",
+    "parentLookupCode": "13"
+  },
+  {
+    "code": "1411",
+    "defaultValue": "Dimension Stone",
+    "parentLookupCode": "14"
+  },
+  {
+    "code": "1422",
+    "defaultValue": "Crushed and Broken Limestone",
+    "parentLookupCode": "14"
+  },
+  {
+    "code": "1423",
+    "defaultValue": "Crushed and Broken Granite",
+    "parentLookupCode": "14"
+  },
+  {
+    "code": "1429",
+    "defaultValue": "Crushed and Broken Stone, Nec",
+    "parentLookupCode": "14"
+  },
+  {
+    "code": "1442",
+    "defaultValue": "Construction Sand and Gravel",
+    "parentLookupCode": "14"
+  },
+  {
+    "code": "1446",
+    "defaultValue": "Industrial Sand",
+    "parentLookupCode": "14"
+  },
+  {
+    "code": "1455",
+    "defaultValue": "Kaolin and Ball Clay",
+    "parentLookupCode": "14"
+  },
+  {
+    "code": "1459",
+    "defaultValue": "Clay and Related Minerals, Nec",
+    "parentLookupCode": "14"
+  },
+  {
+    "code": "1474",
+    "defaultValue": "Potash, Soda, and Borate Minerals",
+    "parentLookupCode": "14"
+  },
+  {
+    "code": "1475",
+    "defaultValue": "Phosphate Rock",
+    "parentLookupCode": "14"
+  },
+  {
+    "code": "1479",
+    "defaultValue": "Chemical and Fertilizer Mining",
+    "parentLookupCode": "14"
+  },
+  {
+    "code": "1481",
+    "defaultValue": "Nonmetallic Mineral Services",
+    "parentLookupCode": "14"
+  },
+  {
+    "code": "1499",
+    "defaultValue": "Miscellaneous Nonmetallic Mining",
+    "parentLookupCode": "14"
+  },
+  {
+    "code": "1521",
+    "defaultValue": "Single-family Housing Construction",
+    "parentLookupCode": "15"
+  },
+  {
+    "code": "1522",
+    "defaultValue": "Residential Construction, Nec",
+    "parentLookupCode": "15"
+  },
+  {
+    "code": "1531",
+    "defaultValue": "Operative Builders",
+    "parentLookupCode": "15"
+  },
+  {
+    "code": "1541",
+    "defaultValue": "Industrial Buildings and Warehouses",
+    "parentLookupCode": "15"
+  },
+  {
+    "code": "1542",
+    "defaultValue": "Nonresidential Construction, Nec",
+    "parentLookupCode": "15"
+  },
+  {
+    "code": "1611",
+    "defaultValue": "Highway and Street Construction",
+    "parentLookupCode": "16"
+  },
+  {
+    "code": "1622",
+    "defaultValue": "Bridge, Tunnel, and Elevated Highway",
+    "parentLookupCode": "16"
+  },
+  {
+    "code": "1623",
+    "defaultValue": "Water, Sewer, and Utility Lines",
+    "parentLookupCode": "16"
+  },
+  {
+    "code": "1629",
+    "defaultValue": "Heavy Construction, Nec",
+    "parentLookupCode": "16"
+  },
+  {
+    "code": "1711",
+    "defaultValue": "Plumbing, Heating, Air-conditioning",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1721",
+    "defaultValue": "Painting and Paper Hanging",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1731",
+    "defaultValue": "Electrical Work",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1741",
+    "defaultValue": "Masonry and Other Stonework",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1742",
+    "defaultValue": "Plastering, Drywall, and Insulation",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1743",
+    "defaultValue": "Terrazzo, Tile, Marble, Mosaic Work",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1751",
+    "defaultValue": "Carpentry Work",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1752",
+    "defaultValue": "Floor Laying and Floor Work, Nec",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1761",
+    "defaultValue": "Roofing, Siding, and Sheetmetal Work",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1771",
+    "defaultValue": "Concrete Work",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1781",
+    "defaultValue": "Water Well Drilling",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1791",
+    "defaultValue": "Structural Steel Erection",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1793",
+    "defaultValue": "Glass and Glazing Work",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1794",
+    "defaultValue": "Excavation Work",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1795",
+    "defaultValue": "Wrecking and Demolition Work",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1796",
+    "defaultValue": "Installing Building Equipment",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1799",
+    "defaultValue": "Special Trade Contractors, Nec",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "2011",
+    "defaultValue": "Meat Packing Plants",
+    "parentLookupCode": "20"
+  },
+  {
+    "code": "2013",
+    "defaultValue": "Sausages and Other Prepared Meats",
+    "parentLookupCode": "20"
+  },
+  {
+    "code": "2015",
+    "defaultValue": "Poultry Slaughtering and Processing",
+    "parentLookupCode": "20"
+  },
+  {
+    "code": "2021",
+    "defaultValue": "Creamery Butter",
+    "parentLookupCode": "20"
+  },
+  {
+    "code": "2022",
+    "defaultValue": "Cheese; Natural and Processed",
+    "parentLookupCode": "20"
+  },
+  {
+    "code": "2023",
+    "defaultValue": "Dry, Condensed, Evaporated Products",
+    "parentLookupCode": "20"
+  },
+  {
+    "code": "2024",
+    "defaultValue": "Ice Cream and Frozen Desserts",
+    "parentLookupCode": "20"
+  },
+  {
+    "code": "2026",
+    "defaultValue": "Fluid Milk",
+    "parentLookupCode": "20"
+  },
+  {
+    "code": "2032",
+    "defaultValue": "Canned Specialties",
+    "parentLookupCode": "20"
+  },
+  {
+    "code": "2111",
+    "defaultValue": "Cigarettes",
+    "parentLookupCode": "21"
+  },
+  {
+    "code": "2121",
+    "defaultValue": "Cigars",
+    "parentLookupCode": "21"
+  },
+  {
+    "code": "2131",
+    "defaultValue": "Chewing and Smoking Tobacco",
+    "parentLookupCode": "21"
+  },
+  {
+    "code": "2141",
+    "defaultValue": "Tobacco Stemming and Redrying",
+    "parentLookupCode": "21"
+  },
+  {
+    "code": "2211",
+    "defaultValue": "Broadwoven Fabric Mills, Cotton",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2221",
+    "defaultValue": "Broadwoven Fabric Mills, Manmade",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2231",
+    "defaultValue": "Broadwoven Fabric Mills, Wool",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2241",
+    "defaultValue": "Narrow Fabric Mills",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2251",
+    "defaultValue": "Women's Hosiery, Except Socks",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2252",
+    "defaultValue": "Hosiery, Nec",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2253",
+    "defaultValue": "Knit Outerwear Mills",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2254",
+    "defaultValue": "Knit Underwear Mills",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2257",
+    "defaultValue": "Weft Knit Fabric Mills",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2258",
+    "defaultValue": "Lace and Warp Knit Fabric Mills",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2259",
+    "defaultValue": "Knitting Mills, Nec",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2261",
+    "defaultValue": "Finishing Plants, Cotton",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2262",
+    "defaultValue": "Finishing Plants, Manmade",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2269",
+    "defaultValue": "Finishing Plants, Nec",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2273",
+    "defaultValue": "Carpets and Rugs",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2281",
+    "defaultValue": "Yarn Spinning Mills",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2282",
+    "defaultValue": "Throwing and Winding Mills",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2284",
+    "defaultValue": "Thread Mills",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2295",
+    "defaultValue": "Coated Fabrics, Not Rubberized",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2296",
+    "defaultValue": "Tire Cord and Fabrics",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2297",
+    "defaultValue": "Nonwoven Fabrics",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2298",
+    "defaultValue": "Cordage and Twine",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2299",
+    "defaultValue": "Textile Goods, Nec",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2311",
+    "defaultValue": "Men's and Boy's Suits and Coats",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2321",
+    "defaultValue": "Men's and Boy's Furnishings",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2322",
+    "defaultValue": "Men's and Boy's Underwear and Nightwear",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2323",
+    "defaultValue": "Men's and Boy's Neckwear",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2325",
+    "defaultValue": "Men's and Boy's Trousers and Slacks",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2326",
+    "defaultValue": "Men's and Boy's Work Clothing",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2329",
+    "defaultValue": "Men's and Boy's Clothing, Nec",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2331",
+    "defaultValue": "Women's and Misses' Blouses and Shirts",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2335",
+    "defaultValue": "Women's, Junior's, and Misses' Dresses",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2337",
+    "defaultValue": "Women's and Misses' Suits and Coats",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2339",
+    "defaultValue": "Women's and Misses' Outerwear, Nec",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2341",
+    "defaultValue": "Women's and Children's Underwear",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2342",
+    "defaultValue": "Bras, Girdles, and Allied Garments",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2353",
+    "defaultValue": "Hats, Caps, and Millinery",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2361",
+    "defaultValue": "Girl's and Children's Dresses, Blouses",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2369",
+    "defaultValue": "Girl's and Children's Outerwear, Nec",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2371",
+    "defaultValue": "Fur Goods",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2381",
+    "defaultValue": "Fabric Dress and Work Gloves",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2384",
+    "defaultValue": "Robes and Dressing Gowns",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2385",
+    "defaultValue": "Waterproof Outerwear",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2386",
+    "defaultValue": "Leather and Sheep-lined Clothing",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2387",
+    "defaultValue": "Apparel Belts",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2389",
+    "defaultValue": "Apparel and Accessories, Nec",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2391",
+    "defaultValue": "Curtains and Draperies",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2392",
+    "defaultValue": "Household Furnishings, Nec",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2393",
+    "defaultValue": "Textile Bags",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2394",
+    "defaultValue": "Canvas and Related Products",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2395",
+    "defaultValue": "Pleating and Stitching",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2396",
+    "defaultValue": "Automotive and Apparel Trimmings",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2397",
+    "defaultValue": "Schiffli Machine Embroideries",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2399",
+    "defaultValue": "Fabricated Textile Products, Nec",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2411",
+    "defaultValue": "Logging",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2421",
+    "defaultValue": "Sawmills and Planing Mills, General",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2426",
+    "defaultValue": "Hardwood Dimension and Flooring Mills",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2429",
+    "defaultValue": "Special Product Sawmills, Nec",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2431",
+    "defaultValue": "Millwork",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2434",
+    "defaultValue": "Wood Kitchen Cabinets",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2435",
+    "defaultValue": "Hardwood Veneer and Plywood",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2436",
+    "defaultValue": "Softwood Veneer and Plywood",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2439",
+    "defaultValue": "Structural Wood Members, Nec",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2441",
+    "defaultValue": "Nailed Wood Boxes and Shook",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2448",
+    "defaultValue": "Wood Pallets and Skids",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2449",
+    "defaultValue": "Wood Containers, Nec",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2451",
+    "defaultValue": "Mobile Homes",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2452",
+    "defaultValue": "Prefabricated Wood Buildings",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2491",
+    "defaultValue": "Wood Preserving",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2493",
+    "defaultValue": "Reconstituted Wood Products",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2499",
+    "defaultValue": "Wood Products, Nec",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2511",
+    "defaultValue": "Wood Household Furniture",
+    "parentLookupCode": "25"
+  },
+  {
+    "code": "2512",
+    "defaultValue": "Upholstered Household Furniture",
+    "parentLookupCode": "25"
+  },
+  {
+    "code": "2514",
+    "defaultValue": "Metal Household Furniture",
+    "parentLookupCode": "25"
+  },
+  {
+    "code": "2515",
+    "defaultValue": "Mattresses and Bedsprings",
+    "parentLookupCode": "25"
+  },
+  {
+    "code": "2517",
+    "defaultValue": "Wood Television and Radio Cabinets",
+    "parentLookupCode": "25"
+  },
+  {
+    "code": "2519",
+    "defaultValue": "Household Furniture, Nec",
+    "parentLookupCode": "25"
+  },
+  {
+    "code": "2521",
+    "defaultValue": "Wood Office Furniture",
+    "parentLookupCode": "25"
+  },
+  {
+    "code": "2522",
+    "defaultValue": "Office Furniture, Except Wood",
+    "parentLookupCode": "25"
+  },
+  {
+    "code": "2531",
+    "defaultValue": "Public Building and Related Furniture",
+    "parentLookupCode": "25"
+  },
+  {
+    "code": "2541",
+    "defaultValue": "Wood Partitions and Fixtures",
+    "parentLookupCode": "25"
+  },
+  {
+    "code": "2542",
+    "defaultValue": "Partitions and Fixtures, Except Wood",
+    "parentLookupCode": "25"
+  },
+  {
+    "code": "2591",
+    "defaultValue": "Drapery Hardware and Blinds and Shades",
+    "parentLookupCode": "25"
+  },
+  {
+    "code": "2599",
+    "defaultValue": "Furniture and Fixtures, Nec",
+    "parentLookupCode": "25"
+  },
+  {
+    "code": "2611",
+    "defaultValue": "Pulp Mills",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2621",
+    "defaultValue": "Paper Mills",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2631",
+    "defaultValue": "Paperboard Mills",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2652",
+    "defaultValue": "Setup Paperboard Boxes",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2653",
+    "defaultValue": "Corrugated and Solid Fiber Boxes",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2655",
+    "defaultValue": "Fiber Cans, Drums, and Similar Products",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2656",
+    "defaultValue": "Sanitary Food Containers",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2657",
+    "defaultValue": "Folding Paperboard Boxes",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2671",
+    "defaultValue": "Paper; Coated and Laminated Packaging",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2672",
+    "defaultValue": "Paper; Coated and Laminated, Nec",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2673",
+    "defaultValue": "Bags: Plastic, Laminated, and Coated",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2674",
+    "defaultValue": "Bags: Uncoated Paper and Multiwall",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2675",
+    "defaultValue": "Die-cut Paper and Board",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2676",
+    "defaultValue": "Sanitary Paper Products",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2677",
+    "defaultValue": "Envelopes",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2678",
+    "defaultValue": "Stationery Products",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2679",
+    "defaultValue": "Converted Paper Products, Nec",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2711",
+    "defaultValue": "Newspapers",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2721",
+    "defaultValue": "Periodicals",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2731",
+    "defaultValue": "Book Publishing",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2732",
+    "defaultValue": "Book Printing",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2741",
+    "defaultValue": "Miscellaneous Publishing",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2752",
+    "defaultValue": "Commercial Printing, Lithographic",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2754",
+    "defaultValue": "Commercial Printing, Gravure",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2759",
+    "defaultValue": "Commercial Printing, Nec",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2761",
+    "defaultValue": "Manifold Business Forms",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2771",
+    "defaultValue": "Greeting Cards",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2782",
+    "defaultValue": "Blankbooks and Looseleaf Binders",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2789",
+    "defaultValue": "Bookbinding and Related Work",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2791",
+    "defaultValue": "Typesetting",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2796",
+    "defaultValue": "Platemaking Services",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2812",
+    "defaultValue": "Alkalies and Chlorine",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2813",
+    "defaultValue": "Industrial Gases",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2816",
+    "defaultValue": "Inorganic Pigments",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2819",
+    "defaultValue": "Industrial Inorganic Chemicals, Nec",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2821",
+    "defaultValue": "Plastics Materials and Resins",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2822",
+    "defaultValue": "Synthetic Rubber",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2823",
+    "defaultValue": "Cellulosic Manmade Fibers",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2824",
+    "defaultValue": "Organic Fibers, Noncellulosic",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2833",
+    "defaultValue": "Medicinals and Botanicals",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2834",
+    "defaultValue": "Pharmaceutical Preparations",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2835",
+    "defaultValue": "Diagnostic Substances",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2836",
+    "defaultValue": "Biological Products, Except Diagnostic",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2841",
+    "defaultValue": "Soap and Other Detergents",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2842",
+    "defaultValue": "Polishes and Sanitation Goods",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2843",
+    "defaultValue": "Surface Active Agents",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2844",
+    "defaultValue": "Toilet Preparations",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2851",
+    "defaultValue": "Paints and Allied Products",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2861",
+    "defaultValue": "Gum and Wood Chemicals",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2865",
+    "defaultValue": "Cyclic Crudes and Intermediates",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2869",
+    "defaultValue": "Industrial Organic Chemicals, Nec",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2873",
+    "defaultValue": "Nitrogenous Fertilizers",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2874",
+    "defaultValue": "Phosphatic Fertilizers",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2875",
+    "defaultValue": "Fertilizers, Mixing Only",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2879",
+    "defaultValue": "Agricultural Chemicals, Nec",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2891",
+    "defaultValue": "Adhesives and Sealants",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2892",
+    "defaultValue": "Explosives",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2893",
+    "defaultValue": "Printing Ink",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2895",
+    "defaultValue": "Carbon Black",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2899",
+    "defaultValue": "Chemical Preparations, Nec",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2911",
+    "defaultValue": "Petroleum Refining",
+    "parentLookupCode": "29"
+  },
+  {
+    "code": "2951",
+    "defaultValue": "Asphalt Paving Mixtures and Blocks",
+    "parentLookupCode": "29"
+  },
+  {
+    "code": "2952",
+    "defaultValue": "Asphalt Felts and Coatings",
+    "parentLookupCode": "29"
+  },
+  {
+    "code": "2992",
+    "defaultValue": "Lubricating Oils and Greases",
+    "parentLookupCode": "29"
+  },
+  {
+    "code": "2999",
+    "defaultValue": "Petroleum and Coal Products, Nec",
+    "parentLookupCode": "29"
+  },
+  {
+    "code": "3011",
+    "defaultValue": "Tires and Inner Tubes",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3021",
+    "defaultValue": "Rubber and Plastics Footwear",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3052",
+    "defaultValue": "Rubber and Plastics Hose and Beltings",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3053",
+    "defaultValue": "Gaskets; Packing and Sealing Devices",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3061",
+    "defaultValue": "Mechanical Rubber Goods",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3069",
+    "defaultValue": "Fabricated Rubber Products, Nec",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3081",
+    "defaultValue": "Unsupported Plastics Film and Sheet",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3082",
+    "defaultValue": "Unsupported Plastics Profile Shapes",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3083",
+    "defaultValue": "Laminated Plastics Plate and Sheet",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3084",
+    "defaultValue": "Plastics Pipe",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3085",
+    "defaultValue": "Plastics Bottles",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3086",
+    "defaultValue": "Plastics Foam Products",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3087",
+    "defaultValue": "Custom Compound Purchased Resins",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3088",
+    "defaultValue": "Plastics Plumbing Fixtures",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3089",
+    "defaultValue": "Plastics Products, Nec",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3111",
+    "defaultValue": "Leather Tanning and Finishing",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "3131",
+    "defaultValue": "Footwear Cut Stock",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "3142",
+    "defaultValue": "House Slippers",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "3143",
+    "defaultValue": "Men's Footwear, Except athletic",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "3144",
+    "defaultValue": "Women's Footwear, Except athletic",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "3149",
+    "defaultValue": "Footwear, Except Rubber, Nec",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "3151",
+    "defaultValue": "Leather Gloves and Mittens",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "3161",
+    "defaultValue": "Luggage",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "3171",
+    "defaultValue": "Women's Handbags and Purses",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "3172",
+    "defaultValue": "Personal Leather Goods, Nec",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "3199",
+    "defaultValue": "Leather Goods, Nec",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "3211",
+    "defaultValue": "Flat Glass",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3221",
+    "defaultValue": "Glass Containers",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3229",
+    "defaultValue": "Pressed and Blown Glass, Nec",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3231",
+    "defaultValue": "Products of Purchased Glass",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3241",
+    "defaultValue": "Cement, Hydraulic",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3251",
+    "defaultValue": "Brick and Structural Clay Tile",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3253",
+    "defaultValue": "Ceramic Wall and Floor Tile",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3255",
+    "defaultValue": "Clay Refractories",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3259",
+    "defaultValue": "Structural Clay Products, Nec",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3261",
+    "defaultValue": "Vitreous Plumbing Fixtures",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3262",
+    "defaultValue": "Vitreous China Table and Kitchenware",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3263",
+    "defaultValue": "Semivitreous Table and Kitchenware",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3264",
+    "defaultValue": "Porcelain Electrical Supplies",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3269",
+    "defaultValue": "Pottery Products, Nec",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3271",
+    "defaultValue": "Concrete Block and Brick",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3272",
+    "defaultValue": "Concrete Products, Nec",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3273",
+    "defaultValue": "Ready-mixed Concrete",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3274",
+    "defaultValue": "Lime",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3275",
+    "defaultValue": "Gypsum Products",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3281",
+    "defaultValue": "Cut Stone and Stone Products",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3291",
+    "defaultValue": "Abrasive Products",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3292",
+    "defaultValue": "Asbestos Products",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3295",
+    "defaultValue": "Minerals, Ground or Treated",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3296",
+    "defaultValue": "Mineral Wool",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3297",
+    "defaultValue": "Nonclay Refractories",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3299",
+    "defaultValue": "Nonmetallic Mineral Products,",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3312",
+    "defaultValue": "Blast Furnaces and Steel Mills",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3313",
+    "defaultValue": "Electrometallurgical Products",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3315",
+    "defaultValue": "Steel Wire and Related Products",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3316",
+    "defaultValue": "Cold Finishing of Steel Shapes",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3317",
+    "defaultValue": "Steel Pipe and Tubes",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3321",
+    "defaultValue": "Gray and Ductile Iron Foundries",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3322",
+    "defaultValue": "Malleable Iron Foundries",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3324",
+    "defaultValue": "Steel Investment Foundries",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3325",
+    "defaultValue": "Steel Foundries, Nec",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3331",
+    "defaultValue": "Primary Copper",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3334",
+    "defaultValue": "Primary Aluminum",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3339",
+    "defaultValue": "Primary Nonferrous Metals, Nec",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3341",
+    "defaultValue": "Secondary Nonferrous Metals",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3351",
+    "defaultValue": "Copper Rolling and Drawing",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3353",
+    "defaultValue": "Aluminum Sheet, Plate, and Foil",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3354",
+    "defaultValue": "Aluminum Extruded Products",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3355",
+    "defaultValue": "Aluminum Rolling and Drawing, Nec",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3356",
+    "defaultValue": "Nonferrous Rolling and Drawing, Nec",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3357",
+    "defaultValue": "Nonferrous Wiredrawing and Insulating",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3363",
+    "defaultValue": "Aluminum Die-castings",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3364",
+    "defaultValue": "Nonferrous Die-castings Except Aluminum",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3365",
+    "defaultValue": "Aluminum Foundries",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3366",
+    "defaultValue": "Copper Foundries",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3369",
+    "defaultValue": "Nonferrous Foundries, Nec",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3398",
+    "defaultValue": "Metal Heat Treating",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3399",
+    "defaultValue": "Primary Metal Products",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3411",
+    "defaultValue": "Metal Cans",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3412",
+    "defaultValue": "Metal Barrels, Drums, and Pails",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3421",
+    "defaultValue": "Cutlery",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3423",
+    "defaultValue": "Hand and Edge Tools, Nec",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3425",
+    "defaultValue": "Saw Blades and Handsaws",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3429",
+    "defaultValue": "Hardware, Nec",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3431",
+    "defaultValue": "Metal Sanitary Ware",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3432",
+    "defaultValue": "Plumbing Fixture Fittings and Trim",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3433",
+    "defaultValue": "Heating Equipment, Except Electric",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3441",
+    "defaultValue": "Fabricated Structural Metal",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3442",
+    "defaultValue": "Metal Doors, Sash, and Trim",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3443",
+    "defaultValue": "Fabricated Plate Work (boiler Shop)",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3444",
+    "defaultValue": "Sheet Metalwork",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3446",
+    "defaultValue": "Architectural Metalwork",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3448",
+    "defaultValue": "Prefabricated Metal Buildings",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3449",
+    "defaultValue": "Miscellaneous Metalwork",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3451",
+    "defaultValue": "Screw Machine Products",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3452",
+    "defaultValue": "Bolts, Nuts, Rivets, and Washers",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3462",
+    "defaultValue": "Iron and Steel Forgings",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3463",
+    "defaultValue": "Nonferrous Forgings",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3465",
+    "defaultValue": "Automotive Stampings",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3466",
+    "defaultValue": "Crowns and Closures",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3469",
+    "defaultValue": "Metal Stampings, Nec",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3471",
+    "defaultValue": "Plating and Polishing",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3479",
+    "defaultValue": "Metal Coating and Allied Services",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3482",
+    "defaultValue": "Small Arms Ammunition",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3483",
+    "defaultValue": "Ammunition, Except For Small Arms, Nec",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3484",
+    "defaultValue": "Small Arms",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3489",
+    "defaultValue": "Ordnance and Accessories, Nec",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3491",
+    "defaultValue": "Industrial Valves",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3492",
+    "defaultValue": "Fluid Power Valves and Hose Fittings",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3493",
+    "defaultValue": "Steel Springs, Except Wire",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3511",
+    "defaultValue": "Turbines and Turbine Generator Sets",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3519",
+    "defaultValue": "Internal Combustion Engines, Nec",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3523",
+    "defaultValue": "Farm Machinery and Equipment",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3524",
+    "defaultValue": "Lawn and Garden Equipment",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3531",
+    "defaultValue": "Construction Machinery",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3532",
+    "defaultValue": "Mining Machinery",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3533",
+    "defaultValue": "Oil and Gas Field Machinery",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3534",
+    "defaultValue": "Elevators and Moving Stairways",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3535",
+    "defaultValue": "Conveyors and Conveying Equipment",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3536",
+    "defaultValue": "Hoists, Cranes, and Monorails",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3537",
+    "defaultValue": "Industrial Trucks and Tractors",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3541",
+    "defaultValue": "Machine Tools, Metal Cutting Type",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3542",
+    "defaultValue": "Machine Tools, Metal Forming Type",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3543",
+    "defaultValue": "Industrial Patterns",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3544",
+    "defaultValue": "Special Dies, Tools, Jigs, and Fixtures",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3545",
+    "defaultValue": "Machine Tool Accessories",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3546",
+    "defaultValue": "Power-driven Handtools",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3547",
+    "defaultValue": "Rolling Mill Machinery",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3548",
+    "defaultValue": "Welding Apparatus",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3549",
+    "defaultValue": "Metalworking Machinery, Nec",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3552",
+    "defaultValue": "Textile Machinery",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3553",
+    "defaultValue": "Woodworking Machinery",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3554",
+    "defaultValue": "Paper Industries Machinery",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3555",
+    "defaultValue": "Printing Trades Machinery",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3556",
+    "defaultValue": "Food Products Machinery",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3612",
+    "defaultValue": "Power, Distribution and Specialty Transformers",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3613",
+    "defaultValue": "Switchgear and Switchboard Apparatus",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3621",
+    "defaultValue": "Motors and Generators",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3624",
+    "defaultValue": "Carbon and Graphite Products",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3625",
+    "defaultValue": "Relays and Industrial Controls",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3629",
+    "defaultValue": "Electrical Industrial Apparatus",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3631",
+    "defaultValue": "Household Cooking Equipment",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3632",
+    "defaultValue": "Household Refrigerators and Freezers",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3633",
+    "defaultValue": "Household Laundry Equipment",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3634",
+    "defaultValue": "Electric Housewares and Fans",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3635",
+    "defaultValue": "Household Vacuum Cleaners",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3639",
+    "defaultValue": "Household Appliances, Nec",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3641",
+    "defaultValue": "Electric Lamps",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3643",
+    "defaultValue": "Current-carrying Wiring Devices",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3644",
+    "defaultValue": "Noncurrent-carrying Wiring Devices",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3645",
+    "defaultValue": "Residential Lighting Fixtures",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3646",
+    "defaultValue": "Commercial Lighting Fixtures",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3647",
+    "defaultValue": "Vehicular Lighting Equipment",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3648",
+    "defaultValue": "Lighting Equipment, Nec",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3651",
+    "defaultValue": "Household Audio and Video Equipment",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3652",
+    "defaultValue": "Prerecorded Records and Tapes",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3661",
+    "defaultValue": "Telephone and Telegraph Apparatus",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3663",
+    "defaultValue": "Radio and T.v. Communications Equipment",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3669",
+    "defaultValue": "Communications Equipment, Nec",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3671",
+    "defaultValue": "Electron Tubes",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3672",
+    "defaultValue": "Printed Circuit Boards",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3674",
+    "defaultValue": "Semiconductors and Related Devices",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3675",
+    "defaultValue": "Electronic Capacitors",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3676",
+    "defaultValue": "Electronic Resistors",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3677",
+    "defaultValue": "Electronic Coils and Transformers",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3678",
+    "defaultValue": "Electronic Connectors",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3679",
+    "defaultValue": "Electronic Components, Nec",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3691",
+    "defaultValue": "Storage Batteries",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3692",
+    "defaultValue": "Primary Batteries, Dry and Wet",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3694",
+    "defaultValue": "Engine Electrical Equipment",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3711",
+    "defaultValue": "Motor Vehicles and Car Bodies",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3713",
+    "defaultValue": "Truck and Bus Bodies",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3714",
+    "defaultValue": "Motor Vehicle Parts and Accessories",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3715",
+    "defaultValue": "Truck Trailers",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3716",
+    "defaultValue": "Motor Homes",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3721",
+    "defaultValue": "Aircraft",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3724",
+    "defaultValue": "Aircraft Engines and Engine Parts",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3728",
+    "defaultValue": "Aircraft Parts and Equipment, Nec",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3731",
+    "defaultValue": "Shipbuilding and Repairing",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3732",
+    "defaultValue": "Boatbuilding and Repairing",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3743",
+    "defaultValue": "Railroad Equipment",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3751",
+    "defaultValue": "Motorcycles, Bicycles, and Parts",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3761",
+    "defaultValue": "Guided Missiles and Space Vehicles",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3764",
+    "defaultValue": "Space Propulsion Units and Parts",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3769",
+    "defaultValue": "Space Vehicle Equipment, Nec",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3792",
+    "defaultValue": "Travel Trailers and Campers",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3795",
+    "defaultValue": "Tanks and Tank Components",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3799",
+    "defaultValue": "Transportation Equipment, Nec",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3812",
+    "defaultValue": "Search and Navigation Equipment",
+    "parentLookupCode": "38"
+  },
+  {
+    "code": "3821",
+    "defaultValue": "Laboratory Apparatus and Furniture",
+    "parentLookupCode": "38"
+  },
+  {
+    "code": "3822",
+    "defaultValue": "Environmental Controls",
+    "parentLookupCode": "38"
+  },
+  {
+    "code": "3823",
+    "defaultValue": "Process Control Instruments",
+    "parentLookupCode": "38"
+  },
+  {
+    "code": "3824",
+    "defaultValue": "Fluid Meters and Counting Devices",
+    "parentLookupCode": "38"
+  },
+  {
+    "code": "3825",
+    "defaultValue": "Instruments To Measure Electricity",
+    "parentLookupCode": "38"
+  },
+  {
+    "code": "3826",
+    "defaultValue": "Analytical Instruments",
+    "parentLookupCode": "38"
+  },
+  {
+    "code": "3827",
+    "defaultValue": "Optical Instruments and Lenses",
+    "parentLookupCode": "38"
+  },
+  {
+    "code": "3829",
+    "defaultValue": "Measuring and Controlling Devices, Nec",
+    "parentLookupCode": "38"
+  },
+  {
+    "code": "3841",
+    "defaultValue": "Surgical and Medical Instruments",
+    "parentLookupCode": "38"
+  },
+  {
+    "code": "3842",
+    "defaultValue": "Surgical Appliances and Supplies",
+    "parentLookupCode": "38"
+  },
+  {
+    "code": "3843",
+    "defaultValue": "Dental Equipment and Supplies",
+    "parentLookupCode": "38"
+  },
+  {
+    "code": "3844",
+    "defaultValue": "X-ray Apparatus and Tubes",
+    "parentLookupCode": "38"
+  },
+  {
+    "code": "3911",
+    "defaultValue": "Jewelry, Precious Metal",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3914",
+    "defaultValue": "Silverware and Plated Ware",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3915",
+    "defaultValue": "Jewelers' Materials and Lapidary Work",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3931",
+    "defaultValue": "Musical Instruments",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3942",
+    "defaultValue": "Dolls and Stuffed Toys",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3944",
+    "defaultValue": "Games, Toys, and Children's Vehicles",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3949",
+    "defaultValue": "Sporting and athletic Goods, Nec",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3951",
+    "defaultValue": "Pens and Mechanical Pencils",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3952",
+    "defaultValue": "Lead Pencils and Art Goods",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3953",
+    "defaultValue": "Marking Devices",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3955",
+    "defaultValue": "Carbon Paper and Inked Ribbons",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3961",
+    "defaultValue": "Costume Jewelry",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3965",
+    "defaultValue": "Fasteners, Buttons, Needles, and Pins",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3991",
+    "defaultValue": "Brooms and Brushes",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3993",
+    "defaultValue": "Signs and Advertising Specialties",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3995",
+    "defaultValue": "Burial Caskets",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3996",
+    "defaultValue": "Hard Surface Floor Coverings, Nec",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3999",
+    "defaultValue": "Manufacturing Industries, Nec",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "4011",
+    "defaultValue": "Railroads, Line-haul Operating",
+    "parentLookupCode": "40"
+  },
+  {
+    "code": "4013",
+    "defaultValue": "Switching and Terminal Services",
+    "parentLookupCode": "40"
+  },
+  {
+    "code": "4111",
+    "defaultValue": "Local and Suburban Transit",
+    "parentLookupCode": "41"
+  },
+  {
+    "code": "4119",
+    "defaultValue": "Local Passenger Transportation, Nec",
+    "parentLookupCode": "41"
+  },
+  {
+    "code": "4121",
+    "defaultValue": "Taxicabs",
+    "parentLookupCode": "41"
+  },
+  {
+    "code": "4131",
+    "defaultValue": "Intercity and Rural Bus Transportation",
+    "parentLookupCode": "41"
+  },
+  {
+    "code": "4141",
+    "defaultValue": "Local Bus Charter Service",
+    "parentLookupCode": "41"
+  },
+  {
+    "code": "4142",
+    "defaultValue": "Bus Charter Service, Except Local",
+    "parentLookupCode": "41"
+  },
+  {
+    "code": "4151",
+    "defaultValue": "School Buses",
+    "parentLookupCode": "41"
+  },
+  {
+    "code": "4173",
+    "defaultValue": "Bus Terminal and Service Facilities",
+    "parentLookupCode": "41"
+  },
+  {
+    "code": "4212",
+    "defaultValue": "Local Trucking, Without Storage",
+    "parentLookupCode": "42"
+  },
+  {
+    "code": "4213",
+    "defaultValue": "Trucking, Except Local",
+    "parentLookupCode": "42"
+  },
+  {
+    "code": "4214",
+    "defaultValue": "Local Trucking With Storage",
+    "parentLookupCode": "42"
+  },
+  {
+    "code": "4215",
+    "defaultValue": "Courier Services, Except By Air",
+    "parentLookupCode": "42"
+  },
+  {
+    "code": "4221",
+    "defaultValue": "Farm Product Warehousing and Storage",
+    "parentLookupCode": "42"
+  },
+  {
+    "code": "4222",
+    "defaultValue": "Refrigerated Warehousing and Storage",
+    "parentLookupCode": "42"
+  },
+  {
+    "code": "4225",
+    "defaultValue": "General Warehousing and Storage",
+    "parentLookupCode": "42"
+  },
+  {
+    "code": "4226",
+    "defaultValue": "Special Warehousing and Storage, Nec",
+    "parentLookupCode": "42"
+  },
+  {
+    "code": "4231",
+    "defaultValue": "Trucking Terminal Facilities",
+    "parentLookupCode": "42"
+  },
+  {
+    "code": "4311",
+    "defaultValue": "U.S. Postal Service",
+    "parentLookupCode": "43"
+  },
+  {
+    "code": "4412",
+    "defaultValue": "Deep Sea Foreign Transportation of Freight",
+    "parentLookupCode": "44"
+  },
+  {
+    "code": "4424",
+    "defaultValue": "Deep Sea Domestic Transportation of Freight",
+    "parentLookupCode": "44"
+  },
+  {
+    "code": "4432",
+    "defaultValue": "Freight Transportation On The Great Lakes",
+    "parentLookupCode": "44"
+  },
+  {
+    "code": "4449",
+    "defaultValue": "Water Transportation of Freight",
+    "parentLookupCode": "44"
+  },
+  {
+    "code": "4481",
+    "defaultValue": "Deep Sea Passenger Transportation, Except Ferry",
+    "parentLookupCode": "44"
+  },
+  {
+    "code": "4482",
+    "defaultValue": "Ferries",
+    "parentLookupCode": "44"
+  },
+  {
+    "code": "4489",
+    "defaultValue": "Water Passenger Transportation",
+    "parentLookupCode": "44"
+  },
+  {
+    "code": "4491",
+    "defaultValue": "Marine Cargo Handling",
+    "parentLookupCode": "44"
+  },
+  {
+    "code": "4492",
+    "defaultValue": "Towing and Tugboat Service",
+    "parentLookupCode": "44"
+  },
+  {
+    "code": "4493",
+    "defaultValue": "Marinas",
+    "parentLookupCode": "44"
+  },
+  {
+    "code": "4499",
+    "defaultValue": "Water Transportation Services, Nec",
+    "parentLookupCode": "44"
+  },
+  {
+    "code": "4512",
+    "defaultValue": "Air Transportation, Scheduled",
+    "parentLookupCode": "45"
+  },
+  {
+    "code": "4513",
+    "defaultValue": "Air Courier Services",
+    "parentLookupCode": "45"
+  },
+  {
+    "code": "4522",
+    "defaultValue": "Air Transportation, Nonscheduled",
+    "parentLookupCode": "45"
+  },
+  {
+    "code": "4581",
+    "defaultValue": "Airports, Flying Fields, and Services",
+    "parentLookupCode": "45"
+  },
+  {
+    "code": "4612",
+    "defaultValue": "Crude Petroleum Pipelines",
+    "parentLookupCode": "46"
+  },
+  {
+    "code": "4613",
+    "defaultValue": "Refined Petroleum Pipelines",
+    "parentLookupCode": "46"
+  },
+  {
+    "code": "4619",
+    "defaultValue": "Pipelines, Nec",
+    "parentLookupCode": "46"
+  },
+  {
+    "code": "4724",
+    "defaultValue": "Travel Agencies",
+    "parentLookupCode": "47"
+  },
+  {
+    "code": "4725",
+    "defaultValue": "Tour Operators",
+    "parentLookupCode": "47"
+  },
+  {
+    "code": "4729",
+    "defaultValue": "Passenger Transportation Arrangement",
+    "parentLookupCode": "47"
+  },
+  {
+    "code": "4731",
+    "defaultValue": "Freight Transportation Arrangement",
+    "parentLookupCode": "47"
+  },
+  {
+    "code": "4741",
+    "defaultValue": "Rental of Railroad Cars",
+    "parentLookupCode": "47"
+  },
+  {
+    "code": "4783",
+    "defaultValue": "Packing and Crating",
+    "parentLookupCode": "47"
+  },
+  {
+    "code": "4785",
+    "defaultValue": "Inspection and Fixed Facilities",
+    "parentLookupCode": "47"
+  },
+  {
+    "code": "4789",
+    "defaultValue": "Transportation Services, Nec",
+    "parentLookupCode": "47"
+  },
+  {
+    "code": "4812",
+    "defaultValue": "Radiotelephone Communication",
+    "parentLookupCode": "48"
+  },
+  {
+    "code": "4813",
+    "defaultValue": "Telephone Communication, Except Radio",
+    "parentLookupCode": "48"
+  },
+  {
+    "code": "4822",
+    "defaultValue": "Telegraph and Other Communications",
+    "parentLookupCode": "48"
+  },
+  {
+    "code": "4832",
+    "defaultValue": "Radio Broadcasting Stations",
+    "parentLookupCode": "48"
+  },
+  {
+    "code": "4833",
+    "defaultValue": "Television Broadcasting Stations",
+    "parentLookupCode": "48"
+  },
+  {
+    "code": "4841",
+    "defaultValue": "Cable and Other Pay Television Services",
+    "parentLookupCode": "48"
+  },
+  {
+    "code": "4899",
+    "defaultValue": "Communication Services, Nec",
+    "parentLookupCode": "48"
+  },
+  {
+    "code": "4911",
+    "defaultValue": "Electric Services",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4922",
+    "defaultValue": "Natural Gas Transmission",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4923",
+    "defaultValue": "Gas Transmission and Distribution",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4924",
+    "defaultValue": "Natural Gas Distribution",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4925",
+    "defaultValue": "Gas Production and/or Distribution",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4931",
+    "defaultValue": "Electric and Other Services Combined",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4932",
+    "defaultValue": "Gas and Other Services Combined",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4939",
+    "defaultValue": "Combination Utilities, Nec",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4941",
+    "defaultValue": "Water Supply",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4952",
+    "defaultValue": "Sewerage Systems",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4953",
+    "defaultValue": "Refuse Systems",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4959",
+    "defaultValue": "Sanitary Services, Nec",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4961",
+    "defaultValue": "Steam and Air-conditioning Supply",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4971",
+    "defaultValue": "Irrigation Systems",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "5012",
+    "defaultValue": "Automobiles and Other Motor Vehicles",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5013",
+    "defaultValue": "Motor Vehicle Supplies and New Parts",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5014",
+    "defaultValue": "Tires and Tubes",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5015",
+    "defaultValue": "Motor Vehicle Parts, Used",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5021",
+    "defaultValue": "Furniture",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5023",
+    "defaultValue": "Homefurnishings",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5031",
+    "defaultValue": "Lumber, Plywood, and Millwork",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5032",
+    "defaultValue": "Brick, Stone, and Related Material",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5033",
+    "defaultValue": "Roofing, Siding, and Insulation",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5039",
+    "defaultValue": "Construction Materials, Nec",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5043",
+    "defaultValue": "Photographic Equipment and Supplies",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5044",
+    "defaultValue": "Office Equipment",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5045",
+    "defaultValue": "Computers, Peripherals, and Software",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5046",
+    "defaultValue": "Commercial Equipment, Nec",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5047",
+    "defaultValue": "Medical and Hospital Equipment",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5048",
+    "defaultValue": "Ophthalmic Goods",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5049",
+    "defaultValue": "Professional Equipment, Nec",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5051",
+    "defaultValue": "Metals Service Centers and Offices",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5052",
+    "defaultValue": "Coal and Other Minerals and Ores",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5063",
+    "defaultValue": "Electrical Apparatus and Equipment",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5064",
+    "defaultValue": "Electrical Appliances, Television and Radio",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5065",
+    "defaultValue": "Electronic Parts and Equipment, Nec",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5072",
+    "defaultValue": "Hardware",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5074",
+    "defaultValue": "Plumbing and Hydronic Heating Supplies",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5075",
+    "defaultValue": "Warm Air Heating and Air Conditioning",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5111",
+    "defaultValue": "Printing and Writing Paper",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5112",
+    "defaultValue": "Stationery and Office Supplies",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5113",
+    "defaultValue": "Industrial and Personal Service Paper",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5122",
+    "defaultValue": "Drugs, Proprietaries, and Sundries",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5131",
+    "defaultValue": "Piece Goods and Notions",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5136",
+    "defaultValue": "Men's and Boy's Clothing",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5137",
+    "defaultValue": "Women's and Children's Clothing",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5139",
+    "defaultValue": "Footwear",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5141",
+    "defaultValue": "Groceries, General Line",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5142",
+    "defaultValue": "Packaged Frozen Goods",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5143",
+    "defaultValue": "Dairy Products, Except Dried or Canned",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5144",
+    "defaultValue": "Poultry and Poultry Products",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5145",
+    "defaultValue": "Confectionery",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5146",
+    "defaultValue": "Fish and Seafoods",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5147",
+    "defaultValue": "Meats and Meat Products",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5148",
+    "defaultValue": "Fresh Fruits and Vegetables",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5149",
+    "defaultValue": "Groceries and Related Products, Nec",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5153",
+    "defaultValue": "Grain and Field Beans",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5154",
+    "defaultValue": "Livestock",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5159",
+    "defaultValue": "Farm-product Raw Materials, Nec",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5162",
+    "defaultValue": "Plastics Materials and Basic Shapes",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5169",
+    "defaultValue": "Chemicals and Allied Products, Nec",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5171",
+    "defaultValue": "Petroleum Bulk Stations and Terminals",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5172",
+    "defaultValue": "Petroleum Products, Nec",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5181",
+    "defaultValue": "Beer and Ale",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5182",
+    "defaultValue": "Wine and Distilled Beverages",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5191",
+    "defaultValue": "Farm Supplies",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5192",
+    "defaultValue": "Books, Periodicals, and Newspapers",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5193",
+    "defaultValue": "Flowers and Florists Supplies",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5194",
+    "defaultValue": "Tobacco and Tobacco Products",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5198",
+    "defaultValue": "Paints, Varnishes, and Supplies",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5199",
+    "defaultValue": "Nondurable Goods, Nec",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5211",
+    "defaultValue": "Lumber and Other Building Materials",
+    "parentLookupCode": "52"
+  },
+  {
+    "code": "5231",
+    "defaultValue": "Paint, Glass, and Wallpaper Stores",
+    "parentLookupCode": "52"
+  },
+  {
+    "code": "5251",
+    "defaultValue": "Hardware Stores",
+    "parentLookupCode": "52"
+  },
+  {
+    "code": "5261",
+    "defaultValue": "Retail Nurseries and Garden Stores",
+    "parentLookupCode": "52"
+  },
+  {
+    "code": "5271",
+    "defaultValue": "Mobile Home Dealers",
+    "parentLookupCode": "52"
+  },
+  {
+    "code": "5311",
+    "defaultValue": "Department Stores",
+    "parentLookupCode": "53"
+  },
+  {
+    "code": "5331",
+    "defaultValue": "Variety Stores",
+    "parentLookupCode": "53"
+  },
+  {
+    "code": "5399",
+    "defaultValue": "Miscellaneous General Merchandise",
+    "parentLookupCode": "53"
+  },
+  {
+    "code": "5411",
+    "defaultValue": "Grocery Stores",
+    "parentLookupCode": "54"
+  },
+  {
+    "code": "5421",
+    "defaultValue": "Meat and Fish Markets",
+    "parentLookupCode": "54"
+  },
+  {
+    "code": "5431",
+    "defaultValue": "Fruit and Vegetable Markets",
+    "parentLookupCode": "54"
+  },
+  {
+    "code": "5441",
+    "defaultValue": "Candy, Nut, and Confectionery Stores",
+    "parentLookupCode": "54"
+  },
+  {
+    "code": "5451",
+    "defaultValue": "Dairy Products Stores",
+    "parentLookupCode": "54"
+  },
+  {
+    "code": "5461",
+    "defaultValue": "Retail Bakeries",
+    "parentLookupCode": "54"
+  },
+  {
+    "code": "5499",
+    "defaultValue": "Miscellaneous Food Stores",
+    "parentLookupCode": "54"
+  },
+  {
+    "code": "5511",
+    "defaultValue": "New and Used Car Dealers",
+    "parentLookupCode": "55"
+  },
+  {
+    "code": "5521",
+    "defaultValue": "Used Car Dealers",
+    "parentLookupCode": "55"
+  },
+  {
+    "code": "5531",
+    "defaultValue": "Auto and Home Supply Stores",
+    "parentLookupCode": "55"
+  },
+  {
+    "code": "5541",
+    "defaultValue": "Gasoline Service Stations",
+    "parentLookupCode": "55"
+  },
+  {
+    "code": "5551",
+    "defaultValue": "Boat Dealers",
+    "parentLookupCode": "55"
+  },
+  {
+    "code": "5561",
+    "defaultValue": "Recreational Vehicle Dealers",
+    "parentLookupCode": "55"
+  },
+  {
+    "code": "5571",
+    "defaultValue": "Motorcycle Dealers",
+    "parentLookupCode": "55"
+  },
+  {
+    "code": "5599",
+    "defaultValue": "Automotive Dealers, Nec",
+    "parentLookupCode": "55"
+  },
+  {
+    "code": "5611",
+    "defaultValue": "Men's and Boys' Clothing Stores",
+    "parentLookupCode": "56"
+  },
+  {
+    "code": "5621",
+    "defaultValue": "Women's Clothing Stores",
+    "parentLookupCode": "56"
+  },
+  {
+    "code": "5632",
+    "defaultValue": "Women's Accessory and Specialty Stores",
+    "parentLookupCode": "56"
+  },
+  {
+    "code": "5641",
+    "defaultValue": "Children's and Infants' Wear Stores",
+    "parentLookupCode": "56"
+  },
+  {
+    "code": "5651",
+    "defaultValue": "Family Clothing Stores",
+    "parentLookupCode": "56"
+  },
+  {
+    "code": "5661",
+    "defaultValue": "Shoe Stores",
+    "parentLookupCode": "56"
+  },
+  {
+    "code": "5699",
+    "defaultValue": "Miscellaneous Apparel and Accessories",
+    "parentLookupCode": "56"
+  },
+  {
+    "code": "5712",
+    "defaultValue": "Furniture Stores",
+    "parentLookupCode": "57"
+  },
+  {
+    "code": "5713",
+    "defaultValue": "Floor Covering Stores",
+    "parentLookupCode": "57"
+  },
+  {
+    "code": "5714",
+    "defaultValue": "Drapery and Upholstery Stores",
+    "parentLookupCode": "57"
+  },
+  {
+    "code": "5719",
+    "defaultValue": "Miscellaneous Homefurnishings",
+    "parentLookupCode": "57"
+  },
+  {
+    "code": "5722",
+    "defaultValue": "Household Appliance Stores",
+    "parentLookupCode": "57"
+  },
+  {
+    "code": "5731",
+    "defaultValue": "Radio, Television, and Electronic Stores",
+    "parentLookupCode": "57"
+  },
+  {
+    "code": "5734",
+    "defaultValue": "Computer and Software Stores",
+    "parentLookupCode": "57"
+  },
+  {
+    "code": "5735",
+    "defaultValue": "Record and Prerecorded Tape Stores",
+    "parentLookupCode": "57"
+  },
+  {
+    "code": "5736",
+    "defaultValue": "Musical Instrument Stores",
+    "parentLookupCode": "57"
+  },
+  {
+    "code": "5812",
+    "defaultValue": "Eating Places",
+    "parentLookupCode": "58"
+  },
+  {
+    "code": "5813",
+    "defaultValue": "Drinking Places",
+    "parentLookupCode": "58"
+  },
+  {
+    "code": "5912",
+    "defaultValue": "Drug Stores and Proprietary Stores",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5921",
+    "defaultValue": "Liquor Stores",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5932",
+    "defaultValue": "Used Merchandise Stores",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5941",
+    "defaultValue": "Sporting Goods and Bicycle Shops",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5942",
+    "defaultValue": "Book Stores",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5943",
+    "defaultValue": "Stationery Stores",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5944",
+    "defaultValue": "Jewelry Stores",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5945",
+    "defaultValue": "Hobby, Toy, and Game Shops",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5946",
+    "defaultValue": "Camera and Photographic Supply Stores",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5947",
+    "defaultValue": "Gift, Novelty, and Souvenir Shop",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5948",
+    "defaultValue": "Luggage and Leather Goods Stores",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5949",
+    "defaultValue": "Sewing, Needlework, and Piece Goods",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5961",
+    "defaultValue": "Catalog and Mail-order Houses",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5962",
+    "defaultValue": "Merchandising Machine Operators",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5963",
+    "defaultValue": "Direct Selling Establishments",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5983",
+    "defaultValue": "Fuel Oil Dealers",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5984",
+    "defaultValue": "Liquefied Petroleum Gas Dealers",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5989",
+    "defaultValue": "Fuel Dealers, Nec",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5992",
+    "defaultValue": "Florists",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5993",
+    "defaultValue": "Tobacco Stores and Stands",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5994",
+    "defaultValue": "News Dealers and Newsstands",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5995",
+    "defaultValue": "Optical Goods Stores",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5999",
+    "defaultValue": "Miscellaneous Retail Stores, Nec",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "6011",
+    "defaultValue": "Federal Reserve Banks",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6019",
+    "defaultValue": "Central Reserve Depository, Nec",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6021",
+    "defaultValue": "National Commercial Banks",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6022",
+    "defaultValue": "State Commercial Banks",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6029",
+    "defaultValue": "Commercial Banks, Nec",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6035",
+    "defaultValue": "Federal Savings Institutions",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6036",
+    "defaultValue": "Savings Institutions, Except Federal",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6061",
+    "defaultValue": "Federal Credit Unions",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6062",
+    "defaultValue": "State Credit Unions",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6081",
+    "defaultValue": "Foreign Bank and Branches and Agencies",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6082",
+    "defaultValue": "Foreign Trade and International Banks",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6091",
+    "defaultValue": "Nondeposit Trust Facilities",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6099",
+    "defaultValue": "Functions Related To Depository Banking",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6111",
+    "defaultValue": "Federal and Federally Sponsored Credit",
+    "parentLookupCode": "61"
+  },
+  {
+    "code": "6141",
+    "defaultValue": "Personal Credit Institutions",
+    "parentLookupCode": "61"
+  },
+  {
+    "code": "6153",
+    "defaultValue": "Custom-term Business Credit",
+    "parentLookupCode": "61"
+  },
+  {
+    "code": "6159",
+    "defaultValue": "Miscellaneous Business Credit",
+    "parentLookupCode": "61"
+  },
+  {
+    "code": "6162",
+    "defaultValue": "Mortgage Bankers and Correspondents",
+    "parentLookupCode": "61"
+  },
+  {
+    "code": "6163",
+    "defaultValue": "Loan Brokers",
+    "parentLookupCode": "61"
+  },
+  {
+    "code": "6211",
+    "defaultValue": "Security Brokers and Dealers",
+    "parentLookupCode": "62"
+  },
+  {
+    "code": "6221",
+    "defaultValue": "Commodity Contracts Brokers, Dealers",
+    "parentLookupCode": "62"
+  },
+  {
+    "code": "6231",
+    "defaultValue": "Security and Commodity Exchanges",
+    "parentLookupCode": "62"
+  },
+  {
+    "code": "6282",
+    "defaultValue": "Investment Advice",
+    "parentLookupCode": "62"
+  },
+  {
+    "code": "6289",
+    "defaultValue": "Security and Commodity Service",
+    "parentLookupCode": "62"
+  },
+  {
+    "code": "6311",
+    "defaultValue": "Life Insurance",
+    "parentLookupCode": "63"
+  },
+  {
+    "code": "6321",
+    "defaultValue": "Accident and Health Insurance",
+    "parentLookupCode": "63"
+  },
+  {
+    "code": "6324",
+    "defaultValue": "Hospital and Medical Service Plans",
+    "parentLookupCode": "63"
+  },
+  {
+    "code": "6331",
+    "defaultValue": "Fire, Marine, and Casualty Insurance",
+    "parentLookupCode": "63"
+  },
+  {
+    "code": "6351",
+    "defaultValue": "Surety Insurance",
+    "parentLookupCode": "63"
+  },
+  {
+    "code": "6361",
+    "defaultValue": "Title Insurance",
+    "parentLookupCode": "63"
+  },
+  {
+    "code": "6371",
+    "defaultValue": "Pension, Health, and Welfare Funds",
+    "parentLookupCode": "63"
+  },
+  {
+    "code": "6399",
+    "defaultValue": "Insurance Carriers, Nec",
+    "parentLookupCode": "63"
+  },
+  {
+    "code": "6411",
+    "defaultValue": "Insurance Agents, Brokers, and Service",
+    "parentLookupCode": "64"
+  },
+  {
+    "code": "6512",
+    "defaultValue": "Nonresidential Building Operators",
+    "parentLookupCode": "65"
+  },
+  {
+    "code": "6513",
+    "defaultValue": "Apartment Building Operators",
+    "parentLookupCode": "65"
+  },
+  {
+    "code": "6514",
+    "defaultValue": "Dwelling Operators, Except Apartments",
+    "parentLookupCode": "65"
+  },
+  {
+    "code": "6515",
+    "defaultValue": "Mobile Home Site Operators",
+    "parentLookupCode": "65"
+  },
+  {
+    "code": "6517",
+    "defaultValue": "Railroad Property Lessors",
+    "parentLookupCode": "65"
+  },
+  {
+    "code": "6519",
+    "defaultValue": "Real Property Lessors, Nec",
+    "parentLookupCode": "65"
+  },
+  {
+    "code": "6531",
+    "defaultValue": "Real Estate Agents and Managers",
+    "parentLookupCode": "65"
+  },
+  {
+    "code": "6541",
+    "defaultValue": "Title abstract Offices",
+    "parentLookupCode": "65"
+  },
+  {
+    "code": "6552",
+    "defaultValue": "Subdividers and Developers, Nec",
+    "parentLookupCode": "65"
+  },
+  {
+    "code": "6553",
+    "defaultValue": "Cemetery Subdividers and Developers",
+    "parentLookupCode": "65"
+  },
+  {
+    "code": "6712",
+    "defaultValue": "Bank Holding Companies",
+    "parentLookupCode": "67"
+  },
+  {
+    "code": "6719",
+    "defaultValue": "Holding Companies, Nec",
+    "parentLookupCode": "67"
+  },
+  {
+    "code": "6722",
+    "defaultValue": "Management Investment, Open-ended",
+    "parentLookupCode": "67"
+  },
+  {
+    "code": "6726",
+    "defaultValue": "Investment Offices, Nec",
+    "parentLookupCode": "67"
+  },
+  {
+    "code": "6732",
+    "defaultValue": "Trusts: Educational, Religious, Etc.",
+    "parentLookupCode": "67"
+  },
+  {
+    "code": "6733",
+    "defaultValue": "Trusts, Nec",
+    "parentLookupCode": "67"
+  },
+  {
+    "code": "6792",
+    "defaultValue": "Oil Royalty Traders",
+    "parentLookupCode": "67"
+  },
+  {
+    "code": "6794",
+    "defaultValue": "Patent Owners and Lessors",
+    "parentLookupCode": "67"
+  },
+  {
+    "code": "6798",
+    "defaultValue": "Real Estate Investment Trusts",
+    "parentLookupCode": "67"
+  },
+  {
+    "code": "6799",
+    "defaultValue": "Investors, Nec",
+    "parentLookupCode": "67"
+  },
+  {
+    "code": "7011",
+    "defaultValue": "Hotels and Motels",
+    "parentLookupCode": "70"
+  },
+  {
+    "code": "7021",
+    "defaultValue": "Rooming and Boarding Houses",
+    "parentLookupCode": "70"
+  },
+  {
+    "code": "7032",
+    "defaultValue": "Sporting and Recreational Camps",
+    "parentLookupCode": "70"
+  },
+  {
+    "code": "7033",
+    "defaultValue": "Trailer Parks and Campsites",
+    "parentLookupCode": "70"
+  },
+  {
+    "code": "7041",
+    "defaultValue": "Membership-basis Organization Hotels",
+    "parentLookupCode": "70"
+  },
+  {
+    "code": "7211",
+    "defaultValue": "Power Laundries, Family and Commercial",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7212",
+    "defaultValue": "Garment Pressing and Cleaners' Agents",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7213",
+    "defaultValue": "Linen Supply",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7215",
+    "defaultValue": "Coin-operated Laundries and Cleaning",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7216",
+    "defaultValue": "Drycleaning Plants, Except Rugs",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7217",
+    "defaultValue": "Carpet and Upholstery Cleaning",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7218",
+    "defaultValue": "Industrial Launderers",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7219",
+    "defaultValue": "Laundry and Garment Services, Nec",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7221",
+    "defaultValue": "Photographic Studios, Portrait",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7231",
+    "defaultValue": "Beauty Shops",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7241",
+    "defaultValue": "Barber Shops",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7251",
+    "defaultValue": "Shoe Repair and Shoeshine Parlors",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7261",
+    "defaultValue": "Funeral Service and Crematories",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7291",
+    "defaultValue": "Tax Return Preparation Services",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7299",
+    "defaultValue": "Miscellaneous Personal Services",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7311",
+    "defaultValue": "Advertising Agencies",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7312",
+    "defaultValue": "Outdoor Advertising Services",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7313",
+    "defaultValue": "Radio, Television, Publisher Representatives",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7319",
+    "defaultValue": "Advertising, Nec",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7322",
+    "defaultValue": "Adjustment and Collection Services",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7323",
+    "defaultValue": "Credit Reporting Services",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7331",
+    "defaultValue": "Direct Mail Advertising Services",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7334",
+    "defaultValue": "Photocopying and Duplicating Services",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7335",
+    "defaultValue": "Commercial Photography",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7336",
+    "defaultValue": "Commercial Art and Graphic Design",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7338",
+    "defaultValue": "Secretarial and Court Reporting",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7342",
+    "defaultValue": "Disinfecting and Pest Control Services",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7349",
+    "defaultValue": "Building Maintenance Services, Nec",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7352",
+    "defaultValue": "Medical Equipment Rental",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7353",
+    "defaultValue": "Heavy Construction Equipment Rental",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7359",
+    "defaultValue": "Equipment Rental and Leasing, Nec",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7361",
+    "defaultValue": "Employment Agencies",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7363",
+    "defaultValue": "Help Supply Services",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7371",
+    "defaultValue": "Custom Computer Programming Services",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7372",
+    "defaultValue": "Prepackaged Software",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7373",
+    "defaultValue": "Computer Integrated Systems Design",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7374",
+    "defaultValue": "Data Processing and Preparation",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7375",
+    "defaultValue": "Information Retrieval Services",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7376",
+    "defaultValue": "Computer Facilities Management",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7377",
+    "defaultValue": "Computer Rental and Leasing",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7378",
+    "defaultValue": "Computer Maintenance and Repair",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7379",
+    "defaultValue": "Computer Related Services, Nec",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7381",
+    "defaultValue": "Detective and Armored Car Services",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7382",
+    "defaultValue": "Security Systems Services",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7383",
+    "defaultValue": "News Syndicates",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7384",
+    "defaultValue": "Photofinish Laboratories",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7389",
+    "defaultValue": "Business Services, Nec",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7513",
+    "defaultValue": "Truck Rental and Leasing, Without Drivers",
+    "parentLookupCode": "75"
+  },
+  {
+    "code": "7514",
+    "defaultValue": "Passenger Car Rental",
+    "parentLookupCode": "75"
+  },
+  {
+    "code": "7515",
+    "defaultValue": "Passenger Car Leasing",
+    "parentLookupCode": "75"
+  },
+  {
+    "code": "7519",
+    "defaultValue": "Utility Trailer Rental",
+    "parentLookupCode": "75"
+  },
+  {
+    "code": "7521",
+    "defaultValue": "Automobile Parking",
+    "parentLookupCode": "75"
+  },
+  {
+    "code": "7532",
+    "defaultValue": "Top and Body Repair and Paint Shops",
+    "parentLookupCode": "75"
+  },
+  {
+    "code": "7533",
+    "defaultValue": "Auto Exhaust System Repair Shops",
+    "parentLookupCode": "75"
+  },
+  {
+    "code": "7534",
+    "defaultValue": "Tire Retreading and Repair Shops",
+    "parentLookupCode": "75"
+  },
+  {
+    "code": "7536",
+    "defaultValue": "Automotive Glass Replacement Shops",
+    "parentLookupCode": "75"
+  },
+  {
+    "code": "7537",
+    "defaultValue": "Automotive Transmission Repair Shops",
+    "parentLookupCode": "75"
+  },
+  {
+    "code": "7538",
+    "defaultValue": "General Automotive Repair Shops",
+    "parentLookupCode": "75"
+  },
+  {
+    "code": "7539",
+    "defaultValue": "Automotive Repair Shops, Nec",
+    "parentLookupCode": "75"
+  },
+  {
+    "code": "7542",
+    "defaultValue": "Carwashes",
+    "parentLookupCode": "75"
+  },
+  {
+    "code": "7549",
+    "defaultValue": "Automotive Services, Nec",
+    "parentLookupCode": "75"
+  },
+  {
+    "code": "7622",
+    "defaultValue": "Radio and Television Repair",
+    "parentLookupCode": "76"
+  },
+  {
+    "code": "7623",
+    "defaultValue": "Refrigeration Service and Repair",
+    "parentLookupCode": "76"
+  },
+  {
+    "code": "7629",
+    "defaultValue": "Electrical Repair Shops",
+    "parentLookupCode": "76"
+  },
+  {
+    "code": "7631",
+    "defaultValue": "Watch, Clock, and Jewelry Repair",
+    "parentLookupCode": "76"
+  },
+  {
+    "code": "7641",
+    "defaultValue": "Reupholstery and Furniture Repair",
+    "parentLookupCode": "76"
+  },
+  {
+    "code": "7692",
+    "defaultValue": "Welding Repair",
+    "parentLookupCode": "76"
+  },
+  {
+    "code": "7694",
+    "defaultValue": "Armature Rewinding Shops",
+    "parentLookupCode": "76"
+  },
+  {
+    "code": "7699",
+    "defaultValue": "Repair Services, Nec",
+    "parentLookupCode": "76"
+  },
+  {
+    "code": "7812",
+    "defaultValue": "Motion Picture and Video Production",
+    "parentLookupCode": "78"
+  },
+  {
+    "code": "7819",
+    "defaultValue": "Services Allied To Motion Pictures",
+    "parentLookupCode": "78"
+  },
+  {
+    "code": "7822",
+    "defaultValue": "Motion Picture and Tape Distribution",
+    "parentLookupCode": "78"
+  },
+  {
+    "code": "7829",
+    "defaultValue": "Motion Picture Distribution Services",
+    "parentLookupCode": "78"
+  },
+  {
+    "code": "7832",
+    "defaultValue": "Motion Picture Theaters, Except Drive-in",
+    "parentLookupCode": "78"
+  },
+  {
+    "code": "7833",
+    "defaultValue": "Drive-in Motion Picture Theaters",
+    "parentLookupCode": "78"
+  },
+  {
+    "code": "7841",
+    "defaultValue": "Video Tape Rental",
+    "parentLookupCode": "78"
+  },
+  {
+    "code": "7911",
+    "defaultValue": "Dance Studios, Schools, and Halls",
+    "parentLookupCode": "79"
+  },
+  {
+    "code": "7922",
+    "defaultValue": "Theatrical Producers and Services",
+    "parentLookupCode": "79"
+  },
+  {
+    "code": "7929",
+    "defaultValue": "Entertainers and Entertainment Groups",
+    "parentLookupCode": "79"
+  },
+  {
+    "code": "7933",
+    "defaultValue": "Bowling Centers",
+    "parentLookupCode": "79"
+  },
+  {
+    "code": "7941",
+    "defaultValue": "Sports Clubs, Managers, and Promoters",
+    "parentLookupCode": "79"
+  },
+  {
+    "code": "7948",
+    "defaultValue": "Racing, Including Track Operation",
+    "parentLookupCode": "79"
+  },
+  {
+    "code": "7991",
+    "defaultValue": "Physical Fitness Facilities",
+    "parentLookupCode": "79"
+  },
+  {
+    "code": "7992",
+    "defaultValue": "Public Golf Courses",
+    "parentLookupCode": "79"
+  },
+  {
+    "code": "7993",
+    "defaultValue": "Coin-operated Amusement Devices",
+    "parentLookupCode": "79"
+  },
+  {
+    "code": "7996",
+    "defaultValue": "Amusement Parks",
+    "parentLookupCode": "79"
+  },
+  {
+    "code": "7997",
+    "defaultValue": "Membership Sports and Recreation Clubs",
+    "parentLookupCode": "79"
+  },
+  {
+    "code": "7999",
+    "defaultValue": "Amusement and Recreation, Nec",
+    "parentLookupCode": "79"
+  },
+  {
+    "code": "8011",
+    "defaultValue": "Offices and Clinics of Medical Doctors",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8021",
+    "defaultValue": "Offices and Clinics of Dentists",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8031",
+    "defaultValue": "Offices and Clinics of Osteopathic Physicians",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8041",
+    "defaultValue": "Offices and Clinics of Chiropractors",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8042",
+    "defaultValue": "Offices and Clinics of Optometrists",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8043",
+    "defaultValue": "Offices and Clinics of Podiatrists",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8049",
+    "defaultValue": "Offices of Health Practitioner",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8051",
+    "defaultValue": "Skilled Nursing Care Facilities",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8052",
+    "defaultValue": "Intermediate Care Facilities",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8059",
+    "defaultValue": "Nursing and Personal Care, Nec",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8062",
+    "defaultValue": "General Medical and Surgical Hospitals",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8063",
+    "defaultValue": "Psychiatric Hospitals",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8069",
+    "defaultValue": "Specialty Hospitals, Except Psychiatric",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8071",
+    "defaultValue": "Medical Laboratories",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8072",
+    "defaultValue": "Dental Laboratories",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8082",
+    "defaultValue": "Home Health Care Services",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8092",
+    "defaultValue": "Kidney Dialysis Centers",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8093",
+    "defaultValue": "Specialty Outpatient Clinics, Nec",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8099",
+    "defaultValue": "Health and Allied Services, Nec",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8111",
+    "defaultValue": "Legal Services",
+    "parentLookupCode": "81"
+  },
+  {
+    "code": "8211",
+    "defaultValue": "Elementary and Secondary Schools",
+    "parentLookupCode": "82"
+  },
+  {
+    "code": "8221",
+    "defaultValue": "Colleges and Universities",
+    "parentLookupCode": "82"
+  },
+  {
+    "code": "8222",
+    "defaultValue": "Junior Colleges",
+    "parentLookupCode": "82"
+  },
+  {
+    "code": "8231",
+    "defaultValue": "Libraries",
+    "parentLookupCode": "82"
+  },
+  {
+    "code": "8243",
+    "defaultValue": "Data Processing Schools",
+    "parentLookupCode": "82"
+  },
+  {
+    "code": "8244",
+    "defaultValue": "Business and Secretarial Schools",
+    "parentLookupCode": "82"
+  },
+  {
+    "code": "8249",
+    "defaultValue": "Vocational Schools, Nec",
+    "parentLookupCode": "82"
+  },
+  {
+    "code": "8299",
+    "defaultValue": "Schools and Educational Services",
+    "parentLookupCode": "82"
+  },
+  {
+    "code": "8322",
+    "defaultValue": "Individual and Family Services",
+    "parentLookupCode": "83"
+  },
+  {
+    "code": "8331",
+    "defaultValue": "Job Training and Related Services",
+    "parentLookupCode": "83"
+  },
+  {
+    "code": "8351",
+    "defaultValue": "Child Day Care Services",
+    "parentLookupCode": "83"
+  },
+  {
+    "code": "8361",
+    "defaultValue": "Residential Care",
+    "parentLookupCode": "83"
+  },
+  {
+    "code": "8399",
+    "defaultValue": "Social Services, Nec",
+    "parentLookupCode": "83"
+  },
+  {
+    "code": "8412",
+    "defaultValue": "Museums and Art Galleries",
+    "parentLookupCode": "84"
+  },
+  {
+    "code": "8422",
+    "defaultValue": "Botanical and Zoological Gardens",
+    "parentLookupCode": "84"
+  },
+  {
+    "code": "8611",
+    "defaultValue": "Business Associations",
+    "parentLookupCode": "86"
+  },
+  {
+    "code": "8621",
+    "defaultValue": "Professional Organizations",
+    "parentLookupCode": "86"
+  },
+  {
+    "code": "8631",
+    "defaultValue": "Labor Organizations",
+    "parentLookupCode": "86"
+  },
+  {
+    "code": "8641",
+    "defaultValue": "Civic and Social Associations",
+    "parentLookupCode": "86"
+  },
+  {
+    "code": "8651",
+    "defaultValue": "Political Organizations",
+    "parentLookupCode": "86"
+  },
+  {
+    "code": "8661",
+    "defaultValue": "Religious Organizations",
+    "parentLookupCode": "86"
+  },
+  {
+    "code": "8699",
+    "defaultValue": "Membership Organizations, Nec",
+    "parentLookupCode": "86"
+  },
+  {
+    "code": "8711",
+    "defaultValue": "Engineering Services",
+    "parentLookupCode": "87"
+  },
+  {
+    "code": "8712",
+    "defaultValue": "Architectural Services",
+    "parentLookupCode": "87"
+  },
+  {
+    "code": "8713",
+    "defaultValue": "Surveying Services",
+    "parentLookupCode": "87"
+  },
+  {
+    "code": "8721",
+    "defaultValue": "Accounting, Auditing, and Bookkeeping",
+    "parentLookupCode": "87"
+  },
+  {
+    "code": "8731",
+    "defaultValue": "Commercial Physical Research",
+    "parentLookupCode": "87"
+  },
+  {
+    "code": "8732",
+    "defaultValue": "Commercial Nonphysical Research",
+    "parentLookupCode": "87"
+  },
+  {
+    "code": "8733",
+    "defaultValue": "Noncommercial Research Organizations",
+    "parentLookupCode": "87"
+  },
+  {
+    "code": "8734",
+    "defaultValue": "Testing Laboratories",
+    "parentLookupCode": "87"
+  },
+  {
+    "code": "8741",
+    "defaultValue": "Management Services",
+    "parentLookupCode": "87"
+  },
+  {
+    "code": "8742",
+    "defaultValue": "Management Consulting Services",
+    "parentLookupCode": "87"
+  },
+  {
+    "code": "8743",
+    "defaultValue": "Public Relations Services",
+    "parentLookupCode": "87"
+  },
+  {
+    "code": "8744",
+    "defaultValue": "Facilities Support Services",
+    "parentLookupCode": "87"
+  },
+  {
+    "code": "8748",
+    "defaultValue": "Business Consulting, Nec",
+    "parentLookupCode": "87"
+  },
+  {
+    "code": "8999",
+    "defaultValue": "Services, Nec",
+    "parentLookupCode": "89"
+  },
+  {
+    "code": "9111",
+    "defaultValue": "Executive Offices",
+    "parentLookupCode": "91"
+  },
+  {
+    "code": "9121",
+    "defaultValue": "Legislative Bodies",
+    "parentLookupCode": "91"
+  },
+  {
+    "code": "9131",
+    "defaultValue": "Executive and Legislative Combined",
+    "parentLookupCode": "91"
+  },
+  {
+    "code": "9199",
+    "defaultValue": "General Government, Nec",
+    "parentLookupCode": "91"
+  },
+  {
+    "code": "9211",
+    "defaultValue": "Courts",
+    "parentLookupCode": "92"
+  },
+  {
+    "code": "9221",
+    "defaultValue": "Police Protection",
+    "parentLookupCode": "92"
+  },
+  {
+    "code": "9222",
+    "defaultValue": "Legal Counsel and Prosecution",
+    "parentLookupCode": "92"
+  },
+  {
+    "code": "9223",
+    "defaultValue": "Correctional Institutions",
+    "parentLookupCode": "92"
+  },
+  {
+    "code": "9224",
+    "defaultValue": "Fire Protection",
+    "parentLookupCode": "92"
+  },
+  {
+    "code": "9229",
+    "defaultValue": "Public Order and Safety, Nec",
+    "parentLookupCode": "92"
+  },
+  {
+    "code": "9311",
+    "defaultValue": "Finance, Taxation, and Monetary Policy",
+    "parentLookupCode": "93"
+  },
+  {
+    "code": "9411",
+    "defaultValue": "Administration of Educational Programs",
+    "parentLookupCode": "94"
+  },
+  {
+    "code": "9431",
+    "defaultValue": "Administration of Public Health Programs",
+    "parentLookupCode": "94"
+  },
+  {
+    "code": "9441",
+    "defaultValue": "Administration of Social and Manpower Programs",
+    "parentLookupCode": "94"
+  },
+  {
+    "code": "9451",
+    "defaultValue": "Administration of Veterans' Affairs",
+    "parentLookupCode": "94"
+  },
+  {
+    "code": "9511",
+    "defaultValue": "Air, Water, and Solid Waste Management",
+    "parentLookupCode": "95"
+  },
+  {
+    "code": "9512",
+    "defaultValue": "Land, Mineral, and Wildlife Conservation",
+    "parentLookupCode": "95"
+  },
+  {
+    "code": "9531",
+    "defaultValue": "Housing Programs",
+    "parentLookupCode": "95"
+  },
+  {
+    "code": "9532",
+    "defaultValue": "Urban and Community Development",
+    "parentLookupCode": "95"
+  },
+  {
+    "code": "9611",
+    "defaultValue": "Administration of General Economic Programs",
+    "parentLookupCode": "96"
+  },
+  {
+    "code": "9621",
+    "defaultValue": "Regulation, Administration of Transportation",
+    "parentLookupCode": "96"
+  },
+  {
+    "code": "9631",
+    "defaultValue": "Regulation, Administration of Utilities",
+    "parentLookupCode": "96"
+  },
+  {
+    "code": "9641",
+    "defaultValue": "Regulation of Agricultural Marketing",
+    "parentLookupCode": "96"
+  },
+  {
+    "code": "9651",
+    "defaultValue": "Regulation, Miscellaneous Commercial Sectors",
+    "parentLookupCode": "96"
+  },
+  {
+    "code": "9661",
+    "defaultValue": "Space Research and Technology",
+    "parentLookupCode": "96"
+  },
+  {
+    "code": "9711",
+    "defaultValue": "National Security",
+    "parentLookupCode": "97"
+  },
+  {
+    "code": "9721",
+    "defaultValue": "International Affairs",
+    "parentLookupCode": "97"
+  },
+  {
+    "code": "9999",
+    "defaultValue": "Nonclassifiable Establishments",
+    "parentLookupCode": "99"
+  }
+]

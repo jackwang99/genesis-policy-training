@@ -1,0 +1,82 @@
+{
+  "reports": [
+    {
+      "driverLicenseNo": "D123456",
+      "licenseStatus": "Valid",
+      "violations": [
+        {
+          "convictionDate": "2016-08-10",
+          "violationCode": "311EF",
+          "violationCodeDescription": "SPEEDING INTERMEDIATE 11-19 MPH OVER",
+          "violationType": "Minor Speeding",
+          "violationPoints": "1"
+        },
+        {
+          "convictionDate": "2015-03-01",
+          "violationCode": "32150",
+          "violationCodeDescription": "FAIL TO YLD TO EMER VEH",
+          "violationType": "Major Violation",
+          "violationPoints": "3"
+        },
+        {
+          "convictionDate": "2014-11-25",
+          "violationCode": "31620",
+          "violationCodeDescription": "PREARRANGED RACING",
+          "violationType": "Major Violation",
+          "violationPoints": "3"
+        }
+      ]
+    },
+    {
+      "driverLicenseNo": "C123456",
+      "licenseStatus": "Suspended",
+      "violations": [
+        {
+          "convictionDate": "2015-06-13",
+          "violationCode": "52100",
+          "violationCodeDescription": "DUI, GENERALLY",
+          "violationType": "Driving Under Influence",
+          "violationPoints": "5"
+        }
+        ],
+      "suspensions": [
+        {
+          "suspensionDate": "2015-06-13",
+          "reinstatementDate": "",
+          "violationCode": "16220",
+          "violationCodeDescription": "ALCOHOL/DRUG WITHDRAWAL",
+          "violationType": "Suspension",
+          "violationPoints": "5"
+        },
+        {
+          "suspensionDate": "",
+          "reinstatementDate": "2015-12-13",
+          "violationCode": "12013",
+          "violationCodeDescription": "REINSTATEMENT",
+          "violationType": "Reinstatement",
+          "violationPoints": ""
+        }
+      ]
+    },
+    {
+      "driverLicenseNo": "I09877612",
+      "licenseStatus": "Valid",
+      "violations": [
+        {
+          "convictionDate": "2016-02-02",
+          "violationCode": "61230",
+          "violationCodeDescription": "FAIL TO USE HEADLIGHTS",
+          "violationType": "Minor Violation",
+          "violationPoints": "1"
+        },
+        {
+          "convictionDate": "2015-11-28",
+          "violationCode": "36100",
+          "violationCodeDescription": "FOLLOW TOO CLOSELY, GENERALLY",
+          "violationType": "Major Violation",
+          "violationPoints": "3"
+        }
+      ]
+    }
+  ]
+}

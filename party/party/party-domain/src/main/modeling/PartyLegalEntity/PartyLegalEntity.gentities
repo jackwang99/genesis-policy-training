@@ -1,0 +1,31 @@
+Entity LegalEntityType is LegalEntity, RootEntity, StatefulEntity, MergeableEntity {
+
+    @Searchable
+    Attr registryTypeId: String
+
+    @ReadOnly
+    @Searchable
+    Attr registryEntityNumber: String
+
+    @Searchable
+    @IgnoreCase
+    @Required
+    Attr legalName: String
+
+    @Searchable
+    @IgnoreCase
+    Attr publicName: String
+
+    @Searchable
+    @IgnoreCase
+    @Required
+    Attr legalId: String
+
+    @Searchable
+    @IgnoreCase
+    Attr taxIdentificationId: String
+
+    @Searchable
+    @IgnoreCase
+    Attr dbaName: String
+}

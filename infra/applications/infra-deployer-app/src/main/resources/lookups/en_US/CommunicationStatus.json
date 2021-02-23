@@ -1,0 +1,10 @@
+[
+  {
+    "code": "READ",
+    "defaultValue": "Read"
+  },
+  {
+    "code": "UNREAD",
+    "defaultValue": "Unread"
+  }
+]

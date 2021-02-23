@@ -1,0 +1,10 @@
+[
+  {
+    "code": "INBOUND",
+    "defaultValue": "Inbound"
+  },
+  {
+    "code": "OUTBOUND",
+    "defaultValue": "Outbound"
+  }
+]

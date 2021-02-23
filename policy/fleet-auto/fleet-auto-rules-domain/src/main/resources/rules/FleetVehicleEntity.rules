@@ -1,0 +1,22 @@
+Namespace FleetAuto
+
+Include Base
+
+Rule "FleetVehicleEntity-180710-7ZM1y" On FleetVehicleEntity.usageCd {
+  Default To "PL"
+}
+
+Rule "FleetVehicleEntity-180710-ehe94" On FleetVehicleEntity.automaticBeltsInd {
+  Default To false
+}
+
+Rule "FleetVehicleEntity-180722-8tW12j" On FleetVehicleEntity.armoredInd   {
+ Set Mandatory
+ Error "FleetVehicleEntity-180722-8tW12j": "Armored Vehicle indicator is required"
+}
+
+Rule "AutoVINRegExpMatch-190606-70W11j" On FleetVehicleEntity.vehicleIdentificationNumber {
+  When vehicleIdentificationNumber != null
+  Assert Matches "^[a-zA-Z0-9]{10}[-]{1}[0-9]{3}[-]{1}[0-9]{3}$"
+  Error "AutoVINRegExpMatch-190606-70W11j": "VIN does not match the defined pattern"
+}

@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>security-applications-pom</artifactId>
+        <groupId>com.eisgroup.genesis.proto.security.applications</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>security-facade-app-model</artifactId>
+
+    <name>Security Facade Application Model</name>
+    <description>Security Facade Application Model</description>
+
+    <packaging>jar</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <classesDirectory>${project.basedir}/../target/classes</classesDirectory>
+                    <includes>
+                        <include>genesis/factory-models/*</include>
+                        <include>genesis/factory-types/*</include>
+                        <include>facade-schema/*</include>
+                    </includes>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.security.applications</groupId>
+            <artifactId>security-facade-app</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+</project>

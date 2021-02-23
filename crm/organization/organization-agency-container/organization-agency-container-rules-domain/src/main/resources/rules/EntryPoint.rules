@@ -1,0 +1,8 @@
+Namespace OrganizationAgencyContainer
+
+Include Base
+
+EntryPoint "OrganizationAgencyContainer Validation" {
+  "CustomerRelationshipRelationshipTypeIsMandatory",
+  "SchedulingContactInfoEffectiveDatesComparison"
+}

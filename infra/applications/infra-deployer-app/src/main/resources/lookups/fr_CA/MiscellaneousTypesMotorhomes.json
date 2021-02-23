@@ -1,0 +1,22 @@
+[
+  {
+    "code": "1W",
+    "defaultValue": "1 semaine"
+  },
+  {
+    "code": "2W",
+    "defaultValue": "2 semaines"
+  },
+  {
+    "code": "3W",
+    "defaultValue": "3 semaines"
+  },
+  {
+    "code": "4W",
+    "defaultValue": "4 semaines"
+  },
+  {
+    "code": "OVER4W",
+    "defaultValue": "Plus de 4 semaines"
+  }
+]

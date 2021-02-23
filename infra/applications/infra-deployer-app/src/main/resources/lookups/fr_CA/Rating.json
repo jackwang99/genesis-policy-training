@@ -1,0 +1,22 @@
+[
+  {
+    "code": "UNKNOWN",
+    "orderNo": "1",    
+    "defaultValue": "Inconnu"
+  },
+  {
+    "code": "HOT",
+    "orderNo": "2",    
+    "defaultValue": "Chaud"
+  },
+  {
+    "code": "WARM",
+    "orderNo": "3",    
+    "defaultValue": "Chaud"
+  },  
+  {
+    "code": "COLD",
+    "orderNo": "4",    
+    "defaultValue": "Du froid"
+  }
+]

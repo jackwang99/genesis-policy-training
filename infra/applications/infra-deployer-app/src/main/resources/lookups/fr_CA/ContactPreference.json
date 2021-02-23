@@ -1,0 +1,18 @@
+[
+  {
+    "code": "EMAIL",
+    "defaultValue": "Email"
+  },
+  {
+    "code": "FAX",
+    "defaultValue": "Fax"
+  },
+  {
+    "code": "MAIL",
+    "defaultValue": "Courrier"
+  },
+  {
+    "code": "PHONE",
+    "defaultValue": "Téléphone"
+  }
+]

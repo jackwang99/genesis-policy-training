@@ -1,0 +1,10 @@
+[
+  {
+    "code": "JNT",
+    "defaultValue": "Joint"
+  },
+  {
+    "code": "SNGL",
+    "defaultValue": "Single"
+  }
+]

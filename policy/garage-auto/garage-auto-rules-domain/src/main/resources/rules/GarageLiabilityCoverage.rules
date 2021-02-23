@@ -1,0 +1,10 @@
+Namespace GarageAuto
+
+Include Base
+
+Rule "GarageLiabilityCoverage-190520-qHfdX" On GarageLiabilityCoverage.limitAmount {
+    When limitAmount != null
+    Assert limitAmount <= 15000
+    Error "GarageLiabilityCoverage-190520-qHfdX": "The Garage Liability coverage limit amount more than $15,000. Transaction will be referred to UW."
+    Overridable
+}

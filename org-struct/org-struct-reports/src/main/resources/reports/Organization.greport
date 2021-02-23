@@ -1,0 +1,22 @@
+Model OrgStructReports
+
+Import Model Organization
+
+Report Organization from Organization {
+
+    // Attribute declarations
+    Attr updatedOn is _timestamp
+    Attr organizationCd
+
+    // Related tables
+    Ref UnderwritingCompany is assignedRoles[isUnderwritingCompany].roleDetails {
+        Attr updatedOn is Organization._timestamp
+        Attr underwritingCompanyCd
+    }
+
+    // Attribute filter predicates
+    Filter isUnderwritingCompany {
+        roleTypeCd == "UnderwritingCompany"
+    }
+
+}

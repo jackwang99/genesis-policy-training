@@ -1,0 +1,507 @@
+StateMachine FleetAuto {
+
+    //Quote states
+    EntryState uninitialized for quote {
+        Using init command transit to initialized
+    }
+
+    State initialized for quote {
+        Using createVersion command transit to dataGather
+        Using createPlanVersions command transit to dataGather
+        Using separationNewQuote command transit to dataGather
+
+        Using rollOn command transit to dataGather
+        Using rollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOn command transit to dataGather
+        Using autoRollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOnStep command transit to dataGather
+        Using autoRollOnStep command transit to rated only if isRatedAfterRollOn(true)
+
+        Using rollBackTerm command transit to rollbackPending
+        Using rollBackTerm command transit to cancelPending only if rolledBackState("cancelPending")
+        Using rollBackTerm command transit to termBackedOffPending only if rolledBackState("termBackedOffPending")
+
+        Using write command transit to dataGather
+        Using writeAndRate command transit to dataGather
+        Using expire command transit to expired
+        Using archiveQuote command transit to archived
+        Using importQuote command transit to imported
+        Using quoteBorTransferStep command transit to dataGather
+        Using quoteBorTransfer command transit to dataGather
+    }
+
+    State dataGather for quote {
+        Using createVersion command transit to dataGather
+        Using createPlanVersions command transit to dataGather
+        Using separationNewQuote command transit to dataGather
+
+        Using rollOn command transit to dataGather
+        Using rollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOn command transit to dataGather
+        Using autoRollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using rollOnIssue command transit to issued
+        Using rollOnIssue command transit to cancelled only if isCancellation(true)
+
+        Using autoRollOnStep command transit to dataGather
+        Using autoRollOnStep command transit to rated only if isRatedAfterRollOn(true)
+
+        Using rollBackTerm command transit to rollbackPending
+        Using rollBackTerm command transit to cancelPending only if rolledBackState("cancelPending")
+        Using rollBackTerm command transit to termBackedOffPending only if rolledBackState("termBackedOffPending")
+
+        Using write command transit to dataGather
+        Using customerDecline command transit to customerDeclined
+        Using companyDecline command transit to companyDeclined
+        Using rate command transit to rated
+        Using writeAndRate command transit to rated
+        Using prorate command transit to rated
+        Using quoteCopy command transit to dataGather
+        Using suspense command transit to suspended
+        Using changeEndorsementEffDate command transit to dataGather
+        Using expire command transit to expired
+        Using archiveQuote command transit to archived
+        Using importQuote command transit to imported
+
+        Using quoteBorTransferStep command transit to dataGather
+        Using quoteBorTransfer command transit to dataGather
+    }
+
+    State customerDeclined for quote {
+        Using createVersion command transit to dataGather
+        Using createPlanVersions command transit to dataGather
+        Using separationNewQuote command transit to dataGather
+
+        Using rollOn command transit to dataGather
+        Using rollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOn command transit to dataGather
+        Using autoRollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using rollOnIssue command transit to issued
+        Using rollOnIssue command transit to cancelled only if isCancellation(true)
+
+        Using autoRollOnStep command transit to dataGather
+        Using autoRollOnStep command transit to rated only if isRatedAfterRollOn(true)
+
+        Using rollBackTerm command transit to rollbackPending
+        Using rollBackTerm command transit to cancelPending only if rolledBackState("cancelPending")
+        Using rollBackTerm command transit to termBackedOffPending only if rolledBackState("termBackedOffPending")
+
+        Using write command transit to dataGather
+        Using quoteCopy command transit to dataGather
+        Using expire command transit to expired
+        Using changeEndorsementEffDate command transit to dataGather
+        Using archiveQuote command transit to archived
+        Using quoteBorTransferStep command transit to dataGather
+        Using quoteBorTransfer command transit to dataGather
+        Using importQuote command transit to imported
+    }
+
+    State companyDeclined for quote {
+        Using createVersion command transit to dataGather
+        Using createPlanVersions command transit to dataGather
+        Using separationNewQuote command transit to dataGather
+
+        Using rollOn command transit to dataGather
+        Using rollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOn command transit to dataGather
+        Using autoRollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOnStep command transit to dataGather
+        Using autoRollOnStep command transit to rated only if isRatedAfterRollOn(true)
+
+        Using rollOnIssue command transit to issued
+        Using rollOnIssue command transit to cancelled only if isCancellation(true)
+
+        Using rollBackTerm command transit to rollbackPending
+        Using rollBackTerm command transit to cancelPending only if rolledBackState("cancelPending")
+        Using rollBackTerm command transit to termBackedOffPending only if rolledBackState("termBackedOffPending")
+
+        Using write command transit to dataGather
+        Using quoteCopy command transit to dataGather
+        Using expire command transit to expired
+        Using changeEndorsementEffDate command transit to dataGather
+        Using archiveQuote command transit to archived
+        Using quoteBorTransferStep command transit to dataGather
+        Using quoteBorTransfer command transit to dataGather
+        Using importQuote command transit to imported
+    }
+
+    State rated for quote {
+        Using createVersion command transit to dataGather
+        Using createPlanVersions command transit to dataGather
+        Using separationNewQuote command transit to dataGather
+
+        Using rollOn command transit to dataGather
+        Using rollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOn command transit to dataGather
+        Using autoRollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOnStep command transit to dataGather
+        Using autoRollOnStep command transit to rated only if isRatedAfterRollOn(true)
+
+        Using rollOnIssue command transit to issued
+        Using rollOnIssue command transit to cancelled only if isCancellation(true)
+
+        Using rollBackTerm command transit to rollbackPending
+        Using rollBackTerm command transit to cancelPending only if rolledBackState("cancelPending")
+        Using rollBackTerm command transit to termBackedOffPending only if rolledBackState("termBackedOffPending")
+
+        Using write command transit to dataGather
+        Using write command transit to rated only if isPremiumImpactDetected(false)
+        Using customerDecline command transit to customerDeclined
+        Using companyDecline command transit to companyDeclined
+        Using rate command transit to rated
+        Using writeAndRate command transit to rated
+        Using prorate command transit to rated
+        Using propose command transit to proposed
+        Using bind command transit to bound
+        Using issueRequest command transit to issuePending
+        Using issueRequest command transit to rated only if initRollOnProcessing(true)
+        Using endorsementIssue command transit to issued
+        Using initiateRollOn command transit to rated
+        Using rewriteIssue command transit to issued
+        Using renewalIssue command transit to issued
+        Using quoteCopy command transit to dataGather
+        Using expire command transit to expired
+        Using changeEndorsementEffDate command transit to dataGather
+        Using retrieveRollOnDelta command transit to rated
+        Using completeRollOn command transit to rated
+        Using archiveQuote command transit to archived
+        Using importQuote command transit to imported
+
+        Using quoteBorTransferStep command transit to dataGather
+        Using quoteBorTransfer command transit to dataGather
+        Using submit command transit to purchasePending
+    }
+
+    State purchasePending for quote {
+        Using rollOnIssue command transit to issued
+        Using newBusinessIssue command transit to issued;
+        Using endorsementIssue command transit to issued
+        Using renewalIssue command transit to issued
+        Using rewriteIssue command transit to issued
+        Using rescindIssue command transit to issued
+        Using issueFail command transit to issueFailed
+    }
+
+    State proposed for quote {
+        Using createVersion command transit to dataGather
+        Using createPlanVersions command transit to dataGather
+        Using separationNewQuote command transit to dataGather
+
+        Using rollOn command transit to dataGather
+        Using rollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOn command transit to dataGather
+        Using autoRollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOnStep command transit to dataGather
+        Using autoRollOnStep command transit to rated only if isRatedAfterRollOn(true)
+
+        Using rollOnIssue command transit to issued
+        Using rollOnIssue command transit to cancelled only if isCancellation(true)
+
+        Using rollBackTerm command transit to rollbackPending
+        Using rollBackTerm command transit to cancelPending only if rolledBackState("cancelPending")
+        Using rollBackTerm command transit to termBackedOffPending only if rolledBackState("termBackedOffPending")
+
+        Using write command transit to dataGather
+        Using customerDecline command transit to customerDeclined
+        Using companyDecline command transit to companyDeclined
+        Using propose command transit to proposed
+        Using bind command transit to bound
+        Using issueRequest command transit to issuePending
+        Using issueRequest command transit to proposed only if initRollOnProcessing(true)
+        Using endorsementIssue command transit to issued
+        Using initiateRollOn command transit to proposed
+        Using renewalIssue command transit to issued
+        Using rewriteIssue command transit to issued
+        Using quoteCopy command transit to dataGather
+        Using expire command transit to expired
+        Using changeEndorsementEffDate command transit to dataGather
+        Using retrieveRollOnDelta command transit to proposed
+        Using completeRollOn command transit to proposed
+        Using archiveQuote command transit to archived
+        Using quoteBorTransferStep command transit to dataGather
+        Using quoteBorTransfer command transit to dataGather
+        Using importQuote command transit to imported
+    }
+
+    State bound for quote {
+        Using createVersion command transit to dataGather
+        Using createPlanVersions command transit to dataGather
+        Using separationNewQuote command transit to dataGather
+
+        Using rollOn command transit to dataGather
+        Using rollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOn command transit to dataGather
+        Using autoRollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOnStep command transit to dataGather
+        Using autoRollOnStep command transit to rated only if isRatedAfterRollOn(true)
+
+        Using rollOnIssue command transit to issued
+        Using rollOnIssue command transit to cancelled only if isCancellation(true)
+
+        Using rollBackTerm command transit to rollbackPending
+        Using rollBackTerm command transit to cancelPending only if rolledBackState("cancelPending")
+        Using rollBackTerm command transit to termBackedOffPending only if rolledBackState("termBackedOffPending")
+
+        Using write command transit to dataGather
+        Using customerDecline command transit to customerDeclined
+        Using companyDecline command transit to companyDeclined
+        Using quoteCopy command transit to dataGather
+        Using issueRequest command transit to issuePending
+        Using issueRequest command transit to bound only if initRollOnProcessing(true)
+        Using endorsementIssue command transit to issued
+        Using initiateRollOn command transit to bound
+        Using renewalIssue command transit to issued
+        Using rewriteIssue command transit to issued
+        Using expire command transit to expired
+        Using changeEndorsementEffDate command transit to dataGather
+        Using retrieveRollOnDelta command transit to bound
+        Using completeRollOn command transit to bound
+        Using archiveQuote command transit to archived
+        Using quoteBorTransferStep command transit to dataGather
+        Using quoteBorTransfer command transit to dataGather
+        Using importQuote command transit to imported
+    }
+
+    State suspended for quote {
+        Using createVersion command transit to dataGather
+        Using createPlanVersions command transit to dataGather
+        Using separationNewQuote command transit to dataGather
+
+        Using rollOn command transit to dataGather
+        Using rollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOn command transit to dataGather
+        Using autoRollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOnStep command transit to dataGather
+        Using autoRollOnStep command transit to rated only if isRatedAfterRollOn(true)
+
+        Using rollOnIssue command transit to issued
+        Using rollOnIssue command transit to cancelled only if isCancellation(true)
+
+        Using rollBackTerm command transit to rollbackPending
+        Using rollBackTerm command transit to cancelPending only if rolledBackState("cancelPending")
+        Using rollBackTerm command transit to termBackedOffPending only if rolledBackState("termBackedOffPending")
+
+        Using quoteCopy command transit to dataGather
+        Using removeSuspense command transit to dataGather
+        Using companyDecline command transit to companyDeclined
+        Using customerDecline command transit to customerDeclined
+        Using expire command transit to expired
+        Using changeEndorsementEffDate command transit to dataGather
+        Using archiveQuote command transit to archived
+        Using quoteBorTransferStep command transit to dataGather
+        Using quoteBorTransfer command transit to dataGather
+    }
+
+    State issuePending for quote {
+        Using createVersion command transit to dataGather
+        Using createPlanVersions command transit to dataGather
+        Using separationNewQuote command transit to dataGather
+
+        Using rollOn command transit to dataGather
+        Using rollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOn command transit to dataGather
+        Using autoRollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOnStep command transit to dataGather
+        Using autoRollOnStep command transit to rated only if isRatedAfterRollOn(true)
+
+        Using rollOnIssue command transit to issued
+        Using rollOnIssue command transit to cancelled only if isCancellation(true)
+
+        Using rollBackTerm command transit to rollbackPending
+        Using rollBackTerm command transit to cancelPending only if rolledBackState("cancelPending")
+        Using rollBackTerm command transit to termBackedOffPending only if rolledBackState("termBackedOffPending")
+
+    	Using issueRequest command transit to issuePending
+    	Using newBusinessIssue command transit to issued;
+    	Using endorsementIssue command transit to issued
+        Using renewalIssue command transit to issued
+        Using rewriteIssue command transit to issued
+        Using rescindIssue command transit to issued
+    	Using issueFail command transit to issueFailed;
+        Using archiveQuote command transit to archived
+    }
+
+    State issueFailed for quote {
+        Using archiveQuote command transit to archived
+        Using write command transit to dataGather
+        Using issueRequest command transit to issuePending
+        Using issueRequest command transit to issueFailed only if initRollOnProcessing(true)
+    }
+
+    State expired for quote {
+        Using createVersion command transit to dataGather
+        Using createPlanVersions command transit to dataGather
+        Using separationNewQuote command transit to dataGather
+        Using quoteCopy command transit to dataGather
+        Using archiveQuote command transit to archived
+    }
+
+    State readyForOffer for quote {
+        Using createVersion command transit to dataGather
+        Using createPlanVersions command transit to dataGather
+        Using separationNewQuote command transit to dataGather
+        Using write command transit to dataGather
+        Using rate command transit to rated
+        Using writeAndRate command transit to rated
+        Using customerDecline command transit to customerDeclined
+        Using companyDecline command transit to companyDeclined
+        Using archiveQuote command transit to archived
+        Using expire command transit to expired
+        Using quoteCopy command transit to dataGather
+        Using suspense command transit to suspended
+        Using importQuote command transit to imported
+    }
+
+    State offerCompleted for quote {
+        Using write command transit to dataGather
+        Using rate command transit to rated
+        Using writeAndRate command transit to rated
+        Using customerDecline command transit to customerDeclined
+        Using companyDecline command transit to companyDeclined
+        Using archiveQuote command transit to archived
+        Using expire command transit to expired
+        Using quoteCopy command transit to dataGather
+        Using suspense command transit to suspended
+        Using importQuote command transit to imported
+    }
+
+    // Policy states
+    State issued for policy {
+        Using createVersion command transit to dataGather
+        Using createPlanVersions command transit to dataGather
+        Using separationNewQuote command transit to dataGather
+
+        Using rollOn command transit to dataGather
+        Using rollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOn command transit to dataGather
+        Using autoRollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOnStep command transit to dataGather
+        Using autoRollOnStep command transit to rated only if isRatedAfterRollOn(true)
+
+        Using rollOnIssue command transit to issued
+        Using rollOnIssue command transit to cancelled only if isCancellation(true)
+
+        Using rollBackTerm command transit to rollbackPending
+        Using rollBackTerm command transit to cancelPending only if rolledBackState("cancelPending")
+        Using rollBackTerm command transit to termBackedOffPending only if rolledBackState("termBackedOffPending")
+
+        Using policyCopy command transit to dataGather
+        Using endorse command transit to dataGather
+        Using BORTransfer command transit to dataGather
+        Using BORTransfer command transit to issued only if processOnRenewal(true)
+        Using endorseNPBE command transit to rated
+        Using split command transit to dataGather
+        Using spin command transit to dataGather
+        Using renew command transit to dataGather
+        Using doNotRenew command transit to issued
+        Using removeDoNotRenew command transit to issued
+        Using manualRenew command transit to issued
+        Using removeManualRenew command transit to issued
+        Using cancelTerm command transit to cancelPending
+        Using rollBack command transit to issued
+        Using cancelNotice command transit to issued
+        Using removeCancelNotice command transit to issued
+    }
+
+    State cancelPending for policy {
+        Using completePending command transit to cancelled
+        Using failPending command transit to cancelFailed
+        Using removeCancelNotice command transit to cancelPending
+    }
+
+    State cancelFailed for policy {
+    }
+
+    State policyIssuePending for policy {
+        Using completePending command transit to issued
+        Using completePending command transit to cancelled only if isCancellation(true)
+        Using failPending command transit to policyIssueFailed
+    }
+
+    State policyIssueFailed for policy {
+    }
+
+    State cancelled for policy {
+        Using createVersion command transit to dataGather
+        Using createPlanVersions command transit to dataGather
+        Using separationNewQuote command transit to dataGather
+
+        Using rollOn command transit to dataGather
+        Using rollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOn command transit to dataGather
+        Using autoRollOn command transit to rated only if isRatedAfterRollOn(true)
+
+        Using autoRollOnStep command transit to dataGather
+        Using autoRollOnStep command transit to rated only if isRatedAfterRollOn(true)
+
+        Using rollOnIssue command transit to issued
+        Using rollOnIssue command transit to cancelled only if isCancellation(true)
+
+        Using rollBackTerm command transit to rollbackPending
+        Using rollBackTerm command transit to cancelPending only if rolledBackState("cancelPending")
+        Using rollBackTerm command transit to termBackedOffPending only if rolledBackState("termBackedOffPending")
+
+        Using reinstate command transit to policyIssuePending
+        Using rescind command transit to dataGather
+        Using rollBack command transit to cancelled
+        Using policyCopy command transit to dataGather
+        Using rewrite command transit to dataGather
+        Using removeCancelNotice command transit to cancelled
+    }
+
+    State termBackedOffPending for policy {
+        Using completePending command transit to termBackedOff
+        Using failPending command transit to termBackedOffFailed
+    }
+
+    State termBackedOffFailed for policy {
+    }
+
+    State termBackedOff for policy {
+    }
+
+    State rollbackPending for policy {
+        Using completePending command transit to issued
+        Using failPending command transit to rollbackFailed
+    }
+
+    State rollbackFailed for policy {
+    }
+
+    // Archived quote states
+    State archived for archivedQuote {
+        Using createVersion command transit to dataGather
+        Using createPlanVersions command transit to dataGather
+        Using separationNewQuote command transit to dataGather
+        Using archivedQuoteCopy command transit to dataGather
+    }
+
+    //Imported quote states
+    State imported for importedQuote {
+        Using acceptImportedQuote command transit to dataGather
+    }
+
+    State legacyPolicyIssued for legacyPolicy {
+        Using renewLegacyPolicy command transit to dataGather
+    }
+}

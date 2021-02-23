@@ -1,0 +1,197 @@
+{
+	"_key": {
+		"rootId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+		"revisionNo": 1
+	},
+	"_modelName": "PersonalAuto",
+	"_modelVersion": "1",
+	"_type": "PersonalAutoPolicySummary",
+	"accessTrackInfo": {
+		"createdBy": "qa",
+		"createdOn": "2017-07-26T12:32:50.276Z",
+		"updatedBy": "qa",
+		"updatedOn": "2017-07-26T12:32:50.276Z",
+		"_key": {
+			"rootId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+			"revisionNo": 1,
+			"parentId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+			"id": "76f30ba7-1c5d-4872-8170-49a2d6698ee4"
+		},
+		"_type": "AutoAccessTrackInfo"
+	},
+	"inceptionDate": "2017-07-26",
+	"methodOfDelivery": "mail",
+	"notes": "no notes",
+	"parties": [],
+	"policyNumber": "P0000001059",
+	"sendTo": "customer",
+	"createdFromPolicyRev": 0,
+	"state": "issued",
+	"termDetails": {
+		"termCd": "ANNUAL",
+		"termNo": 0,
+		"termEffectiveDate": "2017-07-26",
+		"termExpirationDate": "2018-07-26",
+		"_key": {
+			"rootId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+			"revisionNo": 1,
+			"parentId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+			"id": "4c8ad6f2-d227-47e1-9844-bc534d9f3554"
+		},
+		"_type": "AutoTermDetails"
+	},
+	"transactionDetails": {
+		"txEffectiveDate": "2017-07-26T12:32:48.380Z",
+		"txCreateDate": "2017-07-26T12:32:48.380Z",
+		"txType": "NEW_BUSINESS",
+		"_key": {
+			"rootId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+			"revisionNo": 1,
+			"parentId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+			"id": "20163864-dcad-4e50-9fd0-e1bfe044e073"
+		},
+		"_type": "AutoTransactionDetails",
+		"totalPremium": {
+			"amount": 577.16,
+			"currency": "USD"
+		}
+	},
+	"blob": {
+		"_type": "AutoBLOB",
+		"_key": {
+			"rootId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+			"revisionNo": 1,
+			"parentId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+			"id": "20163864-dcad-4e50-9fd0-e1bfe0000000"
+		},
+		"lobs": [
+			{
+				"_type": "AutoLOB",
+				"_key": {
+					"rootId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+					"revisionNo": 1,
+					"parentId": "20163864-dcad-4e50-9fd0-e1bfe0000000",
+					"id": "20163864-dcad-4e50-9fd0-e1bfe0000001"
+				},
+				"riskItems": [
+					{
+						"_key": {
+							"rootId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+							"revisionNo": 1,
+							"parentId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+							"id": "22962899-3a2e-4e78-ae5c-afd39a6f4728"
+						},
+						"_modelName": "PersonalAuto",
+						"_modelVersion": "1",
+						"_type": "AutoVehicle",
+						"vehicleBaseDetails": {
+							"airBagStatusCd": "DAP",
+							"antiLockBrakeCd": "ABR",
+							"armoredInd": false,
+							"automaticBeltsInd": true,
+							"collSymbol": "1",
+							"compSymbol": "1",
+							"daytimeRunningLampsInd": true,
+							"securityOptionsCd": "TRCKSYS",
+							"typeCd": "Regular",
+							"usageCd": "PL",
+							"bodyTypeCd": "1600 BAS",
+							"fuelTypeCd": "DIES",
+							"make": "BMW",
+							"manufactureYear": 2013,
+							"model": "X5",
+							"modelYear": 2012,
+							"noVinReasonCd": null,
+							"vehicleIdentificationNumber": "VI12222244-777-666",
+							"performanceCd": "H",
+							"_type": "AutoVehicleEntity",
+							"_key": {
+								"id": "cc30a300-de70-4953-ba6f-9a6687033e8a"
+							}
+						},
+						"annualMiles": 5000,
+						"assignedDrivers": [
+							{
+								"driver": {
+									"_ref": "ae06b625-1b16-4c34-b73d-dc080cde8f53"
+								},
+								"percentOfUsage": 100,
+								"_type": "AutoVehicleDriver",
+								"_key": {
+									"parentId": "22962899-3a2e-4e78-ae5c-afd39a6f4728",
+									"id": "e6a76653-5561-4933-8da4-fc3e520d9a1b",
+									"rootId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+									"revisionNo": 1
+								}
+							}
+						],
+						"biSymbol": "1",
+						"declaredAnnualMiles": 10000,
+						"distanceForPleasurePerWeek": 1000,
+						"garagingAddress": {
+							"postalCode": "07100",
+							"stateProvinceCd": "NY",
+							"unitNumber": "1",
+							"county": "New York",
+							"countryCd": "US",
+							"streetNumber": "1",
+							"streetName": "Baker st.",
+							"city": "New York",
+							"_type": "AutoAddressInfo",
+							"_key": {
+								"id": "4ac391ae-787b-4e1f-b00d-f2611d3b29cb",
+								"rootId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+								"revisionNo": 1,
+								"parentId": "22962899-3a2e-4e78-ae5c-afd39a6f4728"
+							}
+						},
+						"included": true,
+						"marketValue": {
+							"amount": 30000,
+							"currency": "USD"
+						},
+						"numDaysDrivenPerWeek": 5,
+						"odometerReading": 150000,
+						"pdSymbol": "1",
+						"pipMedSymbol": "1",
+						"plateNumber": "JBM116",
+						"registeredOwner": {
+							"_ref": "ae06b625-1b16-4c34-b73d-dc080cde8f53"
+						},
+						"registeredStateCd": "NY",
+						"series": "NAM",
+						"coverages": [
+							{
+								"code": "COLL",
+								"effectiveDate": "2015-11-17",
+								"deductibleAmount": {
+									"amount": 750,
+									"currency": "USD"
+								},
+								"_type": "AutoCOLLCoverage",
+								"_key": {
+									"id": "c387cf9c-7c80-4f6f-b9bc-81217b54213b",
+									"rootId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+									"revisionNo": 1,
+									"parentId": "4fb6ead7-8e27-45fa-b248-c585ac00fc4c"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	"policyDetail": {
+		"_key": {
+			"rootId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+			"revisionNo": 1,
+			"parentId": "b8d96814-d288-4b57-90fc-45e99c893ee1",
+			"id": "b040f0c8-8c1f-444a-b9ec-3580cd5502ea"
+		},
+		"_modelName": "PersonalAuto",
+		"_modelVersion": "1",
+		"_type": "AutoPolicyDetail",
+		"currentQuoteInd": true
+	}
+}

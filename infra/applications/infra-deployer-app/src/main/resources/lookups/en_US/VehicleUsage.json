@@ -1,0 +1,22 @@
+[
+  {
+    "code": "BU",
+    "defaultValue": "Business"
+  },
+  {
+    "code": "FM",
+    "defaultValue": "Farm"
+  },
+  {
+    "code": "LC",
+    "defaultValue": "Work - Long Commute"
+  },
+  {
+    "code": "PL",
+    "defaultValue": "Pleasure"
+  },
+  {
+    "code": "SC",
+    "defaultValue": "Work - Short Commute"
+  }
+]

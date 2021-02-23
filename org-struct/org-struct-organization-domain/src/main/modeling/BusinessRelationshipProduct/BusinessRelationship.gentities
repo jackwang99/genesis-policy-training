@@ -1,0 +1,7 @@
+Entity BusinessRelationshipEntity is BusinessRelationship {
+    Attr relationshipOrganizations: *OrganizationInRelationshipEntity
+}
+
+Entity OrganizationInRelationshipEntity is OrganizationInRelationship {
+
+}

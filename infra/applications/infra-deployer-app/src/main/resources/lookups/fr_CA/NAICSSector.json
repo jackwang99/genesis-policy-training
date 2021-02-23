@@ -1,0 +1,94 @@
+[
+  {
+    "code": "11",
+    "defaultValue": "11 - Agriculture, foresterie, pêche et chasse"
+  },
+  {
+    "code": "21",
+    "defaultValue": "21 - Extraction minière, exploitation en carrière et extraction de pétrole et de gaz"
+  },
+  {
+    "code": "22",
+    "defaultValue": "22 - Utilitaires"
+  },
+  {
+    "code": "23",
+    "defaultValue": "23 - Construction"
+  },
+  {
+    "code": "31",
+    "defaultValue": "31 - 33 Fabrication"
+  },
+  {
+    "code": "32",
+    "defaultValue": "31 - 33 Fabrication"
+  },
+  {
+    "code": "33",
+    "defaultValue": "31 - 33 Fabrication"
+  },
+  {
+    "code": "42",
+    "defaultValue": "42 - Commerce de gros"
+  },
+  {
+    "code": "44",
+    "defaultValue": "44 - 45 Commerce de détail"
+  },
+  {
+    "code": "45",
+    "defaultValue": "44 - 45 Commerce de détail"
+  },
+  {
+    "code": "48",
+    "defaultValue": "48 - 49 Transport et entreposage"
+  },
+  {
+    "code": "49",
+    "defaultValue": "48 - 49 Transport et entreposage"
+  },
+  {
+    "code": "51",
+    "defaultValue": "51 - Informations"
+  },
+  {
+    "code": "52",
+    "defaultValue": "52 - Finances et assurances"
+  },
+  {
+    "code": "53",
+    "defaultValue": "53 - Immobilier et location et location à bail"
+  },
+  {
+    "code": "54",
+    "defaultValue": "54 - Services professionnels, scientifiques et techniques"
+  },
+  {
+    "code": "55",
+    "defaultValue": "55 - Gestion des entreprises et des entreprises"
+  },
+  {
+    "code": "56",
+    "defaultValue": "56 - Services administratifs, de soutien et de gestion des déchets et d'assainissement"
+  },
+  {
+    "code": "61",
+    "defaultValue": "61 - Services éducatifs"
+  },
+  {
+    "code": "71",
+    "defaultValue": "71 - Arts, spectacles et loisirs"
+  },
+  {
+    "code": "72",
+    "defaultValue": "72 - Hébergement et services de restauration"
+  },
+  {
+    "code": "81",
+    "defaultValue": "81 - Autres services (sauf l'administration publique)"
+  },
+  {
+    "code": "92",
+    "defaultValue": "92 - Administration publique"
+  }
+]

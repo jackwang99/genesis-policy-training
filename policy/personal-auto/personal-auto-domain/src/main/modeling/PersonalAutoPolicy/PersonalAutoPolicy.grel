@@ -1,0 +1,121 @@
+Model PersonalAuto
+
+PolicyPersonsDriverType{
+    Predicate {
+        subject: PolicySummary
+        predicate: [ "A", "E", "N", "O", "P", "U" ]
+        object: PersonBase
+    }
+    Selector {
+        subject: PolicySummary
+        predicate: @object < PolicyPerson + DriverInfo .driverType
+        object: AutoPolicySummary > AutoPolicyParty > PolicyPerson .personBaseDetails
+    }
+}
+
+PersonPoliciesDriverType{
+    Predicate {
+        subject: PersonBase
+        predicate: [ "A", "E", "N", "O", "P", "U" ]
+        object: PolicySummary
+    }
+    Selector {
+        subject: AutoPolicySummary > AutoPolicyParty > PolicyPerson .personBaseDetails
+        predicate: @subject < PolicyPerson + DriverInfo .driverType
+        object: PolicySummary
+    }
+}
+
+PersonRelationships {
+    {
+        subject: PolicyParty[insuredInfo.primary=true] > PolicyPerson .personBaseDetails
+        predicate: PolicyParty > .relationToPrimaryInsured
+        object: @predicate + PolicyPerson .personBaseDetails
+    }
+}
+
+PersonAddress {
+    {
+        subject: AutoPolicyPerson .personBaseDetails
+        predicate: @object > .addressType
+        object: @subject + AutoAddressInfo
+    }
+    {
+        subject: PolicyParty > PolicyPerson .personBaseDetails
+        predicate: @object > .addressType
+        object: AutoBillingInfo > AutoAddressInfo
+    }
+}
+
+PersonVehicles {
+    {
+        subject: @object + .registeredOwner > PolicyPerson .personBaseDetails
+        predicate: "owner"
+        object: AutoVehicle > Vehicle
+    }
+    {
+        subject: @predicate + PersonalAutoPolicyParty > PolicyPerson > .personBaseDetails
+        predicate: @object + AutoVehicleDriver > .assignDriverType
+        object: AutoVehicle > Vehicle
+    }
+}
+
+VehicleLocations {
+    {
+        subject: AutoVehicle > Vehicle
+        predicate: "garage"
+        object: @subject + Location
+    }
+}
+
+VehicleToAdditionalInterestAddress {
+    Predicate {
+        subject: VehicleBase
+        predicate: "Additional Interest Address"
+        object: LocationBase
+    }
+    Selector {
+        subject: AutoVehicle > Vehicle
+        predicate: "Additional Interest Address"
+        object: @subject < AutoVehicle > AutoAdditionalInterestInfo > .address
+    }
+}
+
+VehiclePolicies {
+    Predicate {
+        subject: VehicleBase
+        predicate: "vehicle"
+        object: PolicySummary
+    }
+    Selector {
+        subject: Vehicle
+        predicate: "vehicle"
+        object: PolicySummary
+    }
+}
+
+PersonEmails {
+    {
+        subject: PersonalAutoPolicySummary > PersonalAutoPolicyParty > .personInfo > .personBaseDetails
+        predicate: @object > .type
+        object: @subject > AutoCommunicationInfo > AutoEmailInfo
+    }
+    {
+        subject: PolicyParty[insuredInfo.primary=true] > PolicyPerson .personBaseDetails
+        predicate: @object > .type
+        object: PersonalAutoPolicySummary > .billingInfo > AutoCommunicationInfo > AutoEmailInfo
+    }
+}
+
+PersonPhones {
+    {
+        subject: PersonalAutoPolicySummary > PersonalAutoPolicyParty > .personInfo > .personBaseDetails
+        predicate: @object > .type
+        object: @subject > AutoCommunicationInfo > AutoPhoneInfo
+    }
+    {
+        subject: PolicyParty[insuredInfo.primary=true] > PolicyPerson .personBaseDetails
+        predicate: @object > .type
+        object: PersonalAutoPolicySummary > .billingInfo > AutoCommunicationInfo > AutoPhoneInfo
+    }
+}

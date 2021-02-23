@@ -1,0 +1,14 @@
+[
+    {
+        "code": "PERCENTAGE",
+        "defaultValue": "Percentage"
+    },
+    {
+        "code": "FLAT",
+        "defaultValue": "Flat Amount"
+    },
+    {
+        "code": "OVERWRITE",
+        "defaultValue": "Overwrite"
+    }
+]

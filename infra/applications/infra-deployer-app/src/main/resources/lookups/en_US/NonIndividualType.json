@@ -1,0 +1,58 @@
+[
+  {
+    "code": "Association",
+    "defaultValue": "Association"
+  },
+  {
+    "code": "CRPR",
+    "defaultValue": "Corporation"
+  },
+  {
+    "code": "GP",
+    "defaultValue": "General Partnership"
+  },
+  {
+    "code": "JV",
+    "defaultValue": "Joint Venture"
+  },
+  {
+    "code": "LLC",
+    "defaultValue": "LLC"
+  },
+  {
+    "code": "LLP",
+    "defaultValue": "Limited Liability Partnership"
+  },
+  {
+    "code": "LP",
+    "defaultValue": "Limited Partnership"
+  },
+  {
+    "code": "NFPO",
+    "defaultValue": "Not For Profit Organization"
+  },
+  {
+    "code": "PC",
+    "defaultValue": "Professional Corporation"
+  },
+  {
+    "code": "PLLC",
+    "defaultValue": "Professional Limited Liability Company"
+  },
+  {
+    "code": "PRTN",
+    "defaultValue": "Partnership"
+  },
+  {
+    "code": "SCHSC",
+    "defaultValue": "Subchapter S Corporation"
+  },
+  {
+    "code": "SLPR",
+    "defaultValue": "Sole Proprietorship"
+  },
+  {
+    "code": "TRST",
+    "defaultValue": "Trust"
+  }
+]

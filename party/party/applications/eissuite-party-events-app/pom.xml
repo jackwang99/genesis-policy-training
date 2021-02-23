@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.eisgroup.genesis.proto.party.applications</groupId>
+        <artifactId>proto-party-applications-parent-pom</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>eissuite-party-events-app</artifactId>
+    <packaging>jar</packaging>
+
+    <name>Party Registry Reference EIS Events Application</name>
+    <description>Party Registry Reference EIS Events Application Module</description>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <classifier>fat</classifier>
+                    <attach>false</attach>
+                    <mainClass>com.eisgroup.genesis.boot.Bootstrap</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>com.eisgroup.genesis.apps</groupId>
+            <artifactId>spring-boot-app-config</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.data</groupId>
+            <artifactId>column-store-cassandra-impl</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.lifecycle</groupId>
+            <artifactId>lifecycle-stream-api</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.lifecycle</groupId>
+            <artifactId>lifecycle-events-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.events</groupId>
+            <artifactId>event-stream-consumer</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.domain</groupId>
+            <artifactId>entity-persistence</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.stream</groupId>
+            <artifactId>stream-consumer-impl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.model</groupId>
+            <artifactId>model-repository-binary-impl</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.model</groupId>
+            <artifactId>external-model-impl</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.registry.core.party</groupId>
+            <artifactId>party-registry-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto</groupId>
+            <artifactId>party-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.utils</groupId>
+            <artifactId>http-utils</artifactId>
+        </dependency>
+
+        <!-- Security -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.security</groupId>
+            <artifactId>security-bundle</artifactId>
+            <type>tile</type>
+        </dependency>
+
+        <!-- Logging -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.utils</groupId>
+            <artifactId>testing-utils</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

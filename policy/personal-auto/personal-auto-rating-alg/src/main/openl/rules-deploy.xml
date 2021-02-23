@@ -1,0 +1,15 @@
+<rules-deploy>
+  <isProvideRuntimeContext>true</isProvideRuntimeContext>
+  <isProvideVariations>false</isProvideVariations>
+  <useRuleServiceRuntimeContext>false</useRuleServiceRuntimeContext>
+  <serviceName>personal-auto-rules</serviceName>
+
+  <publishers>
+    <publisher>RESTFUL</publisher>
+  </publishers>
+
+  <interceptingTemplateClassName>com.eisgroup.genesis.personalauto.rating.RatingService</interceptingTemplateClassName>
+
+  <url>com.eisgroup.genesis.personalauto.rating.RatingService</url>
+
+</rules-deploy>

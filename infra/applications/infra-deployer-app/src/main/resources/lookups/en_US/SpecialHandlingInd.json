@@ -1,0 +1,14 @@
+[
+  {
+    "code": "BOARDMEMB",
+    "defaultValue": "Board Member"
+  },
+  {
+    "code": "CMPEXEC",
+    "defaultValue": "Company executive"
+  },
+  {
+    "code": "NO",
+    "defaultValue": "No"
+  }
+]

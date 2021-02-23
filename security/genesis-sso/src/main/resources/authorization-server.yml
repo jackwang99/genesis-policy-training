@@ -1,0 +1,26 @@
+clients:
+  -
+    client-id: ui
+    secret: h0zqwh6fgx
+    grant-types:
+      - implicit
+    redirects:
+      - http://localhost/login
+  -
+    client-id: facade
+    secret: t9tgf44t8q
+    grant-types:
+      - password
+      - refresh_token
+    authorities:
+      - ROLE_TRUSTED_CLIENT
+  -
+    client-id: etcs
+    secret: 1eq0oder8k
+    grant-types:
+      - password
+keystore:
+    path: sso.jks
+    alias: sso
+    password: genesis-sso
+access-token-validity-seconds: 300 # 5 minutes

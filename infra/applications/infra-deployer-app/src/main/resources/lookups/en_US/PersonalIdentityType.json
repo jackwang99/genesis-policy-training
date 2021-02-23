@@ -1,0 +1,22 @@
+[
+  {
+    "code": "CITIZEN_CARD",
+    "defaultValue": "Citizen Card"
+  },
+  {
+    "code": "DRIVERS_LICENSE",
+    "defaultValue": "Driver's licence"
+  },
+  {
+    "code": "ID_CARD",
+    "defaultValue": "ID card"
+  },
+  {
+    "code": "PASSPORT",
+    "defaultValue": "Passport"
+  },
+  {
+    "code": "SSN",
+    "defaultValue": "SSN"
+  }
+]

@@ -1,0 +1,7 @@
+Model IndividualAgencyContainer
+
+Namespace IndividualAgencyContainer
+
+EntryPoints [
+    "IndividualAgencyContainer Validation"
+]

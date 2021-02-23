@@ -1,0 +1,38 @@
+Model FleetAuto
+
+Namespace FleetAuto
+
+EntryPoints [
+    "Apply DT",
+    "Quote Policy Validation",
+    "Update dimension",
+    "Harmonize",
+    "Default apply",
+    "Reset values",
+    "UnderwritingMeasure",
+    "Premium Override Term",
+    "Issue Rules apply"
+]
+
+Decision Tables [
+    "Applicability Configuration",
+    "Offer Status Configuration",
+    "Entity Applicability",
+    "Min Max",
+    "Premium Override Min Max",
+    "Default Values",
+    "Values List",
+    "Relationship",
+    "Invocation Points",
+    "Entity Manager",
+    "Entity Manager Listener",
+    "Form Revisions",
+    "Form Revisions Info",
+    "Kraken Rule Eligibility",
+    "Decision Table Rule Eligibility"
+]
+
+VersioningConfiguration [
+    "Effective Date",
+    "Request Date"
+]

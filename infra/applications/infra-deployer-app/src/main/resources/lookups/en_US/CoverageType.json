@@ -1,0 +1,10 @@
+[
+  {
+    "code": "SINGLE",
+    "defaultValue": "Single"
+  },
+  {
+    "code": "SPLIT",
+    "defaultValue": "Split"
+  }
+]

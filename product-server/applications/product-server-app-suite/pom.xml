@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>product-server-applications-pom</artifactId>
+        <groupId>com.eisgroup.genesis.proto.product.server.applications</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>product-server-app-suite</artifactId>
+    <packaging>jar</packaging>
+
+    <!-- this is dev-app config for product server, please use "-Dapps=ps -DnoReports -DnoBpm -DnoRating" to start applications -->
+    <!-- to start product server with mock data, please set value "mock_model" to system property "spring.profiles.active"
+        and use "-Dapps=ps -DnoReports -DnoBpm -DnoRating -DmockModel" to start applications -->
+
+    <profiles>
+        <profile>
+            <id>embedded-app-start</id>
+            <activation>
+                <property>
+                    <name>apps</name>
+                    <value>ps</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.eisgroup.genesis.tools</groupId>
+                        <artifactId>frunner-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>product-server-applications-start</id>
+                                <goals>
+                                    <goal>start</goal>
+                                </goals>
+                                <configuration>
+                                    <executionName>product-server-applications</executionName>
+                                    <parallelism>4</parallelism>
+                                    <suspendBuild>true</suspendBuild>
+
+                                    <applications>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.infra.applications</groupId>
+                                            <artifactId>infra-deployer-app</artifactId>
+                                            <version>${project.version}</version>
+                                            <priority>1</priority>
+                                        </application>
+                                        <!-- Security -->
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.security.applications</groupId>
+                                            <artifactId>security-deployer-app</artifactId>
+                                            <version>${project.version}</version>
+                                            <priority>2</priority>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.security.applications</groupId>
+                                            <artifactId>security-facade-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.infra.applications</groupId>
+                                            <artifactId>infra-events-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.security.applications</groupId>
+                                            <artifactId>security-events-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+
+                                        <!-- Policy auto -->
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+                                            <artifactId>policy-auto-facade-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <!-- Policy property -->
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+                                            <artifactId>policy-property-facade-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <!-- Product server -->
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.product.server.applications</groupId>
+                                            <artifactId>product-server-deployer-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                        <application>
+                                            <groupId>com.eisgroup.genesis.proto.product.server.applications</groupId>
+                                            <artifactId>product-server-app</artifactId>
+                                            <version>${project.version}</version>
+                                        </application>
+                                    </applications>
+                                    <systemProperties>
+                                        <systemProperty>
+                                            <name>genesis.authorization.server.url</name>
+                                            <value>http://localhost:8088</value>
+                                        </systemProperty>
+                                        <systemProperty>
+                                            <name>genesis.bootstrap.exit.allowed</name>
+                                            <value>false</value>
+                                        </systemProperty>
+                                        <systemProperty>
+                                            <name>spring.profiles.active</name>
+                                            <value>basic-login</value>
+                                        </systemProperty>
+                                        <systemProperty>
+                                            <name>user.timezone</name>
+                                            <value>UTC</value>
+                                        </systemProperty>
+                                    </systemProperties>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.infra.applications</groupId>
+            <artifactId>infra-deployer-app</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!-- Security -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.security.applications</groupId>
+            <artifactId>security-deployer-app</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.security.applications</groupId>
+            <artifactId>security-facade-app</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.policy.applications</groupId>
+            <artifactId>policy-app-suite</artifactId>
+            <version>${project.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <!-- Product server -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.product.server.applications</groupId>
+            <artifactId>product-server-deployer-app</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.product.server.applications</groupId>
+            <artifactId>product-server-app</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+</project>

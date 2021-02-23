@@ -1,0 +1,50 @@
+{
+  "_key": {
+    "rootId": "15e63b23-4cb2-48e6-a1af-68b0c46d3229",
+    "revisionNo": 1
+  },
+  "state": "unqualified",
+  "customerNumber": "IC0000001005",
+  "details": {
+    "person": {
+      "firstName": "Bugss",
+      "lastName": "Bunnyy",
+      "birthDate": "1990-04-12",
+      "deceasedDate": "2112-06-20",
+      "deceased": true,
+      "genderCd": "male",
+      "maritalStatus": "S",
+      "taxId": "c1671",
+      "_type": "GenesisCrmPerson"
+    },
+    "_type": "GenesisCrmIndividualDetails"
+  },
+  "communicationInfo": {
+    "addresses": [
+      {
+        "location": {
+          "addressLine1": "abc",
+          "addressLine2": "abc 2",
+          "addressLine3": "addressLine3",
+          "city": "City30008",
+          "countryCd": "US",
+          "postalCode": "87413",
+          "stateProvinceCd": "AA",
+          "accuracy": "accuracy",
+          "_type": "GenesisLocation"
+        },
+        "preferred": true,
+        "doNotSolicit": false,
+        "inCareOf": "inCareOf",
+        "attention": "attention",
+        "subdivision": "subdivision",
+        "addressValidatedInd": "addressValidatedInd",
+        "_type": "GenesisCrmAddress"
+      }
+    ],
+    "_type": "GenesisCrmCommunicationInfo"
+  },
+  "_type": "IndividualCustomer",
+  "_modelName": "INDIVIDUALCUSTOMER",
+  "_modelVersion": "1"
+}

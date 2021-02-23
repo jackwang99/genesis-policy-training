@@ -1,0 +1,16 @@
+[
+  {
+    "code": "AcuraINTEGRA2000",
+    "defaultValue": "GS, GSR, LS, R",
+    "make": "acura",
+    "model": "integra",
+    "modelYear": 2000
+  },
+  {
+    "code": "AcuraINTEGRA2001",
+    "defaultValue": "GS, GSR, LS, R",
+    "make": "acura",
+    "model": "integra",
+    "modelYear": 2001
+  }
+]

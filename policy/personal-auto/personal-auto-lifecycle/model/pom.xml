@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.eisgroup.genesis.personalauto</groupId>
+        <artifactId>personal-auto-pom</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>personal-auto-lifecycle-model</artifactId>
+    <name>Personal Auto Product Prototype Lifecycle Model</name>
+    <description>Personal Auto Product Prototype Lifecycle Model Module</description>
+    <packaging>jar</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <classesDirectory>../target/classes</classesDirectory>
+                    <includes>
+                        <include>genesis/factory-models/*</include>
+                        <include>genesis/factory-types/*</include>
+                    </includes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.eisgroup.genesis.personalauto</groupId>
+            <artifactId>personal-auto-lifecycle</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.policy.core</groupId>
+            <artifactId>policy-testing</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.eisgroup.genesis.test.product</groupId>
+                    <artifactId>test-domain</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.test.product</groupId>
+            <artifactId>test-domain</artifactId>
+            <classifier>no-party</classifier>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.lifecycle</groupId>
+            <artifactId>state-machine-impl</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.model</groupId>
+            <artifactId>model-repository-binary-impl</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.data</groupId>
+            <artifactId>column-store-testing</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>

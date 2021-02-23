@@ -1,0 +1,12 @@
+{
+    "_key": {
+        "rootId": "7a713ef7-29c6-49a8-9a87-c56cf36b84e8",
+        "revisionNo": 1
+    },
+    "_type": "IndividualCustomer",
+    "_modelName": "INDIVIDUALCUSTOMER",
+    "_modelVersion": "1",
+    "_modelType": "Customer",
+    "customerNumber": "IC0000007173",
+    "state": "unqualified"
+}

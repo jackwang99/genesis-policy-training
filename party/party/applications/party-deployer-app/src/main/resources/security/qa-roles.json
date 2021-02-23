@@ -1,0 +1,41 @@
+[
+  {
+    "name": "QA Default",
+    "description": "Role with all privileges for QA testing, assigned to qa user",
+    "assignedAuthorities": [
+      "Party: Create Party",
+      "Party: Update Party",
+      "Party: Merge Party",
+      "Party: Access Party",
+      "Party: Search Party",
+      "Party: Manage Batch",
+      "Party: Access History"
+    ]
+  },
+  {
+    "name": "QA All",
+    "description": "Role with all privileges for QA testing, assigned to all users",
+    "assignedAuthorities": [
+      "Party: Create Party",
+      "Party: Update Party",
+      "Party: Merge Party",
+      "Party: Access Party",
+      "Party: Search Party",
+      "Party: Manage Batch",
+      "Party: Access History"
+    ]
+  },
+  {
+    "name": "Privileges testing",
+    "description": "Role with all privileges for QA testing, assigned to privileges testing user",
+    "assignedAuthorities": [
+      "Party: Create Party",
+      "Party: Update Party",
+      "Party: Merge Party",
+      "Party: Access Party",
+      "Party: Search Party",
+      "Party: Manage Batch",
+      "Party: Access History"
+    ]
+  }
+]

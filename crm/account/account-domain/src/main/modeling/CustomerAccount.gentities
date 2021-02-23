@@ -1,0 +1,34 @@
+Entity GenesisCustomerAccount is CustomerAccount {
+
+    Attr name: String    
+
+    @Required
+    @Lookup("SpecialHandlingInd")
+    @Description("lookup:SpecialHandlingInd")
+    Attr specialHandling: String
+
+    Attr agency: String
+    Attr confidentialInd: Boolean
+
+    Attr customers: *GenesisCustomerAssociation
+    Attr designatedContacts: *GenesisDesignatedContact
+    
+    Attr accessTrackInfo: GenesisAccessTrackInfo
+}
+
+Entity GenesisCustomerAssociation is CustomerAssociation {}
+
+Entity GenesisDesignatedContact {
+
+    @Required
+    ExtLink agent: OrganizationalPerson
+    @Required
+    Attr contactPhone: String 
+}
+
+Entity GenesisAccessTrackInfo is AccessTrackInfo {
+    @Searchable
+    Attr createdOn: Datetime
+    @Searchable    
+    Attr updatedOn: Datetime
+} 

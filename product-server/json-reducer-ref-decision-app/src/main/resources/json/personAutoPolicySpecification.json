@@ -1,0 +1,80 @@
+{
+  "body": {
+    "response": "200 OK",
+    "success": {
+      "data": {
+        "policyProducts": [
+          {
+            "productCd": "PersonalAuto",
+            "root": {
+              "id": "PersonalAutoPolicySummary"
+            },
+            "components": [
+              {
+                "id": "AutoVehicleEntity",
+                "businessName": "AutoVehicleEntity",
+                "designName": "AutoVehicleEntity",
+                "type": {
+                  "name": "PARTY"
+                },
+                "attributes": [
+                  {
+                    "id": "vehSymbol",
+                    "businessName": "vehSymbol",
+                    "type": "string",
+                    "connections": [
+                      {
+                        "cardinality": "SINGLE"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "PersonalAutoPolicySummary",
+                "businessName": "PersonalAutoPolicySummary",
+                "designName": "PersonalAutoPolicySummary",
+                "type": {
+                  "name": "POLICY"
+                },
+                "attributes": [
+                  {
+                    "id": "riskStateCd",
+                    "businessName": "riskStateCd",
+                    "type": "string",
+                    "connections": [
+                      {
+                        "cardinality": "SINGLE"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "country",
+                    "businessName": "country",
+                    "type": "string",
+                    "connections": [
+                      {
+                        "cardinality": "SINGLE"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "rateEffectiveDate",
+                    "businessName": "rateEffectiveDate",
+                    "type": "date",
+                    "connections": [
+                      {
+                        "cardinality": "SINGLE"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "finalResponse": true
+}

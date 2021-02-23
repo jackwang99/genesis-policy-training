@@ -1,0 +1,15 @@
+<rules-deploy>
+  <isProvideRuntimeContext>true</isProvideRuntimeContext>
+  <isProvideVariations>false</isProvideVariations>
+  <useRuleServiceRuntimeContext>false</useRuleServiceRuntimeContext>
+  <serviceName>fleet-auto-rules</serviceName>
+
+  <publishers>
+    <publisher>RESTFUL</publisher>
+  </publishers>
+
+  <interceptingTemplateClassName>com.eisgroup.genesis.fleet.rating.RatingService</interceptingTemplateClassName>
+
+  <url>com.eisgroup.genesis.fleet.rating.RatingService</url>
+
+</rules-deploy>

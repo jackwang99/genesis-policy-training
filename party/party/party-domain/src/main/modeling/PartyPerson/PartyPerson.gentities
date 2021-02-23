@@ -1,0 +1,36 @@
+Entity PersonEntity is Person, RootEntity, StatefulEntity, MergeableEntity {
+
+    @Searchable
+    Attr registryTypeId: String
+
+    @Lookup("Title")
+    @Description("lookup:Title")
+    Attr salutation: String
+
+    @ReadOnly
+    @Searchable
+    Attr registryEntityNumber: String
+
+    @Phonetic
+    @IgnoreCase
+    @Searchable("firstName")
+    @Required
+    Attr firstName: String
+
+    @Phonetic
+    @IgnoreCase
+    @Searchable("lastName")
+    @Required
+    Attr lastName: String
+
+    @Searchable
+    @IgnoreCase
+    Attr middleName: String
+
+    @Searchable
+    @Required
+    Attr birthDate: Date
+
+    @Searchable
+    Attr taxId: String
+}

@@ -1,0 +1,14 @@
+Model MajorAccount
+
+Common {
+    Number is output.accountId
+}
+
+Command init {
+    Disabled
+}
+
+
+Endpoint load {
+    
+}

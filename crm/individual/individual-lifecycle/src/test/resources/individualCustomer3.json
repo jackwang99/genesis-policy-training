@@ -1,0 +1,165 @@
+{
+            "_modelName": "INDIVIDUALCUSTOMER",
+            "_modelType": "Customer",
+            "_modelVersion": "1",
+            "_timestamp": "2018-10-03T06:26:04.48Z",
+            "_type": "IndividualCustomer",
+            "communicationInfo": {
+                "_type": "GenesisCrmCommunicationInfo",
+                "addresses": [
+                    {
+                        "schedulingContactInfo": {
+                            "effectiveTo": "2028-07-27",
+                            "temporary": false,
+                            "effectiveFrom": "2018-07-27",
+                            "_type": "GenesisCrmSchedulingContactInfo",
+                            "_key": {
+                                "id": "96d8cae6-666f-407f-9e4b-d14b334cf82f",
+                                "rootId": "85293771-1b88-4c9a-8ad1-661cac09e6c8",
+                                "revisionNo": 1,
+                                "parentId": "153d27f8-eff1-40ee-9f17-815d5cbcca7b"
+                            }
+                        },
+                        "inCareOf": "string",
+                        "addressValidatedInd": "string",
+                        "county": "string",
+                        "referenceId": "string",
+                        "communicationPreferences": ["BILL_STATE"],
+                        "subdivision": "string",
+                        "doNotSolicit": false,
+                        "attention": "string",
+                        "location": {
+                            "addressType": "string",                
+                            "accuracy": "string",                        
+                            "nationalId": "string",
+                            "city": "string",
+                            "stateProvinceCd": "string",
+                            "geoposition": {
+                                "latitude": 101,
+                                "coordAccuracy": 1,
+                                "longitude": 1,
+                                "_type": "GenesisCrmGeoCoord",
+                                "_key": {
+                                    "id": "20392eb4-6aed-4300-ad70-fe224a54732b",
+                                    "rootId": "85293771-1b88-4c9a-8ad1-661cac09e6c8",
+                                    "revisionNo": 1,
+                                    "parentId": "c100c85e-6911-473a-826f-de307373ea3a"
+                                }
+                            },
+                            "postalCode": "string",
+                            "countryCd": "US",
+                            "addressLine1": "string",
+                            "addressLine2": "string",
+                            "addressLine3": "string",                            
+                            "_type": "GenesisLocation",
+                            "registryTypeId": "registry://Location/e68468f2-1a87-4f87-933d-00eeda14f0d6",
+                            "_key": {
+                                "id": "c100c85e-6911-473a-826f-de307373ea3a",
+                                "rootId": "85293771-1b88-4c9a-8ad1-661cac09e6c8",
+                                "revisionNo": 1,
+                                "parentId": "153d27f8-eff1-40ee-9f17-815d5cbcca7b"
+                            }
+                        },
+                        "comment": "string",
+                        "preferred": false,
+                        "_type": "GenesisCrmAddress",
+                        "updatedOn": "2018-10-03T06:25:56.053Z",
+                        "_key": {
+                            "id": "153d27f8-eff1-40ee-9f17-815d5cbcca7b",
+                            "rootId": "85293771-1b88-4c9a-8ad1-661cac09e6c8",
+                            "revisionNo": 1,
+                            "parentId": "b6967a88-3415-4f3f-a576-6e3b44f365dc"
+                        }
+                    }
+                ],
+                "phones": [
+                    {
+                        "_type": "GenesisCrmPhone",
+                        "type": "HOME",
+                        "value": "236-00-544",
+                        "updatedOn": "2018-10-03T06:25:56.053Z",
+                        "preferredTimesToContact" : [
+                          "MORNING" ],                        
+                        "_key": {
+                            "id": "a6958cc7-f53f-4fe5-8100-422bfff22847",
+                            "rootId": "85293771-1b88-4c9a-8ad1-661cac09e6c8",
+                            "revisionNo": 1,
+                            "parentId": "b6967a88-3415-4f3f-a576-6e3b44f365dc"
+                        }
+                    },
+                    {
+                        "_type": "GenesisCrmPhone",
+                        "type": "WORK",
+                        "value": "236-00-8888",
+                        "_key": {
+                            "id": "a6958cc7-f53f-4fe5-8100-422bfff22322",
+                            "rootId": "85293771-1b88-4c9a-8ad1-661cac09e6c8",
+                            "revisionNo": 1,
+                            "parentId": "b6967a88-3415-4f3f-a576-6e3b44f365dc"
+                        }
+                    }
+                ],
+                "emails": [
+                    {
+                        "_key": {
+                            "id": "183c9010-4da3-4fb1-982a-1723df007000",
+                            "revisionNo": 1
+                        },            
+                        "_type": "GenesisCrmEmail",
+                        "type": "PRI",
+                        "value": "genesis@gmail.com",
+                        "updatedOn": "2018-10-01T12:01:25.981Z"
+                    }
+                ],                    
+                "_key": {
+                    "id": "b6967a88-3415-4f3f-a576-6e3b44f365dc",
+                    "rootId": "85293771-1b88-4c9a-8ad1-661cac09e6c8",
+                    "revisionNo": 1,
+                    "parentId": "85293771-1b88-4c9a-8ad1-661cac09e6c8"
+                }
+            },
+            "customerNumber": "IC0000001143",
+            "details": {
+                "_type": "GenesisCrmIndividualDetails",
+                "person": {
+                    "_key": {
+                        "id": "6e3603cf-24d1-4d9c-a233-e45283142cb0",
+                        "rootId": "85293771-1b88-4c9a-8ad1-661cac09e6c8",
+                        "revisionNo": 1,
+                        "parentId": "7686f8aa-cc11-4871-a250-ee196e9424fe"
+                    },
+                    "_type": "GenesisCrmPerson",
+                    "birthDate": "1980-07-15",
+                    "firstName": "Alexandr",
+                    "genderCd": "male",
+                    "lastName": "Brown",
+                    "middleName": "string"
+                },
+                "_key": {
+                    "id": "7686f8aa-cc11-4871-a250-ee196e9424fe",
+                    "rootId": "85293771-1b88-4c9a-8ad1-661cac09e6c8",
+                    "revisionNo": 1,
+                    "parentId": "85293771-1b88-4c9a-8ad1-661cac09e6c8"
+                }
+            },
+            "state": "unqualified",
+            "_key": {
+                "rootId": "85293771-1b88-4c9a-8ad1-661cac09e6c8",
+                "revisionNo": 1
+            },
+            "majorAccountId": null,
+            "majorAccountName": null,
+            "accessTrackInfo": {
+                "_key": {
+                    "id": "a36c34e6-5b21-48f8-9eb3-aa82da1188f7",
+                    "rootId": "85293771-1b88-4c9a-8ad1-661cac09e6c8",
+                    "revisionNo": 1,
+                    "parentId": "85293771-1b88-4c9a-8ad1-661cac09e6c8"
+                },
+                "_type": "GenesisAccessTrackInfo",
+                "createdBy": "qa",
+                "createdOn": "2018-10-03T06:26:04.266Z",
+                "updatedBy": "qa",
+                "updatedOn": "2018-10-03T06:26:04.267Z"
+            }
+        }

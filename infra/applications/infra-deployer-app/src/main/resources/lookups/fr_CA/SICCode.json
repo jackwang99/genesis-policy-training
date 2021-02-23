@@ -1,0 +1,4572 @@
+[
+  {
+    "code": "0111",
+    "parentLookupCode": "01",
+    "defaultValue": "blé"
+  },
+  {
+    "code": "0112",
+    "parentLookupCode": "01",
+    "defaultValue": "Riz"
+  },
+  {
+    "code": "0115",
+    "defaultValue": "Blé",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0116",
+    "parentLookupCode": "01",
+    "defaultValue": "Soja"
+  },
+  {
+    "code": "0119",
+    "parentLookupCode": "01",
+    "defaultValue": "Grains en espèces, Nec"
+  },
+  {
+    "code": "0131",
+    "defaultValue": "Coton",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0132",
+    "parentLookupCode": "01",
+    "defaultValue": "le tabac"
+  },
+  {
+    "code": "0133",
+    "defaultValue": "La canne à sucre et la betterave à sucre",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0134",
+    "parentLookupCode": "01",
+    "defaultValue": "Pommes de terre irlandaises"
+  },
+  {
+    "code": "0139",
+    "defaultValue": "Cultures de grande culture, sauf les céréales en espèces",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0161",
+    "parentLookupCode": "01",
+    "defaultValue": "Légumes et melons"
+  },
+  {
+    "code": "0171",
+    "defaultValue": "Cultures de petits fruits",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0172",
+    "parentLookupCode": "01",
+    "defaultValue": "les raisins"
+  },
+  {
+    "code": "0173",
+    "parentLookupCode": "01",
+    "defaultValue": "Noix"
+  },
+  {
+    "code": "0174",
+    "defaultValue": "Les agrumes",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0175",
+    "defaultValue": "Fruits à feuilles caduques",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0179",
+    "defaultValue": "Fruits et noix, Nec",
+    "parentLookupCode": "01"
+  },
+  {
+    "code": "0181",
+    "parentLookupCode": "01",
+    "defaultValue": "Produits de pépinière ornementale"
+  },
+  {
+    "code": "0182",
+    "parentLookupCode": "01",
+    "defaultValue": "Cultures alimentaires cultivées sous abri"
+  },
+  {
+    "code": "0191",
+    "parentLookupCode": "01",
+    "defaultValue": "Fermes générales, principalement cultures"
+  },
+  {
+    "code": "0211",
+    "defaultValue": "Parcs d'engraissement de bovins de boucherie",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0212",
+    "defaultValue": "Bovins de boucherie, sauf les parcs d'engraissement",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0213",
+    "parentLookupCode": "02",
+    "defaultValue": "Porcs"
+  },
+  {
+    "code": "0214",
+    "parentLookupCode": "02",
+    "defaultValue": "Moutons et chèvres"
+  },
+  {
+    "code": "0219",
+    "defaultValue": "Elevage général, Nec",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0241",
+    "defaultValue": "Fermes laitières",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0251",
+    "defaultValue": "Poulets à griller, friteuse et rôtissoire",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0252",
+    "parentLookupCode": "02",
+    "defaultValue": "Oeufs de poulet"
+  },
+  {
+    "code": "0253",
+    "parentLookupCode": "02",
+    "defaultValue": "Dindes et oeufs de dinde"
+  },
+  {
+    "code": "0254",
+    "defaultValue": "Couveuses de volaille",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0259",
+    "defaultValue": "Volaille et oeufs, Nec",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0271",
+    "defaultValue": "Animaux à fourrure et lapins",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0272",
+    "parentLookupCode": "02",
+    "defaultValue": "Chevaux et autres équidés"
+  },
+  {
+    "code": "0273",
+    "defaultValue": "Aquaculture animale",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0279",
+    "defaultValue": "Spécialités animales, Nec",
+    "parentLookupCode": "02"
+  },
+  {
+    "code": "0291",
+    "parentLookupCode": "02",
+    "defaultValue": "Fermes générales, principalement des animaux"
+  },
+  {
+    "code": "0711",
+    "parentLookupCode": "07",
+    "defaultValue": "Services de préparation de sol"
+  },
+  {
+    "code": "0721",
+    "parentLookupCode": "07",
+    "defaultValue": "Plantation et protection des cultures"
+  },
+  {
+    "code": "0722",
+    "parentLookupCode": "07",
+    "defaultValue": "Récolte de cultures"
+  },
+  {
+    "code": "0723",
+    "defaultValue": "Services de préparation de cultures pour le marché",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0724",
+    "defaultValue": "Égrenage du coton",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0741",
+    "defaultValue": "Services vétérinaires pour l'élevage",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0742",
+    "defaultValue": "Services vétérinaires, Spécialités",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0751",
+    "defaultValue": "Services d'élevage, sauf vétérinaires",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0752",
+    "parentLookupCode": "07",
+    "defaultValue": "Services de spécialité animale"
+  },
+  {
+    "code": "0761",
+    "parentLookupCode": "07",
+    "defaultValue": "Entrepreneurs de travaux agricoles"
+  },
+  {
+    "code": "0762",
+    "defaultValue": "Services de gestion agricole",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0781",
+    "defaultValue": "Counselling paysager et planification",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0782",
+    "parentLookupCode": "07",
+    "defaultValue": "Services de pelouse et de jardin"
+  },
+  {
+    "code": "0783",
+    "defaultValue": "Services d'arbustes et d'arbres ornementaux",
+    "parentLookupCode": "07"
+  },
+  {
+    "code": "0811",
+    "parentLookupCode": "08",
+    "defaultValue": "Tranches de bois"
+  },
+  {
+    "code": "0831",
+    "parentLookupCode": "08",
+    "defaultValue": "Les produits de la forêt"
+  },
+  {
+    "code": "0851",
+    "parentLookupCode": "08",
+    "defaultValue": "Services forestiers"
+  },
+  {
+    "code": "0912",
+    "parentLookupCode": "09",
+    "defaultValue": "Poisson"
+  },
+  {
+    "code": "0913",
+    "defaultValue": "Fruits de mer",
+    "parentLookupCode": "09"
+  },
+  {
+    "code": "0919",
+    "parentLookupCode": "09",
+    "defaultValue": "Produits marins divers"
+  },
+  {
+    "code": "0921",
+    "parentLookupCode": "09",
+    "defaultValue": "Écloseries et conserves de poissons"
+  },
+  {
+    "code": "0971",
+    "defaultValue": "Chasse, piégeage, propagation des jeux",
+    "parentLookupCode": "09"
+  },
+  {
+    "code": "1011",
+    "parentLookupCode": "dix",
+    "defaultValue": "Minerais de fer"
+  },
+  {
+    "code": "1021",
+    "parentLookupCode": "dix",
+    "defaultValue": "Minerais de cuivre"
+  },
+  {
+    "code": "1031",
+    "defaultValue": "Minerais de plomb et de zinc",
+    "parentLookupCode": "dix"
+  },
+  {
+    "code": "1041",
+    "defaultValue": "Minerais d'or",
+    "parentLookupCode": "dix"
+  },
+  {
+    "code": "1044",
+    "parentLookupCode": "dix",
+    "defaultValue": "Minerais d'argent"
+  },
+  {
+    "code": "1061",
+    "parentLookupCode": "dix",
+    "defaultValue": "Minerais de ferroalliage, sauf vanadium"
+  },
+  {
+    "code": "1081",
+    "parentLookupCode": "dix",
+    "defaultValue": "Services d'extraction de métaux"
+  },
+  {
+    "code": "1094",
+    "defaultValue": "Uranium-radium-vanadium Minerai",
+    "parentLookupCode": "dix"
+  },
+  {
+    "code": "1099",
+    "parentLookupCode": "dix",
+    "defaultValue": "Minerais métalliques, Nec"
+  },
+  {
+    "code": "1221",
+    "defaultValue": "Charbon bitumineux et exploitation minière à la surface de la lignite",
+    "parentLookupCode": "12"
+  },
+  {
+    "code": "1222",
+    "parentLookupCode": "12",
+    "defaultValue": "Mine de charbon bitumineux"
+  },
+  {
+    "code": "1231",
+    "parentLookupCode": "12",
+    "defaultValue": "Exploitation de l'anthracite"
+  },
+  {
+    "code": "1241",
+    "defaultValue": "Services d'extraction de charbon",
+    "parentLookupCode": "12"
+  },
+  {
+    "code": "1311",
+    "parentLookupCode": "13",
+    "defaultValue": "Pétrole brut et gaz naturel"
+  },
+  {
+    "code": "1321",
+    "parentLookupCode": "13",
+    "defaultValue": "Liquides de gaz naturel"
+  },
+  {
+    "code": "1381",
+    "defaultValue": "Puits de pétrole et de gaz de forage",
+    "parentLookupCode": "13"
+  },
+  {
+    "code": "1382",
+    "parentLookupCode": "13",
+    "defaultValue": "Services d'exploration pétrolière et gazière"
+  },
+  {
+    "code": "1389",
+    "defaultValue": "Services de champs pétroliers et gaziers, Nec",
+    "parentLookupCode": "13"
+  },
+  {
+    "code": "1411",
+    "defaultValue": "Dimension Stone",
+    "parentLookupCode": "14"
+  },
+  {
+    "code": "1422",
+    "parentLookupCode": "14",
+    "defaultValue": "Calcaire broyé et cassé"
+  },
+  {
+    "code": "1423",
+    "defaultValue": "Granite concassé et brisé",
+    "parentLookupCode": "14"
+  },
+  {
+    "code": "1429",
+    "defaultValue": "Pierre concassée et cassée, Nec",
+    "parentLookupCode": "14"
+  },
+  {
+    "code": "1442",
+    "parentLookupCode": "14",
+    "defaultValue": "Sable de construction et gravier"
+  },
+  {
+    "code": "1446",
+    "defaultValue": "Sable industriel",
+    "parentLookupCode": "14"
+  },
+  {
+    "code": "1455",
+    "parentLookupCode": "14",
+    "defaultValue": "Kaolin et Ball Clay"
+  },
+  {
+    "code": "1459",
+    "defaultValue": "Argile et minéraux apparentés, Nec",
+    "parentLookupCode": "14"
+  },
+  {
+    "code": "1474",
+    "parentLookupCode": "14",
+    "defaultValue": "Potasse, Soda et Borate Minerals"
+  },
+  {
+    "code": "1475",
+    "parentLookupCode": "14",
+    "defaultValue": "Phosphate Rock"
+  },
+  {
+    "code": "1479",
+    "defaultValue": "Exploitation minière de produits chimiques et d'engrais",
+    "parentLookupCode": "14"
+  },
+  {
+    "code": "1481",
+    "parentLookupCode": "14",
+    "defaultValue": "Services minéraux non métalliques"
+  },
+  {
+    "code": "1499",
+    "parentLookupCode": "14",
+    "defaultValue": "Mines diverses non métalliques"
+  },
+  {
+    "code": "1521",
+    "parentLookupCode": "15",
+    "defaultValue": "Construction de logements unifamiliaux"
+  },
+  {
+    "code": "1522",
+    "parentLookupCode": "15",
+    "defaultValue": "Construction résidentielle, Nec"
+  },
+  {
+    "code": "1531",
+    "defaultValue": "Constructeurs opérationnels",
+    "parentLookupCode": "15"
+  },
+  {
+    "code": "1541",
+    "defaultValue": "Bâtiments industriels et entrepôts",
+    "parentLookupCode": "15"
+  },
+  {
+    "code": "1542",
+    "defaultValue": "Construction non résidentielle, Nec",
+    "parentLookupCode": "15"
+  },
+  {
+    "code": "1611",
+    "parentLookupCode": "16",
+    "defaultValue": "Construction de routes et de rues"
+  },
+  {
+    "code": "1622",
+    "defaultValue": "Pont, tunnel et autoroute surélevée",
+    "parentLookupCode": "16"
+  },
+  {
+    "code": "1623",
+    "parentLookupCode": "16",
+    "defaultValue": "Eau, égout et conduites d'eau"
+  },
+  {
+    "code": "1629",
+    "parentLookupCode": "16",
+    "defaultValue": "Construction lourde, Nec"
+  },
+  {
+    "code": "1711",
+    "parentLookupCode": "17",
+    "defaultValue": "Plomberie, Chauffage, Air conditionné"
+  },
+  {
+    "code": "1721",
+    "defaultValue": "Peinture et accrochage de papier",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1731",
+    "parentLookupCode": "17",
+    "defaultValue": "Travaux électriques"
+  },
+  {
+    "code": "1741",
+    "defaultValue": "Maçonnerie et autres pierres",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1742",
+    "parentLookupCode": "17",
+    "defaultValue": "Plâtrage, cloison sèche et isolation"
+  },
+  {
+    "code": "1743",
+    "defaultValue": "Terrazzo, Tuile, Marbre, Travail de mosaïque",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1751",
+    "parentLookupCode": "17",
+    "defaultValue": "Travail de menuiserie"
+  },
+  {
+    "code": "1752",
+    "parentLookupCode": "17",
+    "defaultValue": "Pose de planchers et travaux au sol, Nec"
+  },
+  {
+    "code": "1761",
+    "parentLookupCode": "17",
+    "defaultValue": "Toiture, bardage et tôlerie"
+  },
+  {
+    "code": "1771",
+    "parentLookupCode": "17",
+    "defaultValue": "Béton"
+  },
+  {
+    "code": "1781",
+    "defaultValue": "Forage de puits d'eau",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1791",
+    "parentLookupCode": "17",
+    "defaultValue": "Érection d'acier de construction"
+  },
+  {
+    "code": "1793",
+    "defaultValue": "Verre et vitrage",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1794",
+    "defaultValue": "Travaux d'excavation",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1795",
+    "defaultValue": "Travaux de démolition et de démolition",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1796",
+    "defaultValue": "Installation de l'équipement de construction",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "1799",
+    "defaultValue": "Entrepreneurs spécialisés en commerce, Nec",
+    "parentLookupCode": "17"
+  },
+  {
+    "code": "2011",
+    "parentLookupCode": "20",
+    "defaultValue": "Plantes d'emballage de viande"
+  },
+  {
+    "code": "2013",
+    "parentLookupCode": "20",
+    "defaultValue": "Saucisses et autres viandes préparées"
+  },
+  {
+    "code": "2015",
+    "parentLookupCode": "20",
+    "defaultValue": "Abattage et traitement de la volaille"
+  },
+  {
+    "code": "2021",
+    "defaultValue": "Beurre de crémerie",
+    "parentLookupCode": "20"
+  },
+  {
+    "code": "2022",
+    "parentLookupCode": "20",
+    "defaultValue": "Fromage; Naturel et traité"
+  },
+  {
+    "code": "2023",
+    "defaultValue": "Produits secs, condensés, évaporés",
+    "parentLookupCode": "20"
+  },
+  {
+    "code": "2024",
+    "defaultValue": "Crème glacée et desserts glacés",
+    "parentLookupCode": "20"
+  },
+  {
+    "code": "2026",
+    "parentLookupCode": "20",
+    "defaultValue": "Lait liquide"
+  },
+  {
+    "code": "2032",
+    "parentLookupCode": "20",
+    "defaultValue": "Spécialités en conserve"
+  },
+  {
+    "code": "2111",
+    "parentLookupCode": "21",
+    "defaultValue": "Cigarettes"
+  },
+  {
+    "code": "2121",
+    "parentLookupCode": "21",
+    "defaultValue": "Cigares"
+  },
+  {
+    "code": "2131",
+    "parentLookupCode": "21",
+    "defaultValue": "Mâcher et fumer du tabac"
+  },
+  {
+    "code": "2141",
+    "defaultValue": "Stemming et sevrage du tabac",
+    "parentLookupCode": "21"
+  },
+  {
+    "code": "2211",
+    "parentLookupCode": "22",
+    "defaultValue": "Usines de tissus à fibres larges, coton"
+  },
+  {
+    "code": "2221",
+    "parentLookupCode": "22",
+    "defaultValue": "Usines de tissus à larges fibres, fabriquées par l'homme"
+  },
+  {
+    "code": "2231",
+    "defaultValue": "Usines de tissus larges, laine",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2241",
+    "parentLookupCode": "22",
+    "defaultValue": "Usines de tissus étroits"
+  },
+  {
+    "code": "2251",
+    "parentLookupCode": "22",
+    "defaultValue": "Bonneterie pour femmes, sauf chaussettes"
+  },
+  {
+    "code": "2252",
+    "defaultValue": "Bonneterie, Nec",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2253",
+    "parentLookupCode": "22",
+    "defaultValue": "Usines de tricotage"
+  },
+  {
+    "code": "2254",
+    "parentLookupCode": "22",
+    "defaultValue": "Moulins sous-vêtements"
+  },
+  {
+    "code": "2257",
+    "defaultValue": "Usines de tricot de trame",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2258",
+    "defaultValue": "Usines de tricot de dentelle et de chaîne tricotée",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2259",
+    "parentLookupCode": "22",
+    "defaultValue": "Usines à tricoter, Nec"
+  },
+  {
+    "code": "2261",
+    "parentLookupCode": "22",
+    "defaultValue": "Installations de finition, coton"
+  },
+  {
+    "code": "2262",
+    "defaultValue": "Plantes de finition, fabriquées par l'homme",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2269",
+    "defaultValue": "Installations de finition, Nec",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2273",
+    "parentLookupCode": "22",
+    "defaultValue": "Tapis et carpettes"
+  },
+  {
+    "code": "2281",
+    "parentLookupCode": "22",
+    "defaultValue": "Filatures à filer"
+  },
+  {
+    "code": "2282",
+    "parentLookupCode": "22",
+    "defaultValue": "Moulins à lancer et à enrouler"
+  },
+  {
+    "code": "2284",
+    "defaultValue": "Fraises à fileter",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2295",
+    "parentLookupCode": "22",
+    "defaultValue": "Tissus enduits, non caoutchoutés"
+  },
+  {
+    "code": "2296",
+    "defaultValue": "Corde et tissus de pneu",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2297",
+    "defaultValue": "Tissus non tissés",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2298",
+    "parentLookupCode": "22",
+    "defaultValue": "Cordage et ficelle"
+  },
+  {
+    "code": "2299",
+    "defaultValue": "Produits textiles, Nec",
+    "parentLookupCode": "22"
+  },
+  {
+    "code": "2311",
+    "defaultValue": "Costumes et manteaux pour hommes et garçons",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2321",
+    "parentLookupCode": "23",
+    "defaultValue": "Ameublement pour hommes et garçonnets"
+  },
+  {
+    "code": "2322",
+    "parentLookupCode": "23",
+    "defaultValue": "Sous-vêtements et vêtements de nuit pour hommes et garçons"
+  },
+  {
+    "code": "2323",
+    "parentLookupCode": "23",
+    "defaultValue": "Cravates pour hommes et garçons"
+  },
+  {
+    "code": "2325",
+    "defaultValue": "Pantalons et pantalons pour hommes et garçonnets",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2326",
+    "parentLookupCode": "23",
+    "defaultValue": "Vêtements de travail pour hommes et garçons"
+  },
+  {
+    "code": "2329",
+    "parentLookupCode": "23",
+    "defaultValue": "Vêtements pour hommes et garçons, Nec"
+  },
+  {
+    "code": "2331",
+    "defaultValue": "Chemisiers et chemises pour femmes et fillettes",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2335",
+    "parentLookupCode": "23",
+    "defaultValue": "Femmes, Junior et Misses 'Robes"
+  },
+  {
+    "code": "2337",
+    "parentLookupCode": "23",
+    "defaultValue": "Costumes et manteaux pour femmes et fillettes"
+  },
+  {
+    "code": "2339",
+    "parentLookupCode": "23",
+    "defaultValue": "Vêtements d'extérieur pour femmes et fillettes, Nec"
+  },
+  {
+    "code": "2341",
+    "defaultValue": "Sous-vêtements féminins et enfants",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2342",
+    "parentLookupCode": "23",
+    "defaultValue": "Soutiens-gorge, gaines et vêtements alliés"
+  },
+  {
+    "code": "2353",
+    "defaultValue": "Chapeaux, casquettes et chapellerie",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2361",
+    "defaultValue": "Robes pour fillettes et enfants, Blouses",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2369",
+    "parentLookupCode": "23",
+    "defaultValue": "Vêtements d'extérieur pour fille et enfant, Nec"
+  },
+  {
+    "code": "2371",
+    "parentLookupCode": "23",
+    "defaultValue": "Marchandises de fourrure"
+  },
+  {
+    "code": "2381",
+    "defaultValue": "Robe en tissu et gants de travail",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2384",
+    "parentLookupCode": "23",
+    "defaultValue": "Robes et robes de chambre"
+  },
+  {
+    "code": "2385",
+    "defaultValue": "Vêtements d'extérieur imperméables",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2386",
+    "parentLookupCode": "23",
+    "defaultValue": "Vêtements doublés de cuir et de mouton"
+  },
+  {
+    "code": "2387",
+    "defaultValue": "Ceintures de vêtements",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2389",
+    "defaultValue": "Vêtements et accessoires, Nec",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2391",
+    "parentLookupCode": "23",
+    "defaultValue": "Rideaux et draperies"
+  },
+  {
+    "code": "2392",
+    "defaultValue": "Ameublement, Nec",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2393",
+    "parentLookupCode": "23",
+    "defaultValue": "Sacs en textile"
+  },
+  {
+    "code": "2394",
+    "defaultValue": "Toile et produits connexes",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2395",
+    "defaultValue": "Plissage et couture",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2396",
+    "parentLookupCode": "23",
+    "defaultValue": "Passe-temps de l'automobile et de l'habillement"
+  },
+  {
+    "code": "2397",
+    "defaultValue": "Schiffli Machine Broderies",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2399",
+    "defaultValue": "Produits textiles fabriqués, Nec",
+    "parentLookupCode": "23"
+  },
+  {
+    "code": "2411",
+    "defaultValue": "Enregistrement",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2421",
+    "parentLookupCode": "24",
+    "defaultValue": "Scieries et ateliers de rabotage, Général"
+  },
+  {
+    "code": "2426",
+    "parentLookupCode": "24",
+    "defaultValue": "Dimensions et planchers de bois franc"
+  },
+  {
+    "code": "2429",
+    "parentLookupCode": "24",
+    "defaultValue": "Scieries de produits spéciaux, Nec"
+  },
+  {
+    "code": "2431",
+    "parentLookupCode": "24",
+    "defaultValue": "Millwork"
+  },
+  {
+    "code": "2434",
+    "parentLookupCode": "24",
+    "defaultValue": "Armoires de cuisine en bois"
+  },
+  {
+    "code": "2435",
+    "parentLookupCode": "24",
+    "defaultValue": "Placage de bois dur et contreplaqué"
+  },
+  {
+    "code": "2436",
+    "parentLookupCode": "24",
+    "defaultValue": "Placage de résineux et contreplaqué"
+  },
+  {
+    "code": "2439",
+    "parentLookupCode": "24",
+    "defaultValue": "Membres de charpentes en bois, Nec"
+  },
+  {
+    "code": "2441",
+    "parentLookupCode": "24",
+    "defaultValue": "Boîtes en bois clouées et Shook"
+  },
+  {
+    "code": "2448",
+    "defaultValue": "Palettes et patins en bois",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2449",
+    "parentLookupCode": "24",
+    "defaultValue": "Conteneurs en bois, Nec"
+  },
+  {
+    "code": "2451",
+    "parentLookupCode": "24",
+    "defaultValue": "Maisons mobiles"
+  },
+  {
+    "code": "2452",
+    "parentLookupCode": "24",
+    "defaultValue": "Bâtiments en bois préfabriqués"
+  },
+  {
+    "code": "2491",
+    "defaultValue": "Conservation du bois",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2493",
+    "parentLookupCode": "24",
+    "defaultValue": "Produits de bois reconstitués"
+  },
+  {
+    "code": "2499",
+    "defaultValue": "Produits du bois, Nec",
+    "parentLookupCode": "24"
+  },
+  {
+    "code": "2511",
+    "parentLookupCode": "25",
+    "defaultValue": "Meubles de maison en bois"
+  },
+  {
+    "code": "2512",
+    "parentLookupCode": "25",
+    "defaultValue": "Meubles de maison rembourrés"
+  },
+  {
+    "code": "2514",
+    "parentLookupCode": "25",
+    "defaultValue": "Meubles de ménage en métal"
+  },
+  {
+    "code": "2515",
+    "defaultValue": "Matelas et sommiers",
+    "parentLookupCode": "25"
+  },
+  {
+    "code": "2517",
+    "parentLookupCode": "25",
+    "defaultValue": "Armoires de télévision et de radio en bois"
+  },
+  {
+    "code": "2519",
+    "parentLookupCode": "25",
+    "defaultValue": "Meubles ménagers, Nec"
+  },
+  {
+    "code": "2521",
+    "parentLookupCode": "25",
+    "defaultValue": "Meubles de bureau en bois"
+  },
+  {
+    "code": "2522",
+    "parentLookupCode": "25",
+    "defaultValue": "Mobilier de bureau, sauf le bois"
+  },
+  {
+    "code": "2531",
+    "defaultValue": "Bâtiment public et mobilier connexe",
+    "parentLookupCode": "25"
+  },
+  {
+    "code": "2541",
+    "defaultValue": "Cloisons et accessoires en bois",
+    "parentLookupCode": "25"
+  },
+  {
+    "code": "2542",
+    "parentLookupCode": "25",
+    "defaultValue": "Cloisons et appareils, sauf le bois"
+  },
+  {
+    "code": "2591",
+    "defaultValue": "Quincaillerie de draperie et stores et stores",
+    "parentLookupCode": "25"
+  },
+  {
+    "code": "2599",
+    "defaultValue": "Meubles et accessoires, Nec",
+    "parentLookupCode": "25"
+  },
+  {
+    "code": "2611",
+    "parentLookupCode": "26",
+    "defaultValue": "Usines de pâte"
+  },
+  {
+    "code": "2621",
+    "defaultValue": "Papeteries",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2631",
+    "defaultValue": "Usines de carton",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2652",
+    "parentLookupCode": "26",
+    "defaultValue": "Configurer les boîtes en carton"
+  },
+  {
+    "code": "2653",
+    "parentLookupCode": "26",
+    "defaultValue": "Boîtes en fibre de carton ondulé et solide"
+  },
+  {
+    "code": "2655",
+    "defaultValue": "Boîtes de fibre, tambours et produits similaires",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2656",
+    "defaultValue": "Conteneurs sanitaires",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2657",
+    "defaultValue": "Boîtes pliantes en carton",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2671",
+    "defaultValue": "Papier; Emballage enduit et stratifié",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2672",
+    "parentLookupCode": "26",
+    "defaultValue": "Papier; Enduit et laminé, Nec"
+  },
+  {
+    "code": "2673",
+    "defaultValue": "Sacs: Plastique, laminé et enduit",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2674",
+    "defaultValue": "Sacs: Papier non couché et Multiwall",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2675",
+    "parentLookupCode": "26",
+    "defaultValue": "Papier et carton découpés"
+  },
+  {
+    "code": "2676",
+    "defaultValue": "Produits de papier hygiénique",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2677",
+    "defaultValue": "Enveloppes",
+    "parentLookupCode": "26"
+  },
+  {
+    "code": "2678",
+    "parentLookupCode": "26",
+    "defaultValue": "Produits de papeterie"
+  },
+  {
+    "code": "2679",
+    "parentLookupCode": "26",
+    "defaultValue": "Produits de papier transformé, Nec"
+  },
+  {
+    "code": "2711",
+    "parentLookupCode": "27",
+    "defaultValue": "Journaux"
+  },
+  {
+    "code": "2721",
+    "defaultValue": "Périodiques",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2731",
+    "defaultValue": "Publication de livres",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2732",
+    "defaultValue": "Impression de livre",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2741",
+    "defaultValue": "Édition diverse",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2752",
+    "defaultValue": "Impression commerciale, lithographique",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2754",
+    "defaultValue": "Impression commerciale, gravure",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2759",
+    "defaultValue": "Impression commerciale, Nec",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2761",
+    "defaultValue": "Manifold Business Forms",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2771",
+    "defaultValue": "Cartes de voeux",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2782",
+    "defaultValue": "Livres blancs et reliures à feuilles mobiles",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2789",
+    "defaultValue": "Reliure et travaux connexes",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2791",
+    "defaultValue": "Composition",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2796",
+    "defaultValue": "Services de platelage",
+    "parentLookupCode": "27"
+  },
+  {
+    "code": "2812",
+    "defaultValue": "Alcalines et chlore",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2813",
+    "defaultValue": "Gaz industriels",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2816",
+    "parentLookupCode": "28",
+    "defaultValue": "Pigments inorganiques"
+  },
+  {
+    "code": "2819",
+    "defaultValue": "Produits chimiques inorganiques industriels, Nec",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2821",
+    "parentLookupCode": "28",
+    "defaultValue": "Matières plastiques et résines"
+  },
+  {
+    "code": "2822",
+    "parentLookupCode": "28",
+    "defaultValue": "Caoutchouc synthétique"
+  },
+  {
+    "code": "2823",
+    "parentLookupCode": "28",
+    "defaultValue": "Fibres synthétiques cellulosiques"
+  },
+  {
+    "code": "2824",
+    "defaultValue": "Fibres organiques, non cellulosiques",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2833",
+    "parentLookupCode": "28",
+    "defaultValue": "Médicaments et botaniques"
+  },
+  {
+    "code": "2834",
+    "defaultValue": "Préparations pharmaceutiques",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2835",
+    "parentLookupCode": "28",
+    "defaultValue": "Substances diagnostiques"
+  },
+  {
+    "code": "2836",
+    "defaultValue": "Produits biologiques, sauf diagnostic",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2841",
+    "parentLookupCode": "28",
+    "defaultValue": "Savons et autres détergents"
+  },
+  {
+    "code": "2842",
+    "defaultValue": "Produits de polissage et d'assainissement",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2843",
+    "defaultValue": "Agents actifs de surface",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2844",
+    "defaultValue": "Préparations de toilette",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2851",
+    "parentLookupCode": "28",
+    "defaultValue": "Peintures et produits connexes"
+  },
+  {
+    "code": "2861",
+    "defaultValue": "Produits chimiques de gomme et de bois",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2865",
+    "defaultValue": "Bruts cycliques et intermédiaires",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2869",
+    "parentLookupCode": "28",
+    "defaultValue": "Produits chimiques organiques industriels, Nec"
+  },
+  {
+    "code": "2873",
+    "parentLookupCode": "28",
+    "defaultValue": "Engrais azotés"
+  },
+  {
+    "code": "2874",
+    "parentLookupCode": "28",
+    "defaultValue": "Engrais phosphatés"
+  },
+  {
+    "code": "2875",
+    "defaultValue": "Engrais, mélange seulement",
+    "parentLookupCode": "28"
+  },
+  {
+    "code": "2879",
+    "parentLookupCode": "28",
+    "defaultValue": "Produits chimiques agricoles, Nec"
+  },
+  {
+    "code": "2891",
+    "parentLookupCode": "28",
+    "defaultValue": "Adhésifs et scellants"
+  },
+  {
+    "code": "2892",
+    "parentLookupCode": "28",
+    "defaultValue": "Explosifs"
+  },
+  {
+    "code": "2893",
+    "parentLookupCode": "28",
+    "defaultValue": "Encre à imprimer"
+  },
+  {
+    "code": "2895",
+    "parentLookupCode": "28",
+    "defaultValue": "Noir carbone"
+  },
+  {
+    "code": "2899",
+    "parentLookupCode": "28",
+    "defaultValue": "Préparations chimiques, Nec"
+  },
+  {
+    "code": "2911",
+    "parentLookupCode": "29",
+    "defaultValue": "Raffinement pétrolier"
+  },
+  {
+    "code": "2951",
+    "parentLookupCode": "29",
+    "defaultValue": "Mélanges et blocs de pavage d'asphalte"
+  },
+  {
+    "code": "2952",
+    "defaultValue": "Feutres et enduits d'asphalte",
+    "parentLookupCode": "29"
+  },
+  {
+    "code": "2992",
+    "parentLookupCode": "29",
+    "defaultValue": "Huiles lubrifiantes et graisses"
+  },
+  {
+    "code": "2999",
+    "parentLookupCode": "29",
+    "defaultValue": "Produits pétroliers et charbon, Nec"
+  },
+  {
+    "code": "3011",
+    "parentLookupCode": "30",
+    "defaultValue": "Pneus et chambres à air"
+  },
+  {
+    "code": "3021",
+    "defaultValue": "Chaussures en caoutchouc et en plastique",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3052",
+    "defaultValue": "Tuyaux et courroies en caoutchouc et en plastique",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3053",
+    "parentLookupCode": "30",
+    "defaultValue": "Joints; Dispositifs d'emballage et d'étanchéité"
+  },
+  {
+    "code": "3061",
+    "parentLookupCode": "30",
+    "defaultValue": "Marchandises en caoutchouc mécaniques"
+  },
+  {
+    "code": "3069",
+    "defaultValue": "Produits en caoutchouc fabriqués, Nec",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3081",
+    "defaultValue": "Film et feuille de plastique non supportés",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3082",
+    "defaultValue": "Formes de profilés en plastique non supportés",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3083",
+    "defaultValue": "Plaque et feuille de plastique laminé",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3084",
+    "defaultValue": "Tuyau en plastique",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3085",
+    "parentLookupCode": "30",
+    "defaultValue": "Bouteilles en plastique"
+  },
+  {
+    "code": "3086",
+    "defaultValue": "Produits en mousse de plastique",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3087",
+    "defaultValue": "Résines achetées sur mesure",
+    "parentLookupCode": "30"
+  },
+  {
+    "code": "3088",
+    "parentLookupCode": "30",
+    "defaultValue": "Appareils de plomberie en plastique"
+  },
+  {
+    "code": "3089",
+    "parentLookupCode": "30",
+    "defaultValue": "Produits en plastique, Nec"
+  },
+  {
+    "code": "3111",
+    "defaultValue": "Cuir Tannage et Finition",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "3131",
+    "defaultValue": "Chaussures Cut Stock",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "3142",
+    "defaultValue": "Chaussons de maison",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "3143",
+    "defaultValue": "Chaussures pour hommes, sauf athlétique",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "3144",
+    "parentLookupCode": "31",
+    "defaultValue": "Chaussures pour femmes, sauf athlétique"
+  },
+  {
+    "code": "3149",
+    "parentLookupCode": "31",
+    "defaultValue": "Chaussures, à l'exception du caoutchouc, NEC"
+  },
+  {
+    "code": "3151",
+    "parentLookupCode": "31",
+    "defaultValue": "Gants et mitaines en cuir"
+  },
+  {
+    "code": "3161",
+    "parentLookupCode": "31",
+    "defaultValue": "Bagage"
+  },
+  {
+    "code": "3171",
+    "defaultValue": "Sacs à main et bourses pour femmes",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "3172",
+    "defaultValue": "Maroquinerie personnelle, Nec",
+    "parentLookupCode": "31"
+  },
+  {
+    "code": "3199",
+    "parentLookupCode": "31",
+    "defaultValue": "Maroquinerie, Nec"
+  },
+  {
+    "code": "3211",
+    "defaultValue": "Verre plat",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3221",
+    "parentLookupCode": "32",
+    "defaultValue": "Récipients en verre"
+  },
+  {
+    "code": "3229",
+    "parentLookupCode": "32",
+    "defaultValue": "Verre pressé et soufflé, Nec"
+  },
+  {
+    "code": "3231",
+    "defaultValue": "Produits de verre acheté",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3241",
+    "defaultValue": "Ciment hydraulique",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3251",
+    "parentLookupCode": "32",
+    "defaultValue": "Brique et tuile d'argile structurelle"
+  },
+  {
+    "code": "3253",
+    "defaultValue": "Tuile de mur et de plancher en céramique",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3255",
+    "defaultValue": "Réfractaires d'argile",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3259",
+    "defaultValue": "Produits structuraux en argile, Nec",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3261",
+    "parentLookupCode": "32",
+    "defaultValue": "Appareils de plomberie vitrifiés"
+  },
+  {
+    "code": "3262",
+    "parentLookupCode": "32",
+    "defaultValue": "Table en porcelaine vitrifiée et ustensiles de cuisine"
+  },
+  {
+    "code": "3263",
+    "defaultValue": "Table semi-vitrée et ustensiles de cuisine",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3264",
+    "parentLookupCode": "32",
+    "defaultValue": "Fournitures électriques en porcelaine"
+  },
+  {
+    "code": "3269",
+    "parentLookupCode": "32",
+    "defaultValue": "Produits de poterie, Nec"
+  },
+  {
+    "code": "3271",
+    "defaultValue": "Bloc de béton et brique",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3272",
+    "parentLookupCode": "32",
+    "defaultValue": "Produits en béton, Nec"
+  },
+  {
+    "code": "3273",
+    "defaultValue": "Béton prêt à l'emploi",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3274",
+    "defaultValue": "Citron vert",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3275",
+    "parentLookupCode": "32",
+    "defaultValue": "Produits de gypse"
+  },
+  {
+    "code": "3281",
+    "defaultValue": "Pierre coupée et produits en pierre",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3291",
+    "defaultValue": "Produits abrasifs",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3292",
+    "defaultValue": "Produits d'amiante",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3295",
+    "defaultValue": "Minéraux, moulus ou traités",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3296",
+    "defaultValue": "Laine minérale",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3297",
+    "parentLookupCode": "32",
+    "defaultValue": "Réfractaires non-clairs"
+  },
+  {
+    "code": "3299",
+    "defaultValue": "Produits minéraux non métalliques,",
+    "parentLookupCode": "32"
+  },
+  {
+    "code": "3312",
+    "defaultValue": "Hauts fourneaux et aciéries",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3313",
+    "parentLookupCode": "33",
+    "defaultValue": "Produits électrométallurgiques"
+  },
+  {
+    "code": "3315",
+    "parentLookupCode": "33",
+    "defaultValue": "Fil d'acier et produits connexes"
+  },
+  {
+    "code": "3316",
+    "defaultValue": "Finition à froid des formes d'acier",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3317",
+    "defaultValue": "Tuyaux en acier et tubes",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3321",
+    "parentLookupCode": "33",
+    "defaultValue": "Fonderies de fer gris et ductile"
+  },
+  {
+    "code": "3322",
+    "parentLookupCode": "33",
+    "defaultValue": "Fonderies de fer malléable"
+  },
+  {
+    "code": "3324",
+    "defaultValue": "Fonderies d'investissement en acier",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3325",
+    "defaultValue": "Fonderies d'acier, Nec",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3331",
+    "defaultValue": "Cuivre primaire",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3334",
+    "defaultValue": "Aluminium primaire",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3339",
+    "parentLookupCode": "33",
+    "defaultValue": "Métaux non ferreux primaires, Nec"
+  },
+  {
+    "code": "3341",
+    "parentLookupCode": "33",
+    "defaultValue": "Métaux non ferreux secondaires"
+  },
+  {
+    "code": "3351",
+    "parentLookupCode": "33",
+    "defaultValue": "Roulage de cuivre et dessin"
+  },
+  {
+    "code": "3353",
+    "defaultValue": "Tôle, plaque et feuille d'aluminium",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3354",
+    "parentLookupCode": "33",
+    "defaultValue": "Produits extrudés en aluminium"
+  },
+  {
+    "code": "3355",
+    "defaultValue": "Laminage et dessin d'aluminium, Nec",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3356",
+    "defaultValue": "Roulement et dessin non ferreux, Nec",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3357",
+    "defaultValue": "Tréfilage non ferreux et isolant",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3363",
+    "defaultValue": "Aluminium moulé sous pression",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3364",
+    "parentLookupCode": "33",
+    "defaultValue": "Moulages sous pression non ferreux à l'exception de l'aluminium"
+  },
+  {
+    "code": "3365",
+    "defaultValue": "Fonderies d'aluminium",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3366",
+    "defaultValue": "Fonderies de cuivre",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3369",
+    "defaultValue": "Fonderies non ferreuses, Nec",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3398",
+    "parentLookupCode": "33",
+    "defaultValue": "Traitement de chaleur en métal"
+  },
+  {
+    "code": "3399",
+    "defaultValue": "Produits métalliques primaires",
+    "parentLookupCode": "33"
+  },
+  {
+    "code": "3411",
+    "defaultValue": "Canettes métalliques",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3412",
+    "defaultValue": "Barils métalliques, tambours et seaux",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3421",
+    "parentLookupCode": "34",
+    "defaultValue": "Coutellerie"
+  },
+  {
+    "code": "3423",
+    "parentLookupCode": "34",
+    "defaultValue": "Outils à main et à bord, Nec"
+  },
+  {
+    "code": "3425",
+    "parentLookupCode": "34",
+    "defaultValue": "Lames de scie et scies à main"
+  },
+  {
+    "code": "3429",
+    "defaultValue": "Quincaillerie, Nec",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3431",
+    "parentLookupCode": "34",
+    "defaultValue": "Articles sanitaires en métal"
+  },
+  {
+    "code": "3432",
+    "defaultValue": "Raccords et garnitures de robinetterie de plomberie",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3433",
+    "defaultValue": "Équipement de chauffage, sauf électrique",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3441",
+    "parentLookupCode": "34",
+    "defaultValue": "Métal structurel fabriqué"
+  },
+  {
+    "code": "3442",
+    "parentLookupCode": "34",
+    "defaultValue": "Portes métalliques, châssis et garnitures"
+  },
+  {
+    "code": "3443",
+    "parentLookupCode": "34",
+    "defaultValue": "Travail de plat fabriqué (magasin de chaudière)"
+  },
+  {
+    "code": "3444",
+    "parentLookupCode": "34",
+    "defaultValue": "Tôlerie"
+  },
+  {
+    "code": "3446",
+    "parentLookupCode": "34",
+    "defaultValue": "Métallerie architecturale"
+  },
+  {
+    "code": "3448",
+    "parentLookupCode": "34",
+    "defaultValue": "Bâtiments métalliques préfabriqués"
+  },
+  {
+    "code": "3449",
+    "parentLookupCode": "34",
+    "defaultValue": "Métallerie divers"
+  },
+  {
+    "code": "3451",
+    "defaultValue": "Produits de machine à vis",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3452",
+    "defaultValue": "Boulons, écrous, rivets et rondelles",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3462",
+    "parentLookupCode": "34",
+    "defaultValue": "Pièces forgées en fer et en acier"
+  },
+  {
+    "code": "3463",
+    "defaultValue": "Pièces forgées non ferreuses",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3465",
+    "parentLookupCode": "34",
+    "defaultValue": "Stampings automobiles"
+  },
+  {
+    "code": "3466",
+    "parentLookupCode": "34",
+    "defaultValue": "Couronnes et fermetures"
+  },
+  {
+    "code": "3469",
+    "defaultValue": "Stampings en métal, Nec",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3471",
+    "parentLookupCode": "34",
+    "defaultValue": "Placage et polissage"
+  },
+  {
+    "code": "3479",
+    "defaultValue": "Revêtement métallique et services connexes",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3482",
+    "parentLookupCode": "34",
+    "defaultValue": "Munitions pour armes légères"
+  },
+  {
+    "code": "3483",
+    "parentLookupCode": "34",
+    "defaultValue": "Munitions, sauf pour les armes légères, Nec"
+  },
+  {
+    "code": "3484",
+    "parentLookupCode": "34",
+    "defaultValue": "Petites armes"
+  },
+  {
+    "code": "3489",
+    "parentLookupCode": "34",
+    "defaultValue": "Ordnance et accessoires, Nec"
+  },
+  {
+    "code": "3491",
+    "parentLookupCode": "34",
+    "defaultValue": "Vannes industrielles"
+  },
+  {
+    "code": "3492",
+    "defaultValue": "Soupapes de puissance de fluide et garnitures de tuyau",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3493",
+    "defaultValue": "Ressorts en acier, sauf fil",
+    "parentLookupCode": "34"
+  },
+  {
+    "code": "3511",
+    "defaultValue": "Turbines et turbogénérateurs",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3519",
+    "parentLookupCode": "35",
+    "defaultValue": "Moteurs à combustion interne, Nec"
+  },
+  {
+    "code": "3523",
+    "parentLookupCode": "35",
+    "defaultValue": "Machines et équipement agricoles"
+  },
+  {
+    "code": "3524",
+    "parentLookupCode": "35",
+    "defaultValue": "Équipement de pelouse et de jardin"
+  },
+  {
+    "code": "3531",
+    "parentLookupCode": "35",
+    "defaultValue": "Machines de construction"
+  },
+  {
+    "code": "3532",
+    "defaultValue": "Machines d'exploitation minière",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3533",
+    "defaultValue": "Machines de terrain pétrolier et gazier",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3534",
+    "defaultValue": "Ascenseurs et escaliers mobiles",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3535",
+    "defaultValue": "Convoyeurs et équipement de transport",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3536",
+    "parentLookupCode": "35",
+    "defaultValue": "Palans, grues et monorails"
+  },
+  {
+    "code": "3537",
+    "parentLookupCode": "35",
+    "defaultValue": "Camions industriels et tracteurs"
+  },
+  {
+    "code": "3541",
+    "parentLookupCode": "35",
+    "defaultValue": "Machines-outils, Type de coupe en métal"
+  },
+  {
+    "code": "3542",
+    "defaultValue": "Machines-outils, type de formage des métaux",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3543",
+    "parentLookupCode": "35",
+    "defaultValue": "Modèles industriels"
+  },
+  {
+    "code": "3544",
+    "parentLookupCode": "35",
+    "defaultValue": "Matrices spéciales, outils, gabarits et montages"
+  },
+  {
+    "code": "3545",
+    "parentLookupCode": "35",
+    "defaultValue": "Accessoires pour machines-outils"
+  },
+  {
+    "code": "3546",
+    "parentLookupCode": "35",
+    "defaultValue": "Outils à main motorisés"
+  },
+  {
+    "code": "3547",
+    "parentLookupCode": "35",
+    "defaultValue": "Machines de laminoir"
+  },
+  {
+    "code": "3548",
+    "defaultValue": "Appareil de soudage",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3549",
+    "defaultValue": "Machines à travailler les métaux, Nec",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3552",
+    "parentLookupCode": "35",
+    "defaultValue": "Machines textiles"
+  },
+  {
+    "code": "3553",
+    "defaultValue": "Machines à bois",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3554",
+    "parentLookupCode": "35",
+    "defaultValue": "Machines d'industries du papier"
+  },
+  {
+    "code": "3555",
+    "defaultValue": "Machines d'impression de métiers",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3556",
+    "defaultValue": "Machines de produits alimentaires",
+    "parentLookupCode": "35"
+  },
+  {
+    "code": "3612",
+    "defaultValue": "Transformateurs de puissance, de distribution et de spécialité",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3613",
+    "parentLookupCode": "36",
+    "defaultValue": "Appareillage de commutation et de tableau"
+  },
+  {
+    "code": "3621",
+    "parentLookupCode": "36",
+    "defaultValue": "Moteurs et générateurs"
+  },
+  {
+    "code": "3624",
+    "defaultValue": "Produits de carbone et de graphite",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3625",
+    "parentLookupCode": "36",
+    "defaultValue": "Relais et contrôles industriels"
+  },
+  {
+    "code": "3629",
+    "parentLookupCode": "36",
+    "defaultValue": "Appareil industriel électrique"
+  },
+  {
+    "code": "3631",
+    "parentLookupCode": "36",
+    "defaultValue": "Équipement de cuisine de ménage"
+  },
+  {
+    "code": "3632",
+    "defaultValue": "Réfrigérateurs et congélateurs ménagers",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3633",
+    "parentLookupCode": "36",
+    "defaultValue": "Équipement de blanchisserie de ménage"
+  },
+  {
+    "code": "3634",
+    "parentLookupCode": "36",
+    "defaultValue": "Articles ménagers électriques et ventilateurs"
+  },
+  {
+    "code": "3635",
+    "defaultValue": "Aspirateurs ménagers",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3639",
+    "parentLookupCode": "36",
+    "defaultValue": "Appareils ménagers, Nec"
+  },
+  {
+    "code": "3641",
+    "defaultValue": "Lampes électriques",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3643",
+    "parentLookupCode": "36",
+    "defaultValue": "Dispositifs de câblage porteurs de courant"
+  },
+  {
+    "code": "3644",
+    "defaultValue": "Dispositifs de câblage sans courant",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3645",
+    "parentLookupCode": "36",
+    "defaultValue": "Appareils d'éclairage résidentiels"
+  },
+  {
+    "code": "3646",
+    "defaultValue": "Appareils d'éclairage commerciaux",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3647",
+    "defaultValue": "Équipement d'éclairage de véhicule",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3648",
+    "defaultValue": "Matériel d'éclairage, Nec",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3651",
+    "parentLookupCode": "36",
+    "defaultValue": "Équipement audio et vidéo pour la maison"
+  },
+  {
+    "code": "3652",
+    "defaultValue": "Enregistrements et bandes préenregistrés",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3661",
+    "parentLookupCode": "36",
+    "defaultValue": "Appareil téléphonique et télégraphique"
+  },
+  {
+    "code": "3663",
+    "defaultValue": "Radio et T.v. Matériel de communication",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3669",
+    "parentLookupCode": "36",
+    "defaultValue": "Matériel de communication, Nec"
+  },
+  {
+    "code": "3671",
+    "defaultValue": "Tubes à électrons",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3672",
+    "defaultValue": "Cartes de circuits imprimés",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3674",
+    "parentLookupCode": "36",
+    "defaultValue": "Semi-conducteurs et périphériques associés"
+  },
+  {
+    "code": "3675",
+    "defaultValue": "Condensateurs électroniques",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3676",
+    "defaultValue": "Résistances électroniques",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3677",
+    "parentLookupCode": "36",
+    "defaultValue": "Bobines et transformateurs électroniques"
+  },
+  {
+    "code": "3678",
+    "defaultValue": "Connecteurs électroniques",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3679",
+    "defaultValue": "Composants électroniques, Nec",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3691",
+    "parentLookupCode": "36",
+    "defaultValue": "Batteries de stockage"
+  },
+  {
+    "code": "3692",
+    "defaultValue": "Batteries primaires, sèches et humides",
+    "parentLookupCode": "36"
+  },
+  {
+    "code": "3694",
+    "parentLookupCode": "36",
+    "defaultValue": "Équipement électrique du moteur"
+  },
+  {
+    "code": "3711",
+    "defaultValue": "Véhicules automobiles et carrosseries de voitures",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3713",
+    "parentLookupCode": "37",
+    "defaultValue": "Camions et autobus"
+  },
+  {
+    "code": "3714",
+    "defaultValue": "Pièces et accessoires de véhicules automobiles",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3715",
+    "defaultValue": "Remorques de camions",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3716",
+    "parentLookupCode": "37",
+    "defaultValue": "Maisons de camping"
+  },
+  {
+    "code": "3721",
+    "defaultValue": "Avion",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3724",
+    "defaultValue": "Moteurs d'avion et pièces de moteur",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3728",
+    "parentLookupCode": "37",
+    "defaultValue": "Pièces et équipement d'aéronefs, Nec"
+  },
+  {
+    "code": "3731",
+    "parentLookupCode": "37",
+    "defaultValue": "Construction navale et réparation"
+  },
+  {
+    "code": "3732",
+    "parentLookupCode": "37",
+    "defaultValue": "Construction et réparation de bateaux"
+  },
+  {
+    "code": "3743",
+    "parentLookupCode": "37",
+    "defaultValue": "Équipement ferroviaire"
+  },
+  {
+    "code": "3751",
+    "parentLookupCode": "37",
+    "defaultValue": "Motos, bicyclettes et pièces"
+  },
+  {
+    "code": "3761",
+    "defaultValue": "Missiles guidés et véhicules spatiaux",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3764",
+    "defaultValue": "Unités de propulsion spatiale et pièces",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3769",
+    "parentLookupCode": "37",
+    "defaultValue": "Équipement de véhicule spatial, Nec"
+  },
+  {
+    "code": "3792",
+    "parentLookupCode": "37",
+    "defaultValue": "Caravanes et camping-cars"
+  },
+  {
+    "code": "3795",
+    "parentLookupCode": "37",
+    "defaultValue": "Réservoirs et composants de réservoir"
+  },
+  {
+    "code": "3799",
+    "defaultValue": "Matériel de transport, Nec",
+    "parentLookupCode": "37"
+  },
+  {
+    "code": "3812",
+    "parentLookupCode": "38",
+    "defaultValue": "Équipement de recherche et de navigation"
+  },
+  {
+    "code": "3821",
+    "defaultValue": "Appareillage de laboratoire et mobilier",
+    "parentLookupCode": "38"
+  },
+  {
+    "code": "3822",
+    "parentLookupCode": "38",
+    "defaultValue": "Contrôles environnementaux"
+  },
+  {
+    "code": "3823",
+    "parentLookupCode": "38",
+    "defaultValue": "Instruments de contrôle de processus"
+  },
+  {
+    "code": "3824",
+    "parentLookupCode": "38",
+    "defaultValue": "Appareils de mesure de fluides et de comptage"
+  },
+  {
+    "code": "3825",
+    "defaultValue": "Instruments pour mesurer l'électricité",
+    "parentLookupCode": "38"
+  },
+  {
+    "code": "3826",
+    "defaultValue": "Instruments analytiques",
+    "parentLookupCode": "38"
+  },
+  {
+    "code": "3827",
+    "defaultValue": "Instruments optiques et lentilles",
+    "parentLookupCode": "38"
+  },
+  {
+    "code": "3829",
+    "parentLookupCode": "38",
+    "defaultValue": "Dispositifs de mesure et de contrôle, Nec"
+  },
+  {
+    "code": "3841",
+    "defaultValue": "Instruments chirurgicaux et médicaux",
+    "parentLookupCode": "38"
+  },
+  {
+    "code": "3842",
+    "parentLookupCode": "38",
+    "defaultValue": "Appareils chirurgicaux et fournitures"
+  },
+  {
+    "code": "3843",
+    "parentLookupCode": "38",
+    "defaultValue": "Équipement dentaire et fournitures"
+  },
+  {
+    "code": "3844",
+    "parentLookupCode": "38",
+    "defaultValue": "Appareils à rayons X et tubes"
+  },
+  {
+    "code": "3911",
+    "parentLookupCode": "39",
+    "defaultValue": "Bijoux, Métal précieux"
+  },
+  {
+    "code": "3914",
+    "defaultValue": "Argenterie et articles plaqués",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3915",
+    "parentLookupCode": "39",
+    "defaultValue": "Matériaux de bijouterie et travail lapidaire"
+  },
+  {
+    "code": "3931",
+    "defaultValue": "Instruments de musique",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3942",
+    "parentLookupCode": "39",
+    "defaultValue": "Poupées et jouets en peluche"
+  },
+  {
+    "code": "3944",
+    "parentLookupCode": "39",
+    "defaultValue": "Jeux, jouets et véhicules pour enfants"
+  },
+  {
+    "code": "3949",
+    "defaultValue": "Articles de sport et d'athlétisme, Nec",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3951",
+    "defaultValue": "Stylos et crayons mécaniques",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3952",
+    "defaultValue": "Crayons de plomb et objets d'art",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3953",
+    "defaultValue": "Dispositifs de marquage",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3955",
+    "parentLookupCode": "39",
+    "defaultValue": "Papier carbone et rubans encrés"
+  },
+  {
+    "code": "3961",
+    "defaultValue": "Bijoux de fantaisie",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3965",
+    "defaultValue": "Attaches, boutons, aiguilles et épingles",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3991",
+    "parentLookupCode": "39",
+    "defaultValue": "Balais et brosses"
+  },
+  {
+    "code": "3993",
+    "parentLookupCode": "39",
+    "defaultValue": "Signes et spécialités publicitaires"
+  },
+  {
+    "code": "3995",
+    "parentLookupCode": "39",
+    "defaultValue": "Cercueils funéraires"
+  },
+  {
+    "code": "3996",
+    "defaultValue": "Revêtements de sol à surface dure, Nec",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "3999",
+    "defaultValue": "Industries manufacturières, Nec",
+    "parentLookupCode": "39"
+  },
+  {
+    "code": "4011",
+    "parentLookupCode": "40",
+    "defaultValue": "Chemins de fer, transport de ligne"
+  },
+  {
+    "code": "4013",
+    "defaultValue": "Commutation et services Terminal Server",
+    "parentLookupCode": "40"
+  },
+  {
+    "code": "4111",
+    "defaultValue": "Transit local et suburbain",
+    "parentLookupCode": "41"
+  },
+  {
+    "code": "4119",
+    "parentLookupCode": "41",
+    "defaultValue": "Transport local de passagers, Nec"
+  },
+  {
+    "code": "4121",
+    "defaultValue": "Taxis",
+    "parentLookupCode": "41"
+  },
+  {
+    "code": "4131",
+    "defaultValue": "Transport interurbain et rural",
+    "parentLookupCode": "41"
+  },
+  {
+    "code": "4141",
+    "parentLookupCode": "41",
+    "defaultValue": "Service local d'affrètement d'autobus"
+  },
+  {
+    "code": "4142",
+    "parentLookupCode": "41",
+    "defaultValue": "Service d'affrètement d'autobus, sauf local"
+  },
+  {
+    "code": "4151",
+    "defaultValue": "Autobus scolaires",
+    "parentLookupCode": "41"
+  },
+  {
+    "code": "4173",
+    "parentLookupCode": "41",
+    "defaultValue": "Terminal de bus et installations de service"
+  },
+  {
+    "code": "4212",
+    "defaultValue": "Camionnage local, sans stockage",
+    "parentLookupCode": "42"
+  },
+  {
+    "code": "4213",
+    "parentLookupCode": "42",
+    "defaultValue": "Camionnage, sauf local"
+  },
+  {
+    "code": "4214",
+    "defaultValue": "Camionnage local avec stockage",
+    "parentLookupCode": "42"
+  },
+  {
+    "code": "4215",
+    "defaultValue": "Services de messagerie, sauf par air",
+    "parentLookupCode": "42"
+  },
+  {
+    "code": "4221",
+    "parentLookupCode": "42",
+    "defaultValue": "Entreposage et entreposage de produits agricoles"
+  },
+  {
+    "code": "4222",
+    "defaultValue": "Entreposage réfrigéré et entreposage",
+    "parentLookupCode": "42"
+  },
+  {
+    "code": "4225",
+    "parentLookupCode": "42",
+    "defaultValue": "Entreposage général et entreposage"
+  },
+  {
+    "code": "4226",
+    "defaultValue": "Entreposage spécial et entreposage, Nec",
+    "parentLookupCode": "42"
+  },
+  {
+    "code": "4231",
+    "parentLookupCode": "42",
+    "defaultValue": "Installations terminales de camionnage"
+  },
+  {
+    "code": "4311",
+    "parentLookupCode": "43",
+    "defaultValue": "Service postal américain"
+  },
+  {
+    "code": "4412",
+    "defaultValue": "Transport de fret étranger en haute mer",
+    "parentLookupCode": "44"
+  },
+  {
+    "code": "4424",
+    "defaultValue": "Transport maritime intérieur de fret",
+    "parentLookupCode": "44"
+  },
+  {
+    "code": "4432",
+    "parentLookupCode": "44",
+    "defaultValue": "Transport de marchandises sur les Grands Lacs"
+  },
+  {
+    "code": "4449",
+    "defaultValue": "Transport de l'eau du fret",
+    "parentLookupCode": "44"
+  },
+  {
+    "code": "4481",
+    "parentLookupCode": "44",
+    "defaultValue": "Transport de passagers en haute mer, sauf le traversier"
+  },
+  {
+    "code": "4482",
+    "parentLookupCode": "44",
+    "defaultValue": "Ferries"
+  },
+  {
+    "code": "4489",
+    "parentLookupCode": "44",
+    "defaultValue": "Transport de passagers par eau"
+  },
+  {
+    "code": "4491",
+    "parentLookupCode": "44",
+    "defaultValue": "Manutention du fret maritime"
+  },
+  {
+    "code": "4492",
+    "parentLookupCode": "44",
+    "defaultValue": "Service de remorquage et de remorquage"
+  },
+  {
+    "code": "4493",
+    "parentLookupCode": "44",
+    "defaultValue": "Marinas"
+  },
+  {
+    "code": "4499",
+    "defaultValue": "Services de transport par eau, Nec",
+    "parentLookupCode": "44"
+  },
+  {
+    "code": "4512",
+    "defaultValue": "Transport aérien, prévu",
+    "parentLookupCode": "45"
+  },
+  {
+    "code": "4513",
+    "defaultValue": "Services de courrier aérien",
+    "parentLookupCode": "45"
+  },
+  {
+    "code": "4522",
+    "defaultValue": "Transport aérien, non-planifié",
+    "parentLookupCode": "45"
+  },
+  {
+    "code": "4581",
+    "parentLookupCode": "45",
+    "defaultValue": "Aéroports, champs d'aviation et services"
+  },
+  {
+    "code": "4612",
+    "parentLookupCode": "46",
+    "defaultValue": "Pipelines de pétrole brut"
+  },
+  {
+    "code": "4613",
+    "parentLookupCode": "46",
+    "defaultValue": "Pipelines pétroliers raffinés"
+  },
+  {
+    "code": "4619",
+    "defaultValue": "Pipelines, Nec",
+    "parentLookupCode": "46"
+  },
+  {
+    "code": "4724",
+    "defaultValue": "Agence de voyages",
+    "parentLookupCode": "47"
+  },
+  {
+    "code": "4725",
+    "parentLookupCode": "47",
+    "defaultValue": "Voyagistes"
+  },
+  {
+    "code": "4729",
+    "defaultValue": "Arrangement de transport de passagers",
+    "parentLookupCode": "47"
+  },
+  {
+    "code": "4731",
+    "defaultValue": "Arrangement de transport de marchandises",
+    "parentLookupCode": "47"
+  },
+  {
+    "code": "4741",
+    "defaultValue": "Location de voitures de chemin de fer",
+    "parentLookupCode": "47"
+  },
+  {
+    "code": "4783",
+    "parentLookupCode": "47",
+    "defaultValue": "Emballage et mise en caisse"
+  },
+  {
+    "code": "4785",
+    "defaultValue": "Inspection et installations fixes",
+    "parentLookupCode": "47"
+  },
+  {
+    "code": "4789",
+    "defaultValue": "Services de transport, Nec",
+    "parentLookupCode": "47"
+  },
+  {
+    "code": "4812",
+    "parentLookupCode": "48",
+    "defaultValue": "Communication radiotéléphonique"
+  },
+  {
+    "code": "4813",
+    "defaultValue": "Communication téléphonique, sauf radio",
+    "parentLookupCode": "48"
+  },
+  {
+    "code": "4822",
+    "parentLookupCode": "48",
+    "defaultValue": "Télégraphe et autres communications"
+  },
+  {
+    "code": "4832",
+    "parentLookupCode": "48",
+    "defaultValue": "Stations de radiodiffusion"
+  },
+  {
+    "code": "4833",
+    "parentLookupCode": "48",
+    "defaultValue": "Stations de télédiffusion"
+  },
+  {
+    "code": "4841",
+    "defaultValue": "Services de télévision par câble et autres services de télévision payante",
+    "parentLookupCode": "48"
+  },
+  {
+    "code": "4899",
+    "defaultValue": "Services de communication, Nec",
+    "parentLookupCode": "48"
+  },
+  {
+    "code": "4911",
+    "parentLookupCode": "49",
+    "defaultValue": "Services électriques"
+  },
+  {
+    "code": "4922",
+    "parentLookupCode": "49",
+    "defaultValue": "Transmission de gaz naturel"
+  },
+  {
+    "code": "4923",
+    "parentLookupCode": "49",
+    "defaultValue": "Transmission et distribution de gaz"
+  },
+  {
+    "code": "4924",
+    "defaultValue": "Distribution de gaz naturel",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4925",
+    "defaultValue": "Production et / ou distribution de gaz",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4931",
+    "parentLookupCode": "49",
+    "defaultValue": "Services électriques et autres combinés"
+  },
+  {
+    "code": "4932",
+    "defaultValue": "Combinaison de gaz et d'autres services",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4939",
+    "parentLookupCode": "49",
+    "defaultValue": "Utilitaires combinés, Nec"
+  },
+  {
+    "code": "4941",
+    "defaultValue": "Approvisionnement en eau",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4952",
+    "defaultValue": "Systèmes d'égouts",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4953",
+    "defaultValue": "Systèmes de déchets",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4959",
+    "defaultValue": "Services sanitaires, Nec",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4961",
+    "defaultValue": "Fourniture de vapeur et de climatisation",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "4971",
+    "defaultValue": "Système d'irrigation",
+    "parentLookupCode": "49"
+  },
+  {
+    "code": "5012",
+    "defaultValue": "Automobiles et autres véhicules à moteur",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5013",
+    "defaultValue": "Fournitures de véhicules automobiles et nouvelles pièces",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5014",
+    "parentLookupCode": "50",
+    "defaultValue": "Pneus et chambres à air"
+  },
+  {
+    "code": "5015",
+    "defaultValue": "Pièces de véhicules automobiles, occasion",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5021",
+    "parentLookupCode": "50",
+    "defaultValue": "Meubles"
+  },
+  {
+    "code": "5023",
+    "parentLookupCode": "50",
+    "defaultValue": "Mobilier de maison"
+  },
+  {
+    "code": "5031",
+    "parentLookupCode": "50",
+    "defaultValue": "Bois d'œuvre, contreplaqué et menuiserie"
+  },
+  {
+    "code": "5032",
+    "parentLookupCode": "50",
+    "defaultValue": "Brique, pierre et matériaux connexes"
+  },
+  {
+    "code": "5033",
+    "parentLookupCode": "50",
+    "defaultValue": "Toiture, bardage et isolation"
+  },
+  {
+    "code": "5039",
+    "defaultValue": "Matériaux de construction, Nec",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5043",
+    "parentLookupCode": "50",
+    "defaultValue": "Matériel photographique et fournitures"
+  },
+  {
+    "code": "5044",
+    "parentLookupCode": "50",
+    "defaultValue": "Matériel de bureau"
+  },
+  {
+    "code": "5045",
+    "parentLookupCode": "50",
+    "defaultValue": "Ordinateurs, périphériques et logiciels"
+  },
+  {
+    "code": "5046",
+    "parentLookupCode": "50",
+    "defaultValue": "Équipement commercial, Nec"
+  },
+  {
+    "code": "5047",
+    "defaultValue": "Matériel médical et hospitalier",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5048",
+    "parentLookupCode": "50",
+    "defaultValue": "Produits ophtalmiques"
+  },
+  {
+    "code": "5049",
+    "parentLookupCode": "50",
+    "defaultValue": "Équipement professionnel, Nec"
+  },
+  {
+    "code": "5051",
+    "defaultValue": "Metals Service Centres et Bureaux",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5052",
+    "parentLookupCode": "50",
+    "defaultValue": "Charbon et autres minéraux et minerais"
+  },
+  {
+    "code": "5063",
+    "parentLookupCode": "50",
+    "defaultValue": "Appareil électrique et équipement"
+  },
+  {
+    "code": "5064",
+    "defaultValue": "Électroménagers, Télévision et Radio",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5065",
+    "parentLookupCode": "50",
+    "defaultValue": "Pièces et équipement électroniques, Nec"
+  },
+  {
+    "code": "5072",
+    "defaultValue": "Matériel",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5074",
+    "defaultValue": "Plomberie et chauffage hydronique",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5075",
+    "defaultValue": "Chauffage à air chaud et climatisation",
+    "parentLookupCode": "50"
+  },
+  {
+    "code": "5111",
+    "parentLookupCode": "51",
+    "defaultValue": "Papier d'impression et d'écriture"
+  },
+  {
+    "code": "5112",
+    "parentLookupCode": "51",
+    "defaultValue": "Papeterie et fournitures de bureau"
+  },
+  {
+    "code": "5113",
+    "parentLookupCode": "51",
+    "defaultValue": "Papier de service industriel et personnel"
+  },
+  {
+    "code": "5122",
+    "parentLookupCode": "51",
+    "defaultValue": "Drogues, Propriétaires et Divers"
+  },
+  {
+    "code": "5131",
+    "parentLookupCode": "51",
+    "defaultValue": "Marchandises à la pièce et Notions"
+  },
+  {
+    "code": "5136",
+    "defaultValue": "Vêtements pour hommes et garçonnets",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5137",
+    "parentLookupCode": "51",
+    "defaultValue": "Vêtements pour femmes et enfants"
+  },
+  {
+    "code": "5139",
+    "parentLookupCode": "51",
+    "defaultValue": "Chaussure"
+  },
+  {
+    "code": "5141",
+    "parentLookupCode": "51",
+    "defaultValue": "Épicerie, Ligne Générale"
+  },
+  {
+    "code": "5142",
+    "parentLookupCode": "51",
+    "defaultValue": "Marchandises congelées emballées"
+  },
+  {
+    "code": "5143",
+    "parentLookupCode": "51",
+    "defaultValue": "Produits laitiers, sauf séchés ou en conserve"
+  },
+  {
+    "code": "5144",
+    "defaultValue": "Volaille et volaille",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5145",
+    "defaultValue": "Confiserie",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5146",
+    "defaultValue": "Poisson et fruits de mer",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5147",
+    "defaultValue": "Viandes et produits de viande",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5148",
+    "defaultValue": "Fruits et légumes frais",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5149",
+    "parentLookupCode": "51",
+    "defaultValue": "Épicerie et produits connexes, Nec"
+  },
+  {
+    "code": "5153",
+    "parentLookupCode": "51",
+    "defaultValue": "Haricots et fèves"
+  },
+  {
+    "code": "5154",
+    "defaultValue": "Bétail",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5159",
+    "defaultValue": "Matières premières de produits agricoles, Nec",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5162",
+    "parentLookupCode": "51",
+    "defaultValue": "Matières plastiques et formes de base"
+  },
+  {
+    "code": "5169",
+    "parentLookupCode": "51",
+    "defaultValue": "Produits chimiques et produits connexes, Nec"
+  },
+  {
+    "code": "5171",
+    "parentLookupCode": "51",
+    "defaultValue": "Stations et terminaux pétroliers en vrac"
+  },
+  {
+    "code": "5172",
+    "defaultValue": "Produits pétroliers, Nec",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5181",
+    "parentLookupCode": "51",
+    "defaultValue": "Bière et Ale"
+  },
+  {
+    "code": "5182",
+    "defaultValue": "Vin et boissons distillées",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5191",
+    "parentLookupCode": "51",
+    "defaultValue": "Fournitures agricoles"
+  },
+  {
+    "code": "5192",
+    "parentLookupCode": "51",
+    "defaultValue": "Livres, périodiques et journaux"
+  },
+  {
+    "code": "5193",
+    "defaultValue": "Fleurs et fournitures de fleuristes",
+    "parentLookupCode": "51"
+  },
+  {
+    "code": "5194",
+    "parentLookupCode": "51",
+    "defaultValue": "Tabac et produits du tabac"
+  },
+  {
+    "code": "5198",
+    "parentLookupCode": "51",
+    "defaultValue": "Peintures, vernis et fournitures"
+  },
+  {
+    "code": "5199",
+    "parentLookupCode": "51",
+    "defaultValue": "Biens non durables, Nec"
+  },
+  {
+    "code": "5211",
+    "parentLookupCode": "52",
+    "defaultValue": "Bois d'oeuvre et autres matériaux de construction"
+  },
+  {
+    "code": "5231",
+    "defaultValue": "Magasins de peinture, de verre et de papier peint",
+    "parentLookupCode": "52"
+  },
+  {
+    "code": "5251",
+    "defaultValue": "Quincailleries",
+    "parentLookupCode": "52"
+  },
+  {
+    "code": "5261",
+    "defaultValue": "Pépinières et magasins de jardin",
+    "parentLookupCode": "52"
+  },
+  {
+    "code": "5271",
+    "parentLookupCode": "52",
+    "defaultValue": "Concessionnaires de maisons mobiles"
+  },
+  {
+    "code": "5311",
+    "parentLookupCode": "53",
+    "defaultValue": "Grands magasins"
+  },
+  {
+    "code": "5331",
+    "parentLookupCode": "53",
+    "defaultValue": "Magasins de variétés"
+  },
+  {
+    "code": "5399",
+    "parentLookupCode": "53",
+    "defaultValue": "Marchandise générale divers"
+  },
+  {
+    "code": "5411",
+    "parentLookupCode": "54",
+    "defaultValue": "Épiceries"
+  },
+  {
+    "code": "5421",
+    "defaultValue": "Marchés de la viande et du poisson",
+    "parentLookupCode": "54"
+  },
+  {
+    "code": "5431",
+    "defaultValue": "Marchés de fruits et légumes",
+    "parentLookupCode": "54"
+  },
+  {
+    "code": "5441",
+    "parentLookupCode": "54",
+    "defaultValue": "Magasins de bonbons, de noix et de confiseries"
+  },
+  {
+    "code": "5451",
+    "parentLookupCode": "54",
+    "defaultValue": "Magasins de produits laitiers"
+  },
+  {
+    "code": "5461",
+    "defaultValue": "Boulangeries au détail",
+    "parentLookupCode": "54"
+  },
+  {
+    "code": "5499",
+    "defaultValue": "Magasins d'alimentation divers",
+    "parentLookupCode": "54"
+  },
+  {
+    "code": "5511",
+    "defaultValue": "Concessionnaires de voitures neuves et d'occasion",
+    "parentLookupCode": "55"
+  },
+  {
+    "code": "5521",
+    "parentLookupCode": "55",
+    "defaultValue": "Concessionnaires de voitures d'occasion"
+  },
+  {
+    "code": "5531",
+    "parentLookupCode": "55",
+    "defaultValue": "Magasins de fournitures automobiles et d'articles ménagers"
+  },
+  {
+    "code": "5541",
+    "defaultValue": "Stations-service Essence",
+    "parentLookupCode": "55"
+  },
+  {
+    "code": "5551",
+    "defaultValue": "Concessionnaires de bateaux",
+    "parentLookupCode": "55"
+  },
+  {
+    "code": "5561",
+    "parentLookupCode": "55",
+    "defaultValue": "Concessionnaires de véhicules récréatifs"
+  },
+  {
+    "code": "5571",
+    "parentLookupCode": "55",
+    "defaultValue": "Concessionnaires de motocyclettes"
+  },
+  {
+    "code": "5599",
+    "parentLookupCode": "55",
+    "defaultValue": "Concessionnaires automobiles, Nec"
+  },
+  {
+    "code": "5611",
+    "defaultValue": "Magasins de vêtements pour hommes et garçonnets",
+    "parentLookupCode": "56"
+  },
+  {
+    "code": "5621",
+    "parentLookupCode": "56",
+    "defaultValue": "Magasins de vêtements pour femmes"
+  },
+  {
+    "code": "5632",
+    "defaultValue": "Accessoires pour femmes et magasins spécialisés",
+    "parentLookupCode": "56"
+  },
+  {
+    "code": "5641",
+    "parentLookupCode": "56",
+    "defaultValue": "Magasins d'articles pour enfants et bébés"
+  },
+  {
+    "code": "5651",
+    "parentLookupCode": "56",
+    "defaultValue": "Magasins de vêtements familiaux"
+  },
+  {
+    "code": "5661",
+    "defaultValue": "Magasins de chaussures",
+    "parentLookupCode": "56"
+  },
+  {
+    "code": "5699",
+    "defaultValue": "Vêtements et accessoires divers",
+    "parentLookupCode": "56"
+  },
+  {
+    "code": "5712",
+    "defaultValue": "Magasins de meubles",
+    "parentLookupCode": "57"
+  },
+  {
+    "code": "5713",
+    "defaultValue": "Magasins de revêtement de sol",
+    "parentLookupCode": "57"
+  },
+  {
+    "code": "5714",
+    "defaultValue": "Magasins de draperies et d'ameublement",
+    "parentLookupCode": "57"
+  },
+  {
+    "code": "5719",
+    "defaultValue": "Homefurnishings divers",
+    "parentLookupCode": "57"
+  },
+  {
+    "code": "5722",
+    "parentLookupCode": "57",
+    "defaultValue": "Magasins d'appareils ménagers"
+  },
+  {
+    "code": "5731",
+    "defaultValue": "Magasins de radio, de télévision et d'électronique",
+    "parentLookupCode": "57"
+  },
+  {
+    "code": "5734",
+    "defaultValue": "Magasins d'ordinateurs et de logiciels",
+    "parentLookupCode": "57"
+  },
+  {
+    "code": "5735",
+    "parentLookupCode": "57",
+    "defaultValue": "Magasins de cassettes enregistrées et préenregistrées"
+  },
+  {
+    "code": "5736",
+    "defaultValue": "Magasins d'instruments de musique",
+    "parentLookupCode": "57"
+  },
+  {
+    "code": "5812",
+    "parentLookupCode": "58",
+    "defaultValue": "Lieux de restauration"
+  },
+  {
+    "code": "5813",
+    "parentLookupCode": "58",
+    "defaultValue": "Lieux de consommation"
+  },
+  {
+    "code": "5912",
+    "parentLookupCode": "59",
+    "defaultValue": "Magasins de médicaments et magasins exclusifs"
+  },
+  {
+    "code": "5921",
+    "defaultValue": "Magasins d'alcool",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5932",
+    "parentLookupCode": "59",
+    "defaultValue": "Magasins de marchandises d'occasion"
+  },
+  {
+    "code": "5941",
+    "defaultValue": "Articles de sport et magasins de vélos",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5942",
+    "parentLookupCode": "59",
+    "defaultValue": "Librairies"
+  },
+  {
+    "code": "5943",
+    "defaultValue": "Magasins de papeterie",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5944",
+    "parentLookupCode": "59",
+    "defaultValue": "Bijouteries"
+  },
+  {
+    "code": "5945",
+    "defaultValue": "Magasins d'articles de passe-temps, de jouets et de jeux",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5946",
+    "parentLookupCode": "59",
+    "defaultValue": "Magasins de matériel photographique et photographique"
+  },
+  {
+    "code": "5947",
+    "parentLookupCode": "59",
+    "defaultValue": "Cadeau, nouveauté, et boutique de souvenirs"
+  },
+  {
+    "code": "5948",
+    "parentLookupCode": "59",
+    "defaultValue": "Magasins de bagages et de maroquinerie"
+  },
+  {
+    "code": "5949",
+    "defaultValue": "Couture, travaux d'aiguille et articles de couture",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5961",
+    "defaultValue": "Maisons de catalogue et de vente par correspondance",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5962",
+    "parentLookupCode": "59",
+    "defaultValue": "Opérateurs / opératrices de machines à merchandiser"
+  },
+  {
+    "code": "5963",
+    "defaultValue": "Établissements de vente directe",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5983",
+    "parentLookupCode": "59",
+    "defaultValue": "Concessionnaires de mazout"
+  },
+  {
+    "code": "5984",
+    "parentLookupCode": "59",
+    "defaultValue": "Concessionnaires de gaz de pétrole liquéfié"
+  },
+  {
+    "code": "5989",
+    "parentLookupCode": "59",
+    "defaultValue": "Marchands de carburant, Nec"
+  },
+  {
+    "code": "5992",
+    "defaultValue": "Fleuristes",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5993",
+    "defaultValue": "Tabagies et stands",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5994",
+    "defaultValue": "News Dealers et kiosques à journaux",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "5995",
+    "parentLookupCode": "59",
+    "defaultValue": "Magasins de produits optiques"
+  },
+  {
+    "code": "5999",
+    "defaultValue": "Magasins de détail divers, Nec",
+    "parentLookupCode": "59"
+  },
+  {
+    "code": "6011",
+    "defaultValue": "Banques fédérales de réserve",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6019",
+    "defaultValue": "Dépôt central de réserve, Nec",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6021",
+    "defaultValue": "Banques commerciales nationales",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6022",
+    "defaultValue": "Banques commerciales d'État",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6029",
+    "defaultValue": "Banques commerciales, Nec",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6035",
+    "parentLookupCode": "60",
+    "defaultValue": "Institutions fédérales d'épargne"
+  },
+  {
+    "code": "6036",
+    "defaultValue": "Établissements d'épargne, sauf fédéral",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6061",
+    "parentLookupCode": "60",
+    "defaultValue": "Caisses de crédit fédérales"
+  },
+  {
+    "code": "6062",
+    "parentLookupCode": "60",
+    "defaultValue": "Caisses d'État"
+  },
+  {
+    "code": "6081",
+    "parentLookupCode": "60",
+    "defaultValue": "Banque étrangère et succursales et agences"
+  },
+  {
+    "code": "6082",
+    "defaultValue": "Commerce extérieur et banques internationales",
+    "parentLookupCode": "60"
+  },
+  {
+    "code": "6091",
+    "parentLookupCode": "60",
+    "defaultValue": "Installations de fiducie de Nondeposit"
+  },
+  {
+    "code": "6099",
+    "parentLookupCode": "60",
+    "defaultValue": "Fonctions liées à la banque dépositaire"
+  },
+  {
+    "code": "6111",
+    "defaultValue": "Crédit fédéral et fédéral",
+    "parentLookupCode": "61"
+  },
+  {
+    "code": "6141",
+    "defaultValue": "Institutions de crédit personnel",
+    "parentLookupCode": "61"
+  },
+  {
+    "code": "6153",
+    "parentLookupCode": "61",
+    "defaultValue": "Crédit commercial à ajusté terme"
+  },
+  {
+    "code": "6159",
+    "defaultValue": "Crédit aux entreprises divers",
+    "parentLookupCode": "61"
+  },
+  {
+    "code": "6162",
+    "defaultValue": "Banquiers hypothécaires et correspondants",
+    "parentLookupCode": "61"
+  },
+  {
+    "code": "6163",
+    "parentLookupCode": "61",
+    "defaultValue": "Courtiers en prêts"
+  },
+  {
+    "code": "6211",
+    "defaultValue": "Courtiers en sécurité et concessionnaires",
+    "parentLookupCode": "62"
+  },
+  {
+    "code": "6221",
+    "parentLookupCode": "62",
+    "defaultValue": "Courtiers en contrats de marchandises, concessionnaires"
+  },
+  {
+    "code": "6231",
+    "parentLookupCode": "62",
+    "defaultValue": "Échanges de sécurité et de marchandises"
+  },
+  {
+    "code": "6282",
+    "defaultValue": "Conseil d'investissement",
+    "parentLookupCode": "62"
+  },
+  {
+    "code": "6289",
+    "parentLookupCode": "62",
+    "defaultValue": "Service de sécurité et de marchandise"
+  },
+  {
+    "code": "6311",
+    "parentLookupCode": "63",
+    "defaultValue": "Assurance-vie"
+  },
+  {
+    "code": "6321",
+    "defaultValue": "Assurance accident et maladie",
+    "parentLookupCode": "63"
+  },
+  {
+    "code": "6324",
+    "defaultValue": "Plans de services hospitaliers et médicaux",
+    "parentLookupCode": "63"
+  },
+  {
+    "code": "6331",
+    "parentLookupCode": "63",
+    "defaultValue": "Assurance incendie, marine et accident"
+  },
+  {
+    "code": "6351",
+    "defaultValue": "Assurance de cautionnement",
+    "parentLookupCode": "63"
+  },
+  {
+    "code": "6361",
+    "parentLookupCode": "63",
+    "defaultValue": "Assurance de titres"
+  },
+  {
+    "code": "6371",
+    "parentLookupCode": "63",
+    "defaultValue": "Fonds de retraite, de santé et de bien-être"
+  },
+  {
+    "code": "6399",
+    "defaultValue": "Sociétés d'assurance, Nec",
+    "parentLookupCode": "63"
+  },
+  {
+    "code": "6411",
+    "parentLookupCode": "64",
+    "defaultValue": "Agents d'assurance, courtiers et service"
+  },
+  {
+    "code": "6512",
+    "parentLookupCode": "65",
+    "defaultValue": "Opérateurs de bâtiments non résidentiels"
+  },
+  {
+    "code": "6513",
+    "defaultValue": "Opérateurs de construction d'appartements",
+    "parentLookupCode": "65"
+  },
+  {
+    "code": "6514",
+    "defaultValue": "Opérateurs de logements, sauf appartements",
+    "parentLookupCode": "65"
+  },
+  {
+    "code": "6515",
+    "parentLookupCode": "65",
+    "defaultValue": "Opérateurs de site d'accueil mobile"
+  },
+  {
+    "code": "6517",
+    "defaultValue": "Bailleurs de propriété de chemin de fer",
+    "parentLookupCode": "65"
+  },
+  {
+    "code": "6519",
+    "parentLookupCode": "65",
+    "defaultValue": "Biens immobiliers, Nec"
+  },
+  {
+    "code": "6531",
+    "defaultValue": "Agents et gestionnaires immobiliers",
+    "parentLookupCode": "65"
+  },
+  {
+    "code": "6541",
+    "parentLookupCode": "65",
+    "defaultValue": "Titre abstract Bureaux"
+  },
+  {
+    "code": "6552",
+    "parentLookupCode": "65",
+    "defaultValue": "Subdiviseurs et Développeurs, Nec"
+  },
+  {
+    "code": "6553",
+    "parentLookupCode": "65",
+    "defaultValue": "Sous-diviseurs et développeurs de cimetières"
+  },
+  {
+    "code": "6712",
+    "parentLookupCode": "67",
+    "defaultValue": "Sociétés de portefeuille bancaires"
+  },
+  {
+    "code": "6719",
+    "parentLookupCode": "67",
+    "defaultValue": "Sociétés de portefeuille, Nec"
+  },
+  {
+    "code": "6722",
+    "parentLookupCode": "67",
+    "defaultValue": "Investissement en gestion, à durée indéterminée"
+  },
+  {
+    "code": "6726",
+    "parentLookupCode": "67",
+    "defaultValue": "Bureaux d'investissement, Nec"
+  },
+  {
+    "code": "6732",
+    "parentLookupCode": "67",
+    "defaultValue": "Confiances: Éducatives, religieuses, etc."
+  },
+  {
+    "code": "6733",
+    "defaultValue": "Fiducies, Nec",
+    "parentLookupCode": "67"
+  },
+  {
+    "code": "6792",
+    "parentLookupCode": "67",
+    "defaultValue": "Traders de redevances pétrolières"
+  },
+  {
+    "code": "6794",
+    "defaultValue": "Propriétaires de brevets et bailleurs",
+    "parentLookupCode": "67"
+  },
+  {
+    "code": "6798",
+    "defaultValue": "Fiducies de placement immobilier",
+    "parentLookupCode": "67"
+  },
+  {
+    "code": "6799",
+    "defaultValue": "Investisseurs, Nec",
+    "parentLookupCode": "67"
+  },
+  {
+    "code": "7011",
+    "defaultValue": "Hôtels et Motels",
+    "parentLookupCode": "70"
+  },
+  {
+    "code": "7021",
+    "parentLookupCode": "70",
+    "defaultValue": "Chambre et pension"
+  },
+  {
+    "code": "7032",
+    "parentLookupCode": "70",
+    "defaultValue": "Camps sportifs et récréatifs"
+  },
+  {
+    "code": "7033",
+    "defaultValue": "Trailer Parcs et Campings",
+    "parentLookupCode": "70"
+  },
+  {
+    "code": "7041",
+    "parentLookupCode": "70",
+    "defaultValue": "Organisation de l'adhésion"
+  },
+  {
+    "code": "7211",
+    "defaultValue": "Blanchisseries, famille et commercial",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7212",
+    "defaultValue": "Pressage de vêtement et agents de nettoyage",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7213",
+    "defaultValue": "Linge de maison",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7215",
+    "defaultValue": "Blanchisseries et nettoyage à pièces",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7216",
+    "defaultValue": "Installations de nettoyage à sec, sauf les couvertures",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7217",
+    "parentLookupCode": "72",
+    "defaultValue": "Nettoyage de tapis et de meubles rembourrés"
+  },
+  {
+    "code": "7218",
+    "parentLookupCode": "72",
+    "defaultValue": "Blanchisseurs industriels"
+  },
+  {
+    "code": "7219",
+    "defaultValue": "Blanchisserie et vêtements, Nec",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7221",
+    "defaultValue": "Studios photographiques, Portrait",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7231",
+    "parentLookupCode": "72",
+    "defaultValue": "Boutiques de beauté"
+  },
+  {
+    "code": "7241",
+    "parentLookupCode": "72",
+    "defaultValue": "Barbiers"
+  },
+  {
+    "code": "7251",
+    "parentLookupCode": "72",
+    "defaultValue": "Cordonniers et cireurs de chaussures"
+  },
+  {
+    "code": "7261",
+    "parentLookupCode": "72",
+    "defaultValue": "Service funéraire et crématoires"
+  },
+  {
+    "code": "7291",
+    "defaultValue": "Services de préparation de déclarations de revenus",
+    "parentLookupCode": "72"
+  },
+  {
+    "code": "7299",
+    "parentLookupCode": "72",
+    "defaultValue": "Services personnels divers"
+  },
+  {
+    "code": "7311",
+    "defaultValue": "Agences de publicité",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7312",
+    "parentLookupCode": "73",
+    "defaultValue": "Services de publicité extérieure"
+  },
+  {
+    "code": "7313",
+    "defaultValue": "Radio, télévision, éditeurs",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7319",
+    "defaultValue": "Publicité, Nec",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7322",
+    "defaultValue": "Ajustement et services de recouvrement",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7323",
+    "defaultValue": "Services de rapports de crédit",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7331",
+    "parentLookupCode": "73",
+    "defaultValue": "Services de publicité par publipostage"
+  },
+  {
+    "code": "7334",
+    "defaultValue": "Services de photocopie et de duplication",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7335",
+    "defaultValue": "Photographie commerciale",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7336",
+    "defaultValue": "Art commercial et design graphique",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7338",
+    "parentLookupCode": "73",
+    "defaultValue": "Secrétariat et rapport judiciaire"
+  },
+  {
+    "code": "7342",
+    "parentLookupCode": "73",
+    "defaultValue": "Services de désinfection et de lutte antiparasitaire"
+  },
+  {
+    "code": "7349",
+    "defaultValue": "Services de maintenance de bâtiments, Nec",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7352",
+    "defaultValue": "Location d'équipement médical",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7353",
+    "defaultValue": "Location d'équipement de construction lourde",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7359",
+    "parentLookupCode": "73",
+    "defaultValue": "Location et location à bail de matériel, Nec"
+  },
+  {
+    "code": "7361",
+    "defaultValue": "Agences de recrutement",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7363",
+    "defaultValue": "Aider les services d'approvisionnement",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7371",
+    "parentLookupCode": "73",
+    "defaultValue": "Services de programmation informatique personnalisés"
+  },
+  {
+    "code": "7372",
+    "defaultValue": "Logiciels préemballés",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7373",
+    "defaultValue": "Conception de systèmes informatiques intégrés",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7374",
+    "parentLookupCode": "73",
+    "defaultValue": "Traitement et préparation de données"
+  },
+  {
+    "code": "7375",
+    "parentLookupCode": "73",
+    "defaultValue": "Services de récupération d'informations"
+  },
+  {
+    "code": "7376",
+    "parentLookupCode": "73",
+    "defaultValue": "Gestion des installations informatiques"
+  },
+  {
+    "code": "7377",
+    "defaultValue": "Location d'ordinateurs et location à bail",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7378",
+    "defaultValue": "Maintenance et réparation d'ordinateurs",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7379",
+    "defaultValue": "Services Informatiques, Nec",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7381",
+    "defaultValue": "Services de détectives et de véhicules blindés",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7382",
+    "parentLookupCode": "73",
+    "defaultValue": "Services de systèmes de sécurité"
+  },
+  {
+    "code": "7383",
+    "defaultValue": "Syndicats de Nouvelles",
+    "parentLookupCode": "73"
+  },
+  {
+    "code": "7384",
+    "parentLookupCode": "73",
+    "defaultValue": "Laboratoires Photofinish"
+  },
+  {
+    "code": "7389",
+    "parentLookupCode": "73",
+    "defaultValue": "Services aux entreprises, Nec"
+  },
+  {
+    "code": "7513",
+    "parentLookupCode": "75",
+    "defaultValue": "Location et location à bail de camions, sans chauffeur"
+  },
+  {
+    "code": "7514",
+    "defaultValue": "Location de voitures",
+    "parentLookupCode": "75"
+  },
+  {
+    "code": "7515",
+    "parentLookupCode": "75",
+    "defaultValue": "Location de voitures particulières"
+  },
+  {
+    "code": "7519",
+    "parentLookupCode": "75",
+    "defaultValue": "Location de remorque utilitaire"
+  },
+  {
+    "code": "7521",
+    "parentLookupCode": "75",
+    "defaultValue": "Stationnement automobile"
+  },
+  {
+    "code": "7532",
+    "parentLookupCode": "75",
+    "defaultValue": "Réparation de carrosserie et de peinture et ateliers de peinture"
+  },
+  {
+    "code": "7533",
+    "parentLookupCode": "75",
+    "defaultValue": "Ateliers de réparation de systèmes d'échappement automatique"
+  },
+  {
+    "code": "7534",
+    "defaultValue": "Ateliers de rechapage et de réparation de pneus",
+    "parentLookupCode": "75"
+  },
+  {
+    "code": "7536",
+    "defaultValue": "Magasins de remplacement de verre automobile",
+    "parentLookupCode": "75"
+  },
+  {
+    "code": "7537",
+    "parentLookupCode": "75",
+    "defaultValue": "Ateliers de réparation de transmission automobile"
+  },
+  {
+    "code": "7538",
+    "parentLookupCode": "75",
+    "defaultValue": "Ateliers généraux de réparation automobile"
+  },
+  {
+    "code": "7539",
+    "defaultValue": "Ateliers de réparation automobile, Nec",
+    "parentLookupCode": "75"
+  },
+  {
+    "code": "7542",
+    "parentLookupCode": "75",
+    "defaultValue": "Carwashes"
+  },
+  {
+    "code": "7549",
+    "parentLookupCode": "75",
+    "defaultValue": "Services automobiles, Nec"
+  },
+  {
+    "code": "7622",
+    "parentLookupCode": "76",
+    "defaultValue": "Réparation de radio et de télévision"
+  },
+  {
+    "code": "7623",
+    "defaultValue": "Service de réfrigération et de réparation",
+    "parentLookupCode": "76"
+  },
+  {
+    "code": "7629",
+    "parentLookupCode": "76",
+    "defaultValue": "Ateliers de réparation électrique"
+  },
+  {
+    "code": "7631",
+    "parentLookupCode": "76",
+    "defaultValue": "Réparation de montres, d'horloges et de bijoux"
+  },
+  {
+    "code": "7641",
+    "defaultValue": "Rembourrage et réparation de meubles",
+    "parentLookupCode": "76"
+  },
+  {
+    "code": "7692",
+    "parentLookupCode": "76",
+    "defaultValue": "Réparation de soudage"
+  },
+  {
+    "code": "7694",
+    "defaultValue": "Magasins de rembobinage d'armatures",
+    "parentLookupCode": "76"
+  },
+  {
+    "code": "7699",
+    "parentLookupCode": "76",
+    "defaultValue": "Services de réparation, Nec"
+  },
+  {
+    "code": "7812",
+    "parentLookupCode": "78",
+    "defaultValue": "Production de films et de vidéos"
+  },
+  {
+    "code": "7819",
+    "defaultValue": "Services Allied To Motion Pictures",
+    "parentLookupCode": "78"
+  },
+  {
+    "code": "7822",
+    "defaultValue": "Distribution de films et de bandes",
+    "parentLookupCode": "78"
+  },
+  {
+    "code": "7829",
+    "parentLookupCode": "78",
+    "defaultValue": "Services de distribution de films"
+  },
+  {
+    "code": "7832",
+    "parentLookupCode": "78",
+    "defaultValue": "Cinémas, sauf drive-in"
+  },
+  {
+    "code": "7833",
+    "defaultValue": "Cinémas Drive-in",
+    "parentLookupCode": "78"
+  },
+  {
+    "code": "7841",
+    "parentLookupCode": "78",
+    "defaultValue": "Location de vidéocassettes"
+  },
+  {
+    "code": "7911",
+    "parentLookupCode": "79",
+    "defaultValue": "Studios de danse, écoles et salles"
+  },
+  {
+    "code": "7922",
+    "parentLookupCode": "79",
+    "defaultValue": "Producteurs et services théâtraux"
+  },
+  {
+    "code": "7929",
+    "parentLookupCode": "79",
+    "defaultValue": "Artistes et groupes de divertissement"
+  },
+  {
+    "code": "7933",
+    "defaultValue": "Centres de bowling",
+    "parentLookupCode": "79"
+  },
+  {
+    "code": "7941",
+    "parentLookupCode": "79",
+    "defaultValue": "Clubs de sport, gestionnaires et promoteurs"
+  },
+  {
+    "code": "7948",
+    "parentLookupCode": "79",
+    "defaultValue": "Course, y compris l'opération de piste"
+  },
+  {
+    "code": "7991",
+    "parentLookupCode": "79",
+    "defaultValue": "Installations de conditionnement physique"
+  },
+  {
+    "code": "7992",
+    "parentLookupCode": "79",
+    "defaultValue": "Terrains de golf publics"
+  },
+  {
+    "code": "7993",
+    "parentLookupCode": "79",
+    "defaultValue": "Dispositifs d'amusement à monnayeur"
+  },
+  {
+    "code": "7996",
+    "parentLookupCode": "79",
+    "defaultValue": "Parcs d'attractions"
+  },
+  {
+    "code": "7997",
+    "defaultValue": "Clubs sportifs et de loisirs",
+    "parentLookupCode": "79"
+  },
+  {
+    "code": "7999",
+    "parentLookupCode": "79",
+    "defaultValue": "Divertissement et loisirs, Nec"
+  },
+  {
+    "code": "8011",
+    "parentLookupCode": "80",
+    "defaultValue": "Bureaux et cliniques de médecins"
+  },
+  {
+    "code": "8021",
+    "parentLookupCode": "80",
+    "defaultValue": "Bureaux et cliniques de dentistes"
+  },
+  {
+    "code": "8031",
+    "defaultValue": "Bureaux et cliniques des médecins ostéopathes",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8041",
+    "defaultValue": "Bureaux et cliniques de chiropraticiens",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8042",
+    "parentLookupCode": "80",
+    "defaultValue": "Bureaux et cliniques des optométristes"
+  },
+  {
+    "code": "8043",
+    "defaultValue": "Bureaux et cliniques des podiatres",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8049",
+    "defaultValue": "Bureaux de praticien de la santé",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8051",
+    "parentLookupCode": "80",
+    "defaultValue": "Installations de soins infirmiers qualifiés"
+  },
+  {
+    "code": "8052",
+    "parentLookupCode": "80",
+    "defaultValue": "Installations de soins intermédiaires"
+  },
+  {
+    "code": "8059",
+    "parentLookupCode": "80",
+    "defaultValue": "Soins infirmiers et personnels, Nec"
+  },
+  {
+    "code": "8062",
+    "parentLookupCode": "80",
+    "defaultValue": "Hôpitaux médicaux et chirurgicaux généraux"
+  },
+  {
+    "code": "8063",
+    "defaultValue": "Hôpitaux psychiatriques",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8069",
+    "parentLookupCode": "80",
+    "defaultValue": "Hôpitaux spécialisés, sauf psychiatriques"
+  },
+  {
+    "code": "8071",
+    "parentLookupCode": "80",
+    "defaultValue": "Laboratoires médicaux"
+  },
+  {
+    "code": "8072",
+    "parentLookupCode": "80",
+    "defaultValue": "Laboratoires dentaires"
+  },
+  {
+    "code": "8082",
+    "defaultValue": "Services de soins de santé à domicile",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8092",
+    "parentLookupCode": "80",
+    "defaultValue": "Centres de dialyse rénale"
+  },
+  {
+    "code": "8093",
+    "defaultValue": "Cliniques ambulatoires spécialisées, Nec",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8099",
+    "defaultValue": "Santé et services connexes, Nec",
+    "parentLookupCode": "80"
+  },
+  {
+    "code": "8111",
+    "parentLookupCode": "81",
+    "defaultValue": "Services juridiques"
+  },
+  {
+    "code": "8211",
+    "defaultValue": "Écoles primaires et secondaires",
+    "parentLookupCode": "82"
+  },
+  {
+    "code": "8221",
+    "defaultValue": "Collèges et universités",
+    "parentLookupCode": "82"
+  },
+  {
+    "code": "8222",
+    "parentLookupCode": "82",
+    "defaultValue": "Collèges juniors"
+  },
+  {
+    "code": "8231",
+    "parentLookupCode": "82",
+    "defaultValue": "Bibliothèques"
+  },
+  {
+    "code": "8243",
+    "parentLookupCode": "82",
+    "defaultValue": "Écoles de traitement de données"
+  },
+  {
+    "code": "8244",
+    "defaultValue": "Écoles d'affaires et de secrétariat",
+    "parentLookupCode": "82"
+  },
+  {
+    "code": "8249",
+    "parentLookupCode": "82",
+    "defaultValue": "Écoles professionnelles, Nec"
+  },
+  {
+    "code": "8299",
+    "defaultValue": "Écoles et services éducatifs",
+    "parentLookupCode": "82"
+  },
+  {
+    "code": "8322",
+    "parentLookupCode": "83",
+    "defaultValue": "Services individuels et familiaux"
+  },
+  {
+    "code": "8331",
+    "parentLookupCode": "83",
+    "defaultValue": "Formation professionnelle et services connexes"
+  },
+  {
+    "code": "8351",
+    "parentLookupCode": "83",
+    "defaultValue": "Services de garde d'enfants"
+  },
+  {
+    "code": "8361",
+    "defaultValue": "Soins résidentiels",
+    "parentLookupCode": "83"
+  },
+  {
+    "code": "8399",
+    "defaultValue": "Services sociaux, Nec",
+    "parentLookupCode": "83"
+  },
+  {
+    "code": "8412",
+    "defaultValue": "Musées et galeries d'art",
+    "parentLookupCode": "84"
+  },
+  {
+    "code": "8422",
+    "parentLookupCode": "84",
+    "defaultValue": "Jardins botaniques et zoologiques"
+  },
+  {
+    "code": "8611",
+    "defaultValue": "Associations professionnelles",
+    "parentLookupCode": "86"
+  },
+  {
+    "code": "8621",
+    "parentLookupCode": "86",
+    "defaultValue": "Organisations professionnelles"
+  },
+  {
+    "code": "8631",
+    "parentLookupCode": "86",
+    "defaultValue": "Organisations syndicales"
+  },
+  {
+    "code": "8641",
+    "parentLookupCode": "86",
+    "defaultValue": "Associations civiques et sociales"
+  },
+  {
+    "code": "8651",
+    "defaultValue": "Organisations politiques",
+    "parentLookupCode": "86"
+  },
+  {
+    "code": "8661",
+    "defaultValue": "Organisations religieuses",
+    "parentLookupCode": "86"
+  },
+  {
+    "code": "8699",
+    "defaultValue": "Organisations pour membres, Nec",
+    "parentLookupCode": "86"
+  },
+  {
+    "code": "8711",
+    "parentLookupCode": "87",
+    "defaultValue": "Services d'ingénierie"
+  },
+  {
+    "code": "8712",
+    "defaultValue": "Services architecturaux",
+    "parentLookupCode": "87"
+  },
+  {
+    "code": "8713",
+    "defaultValue": "Services d'arpentage",
+    "parentLookupCode": "87"
+  },
+  {
+    "code": "8721",
+    "parentLookupCode": "87",
+    "defaultValue": "Comptabilité, audit et tenue de livres"
+  },
+  {
+    "code": "8731",
+    "defaultValue": "Recherche physique commerciale",
+    "parentLookupCode": "87"
+  },
+  {
+    "code": "8732",
+    "parentLookupCode": "87",
+    "defaultValue": "Recherche non physique commerciale"
+  },
+  {
+    "code": "8733",
+    "parentLookupCode": "87",
+    "defaultValue": "Organismes de recherche non commerciaux"
+  },
+  {
+    "code": "8734",
+    "parentLookupCode": "87",
+    "defaultValue": "Laboratoires d'essais"
+  },
+  {
+    "code": "8741",
+    "parentLookupCode": "87",
+    "defaultValue": "Services de management"
+  },
+  {
+    "code": "8742",
+    "parentLookupCode": "87",
+    "defaultValue": "Services de conseil en gestion"
+  },
+  {
+    "code": "8743",
+    "parentLookupCode": "87",
+    "defaultValue": "Services de relations publiques"
+  },
+  {
+    "code": "8744",
+    "parentLookupCode": "87",
+    "defaultValue": "Services de soutien aux installations"
+  },
+  {
+    "code": "8748",
+    "defaultValue": "Conseil en affaires, Nec",
+    "parentLookupCode": "87"
+  },
+  {
+    "code": "8999",
+    "parentLookupCode": "89",
+    "defaultValue": "Services, Nec"
+  },
+  {
+    "code": "9111",
+    "parentLookupCode": "91",
+    "defaultValue": "Bureaux de direction"
+  },
+  {
+    "code": "9121",
+    "defaultValue": "Corps législatif",
+    "parentLookupCode": "91"
+  },
+  {
+    "code": "9131",
+    "defaultValue": "Exécutif et législatif combinés",
+    "parentLookupCode": "91"
+  },
+  {
+    "code": "9199",
+    "defaultValue": "Gouvernement général, Nec",
+    "parentLookupCode": "91"
+  },
+  {
+    "code": "9211",
+    "parentLookupCode": "92",
+    "defaultValue": "Tribunaux"
+  },
+  {
+    "code": "9221",
+    "parentLookupCode": "92",
+    "defaultValue": "Protection de la police"
+  },
+  {
+    "code": "9222",
+    "defaultValue": "Conseiller juridique et poursuites",
+    "parentLookupCode": "92"
+  },
+  {
+    "code": "9223",
+    "parentLookupCode": "92",
+    "defaultValue": "Institutions correctionnelles"
+  },
+  {
+    "code": "9224",
+    "defaultValue": "Protection contre le feu",
+    "parentLookupCode": "92"
+  },
+  {
+    "code": "9229",
+    "parentLookupCode": "92",
+    "defaultValue": "Ordre public et sécurité, Nec"
+  },
+  {
+    "code": "9311",
+    "parentLookupCode": "93",
+    "defaultValue": "Finances, fiscalité et politique monétaire"
+  },
+  {
+    "code": "9411",
+    "parentLookupCode": "94",
+    "defaultValue": "Administration des programmes éducatifs"
+  },
+  {
+    "code": "9431",
+    "parentLookupCode": "94",
+    "defaultValue": "Administration des programmes de santé publique"
+  },
+  {
+    "code": "9441",
+    "defaultValue": "Administration des programmes sociaux et de main-d'œuvre",
+    "parentLookupCode": "94"
+  },
+  {
+    "code": "9451",
+    "parentLookupCode": "94",
+    "defaultValue": "Administration des affaires des anciens combattants"
+  },
+  {
+    "code": "9511",
+    "parentLookupCode": "95",
+    "defaultValue": "Gestion de l'air, de l'eau et des déchets solides"
+  },
+  {
+    "code": "9512",
+    "defaultValue": "Conservation des terres, des minéraux et de la faune",
+    "parentLookupCode": "95"
+  },
+  {
+    "code": "9531",
+    "defaultValue": "Programmes de logement",
+    "parentLookupCode": "95"
+  },
+  {
+    "code": "9532",
+    "defaultValue": "Développement urbain et communautaire",
+    "parentLookupCode": "95"
+  },
+  {
+    "code": "9611",
+    "defaultValue": "Administration des programmes économiques généraux",
+    "parentLookupCode": "96"
+  },
+  {
+    "code": "9621",
+    "parentLookupCode": "96",
+    "defaultValue": "Réglementation, administration des transports"
+  },
+  {
+    "code": "9631",
+    "parentLookupCode": "96",
+    "defaultValue": "Réglementation, administration des services publics"
+  },
+  {
+    "code": "9641",
+    "parentLookupCode": "96",
+    "defaultValue": "Réglementation du marketing agricole"
+  },
+  {
+    "code": "9651",
+    "parentLookupCode": "96",
+    "defaultValue": "Réglementation, Secteurs commerciaux divers"
+  },
+  {
+    "code": "9661",
+    "defaultValue": "Recherche spatiale et technologie",
+    "parentLookupCode": "96"
+  },
+  {
+    "code": "9711",
+    "defaultValue": "La sécurité nationale",
+    "parentLookupCode": "97"
+  },
+  {
+    "code": "9721",
+    "parentLookupCode": "97",
+    "defaultValue": "Les affaires internationales"
+  },
+  {
+    "code": "9999",
+    "parentLookupCode": "99",
+    "defaultValue": "Établissements non classifiables"
+  }
+]

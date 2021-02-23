@@ -1,0 +1,14 @@
+[
+  {
+    "code": "ACTIVE",
+    "defaultValue": "actif"
+  },
+  {
+    "code": "EXPIRED",
+    "defaultValue": "Expiré"
+  },
+  {
+    "code": "SUSPENDED",
+    "defaultValue": "Suspendu"
+  }
+]

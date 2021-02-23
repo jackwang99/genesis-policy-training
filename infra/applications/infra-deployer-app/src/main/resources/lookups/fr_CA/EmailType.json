@@ -1,0 +1,17 @@
+[
+  {
+    "code": "COM",
+    "entityType": "ORG",
+    "defaultValue": "Commun"
+  },
+  {
+    "code": "PERS",
+    "entityType": "INDV",
+    "defaultValue": "Personnel"
+  },
+  {
+    "code": "WORK",
+    "entityType": "INDV",
+    "defaultValue": "Travail"
+  }
+]

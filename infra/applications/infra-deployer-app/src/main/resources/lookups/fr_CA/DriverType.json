@@ -1,0 +1,26 @@
+[
+  {
+    "code": "A",
+    "defaultValue": "Additionnel"
+  },
+  {
+    "code": "E",
+    "defaultValue": "Exclu"
+  },
+  {
+    "code": "N",
+    "defaultValue": "Non-conducteur"
+  },
+  {
+    "code": "O",
+    "defaultValue": "Pilote occasionnel"
+  },
+  {
+    "code": "P",
+    "defaultValue": "Pilote principal"
+  },
+  {
+    "code": "U",
+    "defaultValue": "Pilote anonyme"
+  }
+]

@@ -1,0 +1,10 @@
+Namespace FleetAuto
+
+Include Base
+
+Rule "DriverConvictedInFelony-190425-hT7H8" On AutoDriverUnderwritingInfo.isFelonyConvicted {
+  When isFelonyConvicted != null
+  Assert isFelonyConvicted = false
+  Error "DriverConvictedInFelony-190425-hT7H8": "The driver is convicted felony, the quote should be referred to underwriting."
+  Overridable
+}

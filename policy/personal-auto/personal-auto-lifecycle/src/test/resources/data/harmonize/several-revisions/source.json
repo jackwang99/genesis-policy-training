@@ -1,0 +1,7 @@
+{
+  "vehicleBaseDetails": {
+    "model": "X2",
+    "enginePower": 200,
+    "_type": "TestAutoType"
+  }
+}

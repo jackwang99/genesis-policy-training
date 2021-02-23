@@ -1,0 +1,402 @@
+[
+{ 
+   "code": "AAPPL",
+   "defaultValue": "Agriculture Applicant Information (AL1 only)"
+},
+{ 
+   "code": "ACCIDENT&HEALTH",
+   "defaultValue": "Accident & Health"
+},
+{ 
+   "code": "ACHE",
+   "defaultValue": "Accident and Health"
+},
+{ 
+   "code": "AGLIA",
+   "defaultValue": "Agriculture Liability"
+},
+{ 
+   "code": "AGPP",
+   "defaultValue": "Agriculture Scheduled and Unscheduled Personal Property"
+},
+{ 
+   "code": "AGPR",
+   "defaultValue": "Agriculture Property"
+},
+{ 
+   "code": "AIRC",
+   "defaultValue": "Aircraft"
+},
+{ 
+   "code": "AIRPFB",
+   "defaultValue": "Airport & Fixed Base Operator"
+},
+{ 
+   "code": "APKGE",
+   "defaultValue": "Agriculture Package"
+},
+{ 
+   "code": "APROD",
+   "defaultValue": "Aircraft Products Liability"
+},
+{ 
+   "code": "ARVP",
+   "defaultValue": "Accounts Receivable/Valuable Papers"
+},
+{ 
+   "code": "AUTO",
+   "defaultValue": "Automobile"
+},
+{ 
+   "code": "AUTOB",
+   "defaultValue": "Automobile - Business"
+},
+{ 
+   "code": "AUTOP",
+   "defaultValue": "Automobile - Personal"
+},
+{ 
+   "code": "AUTOW",
+   "defaultValue": "Automobile - Warranty"
+},
+{ 
+   "code": "AVPKG",
+   "defaultValue": "Aviation Package"
+},
+{ 
+   "code": "BANDM",
+   "defaultValue": "Boiler and Machinery"
+},
+{ 
+   "code": "BLANK",
+   "defaultValue": "Not Applicable (Blank)"
+},
+{ 
+   "code": "BMISC",
+   "defaultValue": "Miscellaneous Bond"
+},
+{ 
+   "code": "BOAT",
+   "defaultValue": "Watercraft (small boat)"
+},
+{ 
+   "code": "BOP",
+   "defaultValue": "Business Owners Policy"
+},
+{ 
+   "code": "BOPGL",
+   "defaultValue": "Business Owners Policy Liability"
+},
+{ 
+   "code": "BOPPR",
+   "defaultValue": "Business Owners Policy Property"
+},
+{ 
+   "code": "CAVN",
+   "defaultValue": "Commercial Aviation"
+},
+{ 
+   "code": "CEQFL",
+   "defaultValue": "Contractor's Equipment Floater"
+},
+{ 
+   "code": "CFIRE",
+   "defaultValue": "Commercial Fire"
+},
+{ 
+   "code": "CFRM",
+   "defaultValue": "Farm Owners"
+},
+{ 
+   "code": "CGL",
+   "defaultValue": "General Liability"
+},
+{ 
+   "code": "COMAR",
+   "defaultValue": "Commercial Articles"
+},
+{ 
+   "code": "COMR",
+   "defaultValue": "Ocean Marine"
+},
+{ 
+   "code": "CONTR",
+   "defaultValue": "Contract"
+},
+{ 
+   "code": "CPKGE",
+   "defaultValue": "Commercial Package"
+},
+{ 
+   "code": "CPMP",
+   "defaultValue": "Commercial Multi Peril"
+},
+{ 
+   "code": "CRIM",
+   "defaultValue": "Crime"
+},
+{ 
+   "code": "CRIME",
+   "defaultValue": "Crime (includes"
+},
+{ 
+   "code": "DENTAL",
+   "defaultValue": "Dental"
+},
+{ 
+   "code": "DFIRE",
+   "defaultValue": "Dwelling Fire"
+},
+{ 
+   "code": "DISAB",
+   "defaultValue": "Disability"
+},
+{ 
+   "code": "DISABILITY",
+   "defaultValue": "Disability Insurance"
+},
+{ 
+   "code": "DO",
+   "defaultValue": "Directors And Officers"
+},
+{ 
+   "code": "EDP",
+   "defaultValue": "Computers"
+},
+{ 
+   "code": "EL",
+   "defaultValue": "Employers Liability"
+},
+{ 
+   "code": "EO",
+   "defaultValue": "Errors and Omissions"
+},
+{ 
+   "code": "EPLI",
+   "defaultValue": "Employment Practices Liability Insurance"
+},
+{ 
+   "code": "EQ",
+   "defaultValue": "Earthquake"
+},
+{ 
+   "code": "EQPFL",
+   "defaultValue": "Equipment Floater"
+},
+{ 
+   "code": "EXLIA",
+   "defaultValue": "Excess Liability"
+},
+{ 
+   "code": "FIDTY",
+   "defaultValue": "Fidelity"
+},
+{ 
+   "code": "FIDUC",
+   "defaultValue": "Fiduciary"
+},
+{ 
+   "code": "FINEA",
+   "defaultValue": "Fine Arts"
+},
+{ 
+   "code": "FLOOD",
+   "defaultValue": "Flood"
+},
+{ 
+   "code": "GARAG",
+   "defaultValue": "Garage and Dealers"
+},
+{ 
+   "code": "GLASS",
+   "defaultValue": "Glass"
+},
+{ 
+   "code": "GROUP",
+   "defaultValue": "Group Insurance"
+},
+{ 
+   "code": "HANG",
+   "defaultValue": "Private Hangar"
+},
+{ 
+   "code": "HBB",
+   "defaultValue": "Home Based Business"
+},
+{ 
+   "code": "HOME",
+   "defaultValue": "Homeowners"
+},
+{ 
+   "code": "INBR",
+   "defaultValue": "Installation/Builders Risk"
+},
+{ 
+   "code": "INMAR",
+   "defaultValue": "Inland Marine"
+},
+{ 
+   "code": "INMRC",
+   "defaultValue": "Inland Marine (commercial)"
+},
+{ 
+   "code": "INMRP",
+   "defaultValue": "Inland Marine (personal lines)"
+},
+{ 
+   "code": "INTER",
+   "defaultValue": "Internet Liability"
+},
+{ 
+   "code": "JUDCL",
+   "defaultValue": "Judicial"
+},
+{ 
+   "code": "KIDRA",
+   "defaultValue": "Kidnap and Ransom"
+},
+{ 
+   "code": "LICPT",
+   "defaultValue": "License and Permit"
+},
+{ 
+   "code": "LIFE",
+   "defaultValue": "Life Insurance"
+},
+{ 
+   "code": "LSTIN",
+   "defaultValue": "Lost Instrument"
+},
+{ 
+   "code": "MHOME",
+   "defaultValue": "Mobile Homeowners"
+},
+{ 
+   "code": "MMAL",
+   "defaultValue": "Medical Malpractice"
+},
+{ 
+   "code": "MTRTK",
+   "defaultValue": "Motor Truck Cargo"
+},
+{ 
+   "code": "Motorcycle",
+   "defaultValue": "Motorcycle"
+},
+{ 
+   "code": "NWFGR",
+   "defaultValue": "New Financial Guarantee"
+},
+{ 
+   "code": "OLIB",
+   "defaultValue": "Other Liability"
+},
+{ 
+   "code": "PAPER",
+   "defaultValue": "Valuable papers"
+},
+{ 
+   "code": "PHYS",
+   "defaultValue": "Physicians and Surgeons"
+},
+{ 
+   "code": "PKG",
+   "defaultValue": "Package"
+},
+{ 
+   "code": "PL",
+   "defaultValue": "Professional Liability"
+},
+{ 
+   "code": "PLMSC",
+   "defaultValue": "Miscellaneous Professional Liability"
+},
+{ 
+   "code": "PPKGE",
+   "defaultValue": "Personal Package"
+},
+{ 
+   "code": "PROP",
+   "defaultValue": "Property (includes"
+},
+{ 
+   "code": "PROPC",
+   "defaultValue": "Commercial Property"
+},
+{ 
+   "code": "PUBOF",
+   "defaultValue": "Public Official"
+},
+{ 
+   "code": "RECV",
+   "defaultValue": "Recreational Vehicles"
+},
+{ 
+   "code": "SCAP",
+   "defaultValue": "Small Commercial Package"
+},
+{ 
+   "code": "SCHPR",
+   "defaultValue": "Scheduled Property"
+},
+{ 
+   "code": "SFRNC",
+   "defaultValue": "Small Farm/Ranch"
+},
+{ 
+   "code": "SIGNS",
+   "defaultValue": "Signs"
+},
+{ 
+   "code": "SMP",
+   "defaultValue": "Special Multi-Peril"
+},
+{ 
+   "code": "SURE",
+   "defaultValue": "Surety"
+},
+{ 
+   "code": "TRANS",
+   "defaultValue": "Transportation"
+},
+{ 
+   "code": "TRUCK",
+   "defaultValue": "Truckers"
+},
+{ 
+   "code": "UMBRC",
+   "defaultValue": "Umbrella - Commercial"
+},
+{ 
+   "code": "UMBRL",
+   "defaultValue": "Umbrella"
+},
+{ 
+   "code": "UMBRP",
+   "defaultValue": "Umbrella - Personal (excess indemnity)"
+},
+{ 
+   "code": "UN",
+   "defaultValue": "Unknown"
+},
+{ 
+   "code": "WCMA",
+   "defaultValue": "Workers Comp Marine"
+},
+{ 
+   "code": "WIND",
+   "defaultValue": "Wind Policy"
+},
+{ 
+   "code": "WORK",
+   "defaultValue": "Worker's Compensation"
+},
+{ 
+   "code": "WORKP",
+   "defaultValue": "Workers Compensation Participating"
+},
+{ 
+   "code": "WORKV",
+   "defaultValue": "Workplace Violence"
+}
+]

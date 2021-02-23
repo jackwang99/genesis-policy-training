@@ -1,0 +1,8 @@
+Model OrganizationAgencyContainer
+Root GenesisOrganizationAgencyContainer
+
+ModelType AgencyContainer
+Import CrmAddress, CustomerRelationship
+
+Stored using ['ORGANIZATIONCUSTOMER']
+Indexed using ['agencycontainer']

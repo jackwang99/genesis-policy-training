@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+JAVA_EXEC="${JAVA_HOME:-java}${JAVA_HOME:+/bin/java} ${JAVA_OPTS}"
+
+# resolving zk address and setting it as environment variable
+zookeeper_connect=${zookeeper_hostname}:2181
+genesis_cassandra_url=${cassandra_hostname}:9042
+
+${JAVA_EXEC} \
+        -Dgenesis.zookeeper.url="${zookeeper_connect}" \
+        -Dgenesis.cassandra.url="${GENESIS_CASSANDRA_URL:-${genesis_cassandra_url}}" \
+        -Dgenesis.solr.url="${genesis_solr_url:-cloud}" \
+        -Dgenesis.deployer.goals="${deployer_goal:-deploy}" \
+        -Dgenesis.deployer.includes="${1}" \
+            -jar /usr/lib/genesis/deployer/party-deployer-app-fat.jar

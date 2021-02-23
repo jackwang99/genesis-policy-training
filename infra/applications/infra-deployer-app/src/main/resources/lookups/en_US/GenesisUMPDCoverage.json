@@ -1,0 +1,14 @@
+[
+  {
+    "code": "100000",
+    "defaultValue": "$100000"
+  },
+  {
+    "code": "25000",
+    "defaultValue": "$25000"
+  },
+  {
+    "code": "50000",
+    "defaultValue": "$50000"
+  }
+]

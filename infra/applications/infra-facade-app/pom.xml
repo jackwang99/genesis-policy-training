@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>infra-applications-pom</artifactId>
+        <groupId>com.eisgroup.genesis.proto.infra.applications</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>infra-facade-app</artifactId>
+
+    <name>Infrastructure Facade Application</name>
+    <description>Infrastructure Facade Application Module</description>
+    <packaging>jar</packaging>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/buildNumber.properties</include>
+                    <include>**/banner.txt</include>
+                </includes>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>dependency-list</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>list</goal>
+                        </goals>
+                        <configuration>
+                            <outputFile>target/classes/dependency.list</outputFile>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>buildnumber-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>create</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.eisgroup.genesis.tools</groupId>
+                <artifactId>fintrospector-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>process-classes</phase>
+                        <configuration>
+                            <descriptor>gateway</descriptor>
+                            <excludes>
+                                <exclude>schema-facade</exclude>
+                            </excludes>
+                            <introspectors>
+                                <introspector>
+                                    <groupId>com.eisgroup.genesis.facade</groupId>
+                                    <artifactId>facade-fintrospector</artifactId>
+                                    <version>${facade.framework.version}</version>
+                                </introspector>
+                            </introspectors>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>metadata-facade</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>introspect-module</goal>
+                        </goals>
+                        <configuration>
+                            <descriptor>schema</descriptor>
+                            <includes>
+                                <include>schema-facade</include>
+                            </includes>
+                            <introspectors>
+                                <introspector>
+                                    <groupId>com.eisgroup.genesis.facade</groupId>
+                                    <artifactId>facade-fintrospector</artifactId>
+                                    <version>${facade.framework.version}</version>
+                                </introspector>
+                            </introspectors>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <classifier>fat</classifier>
+                    <attach>false</attach>
+                    <mainClass>com.eisgroup.genesis.boot.Bootstrap</mainClass>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>com.eisgroup.genesis.tools</groupId>
+                <artifactId>fgenerator-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>prepare-package</phase>
+                        <configuration>
+                            <inputDirectory>${project.build.directory}/classes</inputDirectory>
+                            <outputDirectory>${project.build.directory}/classes/facade-schema</outputDirectory>
+                            <generators>
+                                <generator>
+                                    <groupId>com.eisgroup.genesis.facade</groupId>
+                                    <artifactId>facade-fgenerator</artifactId>
+                                    <version>${facade.framework.version}</version>
+                                </generator>
+                            </generators>
+                            <includes>
+                                <include>SwaggerGenerator</include>
+                            </includes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!-- Facade Runtime -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.facade</groupId>
+            <artifactId>facade-bundle</artifactId>
+            <type>tile</type>
+        </dependency>
+        <!-- Application metadata -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.application.metadata</groupId>
+            <artifactId>app-metadata-bundle</artifactId>
+            <classifier>facade</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <!-- Security -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.security</groupId>
+            <artifactId>security-bundle</artifactId>
+            <classifier>facade</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <!-- BAM Endpoints -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.bam</groupId>
+            <artifactId>bam-bundle</artifactId>
+            <classifier>facade</classifier>
+            <type>tile</type>
+        </dependency>
+        <!-- Alerts Endpoints -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.alert</groupId>
+            <artifactId>alert-bundle</artifactId>
+            <classifier>facade</classifier>
+            <type>tile</type>
+        </dependency>
+        <!-- Lookups Endpoints -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.lookups</groupId>
+            <artifactId>lookups-bundle</artifactId>
+            <classifier>facade</classifier>
+            <type>tile</type>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto.infra</groupId>
+            <artifactId>common-lookups</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!-- Jobs Endpoints -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.jobs</groupId>
+            <artifactId>jobs-bundle</artifactId>
+            <classifier>facade</classifier>
+            <type>tile</type>
+        </dependency>
+        <!-- Saga Endpoints -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.lifecycle</groupId>
+            <artifactId>lifecycle-bundle.saga</artifactId>
+            <classifier>facade</classifier>
+            <type>tile</type>
+        </dependency>
+        <!-- Entity Management Endpoints -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.domain</groupId>
+            <artifactId>entities-bundle.relationships</artifactId>
+            <type>tile</type>
+            <classifier>facade</classifier>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.domain</groupId>
+            <artifactId>entities-bundle.search.single-line</artifactId>
+            <type>tile</type>
+            <classifier>facade</classifier>
+        </dependency>
+        <!-- DLQ Endpoints -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.lifecycle</groupId>
+            <artifactId>lifecycle-bundle.dead-letter-queue</artifactId>
+            <classifier>facade</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <!-- Legacy Endpoints -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.address</groupId>
+            <artifactId>address-facade</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eisgroup.genesis.domain</groupId>
+            <artifactId>entity-comparison-facade</artifactId>
+        </dependency>
+
+        <!-- Core Registry Integration -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.registry.core.integration</groupId>
+            <artifactId>registry-bundle.integration</artifactId>
+            <classifier>facade</classifier>
+            <type>tile</type>
+        </dependency>
+
+        <!-- Party Registry Ref Domain -->
+        <dependency>
+            <groupId>com.eisgroup.genesis.proto</groupId>
+            <artifactId>party-domain</artifactId>
+            <version>${registry.ms.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.eisgroup.genesis.domain</groupId>
+            <artifactId>entities-bundle.confidential-data</artifactId>
+            <type>tile</type>
+        </dependency>
+
+        <!-- Time-shifter -->
+        <dependency>
+            <groupId>com.eisgroup.genesis</groupId>
+            <artifactId>timeshifter</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- Logging -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
+
+</project>

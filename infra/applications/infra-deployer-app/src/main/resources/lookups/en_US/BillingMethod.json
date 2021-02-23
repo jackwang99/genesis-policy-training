@@ -1,0 +1,10 @@
+[
+  {
+    "code": "direct",
+    "defaultValue": "Direct"
+  },
+  {
+    "code": "mortgageeBilled",
+    "defaultValue": "Mortgagee"
+  }
+]

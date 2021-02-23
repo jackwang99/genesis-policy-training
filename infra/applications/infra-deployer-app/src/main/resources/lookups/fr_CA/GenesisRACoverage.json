@@ -1,0 +1,14 @@
+[
+  {
+    "code": "basic",
+    "defaultValue": "De base"
+  },
+  {
+    "code": "none",
+    "defaultValue": "Aucun"
+  },
+  {
+    "code": "plus",
+    "defaultValue": "Plus"
+  }
+]

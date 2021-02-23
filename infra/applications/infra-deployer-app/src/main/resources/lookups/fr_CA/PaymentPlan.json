@@ -1,0 +1,18 @@
+[
+  {
+    "code": "annual",
+    "defaultValue": "Annuel"
+  },
+  {
+    "code": "monthly",
+    "defaultValue": "Mensuel"
+  },
+  {
+    "code": "quarterly",
+    "defaultValue": "Trimestriel"
+  },
+  {
+    "code": "semiAnnual",
+    "defaultValue": "Semi-annuel"
+  }
+]

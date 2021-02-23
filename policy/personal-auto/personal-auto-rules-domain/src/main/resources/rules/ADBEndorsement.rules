@@ -1,0 +1,19 @@
+Namespace PersonalAuto
+
+Include Base
+
+Rule "ADBEndorsement-180902-Feer4" On ADBEndorsement.category {
+  Default To "Accident assistance"
+}
+
+Rule "ADBEndorsement-180902-Fe34G" On ADBEndorsement.name {
+  Default To "Accidental Death Benefits Endorsement"
+}
+
+Rule "ADBEndorsement-180902-FG3rG" On ADBEndorsement.number {
+  Default To "AP.A. 99 50 10 15"
+}
+
+Rule "ADBEndorsement-180902-FGhuG" On ADBEndorsement.description {
+  Default To "Endorsement gives the driver additional coverage should he/she receives injuries causing loss of life, loss of limbs or eyesight"
+}

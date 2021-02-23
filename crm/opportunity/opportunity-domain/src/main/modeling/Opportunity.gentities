@@ -1,0 +1,36 @@
+Entity GenesisOpportunity is Opportunity {
+    @Length(255)
+    Attr description: String
+
+    Attr agency: String
+    
+    Attr potential: Decimal
+    Attr referral: String    
+
+    Attr owner: { GenesisUserOwner, GenesisWorkQueue }
+    Attr closeReasonDescription: String
+    Attr campaignId: String    
+
+    Attr products: *GenesisOpportunityProductInfo
+    Attr associations: *GenesisEntityAssociation
+    
+    Attr accessTrackInfo: GenesisAccessTrackInfo    
+}
+
+Entity GenesisOpportunityProductInfo is ProductInfo {}
+
+Entity GenesisEntityAssociation is OpportunityAssociation {}
+
+Entity GenesisAccessTrackInfo is AccessTrackInfo {
+    @Searchable
+    Attr createdOn: Datetime
+    @Searchable    
+    Attr updatedOn: Datetime
+}
+
+Entity GenesisUserOwner is UserOwner {
+    @Required
+    ExtLink link: OrganizationalPerson
+}
+
+Entity GenesisWorkQueue is WorkQueue {}

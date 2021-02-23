@@ -1,0 +1,27 @@
+Model PersonalHome
+
+Namespace PersonalHome
+
+EntryPoints [
+    "Home Quote Policy Validation",
+    "Quote Policy Refreshment for Applicability"
+]
+
+Decision Tables [
+    "Package Eligibility",
+    "Plans",
+    "Entity Applicability",
+    "MinMax",
+    "Default value",
+    "Values List",
+    "Mandatory",
+    "Visible",
+    "Accessible",
+    "Relationship",
+    "LifeCycle"
+]
+
+VersioningConfiguration [
+    "Effective Date",
+    "Request Date"
+]

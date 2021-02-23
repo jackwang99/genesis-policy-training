@@ -1,0 +1,106 @@
+[
+  {
+    "_key": {
+        "rootId": "f04eeecd-679e-4445-a901-49a01ca74b01",
+        "revisionNo": 1
+    },  
+    "groupId": "MHWAG",
+    "groupName": "Mental Health and Wellness Affinity Group (MHWAG)",
+    "groupType": "Affinity",
+    "state": "active",
+    "_type": "GenesisGroupInfo",
+    "_modelName": "GroupInfo",
+    "_modelVersion": "1"    
+  },
+  {
+    "_key": {
+        "rootId": "f04eeecd-679e-4445-a901-49a01ca74b02",
+        "revisionNo": 1
+    },  
+    "groupId": "IEEE",
+    "groupName": "IEEE Women in Engineering",
+    "groupType": "Affinity",
+    "state": "active",
+    "_type": "GenesisGroupInfo",
+    "_modelName": "GroupInfo",
+    "_modelVersion": "1"        
+  },
+  {
+    "_key": {
+        "rootId": "f04eeecd-679e-4445-a901-49a01ca74b03",
+        "revisionNo": 1
+    },  
+    "groupId": "IAPP",
+    "groupName": "International Association of Privacy Professionals (IAPP)",
+    "groupType": "Affinity",
+    "state": "active",
+    "_type": "GenesisGroupInfo",
+    "_modelName": "GroupInfo",
+    "_modelVersion": "1"        
+  },
+  {
+    "_key": {
+        "rootId": "f04eeecd-679e-4445-a901-49a01ca74b04",
+        "revisionNo": 1
+    },  
+    "groupId": "ERG",
+    "groupName": "Employee Resource Groups",
+    "groupType": "Affinity",
+    "state": "active",
+    "_type": "GenesisGroupInfo",
+    "_modelName": "GroupInfo",
+    "_modelVersion": "1"        
+  },
+  {
+    "_key": {
+        "rootId": "f04eeecd-679e-4445-a901-49a01ca74b05",
+        "revisionNo": 1
+    },  
+    "groupId": "HA",
+    "groupName": "Homeowner association",
+    "groupType": "Affinity",
+    "state": "active",
+    "_type": "GenesisGroupInfo",
+    "_modelName": "GroupInfo",
+    "_modelVersion": "1"        
+  },
+  {
+    "_key": {
+        "rootId": "f04eeecd-679e-4445-a901-49a01ca74b06",
+        "revisionNo": 1
+    },  
+    "groupId": "USAA",
+    "groupName": "United Services Automobile Association",
+    "groupType": "Affinity",
+    "state": "active",
+    "_type": "GenesisGroupInfo",
+    "_modelName": "GroupInfo",
+    "_modelVersion": "1"        
+  },
+  {
+    "_key": {
+        "rootId": "f04eeecd-679e-4445-a901-49a01ca74b07",
+        "revisionNo": 1
+    },  
+    "groupId": "SC",
+    "groupName": "Senior's Coalition",
+    "groupType": "Affinity",
+    "state": "active",
+    "_type": "GenesisGroupInfo",
+    "_modelName": "GroupInfo",
+    "_modelVersion": "1"        
+  },
+  {
+    "_key": {
+        "rootId": "f04eeecd-679e-4445-a901-49a01ca74b08",
+        "revisionNo": 1
+    },  
+    "groupId": "NIAS",
+    "groupName": "National Institute for Automotive Service",
+    "groupType": "Affinity",
+    "state": "active",
+    "_type": "GenesisGroupInfo",
+    "_modelName": "GroupInfo",
+    "_modelVersion": "1"        
+  }
+]

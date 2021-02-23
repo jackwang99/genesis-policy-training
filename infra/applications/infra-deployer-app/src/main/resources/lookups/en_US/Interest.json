@@ -1,0 +1,34 @@
+[
+  {
+    "code": "LISTENING_MUSIC",
+    "defaultValue": "Listening to music"
+  },
+  {
+    "code": "MOVIES_THEATER",
+    "defaultValue": "Movies and Theater"
+  },
+  {
+    "code": "PHOTOGRAPHY_VIDEOGRAPHY",
+    "defaultValue": "Photography/Videography"
+  },
+  {
+    "code": "PLAYING_MUSICAL_INSTRUMENT",
+    "defaultValue": "Playing a musical instrument"
+  },
+  {
+    "code": "READING",
+    "defaultValue": "Reading"
+  },
+  {
+    "code": "SPORTS",
+    "defaultValue": "Sports such as football, baseball, golf, soccer, tennis etc."
+  },
+  {
+    "code": "TRAVELING",
+    "defaultValue": "Traveling and Exploring different places"
+  },
+  {
+    "code": "VIDEOGAMES",
+    "defaultValue": "Video games"
+  }
+]

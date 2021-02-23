@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.eisgroup.genesis</groupId>
+        <artifactId>genesis-parent-pom</artifactId>
+        <version>10.11</version>
+        <relativePath>../parent-pom/pom.xml</relativePath>
+    </parent>
+
+    <groupId>com.eisgroup.genesis.proto</groupId>
+    <artifactId>conversion-proto-pom</artifactId>
+    <name>Conversion Prototypes Subsystem Parent</name>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <genesis.core.version>10.11</genesis.core.version>
+        <org.eclipse.persistence.eclipselink>2.7.3</org.eclipse.persistence.eclipselink>
+        <genesis.crm.version>${project.version}</genesis.crm.version>
+        <genesis.conversion.version>${genesis.core.version}</genesis.conversion.version>
+        <jaxb.version>2.3.0</jaxb.version>
+
+
+        <!-- Defaults for buildNumber.properties -->
+        <buildNumber>${project.version}</buildNumber>
+        <sprintNumber>Current</sprintNumber>
+        <eisBuild>${genesis.core.version}</eisBuild>
+        <eisVersion>${genesis.core.version}</eisVersion>
+    </properties>
+
+    <modules>
+        <module>conversion-proto-crm-serialization</module>
+        <module>conversion-proto-crm-services</module>
+        <module>conversion-proto-crm-validations</module>
+        <module>conversion-proto-deployer</module>
+        <module>applications</module>
+    </modules>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>com.eisgroup.genesis.tools</groupId>
+                <artifactId>maven-tiles-extension</artifactId>
+                <version>${maven.tiles.version}</version>
+            </extension>
+        </extensions>
+    </build>
+
+
+    <profiles>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <property>
+                    <name>sonar</name>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.jacoco</groupId>
+                        <artifactId>jacoco-maven-plugin</artifactId>
+                        <version>0.8.2</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>prepare-agent</goal>
+                                </goals>
+                            </execution>
+                            <execution>
+                                <id>report</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>report</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- Conversion Prototypes Dependencies -->
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto</groupId>
+                <artifactId>conversion-proto-crm-services</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto</groupId>
+                <artifactId>conversion-proto-crm-serialization</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto</groupId>
+                <artifactId>conversion-proto-crm-validations</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto</groupId>
+                <artifactId>conversion-proto-deployer</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- Conversion Dependencies -->
+            <dependency>
+                <groupId>com.eisgroup.genesis.conversion</groupId>
+                <artifactId>conversion-bom</artifactId>
+                <version>${genesis.conversion.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Genesis Dependencies -->
+            <dependency>
+                <groupId>com.eisgroup.genesis.tools</groupId>
+                <artifactId>fgenerator-api</artifactId>
+                <version>${fgenerator.maven.plugin.version}</version>
+            </dependency>
+
+            <!-- JAXB dependencies -->
+            <dependency>
+                <groupId>com.sun.xml.bind</groupId>
+                <artifactId>jaxb-core</artifactId>
+                <version>${jaxb.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.xml.bind</groupId>
+                <artifactId>jaxb-impl</artifactId>
+                <version>${jaxb.version}</version>
+            </dependency>
+
+            <!-- Eclipselink Dependencies -->
+            <dependency>
+                <groupId>org.eclipse.persistence</groupId>
+                <artifactId>org.eclipse.persistence.moxy</artifactId>
+                <version>${org.eclipse.persistence.eclipselink}</version>
+            </dependency>
+
+            <!-- Genesis Domain Dependencies (Prototype) -->
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.customer</groupId>
+                <artifactId>crm-domain</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.customeraccount</groupId>
+                <artifactId>account-domain</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.individual</groupId>
+                <artifactId>individual-domain</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.organization</groupId>
+                <artifactId>organization-domain</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.groupinfo</groupId>
+                <artifactId>groupinfo-domain</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.opportunity</groupId>
+                <artifactId>opportunity-domain</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.majoraccount</groupId>
+                <artifactId>majoraccount-domain</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.individual</groupId>
+                <artifactId>individual-agency-container-domain</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.organization</groupId>
+                <artifactId>organization-agency-container-domain</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto</groupId>
+                <artifactId>party-domain</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.communication</groupId>
+                <artifactId>communication-domain</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <!-- Genesis Lifecycle Dependencies (Prototype) -->
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.individual</groupId>
+                <artifactId>individual-lifecycle</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.organization</groupId>
+                <artifactId>organization-lifecycle</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.customeraccount</groupId>
+                <artifactId>account-lifecycle</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.groupinfo</groupId>
+                <artifactId>groupinfo-lifecycle</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.communication</groupId>
+                <artifactId>communication-lifecycle</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.opportunity</groupId>
+                <artifactId>opportunity-lifecycle</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.organization</groupId>
+                <artifactId>organization-agency-container-lifecycle</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.individual</groupId>
+                <artifactId>individual-agency-container-lifecycle</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.campaign</groupId>
+                <artifactId>campaign-lifecycle</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+            <!-- Genesis Other Dependencies -->
+            <dependency>
+                <groupId>com.eisgroup.genesis.proto.crm</groupId>
+                <artifactId>crm-custom-validation</artifactId>
+                <version>${genesis.crm.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.eisgroup.genesis.crm</groupId>
+                <artifactId>crm-repository-read-core</artifactId>
+                <version>${genesis.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.eisgroup.genesis.crm</groupId>
+                <artifactId>crm-repository-write-core</artifactId>
+                <version>${genesis.core.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>

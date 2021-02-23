@@ -1,0 +1,81 @@
+/* Common */
+Lookup Priority {
+}
+
+Lookup Currency {
+    countryCd: Country
+}
+
+/* Security */
+Lookup AuthorityLevel {
+}
+/* Org-struct */
+Lookup OrganizationRoleType {
+}
+
+/* Location */
+
+Lookup StateProv {
+    countryCd: Country
+    stateName: String
+}
+Lookup Country {
+}
+
+Lookup County {
+}
+
+/* Person */
+Lookup PersonalIdentityType {
+}
+
+Lookup PersonAddress {
+}
+
+Lookup NameType {
+}
+
+Lookup Gender {
+}
+
+Lookup MaritalStatus {
+}
+
+Lookup Title {
+}
+
+Lookup TitleCd {
+}
+
+Lookup Suffix {
+}
+
+Lookup EmploymentStatus {
+}
+
+/* Communication Info */
+Lookup PhoneType {
+}
+
+Lookup ChatType {
+}
+
+Lookup WebAddressType {
+    entityType: String
+}
+
+Lookup AddressType {
+     entityType: String
+}
+
+Lookup AddressUsageType {
+}
+
+Lookup EmailType {
+    entityType: String
+}
+
+/* Testing */
+Lookup TestTermBasedLookup {
+    effectiveDate: String
+}

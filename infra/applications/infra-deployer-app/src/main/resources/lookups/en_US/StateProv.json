@@ -1,0 +1,386 @@
+[
+  {
+    "code": "AK",
+    "countryCd": "US",
+    "stateName": "AK",
+    "defaultValue": "Alaska"
+  },
+  {
+    "code": "AL",
+    "countryCd": "US",
+    "stateName": "AL",
+    "defaultValue": "Alabama"
+  },
+  {
+    "code": "AR",
+    "countryCd": "US",
+    "stateName": "AR",
+    "defaultValue": "Arkansas"
+  },
+  {
+    "code": "AZ",
+    "countryCd": "US",
+    "stateName": "AZ",
+    "defaultValue": "Arizona"
+  },
+  {
+    "code": "CA",
+    "countryCd": "US",
+    "stateName": "CA",
+    "defaultValue": "California"
+  },
+  {
+    "code": "CO",
+    "countryCd": "US",
+    "stateName": "CO",
+    "defaultValue": "Colorado"
+  },
+  {
+    "code": "CT",
+    "countryCd": "US",
+    "stateName": "CT",
+    "defaultValue": "Connecticut"
+  },
+  {
+    "code": "DC",
+    "countryCd": "US",
+    "stateName": "DC",
+    "defaultValue": "Dist. of Columbia"
+  },
+  {
+    "code": "DE",
+    "countryCd": "US",
+    "stateName": "DE",
+    "defaultValue": "Delaware"
+  },
+  {
+    "code": "FL",
+    "countryCd": "US",
+    "stateName": "FL",
+    "defaultValue": "Florida"
+  },
+  {
+    "code": "GA",
+    "countryCd": "US",
+    "stateName": "GA",
+    "defaultValue": "Georgia"
+  },
+  {
+    "code": "HI",
+    "countryCd": "US",
+    "stateName": "HI",
+    "defaultValue": "Hawaii"
+  },
+  {
+    "code": "IA",
+    "countryCd": "US",
+    "stateName": "IA",
+    "defaultValue": "Iowa"
+  },
+  {
+    "code": "ID",
+    "countryCd": "US",
+    "stateName": "ID",
+    "defaultValue": "Idaho"
+  },
+  {
+    "code": "IL",
+    "countryCd": "US",
+    "stateName": "IL",
+    "defaultValue": "Illinois"
+  },
+  {
+    "code": "IN",
+    "countryCd": "US",
+    "stateName": "IN",
+    "defaultValue": "Indiana"
+  },
+  {
+    "code": "KS",
+    "countryCd": "US",
+    "stateName": "KS",
+    "defaultValue": "Kansas"
+  },
+  {
+    "code": "KY",
+    "countryCd": "US",
+    "stateName": "KY",
+    "defaultValue": "Kentucky"
+  },
+  {
+    "code": "LA",
+    "countryCd": "US",
+    "stateName": "LA",
+    "defaultValue": "Louisiana"
+  },
+  {
+    "code": "MA",
+    "countryCd": "US",
+    "stateName": "MA",
+    "defaultValue": "Massachusetts"
+  },
+  {
+    "code": "MD",
+    "countryCd": "US",
+    "stateName": "MD",
+    "defaultValue": "Maryland"
+  },
+  {
+    "code": "ME",
+    "countryCd": "US",
+    "stateName": "ME",
+    "defaultValue": "Maine"
+  },
+  {
+    "code": "MI",
+    "countryCd": "US",
+    "stateName": "MI",
+    "defaultValue": "Michigan"
+  },
+  {
+    "code": "MN",
+    "countryCd": "US",
+    "stateName": "MN",
+    "defaultValue": "Minnesota"
+  },
+  {
+    "code": "MO",
+    "countryCd": "US",
+    "stateName": "MO",
+    "defaultValue": "Missouri"
+  },
+  {
+    "code": "MS",
+    "countryCd": "US",
+    "stateName": "MS",
+    "defaultValue": "Mississippi"
+  },
+  {
+    "code": "MT",
+    "countryCd": "US",
+    "stateName": "MT",
+    "defaultValue": "Montana"
+  },
+  {
+    "code": "NC",
+    "countryCd": "US",
+    "stateName": "NC",
+    "defaultValue": "North Carolina"
+  },
+  {
+    "code": "ND",
+    "countryCd": "US",
+    "stateName": "ND",
+    "defaultValue": "North Dakota"
+  },
+  {
+    "code": "NE",
+    "countryCd": "US",
+    "stateName": "NE",
+    "defaultValue": "Nebraska"
+  },
+  {
+    "code": "NH",
+    "countryCd": "US",
+    "stateName": "NH",
+    "defaultValue": "New Hampshire"
+  },
+  {
+    "code": "NJ",
+    "countryCd": "US",
+    "stateName": "NJ",
+    "defaultValue": "New Jersey"
+  },
+  {
+    "code": "NM",
+    "countryCd": "US",
+    "stateName": "NM",
+    "defaultValue": "New Mexico"
+  },
+  {
+    "code": "NV",
+    "countryCd": "US",
+    "stateName": "NV",
+    "defaultValue": "Nevada"
+  },
+  {
+    "code": "NY",
+    "countryCd": "US",
+    "stateName": "NY",
+    "defaultValue": "New York"
+  },
+  {
+    "code": "OH",
+    "countryCd": "US",
+    "stateName": "OH",
+    "defaultValue": "Ohio"
+  },
+  {
+    "code": "OK",
+    "countryCd": "US",
+    "stateName": "OK",
+    "defaultValue": "Oklahoma"
+  },
+  {
+    "code": "OR",
+    "countryCd": "US",
+    "stateName": "OR",
+    "defaultValue": "Oregon"
+  },
+  {
+    "code": "PA",
+    "countryCd": "US",
+    "stateName": "PA",
+    "defaultValue": "Pennsylvania"
+  },
+  {
+    "code": "RI",
+    "countryCd": "US",
+    "stateName": "RI",
+    "defaultValue": "Rhode Island"
+  },
+  {
+    "code": "SC",
+    "countryCd": "US",
+    "stateName": "SC",
+    "defaultValue": "South Carolina"
+  },
+  {
+    "code": "SD",
+    "countryCd": "US",
+    "stateName": "SD",
+    "defaultValue": "South Dakota"
+  },
+  {
+    "code": "TN",
+    "countryCd": "US",
+    "stateName": "TN",
+    "defaultValue": "Tennessee"
+  },
+  {
+    "code": "TX",
+    "countryCd": "US",
+    "stateName": "TX",
+    "defaultValue": "Texas"
+  },
+  {
+    "code": "UT",
+    "countryCd": "US",
+    "stateName": "UT",
+    "defaultValue": "Utah"
+  },
+  {
+    "code": "VA",
+    "countryCd": "US",
+    "stateName": "VA",
+    "defaultValue": "Virginia"
+  },
+  {
+    "code": "VT",
+    "countryCd": "US",
+    "stateName": "VT",
+    "defaultValue": "Vermont"
+  },
+  {
+    "code": "WA",
+    "countryCd": "US",
+    "stateName": "WA",
+    "defaultValue": "Washington"
+  },
+  {
+    "code": "WI",
+    "countryCd": "US",
+    "stateName": "WI",
+    "defaultValue": "Wisconsin"
+  },
+  {
+    "code": "WV",
+    "countryCd": "US",
+    "stateName": "WV",
+    "defaultValue": "West Virginia"
+  },
+  {
+    "code": "WY",
+    "countryCd": "US",
+    "stateName": "WY",
+    "defaultValue": "Wyoming"
+  },
+  {
+    "code": "AB",
+    "countryCd": "CA",
+    "stateName": "AB",
+    "defaultValue": "Alberta"
+  },
+  {
+    "code": "BC",
+    "countryCd": "CA",
+    "stateName": "BC",
+    "defaultValue": "British Columbia"
+  },
+  {
+    "code": "MB",
+    "countryCd": "CA",
+    "stateName": "MB",
+    "defaultValue": "Manitoba"
+  },
+  {
+    "code": "NB",
+    "countryCd": "CA",
+    "stateName": "NB",
+    "defaultValue": "New Brunswick"
+  },
+  {
+    "code": "NL",
+    "countryCd": "CA",
+    "stateName": "NL",
+    "defaultValue": "Newfoundland and Labrador"
+  },
+  {
+    "code": "NS",
+    "countryCd": "CA",
+    "stateName": "NS",
+    "defaultValue": "Nova Scotia"
+  },
+  {
+    "code": "NU",
+    "countryCd": "CA",
+    "stateName": "NU",
+    "defaultValue": "Nunavut"
+  },
+  {
+    "code": "ON",
+    "countryCd": "CA",
+    "stateName": "ON",
+    "defaultValue": "Ontario"
+  },
+  {
+    "code": "PE",
+    "countryCd": "CA",
+    "stateName": "PE",
+    "defaultValue": "Prince Edward Island"
+  },
+  {
+    "code": "QC",
+    "countryCd": "CA",
+    "stateName": "QC",
+    "defaultValue": "Quebec"
+  },
+  {
+    "code": "SK",
+    "countryCd": "CA",
+    "stateName": "SK",
+    "defaultValue": "Saskatchewan"
+  },
+  {
+    "code": "NT",
+    "countryCd": "CA",
+    "stateName": "NT",
+    "defaultValue": "Northwest Territories"
+  },
+  {
+    "code": "YT",
+    "countryCd": "CA",
+    "stateName": "YT",
+    "defaultValue": "Yukon"
+  }
+]

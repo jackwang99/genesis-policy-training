@@ -1,0 +1,14 @@
+[
+  {
+    "code": "1",
+    "defaultValue": "Minor"
+  },
+  {
+    "code": "2",
+    "defaultValue": "Major"
+  },
+  {
+    "code": "3",
+    "defaultValue": "Critical"
+  }
+]

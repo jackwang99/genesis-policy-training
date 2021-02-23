@@ -1,0 +1,58 @@
+[
+  {
+    "code": "Association",
+    "defaultValue": "Association"
+  },
+  {
+    "code": "CRPR",
+    "defaultValue": "société"
+  },
+  {
+    "code": "GP",
+    "defaultValue": "Partenariat global"
+  },
+  {
+    "code": "JV",
+    "defaultValue": "Joint Venture"
+  },
+  {
+    "code": "LLC",
+    "defaultValue": "LLC"
+  },
+  {
+    "code": "LLP",
+    "defaultValue": "Partenariat à responsabilité limitée"
+  },
+  {
+    "code": "LP",
+    "defaultValue": "Partenariat limite"
+  },
+  {
+    "code": "NFPO",
+    "defaultValue": "Organisation à but non lucratif"
+  },
+  {
+    "code": "PC",
+    "defaultValue": "Société professionnelle"
+  },
+  {
+    "code": "PLLC",
+    "defaultValue": "Société professionnelle à responsabilité limitée"
+  },
+  {
+    "code": "PRTN",
+    "defaultValue": "Partenariat"
+  },
+  {
+    "code": "SCHSC",
+    "defaultValue": "Sous-chapitre S Corporation"
+  },
+  {
+    "code": "SLPR",
+    "defaultValue": "Entreprise individuelle"
+  },
+  {
+    "code": "TRST",
+    "defaultValue": "Confiance"
+  }
+]

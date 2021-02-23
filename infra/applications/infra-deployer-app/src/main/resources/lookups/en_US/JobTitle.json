@@ -1,0 +1,42 @@
+[
+  {
+    "code": "ACCOUNT_EXECUTIVE",
+    "defaultValue": "Account Executive"
+  },
+  {
+    "code": "ACCOUNT_MANAGER",
+    "defaultValue": "Account Manager"
+  },
+  {
+    "code": "ACCOUNT_REPRESENT",
+    "defaultValue": "Account Representative"
+  },
+  {
+    "code": "ADMINISTRATOR",
+    "defaultValue": "Administrator"
+  },
+  {
+    "code": "ANALYST",
+    "defaultValue": "Analyst"
+  },
+  {
+    "code": "BILLING_REPRESENT",
+    "defaultValue": "Billing Representative"
+  },
+  {
+    "code": "CLAIMS_REPRESENT",
+    "defaultValue": "Claims Representative"
+  },
+  {
+    "code": "CUST_SERV_REPRESENT",
+    "defaultValue": "Customer Service Representative"
+  },
+  {
+    "code": "OTHER",
+    "defaultValue": "Other"
+  },
+  {
+    "code": "UNKNOWN",
+    "defaultValue": "Unknown"
+  }
+]

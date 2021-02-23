@@ -1,0 +1,26 @@
+[
+  {
+    "code": "ANNUAL",
+    "defaultValue": "Annual",
+    "noOfMonthsInTerm": 12
+  },
+  {
+    "code": "BI_ANNUAL",
+    "defaultValue": "6 months",
+    "noOfMonthsInTerm": 6
+  },
+  {
+    "code": "QUARTERLY",
+    "defaultValue": "3 months",
+    "noOfMonthsInTerm": 3
+  },
+  {
+    "code": "MONTHLY",
+    "defaultValue": "Monthly",
+    "noOfMonthsInTerm": 1
+  },
+  {
+    "code": "CUSTOM",
+    "defaultValue": "Custom Term"
+  }
+]

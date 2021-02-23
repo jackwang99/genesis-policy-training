@@ -1,0 +1,155 @@
+{
+    "_key": {
+        "rootId": "910fba51-b01d-4c20-a457-99c70fb738ab",
+        "revisionNo": 1
+    },
+    "customerNumber": "NUMBER12345",
+    "state": "unqualified",
+    "taxExempt": "string",
+    "accessTrackInfo": {
+      "_type": "GenesisAccessTrackInfo",
+      "createdBy": "qa",
+      "createdOn": "2018-11-21T10:10:10.243Z",
+      "updatedBy": "qa",
+      "updatedOn": "2018-11-21T10:10:10.243Z"
+    },
+    "productsOwned": [
+        {
+            "policyExpirationDate": "2018-02-02",
+            "carrierNameDescription": "xxx",
+            "policyTypeCd": "AU",
+            "link": "string",
+            "policyNumber": "string",
+            "productOwnedId": "string",
+            "carrierNameCd": "string",
+            "_type": "GenesisCrmProductOwned",
+            "_key": {
+                "id": "f39283e9-d0b2-4569-8673-ce280fdd271d",
+                "rootId": "910fba51-b01d-4c20-a457-99c70fb738ab",
+                "revisionNo": 1,
+                "parentId": "910fba51-b01d-4c20-a457-99c70fb738ab"
+            }
+        }
+    ],
+    "taxExemptComment": "string",
+    "associateBusinessEntity": false,
+    "segments": [
+        "string"
+    ],
+    "communicationInfo": {
+        "phones": [
+            {
+                "schedulingContactInfo": {
+                    "effectiveFrom": "2018-02-28",
+                    "effectiveTo": "2019-02-28",
+                    "_type": "GenesisCrmSchedulingContactInfo",
+                    "_key": {
+                        "id": "38c47f92-ecdd-4910-b703-eb176904d83f",
+                        "rootId": "910fba51-b01d-4c20-a457-99c70fb738ab",
+                        "revisionNo": 1,
+                        "parentId": "835d4928-cece-40bb-aa72-f9e07063c23b"
+                    }
+                },
+                "_type": "GenesisCrmPhone",
+                "updatedOn": "2018-10-01T12:01:25.981Z",
+                "_key": {
+                    "id": "835d4928-cece-40bb-aa72-f9e07063c23b",
+                    "rootId": "910fba51-b01d-4c20-a457-99c70fb738ab",
+                    "revisionNo": 1,
+                    "parentId": "fba0abb3-a398-4c48-9b87-b3866bebe309"
+                }
+            }
+        ],
+        "addresses": [
+            {
+                "preferred": true,
+                "doNotSolicit": false,
+                "_type": "GenesisCrmAddress",
+                "_key": {
+                    "id": "55deae9a-f2df-4093-bc71-c8ebfec193c8",
+                    "rootId": "910fba51-b01d-4c20-a457-99c70fb738ab",
+                    "revisionNo": 1,
+                    "parentId": "fba0abb3-a398-4c48-9b87-b3866bebe309"
+                },
+                "updatedOn": "2018-10-01T12:01:25.981Z",                
+                "location": {
+                    "_type": "GenesisLocation",
+                    "city": "New City",
+                    "countryCd": "JP",
+                    "postalCode": "220082",
+                    "addressLine1": "abc",
+                    "addressLine2": "abc 2"
+                }
+            }
+        ],
+        "_type": "GenesisCrmCommunicationInfo",
+        "_key": {
+            "id": "fba0abb3-a398-4c48-9b87-b3866bebe309",
+            "rootId": "910fba51-b01d-4c20-a457-99c70fb738ab",
+            "revisionNo": 1,
+            "parentId": "910fba51-b01d-4c20-a457-99c70fb738ab"
+        }
+    },
+    "details": {
+        "person": {
+            "_type": "GenesisCrmPerson",
+            "firstName": "Tom",
+            "lastName": "Ross",
+            "middleName": "string",
+            "birthDate": "1980-07-15",
+            "genderCd": "male",
+            "communicationInfo": [
+                {
+                    "email": "string",
+                    "phoneNo": "string",
+                    "_type": "PartyGenesisCommunicationInfo",
+                    "_key": {
+                        "id": "3a04e448-0e50-4b8a-aa76-f0e0f2de14a8",
+                        "rootId": "910fba51-b01d-4c20-a457-99c70fb738ab",
+                        "revisionNo": 1,
+                        "parentId": "1fe308a3-4208-49e5-9ebf-26a521f6b278"
+                    }
+                }
+            ]
+        },
+        "designationDescription": "string",
+        "occupation": "ProfDriver",
+        "deceased": "string",
+        "occupationDescription": "string",
+        "rating": "string",
+        "suffix": "string",
+        "title": "string",
+        "nickname": "string",
+        "preferredWrittenLanguage": "string",
+        "citizenship": "Cambodia",
+        "preferredSpokenLanguage": "string",
+        "paperless": false,
+        "disabilities": [
+            "SPINAL_CORD_INJURY",
+            "HEARING_LOSS_AND_DEAFNESS"
+        ],
+        "deathNotificationReceived": "string",
+        "taxId": "string",
+        "tobaccoCd": "string",
+        "otherName": "string",
+        "designation": "string",
+        "salutation": "string",
+        "maritalStatus": "string",
+        "registerOnline": false,
+        "customerInterests": [
+            "SPORTS",
+            "READING"
+        ],
+        "_type": "GenesisCrmIndividualDetails",
+        "_key": {
+            "id": "1fe308a3-4208-49e5-9ebf-26a521f6b278",
+            "rootId": "910fba51-b01d-4c20-a457-99c70fb738ab",
+            "revisionNo": 1,
+            "parentId": "910fba51-b01d-4c20-a457-99c70fb738ab"
+        }
+    },
+    "_type": "IndividualCustomer",
+    "_modelName": "INDIVIDUALCUSTOMER",
+    "_modelVersion": "1",
+    "majorAccountId": null
+}

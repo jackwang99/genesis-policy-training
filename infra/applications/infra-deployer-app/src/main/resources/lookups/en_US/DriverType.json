@@ -1,0 +1,26 @@
+[
+  {
+    "code": "A",
+    "defaultValue": "Additional"
+  },
+  {
+    "code": "E",
+    "defaultValue": "Excluded"
+  },
+  {
+    "code": "N",
+    "defaultValue": "Non-Driver"
+  },
+  {
+    "code": "O",
+    "defaultValue": "Occasional Driver"
+  },
+  {
+    "code": "P",
+    "defaultValue": "Principal Driver"
+  },
+  {
+    "code": "U",
+    "defaultValue": "Anonymous Driver"
+  }
+]

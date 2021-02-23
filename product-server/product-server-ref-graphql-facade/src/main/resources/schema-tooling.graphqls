@@ -1,0 +1,40 @@
+extend type Query {
+
+    listClassificationNames: [String] @deprecated(reason: "Use listClassifications.name!")
+
+    listClassificationValues(filter: ClassificationFilter): [String] @deprecated(reason: "Use listClassifications.values!")
+
+    listProducts(filter: ProductFilter): [Product] @deprecated(reason: "Use policyProducts!")
+
+    listClassifications(filter: ClassificationFilter): [Classification]
+
+    listBuildingBlocks(filter: ClassificationFilter): [BuildingBlock]
+}
+    input ClassificationFilter {
+        classificationName: String
+        classificationValue: String
+    }
+
+    input ProductFilter {
+        classificationName: String
+        classificationValue: String
+    }
+
+    type Classification {
+        name: String!
+        values: [String]!
+    }
+
+    type Product {
+      productCd: String!
+      classifications: [Classification]
+    }
+
+    type BuildingBlock {
+      id: String!
+      isRequired: Boolean
+      attributes: [Attribute]
+      behaviours: [Behaviour]
+      components: [Component]
+      classifications: [Classification]
+    }

@@ -1,0 +1,46 @@
+[
+  {
+    "code": "D",
+    "defaultValue": "Fille"
+  },
+  {
+    "code": "DP",
+    "defaultValue": "Partenaire domestique"
+  },
+  {
+    "code": "EMP",
+    "defaultValue": "Employé"
+  },
+  {
+    "code": "HU",
+    "defaultValue": "Mari"
+  },
+  {
+    "code": "IN",
+    "defaultValue": "Assuré"
+  },
+  {
+    "code": "M",
+    "defaultValue": "Mère"
+  },
+  {
+    "code": "OR",
+    "defaultValue": "Autre résident relatif"
+  },
+  {
+    "code": "OT",
+    "defaultValue": "Autre"
+  },
+  {
+    "code": "P",
+    "defaultValue": "Père"
+  },
+  {
+    "code": "S",
+    "defaultValue": "Fils"
+  },
+  {
+    "code": "WI",
+    "defaultValue": "femme"
+  }
+]

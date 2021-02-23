@@ -1,0 +1,412 @@
+[
+  {
+    "code": "01",
+    "defaultValue": "01 - Agricultural Production - Crops",
+    "parentLookupCode": "A"
+  },
+  {
+    "code": "02",
+    "defaultValue": "02 - Agricultural Production - Livestock and Animal Specialties",
+    "parentLookupCode": "A"
+  },
+  {
+    "code": "07",
+    "defaultValue": "07 - Agricultural Services",
+    "parentLookupCode": "A"
+  },
+  {
+    "code": "08",
+    "defaultValue": "08 - Forestry",
+    "parentLookupCode": "A"
+  },
+  {
+    "code": "09",
+    "defaultValue": "09 - Fishing, Hunting and Trapping",
+    "parentLookupCode": "A"
+  },
+  {
+    "code": "10",
+    "defaultValue": "10 - Metal Mining",
+    "parentLookupCode": "B"
+  },
+  {
+    "code": "12",
+    "defaultValue": "12 - Coal Mining",
+    "parentLookupCode": "B"
+  },
+  {
+    "code": "13",
+    "defaultValue": "13 - Oil and Gas Extraction",
+    "parentLookupCode": "B"
+  },
+  {
+    "code": "14",
+    "defaultValue": "14 - Mining and Quarrying of Nonmetallic Minerals, Except Fuels",
+    "parentLookupCode": "B"
+  },
+  {
+    "code": "15",
+    "defaultValue": "15 - Building Cnstrctn - General Contractors & Operative Builders",
+    "parentLookupCode": "C"
+  },
+  {
+    "code": "16",
+    "defaultValue": "16 - Heavy Cnstrctn, Except Building Construction - Contractors",
+    "parentLookupCode": "C"
+  },
+  {
+    "code": "17",
+    "defaultValue": "17 - Construction - Special Trade Contractors",
+    "parentLookupCode": "C"
+  },
+  {
+    "code": "20",
+    "defaultValue": "20 - Food and Kindred Products",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "21",
+    "defaultValue": "21 - Tobacco Products",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "22",
+    "defaultValue": "22 - Textile Mill Products",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "23",
+    "defaultValue": "23 - Apparel, Finished Prdcts from Fabrics & Similar Materials",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "24",
+    "defaultValue": "24 - Lumber and Wood Products, Except Furniture",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "25",
+    "defaultValue": "25 - Furniture and Fixtures",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "26",
+    "defaultValue": "26 - Paper and Allied Products",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "27",
+    "defaultValue": "27 - Printing, Publishing and Allied Industries",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "28",
+    "defaultValue": "28 - Chemicals and Allied Products",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "29",
+    "defaultValue": "29 - Petroleum Refining and Related Industries",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "30",
+    "defaultValue": "30 - Rubber and Miscellaneous Plastic Products",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "31",
+    "defaultValue": "31 - Leather and Leather Products",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "32",
+    "defaultValue": "32 - Stone, Clay, Glass, and Concrete Products",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "33",
+    "defaultValue": "33 - Primary Metal Industries",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "34",
+    "defaultValue": "34 - Fabricated Metal Prdcts, Except Machinery & Transport Eqpmnt",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "35",
+    "defaultValue": "35 - Industrial and Commercial Machinery and Computer Equipment",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "36",
+    "defaultValue": "36 - Electronic, Elctrcl Eqpmnt & Cmpnts, Excpt Computer Eqpmnt",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "37",
+    "defaultValue": "37 - Transportation Equipment",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "38",
+    "defaultValue": "38 - Mesr/Anlyz/Cntrl Instrmnts; Photo/Med/Opt Gds; Watchs/Clocks",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "39",
+    "defaultValue": "39 - Miscellaneous Manufacturing Industries",
+    "parentLookupCode": "D"
+  },
+  {
+    "code": "40",
+    "defaultValue": "40 - Railroad Transportation",
+    "parentLookupCode": "E"
+  },
+  {
+    "code": "41",
+    "defaultValue": "41 - Local, Suburban Transit & Interurbn Hgwy Passenger Transport",
+    "parentLookupCode": "E"
+  },
+  {
+    "code": "42",
+    "defaultValue": "42 - Motor Freight Transportation",
+    "parentLookupCode": "E"
+  },
+  {
+    "code": "43",
+    "defaultValue": "43 - United States Postal Service",
+    "parentLookupCode": "E"
+  },
+  {
+    "code": "44",
+    "defaultValue": "44 - Water Transportation",
+    "parentLookupCode": "E"
+  },
+  {
+    "code": "45",
+    "defaultValue": "45 - Transportation by Air",
+    "parentLookupCode": "E"
+  },
+  {
+    "code": "46",
+    "defaultValue": "46 - Pipelines, Except Natural Gas",
+    "parentLookupCode": "E"
+  },
+  {
+    "code": "47",
+    "defaultValue": "47 - Transportation Services",
+    "parentLookupCode": "E"
+  },
+  {
+    "code": "48",
+    "defaultValue": "48 - Communications",
+    "parentLookupCode": "E"
+  },
+  {
+    "code": "49",
+    "defaultValue": "49 - Electric, Gas and Sanitary Services",
+    "parentLookupCode": "E"
+  },
+  {
+    "code": "50",
+    "defaultValue": "50 - Wholesale Trade - Durable Goods",
+    "parentLookupCode": "F"
+  },
+  {
+    "code": "51",
+    "defaultValue": "51 - Wholesale Trade - Nondurable Goods",
+    "parentLookupCode": "F"
+  },
+  {
+    "code": "52",
+    "defaultValue": "52 - Building Matrials, Hrdwr, Garden Supply & Mobile Home Dealrs",
+    "parentLookupCode": "G"
+  },
+  {
+    "code": "53",
+    "defaultValue": "53 - General Merchandise Stores",
+    "parentLookupCode": "G"
+  },
+  {
+    "code": "54",
+    "defaultValue": "54 - Food Stores",
+    "parentLookupCode": "G"
+  },
+  {
+    "code": "55",
+    "defaultValue": "55 - Automotive Dealers and Gasoline Service Stations",
+    "parentLookupCode": "G"
+  },
+  {
+    "code": "56",
+    "defaultValue": "56 - Apparel and Accessory Stores",
+    "parentLookupCode": "G"
+  },
+  {
+    "code": "57",
+    "defaultValue": "57 - Home Furniture, Furnishings and Equipment Stores",
+    "parentLookupCode": "G"
+  },
+  {
+    "code": "58",
+    "defaultValue": "58 - Eating and Drinking Places",
+    "parentLookupCode": "G"
+  },
+  {
+    "code": "59",
+    "defaultValue": "59 - Miscellaneous Retail",
+    "parentLookupCode": "G"
+  },
+  {
+    "code": "60",
+    "defaultValue": "60 - Depository Institutions",
+    "parentLookupCode": "H"
+  },
+  {
+    "code": "61",
+    "defaultValue": "61 - Nondepository Credit Institutions",
+    "parentLookupCode": "H"
+  },
+  {
+    "code": "62",
+    "defaultValue": "62 - Security & Commodity Brokers, Dealers, Exchanges & Services",
+    "parentLookupCode": "H"
+  },
+  {
+    "code": "63",
+    "defaultValue": "63 - Insurance Carriers",
+    "parentLookupCode": "H"
+  },
+  {
+    "code": "64",
+    "defaultValue": "64 - Insurance Agents, Brokers and Service",
+    "parentLookupCode": "H"
+  },
+  {
+    "code": "65",
+    "defaultValue": "65 - Real Estate",
+    "parentLookupCode": "H"
+  },
+  {
+    "code": "67",
+    "defaultValue": "67 - Holding and Other Investment Offices",
+    "parentLookupCode": "H"
+  },
+  {
+    "code": "70",
+    "defaultValue": "70 - Hotels, Rooming Houses, Camps, and Other Lodging Places",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "72",
+    "defaultValue": "72 - Personal Services",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "73",
+    "defaultValue": "73 - Business Services",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "75",
+    "defaultValue": "75 - Automotive Repair, Services and Parking",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "76",
+    "defaultValue": "76 - Miscellaneous Repair Services",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "78",
+    "defaultValue": "78 - Motion Pictures",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "79",
+    "defaultValue": "79 - Amusement and Recreation Services",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "80",
+    "defaultValue": "80 - Health Services",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "81",
+    "defaultValue": "81 - Legal Services",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "82",
+    "defaultValue": "82 - Educational Services",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "83",
+    "defaultValue": "83 - Social Services",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "84",
+    "defaultValue": "84 - Museums, Art Galleries and Botanical and Zoological Gardens",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "86",
+    "defaultValue": "86 - Membership Organizations",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "87",
+    "defaultValue": "87 - Engineering, Accounting, Research, Management & Related Svcs",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "89",
+    "defaultValue": "89 - Services, Not Elsewhere Classified",
+    "parentLookupCode": "I"
+  },
+  {
+    "code": "91",
+    "defaultValue": "91 - Executive, Legislative, And General Government, Except Finance",
+    "parentLookupCode": "J"
+  },
+  {
+    "code": "92",
+    "defaultValue": "92 - Justice, Public Order, And Safety",
+    "parentLookupCode": "J"
+  },
+  {
+    "code": "93",
+    "defaultValue": "93 - Public Finance, Taxation, And Monetary Policy",
+    "parentLookupCode": "J"
+  },
+  {
+    "code": "94",
+    "defaultValue": "94 - Administration Of Human Resource Programs",
+    "parentLookupCode": "J"
+  },
+  {
+    "code": "95",
+    "defaultValue": "95 - Administration Of Environmental Quality And Housing Programs",
+    "parentLookupCode": "J"
+  },
+  {
+    "code": "96",
+    "defaultValue": "96 - Administration Of Economic Programs",
+    "parentLookupCode": "J"
+  },
+  {
+    "code": "97",
+    "defaultValue": "97 - National Security And International Affairs",
+    "parentLookupCode": "J"
+  },
+  {
+    "code": "99",
+    "defaultValue": "99 - Nonclassifiable Establishments",
+    "parentLookupCode": "J"
+  }
+]

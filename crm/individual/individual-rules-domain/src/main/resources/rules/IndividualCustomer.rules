@@ -1,0 +1,32 @@
+Namespace INDIVIDUALCUSTOMER
+
+Include Base
+
+Rule "CrmBusinessDetailsCodeSectionsAreMandatory" On CrmBusinessDetails.sicCode {
+  Assert sicCode != null || naicsCode != null
+  Error "CrmBusinessDetailsCodeSectionsAreMandatory": "Either 'SIC Classification' section or 'NAICS Classification' section is required"
+}
+
+Rule "GenesisCrmPersonDeceasedDateFromBirthDate" On GenesisCrmPerson.deceasedDate {
+  When deceasedDate != null && birthDate != null
+  Assert NumberOfDaysBetween(birthDate, deceasedDate) < 365 * 500
+  Error "GenesisCrmPersonDeceasedDateFromBirthDate": "decease date can not be later than 500 years from birth date"
+}
+
+Rule "EmploymentDetailsPayrollFrequencyIsMandatory" On EmploymentDetails.payrollFrequency {
+  When payType == 'Salary'
+  Set Mandatory
+  Error "EmploymentDetailsPayrollFrequencyIsMandatory": "Missing required attribute: payrollFrequency"
+}
+
+Rule "EmploymentDetailsSalaryAmountIsMandatory" On EmploymentDetails.salaryAmount {
+  When payType == 'Salary'
+  Set Mandatory
+  Error "EmploymentDetailsSalaryAmountIsMandatory": "Missing required attribute: salaryAmount"
+}
+
+Rule "EmploymentDetailsHourlyWageIsMandatory" On EmploymentDetails.hourlyWage {
+  When payType == 'Hourly'
+  Set Mandatory
+  Error "EmploymentDetailsHourlyWageIsMandatory": "Missing required attribute: hourlyWage"
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "code": "CONTRACTOR",
+    "defaultValue": "Entrepreneur"
+  },
+  {
+    "code": "FULL_TIME",
+    "defaultValue": "À plein temps"
+  },
+  {
+    "code": "OTHER",
+    "defaultValue": "Autre"
+  },
+  {
+    "code": "PART_TIME",
+    "defaultValue": "À temps partiel"
+  }
+]

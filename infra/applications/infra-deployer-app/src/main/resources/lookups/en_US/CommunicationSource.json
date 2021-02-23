@@ -1,0 +1,38 @@
+[
+{ 
+   "code": "BROKER",
+   "defaultValue": "Brokers"
+},
+{ 
+   "code": "CASEMGR",
+   "defaultValue": "Case Mgr/State"
+},
+{ 
+   "code": "DEPENDENT",
+   "defaultValue": "Dependent"
+},
+{ 
+   "code": "GROUP",
+   "defaultValue": "Group"
+},
+{ 
+   "code": "INTERNAL",
+   "defaultValue": "Internal"
+},
+{ 
+   "code": "MEMBER",
+   "defaultValue": "Members"
+},
+{ 
+   "code": "PARTNER",
+   "defaultValue": "Parent/Guardian"
+},
+{ 
+   "code": "PROVIDER",
+   "defaultValue": "Provider"
+},
+{ 
+   "code": "SPOUSE",
+   "defaultValue": "Spouse"
+}
+]

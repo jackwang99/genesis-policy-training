@@ -1,0 +1,97 @@
+{
+  "@class" : "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+  "name" : "rootNode",
+  "businessType" : "Policy",
+  "type" : "PersonalHomePolicySummary",
+  "children" : [ {
+    "@class" : "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+    "name" : "termDetails",
+    "businessType" : "CovA",
+    "type" : "PersonalHomeTermDetails",
+    "children" : [ {
+      "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+      "name" : "termEffectiveDate",
+      "type" : "LocalDate",
+      "value" : "2017-07-26",
+      "collection" : false,
+      "simple" : true
+    } ],
+    "collection" : false,
+    "simple" : false
+  }, {
+    "@class" : "com.eisgroup.rating.input.impl.NodeList",
+    "name" : "riskItems",
+    "elements" : [ {
+      "@class" : "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+      "name" : "el0",
+      "businessType" : "CovA",
+      "type" : "RiskLocation",
+      "children" : [ {
+        "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+        "name" : "policyStatusCd",
+        "type" : "String",
+        "value" : "1",
+        "collection" : false,
+        "simple" : true
+      }, {
+        "@class" : "com.eisgroup.rating.input.impl.NodeList",
+        "name" : "variations",
+        "elements" : [ {
+          "@class" : "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+          "name" : "el0",
+          "businessType" : "Policy or Coverage or RI",
+          "type" : "HomeVariation",
+          "children" : [ {
+            "@class" : "com.eisgroup.rating.input.impl.NodeList",
+            "name" : "coverages",
+            "elements" : [ {
+              "@class" : "com.eisgroup.rating.input.impl.DefaultBusinessNode",
+              "name" : "el0",
+              "businessType" : "Policy or Coverage or RI",
+              "type" : "GenesisADLCoverage",
+              "children" : [ {
+                "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                "name" : "deductibleAmount",
+                "type" : "BigDecimal",
+                "value" : null,
+                "collection" : false,
+                "simple" : true
+              }, {
+                "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                "name" : "limitAmount",
+                "type" : "BigDecimal",
+                "value" : "250",
+                "collection" : false,
+                "simple" : true
+              }, {
+                "@class" : "com.eisgroup.rating.input.impl.DefaultAttributeNode",
+                "name" : "code",
+                "type" : "String",
+                "value" : null,
+                "collection" : false,
+                "simple" : true
+              } ],
+              "collection" : false,
+              "simple" : false
+            } ],
+            "type" : "List",
+            "collection" : true,
+            "simple" : false
+          } ],
+          "collection" : false,
+          "simple" : false
+        } ],
+        "type" : "List",
+        "collection" : true,
+        "simple" : false
+      } ],
+      "collection" : false,
+      "simple" : false
+    } ],
+  "type" : "List",
+  "collection" : true,
+  "simple" : false
+} ],
+"collection" : false,
+"simple" : false
+}

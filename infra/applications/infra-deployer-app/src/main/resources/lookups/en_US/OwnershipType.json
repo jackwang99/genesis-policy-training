@@ -1,0 +1,18 @@
+[
+  {
+    "code": "FNC",
+    "defaultValue": "Financed"
+  },
+  {
+    "code": "FNCLSD",
+    "defaultValue": "Financed/Leased"
+  },
+  {
+    "code": "LSD",
+    "defaultValue": "Leased"
+  },
+  {
+    "code": "OWN",
+    "defaultValue": "Owned"
+  }
+]

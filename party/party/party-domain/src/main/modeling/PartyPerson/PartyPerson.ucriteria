@@ -1,0 +1,18 @@
+Model Person
+
+@RequiredWeight(30)
+UniquenessConfiguration {
+
+    @Weight(10)
+    @Strategy("HistoricNormalized")
+    Field firstName
+
+    @Weight(10)
+    @Strategy("HistoricNormalized")
+    Field lastName
+
+    @Weight(10)
+    @Strategy("Historic")
+    Field birthDate
+
+}

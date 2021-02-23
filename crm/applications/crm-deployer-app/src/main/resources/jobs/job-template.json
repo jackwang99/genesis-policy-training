@@ -1,0 +1,51 @@
+[
+  {
+    "description":"Closes opportunities",
+    "name":"Opportunity close",
+    "triggerUri":"command://crmJobs//batchClose"
+  },
+  {
+    "description":"Happy Birthday message",
+    "name":"Birthday communication",
+    "triggerUri":"command://crmJobs//batchBirthdayCommunication"
+  },
+  {
+    "description":"Automatically create Opportunity before policy's expiration date",
+    "name":"Create Opportunity",
+    "triggerUri":"command://crmJobs//batchOpportunityCreation"
+  },
+  {
+    "description":"Update the customer in the future",
+    "name":"Customer Scheduled Update",
+    "triggerUri":"command://crmJobs//batchScheduledCustomerUpdate"
+  },
+  {
+    "description":"Remind that opportunities will be closed soon",
+    "name":"Opportunity is cold",
+    "triggerUri":"command://crmJobs//batchInCold"
+  },
+  {
+    "description":"Start Campaign by key",
+    "name":"Start campaign",
+    "triggerUri":"command://crmJobs//batchStartCampaign"
+  },
+  {
+    "description":"Restart Campaign by key",
+    "name":"Restart campaign",
+    "triggerUri":"command://crmJobs//batchRestartCampaign"
+  },
+  {
+    "description":"Suspend Campaign by key",
+    "name":"Suspend campaign",
+    "triggerUri":"command://crmJobs//batchSuspendCampaign"
+  },
+  {
+    "description":"Archive Campaign by key",
+    "name":"Archive campaign",
+    "triggerUri":"command://crmJobs//batchArchiveCampaign"
+  },{
+    "description":"Complete Campaign by key",
+    "name":"Complete campaign",
+    "triggerUri":"command://crmJobs//batchCompleteCampaign"
+  }
+]

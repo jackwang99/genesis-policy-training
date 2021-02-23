@@ -1,0 +1,6 @@
+BusinessType CustomerRelationship {
+    @Length(50)
+    Attr answer: String
+    @Length(255)
+    Attr designatedComment: String
+}

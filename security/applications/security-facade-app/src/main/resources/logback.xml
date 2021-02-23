@@ -1,0 +1,12 @@
+<configuration>
+  <jmxConfigurator />
+  <property scope="context" name="appName" value="security-facade-app"/>
+
+  <!-- includes -->
+  <include optional="true" resource="zookeeper-logback.xml"/>
+  <include optional="true" resource="stream-consumer-logback.xml"/>
+  <include optional="true" resource="stream-producer-logback.xml"/>
+  <include resource="facade-app-logback.xml"/>
+  <include resource="spring-app-logback.xml"/>
+
+</configuration>

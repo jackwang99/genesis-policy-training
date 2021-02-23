@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Security: Load Security Domain",
+    "description": "Allows user to load/inquiry security domain",
+    "scope": "SecurityDomain"
+  },
+  {
+    "name": "Security: Load User",
+    "description": "Allows user to load/inquiry user",
+    "scope": "User"
+  },
+  {
+    "name": "Security: Bypass Dimension Filtering Rules",
+    "description": "Allows to bypass dimension filtering and read/write entities without security restrictions",
+    "scope": "User"
+  },
+  {
+    "name": "Security: Manage Domain",
+    "description": "Allows to create a Security Domain",
+    "scope": "SecurityDomain"
+  },
+  {
+    "name": "Security: Manage Access Profile",
+    "description": "Allows to create an Access Profile",
+    "scope": "SecurityDomain"
+  },
+  {
+    "name": "Security: Manage User",
+    "description": "Allows to create a User that has access to a system",
+    "scope": "User"
+  },
+  {
+    "name": "Security: Manage User Profile",
+    "description": "Allows to create a User Profile",
+    "scope": "User"
+  },
+  {
+    "name": "Security: Manage Operational Assignment",
+    "description": "Allows to create an Operational Assignment",
+    "scope": "User"
+  },
+  {
+    "name": "Security: Manage Configured Access Profile",
+    "description": "Allows to create a Configured User Profile",
+    "scope": "User"
+  },
+  {
+    "name": "Optimistic Lock Override",
+    "description": "Allows to update existing entities without providing existing timestamp",
+    "scope": "Conversion"
+  },
+  {
+    "name": "Read-only Override",
+    "description": "Allows to update existing entities without providing existing timestamp",
+    "scope": "Conversion"
+  }
+]

@@ -1,0 +1,10 @@
+Model Organization
+
+Common {
+    Number is output.details.legalEntityBase.legalId
+}
+
+
+Endpoint load {
+    
+}

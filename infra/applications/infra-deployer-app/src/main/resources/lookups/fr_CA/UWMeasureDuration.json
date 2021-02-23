@@ -1,0 +1,14 @@
+[
+  {
+    "code": "NM",
+    "defaultValue": "Aucune mesure"
+  },
+  {
+    "code": "TM",
+    "defaultValue": "Mesure temporaire (pour durée déterminée)"
+  },
+  {
+    "code": "PM",
+    "defaultValue": "Mesure permanente (à vie)"
+  }
+]

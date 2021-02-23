@@ -1,0 +1,23 @@
+{
+  "diffs": [
+    {
+      "operationType": "changed",
+      "path": "vehicleBaseDetails//model",
+      "sourceValue": "X2",
+      "targetValue": "X4",
+      "readOnly": false
+    },
+    {
+      "operationType": "added",
+      "path": "vehicleBaseDetails//make",
+      "sourceValue": "BMW",
+      "readOnly": false
+    },
+    {
+      "operationType": "removed",
+      "path": "vehicleBaseDetails//enginePower",
+      "sourceValue": 200,
+      "readOnly": false
+    }
+  ]
+}

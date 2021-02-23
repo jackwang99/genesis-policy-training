@@ -1,0 +1,6 @@
+Model GarageAuto
+
+GarageAutoPolicySummary {
+    !agency : AutoBusinessDimensions.agency,
+    !brand : AutoBusinessDimensions.brand
+}

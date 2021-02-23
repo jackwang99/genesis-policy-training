@@ -1,0 +1,22 @@
+[
+    {
+        "code": "MQ",
+        "defaultValue": "Citation de match"
+    },
+    {
+        "code": "RD",
+        "defaultValue": "Remise de référence"
+    },
+    {
+        "code": "OE",
+        "defaultValue": "Erreur de l'opérateur"
+    },
+    {
+        "code": "MPD",
+        "defaultValue": "Rabais sur plusieurs polices"
+    },
+    {
+        "code": "OTH",
+        "defaultValue": "Autre"
+    }
+]

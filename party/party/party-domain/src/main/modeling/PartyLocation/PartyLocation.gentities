@@ -1,0 +1,44 @@
+Entity LocationEntity is Location, RootEntity, StatefulEntity, MergeableEntity {
+
+    @Searchable
+    Attr registryTypeId: String
+
+    @ReadOnly
+    @Searchable
+    Attr registryEntityNumber: String
+
+    @Searchable
+    @IgnoreCase
+    @Required
+    Attr countryCd: String
+
+    @Searchable
+    @IgnoreCase
+    Attr stateProvinceCd: String
+
+    @Searchable
+    Attr postalCode: String
+
+    @Searchable
+    @IgnoreCase
+    @Required
+    Attr city: String
+
+    @Searchable
+    @IgnoreCase
+    @Required
+    Attr addressLine1: String
+
+    @Searchable
+    @IgnoreCase
+    Attr addressLine2: String
+
+    @Searchable
+    @IgnoreCase
+    Attr addressLine3: String
+
+    Attr geoposition: GeoCoordEntity
+}
+
+Entity GeoCoordEntity is GeoCoord {
+}

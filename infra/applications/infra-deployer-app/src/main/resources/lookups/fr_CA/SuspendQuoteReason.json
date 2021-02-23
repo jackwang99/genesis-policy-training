@@ -1,0 +1,10 @@
+[
+  {
+    "code": "addInfo",
+    "defaultValue": "Le client doit localiser des informations supplémentaires"
+  },
+  {
+    "code": "notCommit",
+    "defaultValue": "Le client n'est pas prêt à s'engager"
+  }
+]

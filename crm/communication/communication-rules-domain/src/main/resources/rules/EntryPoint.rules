@@ -1,0 +1,7 @@
+Namespace Communication
+
+Include Base
+
+EntryPoint "Communication Validation" {
+  "EntityAssociationLinkIsMandatory"
+}

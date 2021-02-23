@@ -1,0 +1,14 @@
+[
+  {
+    "code": "1",
+    "defaultValue": "Mineur"
+  },
+  {
+    "code": "2",
+    "defaultValue": "Majeur"
+  },
+  {
+    "code": "3",
+    "defaultValue": "Critique"
+  }
+]

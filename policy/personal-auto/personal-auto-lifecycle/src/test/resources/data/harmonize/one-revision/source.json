@@ -1,0 +1,12 @@
+{
+  "vehicleBaseDetails": {
+    "model": "X3",
+    "modelYear": 2012,
+    "justMoney": {
+      "amount": 1000,
+      "currency": "USD"
+    },
+    "removeMe": "remove",
+    "_type": "TestAutoType"
+  }
+}

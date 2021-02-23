@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Product Server: Export product",
+    "description": "Grants user access to export product specifications",
+    "scope": "Product Server"
+  },
+  {
+    "name": "Product Server: Convert product",
+    "description": "Grants user access to convert product specifications",
+    "scope": "Product Server"
+  },
+  {
+    "name": "Product Server: Pipeline execution",
+    "description": "Grants user access to pipeline execution",
+    "scope": "Product Server"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "code": "ATM",
+    "defaultValue": "Account not target market"
+  },
+  {
+    "code": "UWLE",
+    "defaultValue": "Unacceptable water loss experience"
+  },
+  {
+    "code": "UCLE",
+    "defaultValue": "Unacceptable CAT loss experience"
+  },
+  {
+    "code": "UHLE",
+    "defaultValue": "Unacceptable Home loss experience"
+  },
+  {
+    "code": "UCPLE",
+    "defaultValue": "Unacceptable Collections PC loss experience"
+  },
+  {
+    "code": "ULLE",
+    "defaultValue": "Unacceptable Liability loss experience"
+  },
+  {
+    "code": "UAME",
+    "defaultValue": "Unacceptable Auto MVR/Clue experience"
+  },
+  {
+    "code": "UCE",
+    "defaultValue": "Unacceptable Coastal exposure"
+  },
+  {
+    "code": "UFE",
+    "defaultValue": "Unacceptable Florida exposure"
+  },
+  {
+    "code": "ES",
+    "defaultValue": "Does not fit EQ/Brush strategy"
+  },
+  {
+    "code": "COC",
+    "defaultValue": "Change in Exposure - COC"
+  },
+  {
+    "code": "UIP",
+    "defaultValue": "Unacceptable Insured Profile"
+  },
+  {
+    "code": "other",
+    "defaultValue": "Other"
+  }
+]

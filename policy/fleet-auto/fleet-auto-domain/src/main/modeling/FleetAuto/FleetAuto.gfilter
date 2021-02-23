@@ -1,0 +1,6 @@
+Model FleetAuto
+
+FleetAutoPolicySummary {
+    !agency : AutoBusinessDimensions.agency,
+    !brand : AutoBusinessDimensions.brand
+}

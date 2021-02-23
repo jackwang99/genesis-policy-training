@@ -1,0 +1,2 @@
+BaseType LegalEntity extends LegalEntityBase {
+}

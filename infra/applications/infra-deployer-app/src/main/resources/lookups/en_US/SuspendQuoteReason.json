@@ -1,0 +1,10 @@
+[
+  {
+    "code": "addInfo",
+    "defaultValue": "Customer needs to locate additional information"
+  },
+  {
+    "code": "notCommit",
+    "defaultValue": "Customer not ready to commit"
+  }
+]

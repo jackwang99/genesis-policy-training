@@ -1,0 +1,242 @@
+[
+  {
+    "code": "Alameda County",
+    "defaultValue": "Comté d'Alameda"
+  },
+  {
+    "code": "Alpine County",
+    "defaultValue": "Comté d'Alpine"
+  },
+  {
+    "code": "Amador County",
+    "defaultValue": "Comté d'Amador"
+  },
+  {
+    "code": "Butte County",
+    "defaultValue": "Comté de Butte"
+  },
+  {
+    "code": "Calaveras County",
+    "defaultValue": "Comté de Calaveras"
+  },
+  {
+    "code": "Colusa County",
+    "defaultValue": "Comté de Colusa"
+  },
+  {
+    "code": "Contra Costa County",
+    "defaultValue": "Comté de Contra Costa"
+  },
+  {
+    "code": "Del Norte County",
+    "defaultValue": "Comté de Del Norte"
+  },
+  {
+    "code": "El Dorado County",
+    "defaultValue": "El Dorado County"
+  },
+  {
+    "code": "Fresno County",
+    "defaultValue": "Comté de Fresno"
+  },
+  {
+    "code": "Glenn County",
+    "defaultValue": "Comté de Glenn"
+  },
+  {
+    "code": "Humboldt County",
+    "defaultValue": "Comté de Humboldt"
+  },
+  {
+    "code": "Imperial County",
+    "defaultValue": "Comté Impérial"
+  },
+  {
+    "code": "Inyo County",
+    "defaultValue": "Comté d'Inyo"
+  },
+  {
+    "code": "Kern County",
+    "defaultValue": "Comté de Kern"
+  },
+  {
+    "code": "Kings County",
+    "defaultValue": "Kings County"
+  },
+  {
+    "code": "Lake County",
+    "defaultValue": "Lake County"
+  },
+  {
+    "code": "Lassen County",
+    "defaultValue": "Comté de Lassen"
+  },
+  {
+    "code": "Los Angeles County",
+    "defaultValue": "Comté de Los Angeles"
+  },
+  {
+    "code": "Madera County",
+    "defaultValue": "Comté de Madera"
+  },
+  {
+    "code": "Marin County",
+    "defaultValue": "Marin County"
+  },
+  {
+    "code": "Mariposa County",
+    "defaultValue": "Comté de Mariposa"
+  },
+  {
+    "code": "Mendocino County",
+    "defaultValue": "Comté de Mendocino"
+  },
+  {
+    "code": "Merced County",
+    "defaultValue": "Comté de Merced"
+  },
+  {
+    "code": "Modoc County",
+    "defaultValue": "Comté de Modoc"
+  },
+  {
+    "code": "Mono County",
+    "defaultValue": "Comté de Mono"
+  },
+  {
+    "code": "Monterey County",
+    "defaultValue": "Comté de Monterey"
+  },
+  {
+    "code": "Napa County",
+    "defaultValue": "Comté de Napa"
+  },
+  {
+    "code": "Nevada County",
+    "defaultValue": "Nevada County"
+  },
+  {
+    "code": "New York County",
+    "defaultValue": "Comté de New York"
+  },
+  {
+    "code": "Orange County",
+    "defaultValue": "Orange County"
+  },
+  {
+    "code": "Placer County",
+    "defaultValue": "Comté de Placer"
+  },
+  {
+    "code": "Plumas County",
+    "defaultValue": "Comté de Plumas"
+  },
+  {
+    "code": "Riverside County",
+    "defaultValue": "Comté de Riverside"
+  },
+  {
+    "code": "Sacramento County",
+    "defaultValue": "Comté de Sacramento"
+  },
+  {
+    "code": "Salt Lake County",
+    "defaultValue": "Comté de Salt Lake"
+  },
+  {
+    "code": "San Benito County",
+    "defaultValue": "Comté de San Benito"
+  },
+  {
+    "code": "San Bernardino County",
+    "defaultValue": "Comté de San Bernardino"
+  },
+  {
+    "code": "San Diego County",
+    "defaultValue": "Comté de San Diego"
+  },
+  {
+    "code": "San Francisco County",
+    "defaultValue": "Comté de San Francisco"
+  },
+  {
+    "code": "San Joaquin County",
+    "defaultValue": "Comté de San Joaquin"
+  },
+  {
+    "code": "San Luis Obispo County",
+    "defaultValue": "Comté de San Luis Obispo"
+  },
+  {
+    "code": "San Mateo County",
+    "defaultValue": "Comté de San Mateo"
+  },
+  {
+    "code": "Santa Barbara County",
+    "defaultValue": "Comté de Santa Barbara"
+  },
+  {
+    "code": "Santa Clara County",
+    "defaultValue": "Comté de Santa Clara"
+  },
+  {
+    "code": "Santa Cruz County",
+    "defaultValue": "Santa Cruz County"
+  },
+  {
+    "code": "Shasta County",
+    "defaultValue": "Comté de Shasta"
+  },
+  {
+    "code": "Sierra County",
+    "defaultValue": "Comté de Sierra"
+  },
+  {
+    "code": "Siskiyou County",
+    "defaultValue": "Comté de Siskiyou"
+  },
+  {
+    "code": "Solano County",
+    "defaultValue": "Comté de Solano"
+  },
+  {
+    "code": "Sonoma County",
+    "defaultValue": "Comté de Sonoma"
+  },
+  {
+    "code": "Stanislaus County",
+    "defaultValue": "Stanislaus Comté"
+  },
+  {
+    "code": "Sutter County",
+    "defaultValue": "Comté de Sutter"
+  },
+  {
+    "code": "Tehama County",
+    "defaultValue": "Comté de Tehama"
+  },
+  {
+    "code": "Trinity County",
+    "defaultValue": "Comté de Trinity"
+  },
+  {
+    "code": "Tulare County",
+    "defaultValue": "Comté de Tulare"
+  },
+  {
+    "code": "Tuolumne County",
+    "defaultValue": "Comté de Tuolumne"
+  },
+  {
+    "code": "Ventura County",
+    "defaultValue": "Comté de Ventura"
+  },
+  {
+    "code": "Yolo County",
+    "defaultValue": "Comté de Yolo"
+  },
+  {
+    "code": "Yuba County",
+    "defaultValue": "Comté de Yuba"
+  }
+]
